@@ -1,0 +1,19 @@
+{
+  "name": "what-we-build",
+  "owner": {
+    "name": "Jin Huang"
+  },
+  "metadata": {
+    "description": "what-we-build: talk a project into being, one document at a time",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "what-we-build",
+      "source": "./",
+      "description": "Draft a project's founding documents through a conversation, one decision at a time",
+      "category": "productivity",
+      "tags": ["documentation", "planning", "writing"]
+    }
+  ]
+}
