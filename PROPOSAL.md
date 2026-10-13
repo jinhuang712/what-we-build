@@ -8,7 +8,9 @@ Proposed 2026-10-12. For what is built today, see [ROADMAP.md](ROADMAP.md).
 
 ## In short
 
-Coding agents can write a project's documents in minutes. They write too much, in too many places, and they agree with everything. what-we-build is a skill that drafts a project's founding documents through a conversation: one question per document, one decision at a time, and one home for each fact.
+You have an idea. You ask your coding agent for a README, a design doc and a roadmap. Ninety seconds later you have 2,000 confident words, and most of them describe decisions you never made.
+
+Agents write documents faster than people think, and they fill every gap with a guess that sounds sure. what-we-build is a skill that drafts a project's founding documents through a conversation instead: one question per document, one decision at a time, and one home for each fact.
 
 ## The shift
 
@@ -31,11 +33,27 @@ The numbers come from one real project, a macOS terminal built with coding agent
 
 **The result:** docs that cost more attention than they save.
 
+## The idea
+
+**Each document answers exactly one question.** Then every fact has exactly one home: a reader always knows where to look, and a change is made in one place.
+
+| Doc | The one question it answers |
+|---|---|
+| PROPOSAL (this file) | Why did we start this? |
+| [PHILOSOPHY](PHILOSOPHY.md) | Why is it this way? |
+| [GOALS](GOALS.md) | What do we measure? |
+| [FEATURES](FEATURES.md) | What does it do, and what will it do? |
+| [DESIGNS](DESIGNS.md) | How is it built, and why that way? |
+| [ROADMAP](ROADMAP.md) | When? |
+| [README](README.md) | What is this, and how do I start? |
+
+This repo's own docs follow the idea.
+
 ## What we want
 
 | Pain | What what-we-build does |
 |---|---|
-| Every fact in several places | Each doc answers one question. A placement test gives each fact one home. Other docs link to it. |
+| Every fact in several places | One question per doc (above). A placement test gives each new fact its home. Other docs link to it. |
 | Docs that tire the reader | Wording rules, a voice per doc, and history kept to one dated clause per decision. |
 | Goals that are wishes | Each goal needs a number. Without one, it stays open. |
 | Principles that are features | Each principle must be able to reject a real feature. |
@@ -43,10 +61,31 @@ The numbers come from one real project, a macOS terminal built with coding agent
 
 Underneath all five: **the user decides.** The skill asks and recommends. It does not choose.
 
+## How a session goes
+
+The user types `/what-we-build` in an empty folder and says what they want to build. The agent interviews them, one decision at a time:
+
+```text
+PROPOSAL.md answers: why did we start this?
+
+1. What hurts today? Give me one pain with a real example.
+   A. Tracking which of my agents is waiting on me
+   B. Finding a conversation from last week
+   C. Something else: ...
+```
+
+- **In order:** proposal, philosophy, goals, features, designs, roadmap, README. Each doc is written only after its key points are agreed.
+- **Strict where it counts:** a pain needs an example, a principle must reject a real feature, a goal needs a number, a decision needs a reason.
+- **Marked as it goes:** each doc is `drafted` until the user approves it. `/what-we-build resume` continues at the first doc that is not approved.
+- **For docs that already sprawl:** `/what-we-build revisit` audits them, agrees the roles with the user and rewrites them.
+
+The exact behavior is in [FEATURES.md](FEATURES.md) → F1–F3.
+
 ## What we don't want
 
 | Not this | Why |
 |---|---|
+| Asking the agent for docs directly | It writes 2,000 confident words in ninety seconds, about decisions nobody made. |
 | A skill that starts on its own | A session takes an hour of the user's attention. It starts on purpose. |
 | A questionnaire | Fixed questions produce filled templates, not decisions. |
 | A template filler | A skeleton without a conversation is text nobody decided. |
@@ -77,15 +116,3 @@ Developers who start a project with a coding agent and want the thinking written
 ## How we know it works
 
 [GOALS.md](GOALS.md) holds the checks: the core docs drafted in one session, no fact with two homes, every goal with a number, every decision with a reason and a date.
-
-## Documents
-
-| Document | Answers |
-|---|---|
-| [PHILOSOPHY.md](PHILOSOPHY.md) | Why is it this way? |
-| [GOALS.md](GOALS.md) | What do we measure? |
-| [FEATURES.md](FEATURES.md) | What does it do, and what will it do? |
-| [DESIGNS.md](DESIGNS.md) | How is it built, and why that way? |
-| [ROADMAP.md](ROADMAP.md) | When? |
-| [CHANGELOG.md](CHANGELOG.md) | What changed in each release? |
-| [AGENTS.md](AGENTS.md) | How do coding agents work in this repo? |
