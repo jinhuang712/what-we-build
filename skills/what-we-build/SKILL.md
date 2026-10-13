@@ -124,7 +124,7 @@ The core docs carry a mark, and so does an optional doc that a session drafts as
 
 ### 4. Close the session
 
-Run the [link check](#link-check). Then report each doc with its status (approved, drafted, skipped) and the open questions the user still owns. Leave an unknown number open. A guessed number looks like a decision the user made.
+Report each doc with its status (approved, drafted, skipped) and the open questions the user still owns. Leave an unknown number open. A guessed number looks like a decision the user made.
 
 ### How to talk
 
@@ -158,20 +158,10 @@ Use this mode when the docs exist but overlap, sprawl, read thin or drifted from
 1. **Audit.** List every doc with its size and last change. Find facts stated in more than one doc, facts in the wrong doc, sections with no description, numbers with no source, unverified claims, words with two meanings, docs written under an older rule, and stale claims. Give each conflict its cause, because the cause decides whether the doc or the skill changes. Show them as tables.
 2. **Agree on roles.** Show each doc's question and boundaries, as in [The doc set](#the-doc-set). The user confirms or changes them.
 3. **Rewrite**, one doc at a time or in parallel with subagents. Each subagent gets a written brief with the roles, the wording rules and the lessons below.
-4. **Verify.** Compare against the old version (`git show HEAD:<file>`) for lost facts. Run the link check. Check every claim of "met" or "done" against evidence, and have a reader who did not write the change measure the goals that can be measured on the docs.
+4. **Verify.** Compare against the old version (`git show HEAD:<file>`) for lost facts. Check that every relative link and anchor resolves. Check every claim of "met" or "done" against evidence, and have a reader who did not write the change measure the goals that can be measured on the docs.
 5. **Review.** The user reads the result before anything is committed.
 
 [references/revisit.md](references/revisit.md) has the full procedure and a brief template for subagents.
-
-## Link check
-
-Run the link check from this skill's folder on the project's docs:
-
-```sh
-python3 scripts/check_links.py <project>/*.md
-```
-
-It reports relative links and `#anchors` that do not resolve.
 
 ## What real sessions taught
 

@@ -21,7 +21,7 @@ Read every doc, and report what you find without editing anything. The audit is 
 | Words with two meanings | one word used for two things, such as "session" for a tool session and a conversation |
 | Docs under an older rule | docs last changed before the skill's rules last changed, checked against the current rules |
 | Stale claims | statements the code or newer docs contradict, with `file:line` on both sides |
-| Broken links | `scripts/check_links.py` |
+| Broken links | every relative link and `#anchor`, followed to its target |
 | Cited headings | `git grep -n "<DOC>.md →"` and `git grep -n "<DOC>.md#"` across the code and docs |
 | Goals | every goal in GOALS.md measured on the docs themselves where it can be, for example "one home per fact" |
 
@@ -88,7 +88,7 @@ Check the files yourself. A subagent's report says what it meant to do, not what
 
 - **Line counts:** `wc -l`. A doc that grew or shrank by more than a third needs a reason.
 - **Lost facts:** compare with `git show HEAD:<file>`. Spot-check the facts each report says it dropped.
-- **Links and anchors:** `scripts/check_links.py`.
+- **Links and anchors:** every relative link and `#anchor` resolves.
 - **Layout:** one blank line before and after every heading, list, table and code fence ([wording.md](wording.md) → *Lists and tables*).
 - **Evidence:** every "met", "done" or "verified" points to a measurement, a test or the user's word.
 - **Cited headings:** run the grep from the audit again.

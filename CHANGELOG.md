@@ -24,7 +24,7 @@
 
 ### Checks
 
-- `blank_lines.py` is removed. The wording rules alone keep the blank lines.
+- `blank_lines.py` and `check_links.py` are removed, so the skill is Markdown only. The agent keeps links and blank lines right while it writes, and a revisit reader checks them.
 
 ### This repo's docs
 

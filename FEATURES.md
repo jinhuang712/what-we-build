@@ -84,14 +84,6 @@ The docs come out in plain, precise English, so a reader finds a fact fast and u
 
 Each doc has its own style. For example, GOALS is a short intro and one table, and PHILOSOPHY is one screen: a short preamble, one line per principle, and a tie-break.
 
-## F6 — Link check ✅
-
-A script checks the links in a doc set. It runs on Python's standard library, with nothing to install.
-
-| Command | What it does |
-|---|---|
-| `python3 scripts/check_links.py FILE.md ...` | Reports relative links and `#anchors` that do not resolve. Exits 1 when one is broken. |
-
 ## Later, if needed
 
 | Idea | Note |
@@ -110,4 +102,4 @@ A script checks the links in a doc set. It runs on Python's standard library, wi
 | Choosing how a product should feel | That is the user's call. The skill records the user's words when they bring them. |
 | User manuals (tutorials, how-to guides, API references) | They answer other questions, after the founding docs exist. |
 | Standard texts (LICENSE, CODE_OF_CONDUCT) | They need a choice of a standard text, not a discussion. |
-| A script that fixes blank lines | The skill's job is the conversation. The wording rules keep the blank lines while the agent writes. |
+| Scripts that check the docs, such as links or blank lines | The skill's job is the conversation. The agent keeps links and blank lines right while it writes, and a revisit reader checks them. |

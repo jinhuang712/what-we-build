@@ -12,7 +12,7 @@ Status: ✅ done · 🟨 in progress · ⬜ not started.
 
 | Milestone | Delivers | Features | Depends on | Status |
 |---|---|---|---|---|
-| **M1** Write and publish | the skill, its guides and checks, this repo's docs, a public repo | F1–F6 | — | ✅ |
+| **M1** Write and publish | the skill, its guides and checks, this repo's docs, a public repo | F1–F5 | — | ✅ |
 | **M2** First real use | the skill used for real, and fixed from what the sessions show | F1–F3 | M1 | 🟨 |
 | **M3** Proven useful | runs with the skill beat runs without it | F1–F3 | M2 | ⬜ |
 
