@@ -6,6 +6,7 @@
 
 - The placement test sends a feature the project will not build to FEATURES.md → *Not planned*, as the rule on reasons already said, instead of to DESIGNS.md.
 - The draft step starts from the guide's skeleton and style, and names the wording rules.
+- SKILL.md lists every doc guide by name, with a link, instead of a path pattern and one example.
 - A revisit brief carries the lessons from real sessions. The revisit procedure points to those lessons instead of repeating them.
 - A revisit resets a doc's mark and adds a changelog entry only where the doc carries a mark and the project keeps a changelog.
 
