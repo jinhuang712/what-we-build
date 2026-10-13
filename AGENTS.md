@@ -20,7 +20,7 @@ Guidance for coding agents working on what-we-build. These rules cover what an a
 
 ## Before you finish
 
-Check each line you changed against `skills/what-we-build/references/wording.md`, each line in a doc against that doc's guide in `skills/what-we-build/references/docs/`, and each link you touched against its target. No script checks these rules.
+Check each line you changed against `skills/what-we-build/references/wording.md`, each line in a doc against that doc's guide in `skills/what-we-build/references/`, and each link you touched against its target. No script checks these rules.
 
 ## Releasing
 
