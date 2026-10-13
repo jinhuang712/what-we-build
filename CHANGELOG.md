@@ -1,10 +1,47 @@
 # Changelog
 
+## Unreleased
+
+None yet.
+
+## 0.3.0 — 2026-10-13
+
+The second revisit of this repo found 33 conflicts between its docs and the skill. Each one got a cause, and the causes changed the skill.
+
+### Sessions
+
+- When every doc is drafted, as after a revisit, the skill asks whether you want to approve them or revisit them again, instead of offering to resume.
+- A revisit gives each conflict its cause, so you see whether the doc or the skill should change.
+- Goals measured during a revisit are measured by a reader who did not write the change.
+- The revisit audit looks for principles that pick no side.
+
+### Doc guides
+
+- Each kind of doc has its own guide file, so a session reads only the guide for the doc it is working on.
+- Goals name the want they serve and where they were measured.
+- Status marks mean the same in every doc: ✅ 🚧 🟨 ⬜ ❌.
+- Progress, such as "not yet used on a new project", lives only in the roadmap.
+- A milestone can be a proven state, not only a usable one.
+- Decisions start with "Decided" and a date, so they can be counted, and name the option they beat.
+- The philosophy fits on one screen: a short preamble, one line per principle that picks a side and refuses one thing, and a tie-break.
+- The design doc holds design principles grouped by area, each with its cost and a rule that shows it holds, then the big decisions and the open questions. It has no map of the code and no section per feature.
+- Every example in the guides is made up for the skill, or taken from this repo.
+- Optional skeleton sections are marked, and the others say "None yet" rather than disappear.
+
+### Wording
+
+- A number in an illustrative scene may be invented. A number that states a fact needs a source.
+- Claims about behavior, such as a command name, are checked or marked "not yet verified".
+
+### Checks
+
+- `blank_lines.py` stops before writing when a non-blank line would change, even when Python runs with `-O`.
+
 ## 0.2.0 — 2026-10-13
 
 The first revisit of this repo with the skill itself. What it found changed the skill.
 
-- A session is a conversation, not a form. The agent discusses, brainstorms or asks for a decision, depending on where the user is. Each doc guide's *Ask* becomes *Explore*, with a brainstorm prompt.
+- A session is a conversation, not a form. The agent discusses, brainstorms or asks for a decision, depending on where the user is. Each doc guide lists the points to explore, with a brainstorm to open the doc.
 - Every doc guide now opens with what the doc is for, where it sits in a session and which facts belong in it. It names what to push back on, gives guidelines with their reasons, and shows weak and strong examples. SKILL.md keeps the flow and points to the guides.
 - New rules between docs: each doc reads on its own, the owner changes first, reasons have homes, and a doc that restates the code is a cache.
 - Formats follow the shape of the data in every doc, even when the same records appear elsewhere.

@@ -74,7 +74,8 @@ for path in sys.argv[1:]:
     with open(path) as f:
         old = f.readlines()
     new = fix(old)
-    assert [l for l in old if l.strip()] == [l for l in new if l.strip()], path
+    if [l for l in old if l.strip()] != [l for l in new if l.strip()]:
+        sys.exit(f"{path}: a non-blank line would change, so nothing was written")
     with open(path, "w") as f:
         f.writelines(new)
     print(f"{path}: {len(old)} -> {len(new)}")

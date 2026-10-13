@@ -23,7 +23,7 @@ Put the answer first. When a section is long, its first sentence says what the s
 - When you must coin a name, make it short and clear.
 - Spell out an abbreviation the first time, then use one form.
 - Explain a term the first time a reader is likely to meet it.
-- Use a verb for an action: "The app indexes the files", not "The app performs indexing of the files".
+- Use a verb for an action: "The app sends the invoices", not "The app performs the sending of the invoices".
 - Prefer a one-word verb to a phrasal verb.
 - Keep noun clusters to three words. Break longer ones with prepositions.
 - Write "for example" and "that is", not "e.g." and "i.e.".
@@ -34,7 +34,7 @@ Put the answer first. When a section is long, its first sentence says what the s
 ## Sentences
 
 - Write short sentences, one point each: about 20 words for a step, 25 for a description.
-- Put conditions first: "When the index is missing, the app rebuilds it."
+- Put conditions first: "When a payment fails, the app tries again after 3 days."
 - Use the active voice, so the reader knows who does what.
 - Use at most one negation per sentence.
 - Keep articles and "that". Dropped words save space and cost understanding.
@@ -59,19 +59,35 @@ Put the answer first. When a section is long, its first sentence says what the s
 | Names, paths, keys, values in a sentence | backticks |
 | Steps in order | a numbered list |
 | Three or more parallel items with one attribute | a list |
+| Items that each need a sentence of explanation | a list, each item opening with a bold name |
 | Reasoning | sentences |
+
+A table fits when every record has the same short attributes. When each item needs its own sentence, such as a design principle with its cost and its check, use a list with a bold name instead.
+
+## Status marks
+
+Use one set of marks across every doc, so a mark means the same thing wherever it appears.
+
+| Mark | Means | Used in |
+|---|---|---|
+| ✅ | built, done, or met | FEATURES, ROADMAP, GOALS |
+| 🚧 | built, with a gap named beside it | FEATURES |
+| 🟨 | in progress | ROADMAP |
+| ⬜ | planned, not started, or not yet measured | FEATURES, ROADMAP, GOALS |
+| ❌ | measured and not met | GOALS |
 
 ## Numbers
 
 - A number beats an adjective: "under 50 ms" beats "fast".
 - Give units and the method: "≤ 50 ms per query, measured by the benchmark script on the full data set".
 - Write dates as `YYYY-MM-DD`, and versions exactly.
-- Every number has a source: a measurement, a file or a person. When the number is not known, say so and leave the item open.
+- Every number that states a fact has a source: a measurement, a file or a person. When the number is not known, say so and leave the item open.
+- A number inside an illustrative scene, told to "you", may be invented, because the scene asks the reader to imagine, not to believe. Keep it plausible, and keep it out of any sentence that states a fact.
 
 ## History
 
-- Keep a decision's history as one clause: what, why, when. `Decided 2026-10-12: SQLite FTS5, because it ships with the OS.`
-- A changed decision replaces the old one, with one clause of history: `Lowered to macOS 14.5 on 2026-10-12 (was 26).`
+- Keep a decision's history as one clause: what, why, when. `Decided 2026-10-12: PostgreSQL over MongoDB, because every report joins orders to customers.`
+- A changed decision replaces the old one, with one clause of history: `Logs are kept 30 days, lowered on 2026-10-12 (was 90).`
 - The story of how a decision was reached (what was checked, which mockup won, who asked) lives in git.
 
 ## Style by doc
@@ -81,9 +97,9 @@ Each doc has its own form, so a reader knows what to expect before reading it.
 | Doc | Style |
 |---|---|
 | PROPOSAL | short sections that open with a scene, tables for comparisons, real numbers |
-| PHILOSOPHY | short prose, one section per principle, then the test |
+| PHILOSOPHY | one screen: a short preamble, one line per principle with one refusal, then a tie-break |
 | GOALS | a short intro and one table of checks: measure, method, status |
 | FEATURES | one section per feature, a short description, then behavior in the present tense |
-| DESIGNS | sections per area, each opening with what it covers, decisions as dated clauses |
+| DESIGNS | one paragraph, principles grouped by area with their costs and checks, decisions as dated lines, open questions |
 | ROADMAP | one overview table, then one status table per milestone |
 | README | a short description, a few bullets, install, first use, limits, links |
