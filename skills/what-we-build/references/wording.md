@@ -9,7 +9,7 @@ The docs are read to decide and to build. Every rule below serves one of those t
 - When you must coin a name, make it short and clear.
 - Spell out an abbreviation the first time, then use one form.
 - Explain a term the first time a reader is likely to meet it.
-- Use a verb for an action, not a noun phrase. "Calm indexes the files", not "Calm performs indexing of the files".
+- Use a verb for an action, not a noun phrase. "The app indexes the files", not "The app performs indexing of the files".
 - Prefer a one-word verb to a phrasal verb.
 - Keep noun clusters to three words. Break longer ones with prepositions.
 - Write "for example" and "that is", not "e.g." and "i.e.".
@@ -20,7 +20,7 @@ The docs are read to decide and to build. Every rule below serves one of those t
 ## Sentences
 
 - Short sentences, one point each. About 20 words for a step, 25 for a description.
-- Conditions first: "When the index is missing, Calm rebuilds it."
+- Conditions first: "When the index is missing, the app rebuilds it."
 - Active voice, so the reader knows who does what.
 - At most one negation per sentence. No double negatives.
 - Keep articles and "that". Do not drop words to save space.
@@ -54,7 +54,7 @@ Keep one blank line before and after every heading, list, table and code fence.
 ## Numbers
 
 - A number beats an adjective. "Under 50 ms" beats "fast".
-- Give units and the method: "≤ 40 M instructions/s, measured by `mise run perf`".
+- Give units and the method: "≤ 50 ms per query, measured by the benchmark script on the full data set".
 - Dates as `YYYY-MM-DD`. Versions exact.
 - Never invent a number. When the number is not known, say so and leave the item open.
 
