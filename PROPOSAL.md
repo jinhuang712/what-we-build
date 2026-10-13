@@ -105,7 +105,6 @@ Developers who start a project with a coding agent and want the thinking written
 - **One Claude Code skill,** started only by hand with `/what-we-build`.
 - **Three modes:** a new project, resuming a session, revisiting docs that drifted.
 - **Reference files loaded when needed,** so the skill stays short: one per doc, plus wording rules and the revisit procedure.
-- **A link check** in Python with no dependencies: broken links and anchors.
 - **Distributed** as a public plugin, or as a folder linked into `~/.claude/skills`.
 
 ## Risks

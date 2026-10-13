@@ -2,7 +2,7 @@
 
 # Designs
 
-How what-we-build is built, and why. What goes in is a project folder and a conversation with the user. What comes out is a set of Markdown docs, each with a mark that says drafted or approved. In between is the skill: Markdown instructions that an agent reads, and a Python script that checks the docs' links. What the skill does for the user is in [FEATURES.md](FEATURES.md).
+How what-we-build is built, and why. What goes in is a project folder and a conversation with the user. What comes out is a set of Markdown docs, each with a mark that says drafted or approved. In between is the skill: Markdown instructions that an agent reads. What the skill does for the user is in [FEATURES.md](FEATURES.md).
 
 ## Principles
 
@@ -18,7 +18,7 @@ Each principle names the choice, what it costs, and how to check that it holds.
 
 ### Portability
 
-- **No dependencies.** Markdown and Python's standard library. Cost: the link check reads Markdown with regular expressions instead of a parser. Holds as: every script imports only the standard library.
+- **No dependencies.** The skill is Markdown only. Cost: nothing checks the docs by machine. Holds as: `skills/what-we-build/` holds only Markdown files.
 
 ### Words
 
@@ -27,7 +27,7 @@ Each principle names the choice, what it costs, and how to check that it holds.
 
 ### Checks
 
-- **Scripts check links, readers check the rest.** The link check finds broken links, not wrong facts or missing blank lines. Cost: a wrong fact or a missing blank line passes every script. Holds as: a revisit ends with a reader who did not write the change checking the claims and the goals ([SKILL.md](skills/what-we-build/SKILL.md) → Revisit, step 4).
+- **Readers check the docs, not scripts.** Cost: a broken link, a missing blank line or a wrong fact stays until a reader catches it. Holds as: a revisit ends with a reader who did not write the change checking the links, the claims and the goals ([SKILL.md](skills/what-we-build/SKILL.md) → Revisit, step 4).
 
 ### Testing
 

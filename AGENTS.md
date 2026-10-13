@@ -20,13 +20,7 @@ Guidance for coding agents working on what-we-build. These rules cover what an a
 
 ## Before you finish
 
-Check each line you changed against `skills/what-we-build/references/wording.md`, and each line in a doc against that doc's guide in `skills/what-we-build/references/docs/`. No script checks these rules.
-
-Run the link check on every doc, so no broken link reaches a commit:
-
-```sh
-python3 skills/what-we-build/scripts/check_links.py *.md skills/what-we-build/*.md skills/what-we-build/references/*.md skills/what-we-build/references/docs/*.md
-```
+Check each line you changed against `skills/what-we-build/references/wording.md`, each line in a doc against that doc's guide in `skills/what-we-build/references/docs/`, and each link you touched against its target. No script checks these rules.
 
 ## Releasing
 
