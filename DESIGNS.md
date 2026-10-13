@@ -31,7 +31,7 @@ Each principle names the choice, what it costs, and how to check that it holds.
 
 ### Testing
 
-- **Test by use first.** Real sessions come before prepared test prompts, and the prompts follow from what the sessions show ([ROADMAP.md](ROADMAP.md) → M3). Cost: evidence comes slowly, one session at a time. Holds as: each lesson in `SKILL.md` names the failure that taught it.
+- **Test by use first.** Real sessions come before prepared test prompts, and the prompts follow from what the sessions show ([ROADMAP.md](ROADMAP.md) → M3). Cost: evidence comes slowly, one session at a time. Holds as: each rule in `SKILL.md` that a session taught names the failure that taught it.
 - **The repo is its own first example.** Its docs follow the skill. Cost: every rule change means checking this repo's docs again. Holds as: every core doc in this repo carries a what-we-build mark.
 
 ## Decisions

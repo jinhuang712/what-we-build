@@ -8,6 +8,7 @@
 - The placement test sends a feature the project will not build to FEATURES.md → *Not planned*, as the rule on reasons already said, instead of to DESIGNS.md.
 - The draft step starts from the guide's skeleton and style, and names the wording rules.
 - SKILL.md lists every doc guide by name, with a link, instead of a path pattern and one example.
+- Each failure from a real session sits beside the rule it backs, as that rule's reason. The separate list of lessons, which repeated those rules, is gone.
 
 ### Doc guides
 

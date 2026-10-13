@@ -113,7 +113,7 @@ Developers who start a project with a coding agent and want the thinking written
 | The user wants the docs, not the talk | The skill drafts quickly once a doc's key points are agreed. A recommendation comes with every choice, so a ready decision takes one answer. |
 | Too many docs for a small project | Seven core docs. The rest only when needed. |
 | The skill itself grows too long | `SKILL.md` has a line limit (GOALS.md G6). Detail lives in reference files. |
-| The agent pads or splits text | Wording rules and the lessons from real sessions. |
+| The agent pads or splits text | Wording rules, and rules that name the session failure behind them. |
 
 ## How we know it works
 
