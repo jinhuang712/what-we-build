@@ -44,7 +44,7 @@ The numbers come from one real project built with coding agents over two weeks.
 | [GOALS](GOALS.md) | What do we measure? |
 | [FEATURES](FEATURES.md) | What does it do, and what will it do? |
 | [DESIGNS](DESIGNS.md) | How is it built, and why that way? |
-| [ROADMAP](ROADMAP.md) | When? |
+| [ROADMAP](ROADMAP.md) | When, and how far along? |
 | [README](README.md) | What is this, and how do I start? |
 
 This repo's own docs follow the idea.
@@ -119,4 +119,4 @@ Developers who start a project with a coding agent and want the thinking written
 
 ## How we know it works
 
-[GOALS.md](GOALS.md) holds the checks: the core docs drafted in one session, no fact with two homes, every goal with a number, every decision with a reason and a date.
+[GOALS.md](GOALS.md) holds the checks: the core docs drafted and approved in one sitting, no fact with two homes, every goal with a number, every decision with a reason and a date.

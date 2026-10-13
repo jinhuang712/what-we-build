@@ -8,7 +8,7 @@ what-we-build is a Claude Code skill for the start of a project. It writes no do
 
 Coding agents write documents faster than people think, and they fill every gap with a guess that sounds sure. This skill slows the writing down to the speed of your decisions: you talk each document through first, and the agent writes down what you agreed.
 
-> **Status: 0.2.0.** Written, published, and revisited once with its own revisit mode. Not yet used on a new project end to end (see [ROADMAP.md](ROADMAP.md)).
+> **Status:** how far it has been used, and what comes next, is in [ROADMAP.md](ROADMAP.md).
 
 ## What it does
 
@@ -26,7 +26,7 @@ Coding agents write documents faster than people think, and they fill every gap 
 | [GOALS](GOALS.md) | What do we measure? |
 | [FEATURES](FEATURES.md) | What does it do, and what will it do? |
 | [DESIGNS](DESIGNS.md) | How is it built, and why that way? |
-| [ROADMAP](ROADMAP.md) | When? |
+| [ROADMAP](ROADMAP.md) | When, and how far along? |
 | README | What is this, and how do I start? |
 
 This repo's own docs were written with the skill, so each link is an example of its output.
