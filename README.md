@@ -1,30 +1,35 @@
-<!-- what-we-build: drafted 2026-10-12 -->
+<!-- what-we-build: drafted 2026-10-13 -->
 
 # what-we-build
 
 > Talk a project into being, one document at a time.
 
-what-we-build is a Claude Code skill for the start of a project. You bring the idea. The agent asks the questions that turn it into the founding documents, one decision at a time, and writes each document only after you agree on it. Each document answers one question, so every fact has one home.
+what-we-build is a Claude Code skill for the start of a project. It writes no document until you have agreed on its key points.
 
-> **Status: 0.1.0.** Written and published. Not yet used on a real project end to end (see [ROADMAP.md](ROADMAP.md)).
+Coding agents write documents faster than people think, and they fill every gap with a guess that sounds sure. This skill slows the writing down to the speed of your decisions: you talk each document through first, and the agent writes down what you agreed.
+
+> **Status: 0.2.0.** Written, published, and revisited once with its own revisit mode. Not yet used on a new project end to end (see [ROADMAP.md](ROADMAP.md)).
 
 ## What it does
 
-- **Drafts the founding docs through a conversation.** Proposal, philosophy, goals, features, designs, roadmap and README, in that order. Optional docs join when the project needs them.
-- **Asks one decision at a time,** with a recommendation and its reason. You decide.
-- **Pushes back** on goals without numbers, principles that are really features, and decisions without reasons.
-- **Resumes** a session from marks on each doc.
-- **Revisits** a doc set that overlaps, sprawls or drifted from the code.
+- **Talks before it writes.** It discusses and brainstorms with you, recommends a choice when one is ready, and drafts a doc only after you agree on its key points.
+- **Pushes back** on goals without numbers and principles that are really features.
+- **Gives every fact one home:** seven documents, each answering one question.
+- **Resumes** where you stopped, and **revisits** docs that drifted.
 
-| Doc | Answers |
+## What you get
+
+| Doc | The question it answers |
 |---|---|
-| PROPOSAL | Why did we start this? |
-| PHILOSOPHY | Why is it this way? |
-| GOALS | What do we measure? |
-| FEATURES | What does it do, and what will it do? |
-| DESIGNS | How is it built, and why that way? |
-| ROADMAP | When? |
+| [PROPOSAL](PROPOSAL.md) | Why did we start this? |
+| [PHILOSOPHY](PHILOSOPHY.md) | Why is it this way? |
+| [GOALS](GOALS.md) | What do we measure? |
+| [FEATURES](FEATURES.md) | What does it do, and what will it do? |
+| [DESIGNS](DESIGNS.md) | How is it built, and why that way? |
+| [ROADMAP](ROADMAP.md) | When? |
 | README | What is this, and how do I start? |
+
+This repo's own docs were written with the skill, so each link is an example of its output.
 
 ## Install
 
@@ -46,26 +51,24 @@ ln -s ~/dev/skills/what-we-build/skills/what-we-build ~/.claude/skills/what-we-b
 
 The command is then `/what-we-build`. Start a new Claude Code session after you install it.
 
-## Use
+## When to reach for it
 
-In a project folder, start Claude Code and type:
+| Situation | Type |
+|---|---|
+| You are starting a project | `/what-we-build` |
+| You stopped halfway | `/what-we-build resume` |
+| Your docs repeat each other or drifted from the code | `/what-we-build revisit` |
 
-```text
-/what-we-build             start, or pick the mode from what the folder holds
-/what-we-build resume      continue at the first doc that is not approved
-/what-we-build revisit     clean up a doc set that drifted
-```
-
-The skill never starts on its own.
+It starts only when you type it.
 
 ## Known limits
 
 - It writes English docs. Wording rules for other languages are on the *Later* list.
 - It has been tested by hand, not yet with evals.
 
-## Documents
+## More documents
 
-[Proposal](PROPOSAL.md) (why we started) · [Philosophy](PHILOSOPHY.md) (why it is this way) · [Goals](GOALS.md) (what we measure) · [Features](FEATURES.md) (what it does) · [Designs](DESIGNS.md) (how it is built) · [Roadmap](ROADMAP.md) (when) · [Changelog](CHANGELOG.md) · [Agents](AGENTS.md) (for coding agents working here)
+[Changelog](CHANGELOG.md) · [Agents](AGENTS.md) (for coding agents working here)
 
 ## License
 

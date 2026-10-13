@@ -1,8 +1,8 @@
 {
   "name": "what-we-build",
   "displayName": "what-we-build",
-  "description": "Draft a new project's founding documents by talking each one through, one decision at a time: proposal, philosophy, goals, features, designs, roadmap and README. Each document answers one question, so every fact has one home.",
-  "version": "0.1.0",
+  "description": "Draft a new project's founding documents by talking each one through, in discussion, brainstorming and clear decisions: proposal, philosophy, goals, features, designs, roadmap and README. Each document answers one question, so every fact has one home.",
+  "version": "0.2.0",
   "author": {
     "name": "Jin Huang",
     "url": "https://github.com/jinhuang712"

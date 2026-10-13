@@ -1,4 +1,4 @@
-<!-- what-we-build: drafted 2026-10-12 -->
+<!-- what-we-build: drafted 2026-10-13 -->
 
 # what-we-build — Proposal
 
@@ -10,7 +10,7 @@ Proposed 2026-10-12. For what is built today, see [ROADMAP.md](ROADMAP.md).
 
 You have an idea. You ask your coding agent for a README, a design doc and a roadmap. Ninety seconds later you have 2,000 confident words, and most of them describe decisions you never made.
 
-Agents write documents faster than people think, and they fill every gap with a guess that sounds sure. what-we-build is a skill that drafts a project's founding documents through a conversation instead: one question per document, one decision at a time, and one home for each fact.
+Agents write documents faster than people think, and they fill every gap with a guess that sounds sure. what-we-build is a skill that drafts a project's founding documents through a conversation instead: one question per document, one home for each fact, and nothing written before you agree.
 
 ## The shift
 
@@ -54,26 +54,30 @@ This repo's own docs follow the idea.
 | Pain | What what-we-build does |
 |---|---|
 | Every fact in several places | One question per doc (above). A placement test gives each new fact its home. Other docs link to it. |
-| Docs that tire the reader | Wording rules, a voice per doc, and history kept to one dated clause per decision. |
+| Docs that tire the reader | Wording rules, a style per doc, and history kept to one dated clause per decision. |
 | Goals that are wishes | Each goal needs a number. Without one, it stays open. |
 | Principles that are features | Each principle must be able to reject a real feature. |
-| Agents that agree too fast | One decision at a time, a recommendation with a reason, and no doc before its key points are agreed. |
+| Agents that agree too fast | Discussion and brainstorming before decisions, a recommendation with a reason when a choice is ready, and no doc before its key points are agreed. |
 
 Underneath all five: **the user decides.** The skill asks and recommends. It does not choose.
 
 ## How it works
 
-The user types `/what-we-build` in an empty folder and says what they want to build. The agent interviews them, one decision at a time:
+The user types `/what-we-build` in an empty folder and says what they want to build. The agent talks it through with them. A doc often opens wide and ends with a choice:
 
 ```text
 PROPOSAL.md answers: why did we start this?
 
-1. What hurts today? Give me one pain with a real example.
-   A. Tracking which of my agents is waiting on me
-   B. Finding a conversation from last week
-   C. Something else: ...
+Agent: Let's list what hurts first, as fast as it comes. I'll start:
+       hunting through tabs, losing the thread, history scattered across folders.
+User:  Add one: copying a table cell copies the whole row.
+Agent: Four pains. If you could fix only one, which would it be?
+       A. Hunting through tabs: it costs attention every few minutes (recommended)
+       B. Losing the thread
+       C. Something else: ...
 ```
 
+- **Talk, not a form:** discussion and brainstorming open each doc, and a recommended choice closes each point.
 - **In order:** proposal, philosophy, goals, features, designs, roadmap, README. Each doc is written only after its key points are agreed.
 - **Strict where it counts:** a pain needs an example, a principle must reject a real feature, a goal needs a number, a decision needs a reason.
 - **Marked as it goes:** each doc is `drafted` until the user approves it. `/what-we-build resume` continues at the first doc that is not approved.
@@ -85,12 +89,11 @@ The exact behavior is in [FEATURES.md](FEATURES.md) → F1–F3.
 
 | Not this | Why |
 |---|---|
-| Asking the agent for docs directly | It writes 2,000 confident words in ninety seconds, about decisions nobody made. |
-| A skill that starts on its own | A session takes an hour of the user's attention. It starts on purpose. |
-| A questionnaire | Fixed questions produce filled templates, not decisions. |
-| A template filler | A skeleton without a conversation is text nobody decided. |
-| User manuals | Tutorials and API references answer other questions. They come later. |
-| More docs than the project needs | Optional docs join only when they have a job. |
+| A faster way to get confident text | Asking the agent directly already gives you 2,000 words about decisions nobody made. |
+| A form to fill in | Templates and fixed questionnaires produce answers, not decisions. |
+| Something that runs on its own | A session needs your full attention, so it starts when you type it. |
+
+The full list of what is not planned, with reasons: [FEATURES.md → Not planned](FEATURES.md#not-planned).
 
 ## Who it is for
 
