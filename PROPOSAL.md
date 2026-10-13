@@ -61,7 +61,7 @@ This repo's own docs follow the idea.
 
 Underneath all five: **the user decides.** The skill asks and recommends. It does not choose.
 
-## How a session goes
+## How it works
 
 The user types `/what-we-build` in an empty folder and says what they want to build. The agent interviews them, one decision at a time:
 
