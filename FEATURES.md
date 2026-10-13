@@ -24,14 +24,12 @@ A session turns an idea into the founding documents of a project. You bring one 
 
 The docs come in order: PROPOSAL → PHILOSOPHY → GOALS → FEATURES → DESIGNS → ROADMAP → README. Each one builds on the ones before it, so you never answer the same question twice.
 
-**Choosing the mode.** `/what-we-build` alone reads the folder and picks the mode. An argument picks it for you: `new`, `resume` or `revisit`.
+**Choosing the mode.** `/what-we-build` alone reads the folder and picks the mode. An argument picks it for you: `new` or `resume`.
 
 | The folder holds | The skill |
 |---|---|
-| No founding docs | starts a new project |
-| Docs where the first are approved and the rest drafted or missing | resumes |
-| Docs that are all drafted, as after a revisit | asks whether you want to approve them or revisit them |
-| Docs without marks | starts a revisit |
+| No founding docs, or docs without marks | starts a new project, building on what it finds |
+| Docs with marks, not all approved | resumes |
 | Something that disagrees with your request | asks you |
 
 ## F2 — Resume ✅
@@ -44,20 +42,7 @@ A session can stop at any point and pick up in a later sitting. Each drafted doc
 
 The mark becomes `approved` when you approve the doc, and goes back to `drafted` whenever the doc is edited again. `/what-we-build resume` reads the marks, tells you where the session stopped, and continues at the first doc that is not approved.
 
-## F3 — Revisit ✅
-
-`/what-we-build revisit` cleans up a doc set that overlaps, sprawls, reads thin or drifted from the code. It audits every doc, gives each conflict its cause, agrees each doc's role with you, rewrites, checks the result against the old version, and shows you the changes before anything is committed.
-
-| Stage | What you get |
-|---|---|
-| Audit | Tables of what the docs get wrong, such as facts written in more than one place, facts in the wrong doc and stale claims, each with its file and line |
-| Causes | Each conflict with its cause, so you see whether the doc or the skill should change |
-| Roles | Each doc's question and boundaries, for you to confirm |
-| Rewrite | The docs, rewritten one at a time or in parallel |
-| Verify | Lost facts against the old version, broken links, unsupported "met" claims, and the goals that can be measured on the docs, measured by a reader who did not write the change |
-| Review | The changes, for you to read before any commit |
-
-## F4 — The doc set ✅
+## F3 — The doc set ✅
 
 The skill knows 17 kinds of document: 7 core, and 10 optional that join only when the project needs them.
 
@@ -68,7 +53,7 @@ The skill knows 17 kinds of document: 7 core, and 10 optional that join only whe
 
 For each kind, the skill carries a guide. The agent reads it before it starts that doc, so the questions, the push-back and the doc's form fit that doc. It also maps other common names to the set, for example a PRD to FEATURES, or an ARCHITECTURE.md to DESIGNS.
 
-## F5 — Wording rules ✅
+## F4 — Wording rules ✅
 
 The docs come out in plain, precise English, so a reader finds a fact fast and understands it the first time.
 
@@ -102,4 +87,4 @@ Each doc has its own style. For example, GOALS is a short intro and one table, a
 | Choosing how a product should feel | That is the user's call. The skill records the user's words when they bring them. |
 | User manuals (tutorials, how-to guides, API references) | They answer other questions, after the founding docs exist. |
 | Standard texts (LICENSE, CODE_OF_CONDUCT) | They need a choice of a standard text, not a discussion. |
-| Scripts that check the docs, such as links or blank lines | The skill's job is the conversation. The agent keeps links and blank lines right while it writes, and a revisit reader checks them. |
+| Scripts that check the docs, such as links or blank lines | The skill's job is the conversation. The agent keeps links and blank lines right while it writes. |

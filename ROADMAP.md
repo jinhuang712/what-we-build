@@ -12,16 +12,16 @@ Status: ✅ done · 🟨 in progress · ⬜ not started.
 
 | Milestone | Delivers | Features | Depends on | Status |
 |---|---|---|---|---|
-| **M1** Write and publish | the skill, its guides and checks, this repo's docs, a public repo | F1–F5 | — | ✅ |
-| **M2** First real use | the skill used for real, and fixed from what the sessions show | F1–F3 | M1 | 🟨 |
-| **M3** Proven useful | runs with the skill beat runs without it | F1–F3 | M2 | ⬜ |
+| **M1** Write and publish | the skill, its guides and checks, this repo's docs, a public repo | F1–F4 | — | ✅ |
+| **M2** First real use | the skill used for real, and fixed from what the sessions show | F1–F2 | M1 | 🟨 |
+| **M3** Proven useful | runs with the skill beat runs without it | F1–F2 | M2 | ⬜ |
 
 ## M1 — Write and publish ✅
 
 | ID | What it delivers | Note |
 |---|---|---|
 | M1.1 | `SKILL.md`: roles, rules, modes, flow | |
-| M1.2 | The guides: each doc, wording, revisit | |
+| M1.2 | The guides: each doc, and the wording rules | |
 | M1.3 | `check_links.py` and `blank_lines.py` | |
 | M1.4 | This repo's docs, in the skill's own format | |
 | M1.5 | Public repo and plugin manifest, version 0.1.0 | 2026-10-12 |
@@ -32,8 +32,8 @@ Status: ✅ done · 🟨 in progress · ⬜ not started.
 
 | ID | What it delivers | Note |
 |---|---|---|
-| M2.0 | The first revisit of this repo, released as 0.2.0 | 2026-10-13 |
-| M2.1 | A second revisit of this repo, released as 0.3.0 | 2026-10-13 |
+| M2.0 | A first review of this repo's docs with the skill, released as 0.2.0 | 2026-10-13 |
+| M2.1 | A second review of this repo's docs, released as 0.3.0 | 2026-10-13 |
 | M2.2 | A new project's 7 core docs, drafted and approved with the skill | |
 | M2.3 | A resumed session, to test the marks | |
 | M2.4 | Fixes to the skill from what the sessions showed | |
