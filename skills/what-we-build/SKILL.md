@@ -58,13 +58,13 @@ These rules keep a doc set easy to trust: one place to look for each fact, and e
 - **One home per fact.** A fact lives in the doc that owns it. When a fact has two homes, one of them goes stale, and the reader cannot tell which.
 - **Each doc reads on its own.** Summarize what your reader needs to follow, and link only for depth. A reader who must jump between files to understand one point has been handed the work of assembling the doc.
 - **A summary is shorter than its owner.** Any doc may summarize what its reader needs, and the README and the proposal summarize the most. A summary may repeat the owner's records, such as the list of docs in a README. The same detail written out in two docs is a second home, not a summary.
-- **The owner changes first.** When a fact changes, update its summaries in the same change, so they never disagree. The same holds for the skill's rules: when a rule changes, check the docs written under the old one.
+- **The owner changes first.** When a fact changes, update its summaries in the same change, so they never disagree. The same holds for the skill's rules: when a rule changes, check the docs written under the old one. Version 0.2.0 changed five rules, and five docs kept the old ones until the next audit.
 - **Place each fact with the placement test** below, so two writers put the same fact in the same doc.
 - **Reasons have homes.** Why something will not be built goes in `FEATURES.md` → *Not planned*, because that is where someone looks before proposing it. Why something is built a certain way goes in `DESIGNS.md`, beside the design. A design decision that only carries out a product decision links to that reason instead of restating it.
-- **Claims are checked.** A statement about behavior, such as an install command or a command name, is checked by running it, or marked "not yet verified". A claim nobody ran is a guess that looks like a fact.
+- **Claims are checked.** A statement about behavior, such as an install command or a command name, is checked by running it, or marked "not yet verified". A goal or criterion is met only with a measurement or the user's own report, made by someone who did not write the change. A claim nobody checked is a guess that looks like a fact: one rewrite marked two goals met, and an independent count failed both.
 - **The code is a home too.** A doc repeats the code, the config or a command's output only when looking it up is expensive. It keeps what looking cannot find: the reason, the convention, the trap. A restated fact goes stale the day the code changes.
-- **History stays short.** A decision keeps one clause: what, why, and the date (`Decided 2026-10-12: ...`). The story of how it was reached lives in git.
-- **Headings are addresses.** Code comments and other docs cite headings (`DESIGNS.md → Decisions`). Keep them stable. When one must change, fix every reference in the same change.
+- **History stays short.** A decision keeps one clause: what, why, and the date (`Decided 2026-10-12: ...`). The story of how it was reached lives in git. A rewrite that removed every date left rules nobody could explain.
+- **Headings are addresses.** Code comments and other docs cite headings (`DESIGNS.md → Decisions`). Keep them stable. When one must change, search the code and the docs for references first, and fix every one in the same change. Renamed headings once broke the comments that pointed to them.
 - **One language per doc set,** so a reader never switches languages mid-doc.
 
 ### The placement test
@@ -91,9 +91,11 @@ Every section of every doc has up to three layers, in this order:
 | Guidelines | how to do it well, each with its reason |
 | Specifics | tables, skeletons, commands, examples |
 
-A section with only specifics is a list of rules nobody can apply. A section with only description gives the reader nothing to act on.
+A section with only specifics is a list of rules nobody can apply: a rewrite that cut every repeat left docs nobody could learn from. A section with only description gives the reader nothing to act on.
 
-Write in your default voice. Each doc has its own style, meaning its form, given in its guide. For example, `GOALS.md` is a short intro and one table of checks, and `PHILOSOPHY.md` is one screen: a short preamble, one line per principle, and a tie-break. In every doc, pick the format by the shape of the data: a table for records, a list for parallel items, sentences for reasoning. The full wording rules are in [references/wording.md](references/wording.md).
+Write in your default voice. Each doc has its own style, meaning its form, given in its guide. For example, `GOALS.md` is a short intro and one table of checks, and `PHILOSOPHY.md` is one screen: a short preamble, one line per principle, and a tie-break. The full wording rules are in [references/wording.md](references/wording.md).
+
+In every doc, pick the format by the shape of the data, even when the same records appear in another doc: a table for records, a list for parallel items, sentences for reasoning. Turning a table into inline links to avoid a repeat made a README harder to read. Judge a doc by how fast a reader finds a fact, not by its line count. Sessions met line limits by deleting blank lines, and doubled a doc with nested lists.
 
 ## Choose the mode
 
@@ -150,7 +152,7 @@ Report each doc with its status (approved, drafted, skipped) and the open questi
 
 ### How to talk
 
-Writing the docs is a conversation, not a form. A point that is still forming needs room. A point that is ready needs a clear choice. Read where the user is, and talk in the way that fits:
+Writing the docs is a conversation, not a form: a session run as a questionnaire felt like filling in one. A point that is still forming needs room. A point that is ready needs a clear choice. Read where the user is, and talk in the way that fits:
 
 | Way | When it fits | What you do |
 |---|---|---|
@@ -164,7 +166,7 @@ Each doc usually moves through all three: open up, narrow down, decide, then wri
 
 - **Ask for one decision per question when deciding.** Batch up to four independent questions in one message, numbered, each with lettered options. More than four, and the user starts skimming.
 - **Recommend, with the reason in one clause.** The user decides.
-- **Agree first, then write.** A doc is written only after its key points are agreed.
+- **Agree first, then write, one doc at a time.** A doc is written only after its key points are agreed. Drafting three docs before the first was agreed wasted the user's time.
 - **Ask for facts, numbers and dates.** When the user does not know one yet, mark it open.
 - **Keep each turn short.** The docs hold the detail. The chat holds the decisions.
 - **When the user stops you, stop.** Wait for an explicit go before you write again.
@@ -172,20 +174,3 @@ Each doc usually moves through all three: open up, narrow down, decide, then wri
 ## Resume
 
 Read every doc in the set and its mark. Summarize in a few lines: approved docs, drafted docs, the doc to continue. Continue at the first doc in the order above that is not approved. Re-read the approved docs before you ask anything, so you carry their answers forward.
-
-## What real sessions taught
-
-Each lesson below states the target, then the failure that taught it.
-
-- **Judge a doc by how fast a reader finds a fact, not by its line count.** Keep one blank line around each block, and use a table where a list would need sub-items. Sessions met line limits by deleting blank lines, and doubled a doc with nested lists.
-- **Give each section its description and guidelines, not only rules.** A rewrite that cut every repeat left docs nobody could learn from.
-- **Pick the format by the shape of the data, even when the same records appear in another doc.** Turning a table into inline links to avoid a repeat made a README harder to read.
-- **Keep one dated clause of history per decision.** Removing every date left rules nobody could explain.
-- **Mark a goal or criterion met only with a measurement or the user's own report.** A rewrite marked criteria met because the old text did not say "open".
-- **Write each principle as a choice a sensible team could reverse, with one thing it refuses.** Principles written as beliefs, screen rules or model choices were agreed with, and then settled nothing.
-- **Give every goal a number and a method, or mark it open.** "Fast" and "most of the time" cannot fail, so they cannot guide a decision.
-- **Search the code and the docs for references before a heading changes.** Renamed headings broke comments that pointed to them.
-- **Agree one doc, write it, then move to the next.** Drafting three docs before the first is agreed wastes the user's time.
-- **Match the conversation to where the user is.** Discuss while the idea forms, brainstorm when it stalls, and ask for a decision when a choice is ready. A session run as a questionnaire felt like filling in a form.
-- **When a rule changes, check the docs written under the old one.** Version 0.2.0 changed five rules, and five docs kept the old ones until the next audit.
-- **Let a reader who did not write the change measure the goals.** The author of a rewrite marked two goals met, and an independent count failed both.
