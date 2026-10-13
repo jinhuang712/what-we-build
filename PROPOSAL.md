@@ -16,14 +16,14 @@ Agents write documents faster than people think, and they fill every gap with a 
 
 | Before agents | With agents |
 |---|---|
-| Docs are slow to write, so few exist | An agent writes ten docs in an afternoon |
+| Docs are slow to write, so few exist | An agent writes a whole doc set in one sitting |
 | The author decides each line | The agent fills each gap with a guess |
 | Docs drift slowly | Every session adds a little, in a new place |
 | A reader opens one doc to find a fact | A reader opens all of them |
 
 ## Pain points
 
-The numbers come from one real project, a macOS terminal built with coding agents over two weeks.
+The numbers come from one real project built with coding agents over two weeks.
 
 1. **Every fact in several places.** "What we will not build" was written in five docs: philosophy, goals, features, roadmap and the command reference.
 2. **Docs that tire the reader.** The design doc had 489 lines, and the roadmap 273 lines of build logs: "Checked headless…", "Not seen…".
@@ -56,7 +56,7 @@ This repo's own docs follow the idea.
 | Every fact in several places | One question per doc (above). A placement test gives each new fact its home. Other docs link to it. |
 | Docs that tire the reader | Wording rules, a style per doc, and history kept to one dated clause per decision. |
 | Goals that are wishes | Each goal needs a number. Without one, it stays open. |
-| Principles that are features | Each principle must be able to reject a real feature. |
+| Principles that are features | Each principle picks a side a sensible team could reverse, and names one thing it refuses. |
 | Agents that agree too fast | Discussion and brainstorming before decisions, a recommendation with a reason when a choice is ready, and no doc before its key points are agreed. |
 
 Underneath all five: **the user decides.** The skill asks and recommends. It does not choose.
@@ -69,17 +69,18 @@ The user types `/what-we-build` in an empty folder and says what they want to bu
 PROPOSAL.md answers: why did we start this?
 
 Agent: Let's list what hurts first, as fast as it comes. I'll start:
-       hunting through tabs, losing the thread, history scattered across folders.
-User:  Add one: copying a table cell copies the whole row.
+       receipts lost in email, card lines with no receipt,
+       an evening each month matching them by hand.
+User:  Add one: finance asks for the same receipt twice.
 Agent: Four pains. If you could fix only one, which would it be?
-       A. Hunting through tabs: it costs attention every few minutes (recommended)
-       B. Losing the thread
+       A. Matching by hand: it costs an evening every month (recommended)
+       B. Lost receipts
        C. Something else: ...
 ```
 
 - **Talk, not a form:** discussion and brainstorming open each doc, and a recommended choice closes each point.
 - **In order:** proposal, philosophy, goals, features, designs, roadmap, README. Each doc is written only after its key points are agreed.
-- **Strict where it counts:** a pain needs an example, a principle must reject a real feature, a goal needs a number, a decision needs a reason.
+- **Strict where it counts:** a pain needs an example, a principle must pick a side and refuse one thing, a goal needs a number, a decision needs a reason and the option it beat.
 - **Marked as it goes:** each doc is `drafted` until the user approves it. `/what-we-build resume` continues at the first doc that is not approved.
 - **For docs that already sprawl:** `/what-we-build revisit` audits them, agrees the roles with the user and rewrites them.
 
@@ -111,10 +112,10 @@ Developers who start a project with a coding agent and want the thinking written
 
 | Risk | Mitigation |
 |---|---|
-| The user wants the docs, not the talk | The skill drafts quickly once a doc's key points are agreed. The talk is short questions with recommendations. |
+| The user wants the docs, not the talk | The skill drafts quickly once a doc's key points are agreed. A recommendation comes with every choice, so a ready decision takes one answer. |
 | Too many docs for a small project | Seven core docs. The rest only when needed. |
-| The skill itself grows too long | `SKILL.md` stays under 500 lines. Detail lives in reference files. |
-| The agent pads or splits text | Wording rules and a list of mistakes seen in real sessions. |
+| The skill itself grows too long | `SKILL.md` has a line limit (GOALS.md G6). Detail lives in reference files. |
+| The agent pads or splits text | Wording rules and the lessons from real sessions. |
 
 ## How we know it works
 

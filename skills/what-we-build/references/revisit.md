@@ -14,14 +14,31 @@ Read every doc, and report what you find without editing anything. The audit is 
 | Facts in more than one doc | a table: the fact → every doc that states it in full |
 | Wrong home | facts that fail the placement test for the doc they sit in |
 | Thin sections | sections with only rules or tables, and no description of what they are or why |
-| Unsourced numbers | every number with no measurement, file or person behind it |
+| Unsourced numbers | every number that states a fact with no measurement, file or person behind it |
+| Unverified claims | statements about behavior (commands, install steps, names) that nobody has run |
 | Restated code | text that repeats the code, config or command output, with no reason the code cannot give |
+| Principles that pick no side | principles that fail the opposite, case or cost test, refuse nothing, or make a choice that names a feature, and design principles with no cost or no check |
+| Words with two meanings | one word used for two things, such as "session" for a tool session and a conversation |
+| Docs under an older rule | docs last changed before the skill's rules last changed, checked against the current rules |
 | Stale claims | statements the code or newer docs contradict, with `file:line` on both sides |
 | Broken links | `scripts/check_links.py` |
 | Cited headings | `git grep -n "<DOC>.md →"` and `git grep -n "<DOC>.md#"` across the code and docs |
 | Goals | every goal in GOALS.md measured on the docs themselves where it can be, for example "one home per fact" |
 
-Spread the reading across subagents when the set is large. Ask each one for a table with evidence, not a summary.
+Spread the reading across subagents when the set is large. Ask each one for a table with evidence, not a summary. Let at least one reader be someone who did not write the docs, because an author reads what they meant, not what they wrote.
+
+### Give each conflict its cause
+
+A conflict between the docs and the skill is a signal, not only an error. Its cause decides what changes:
+
+| Cause | What changes |
+|---|---|
+| The doc did not follow the rule | the doc |
+| The rule changed after the doc was written | the doc, and the habit of checking old docs when a rule changes |
+| Two rules collide | the skill: settle which rule wins, and when |
+| The rule assumes another kind of project | the skill: widen the rule |
+| No rule covers the case | the skill: add the rule |
+| The author graded their own work | the measurement: repeat it with another reader |
 
 ## 2. Agree on roles
 
@@ -85,10 +102,10 @@ Give the user the paths, and a table of what changed in each doc. Commit only af
 
 Each lesson states the target, then the failure that taught it.
 
-- **Ask for quality, not a line count.** A brief that said "40–60% fewer lines" got a doc that doubled, because the writer split long bullets into nested sub-lists.
+- **Ask for quality, not a line count.** A brief that asked for a line-count cut got a doc that doubled, because the writer split long bullets into nested sub-lists.
 - **Keep blank lines around every block.** A hard line limit was met by deleting every blank line, and the doc got harder to read.
 - **Keep history short, with its reasons.** "Remove history" removed the reasons behind decisions. The user wanted history short, not gone.
 - **Mark a criterion met only with evidence.** A rewrite marked two exit criteria met because the old text did not say "open".
-- **Keep principles to values that can reject a feature.** Principles rewritten "macro" still named features. Fewer, truer principles beat many diluted ones.
+- **Write each principle as a choice that picks a side.** Principles rewritten at a higher level still named features, and a premise no team would reverse settled nothing. Fewer, truer principles beat many diluted ones.
 - **Keep descriptions and guidelines while cutting repeats.** A revisit that cut every repeat left docs too thin to learn from.
 - **Restore a half-written file from git before starting again.** A subagent stopped halfway left a file half rewritten.

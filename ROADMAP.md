@@ -2,9 +2,11 @@
 
 # Roadmap
 
-Where what-we-build stands, and what comes next. Each milestone is a usable state of the skill, and its exit criteria point to [GOALS.md](GOALS.md).
+Where what-we-build stands, and what comes next. Each milestone is a usable or proven state of the skill, and its exit criteria point to [GOALS.md](GOALS.md).
 
-**Current milestone:** M2. Version 0.2.0 came from the skill's first real use: a revisit of this repo. The next step is a new project.
+Status: ✅ done · 🟨 in progress · ⬜ not started.
+
+**Current milestone:** M2. The skill has been used on this repo, twice. It has not yet been used on a new project.
 
 ## Overview
 
@@ -12,7 +14,7 @@ Where what-we-build stands, and what comes next. Each milestone is a usable stat
 |---|---|---|---|---|
 | **M1** Write and publish | the skill, its guides and checks, this repo's docs, a public repo | F1–F6 | — | ✅ |
 | **M2** First real use | the skill used for real, and fixed from what the sessions show | F1–F3 | M1 | 🟨 |
-| **M3** Evals | test prompts with and without the skill, scored | F1–F3 | M2 | ⬜ |
+| **M3** Proven useful | runs with the skill beat runs without it | F1–F3 | M2 | ⬜ |
 
 ## M1 — Write and publish ✅
 
@@ -30,14 +32,15 @@ Where what-we-build stands, and what comes next. Each milestone is a usable stat
 
 | ID | What it delivers | Note |
 |---|---|---|
-| M2.0 | This repo revisited with the skill's own revisit mode, released as 0.2.0 | 2026-10-13. First run of F3. Measured G2 and G5 |
-| M2.1 | A new project's 7 core docs, drafted and approved with the skill | |
-| M2.2 | A resumed session, to test the marks | |
-| M2.3 | Fixes to the skill from what the sessions showed | |
+| M2.0 | The first revisit of this repo, released as 0.2.0 | 2026-10-13 |
+| M2.1 | A second revisit of this repo: 33 conflicts between the docs and the skill, each with its cause, released as 0.3.0 | 2026-10-13 |
+| M2.2 | A new project's 7 core docs, drafted and approved with the skill | |
+| M2.3 | A resumed session, to test the marks | |
+| M2.4 | Fixes to the skill from what the sessions showed | |
 
 **Exit criteria:** GOALS.md G1–G5 and G8, measured on a new project.
 
-## M3 — Evals ⬜
+## M3 — Proven useful ⬜
 
 | ID | What it delivers | Note |
 |---|---|---|

@@ -2,11 +2,13 @@
 
 # Features
 
-What what-we-build does today, and what it will and won't do. Each feature is described from the user's side: what you type, what you see, what you decide.
+What what-we-build does today, and what it will and won't do. Each feature is described from the user's side: what you type, what you see, what you decide. How far each feature has been used in real life is in [ROADMAP.md](ROADMAP.md).
+
+Two words have one meaning each here. A **session** is one what-we-build conversation, from `/what-we-build` to the last approval. A **sitting** is one Claude Code session. A session can span several sittings, through resume.
 
 Status: ✅ built · 🚧 built, with the gap named in its section · ⬜ planned.
 
-## F1 — New project: talk it through 🚧
+## F1 — New project: talk it through ✅
 
 A session turns an idea into the founding documents of a project. You bring one or two sentences. The skill talks each document through with you until its key points are clear, then writes it down. Some points need discussion, some a brainstorm, and some a clear choice. You stay in charge throughout: every choice comes with a recommendation, and nothing is written before you agree.
 
@@ -15,17 +17,26 @@ A session turns an idea into the founding documents of a project. You bring one 
 | Frame | Describe the idea and who it is for | A one-line summary of what the folder already holds |
 | Doc set | Confirm or change the recommended docs | The 7 core docs, plus the optional ones the project needs |
 | Each doc | Talk each point through: discuss it, brainstorm it, or pick from options | A recommendation with its reason whenever a choice is ready |
+| Each doc | Hear what does not fit, and keep or drop it | One push-back with its reason, such as an adjective where a goal needs a number |
 | Each doc | Agree on the doc's key points | The doc, written and marked `drafted` |
 | Each doc | Approve it, or ask for changes | The mark becomes `approved` |
 | Close | Read the summary | Each doc's status, and the questions you still own |
 
 The docs come in order: PROPOSAL → PHILOSOPHY → GOALS → FEATURES → DESIGNS → ROADMAP → README. Each one builds on the ones before it, so you never answer the same question twice.
 
-Gap: not yet used on a new project.
+**Choosing the mode.** `/what-we-build` alone reads the folder and picks the mode. An argument picks it for you: `new`, `resume` or `revisit`.
 
-## F2 — Resume 🚧
+| The folder holds | The skill |
+|---|---|
+| No founding docs | starts a new project |
+| Docs where the first are approved and the rest drafted or missing | offers to resume |
+| Docs that are all drafted, as after a revisit | asks whether you want to approve them or revisit them |
+| Docs without marks | offers to revisit |
+| Something that disagrees with your request | asks you |
 
-A session can stop at any point and pick up later. Each drafted doc carries a mark on its first line, invisible when rendered:
+## F2 — Resume ✅
+
+A session can stop at any point and pick up in a later sitting. Each drafted doc carries a mark on its first line, invisible when rendered:
 
 ```markdown
 <!-- what-we-build: drafted 2026-10-13 -->
@@ -33,21 +44,18 @@ A session can stop at any point and pick up later. Each drafted doc carries a ma
 
 The mark becomes `approved` when you approve the doc, and goes back to `drafted` whenever the doc is edited again. `/what-we-build resume` reads the marks, tells you where the session stopped, and continues at the first doc that is not approved.
 
-Gap: not yet used on a new project.
+## F3 — Revisit ✅
 
-## F3 — Revisit 🚧
-
-`/what-we-build revisit` cleans up a doc set that overlaps, sprawls, reads thin or drifted from the code. It audits every doc, agrees each doc's role with you, rewrites, checks the result against the old version, and shows you the changes before anything is committed.
+`/what-we-build revisit` cleans up a doc set that overlaps, sprawls, reads thin or drifted from the code. It audits every doc, gives each conflict its cause, agrees each doc's role with you, rewrites, checks the result against the old version, and shows you the changes before anything is committed.
 
 | Stage | What you get |
 |---|---|
-| Audit | Tables of facts written in more than one place, thin sections, numbers with no source, and stale claims |
+| Audit | Tables of facts written in more than one place, thin sections, numbers with no source, unverified claims, and stale claims |
+| Causes | Each conflict with its cause, so you see whether the doc or the skill should change |
 | Roles | Each doc's question and boundaries, for you to confirm |
 | Rewrite | The docs, rewritten one at a time |
-| Verify | Lost facts, broken links and unsupported "met" claims, checked |
+| Verify | Lost facts, broken links and unsupported "met" claims, checked by a reader who did not write the change |
 | Review | The changes, for you to read before any commit |
-
-Gap: run once, on this repo (2026-10-13). Not yet run on another project.
 
 ## F4 — The doc set ✅
 
@@ -62,15 +70,19 @@ For each kind, the skill carries a guide: what the doc is for, where it sits in 
 
 ## F5 — Wording rules ✅
 
-The skill writes plain, precise English, so a reader finds a fact fast and understands it the first time.
+The docs come out in plain, precise English, so a reader finds a fact fast and understands it the first time.
 
-- Each section opens with what it is and why it matters, then guidelines, then the specifics.
-- One name per thing, short sentences, conditions first, active voice.
-- A table for records, a list for parallel items, sentences for reasoning.
-- Numbers instead of adjectives, each with a source.
-- History as one dated clause per decision.
+| Rule | What you see in the docs |
+|---|---|
+| Three layers | Each section opens with what it is, then guidelines, then the specifics |
+| One name per thing | A word means the same thing in every doc |
+| Short sentences | One point per sentence, with conditions first |
+| Format by shape | A table for records, a list for parallel items, sentences for reasoning |
+| Numbers with sources | A number instead of an adjective, and a source for every number that states a fact |
+| Short history | One dated clause per decision |
+| Shared status marks | ✅ 🚧 🟨 ⬜ ❌ mean the same in every doc |
 
-Each doc has its own style. For example, GOALS is a short intro and one table, and PHILOSOPHY is short prose with one section per principle.
+Each doc has its own style. For example, GOALS is a short intro and one table, and PHILOSOPHY is one screen: a short preamble, one line per principle, and a tie-break.
 
 ## F6 — Checks ✅
 
@@ -86,7 +98,6 @@ Two scripts check a doc set. Both run on Python's standard library, with nothing
 | Idea | Note |
 |---|---|
 | Place one fact | `/what-we-build place "<fact>"` runs the placement test on one new fact and edits the doc that owns it |
-| Evals | Test prompts run with and without the skill, scored, to show what it changes |
 | Wording rules in other languages | One file per language, written in that language, not translated |
 
 ## Not planned
@@ -96,7 +107,7 @@ Two scripts check a doc set. Both run on Python's standard library, with nothing
 | Starting on its own | A session needs the user's full attention, so it starts when the user types it. |
 | Drafting without a conversation | Text nobody decided is the problem the skill exists to solve. |
 | A fixed questionnaire or template | Fixed questions fill forms. Decisions come from a conversation. |
-| More docs than the project needs | Optional docs join only when they have a job. A doc with no job is a doc nobody keeps true. |
+| More docs than the project needs | Optional docs join only when they have a job, because only a doc with a job gets kept true. |
 | Choosing how a product should feel | That is the user's call. The skill records the user's words when they bring them. |
 | User manuals (tutorials, how-to guides, API references) | They answer other questions, after the founding docs exist. |
 | Standard texts (LICENSE, CODE_OF_CONDUCT) | They need a choice of a standard text, not a discussion. |

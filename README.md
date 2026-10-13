@@ -40,7 +40,7 @@ claude plugin marketplace add jinhuang712/what-we-build
 claude plugin install what-we-build@what-we-build
 ```
 
-The command is then `/what-we-build:what-we-build`.
+The command is then `/what-we-build:what-we-build`, because a plugin's skills carry the plugin's name (not yet verified with this plugin).
 
 ### As a personal skill
 
@@ -59,7 +59,7 @@ The command is then `/what-we-build`. Start a new Claude Code session after you 
 | You stopped halfway | `/what-we-build resume` |
 | Your docs repeat each other or drifted from the code | `/what-we-build revisit` |
 
-It starts only when you type it.
+It starts only when you type it. Installed as a plugin, type `/what-we-build:what-we-build` in place of `/what-we-build`.
 
 ## Known limits
 
