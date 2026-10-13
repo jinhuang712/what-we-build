@@ -15,7 +15,7 @@ For each document: the question it answers, what it owns and leaves out, its voi
 
 **Answers:** Why did we start this?
 
-**Owns:** the hook, the shift that makes the project necessary, the pain points, the one idea, what we want, how it works in one sample, what we don't want, who it is for, the approach, the risks, how we will know it works.
+**Owns:** the shift that makes the project necessary, the pain points, the one idea that makes it different, what we want, a sample of it working, what we don't want, who it is for, the approach, the risks, how we will know it works.
 
 **Leaves out:** exact behavior (FEATURES), numbers to check (GOALS, but it may quote the headline ones), status (ROADMAP), the list of docs (README).
 
@@ -25,10 +25,10 @@ For each document: the question it answers, what it owns and leaves out, its voi
 
 1. What changed in the world that makes this project necessary now?
 2. What hurts today? Ask for each pain point with a concrete example or a number.
-3. Describe the moment the pain happens, as a scene the reader has lived. This becomes the hook.
+3. Describe the moment the pain happens, as a scene the reader has lived. (This becomes the hook.)
 4. What is the one idea that makes this different? Say it in one sentence.
 5. For each pain: what should happen instead?
-6. Show it working: one concrete example of the product in use, such as a conversation, a command and its output, or a screen.
+6. Show it working: one concrete example of the product in use (a conversation, a command and its output, a screen).
 7. What must this project never become? Ask for the reason of each.
 8. Who is it for? Who is the first user?
 9. What is the approach in one line per choice: platform, language, core model, what it builds on?
@@ -46,7 +46,7 @@ Proposed <YYYY-MM-DD>. For what is built today, see ROADMAP.md.
 ## In short            (the hook: a scene the reader knows, then the one-line answer)
 ## The shift            (a before/after table)
 ## Pain points          (numbered, one bold line each, with an example)
-## The idea             (one bold sentence, a table or diagram only if it helps)
+## The idea             (one bold sentence; a table or diagram only if it helps)
 ## What we want         (table: pain → what the project does)
 ## How it works         (one concrete sample, a few lines, link FEATURES.md)
 ## What we don't want   (table: not this → why)
