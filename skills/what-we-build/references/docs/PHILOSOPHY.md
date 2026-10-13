@@ -29,7 +29,7 @@ It comes second in a session: it turns the pain and the wants in the proposal in
 |---|---|---|
 | "Quality matters." | "**Finished over first.** No beta features: a feature ships done, or it waits." | A choice a sensible team could reverse |
 | "Simplicity." | "**Fewer features over more options.** No plugin system: a needed feature goes into the core." | A side, and what it refuses |
-| "Users can export their data as CSV." | Move it to FEATURES.md. Keep the choice behind it here: "**The user's data over our lock-in.**" | A feature is not a principle |
+| "Users can export their data as CSV." | Move it to FEATURES.md. Keep the choice behind it here: "**The user's data over our lock-in.** No closed format: every record leaves as a plain file." | A feature is not a principle |
 | "People are busy." | Move it to the preamble. It is true for every team, so it settles nothing. | A premise, not a choice |
 
 ## Explore

@@ -18,7 +18,7 @@ It comes fourth in a session: each feature delivers a want from the proposal, an
 - **State the defaults, and every setting with its key.** Each setting needs a reason, because a setting is a decision handed back to the user.
 - **Name the gap** on every 🚧 feature, so nobody mistakes "built" for "finished".
 - **Give every *Not planned* item a reason.** This list is where people look before proposing something, and a reason stops the same proposal from coming back.
-- **Move an item out of *Later* once it has a milestone.** It then lives in ROADMAP.md, so *Later* only holds what is not yet scheduled.
+- **Move an item out of *Later* once it has a milestone.** It becomes a ⬜ planned feature here, and ROADMAP.md schedules it, so *Later* only holds what is not yet scheduled.
 - **Keep progress out.** "Not yet used in real life" is progress, and it lives in ROADMAP.md. A 🚧 gap names what the feature lacks.
 - **Describe behavior, not code.** "An invoice goes out on the first of each month" belongs here. "A cron job reads the `invoices` table at 00:00 UTC" belongs in DESIGNS.
 
@@ -28,7 +28,7 @@ It comes fourth in a session: each feature delivers a want from the proposal, an
 |---|---|---|
 | "Smart invoicing." | "An invoice goes out on the first of each month. When a payment fails, the app tries again after 3 days, then emails the customer." | What happens, and when |
 | "Uses a cron job and a retry queue." | Move it to DESIGNS.md. | Implementation, not behavior |
-| "Configurable reminders." | "One reminder, 3 days before the due date. Setting: `reminders.enabled`, on by default." | The default and the one setting |
+| "Configurable reminders." | "One reminder, 3 days before the due date. Setting: `reminders.enabled`, on by default, because a customer who pays by standing order may not want reminders." | The default, and the one setting with its reason |
 
 ## Explore
 
@@ -49,12 +49,17 @@ It comes fourth in a session: each feature delivers a want from the proposal, an
 <one line per status mark: ✅ built · 🚧 built with a gap · ⬜ planned>
 
 ## F1 — <name> ⬜
+
 <a short description: what it gives the user>
+
 <behavior, as short lines or a table>
-Settings: <none, or each with its key>
+
+Settings: <none, or each with its key and reason>
+
 Gap: <for 🚧 only>
 
 ## Later, if needed   (table: idea → note)
+
 ## Not planned        (table: not this → why)
 ```
 

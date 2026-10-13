@@ -43,10 +43,15 @@ Usually nothing new: draft it from the approved docs. Then ask:
 <one or two sentences: what it is, and the constraint that sets it apart>
 
 ## What it does        (a few bullets)
+
 ## Install
+
 ## Use                 (or: When to reach for it, as a table)
+
 ## Known limits
+
 ## Documents           (a link to every other doc)
+
 ## License
 ```
 

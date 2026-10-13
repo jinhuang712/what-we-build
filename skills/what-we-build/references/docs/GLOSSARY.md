@@ -13,7 +13,7 @@ The glossary fixes the project's words: one name per thing, each with a one-line
 
 | Weak | Strong |
 |---|---|
-| Account, user, member and customer used for one thing | "**Member:** a person in a workspace. (Not: user, account.)" |
+| Account, user, member and customer used for one thing | "**Member:** a person in a workspace. (Not: user, account, customer.)" |
 
 ## Explore
 

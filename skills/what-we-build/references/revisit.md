@@ -42,7 +42,7 @@ A conflict between the docs and the skill is a signal, not only an error. Its ca
 
 ## 2. Agree on roles
 
-Show the roles table from SKILL.md, adjusted to this project, and show what moves where. Then ask one decision at a time:
+Show the table in SKILL.md → *The doc set*, adjusted to this project, and show what moves where. Then ask one decision at a time:
 
 - Which docs keep which role?
 - Which docs merge or go? Deleting a doc needs the user's yes, even though git keeps it.
@@ -63,7 +63,7 @@ Repo: <path>. Edit only <DOC>.md. Leave the commit to the lead.
 
 Role: <DOC>.md answers "<question>". It owns <...>. It leaves out <...>, which lives in <...>.
 
-Keep: every rule, key, flag, number, path and command that is true now. Every heading that code or docs cite (list them). Status marks. Code blocks, copied exactly.
+Keep: every rule, key, flag, number, path and command that is true now. Every heading that code or docs cite (list them). Status marks (✅ 🚧 🟨 ⬜ ❌). Code blocks, copied exactly.
 
 Remove: verification logs, mockup stories, who asked, "used to" stories, and text that restates the code.
 
@@ -77,6 +77,8 @@ Status: mark a goal met only with evidence. Keep every cited heading.
 
 Wording: <paste the key rules from references/wording.md>.
 
+Lessons: <paste SKILL.md → What real sessions taught>.
+
 Report: old → new line count, facts you dropped that someone might miss, headings changed, claims you suspect are stale (list them, leave them unchanged).
 ```
 
@@ -87,12 +89,12 @@ Check the files yourself. A subagent's report says what it meant to do, not what
 - **Line counts:** `wc -l`. A doc that grew or shrank by more than a third needs a reason.
 - **Lost facts:** compare with `git show HEAD:<file>`. Spot-check the facts each report says it dropped.
 - **Links and anchors:** `scripts/check_links.py`.
-- **Layout:** `scripts/blank_lines.py`. It only adds or removes blank lines.
+- **Layout:** one blank line before and after every heading, list, table and code fence ([wording.md](wording.md) → *Lists and tables*).
 - **Evidence:** every "met", "done" or "verified" points to a measurement, a test or the user's word.
 - **Cited headings:** run the grep from the audit again.
 - **Goals:** measure the goals from the audit again, and record both results with their dates.
-- **Marks:** every edited doc carries `drafted` with the date of the edit.
-- **Changelog:** add an entry for what changed.
+- **Marks:** every edited doc that carries a mark says `drafted`, with the date of the edit.
+- **Changelog:** when the project keeps one, add an entry under *Unreleased*.
 
 ## 5. Review
 
@@ -100,12 +102,6 @@ Give the user the paths, and a table of what changed in each doc. Commit only af
 
 ## Lessons from real revisits
 
-Each lesson states the target, then the failure that taught it.
+The lessons in SKILL.md → *What real sessions taught* apply to every revisit. One more is specific to rewriting with subagents. It states the target, then the failure that taught it.
 
-- **Ask for quality, not a line count.** A brief that asked for a line-count cut got a doc that doubled, because the writer split long bullets into nested sub-lists.
-- **Keep blank lines around every block.** A hard line limit was met by deleting every blank line, and the doc got harder to read.
-- **Keep history short, with its reasons.** "Remove history" removed the reasons behind decisions. The user wanted history short, not gone.
-- **Mark a criterion met only with evidence.** A rewrite marked two exit criteria met because the old text did not say "open".
-- **Write each principle as a choice that picks a side.** Principles rewritten at a higher level still named features, and a premise no team would reverse settled nothing. Fewer, truer principles beat many diluted ones.
-- **Keep descriptions and guidelines while cutting repeats.** A revisit that cut every repeat left docs too thin to learn from.
 - **Restore a half-written file from git before starting again.** A subagent stopped halfway left a file half rewritten.

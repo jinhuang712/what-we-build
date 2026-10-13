@@ -2,7 +2,7 @@
 
 DESIGNS.md is the design as it stands today: the choices that shape how the project is built, what each one costs, and how to check that it still holds. Its reader is a developer about to change the code, who needs the rules that hold everywhere and the reasons behind choices that would otherwise look strange. It is not a tour of the code, and it is not a spec. The code shows what exists and how it works. This doc keeps what the code cannot say.
 
-It comes fifth in a session: it decides how the features will be built. A fact belongs here when it is about code, files, processes or a decision.
+It comes fifth in a session: it decides how the features will be built. A fact belongs here when it is about code, files, processes or a design decision.
 
 **Owns:** one paragraph on what goes in and what comes out; design principles grouped by area, each with its cost and a rule that shows it holds; the few big decisions, each with the option it beat, its reason and its date; and the open questions.
 

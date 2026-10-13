@@ -44,11 +44,14 @@ It comes sixth in a session: it schedules the features into milestones, and its 
 ## Overview   (table: milestone → delivers → features → depends on → status)
 
 ## M1 — <name> ⬜
+
 | ID | What it delivers | Note |
 |---|---|---|
+
 **Exit criteria:** GOALS.md G1 and G3.
 
 ## Later
+
 See FEATURES.md → Later, if needed.
 ```
 
