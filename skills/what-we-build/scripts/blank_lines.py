@@ -16,7 +16,7 @@ def kind(line):
     s = line.rstrip("\n")
     if not s.strip():
         return "blank"
-    if s.startswith("```"):
+    if s.lstrip().startswith(("```", "~~~")):
         return "fence"
     if s.startswith("#"):
         return "heading"
@@ -71,11 +71,11 @@ def fix(lines):
 
 
 for path in sys.argv[1:]:
-    with open(path) as f:
+    with open(path, encoding="utf-8") as f:
         old = f.readlines()
     new = fix(old)
     if [l for l in old if l.strip()] != [l for l in new if l.strip()]:
         sys.exit(f"{path}: a non-blank line would change, so nothing was written")
-    with open(path, "w") as f:
+    with open(path, "w", encoding="utf-8") as f:
         f.writelines(new)
     print(f"{path}: {len(old)} -> {len(new)}")

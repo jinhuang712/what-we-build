@@ -2,7 +2,15 @@
 
 ## Unreleased
 
-None yet.
+### This repo's docs
+
+- The README points to the roadmap for status, instead of a copy of the version and progress that had gone stale.
+- ROADMAP's question reads "When, and how far along?" in every doc, as in SKILL.md.
+- The proposal says "one sitting" for goal G1, as GOALS.md does.
+
+### Checks
+
+- `blank_lines.py` recognizes indented and `~~~` code fences, as `check_links.py` does, and reads and writes files as UTF-8.
 
 ## 0.3.0 — 2026-10-13
 
