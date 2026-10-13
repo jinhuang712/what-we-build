@@ -4,7 +4,7 @@
 
 > Talk a project into being, one document at a time.
 
-Proposed 2026-10-12. For what is built today, see [ROADMAP.md](ROADMAP.md).
+Proposed 2026-10-12. For where the work stands today, see [ROADMAP.md](ROADMAP.md).
 
 ## In short
 
@@ -18,7 +18,7 @@ Agents write documents faster than people think, and they fill every gap with a 
 |---|---|
 | Docs are slow to write, so few exist | An agent writes a whole doc set in one sitting |
 | The author decides each line | The agent fills each gap with a guess |
-| Docs drift slowly | Every session adds a little, in a new place |
+| Docs drift slowly | Every sitting adds a little, in a new place |
 | A reader opens one doc to find a fact | A reader opens all of them |
 
 ## Pain points
@@ -47,7 +47,7 @@ The numbers come from one real project built with coding agents over two weeks.
 | [ROADMAP](ROADMAP.md) | When, and how far along? |
 | [README](README.md) | What is this, and how do I start? |
 
-This repo's own docs follow the idea.
+This repo's own docs use the same set.
 
 ## What we want
 
@@ -79,9 +79,9 @@ Agent: Four pains. If you could fix only one, which would it be?
 ```
 
 - **Talk, not a form:** discussion and brainstorming open each doc, and a recommended choice closes each point.
-- **In order:** proposal, philosophy, goals, features, designs, roadmap, README. Each doc is written only after its key points are agreed.
+- **In order:** each doc builds on the ones before it, and is written only after its key points are agreed.
 - **Strict where it counts:** a pain needs an example, a principle must pick a side and refuse one thing, a goal needs a number, a decision needs a reason and the option it beat.
-- **Marked as it goes:** each doc is `drafted` until the user approves it. `/what-we-build resume` continues at the first doc that is not approved.
+- **Marked as it goes:** each doc stays `drafted` until the user approves it, so a session can stop and resume later.
 - **For docs that already sprawl:** `/what-we-build revisit` audits them, agrees the roles with the user and rewrites them.
 
 The exact behavior is in [FEATURES.md](FEATURES.md) → F1–F3.
@@ -90,7 +90,7 @@ The exact behavior is in [FEATURES.md](FEATURES.md) → F1–F3.
 
 | Not this | Why |
 |---|---|
-| A faster way to get confident text | Asking the agent directly already gives you 2,000 words about decisions nobody made. |
+| A faster way to get confident text | Asking the agent directly already gives you pages of confident text about decisions nobody made. |
 | A form to fill in | Templates and fixed questionnaires produce answers, not decisions. |
 | Something that runs on its own | A session needs your full attention, so it starts when you type it. |
 
@@ -105,7 +105,7 @@ Developers who start a project with a coding agent and want the thinking written
 - **One Claude Code skill,** started only by hand with `/what-we-build`.
 - **Three modes:** a new project, resuming a session, revisiting docs that drifted.
 - **Reference files loaded when needed,** so the skill stays short: one per doc, plus wording rules and the revisit procedure.
-- **Two checks** in Python with no dependencies: broken links, and blank lines around blocks.
+- **A link check** in Python with no dependencies: broken links and anchors.
 - **Distributed** as a public plugin, or as a folder linked into `~/.claude/skills`.
 
 ## Risks

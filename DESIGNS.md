@@ -2,7 +2,7 @@
 
 # Designs
 
-How what-we-build is built, and why. What goes in is a project folder and a conversation with the user. What comes out is a set of Markdown docs, each with a mark that says drafted or approved. In between is the skill: Markdown instructions that an agent reads, and two Python scripts that check the docs. What the skill does for the user is in [FEATURES.md](FEATURES.md).
+How what-we-build is built, and why. What goes in is a project folder and a conversation with the user. What comes out is a set of Markdown docs, each with a mark that says drafted or approved. In between is the skill: Markdown instructions that an agent reads, and a Python script that checks the docs' links. What the skill does for the user is in [FEATURES.md](FEATURES.md).
 
 ## Principles
 
@@ -14,11 +14,11 @@ Each principle names the choice, what it costs, and how to check that it holds.
 
 ### State
 
-- **The docs are the state.** A mark on each doc's first line over a separate state file. Cost: points agreed for a doc that is not drafted yet are lost when the sitting ends. Holds as: no file but the docs records progress.
+- **The docs are the state.** A mark on each doc's first line over a separate state file. Cost: points agreed for a doc that is not drafted yet are lost when the sitting ends. Holds as: no file but the docs records where a session stopped.
 
 ### Portability
 
-- **No dependencies.** Markdown and Python's standard library. Cost: the checks read Markdown with regular expressions instead of a parser. Holds as: the scripts import only the standard library.
+- **No dependencies.** Markdown and Python's standard library. Cost: the link check reads Markdown with regular expressions instead of a parser. Holds as: every script imports only the standard library.
 
 ### Words
 
@@ -27,8 +27,7 @@ Each principle names the choice, what it costs, and how to check that it holds.
 
 ### Checks
 
-- **Scripts check form, readers check meaning.** The scripts check links and blank lines, not facts. Cost: a wrong fact passes every script. Holds as: a revisit ends with a reader who did not write the change checking the claims and the goals ([SKILL.md](skills/what-we-build/SKILL.md) → Revisit, step 4).
-- **Repair layout, never content.** Cost: `blank_lines.py` stops on a file it could almost fix. Holds as: after a run, `git diff` shows changes to blank lines only.
+- **Scripts check links, readers check the rest.** The link check finds broken links, not wrong facts or missing blank lines. Cost: a wrong fact or a missing blank line passes every script. Holds as: a revisit ends with a reader who did not write the change checking the claims and the goals ([SKILL.md](skills/what-we-build/SKILL.md) → Revisit, step 4).
 
 ### Testing
 

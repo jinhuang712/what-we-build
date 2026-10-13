@@ -50,18 +50,28 @@ It comes first in a session, because every other doc builds on the pain it names
 
 > <tagline>
 
-Proposed <YYYY-MM-DD>. For what is built today, see ROADMAP.md.
+Proposed <YYYY-MM-DD>. For where the work stands today, see ROADMAP.md.
 
 ## In short            (the hook: a scene the reader knows, then the one-line answer)
+
 ## The shift            (a before/after table)
+
 ## Pain points          (numbered, one bold line each, with an example)
+
 ## The idea             (one bold sentence; a table or diagram only if it helps)
+
 ## What we want         (table: pain → what the project does)
+
 ## How it works         (one concrete sample, a few lines, link FEATURES.md)
+
 ## What we don't want   (table of a few stances; link FEATURES.md → Not planned for the full list)
+
 ## Who it is for
+
 ## Approach
+
 ## Risks                (table: risk → mitigation)
+
 ## How we know it works (link GOALS.md)
 ```
 

@@ -1,10 +1,10 @@
 # Decision records
 
-A decision record holds one decision in its own file, when DESIGNS.md has too many to read. It is the ADR (architecture decision record) format.
+A decision record holds one decision in its own file, when the decision needs more context than one line, or DESIGNS.md has too many to read. It is the ADR (architecture decision record) format.
 
 **Owns:** one decision per file (`docs/decisions/0001-<slug>.md`): the context, the decision with the option it beat, and its reason, in one to three sentences. Add the other alternatives or the consequences only when they are not obvious.
 
-**Add when** DESIGNS.md holds so many decisions that it becomes hard to read. Keep each decision's one-line summary in DESIGNS.md, with a link to its record.
+**Add when** a decision needs more context than one line holds, or DESIGNS.md holds so many decisions that it becomes hard to read. Keep each decision's one-line summary in DESIGNS.md, with a link to its record.
 
 ## Guidelines
 

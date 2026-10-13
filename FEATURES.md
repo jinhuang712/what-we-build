@@ -29,9 +29,9 @@ The docs come in order: PROPOSAL → PHILOSOPHY → GOALS → FEATURES → DESIG
 | The folder holds | The skill |
 |---|---|
 | No founding docs | starts a new project |
-| Docs where the first are approved and the rest drafted or missing | offers to resume |
+| Docs where the first are approved and the rest drafted or missing | resumes |
 | Docs that are all drafted, as after a revisit | asks whether you want to approve them or revisit them |
-| Docs without marks | offers to revisit |
+| Docs without marks | starts a revisit |
 | Something that disagrees with your request | asks you |
 
 ## F2 — Resume ✅
@@ -50,11 +50,11 @@ The mark becomes `approved` when you approve the doc, and goes back to `drafted`
 
 | Stage | What you get |
 |---|---|
-| Audit | Tables of facts written in more than one place, thin sections, numbers with no source, unverified claims, and stale claims |
+| Audit | Tables of what the docs get wrong, such as facts written in more than one place, facts in the wrong doc and stale claims, each with its file and line |
 | Causes | Each conflict with its cause, so you see whether the doc or the skill should change |
 | Roles | Each doc's question and boundaries, for you to confirm |
-| Rewrite | The docs, rewritten one at a time |
-| Verify | Lost facts, broken links and unsupported "met" claims, checked by a reader who did not write the change |
+| Rewrite | The docs, rewritten one at a time or in parallel |
+| Verify | Lost facts against the old version, broken links, unsupported "met" claims, and the goals that can be measured on the docs, measured by a reader who did not write the change |
 | Review | The changes, for you to read before any commit |
 
 ## F4 — The doc set ✅
@@ -66,7 +66,7 @@ The skill knows 17 kinds of document: 7 core, and 10 optional that join only whe
 | Core | PROPOSAL, PHILOSOPHY, GOALS, FEATURES, DESIGNS, ROADMAP, README |
 | Optional | UIUX, CLI, GLOSSARY, AGENTS, CHANGELOG, TODO, CONTRIBUTING, SECURITY, RUNBOOK, decision records |
 
-For each kind, the skill carries a guide: what the doc is for, where it sits in a session, which facts belong in it, what to push back on, guidelines with their reasons, weak and strong examples, the points to explore, a skeleton and the signs that it is done. It also maps other common names to the set, for example a PRD to FEATURES, or an ARCHITECTURE.md to DESIGNS.
+For each kind, the skill carries a guide. The agent reads it before it starts that doc, so the questions, the push-back and the doc's form fit that doc. It also maps other common names to the set, for example a PRD to FEATURES, or an ARCHITECTURE.md to DESIGNS.
 
 ## F5 — Wording rules ✅
 
@@ -84,14 +84,13 @@ The docs come out in plain, precise English, so a reader finds a fact fast and u
 
 Each doc has its own style. For example, GOALS is a short intro and one table, and PHILOSOPHY is one screen: a short preamble, one line per principle, and a tie-break.
 
-## F6 — Checks ✅
+## F6 — Link check ✅
 
-Two scripts check a doc set. Both run on Python's standard library, with nothing to install.
+A script checks the links in a doc set. It runs on Python's standard library, with nothing to install.
 
 | Command | What it does |
 |---|---|
 | `python3 scripts/check_links.py FILE.md ...` | Reports relative links and `#anchors` that do not resolve. Exits 1 when one is broken. |
-| `python3 scripts/blank_lines.py FILE.md ...` | Puts one blank line around headings, tables, lists and code fences. Stops when any other line would change. |
 
 ## Later, if needed
 
@@ -111,3 +110,4 @@ Two scripts check a doc set. Both run on Python's standard library, with nothing
 | Choosing how a product should feel | That is the user's call. The skill records the user's words when they bring them. |
 | User manuals (tutorials, how-to guides, API references) | They answer other questions, after the founding docs exist. |
 | Standard texts (LICENSE, CODE_OF_CONDUCT) | They need a choice of a standard text, not a discussion. |
+| A script that fixes blank lines | The skill's job is the conversation. The wording rules keep the blank lines while the agent writes. |

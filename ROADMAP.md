@@ -26,14 +26,14 @@ Status: ✅ done · 🟨 in progress · ⬜ not started.
 | M1.4 | This repo's docs, in the skill's own format | |
 | M1.5 | Public repo and plugin manifest, version 0.1.0 | 2026-10-12 |
 
-**Exit criteria:** GOALS.md G6 and G7. Both met (2026-10-12).
+**Exit criteria:** GOALS.md G6 and G7.
 
 ## M2 — First real use 🟨
 
 | ID | What it delivers | Note |
 |---|---|---|
 | M2.0 | The first revisit of this repo, released as 0.2.0 | 2026-10-13 |
-| M2.1 | A second revisit of this repo: 33 conflicts between the docs and the skill, each with its cause, released as 0.3.0 | 2026-10-13 |
+| M2.1 | A second revisit of this repo, released as 0.3.0 | 2026-10-13 |
 | M2.2 | A new project's 7 core docs, drafted and approved with the skill | |
 | M2.3 | A resumed session, to test the marks | |
 | M2.4 | Fixes to the skill from what the sessions showed | |

@@ -6,13 +6,7 @@ Write in your default voice. The rules shape clarity and form, not tone.
 
 ## Sections
 
-Every section has up to three layers, in this order:
-
-| Layer | Gives the reader |
-|---|---|
-| Description | what this part is and why it matters, in a short paragraph |
-| Guidelines | how to do it well, each with its reason |
-| Specifics | tables, skeletons, commands, examples |
+Every section has up to three layers: description, guidelines, then specifics. SKILL.md → *How each doc is written* says what each layer gives the reader.
 
 Put the answer first. When a section is long, its first sentence says what the section concludes. A reader who stops after one sentence should still leave with the point.
 
@@ -49,7 +43,7 @@ Put the answer first. When a section is long, its first sentence says what the s
 - Pick the format by the shape of the data, in every doc, even when the same records appear in another doc.
 - Keep one idea per list item and one idea per table cell.
 - Keep lists one level deep. When items need sub-items, use a table or split the topic.
-- Keep one blank line before and after every heading, list, table and code fence.
+- Keep one blank line before and after every heading, list, table and code fence. Without it, a paragraph right after a list joins the last item, and one right after a table becomes a table row.
 
 | Shape | Format |
 |---|---|
@@ -87,19 +81,9 @@ Use one set of marks across every doc, so a mark means the same thing wherever i
 ## History
 
 - Keep a decision's history as one clause: what, why, when. `Decided 2026-10-12: PostgreSQL over MongoDB, because every report joins orders to customers.`
-- A changed decision replaces the old one, with one clause of history: `Logs are kept 30 days, lowered on 2026-10-12 (was 90).`
+- A changed decision replaces the old one, with one clause of history: `Decided 2026-10-12: logs kept 30 days (was 90), because no bug report needed an older log.`
 - The story of how a decision was reached (what was checked, which mockup won, who asked) lives in git.
 
 ## Style by doc
 
-Each doc has its own form, so a reader knows what to expect before reading it.
-
-| Doc | Style |
-|---|---|
-| PROPOSAL | short sections that open with a scene, tables for comparisons, real numbers |
-| PHILOSOPHY | one screen: a short preamble, one line per principle with one refusal, then a tie-break |
-| GOALS | a short intro and one table of checks: measure, method, status |
-| FEATURES | one section per feature, a short description, then behavior in the present tense |
-| DESIGNS | one paragraph, principles grouped by area with their costs and checks, decisions as dated lines, open questions |
-| ROADMAP | one overview table, then one status table per milestone |
-| README | a short description, a few bullets, install, first use, limits, links |
+Each doc has its own form, so a reader knows what to expect before reading it. The form is in the *Style* section of the doc's guide in [docs/](docs/).

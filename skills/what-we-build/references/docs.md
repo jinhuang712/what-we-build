@@ -20,11 +20,11 @@ Every guide has the same parts, in the same order, so a reader finds the same th
 | Style | the doc's form |
 | Done when | the signs that the doc is ready for approval |
 
-The guides for optional docs are shorter. They keep the description, the boundaries and *Add when*, and add the other parts only where the doc needs them.
+The guides for optional docs are shorter. They keep the description, **Owns** and **Add when**, and add the other parts only where the doc needs them.
 
 ## How a guide drives a session
 
-Each step of working through a doc (SKILL.md → *Work through the docs*) takes its material from one part of the guide:
+Each step of working through a doc (SKILL.md → *3. Work through the docs, in order*) takes its material from one part of the guide:
 
 | Step | Reads |
 |---|---|
@@ -37,7 +37,7 @@ Each step of working through a doc (SKILL.md → *Work through the docs*) takes 
 
 ## Skeletons
 
-A skeleton is where a doc starts, not a form to fill in. Drop a heading marked *(optional)* when it has nothing to hold. Keep every other heading, and write "None yet" under it, so a reader sees the gap instead of missing it.
+A skeleton is where a doc starts, not a form to fill in. Keep every heading, and write "None yet" under one that has nothing to hold, so a reader sees the gap instead of missing it.
 
 ## Other names you may meet
 

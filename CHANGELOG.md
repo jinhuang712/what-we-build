@@ -2,15 +2,36 @@
 
 ## Unreleased
 
+### Sessions
+
+- The placement test sends a feature the project will not build to FEATURES.md → *Not planned*, as the rule on reasons already said, instead of to DESIGNS.md.
+- The draft step starts from the guide's skeleton and style, and names the wording rules.
+- A revisit brief carries the lessons from real sessions. The revisit procedure points to those lessons instead of repeating them.
+- A revisit resets a doc's mark and adds a changelog entry only where the doc carries a mark and the project keeps a changelog.
+
+### Doc guides
+
+- The skeletons keep a blank line around every block, so a doc copied from them no longer joins two lines or turns a line into a table row.
+- Each doc's form lives in its guide. The style table in the wording rules, which had drifted from the guides, is gone.
+- Every skeleton heading stays, with "None yet" when it has nothing to hold. No heading is marked optional.
+- A decision gets its own record when it needs more context than one line.
+- Examples follow the rules they teach: the FEATURES setting gives its reason, the PHILOSOPHY principle names its refusal, and the history example says why.
+- A *Later* item that gets a milestone becomes a planned feature, and the roadmap schedules it.
+
+### Wording
+
+- The blank-line rule says what a missing blank line breaks.
+
+### Checks
+
+- `blank_lines.py` is removed. The wording rules alone keep the blank lines.
+
 ### This repo's docs
 
 - The README points to the roadmap for status, instead of a copy of the version and progress that had gone stale.
 - ROADMAP's question reads "When, and how far along?" in every doc, as in SKILL.md.
 - The proposal says "one sitting" for goal G1, as GOALS.md does.
-
-### Checks
-
-- `blank_lines.py` recognizes indented and `~~~` code fences, as `check_links.py` does, and reads and writes files as UTF-8.
+- An audit of the repo's own docs against the skill's rules fixed most lines that broke a rule. Conflicts that need the owner's decision stay open.
 
 ## 0.3.0 — 2026-10-13
 

@@ -6,7 +6,7 @@ It comes third in a session: it turns the proposal's wants into numbers. A fact 
 
 **Owns:** goals as checks, each with an ID, the want it serves, a measure with a number, a method, where it was measured, and a status.
 
-**Leaves out:** anything vague, non-goals (FEATURES → *Not planned*), how anything works.
+**Leaves out:** anything vague, non-goals (FEATURES.md → *Not planned*), how anything works.
 
 **Push back on:** an adjective where a number belongs, a goal with no method, and a "met" with no evidence.
 
@@ -14,7 +14,7 @@ It comes third in a session: it turns the proposal's wants into numbers. A fact 
 
 - **Start from the proposal's wants,** and name the want in each row. Each want gets a goal, or a row that says why it cannot be measured yet. Without the link, wants and goals drift apart unnoticed.
 - **Say where each goal was measured:** this repo, a named project, a benchmark. A goal met on one project and required on another is still open for the second.
-- **Write the measure as a threshold with a unit,** because "fast" can't fail, and a goal that can't fail can't guide a decision.
+- **Write the measure as a threshold with a unit,** because a threshold can fail, and only a goal that can fail guides a decision.
 - **Name the method:** who or what measures it, and how often. A goal nobody measures drifts into a wish.
 - **Keep a goal without a number visibly open** ("number not set"). Leaving it out hides the gap.
 - **Change a status only with evidence:** the measurement and its date. "Met" without evidence is the most expensive word in the doc.
