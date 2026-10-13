@@ -30,26 +30,26 @@ Each kind of doc has its own guide. Read the guide for a doc before you start th
 
 Core docs:
 
-- [PROPOSAL.md](references/docs/PROPOSAL.md)
-- [PHILOSOPHY.md](references/docs/PHILOSOPHY.md)
-- [GOALS.md](references/docs/GOALS.md)
-- [FEATURES.md](references/docs/FEATURES.md)
-- [DESIGNS.md](references/docs/DESIGNS.md)
-- [ROADMAP.md](references/docs/ROADMAP.md)
-- [README.md](references/docs/README.md)
+- [PROPOSAL.md](references/PROPOSAL.md)
+- [PHILOSOPHY.md](references/PHILOSOPHY.md)
+- [GOALS.md](references/GOALS.md)
+- [FEATURES.md](references/FEATURES.md)
+- [DESIGNS.md](references/DESIGNS.md)
+- [ROADMAP.md](references/ROADMAP.md)
+- [README.md](references/README.md)
 
 Optional docs:
 
-- [UIUX.md](references/docs/UIUX.md)
-- [CLI.md](references/docs/CLI.md)
-- [GLOSSARY.md](references/docs/GLOSSARY.md)
-- [AGENTS.md](references/docs/AGENTS.md)
-- [CHANGELOG.md](references/docs/CHANGELOG.md)
-- [TODO.md](references/docs/TODO.md)
-- [CONTRIBUTING.md](references/docs/CONTRIBUTING.md)
-- [SECURITY.md](references/docs/SECURITY.md)
-- [RUNBOOK.md](references/docs/RUNBOOK.md)
-- [decision records](references/docs/decision-records.md)
+- [UIUX.md](references/UIUX.md)
+- [CLI.md](references/CLI.md)
+- [GLOSSARY.md](references/GLOSSARY.md)
+- [AGENTS.md](references/AGENTS.md)
+- [CHANGELOG.md](references/CHANGELOG.md)
+- [TODO.md](references/TODO.md)
+- [CONTRIBUTING.md](references/CONTRIBUTING.md)
+- [SECURITY.md](references/SECURITY.md)
+- [RUNBOOK.md](references/RUNBOOK.md)
+- [decision records](references/decision-records.md)
 
 ## Rules between docs
 

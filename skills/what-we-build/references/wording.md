@@ -86,4 +86,4 @@ Use one set of marks across every doc, so a mark means the same thing wherever i
 
 ## Style by doc
 
-Each doc has its own form, so a reader knows what to expect before reading it. The form is in the *Style* section of the doc's guide in [docs/](docs/).
+Each doc has its own form, so a reader knows what to expect before reading it. The form is in the *Style* section of the doc's guide, next to this file.
