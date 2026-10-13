@@ -1,4 +1,4 @@
-<!-- what-we-build: drafted 2026-10-12 -->
+<!-- what-we-build: drafted 2026-10-13 -->
 
 # Philosophy
 
@@ -32,22 +32,14 @@ An agent can ask, compare and recommend faster than any person. It cannot know w
 
 A vague goal feels safe because it can never fail. That is also why it is useless. When a goal has no number yet, say so and leave it open. An honest open question is worth more than a confident wish.
 
-## Design guidelines
-
-| Word | Means |
-|---|---|
-| **Plain** | Short words, short sentences, one point at a time. |
-| **Honest** | Nothing claimed without evidence. Unknowns stay visible. |
-| **Brief** | Say it once, in the right place. |
-| **Patient** | One decision at a time. No doc before its time. |
-
 ## The test for every change
 
-Before any change to the skill, ask:
+The skill changes the way any project does: from what real sessions teach. Before any change to the skill, ask:
 
 1. Does it help the user decide, instead of deciding for them?
 2. Does it keep one home for each fact?
 3. Does it make the docs easier to read, not only shorter?
 4. Would the user miss it if it were gone?
+5. Did a real session show the need for it?
 
-When the answer to 1 or 2 is no, the change does not belong in what-we-build.
+When the answer to 1, 2 or 5 is no, the change does not belong in what-we-build. Question 5 keeps the skill from growing on ideas alone: every lesson in it was paid for by a session that went wrong.

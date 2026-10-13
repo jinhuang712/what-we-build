@@ -1,76 +1,59 @@
-<!-- what-we-build: drafted 2026-10-12 -->
+<!-- what-we-build: drafted 2026-10-13 -->
 
 # Designs
 
-How what-we-build is built and why. Behavior is in [FEATURES.md](FEATURES.md).
+How what-we-build is built, and why it is built that way. The skill is a set of Markdown instructions that an agent reads, plus two small scripts. This doc holds the choices behind that shape. What the skill does for the user is in [FEATURES.md](FEATURES.md).
 
 ## Design principles
 
-- **Manual start only.** The skill never loads itself. The user types `/what-we-build`.
-- **Short core, detail on demand.** `SKILL.md` holds the roles, the rules and the flow. Each doc's questions and skeleton, the wording rules and the revisit procedure live in reference files that the agent reads when it needs them.
-- **The docs are the state.** A mark on the first line of each doc records drafted or approved. There is no state file to drift from the docs.
-- **No dependencies.** Markdown and Python's standard library. Nothing to install.
-- **Our own words.** The wording rules borrow methods from controlled languages such as ASD-STE100, and copy no text from them.
+These hold everywhere in the repo. Each one says what it forbids.
+
+- **Short core, detail on demand.** `SKILL.md` holds what every session needs: the roles, the rules, the flow. Each doc's guide, the wording rules and the revisit procedure live in reference files that the agent reads only when a step points to them. This keeps the always-read part small, so the agent attends to it. It forbids growing `SKILL.md` with material only some sessions use.
+- **The docs are the state.** A mark on the first line of each doc records whether it is drafted or approved. It forbids a separate state file, which would drift from the docs it describes.
+- **No dependencies.** Markdown and Python's standard library. It forbids anything a user must install before the first session.
+- **Our own words.** The wording rules borrow methods from controlled languages such as ASD-STE100, and from other writing guides, rewritten for this skill. It forbids copying text from a standard or another skill.
 
 ## Structure
 
-```text
-what-we-build/
-├── .claude-plugin/
-│   ├── plugin.json          the plugin manifest
-│   └── marketplace.json     lets `claude plugin marketplace add` find it
-├── skills/what-we-build/
-│   ├── SKILL.md             roles, rules, modes, flow, mistakes to avoid
-│   ├── references/
-│   │   ├── docs.md          per doc: question, owns, leaves out, voice, ask, skeleton, done when
-│   │   ├── wording.md       wording rules and the voice of each doc
-│   │   └── revisit.md       the revisit procedure and a brief template for subagents
-│   └── scripts/
-│       ├── check_links.py   broken relative links and anchors
-│       └── blank_lines.py   blank lines around blocks
-└── PROPOSAL.md, PHILOSOPHY.md, GOALS.md, FEATURES.md, DESIGNS.md, ROADMAP.md, README.md, ...
-```
+The repo is both a Claude Code plugin and a plain skill folder.
 
-The repo's own docs follow the skill's format.
+- `skills/what-we-build/SKILL.md` holds what every session needs.
+- `skills/what-we-build/references/` holds what only some sessions need: one guide per doc, the wording rules, the revisit procedure.
+- `skills/what-we-build/scripts/` holds the two checks.
+- Decided 2026-10-12: the plugin manifest sits at the repo root, so the repo installs as a plugin and also works when its skill folder is linked into `~/.claude/skills`. Install steps are in [README.md](README.md).
+
+The repo's own docs are written in the format the skill teaches, so they double as its example.
 
 ## Triggering
 
-Behavior: FEATURES.md → F1.
+Behavior: FEATURES.md → Not planned (starting on its own).
 
-- `disable-model-invocation: true` in the frontmatter keeps the skill out of automatic use (decided 2026-10-12: a session costs the user an hour of attention, so it starts on purpose). An earlier Claude Code bug that blocked the slash command too (anthropics/claude-code#26251) was closed as a duplicate on 2026-02-20.
-- An argument picks the mode: `new`, `resume` or `revisit`. Without one, the skill reads the folder and picks.
+- Decided 2026-10-12: `disable-model-invocation: true` in the frontmatter keeps the skill out of automatic use, so it loads only when the user types the command.
+- An earlier Claude Code bug blocked the slash command too for skills with this field (anthropics/claude-code#26251). It was closed as a duplicate on 2026-02-20.
 
 ## Modes
 
 Behavior: FEATURES.md → F1, F2, F3.
 
-- One skill with three modes, not three skills (decided 2026-10-12): the modes share the roles, the rules and the wording, and a user should not need to know which one to call.
-- The revisit procedure sits in its own reference file, because a new-project session never needs it.
+- Decided 2026-10-12: one skill with three modes, not three skills. The modes share the roles, the rules and the wording, and a user should not need to know which skill to call.
 
 ## Session state
 
 Behavior: FEATURES.md → F2.
 
-- An HTML comment on the first line: `<!-- what-we-build: drafted YYYY-MM-DD -->`, then `approved` (decided 2026-10-12). It is invisible when rendered, it travels with the file, and a resume reads it with no other state. The idea of per-section fill marks comes from jig's `vision-elicitation` skill (MIT). The format here is our own.
-- Only the user approves. The skill never writes `approved` on a doc the user has not read.
+- Decided 2026-10-12: an HTML comment on each doc's first line, `<!-- what-we-build: drafted YYYY-MM-DD -->`, later `approved`. It is invisible when rendered, it travels with the file, and a resume needs no other state. The idea of per-section fill marks comes from jig's `vision-elicitation` skill (MIT). The format here is our own.
+- Decided 2026-10-13: an edit resets the mark (FEATURES.md → F2), because a stale `approved` would claim an agreement that never happened.
 
 ## Checks
 
 Behavior: FEATURES.md → F6.
 
-- `check_links.py` follows GitHub's heading slugs: lowercase, punctuation removed, spaces to hyphens, `-1`, `-2` for repeated headings. It skips code spans, fenced blocks and external links.
-- `blank_lines.py` compares every non-blank line before and after. It writes only when they match, so it can never change content.
-- Both were tested on crafted files with known bad links, and on a real doc set of 9 files.
+- `blank_lines.py` compares every non-blank line before and after, and writes only when they all match. So it can repair layout without any risk to content.
 
 ## Prior art
 
-- jig's `vision-elicitation` (ramboz/jig, MIT) runs a fixed 13-section questionnaire after jig's own scaffold and fills two templates. Decided 2026-10-12 to build our own: the doc set, the conversation with push-back, the goals with numbers and the manual trigger are what this skill is for, and jig's skill has none of them.
-
-## Distribution
-
-- A public GitHub repo with a plugin manifest at the root, so `claude plugin marketplace add jinhuang712/what-we-build` installs it. As a plugin, the command is `/what-we-build:what-we-build`.
-- The author links the skill folder into `~/.claude/skills/what-we-build`, so the command is `/what-we-build`.
-- The name was chosen on 2026-10-12 after a GitHub search: no repo had it. `docs-compass` was dropped because `mongodb/docs-compass` exists.
+- Decided 2026-10-12: build our own instead of using jig's `vision-elicitation` (ramboz/jig, MIT). That skill runs a fixed 13-section questionnaire after jig's own scaffold and fills two templates. The doc set, the conversation with push-back, the goals with numbers and the manual start are what this skill is for, and jig's skill has none of them.
+- The writing guidance of mattpocock/skills (MIT) shaped three rules in 0.2.0: state the target instead of the ban, treat a doc that restates the code as a cache, and record only decisions that are hard to reverse, surprising and a real trade-off.
 
 ## Licensing
 
@@ -78,4 +61,4 @@ MIT. See [LICENSE](LICENSE).
 
 ## Open questions
 
-- How to evaluate the skill: which test prompts, and what a good session looks like in numbers.
+- How to evaluate the skill: which test prompts, and what a good session looks like in numbers. (ROADMAP.md → M3.)

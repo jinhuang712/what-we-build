@@ -1,31 +1,37 @@
 # Revisit a doc set
 
-Use this when the docs exist but overlap, sprawl, drift from the code or tire the reader. The goal is the same as for a new project: each doc answers one question, and each fact has one home.
+Use this procedure when the docs exist but overlap, sprawl, read thin or drifted from the code. The goal is the same as for a new project: each doc answers one question, each fact has one home, and each doc reads on its own.
+
+A revisit changes many files at once, so it moves in five steps, and the user approves the plan before any file changes.
 
 ## 1. Audit
 
-Read every doc. Report, without editing anything:
+Read every doc, and report what you find without editing anything. The audit is the evidence for every change that follows, so give each finding a file and a line.
 
-| What | How |
+| Check | How |
 |---|---|
 | Inventory | each doc with its line count and the date it last changed (`git log -1 --format=%cs -- <file>`) |
-| Overlaps | a table: content → every doc that states it |
+| Facts in more than one doc | a table: the fact → every doc that states it in full |
 | Wrong home | facts that fail the placement test for the doc they sit in |
+| Thin sections | sections with only rules or tables, and no description of what they are or why |
+| Unsourced numbers | every number with no measurement, file or person behind it |
+| Restated code | text that repeats the code, config or command output, with no reason the code cannot give |
 | Stale claims | statements the code or newer docs contradict, with `file:line` on both sides |
 | Broken links | `scripts/check_links.py` |
-| Cited headings | `git grep -n "<DOC>.md →"` and `git grep -n "<DOC>.md#"` across code and docs |
+| Cited headings | `git grep -n "<DOC>.md →"` and `git grep -n "<DOC>.md#"` across the code and docs |
+| Goals | every goal in GOALS.md measured on the docs themselves where it can be, for example "one home per fact" |
 
-Spread the reading across subagents when the set is large. Ask each for a table with evidence, not a summary.
+Spread the reading across subagents when the set is large. Ask each one for a table with evidence, not a summary.
 
 ## 2. Agree on roles
 
-Show the roles table from SKILL.md, adjusted to this project. Show what moves where. Ask one decision at a time:
+Show the roles table from SKILL.md, adjusted to this project, and show what moves where. Then ask one decision at a time:
 
 - Which docs keep which role?
-- Which docs merge or go? (Deleting a doc needs the user's yes. Git keeps it.)
-- How much history stays? (Default: one dated clause per decision.)
+- Which docs merge or go? Deleting a doc needs the user's yes, even though git keeps it.
+- How much history stays? The default is one dated clause per decision.
 
-Do not rewrite before the roles are agreed.
+Show the planned changes as before-and-after text, side by side when the user asks, before any file changes. A plan the user can see is a plan the user can correct.
 
 ## 3. Rewrite
 
@@ -36,44 +42,53 @@ Give each subagent a written brief. Template:
 ```markdown
 # Brief: rewrite <DOC>.md
 
-Repo: <path>. Edit only <DOC>.md. Do not commit.
+Repo: <path>. Edit only <DOC>.md. Leave the commit to the lead.
 
 Role: <DOC>.md answers "<question>". It owns <...>. It leaves out <...>, which lives in <...>.
 
 Keep: every rule, key, flag, number, path and command that is true now. Every heading that code or docs cite (list them). Status marks. Code blocks, copied exactly.
 
-Remove: verification logs, mockup stories, who asked, "used to" narratives, repetition of other docs.
+Remove: verification logs, mockup stories, who asked, "used to" stories, and text that restates the code.
+
+Each section: a short description of what it is and why, then guidelines with their reasons, then the specifics.
 
 History: one clause per decision, with the date and the reason. The old text is in `git show HEAD:<DOC>.md`.
 
+Format: a table for records, a list for parallel items, sentences for reasoning. Lists one level deep, one blank line around every block, each sentence whole.
+
+Status: mark a goal met only with evidence. Keep every cited heading.
+
 Wording: <paste the key rules from references/wording.md>.
 
-Never: nest lists, delete blank lines to save space, split one sentence into sub-bullets, mark a goal met without evidence, rename a cited heading.
-
-Report: old → new line count, facts you dropped that someone might miss, headings changed, claims you suspect are stale (do not fix them, list them).
+Report: old → new line count, facts you dropped that someone might miss, headings changed, claims you suspect are stale (list them, leave them unchanged).
 ```
 
 ## 4. Verify
 
-Do not trust the reports. Check the files yourself:
+Check the files yourself. A subagent's report says what it meant to do, not what it did.
 
-- Line counts: `wc -l`. A doc that grew needs a reason.
-- Lost facts: compare with `git show HEAD:<file>`. Spot-check the facts each report says it dropped.
-- Links and anchors: `scripts/check_links.py`.
-- Layout: `scripts/blank_lines.py`. It only adds or removes blank lines.
-- Evidence: every "met", "done" or "verified" points to a measurement, a test or the user's word.
-- Cited headings: re-run the grep from the audit.
-- Language: one language across the set.
+- **Line counts:** `wc -l`. A doc that grew or shrank by more than a third needs a reason.
+- **Lost facts:** compare with `git show HEAD:<file>`. Spot-check the facts each report says it dropped.
+- **Links and anchors:** `scripts/check_links.py`.
+- **Layout:** `scripts/blank_lines.py`. It only adds or removes blank lines.
+- **Evidence:** every "met", "done" or "verified" points to a measurement, a test or the user's word.
+- **Cited headings:** run the grep from the audit again.
+- **Goals:** measure the goals from the audit again, and record both results with their dates.
+- **Marks:** every edited doc carries `drafted` with the date of the edit.
+- **Changelog:** add an entry for what changed.
 
 ## 5. Review
 
-Give the user the paths and a table of what changed per doc. Commit only after the user has read it. When the user challenges a result, stop and discuss before the next edit.
+Give the user the paths, and a table of what changed in each doc. Commit only after the user has read the result. When the user challenges a result, stop and discuss before the next edit.
 
-## Mistakes seen in real revisits
+## Lessons from real revisits
 
-- A brief that said "40–60% fewer lines" got a doc that doubled: the writer split long bullets into nested sub-lists.
-- A hard line limit got met by deleting every blank line, which made the doc harder to read.
-- "Remove history" removed the reasons behind decisions. The user wanted history short, not gone.
-- A rewrite marked two exit criteria "met" because the old text did not say "open".
-- Principles rewritten "macro" still named features. Fewer, truer principles beat many diluted ones.
-- A subagent stopped halfway left a half-rewritten file. Restore it from git before you start again.
+Each lesson states the target, then the failure that taught it.
+
+- **Ask for quality, not a line count.** A brief that said "40–60% fewer lines" got a doc that doubled, because the writer split long bullets into nested sub-lists.
+- **Keep blank lines around every block.** A hard line limit was met by deleting every blank line, and the doc got harder to read.
+- **Keep history short, with its reasons.** "Remove history" removed the reasons behind decisions. The user wanted history short, not gone.
+- **Mark a criterion met only with evidence.** A rewrite marked two exit criteria met because the old text did not say "open".
+- **Keep principles to values that can reject a feature.** Principles rewritten "macro" still named features. Fewer, truer principles beat many diluted ones.
+- **Keep descriptions and guidelines while cutting repeats.** A revisit that cut every repeat left docs too thin to learn from.
+- **Restore a half-written file from git before starting again.** A subagent stopped halfway left a file half rewritten.
