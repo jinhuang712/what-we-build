@@ -24,9 +24,34 @@ Seven documents form the core of a new project. Each one answers a single questi
 | `ROADMAP.md` | When, and how far along? | milestones, tasks, progress, exit criteria that point to goals | behavior, the *Later* list |
 | `README.md` | What is this, and how do I start? | a short description, what it does, install, first use, known limits, links | detail another doc owns |
 
-Add an optional doc only when the project needs it: `UIUX.md`, `CLI.md`, `GLOSSARY.md`, `AGENTS.md`, `CHANGELOG.md`, `TODO.md`, `CONTRIBUTING.md`, `SECURITY.md`, `RUNBOOK.md` or decision records. Give every doc a job, because only a doc with a job gets kept true.
+Add an optional doc only when the project needs it. Give every doc a job, because only a doc with a job gets kept true.
 
-Each kind of doc has its own guide: `references/docs/<DOC>.md`, for example [references/docs/GOALS.md](references/docs/GOALS.md). Read the guide for a doc before you start that doc, and only that guide. A guide holds everything the session needs about its doc. [references/docs.md](references/docs.md) explains how the guides are built, and maps other common names (PRD, ARCHITECTURE.md, ADR, vision doc) to this set.
+Each kind of doc has its own guide. Read the guide for a doc before you start that doc, and only that guide. A guide holds everything the session needs about its doc.
+
+Core docs:
+
+- [PROPOSAL.md](references/docs/PROPOSAL.md)
+- [PHILOSOPHY.md](references/docs/PHILOSOPHY.md)
+- [GOALS.md](references/docs/GOALS.md)
+- [FEATURES.md](references/docs/FEATURES.md)
+- [DESIGNS.md](references/docs/DESIGNS.md)
+- [ROADMAP.md](references/docs/ROADMAP.md)
+- [README.md](references/docs/README.md)
+
+Optional docs:
+
+- [UIUX.md](references/docs/UIUX.md)
+- [CLI.md](references/docs/CLI.md)
+- [GLOSSARY.md](references/docs/GLOSSARY.md)
+- [AGENTS.md](references/docs/AGENTS.md)
+- [CHANGELOG.md](references/docs/CHANGELOG.md)
+- [TODO.md](references/docs/TODO.md)
+- [CONTRIBUTING.md](references/docs/CONTRIBUTING.md)
+- [SECURITY.md](references/docs/SECURITY.md)
+- [RUNBOOK.md](references/docs/RUNBOOK.md)
+- [decision records](references/docs/decision-records.md)
+
+[references/docs.md](references/docs.md) explains how the guides are built, and maps other common names (PRD, ARCHITECTURE.md, ADR, vision doc) to this set.
 
 ## Rules between docs
 
