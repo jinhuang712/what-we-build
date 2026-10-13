@@ -15,7 +15,7 @@ Coding agents write documents faster than people think, and they fill every gap 
 - **Talks before it writes.** It discusses and brainstorms with you, recommends a choice when one is ready, and drafts a doc only after you agree on its key points.
 - **Pushes back** on goals without numbers, and on principles that name features.
 - **Gives every fact one home:** seven documents, each answering one question.
-- **Resumes** where you stopped, and **revisits** docs that drifted.
+- **Resumes** where you stopped.
 
 ## What you get
 
@@ -57,7 +57,6 @@ The command is then `/what-we-build`. Start a new Claude Code session after you 
 |---|---|
 | You are starting a project | `/what-we-build` |
 | You stopped halfway | `/what-we-build resume` |
-| Your docs repeat each other or drifted from the code | `/what-we-build revisit` |
 
 It starts only when you type it. Installed as a plugin, type `/what-we-build:what-we-build` in place of `/what-we-build` (not yet verified).
 

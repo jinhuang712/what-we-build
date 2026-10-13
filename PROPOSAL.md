@@ -82,9 +82,8 @@ Agent: Four pains. If you could fix only one, which would it be?
 - **In order:** each doc builds on the ones before it, and is written only after its key points are agreed.
 - **Strict where it counts:** a pain needs an example, a principle must pick a side and refuse one thing, a goal needs a number, a decision needs a reason and the option it beat.
 - **Marked as it goes:** each doc stays `drafted` until the user approves it, so a session can stop and resume later.
-- **For docs that already sprawl:** `/what-we-build revisit` audits them, agrees the roles with the user and rewrites them.
 
-The exact behavior is in [FEATURES.md](FEATURES.md) → F1–F3.
+The exact behavior is in [FEATURES.md](FEATURES.md) → F1–F2.
 
 ## What we don't want
 
@@ -103,8 +102,8 @@ Developers who start a project with a coding agent and want the thinking written
 ## Approach
 
 - **One Claude Code skill,** started only by hand with `/what-we-build`.
-- **Three modes:** a new project, resuming a session, revisiting docs that drifted.
-- **Reference files loaded when needed,** so the skill stays short: one per doc, plus wording rules and the revisit procedure.
+- **Two modes:** a new project, and resuming a session.
+- **Reference files loaded when needed,** so the skill stays short: one per doc, plus the wording rules.
 - **Distributed** as a public plugin, or as a folder linked into `~/.claude/skills`.
 
 ## Risks

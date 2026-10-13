@@ -1,6 +1,6 @@
 ---
 name: what-we-build
-description: Draft a new project's founding documents by talking each one through with the user, in discussion, brainstorming and clear decisions. Proposal, philosophy, goals, features, designs, roadmap and README, where each document answers one question, so every fact has one home. Also resumes an unfinished session, and revisits a doc set that has drifted.
+description: Draft a new project's founding documents by talking each one through with the user, in discussion, brainstorming and clear decisions. Proposal, philosophy, goals, features, designs, roadmap and README, where each document answers one question, so every fact has one home. Also resumes an unfinished session.
 disable-model-invocation: true
 ---
 
@@ -50,8 +50,6 @@ Optional docs:
 - [SECURITY.md](references/docs/SECURITY.md)
 - [RUNBOOK.md](references/docs/RUNBOOK.md)
 - [decision records](references/docs/decision-records.md)
-
-[references/docs.md](references/docs.md) explains how the guides are built, and maps other common names (PRD, ARCHITECTURE.md, ADR, vision doc) to this set.
 
 ## Rules between docs
 
@@ -103,11 +101,10 @@ Read the project folder first. Then pick one:
 
 | Mode | When | Go to |
 |---|---|---|
-| New | no founding docs exist, or the user starts a new project | [New project](#new-project-talk-it-through) |
-| Resume | the marks show a session that stopped partway: the first docs in the order are approved, and the rest are drafted or missing | [Resume](#resume) |
-| Revisit | docs exist without marks, or the user says they drifted, overlap or are hard to read | [Revisit](#revisit) |
+| New | no founding docs exist, docs exist without marks, or the user starts a new project | [New project](#new-project-talk-it-through) |
+| Resume | the docs carry marks, and not every doc is approved | [Resume](#resume) |
 
-When the user passed an argument (`new`, `resume`, `revisit`), use it. When every doc is drafted, as after a revisit, ask whether the user wants to approve them or revisit them again. When the folder and the request disagree, ask.
+When the user passed an argument (`new` or `resume`), use it. When the folder and the request disagree, ask.
 
 ## New project: talk it through
 
@@ -115,7 +112,7 @@ A session turns an idea into the founding docs. It works because the user makes 
 
 ### 1. Frame it
 
-The first minutes decide what the session is about. Ask for the idea in one or two sentences, and who it is for. Look at the folder (existing code, a README, notes) and say what you found in one line, so the user knows what you will build on.
+The first minutes decide what the session is about. Ask for the idea in one or two sentences, and who it is for. Look at the folder (existing code, a README, notes) and say what you found in one line, so the user knows what you will build on. When the folder holds docs under other names, map them to this set: a PRD to `FEATURES.md`, a vision doc to `PROPOSAL.md` and `PHILOSOPHY.md`, an ARCHITECTURE.md or design doc to `DESIGNS.md`, and an ADR to a decision record.
 
 ### 2. Agree on the doc set
 
@@ -133,7 +130,7 @@ For each doc:
 2. **Carry forward.** List what earlier docs already settled that this doc builds on. The user answered those once, and asking again wastes their attention.
 3. **Explore the key points** listed in the doc's guide, in the way of talking that fits where the user is: discuss, brainstorm or decide (see [How to talk](#how-to-talk)). Open the doc wide, then narrow it down, and close each point with a clear choice.
 4. **Push back on what does not fit.** Each doc's guide lists the mistakes it invites, such as an adjective where `GOALS.md` needs a number. Say why once. When the user rejects it, drop it: the user decides.
-5. **Draft.** Start from the guide's skeleton and style, and follow [references/wording.md](references/wording.md). Write the file with a `drafted` mark on its first line. Show the path and the key lines, not the whole file, unless it is short.
+5. **Draft.** Start from the guide's skeleton and style, and follow [references/wording.md](references/wording.md). Keep every skeleton heading, and write "None yet" under one that has nothing to hold, so a reader sees the gap. Write the file with a `drafted` mark on its first line. Show the path and the key lines, not the whole file, unless it is short.
 6. **Approve.** Ask for changes or approval. On approval, change the mark to `approved` and move on.
 
 The mark is an HTML comment, invisible when rendered. It is the only state the skill keeps, so a session can stop, and resume after Claude Code restarts:
@@ -176,24 +173,12 @@ Each doc usually moves through all three: open up, narrow down, decide, then wri
 
 Read every doc in the set and its mark. Summarize in a few lines: approved docs, drafted docs, the doc to continue. Continue at the first doc in the order above that is not approved. Re-read the approved docs before you ask anything, so you carry their answers forward.
 
-## Revisit
-
-Use this mode when the docs exist but overlap, sprawl, read thin or drifted from the code. In short:
-
-1. **Audit.** List every doc with its size and last change. Find facts stated in more than one doc, facts in the wrong doc, sections with no description, numbers with no source, unverified claims, words with two meanings, docs written under an older rule, and stale claims. Give each conflict its cause, because the cause decides whether the doc or the skill changes. Show them as tables.
-2. **Agree on roles.** Show each doc's question and boundaries, as in [The doc set](#the-doc-set). The user confirms or changes them.
-3. **Rewrite**, one doc at a time or in parallel with subagents. Each subagent gets a written brief with the roles, the wording rules and the lessons below.
-4. **Verify.** Compare against the old version (`git show HEAD:<file>`) for lost facts. Check that every relative link and anchor resolves. Check every claim of "met" or "done" against evidence, and have a reader who did not write the change measure the goals that can be measured on the docs.
-5. **Review.** The user reads the result before anything is committed.
-
-[references/revisit.md](references/revisit.md) has the full procedure and a brief template for subagents.
-
 ## What real sessions taught
 
 Each lesson below states the target, then the failure that taught it.
 
 - **Judge a doc by how fast a reader finds a fact, not by its line count.** Keep one blank line around each block, and use a table where a list would need sub-items. Sessions met line limits by deleting blank lines, and doubled a doc with nested lists.
-- **Give each section its description and guidelines, not only rules.** A revisit that cut every repeat left docs nobody could learn from.
+- **Give each section its description and guidelines, not only rules.** A rewrite that cut every repeat left docs nobody could learn from.
 - **Pick the format by the shape of the data, even when the same records appear in another doc.** Turning a table into inline links to avoid a repeat made a README harder to read.
 - **Keep one dated clause of history per decision.** Removing every date left rules nobody could explain.
 - **Mark a goal or criterion met only with a measurement or the user's own report.** A rewrite marked criteria met because the old text did not say "open".

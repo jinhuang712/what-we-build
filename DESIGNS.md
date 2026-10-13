@@ -10,7 +10,7 @@ Each principle names the choice, what it costs, and how to check that it holds.
 
 ### Context
 
-- **Short core, detail on demand.** `SKILL.md` holds what every session needs. The doc guides, the wording rules and the revisit procedure wait in reference files until a step points to them. Cost: a step must name its reference, or the agent never reads it. Holds as: `SKILL.md` stays within the limit in GOALS.md G6, and each step that needs a reference names its path.
+- **Short core, detail on demand.** `SKILL.md` holds what every session needs. The doc guides and the wording rules wait in reference files until a step points to them. Cost: a step must name its reference, or the agent never reads it. Holds as: `SKILL.md` stays within the limit in GOALS.md G6, and each step that needs a reference names its path.
 
 ### State
 
@@ -27,7 +27,7 @@ Each principle names the choice, what it costs, and how to check that it holds.
 
 ### Checks
 
-- **Readers check the docs, not scripts.** Cost: a broken link, a missing blank line or a wrong fact stays until a reader catches it. Holds as: a revisit ends with a reader who did not write the change checking the links, the claims and the goals ([SKILL.md](skills/what-we-build/SKILL.md) → Revisit, step 4).
+- **Readers check the docs, not scripts.** Cost: a broken link, a missing blank line or a wrong fact stays until a reader catches it. Holds as: every goal measured on this repo is measured by a reader who did not write the change ([GOALS.md](GOALS.md)).
 
 ### Testing
 
@@ -36,7 +36,7 @@ Each principle names the choice, what it costs, and how to check that it holds.
 
 ## Decisions
 
-- Decided 2026-10-12: one skill with three modes over three skills, because the modes share the roles, the rules and the wording, and a user should not need to know which skill to call.
+- Decided 2026-10-12: one skill with its modes over a skill per mode, because the modes share the roles, the rules and the wording, and a user should not need to know which skill to call.
 - Decided 2026-10-12: `disable-model-invocation: true` over automatic loading, because a session starts only when the user types the command (reason: FEATURES.md → Not planned).
 - Decided 2026-10-12: the plugin manifest at the repo root over a plugin-only layout, because the repo then installs as a plugin and also works when its skill folder is linked into `~/.claude/skills`. Install steps are in [README.md](README.md).
 - Decided 2026-10-12: our own skill over jig's `vision-elicitation` (ramboz/jig, MIT), because that skill runs a fixed 13-section questionnaire after jig's own scaffold and fills two templates, with no doc set, no push-back, no goals with numbers and no manual start. Its per-section fill marks gave the idea for the doc marks. The format here is our own.
