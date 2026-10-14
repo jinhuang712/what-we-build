@@ -16,6 +16,7 @@
 - Each doc's form lives in its guide. The style table in the wording rules, which had drifted from the guides, is gone.
 - Every skeleton heading stays, with "None yet" when it has nothing to hold. No heading is marked optional.
 - The decision records guide is removed. DESIGNS.md holds each decision in one line, and an ADR found in the folder maps to DESIGNS.md.
+- The CLI.md and AGENTS.md guides are removed. A command reference copies the program, and an agent file holds commands the code already shows.
 - Examples follow the rules they teach: the FEATURES setting gives its reason, the PHILOSOPHY principle names its refusal, and the history example says why.
 - A *Later* item that gets a milestone becomes a planned feature, and the roadmap schedules it.
 

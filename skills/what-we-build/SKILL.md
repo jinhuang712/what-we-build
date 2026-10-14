@@ -41,9 +41,7 @@ Core docs:
 Optional docs:
 
 - [UIUX.md](references/UIUX.md)
-- [CLI.md](references/CLI.md)
 - [GLOSSARY.md](references/GLOSSARY.md)
-- [AGENTS.md](references/AGENTS.md)
 - [CHANGELOG.md](references/CHANGELOG.md)
 - [TODO.md](references/TODO.md)
 - [CONTRIBUTING.md](references/CONTRIBUTING.md)
@@ -73,7 +71,7 @@ Ask the questions in order. The first yes names the fact's home.
 |---|---|
 | Is it a reason that applies to many things? | `PHILOSOPHY.md` |
 | Can it be checked with a number? | `GOALS.md` |
-| Can the user see it or do it? | `FEATURES.md` for what happens and whether it is built, `UIUX.md` for how it looks, `CLI.md` for a command |
+| Can the user see it or do it? | `FEATURES.md` for what happens and whether it is built, `UIUX.md` for how it looks |
 | Is it a feature the project will not build? | `FEATURES.md` → *Not planned* |
 | Is it about code, files, processes or a design decision? | `DESIGNS.md` |
 | Is it about when, or about progress? | `ROADMAP.md` |
