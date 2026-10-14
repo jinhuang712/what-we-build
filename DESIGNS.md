@@ -1,4 +1,4 @@
-<!-- what-we-build: drafted 2026-10-14 -->
+<!-- what-we-build: drafted 2026-10-15 -->
 
 # Designs
 
@@ -24,6 +24,8 @@ Each principle names the choice, what it costs, and how to check that it holds.
 
 - **Our own words over borrowed text.** The wording rules take methods from controlled languages such as ASD-STE100, and from other writing guides, and rewrite them for this skill. Cost: a reader cannot check a rule against its source line by line. Holds as: the sources are named, in `references/wording.md` and in the decisions below, and no passage is copied from them.
 - **Made-up examples over real projects.** Each example in the skill is invented for it, or taken from this repo. Cost: an example carries no proof that it worked somewhere. Holds as: no example in `skills/` names or quotes another project.
+- **Teach over order.** A guide explains why each rule holds and shows it at work in a made-up example, so a session can apply the rule to a case the guide did not foresee. A session that only obeys follows the letter: one followed a guide's "table: pain → what the project does" exactly, and the user rejected the tables. Cost: a guide grows longer, and the agent reads more before it starts a doc. Holds as: each rule in a guide gives its reason.
+- **Reasons over counts.** A rule says what it protects, not a number to meet. Cost: no one can check the rule by counting, and two sessions may judge the same case differently. Holds as: no rule in `skills/` sets a count or a limit. Numbers appear only inside examples.
 
 ### Checks
 
