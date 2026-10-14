@@ -65,7 +65,7 @@ The docs come out in plain, precise English, so a reader finds a fact fast and u
 | Numbers with sources | A number instead of an adjective, and a source for every number that states a fact |
 | Shared status marks | ✅ 🚧 🟨 ⬜ ❌ mean the same in every doc |
 
-Each doc has its own style. For example, GOALS is a short intro and one table, and PHILOSOPHY answers a few questions the project takes a stance on, with room below for reflections. The skill asks you those questions first, and each stance comes from your answer.
+Each doc has its own style. For example, GOALS is a short intro and one table, and PHILOSOPHY is where the project thinks: a few questions the project takes a stance on, each argued in full and tested against books and papers, with room below for reflections. The skill asks you those questions first, each stance comes from your answer, and then the skill goes deeper with sources.
 
 ## Later, if needed
 
