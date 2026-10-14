@@ -49,7 +49,6 @@ Optional docs:
 - [CONTRIBUTING.md](references/CONTRIBUTING.md)
 - [SECURITY.md](references/SECURITY.md)
 - [RUNBOOK.md](references/RUNBOOK.md)
-- [decision records](references/decision-records.md)
 
 ## Rules between docs
 
@@ -63,7 +62,6 @@ These rules keep a doc set easy to trust: one place to look for each fact, and e
 - **Reasons have homes.** Why something will not be built goes in `FEATURES.md` → *Not planned*, because that is where someone looks before proposing it. Why something is built a certain way goes in `DESIGNS.md`, beside the design. A design decision that only carries out a product decision links to that reason instead of restating it.
 - **Claims are checked.** A statement about behavior, such as an install command or a command name, is checked by running it, or marked "not yet verified". A goal or criterion is met only with a measurement or the user's own report, made by someone who did not write the change. A claim nobody checked is a guess that looks like a fact: one rewrite marked two goals met, and an independent count failed both.
 - **The code is a home too.** A doc repeats the code, the config or a command's output only when looking it up is expensive. It keeps what looking cannot find: the reason, the convention, the trap. A restated fact goes stale the day the code changes.
-- **History stays short.** A decision keeps one clause: what, why, and the date (`Decided 2026-10-12: ...`). The story of how it was reached lives in git. A rewrite that removed every date left rules nobody could explain.
 - **Headings are addresses.** Code comments and other docs cite headings (`DESIGNS.md → Decisions`). Keep them stable. When one must change, search the code and the docs for references first, and fix every one in the same change. Renamed headings once broke the comments that pointed to them.
 - **One language per doc set,** so a reader never switches languages mid-doc.
 
@@ -83,19 +81,9 @@ Ask the questions in order. The first yes names the fact's home.
 
 ## How each doc is written
 
-Every section of every doc has up to three layers, in this order:
+Each doc has its own style, meaning its form, given in its guide. For example, `GOALS.md` is a short intro and one table of checks, and `PHILOSOPHY.md` is one screen: a short preamble, one line per principle, and a tie-break. The full wording rules are in [references/wording.md](references/wording.md).
 
-| Layer | Gives the reader |
-|---|---|
-| Description | what this part is and why it matters, in a short paragraph |
-| Guidelines | how to do it well, each with its reason |
-| Specifics | tables, skeletons, commands, examples |
-
-A section with only specifics is a list of rules nobody can apply: a rewrite that cut every repeat left docs nobody could learn from. A section with only description gives the reader nothing to act on.
-
-Write in your default voice. Each doc has its own style, meaning its form, given in its guide. For example, `GOALS.md` is a short intro and one table of checks, and `PHILOSOPHY.md` is one screen: a short preamble, one line per principle, and a tie-break. The full wording rules are in [references/wording.md](references/wording.md).
-
-In every doc, pick the format by the shape of the data, even when the same records appear in another doc: a table for records, a list for parallel items, sentences for reasoning. Turning a table into inline links to avoid a repeat made a README harder to read. Judge a doc by how fast a reader finds a fact, not by its line count. Sessions met line limits by deleting blank lines, and doubled a doc with nested lists.
+Judge a doc by how fast a reader finds a fact, not by its line count. Sessions met line limits by deleting blank lines, and doubled a doc with nested lists.
 
 ## Choose the mode
 
@@ -114,7 +102,7 @@ A session turns an idea into the founding docs. It works because the user makes 
 
 ### 1. Frame it
 
-The first minutes decide what the session is about. Ask for the idea in one or two sentences, and who it is for. Look at the folder (existing code, a README, notes) and say what you found in one line, so the user knows what you will build on. When the folder holds docs under other names, map them to this set: a PRD to `FEATURES.md`, a vision doc to `PROPOSAL.md` and `PHILOSOPHY.md`, an ARCHITECTURE.md or design doc to `DESIGNS.md`, and an ADR to a decision record.
+The first minutes decide what the session is about. Ask for the idea in one or two sentences, and who it is for. Look at the folder (existing code, a README, notes) and say what you found in one line, so the user knows what you will build on. When the folder holds docs under other names, map them to this set: a PRD to `FEATURES.md`, a vision doc to `PROPOSAL.md` and `PHILOSOPHY.md`, and an ARCHITECTURE.md, a design doc or an ADR (architecture decision record) to `DESIGNS.md`.
 
 ### 2. Agree on the doc set
 

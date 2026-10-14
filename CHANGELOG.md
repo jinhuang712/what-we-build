@@ -15,13 +15,14 @@
 - The skeletons keep a blank line around every block, so a doc copied from them no longer joins two lines or turns a line into a table row.
 - Each doc's form lives in its guide. The style table in the wording rules, which had drifted from the guides, is gone.
 - Every skeleton heading stays, with "None yet" when it has nothing to hold. No heading is marked optional.
-- A decision gets its own record when it needs more context than one line.
+- The decision records guide is removed. DESIGNS.md holds each decision in one line, and an ADR found in the folder maps to DESIGNS.md.
 - Examples follow the rules they teach: the FEATURES setting gives its reason, the PHILOSOPHY principle names its refusal, and the history example says why.
 - A *Later* item that gets a milestone becomes a planned feature, and the roadmap schedules it.
 
 ### Wording
 
 - The blank-line rule says what a missing blank line breaks.
+- Five rules are removed: write in your default voice, three layers per section, the format by the shape of the data, one clause per decision, and the story in git.
 
 ### Checks
 
