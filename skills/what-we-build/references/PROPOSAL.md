@@ -6,42 +6,82 @@ It comes first in a session, because every other doc builds on the pain it names
 
 **Owns:** the shift, the pain points, the one idea that makes the project different, what we want, a sample of it working, what we don't want, who it is for, the approach, the risks, how we will know it works.
 
-**Leaves out:** exact behavior (FEATURES), the full list of checks (GOALS, though it may quote the headline ones), progress (ROADMAP), and the index of the project's own docs (README). When the project's idea is itself a set of documents, as for a docs tool, that set belongs in *The idea*.
+**Leaves out:** exact behavior (FEATURES), the checks and their measured results (GOALS, though it may quote the headline checks), progress (ROADMAP), and the index of the project's own docs (README). When the project's idea is itself a set of documents, as for a docs tool, that set belongs in *The idea*.
 
-**Push back on:** a pain point with no example, a want that answers no pain, and a "don't want" with no reason.
+**Push back on:** a case that opens with the solution, a pain point with no example, a want that answers no pain, a "don't want" with no reason, and a section of measured results.
 
-## Guidelines
+## Why the case starts from the pain
 
-- **Open with a scene the reader has lived,** not with a definition. A reader who recognizes the moment of pain keeps reading. A reader handed a category ("a documentation framework") decides from the label.
-- **Give every pain point an example or a number.** "Expenses are painful" persuades nobody. "Every month ends with an evening of matching receipts by hand" persuades anyone who has spent that evening.
-- **State the idea in one sentence.** If the idea needs a paragraph, it is not one idea yet. Keep asking until it fits.
-- **Answer every pain with a want.** A want that answers no pain is a feature looking for a reason.
-- **Show the product working,** with one concrete sample: a conversation, a command and its output, a screen. A sample convinces where a description only claims.
-- **Give every "don't want" a reason.** A refusal without a reason gets reopened by the next person who did not hear it.
-- **Keep the stances short here.** The proposal states what the project refuses to become. The full list of excluded items, with reasons, lives in FEATURES.md → *Not planned*.
+A proposal persuades the way a doctor does: by naming what hurts before offering the cure. A reader who recognizes the pain wants to hear the answer. A reader handed the answer first has to take the problem on trust, and most will not. So the case has a spine, and every section hangs on it:
+
+- **Pain points.** What hurts today, each with a moment or a number that proves it.
+- **What we want.** For each pain, what should happen instead.
+- **What we don't want.** What the project refuses to become, each with its reason.
+
+The idea is the one sentence that answers the pains. It is easy to find once the pains are clear, and easy to get wrong before. The shift, the sample, the approach and the risks all serve the spine: the shift says why the pain is new, the sample shows a want coming true, and the risks say where the case is weak.
+
+An agent with a good idea in mind is tempted to pitch it at once: the idea, its features, the evidence that it works. The pitch sounds strong, and it skips the part the reader needed most. In one session, the agent presented a polished case for the project, and the user stopped it: "what are the pain points? what do we really want? what do we not want?" The case only came together once it was built in that order.
+
+## Talk the case through before writing it
+
+The proposal is an argument, and an argument is tested by saying it out loud. Before any line goes into the file, make the case in the conversation: present it to the user as you would to someone deciding whether to fund it, starting from the pain. The user hears where it is weak, what it overstates, and what it leaves out. That is cheap to fix in a conversation, and expensive once a finished-looking draft exists.
+
+In one session, the agent opened with an audit of the old proposal and a drafted *shift* table. The user set both aside: "before writing down anything, lets run the discussion again. you as the presenter, tell me, why?" The discussion that followed changed the pains, the wants and the order of the case.
+
+## Here is a case taking shape
+
+A made-up expenses app, as its proposal moves through a session.
+
+**The pain, first try.** The user says: "Expenses are painful." True, and it persuades nobody, because it names no moment. The agent asks when it hurts most. "The end of every month. I sit for an evening matching receipts to card lines by hand." Now the pain has a moment, and anyone who has spent that evening recognizes it.
+
+**More pains.** The agent and the user list them quickly, without judging: receipts get lost, the company's categories change every quarter, a trip abroad doubles the work. Then they pick the ones that hurt most, and find a real example for each. The others stay in the list as support, or drop out.
+
+**The wants.** Each pain gets its answer. "Matching by hand" becomes "the app matches each receipt to its card line, and asks only about the ones it cannot place". A want that answers no pain, such as "a dark theme", is a feature looking for a reason, and it waits for FEATURES.
+
+**The don't-wants.** The user says the app must never become a form to fill in. The agent asks why. "A form gets answered, not thought about. I want to look at a month, not type into it." The reason goes with the refusal, so the next person who proposes a form hears it.
+
+**The idea.** With the pains and wants on the table, the idea is what ties them together: "Your card already knows what you spent, so the app starts from the card, not from the receipt." It fits in one sentence. If it needed a paragraph, it would still be several ideas.
+
+**Then the file.** Only now does the agent write, and the draft holds no surprises, because the user has heard every line of the argument already.
+
+## Pains, wants and don't-wants are prose
+
+A pain is a small story: a moment, what goes wrong, and what it costs. A table cell squeezes it to a label, and the label persuades nobody. The same holds for a want, which needs its "because", and for a refusal, which needs its reason. So the three lists are written as numbered or bulleted prose, one bold line each, then the sentences that make it real. Each want ends by naming the pain it answers ("This answers pain 2"), so the reader can check that every want earns its place.
+
+Tables still fit where the content is a comparison: the shift, as before and after, and the risks, each with what reduces it. In one session, the agent followed the old skeleton and wrote all three lists as tables. The user rejected them, and the prose version was the one approved.
+
+## Numbers are examples, not results
+
+A number in a pain point is evidence of the pain: "matching one month of receipts takes three hours". It makes the moment concrete, and it belongs here.
+
+Measured results of the project itself do not. A table of how the first build scored against its rivals looks persuasive, but it answers "how far along are we?", which ROADMAP and GOALS own. Results change with each run, so a copy here goes stale, and the proposal starts to read like a status report. In one session, the agent added a section of benchmark results, and the user had it removed. The pain points that used the same test kept their numbers, written to stand alone.
 
 ## Weak and strong
 
 | Weak | Strong | What changed |
 |---|---|---|
 | "Developers struggle with documentation." | "You ask your agent for a README and a roadmap. Ninety seconds later you have 2,000 confident words about decisions you never made." | A scene the reader has lived |
+| A pitch that opens with the idea and its features | The case that opens with the pain, then what we want and don't want, then the idea that answers them | The pain before the cure |
 | Pain: "Expenses are painful." | Pain: "Every month ends with an evening of matching receipts to card lines by hand." | A concrete moment |
-| Don't want: "Bloat." | Don't want: "A form to fill in. Templates produce answers, not decisions." | A named thing, with its reason |
+| Wants as a table: "Matching \| Automatic" | "**The app matches each receipt to its card line.** It asks only about the ones it cannot place. This answers pain 1." | A want with its because, tied to its pain |
+| Don't want: "Bloat." | Don't want: "A form to fill in. A form gets answered, not thought about." | A named thing, with its reason |
+| A section of benchmark scores | The scores stay in GOALS. A pain keeps the one number that proves it | Evidence of the pain, not a status report |
 
 ## Explore
 
-**Brainstorm to open:** list the pains together, as many as come, as fast as they come. Then pick the three that hurt most, and find a real example for each.
+Build the case in the order of its spine, and talk it through before writing.
 
 1. What changed in the world that makes this project necessary now?
-2. What hurts today? Ask for each pain point with a concrete example or a number.
-3. Describe the moment the pain happens, as a scene the reader has lived. (This becomes the hook.)
-4. What is the one idea that makes this different? Say it in one sentence.
-5. For each pain: what should happen instead?
-6. Show it working: one concrete example of the product in use (a conversation, a command and its output, a screen).
-7. What must this project never become? Ask for the reason of each.
-8. Who is it for? Who is the first user?
-9. What is the approach, in one line per choice: platform, language, core model, what it builds on?
-10. What could make it fail, and what reduces each risk?
+2. What hurts today? Brainstorm the pains together, as many as come. Then pick the ones that hurt most, and find a moment or a number for each.
+3. Describe the moment the pain happens, as a scene the reader has lived. This becomes the hook.
+4. For each pain: what should happen instead?
+5. What must this project never become? Ask for the reason of each.
+6. What is the one idea that answers the pains? Keep asking until it fits in a sentence.
+7. Present the whole case to the user, starting from the pain, and let the user test it. Agree on it before writing.
+8. Show it working: one concrete example of the product in use, such as a conversation, a command and its output, or a screen.
+9. Who is it for? Who is the first user?
+10. What is the approach, in one line per choice: platform, language, core model, what it builds on?
+11. What could make it fail, and what reduces each risk?
 
 ## Skeleton
 
@@ -52,33 +92,61 @@ It comes first in a session, because every other doc builds on the pain it names
 
 Proposed <YYYY-MM-DD>. For where the work stands today, see ROADMAP.md.
 
-## In short            (the hook: a scene the reader knows, then the one-line answer)
+## In short
 
-## The shift            (a before/after table)
+<the hook: a scene the reader knows>
 
-## Pain points          (numbered, one bold line each, with an example)
+**<the one-line answer>**
 
-## The idea             (one bold sentence; a table or diagram only if it helps)
+## The shift
 
-## What we want         (table: pain → what the project does)
+| Before | Now |
+|---|---|
+| <how it was> | <what changed> |
 
-## How it works         (one concrete sample, a few lines, link FEATURES.md)
+## Pain points
 
-## What we don't want   (table of a few stances; link FEATURES.md → Not planned for the full list)
+1. **<the pain, one line>.** <the moment, or the number, that proves it>
+
+<one sentence on what the pains lead to, when they share a root>
+
+## The idea
+
+**<one sentence>.** <a few sentences on what it means>
+
+## What we want
+
+- **<what should happen instead>.** <how, in a sentence or two>. This answers pain <N>.
+
+## How it works
+
+<one concrete sample, a few lines; link FEATURES.md>
+
+## What we don't want
+
+- **<what the project refuses to become>.** <the reason>.
+
+For the full list, see FEATURES.md → Not planned.
 
 ## Who it is for
 
 ## Approach
 
-## Risks                (table: risk → mitigation)
+## Risks
 
-## How we know it works (link GOALS.md)
+| Risk | What reduces it |
+|---|---|
+| <risk> | <mitigation> |
+
+## How we know it works
+
+<the headline checks; link GOALS.md>
 ```
 
 ## Style
 
-Short sections, each opening with its point. Tables for comparisons. Real numbers. The proposal argues, so every section should make the case stronger.
+Short sections, each opening with its point. The pains, wants and don't-wants are prose with a bold line each. Tables are for comparisons: the shift and the risks. Numbers are real, and they prove a pain or name a check. The proposal argues, so every section should make the case stronger.
 
 ## Done when
 
-The hook names a moment the reader has lived. The idea fits in one sentence. The sample shows the product instead of describing it. Every pain has an example, every want answers a pain, and every "don't want" has a reason. A stranger could repeat the pitch in two sentences.
+The hook names a moment the reader has lived. The case runs from the pain, and the user heard it before it was written. The idea fits in one sentence. The sample shows the product instead of describing it. Every pain has an example, every want answers a pain, and every "don't want" has a reason. No section reports measured results. A stranger could repeat the pitch after one reading.
