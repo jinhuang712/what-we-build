@@ -1,6 +1,6 @@
 ---
 name: what-we-build
-description: Draft a new project's founding documents by talking each one through with the user, in discussion, brainstorming and clear decisions. Proposal, philosophy, goals, features, designs, roadmap and README, where each document answers one question, so every fact has one home. Also resumes an unfinished session.
+description: Draft a new project's founding documents by talking each one through with the user, in discussion, brainstorming and clear decisions. Proposal, philosophy, designs, goals, features, roadmap and README, where each document answers one question, so every fact has one home. Also resumes an unfinished session.
 disable-model-invocation: true
 ---
 
@@ -12,15 +12,15 @@ The conversation is the method. A document records decisions. It cannot make the
 
 ## The doc set
 
-Seven documents form the core of a new project. Each one answers a single question, and together they cover why the project exists, what it must achieve, what it does, how it is built and when it ships.
+Seven documents form the core of a new project. Each one answers a single question, and together they cover why the project exists, how it sees the problem, how it is built, what it must achieve, what it does and when it ships.
 
 | Doc | Answers | Owns | Leaves out |
 |---|---|---|---|
 | `PROPOSAL.md` | Why did we start this? | the shift, pain points, the idea, what we want, what we don't want, approach, risks | exact behavior, numbers to check, progress |
-| `PHILOSOPHY.md` | Why is it this way? | the belief behind the project, a few principles that each pick a side and refuse one thing, a tie-break | any feature the product has, setting or screen |
+| `PHILOSOPHY.md` | Why is it this way? | the belief behind the project, the questions it takes a stance on with their answers, a tie-break, reflections | any feature the product has, setting or screen, how it is built |
+| `DESIGNS.md` | How is it built, and why that way? | design principles with their costs and checks, decisions in dated sections with the options each beat and the reason, open questions | user-visible behavior (link the feature), a map of the code |
 | `GOALS.md` | What do we measure? | checks, each with the want it serves, a number, a method and a status | anything vague, non-goals |
 | `FEATURES.md` | What does it do, and what will it do? | behavior from the user's side, each feature's status (built, built with a gap, planned), *Later*, *Not planned* | type names, code paths, design reasons, progress |
-| `DESIGNS.md` | How is it built, and why that way? | design principles with their costs and checks, decisions with the option each beat and a dated reason, open questions | user-visible behavior (link the feature), a map of the code |
 | `ROADMAP.md` | When, and how far along? | milestones, tasks, progress, exit criteria that point to goals | behavior, the *Later* list |
 | `README.md` | What is this, and how do I start? | a short description, what it does, install, first use, known limits, links | detail another doc owns |
 
@@ -32,18 +32,18 @@ Core docs:
 
 - [PROPOSAL.md](references/PROPOSAL.md)
 - [PHILOSOPHY.md](references/PHILOSOPHY.md)
+- [DESIGNS.md](references/DESIGNS.md)
 - [GOALS.md](references/GOALS.md)
 - [FEATURES.md](references/FEATURES.md)
-- [DESIGNS.md](references/DESIGNS.md)
 - [ROADMAP.md](references/ROADMAP.md)
 - [README.md](references/README.md)
 
-Optional docs:
+Optional docs, the first two recommended for every project:
 
+- [TODO.md](references/TODO.md)
+- [CHANGELOG.md](references/CHANGELOG.md)
 - [UIUX.md](references/UIUX.md)
 - [GLOSSARY.md](references/GLOSSARY.md)
-- [CHANGELOG.md](references/CHANGELOG.md)
-- [TODO.md](references/TODO.md)
 - [CONTRIBUTING.md](references/CONTRIBUTING.md)
 - [SECURITY.md](references/SECURITY.md)
 - [RUNBOOK.md](references/RUNBOOK.md)
@@ -60,7 +60,7 @@ These rules keep a doc set easy to trust: one place to look for each fact, and e
 - **Reasons have homes.** Why something will not be built goes in `FEATURES.md` → *Not planned*, because that is where someone looks before proposing it. Why something is built a certain way goes in `DESIGNS.md`, beside the design. A design decision that only carries out a product decision links to that reason instead of restating it.
 - **Claims are checked.** A statement about behavior, such as an install command or a command name, is checked by running it, or marked "not yet verified". A goal or criterion is met only with a measurement or the user's own report, made by someone who did not write the change. A claim nobody checked is a guess that looks like a fact: one rewrite marked two goals met, and an independent count failed both.
 - **The code is a home too.** A doc repeats the code, the config or a command's output only when looking it up is expensive. It keeps what looking cannot find: the reason, the convention, the trap. A restated fact goes stale the day the code changes.
-- **Headings are addresses.** Code comments and other docs cite headings (`DESIGNS.md → Decisions`). Keep them stable. When one must change, search the code and the docs for references first, and fix every one in the same change. Renamed headings once broke the comments that pointed to them.
+- **Headings are addresses.** Code comments and other docs cite headings (`DESIGNS.md → Open questions`). Keep them stable. When one must change, search the code and the docs for references first, and fix every one in the same change. Renamed headings once broke the comments that pointed to them.
 - **One language per doc set,** so a reader never switches languages mid-doc.
 
 ### The placement test
@@ -69,7 +69,7 @@ Ask the questions in order. The first yes names the fact's home.
 
 | Question | Home |
 |---|---|
-| Is it a reason that applies to many things? | `PHILOSOPHY.md` |
+| Is it a stance that steers the whole project, not only how it is built? | `PHILOSOPHY.md` |
 | Can it be checked with a number? | `GOALS.md` |
 | Can the user see it or do it? | `FEATURES.md` for what happens and whether it is built, `UIUX.md` for how it looks |
 | Is it a feature the project will not build? | `FEATURES.md` → *Not planned* |
@@ -79,7 +79,7 @@ Ask the questions in order. The first yes names the fact's home.
 
 ## How each doc is written
 
-Each doc has its own style, meaning its form, given in its guide. For example, `GOALS.md` is a short intro and one table of checks, and `PHILOSOPHY.md` is one screen: a short preamble, one line per principle, and a tie-break. The full wording rules are in [references/wording.md](references/wording.md).
+Each doc has its own style, meaning its form, given in its guide. For example, `GOALS.md` is a short intro and one table of checks, and `PHILOSOPHY.md` is a short preamble, a few questions each answered with a stance, a tie-break and *Reflections*. The full wording rules are in [references/wording.md](references/wording.md).
 
 Judge a doc by how fast a reader finds a fact, not by its line count. Sessions met line limits by deleting blank lines, and doubled a doc with nested lists.
 
@@ -104,13 +104,13 @@ The first minutes decide what the session is about. Ask for the idea in one or t
 
 ### 2. Agree on the doc set
 
-Recommend the core seven plus the optional docs that fit, each with one clause of reason. Each optional doc's guide says when the project needs it. The user confirms or changes the list.
+Recommend the core seven, `TODO.md` and `CHANGELOG.md`, plus the other optional docs that fit, each with one clause of reason. Each optional doc's guide says when the project needs it. The user confirms or changes the list. When the list is agreed, create `TODO.md` and `CHANGELOG.md` if the user kept them, so a finding or a change has a home from the start.
 
 ### 3. Work through the docs, in order
 
-`PROPOSAL.md` → `PHILOSOPHY.md` → `GOALS.md` → `FEATURES.md` → `DESIGNS.md` → `ROADMAP.md` → `README.md`.
+`PROPOSAL.md` → `PHILOSOPHY.md` → `DESIGNS.md` → `GOALS.md` → `FEATURES.md` → `ROADMAP.md` → `README.md`.
 
-The order matters, because each doc builds on the ones before it. Each doc's guide says what it takes from the docs before it, and where an optional doc fits in the order.
+The order matters, because each doc builds on the ones before it. The design comes right after the philosophy, because the design guides the features. Each doc's guide says what it takes from the docs before it, and where an optional doc fits in the order.
 
 For each doc:
 

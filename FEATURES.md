@@ -22,7 +22,7 @@ A session turns an idea into the founding documents of a project. You bring one 
 | Each doc | Approve it, or ask for changes | The mark becomes `approved` |
 | Close | Read the summary | Each doc's status, and the questions you still own |
 
-The docs come in order: PROPOSAL → PHILOSOPHY → GOALS → FEATURES → DESIGNS → ROADMAP → README. Each one builds on the ones before it, so you never answer the same question twice.
+The docs come in order: PROPOSAL → PHILOSOPHY → DESIGNS → GOALS → FEATURES → ROADMAP → README. Each one builds on the ones before it, so you never answer the same question twice. The design comes right after the philosophy, because the design guides the features.
 
 **Choosing the mode.** `/what-we-build` alone reads the folder and picks the mode. An argument picks it for you: `new` or `resume`.
 
@@ -44,12 +44,13 @@ The mark becomes `approved` when you approve the doc, and goes back to `drafted`
 
 ## F3 — The doc set ✅
 
-The skill knows 14 kinds of document: 7 core, and 7 optional that join only when the project needs them.
+The skill knows 14 kinds of document: 7 core and 7 optional. Two optional docs, TODO and CHANGELOG, are recommended for every project and start when you agree on the doc set, so a finding or a change has a home from the start. The other five join only when the project needs them.
 
 | Kind | Docs |
 |---|---|
-| Core | PROPOSAL, PHILOSOPHY, GOALS, FEATURES, DESIGNS, ROADMAP, README |
-| Optional | UIUX, GLOSSARY, CHANGELOG, TODO, CONTRIBUTING, SECURITY, RUNBOOK |
+| Core | PROPOSAL, PHILOSOPHY, DESIGNS, GOALS, FEATURES, ROADMAP, README |
+| Optional, recommended for every project | TODO, CHANGELOG |
+| Optional, when the project needs them | UIUX, GLOSSARY, CONTRIBUTING, SECURITY, RUNBOOK |
 
 For each kind, the skill carries a guide. The agent reads it before it starts that doc, so the questions, the push-back and the doc's form fit that doc. It also maps other common names to the set, for example a PRD to FEATURES, or an ARCHITECTURE.md to DESIGNS.
 
@@ -64,7 +65,7 @@ The docs come out in plain, precise English, so a reader finds a fact fast and u
 | Numbers with sources | A number instead of an adjective, and a source for every number that states a fact |
 | Shared status marks | ✅ 🚧 🟨 ⬜ ❌ mean the same in every doc |
 
-Each doc has its own style. For example, GOALS is a short intro and one table, and PHILOSOPHY is one screen: a short preamble, one line per principle, and a tie-break.
+Each doc has its own style. For example, GOALS is a short intro and one table, and PHILOSOPHY answers a few questions the project takes a stance on, with room below for reflections. The skill asks you those questions first, and each stance comes from your answer.
 
 ## Later, if needed
 
@@ -84,6 +85,6 @@ Each doc has its own style. For example, GOALS is a short intro and one table, a
 | Choosing how a product should feel | That is the user's call. The skill records the user's words when they bring them. |
 | User manuals (tutorials, how-to guides, API and command references) | They answer other questions, after the founding docs exist. |
 | Agent instruction files (AGENTS.md, CLAUDE.md) | They hold the commands and rules for the code, which comes after the founding docs. Claude Code's `/init` writes one from the code. |
-| Decision records (ADRs) | DESIGNS.md holds each decision in one line, with the option it beat and its reason. |
+| Decision records (ADRs) | DESIGNS.md holds each decision in its own dated section, with the options it beat and its reason. |
 | Standard texts (LICENSE, CODE_OF_CONDUCT) | They need a choice of a standard text, not a discussion. |
 | Scripts that check the docs, such as links or blank lines | The skill's job is the conversation. The agent keeps links and blank lines right while it writes. |

@@ -1,10 +1,10 @@
 # TODO.md
 
-TODO.md holds small fixes found in review that have no milestone yet, so they don't get lost.
+TODO.md holds small fixes and follow-ups that have no milestone yet, so they don't get lost.
 
 **Owns:** short items, each with enough context to act on.
 
-**Add when** small findings would otherwise get lost. Move an item to ROADMAP once it has a milestone.
+**Recommend it for every project, and create it when the doc set is agreed,** so a finding has a home the moment it comes up. Move an item to ROADMAP once it has a milestone. In one session the agent recommended skipping it. The user asked for it, and three approved docs later the file still did not exist.
 
 | Weak | Strong |
 |---|---|

@@ -4,7 +4,7 @@ The changelog tells users what changed in each release, in words they understand
 
 **Owns:** one section per version with its date, grouped by area.
 
-**Add when** the project ships releases. Start it with the first release. A fact belongs here when it shipped in a release.
+**Recommend it for every project, and create it when the doc set is agreed,** with an empty *Unreleased* section, so the first change has a place to land. In one session the user asked for it with the doc set, and three approved docs later the file still did not exist. A fact belongs here when it shipped in a release.
 
 ## Guidelines
 

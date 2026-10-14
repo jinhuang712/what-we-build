@@ -1,4 +1,4 @@
-<!-- what-we-build: drafted 2026-10-13 -->
+<!-- what-we-build: drafted 2026-10-14 -->
 
 # Designs
 
@@ -34,14 +34,42 @@ Each principle names the choice, what it costs, and how to check that it holds.
 - **Test by use first.** Real sessions come before prepared test prompts, and the prompts follow from what the sessions show ([ROADMAP.md](ROADMAP.md) → M3). Cost: evidence comes slowly, one session at a time. Holds as: each rule in `SKILL.md` that a session taught names the failure that taught it.
 - **The repo is its own first example.** Its docs follow the skill. Cost: every rule change means checking this repo's docs again. Holds as: every core doc in this repo carries a what-we-build mark.
 
-## Decisions
+## Decision: one skill with its modes over a skill per mode — 2026-10-12
 
-- Decided 2026-10-12: one skill with its modes over a skill per mode, because the modes share the roles, the rules and the wording, and a user should not need to know which skill to call.
-- Decided 2026-10-12: `disable-model-invocation: true` over automatic loading, because a session starts only when the user types the command (reason: FEATURES.md → Not planned).
-- Decided 2026-10-12: the plugin manifest at the repo root over a plugin-only layout, because the repo then installs as a plugin and also works when its skill folder is linked into `~/.claude/skills`. Install steps are in [README.md](README.md).
-- Decided 2026-10-12: our own skill over jig's `vision-elicitation` (ramboz/jig, MIT), because that skill runs a fixed 13-section questionnaire after jig's own scaffold and fills two templates, with no doc set, no push-back, no goals with numbers and no manual start. Its per-section fill marks gave the idea for the doc marks. The format here is our own.
-- Decided 2026-10-13: one guide file per kind of doc, holding everything about that doc, over one shared reference and notes in `SKILL.md`, because a step works on one doc, reading all 17 guides cost about 700 lines each time, and `SKILL.md` then keeps only the flow.
-- Decided 2026-10-13: three ideas from the writing guidance of mattpocock/skills (MIT) over the whole guide, because only these three matched a failure a session had shown: state the target instead of the ban, treat a doc that restates the code as a cache, and record only decisions that are hard to reverse, surprising and a real trade-off.
+The modes share the roles, the rules and the wording, and a user should not need to know which skill to call.
+
+## Decision: manual start over automatic loading — 2026-10-12
+
+The skill sets `disable-model-invocation: true`, because a session starts only when the user types the command (reason: FEATURES.md → Not planned).
+
+## Decision: the plugin manifest at the repo root over a plugin-only layout — 2026-10-12
+
+The repo then installs as a plugin, and also works when its skill folder is linked into `~/.claude/skills`. Install steps are in [README.md](README.md).
+
+## Decision: our own skill over jig's `vision-elicitation` — 2026-10-12
+
+jig's `vision-elicitation` (ramboz/jig, MIT) runs a fixed 13-section questionnaire after jig's own scaffold and fills two templates. It has no doc set, no push-back, no goals with numbers and no manual start. Its per-section fill marks gave the idea for the doc marks. The format here is our own.
+
+## Decision: one guide file per kind of doc over one shared reference — 2026-10-13
+
+Each guide holds everything about its doc, over one shared reference and notes in `SKILL.md`. A step works on one doc, and reading all 17 guides cost about 700 lines each time. `SKILL.md` then keeps only the flow.
+
+## Decision: three ideas from mattpocock/skills over the whole guide — 2026-10-13
+
+Only three ideas in the writing guidance of mattpocock/skills (MIT) matched a failure a session had shown:
+
+- State the target instead of the ban.
+- Treat a doc that restates the code as a cache.
+- Record only decisions that are hard to reverse, surprising and a real trade-off.
+
+## Decision: DESIGNS third, before GOALS and FEATURES — 2026-10-14
+
+The design comes right after the philosophy, because the design guides the features. In a real session on 2026-10-14, the platform and the language were settled long before any feature was listed, and the user moved DESIGNS ahead of GOALS.
+
+| Option | For | Against |
+|---|---|---|
+| **DESIGNS third** | The philosophy's stances turn into how the project is built while they are fresh, and the features are then written within that design. | A number the design needs stays open until GOALS sets it. |
+| DESIGNS fifth, after FEATURES | Every feature and every number is known before the design starts. | The features are written without the design that shapes them. |
 
 ## Open questions
 

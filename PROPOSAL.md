@@ -41,9 +41,9 @@ The numbers come from one real project built with coding agents over two weeks.
 |---|---|
 | PROPOSAL (this file) | Why did we start this? |
 | [PHILOSOPHY](PHILOSOPHY.md) | Why is it this way? |
+| [DESIGNS](DESIGNS.md) | How is it built, and why that way? |
 | [GOALS](GOALS.md) | What do we measure? |
 | [FEATURES](FEATURES.md) | What does it do, and what will it do? |
-| [DESIGNS](DESIGNS.md) | How is it built, and why that way? |
 | [ROADMAP](ROADMAP.md) | When, and how far along? |
 | [README](README.md) | What is this, and how do I start? |
 
