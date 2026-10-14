@@ -15,7 +15,7 @@ Put the answer first. When a section is long, its first sentence says what the s
 - Explain a term the first time a reader is likely to meet it.
 - Use a verb for an action: "The app sends the invoices", not "The app performs the sending of the invoices".
 - Prefer a one-word verb to a phrasal verb.
-- Keep noun clusters to three words. Break longer ones with prepositions.
+- Break a long noun cluster with prepositions, because the reader must untangle a stack of nouns to find the thing: "the export of reports for the tax year", not "the tax year report export".
 - Write "for example" and "that is", not "e.g." and "i.e.".
 - End a list with its last item, or give the count.
 - Choose words that carry meaning. Words that only add emphasis (very, really, simply, robust, seamless) take the reader's attention and give nothing back.
@@ -23,10 +23,10 @@ Put the answer first. When a section is long, its first sentence says what the s
 
 ## Sentences
 
-- Write short sentences, one point each: about 20 words for a step, 25 for a description.
+- Write short sentences, one point each. A reader takes in a short sentence at one pass, and reads a long one twice.
 - Put conditions first: "When a payment fails, the app tries again after 3 days."
 - Use the active voice, so the reader knows who does what.
-- Use at most one negation per sentence.
+- Avoid stacking negations. Each one makes the reader flip the meaning, and two flips are easy to get wrong: "Do every required step", not "Do not skip a step that is not optional".
 - Keep articles and "that". Dropped words save space and cost understanding.
 - Where a semicolon would join two sentences, write two sentences.
 - When a pronoun could point to two things, repeat the noun. Follow "this" with a noun.
