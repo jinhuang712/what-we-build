@@ -1,4 +1,4 @@
-<!-- what-we-build: drafted 2026-10-13 -->
+<!-- what-we-build: drafted 2026-10-14 -->
 
 # what-we-build — Proposal
 
@@ -54,7 +54,7 @@ This repo's own docs use the same set.
 | Pain | What what-we-build does |
 |---|---|
 | Every fact in several places | One question per doc (above). A placement test gives each new fact its home. Other docs link to it. |
-| Docs that tire the reader | Wording rules, a style per doc, and history kept to one dated clause per decision. |
+| Docs that tire the reader | Wording rules and a style per doc. |
 | Goals that are wishes | Each goal needs a number. Without one, it stays open. |
 | Principles that are features | Each principle picks a side a sensible team could reverse, and names one thing it refuses. |
 | Agents that agree too fast | Discussion and brainstorming before decisions, a recommendation with a reason when a choice is ready, and no doc before its key points are agreed. |

@@ -1,4 +1,4 @@
-<!-- what-we-build: drafted 2026-10-13 -->
+<!-- what-we-build: drafted 2026-10-14 -->
 
 # Features
 
@@ -44,12 +44,12 @@ The mark becomes `approved` when you approve the doc, and goes back to `drafted`
 
 ## F3 — The doc set ✅
 
-The skill knows 17 kinds of document: 7 core, and 10 optional that join only when the project needs them.
+The skill knows 16 kinds of document: 7 core, and 9 optional that join only when the project needs them.
 
 | Kind | Docs |
 |---|---|
 | Core | PROPOSAL, PHILOSOPHY, GOALS, FEATURES, DESIGNS, ROADMAP, README |
-| Optional | UIUX, CLI, GLOSSARY, AGENTS, CHANGELOG, TODO, CONTRIBUTING, SECURITY, RUNBOOK, decision records |
+| Optional | UIUX, CLI, GLOSSARY, AGENTS, CHANGELOG, TODO, CONTRIBUTING, SECURITY, RUNBOOK |
 
 For each kind, the skill carries a guide. The agent reads it before it starts that doc, so the questions, the push-back and the doc's form fit that doc. It also maps other common names to the set, for example a PRD to FEATURES, or an ARCHITECTURE.md to DESIGNS.
 
@@ -59,12 +59,9 @@ The docs come out in plain, precise English, so a reader finds a fact fast and u
 
 | Rule | What you see in the docs |
 |---|---|
-| Three layers | Each section opens with what it is, then guidelines, then the specifics |
 | One name per thing | A word means the same thing in every doc |
 | Short sentences | One point per sentence, with conditions first |
-| Format by shape | A table for records, a list for parallel items, sentences for reasoning |
 | Numbers with sources | A number instead of an adjective, and a source for every number that states a fact |
-| Short history | One dated clause per decision |
 | Shared status marks | ✅ 🚧 🟨 ⬜ ❌ mean the same in every doc |
 
 Each doc has its own style. For example, GOALS is a short intro and one table, and PHILOSOPHY is one screen: a short preamble, one line per principle, and a tie-break.

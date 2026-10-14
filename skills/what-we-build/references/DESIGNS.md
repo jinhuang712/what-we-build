@@ -19,7 +19,7 @@ It comes fifth in a session: it decides how the features will be built. A fact b
 - **Fold invariants into the principles.** "No request holds a lock across a network call" is the "Holds as" of a principle about concurrency, not a separate list.
 - **Keep product decisions out of the principles.** A design principle says how the project is built. When it says what the user gets ("starts only by hand"), it is a feature, and it goes in FEATURES.md.
 - **Record a decision when it is hard to reverse, surprising without context, and the result of a real trade-off.** Leave the obvious ones to the code. A record of every small choice buries the few that matter.
-- **Write each decision as one line: `Decided YYYY-MM-DD: X over Y, because ...`.** The option it beat shows the trade-off. The reason stops the next developer from undoing it. The fixed opening lets anyone count the decisions. When a decision needs its full context, write a decision record and link it from the line.
+- **Write each decision as one line: `Decided YYYY-MM-DD: X over Y, because ...`.** The option it beat shows the trade-off. The reason stops the next developer from undoing it. The fixed opening lets anyone count the decisions.
 - **Link the reason when a decision only carries out a product decision,** such as a manual start: `(reason: FEATURES.md → Not planned)`. The reason has one home.
 - **At the start of a project, write the design you intend.** Principles hold before the code exists, and each decision shows the option it beat, so the trade-off is visible before anything is built.
 - **Mark open questions as open.** A guess written as a decision gets built on.

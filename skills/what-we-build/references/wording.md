@@ -2,11 +2,7 @@
 
 People read these docs to decide and to build. Every rule below serves one of those two needs: a reader finds the fact fast, and understands it the first time. The rules borrow methods from controlled languages for technical writing, such as ASD-STE100 Simplified Technical English, in our own words.
 
-Write in your default voice. The rules shape clarity and form, not tone.
-
 ## Sections
-
-Every section has up to three layers: description, guidelines, then specifics. SKILL.md → *How each doc is written* says what each layer gives the reader.
 
 Put the answer first. When a section is long, its first sentence says what the section concludes. A reader who stops after one sentence should still leave with the point.
 
@@ -40,23 +36,9 @@ Put the answer first. When a section is long, its first sentence says what the s
 
 ## Lists and tables
 
-- Pick the format by the shape of the data, in every doc, even when the same records appear in another doc.
 - Keep one idea per list item and one idea per table cell.
 - Keep lists one level deep. When items need sub-items, use a table or split the topic.
 - Keep one blank line before and after every heading, list, table and code fence. Without it, a paragraph right after a list joins the last item, and one right after a table becomes a table row.
-
-| Shape | Format |
-|---|---|
-| Records with two or more attributes | a table, one row per record |
-| A few things compared on the same attributes | a table |
-| Commands, config, code, output | a code block, copied exactly |
-| Names, paths, keys, values in a sentence | backticks |
-| Steps in order | a numbered list |
-| Three or more parallel items with one attribute | a list |
-| Items that each need a sentence of explanation | a list, each item opening with a bold name |
-| Reasoning | sentences |
-
-A table fits when every record has the same short attributes. When each item needs its own sentence, such as a design principle with its cost and its check, use a list with a bold name instead.
 
 ## Status marks
 
@@ -77,12 +59,6 @@ Use one set of marks across every doc, so a mark means the same thing wherever i
 - Write dates as `YYYY-MM-DD`, and versions exactly.
 - Every number that states a fact has a source: a measurement, a file or a person. When the number is not known, say so and leave the item open.
 - A number inside an illustrative scene, told to "you", may be invented, because the scene asks the reader to imagine, not to believe. Keep it plausible, and keep it out of any sentence that states a fact.
-
-## History
-
-- Keep a decision's history as one clause: what, why, when. `Decided 2026-10-12: PostgreSQL over MongoDB, because every report joins orders to customers.`
-- A changed decision replaces the old one, with one clause of history: `Decided 2026-10-12: logs kept 30 days (was 90), because no bug report needed an older log.`
-- The story of how a decision was reached (what was checked, which mockup won, who asked) lives in git.
 
 ## Style by doc
 
