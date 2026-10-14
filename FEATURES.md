@@ -44,12 +44,12 @@ The mark becomes `approved` when you approve the doc, and goes back to `drafted`
 
 ## F3 — The doc set ✅
 
-The skill knows 16 kinds of document: 7 core, and 9 optional that join only when the project needs them.
+The skill knows 14 kinds of document: 7 core, and 7 optional that join only when the project needs them.
 
 | Kind | Docs |
 |---|---|
 | Core | PROPOSAL, PHILOSOPHY, GOALS, FEATURES, DESIGNS, ROADMAP, README |
-| Optional | UIUX, CLI, GLOSSARY, AGENTS, CHANGELOG, TODO, CONTRIBUTING, SECURITY, RUNBOOK |
+| Optional | UIUX, GLOSSARY, CHANGELOG, TODO, CONTRIBUTING, SECURITY, RUNBOOK |
 
 For each kind, the skill carries a guide. The agent reads it before it starts that doc, so the questions, the push-back and the doc's form fit that doc. It also maps other common names to the set, for example a PRD to FEATURES, or an ARCHITECTURE.md to DESIGNS.
 
@@ -82,6 +82,8 @@ Each doc has its own style. For example, GOALS is a short intro and one table, a
 | A fixed questionnaire or template | Fixed questions fill forms. Decisions come from a conversation. |
 | More docs than the project needs | Optional docs join only when they have a job, because only a doc with a job gets kept true. |
 | Choosing how a product should feel | That is the user's call. The skill records the user's words when they bring them. |
-| User manuals (tutorials, how-to guides, API references) | They answer other questions, after the founding docs exist. |
+| User manuals (tutorials, how-to guides, API and command references) | They answer other questions, after the founding docs exist. |
+| Agent instruction files (AGENTS.md, CLAUDE.md) | They hold the commands and rules for the code, which comes after the founding docs. Claude Code's `/init` writes one from the code. |
+| Decision records (ADRs) | DESIGNS.md holds each decision in one line, with the option it beat and its reason. |
 | Standard texts (LICENSE, CODE_OF_CONDUCT) | They need a choice of a standard text, not a discussion. |
 | Scripts that check the docs, such as links or blank lines | The skill's job is the conversation. The agent keeps links and blank lines right while it writes. |

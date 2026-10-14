@@ -1,5 +1,3 @@
-<!-- what-we-build: drafted 2026-10-13 -->
-
 # AGENTS.md
 
 Guidance for coding agents working on what-we-build. These rules cover what an agent cannot learn by reading the files.

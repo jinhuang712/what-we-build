@@ -4,7 +4,7 @@ CONTRIBUTING.md tells outside contributors how to help: how to set up, how work 
 
 **Owns:** setup, workflow (branches, commits, reviews), required checks, where to ask.
 
-**Add when** the project is public and accepts contributions. Draft it at the end of a session, with AGENTS.md, once the workflow is known.
+**Add when** the project is public and accepts contributions. Draft it at the end of a session, once the workflow is known.
 
 ## Guidelines
 
