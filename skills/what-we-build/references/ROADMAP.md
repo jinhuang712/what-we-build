@@ -16,7 +16,7 @@ It comes sixth in a session: it schedules the features into milestones, and its 
 - **Make the first milestone small enough to finish soon.** A first milestone that drags makes the whole plan look unreal.
 - **Point exit criteria at goal IDs** instead of restating them, so the measure lives in one place.
 - **Give tasks IDs** (M1.1) that branches and commits can use, so the work traces back to the plan.
-- **Keep one row per task, about 20 words.** Logs of how a task was built and checked belong in git.
+- **Keep one row per task, short enough to scan down the table.** Logs of how a task was built and checked belong in git.
 
 ## Weak and strong
 

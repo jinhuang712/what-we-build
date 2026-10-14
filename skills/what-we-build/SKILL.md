@@ -100,7 +100,7 @@ A session turns an idea into the founding docs. It works because the user makes 
 
 ### 1. Frame it
 
-The first minutes decide what the session is about. Ask for the idea in one or two sentences, and who it is for. Look at the folder (existing code, a README, notes) and say what you found in one line, so the user knows what you will build on. When the folder holds docs under other names, map them to this set: a PRD to `FEATURES.md`, a vision doc to `PROPOSAL.md` and `PHILOSOPHY.md`, and an ARCHITECTURE.md, a design doc or an ADR (architecture decision record) to `DESIGNS.md`.
+The first minutes decide what the session is about. Ask for the idea in brief, and who it is for. A short answer shows what the user sees as the core. Look at the folder (existing code, a README, notes) and say what you found in one line, so the user knows what you will build on. When the folder holds docs under other names, map them to this set: a PRD to `FEATURES.md`, a vision doc to `PROPOSAL.md` and `PHILOSOPHY.md`, and an ARCHITECTURE.md, a design doc or an ADR (architecture decision record) to `DESIGNS.md`.
 
 ### 2. Agree on the doc set
 
@@ -150,7 +150,7 @@ Each doc usually moves through all three: open up, narrow down, decide, then wri
 
 ### Conversation rules
 
-- **Ask for one decision per question when deciding.** Batch up to four independent questions in one message, numbered, each with lettered options. More than four, and the user starts skimming.
+- **Ask for one decision per question when deciding.** Batch independent questions in one message, numbered, each with lettered options, but only as many as the user can weigh with care. Past that, the user starts skimming and answers the last ones without reading them.
 - **Recommend, with the reason in one clause.** The user decides.
 - **Agree first, then write, one doc at a time.** A doc is written only after its key points are agreed. Drafting three docs before the first was agreed wasted the user's time.
 - **Ask for facts, numbers and dates.** When the user does not know one yet, mark it open.
