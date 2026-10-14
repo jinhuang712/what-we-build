@@ -16,6 +16,7 @@
 ### Doc guides
 
 - The guides teach instead of ordering: each rule gives its reason, and no rule sets a count to meet. The PHILOSOPHY guide is the first rewritten this way.
+- The proposal guide teaches the case from the pain: pain points, then what we want and don't want, then the idea. The agent talks the case through with the user before writing. The three lists are prose, not tables, and measured results stay in GOALS.
 - The rules give reasons instead of counts: how many questions to batch, how long a roadmap row, a sentence or a noun cluster may be, and how many negations a sentence may hold.
 - The philosophy comes from questions. The agent asks the questions the project must take a stance on, and each stance comes from the user's answer, not from a list of ready-made principles. The page answers each question with a stance and its reasoning, then holds the deeper thinking in *Reflections*.
 - The philosophy is where the project thinks. The agent keeps asking why until an answer reaches something about people or the world. Then it looks for books and papers on the same question, both those that agree and those that disagree, and quotes their checked words under the stance they test. Each stance is argued in full, and the page has no length limit: the bold lines carry the short form.
