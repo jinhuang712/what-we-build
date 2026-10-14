@@ -2,7 +2,7 @@
 
 GOALS.md turns the wants in the proposal into checks. A goal here is something a script, a benchmark or the user's own use can confirm or refute on a given day. It keeps the project honest: when someone claims progress, this is where the claim is tested. ROADMAP.md uses these goals as its exit criteria.
 
-It comes third in a session: it turns the proposal's wants into numbers. A fact belongs here when it can be checked with a number.
+It comes fourth in a session: it turns the proposal's wants into numbers, and sets the numbers that DESIGNS left open. A fact belongs here when it can be checked with a number.
 
 **Owns:** goals as checks, each with an ID, the want it serves, a measure with a number, a method, where it was measured, and a status.
 

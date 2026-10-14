@@ -2,7 +2,7 @@
 
 FEATURES.md is the contract with the user: what the product does today, and what it will and won't do. A user reads it to learn exactly what happens when they press a key or run a command. A contributor reads it before building, to see what exists and what was ruled out. It describes behavior from the user's side, never the code.
 
-It comes fourth in a session: each feature delivers a want from the proposal, and the proposal's stances become its *Not planned* list. A fact belongs here when the user can see it or do it.
+It comes fifth in a session: each feature delivers a want from the proposal within the design that DESIGNS sets, and the proposal's stances become its *Not planned* list. A fact belongs here when the user can see it or do it.
 
 **Owns:** each feature's behavior from the user's side (keys, commands, settings, config keys, files the user sees), its status, the *Later* list, and the *Not planned* list with reasons.
 

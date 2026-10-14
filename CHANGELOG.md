@@ -9,13 +9,19 @@
 - The draft step starts from the guide's skeleton and style, and names the wording rules.
 - SKILL.md lists every doc guide by name, with a link, instead of a path pattern and one example.
 - Each failure from a real session sits beside the rule it backs, as that rule's reason. The separate list of lessons, which repeated those rules, is gone.
+- The docs come in a new order: PROPOSAL → PHILOSOPHY → DESIGNS → GOALS → FEATURES → ROADMAP → README. The design comes right after the philosophy, because the design guides the features.
+- TODO.md and CHANGELOG.md are recommended for every project, and created as soon as the doc set is agreed.
+- The placement test sends a stance that steers the whole project to PHILOSOPHY.md. A rule that steers only how the project is built goes to DESIGNS.md.
 
 ### Doc guides
 
+- The philosophy comes from questions. The agent asks the questions the project must take a stance on, and each stance comes from the user's answer, not from a list of ready-made principles. The page answers each question with a stance and its reasoning, then holds the deeper thinking in *Reflections*.
+- Each design decision gets its own section, `## Decision: <the choice> — YYYY-MM-DD`, with room for prose, a list or a table of the options.
+- The design guide asks how the design fails, and lists failure among the areas.
 - The skeletons keep a blank line around every block, so a doc copied from them no longer joins two lines or turns a line into a table row.
 - Each doc's form lives in its guide. The style table in the wording rules, which had drifted from the guides, is gone.
 - Every skeleton heading stays, with "None yet" when it has nothing to hold. No heading is marked optional.
-- The decision records guide is removed. DESIGNS.md holds each decision in one line, and an ADR found in the folder maps to DESIGNS.md.
+- The decision records guide is removed. An ADR found in the folder maps to DESIGNS.md.
 - The CLI.md and AGENTS.md guides are removed. A command reference copies the program, and an agent file holds commands the code already shows.
 - Examples follow the rules they teach: the FEATURES setting gives its reason, the PHILOSOPHY principle names its refusal, and the history example says why.
 - A *Later* item that gets a milestone becomes a planned feature, and the roadmap schedules it.
@@ -35,6 +41,7 @@
 - ROADMAP's question reads "When, and how far along?" in every doc, as in SKILL.md.
 - The proposal says "one sitting" for goal G1, as GOALS.md does.
 - An audit of the repo's own docs against the skill's rules fixed most lines that broke a rule. Conflicts that need the owner's decision stay open.
+- DESIGNS.md holds each decision in its own dated section, and records the new doc order as a decision. Goal G4 counts those sections, and stays open until someone measures it again.
 
 ## 0.3.0 — 2026-10-13
 
