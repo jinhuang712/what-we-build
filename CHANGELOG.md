@@ -29,6 +29,8 @@
 - The CLI.md and AGENTS.md guides are removed. A command reference copies the program, and an agent file holds commands the code already shows.
 - Examples follow the rules they teach: the FEATURES setting gives its reason, the PHILOSOPHY principle names its refusal, and the history example says why.
 - A *Later* item that gets a milestone becomes a planned feature, and the roadmap schedules it.
+- FEATURES and DESIGNS open with a TL;DR: an outline of the whole doc, one small table per group. FEATURES gives each capability its own row, with its feature and its status. The details follow in the same order, a `##` heading per group and a `###` per item, and are written to scan: a lead sentence, then short lines, tables, small diagrams or short snippets.
+- DESIGNS holds no status. A principle the code does not hold yet is still the design, and the gap is tracked in FEATURES, TODO or GOALS.
 
 ### Wording
 

@@ -18,7 +18,7 @@ Seven documents form the core of a new project. Each one answers a single questi
 |---|---|---|---|
 | `PROPOSAL.md` | Why did we start this? | the shift, pain points, the idea, what we want, what we don't want, approach, risks | exact behavior, numbers to check, progress |
 | `PHILOSOPHY.md` | Why is it this way? | the belief behind the project, the questions it takes a stance on with their answers and arguments, quotes from sources, a tie-break, reflections | any feature the product has, setting or screen, how it is built |
-| `DESIGNS.md` | How is it built, and why that way? | design principles with their costs and checks, decisions in dated sections with the options each beat and the reason, open questions | user-visible behavior (link the feature), a map of the code |
+| `DESIGNS.md` | How is it built, and why that way? | design principles with their costs and checks, decisions in dated sections with the options each beat and the reason, open questions | user-visible behavior (link the feature), whether it is built yet, a map of the code |
 | `GOALS.md` | What do we measure? | checks, each with the want it serves, a number, a method and a status | anything vague, non-goals |
 | `FEATURES.md` | What does it do, and what will it do? | behavior from the user's side, each feature's status (built, built with a gap, planned), *Later*, *Not planned* | type names, code paths, design reasons, progress |
 | `ROADMAP.md` | When, and how far along? | milestones, tasks, progress, exit criteria that point to goals | behavior, the *Later* list |

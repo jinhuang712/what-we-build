@@ -13,7 +13,10 @@ It comes fifth in a session: each feature delivers a want from the proposal with
 ## Guidelines
 
 - **Give each feature an ID and a status** (✅ built, 🚧 built with a gap, ⬜ planned), so other docs can point to it and a reader knows what to trust.
-- **Open each feature with a short description** of what it gives the user. Then the behavior.
+- **Open with a TL;DR, an outline of every capability.** Group the features by what the user is doing. Under each group's bold name, a small table gives one row per capability: its name, what it does in one line, the feature it belongs to, and its status. A reader sees the whole product at a glance, and the feature ID leads to the details. A row per feature hides what the feature holds: in one session, each row bundled several capabilities, and the user asked whether that was all the product did.
+- **Keep the outline's status true to the details.** A row never shows ✅ for what its section names as a gap, so the outline never claims more than the details.
+- **Follow the outline in the details.** Each group is a `##` heading, and each feature a `###` heading under it, in the outline's order. A reader then goes from a row to its section without searching.
+- **Open each feature with a short description** of what it gives the user. Then the behavior, in the form that reads best: short lines, a table, a small diagram, or a command or snippet of a few lines. A long plain paragraph hides the fact the reader came for: one session rewrote its features as prose, and the user found them hard to read. Keep a snippet small, because it shows the shape of a use, not a program. Introduce each diagram or code block with a sentence that says what it shows.
 - **Describe what the user does and what happens, in the present tense.** A reader should be able to predict the result before trying it.
 - **State the defaults, and every setting with its key.** Each setting needs a reason, because a setting is a decision handed back to the user.
 - **Name the gap** on every 🚧 feature, so nobody mistakes "built" for "finished".
@@ -29,17 +32,19 @@ It comes fifth in a session: each feature delivers a want from the proposal with
 | "Smart invoicing." | "An invoice goes out on the first of each month. When a payment fails, the app tries again after 3 days, then emails the customer." | What happens, and when |
 | "Uses a cron job and a retry queue." | Move it to DESIGNS.md. | Implementation, not behavior |
 | "Configurable reminders." | "One reminder, 3 days before the due date. Setting: `reminders.enabled`, on by default, because a customer who pays by standing order may not want reminders." | The default, and the one setting with its reason |
+| One TL;DR row: "Invoicing, sends invoices, F2, ✅". | Three rows for F2: monthly invoices, a retry 3 days after a failed payment, and a reminder before the due date. | One row per capability, so the outline shows all that the product does |
 
 ## Explore
 
 **Brainstorm to open:** for each want, list everything the product could do about it. Then sort the list into now, later and never.
 
 1. From each want in PROPOSAL: which features deliver it? Give each an ID (F1, F2, ...).
-2. For each feature: what does the user do, and what happens? What are the defaults?
-3. Which settings does it need? Recommend none. Each setting needs a reason.
-4. What is its status: built, built with a gap, or planned?
-5. What is deliberately left for later?
-6. What will the project never do? Turn the stances in PROPOSAL into concrete items, each with a reason.
+2. How do the features group, by what the user is doing?
+3. For each feature: what does the user do, and what happens? What are the defaults?
+4. Which settings does it need? Recommend none. Each setting needs a reason.
+5. What is its status: built, built with a gap, or planned?
+6. What is deliberately left for later?
+7. What will the project never do? Turn the stances in PROPOSAL into concrete items, each with a reason.
 
 ## Skeleton
 
@@ -48,11 +53,21 @@ It comes fifth in a session: each feature delivers a want from the proposal with
 
 <one line per status mark: ✅ built · 🚧 built with a gap · ⬜ planned>
 
-## F1 — <name> ⬜
+## TL;DR
+
+**<Group>**
+
+| Capability | What it does | Feature | Status |
+|---|---|---|---|
+| <name> | <one line> | F1 | ⬜ |
+
+## <Group>
+
+### F1 — <name> ⬜
 
 <a short description: what it gives the user>
 
-<behavior, as short lines or a table>
+<behavior: short lines, a table, a small diagram or a short snippet>
 
 Settings: <none, or each with its key and reason>
 
@@ -65,8 +80,8 @@ Gap: <for 🚧 only>
 
 ## Style
 
-One section per feature, present tense, from the user's side. Tables for keys, commands and settings.
+A TL;DR outline, then one section per group and one per feature, in the same order. Present tense, from the user's side. Tables for keys, commands and settings.
 
 ## Done when
 
-Every want in PROPOSAL maps to a feature or to *Not planned*, every 🚧 names its gap, and no line describes the code.
+Every want in PROPOSAL maps to a feature or to *Not planned*, every capability has a row in the TL;DR, every 🚧 names its gap, and no line describes the code.

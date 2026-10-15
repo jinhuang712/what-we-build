@@ -1,4 +1,4 @@
-<!-- what-we-build: drafted 2026-10-14 -->
+<!-- what-we-build: drafted 2026-10-16 -->
 
 # Features
 
@@ -8,9 +8,53 @@ Two words have one meaning each here. A **session** is one what-we-build convers
 
 Status: ✅ built · 🚧 built, with the gap named in its section · ⬜ planned.
 
-## F1 — New project: talk it through ✅
+## TL;DR
 
-A session turns an idea into the founding documents of a project. You bring one or two sentences. The skill talks each document through with you until its key points are clear, then writes it down. Some points need discussion, some a brainstorm, and some a clear choice. You stay in charge throughout: every choice comes with a recommendation, and nothing is written before you agree.
+Every capability by group, with the feature it belongs to and its status. The details follow below, in the same order.
+
+**Running a session**
+
+| Capability | What it does | Feature | Status |
+|---|---|---|---|
+| Choose the mode | reads the folder, then starts a new project or resumes | F1 | ✅ |
+| Pick the mode yourself | `new` or `resume` as an argument | F1 | ✅ |
+| Frame the idea | you say the idea and who it is for, and the skill says what the folder already holds | F1 | ✅ |
+| Agree on the doc set | you confirm or change the recommended docs | F1 | ✅ |
+| Talk each doc through | discuss, brainstorm or decide, with a recommendation whenever a choice is ready | F1 | ✅ |
+| Push back | one push-back with its reason when something does not fit | F1 | ✅ |
+| Write after you agree | a doc is written only after its key points are agreed, and marked `drafted` | F1 | ✅ |
+| Approve | your approval turns the mark to `approved` | F1 | ✅ |
+| Docs in order | each doc builds on the ones before it, so you never answer twice | F1 | ✅ |
+| Close | each doc's status, and the questions you still own | F1 | ✅ |
+| Marks | an invisible mark on each doc's first line says `drafted` or `approved` | F2 | ✅ |
+| Resume | a later sitting continues at the first doc that is not approved | F2 | ✅ |
+
+**Getting the docs**
+
+| Capability | What it does | Feature | Status |
+|---|---|---|---|
+| Core docs | PROPOSAL, PHILOSOPHY, DESIGNS, GOALS, FEATURES, ROADMAP and README | F3 | ✅ |
+| TODO and CHANGELOG from the start | recommended for every project, and created once the doc set is agreed | F3 | ✅ |
+| Optional docs | UIUX, GLOSSARY, CONTRIBUTING, SECURITY and RUNBOOK, only when the project needs them | F3 | ✅ |
+| A guide per doc | the questions, the push-back and the form fit that doc | F3 | ✅ |
+| Other names mapped | a PRD maps to FEATURES, and an ARCHITECTURE.md to DESIGNS | F3 | ✅ |
+| One name per thing | a word means the same thing in every doc | F4 | ✅ |
+| Short sentences | one point per sentence, with conditions first | F4 | ✅ |
+| Numbers with sources | a number instead of an adjective, and a source for every number that states a fact | F4 | ✅ |
+| Shared status marks | ✅ 🚧 🟨 ⬜ ❌ mean the same in every doc | F4 | ✅ |
+| A form per doc | for example, GOALS is a short intro and one table of checks | F4 | ✅ |
+| An outline up front | FEATURES and DESIGNS open with a TL;DR of every item, by group | F4 | ✅ |
+| Philosophy from questions | each stance comes from your answer, then is tested against books and papers | F4 | ✅ |
+
+## Running a session
+
+### F1 — New project: talk it through ✅
+
+A session turns an idea into the founding documents of a project.
+
+- You bring one or two sentences.
+- The skill talks each document through with you until its key points are clear, then writes it down. Some points need discussion, some a brainstorm, and some a clear choice.
+- You stay in charge throughout: every choice comes with a recommendation, and nothing is written before you agree.
 
 | Stage | What you do | What you get |
 |---|---|---|
@@ -32,7 +76,7 @@ The docs come in order: PROPOSAL → PHILOSOPHY → DESIGNS → GOALS → FEATUR
 | Docs with marks, not all approved | resumes |
 | Something that disagrees with your request | asks you |
 
-## F2 — Resume ✅
+### F2 — Resume ✅
 
 A session can stop at any point and pick up in a later sitting. Each drafted doc carries a mark on its first line, invisible when rendered:
 
@@ -42,7 +86,9 @@ A session can stop at any point and pick up in a later sitting. Each drafted doc
 
 The mark becomes `approved` when you approve the doc, and goes back to `drafted` whenever the doc is edited again. `/what-we-build resume` reads the marks, tells you where the session stopped, and continues at the first doc that is not approved.
 
-## F3 — The doc set ✅
+## Getting the docs
+
+### F3 — The doc set ✅
 
 The skill knows 14 kinds of document: 7 core and 7 optional. Two optional docs, TODO and CHANGELOG, are recommended for every project and start when you agree on the doc set, so a finding or a change has a home from the start. The other five join only when the project needs them.
 
@@ -54,7 +100,7 @@ The skill knows 14 kinds of document: 7 core and 7 optional. Two optional docs, 
 
 For each kind, the skill carries a guide. The agent reads it before it starts that doc, so the questions, the push-back and the doc's form fit that doc. It also maps other common names to the set, for example a PRD to FEATURES, or an ARCHITECTURE.md to DESIGNS.
 
-## F4 — Wording rules ✅
+### F4 — Wording rules ✅
 
 The docs come out in plain, precise English, so a reader finds a fact fast and understands it the first time.
 
@@ -65,7 +111,11 @@ The docs come out in plain, precise English, so a reader finds a fact fast and u
 | Numbers with sources | A number instead of an adjective, and a source for every number that states a fact |
 | Shared status marks | ✅ 🚧 🟨 ⬜ ❌ mean the same in every doc |
 
-Each doc has its own style. For example, GOALS is a short intro and one table, and PHILOSOPHY is where the project thinks: a few questions the project takes a stance on, each argued in full and tested against books and papers, with room below for reflections. The skill asks you those questions first, each stance comes from your answer, and then the skill goes deeper with sources.
+Each doc also has its own form:
+
+- GOALS is a short intro and one table of checks.
+- FEATURES and DESIGNS open with a TL;DR: an outline of every capability or principle, by group. The details follow in the same order, written to scan.
+- PHILOSOPHY is where the project thinks: a few questions the project takes a stance on, each argued in full and tested against books and papers, with room below for reflections. The skill asks you those questions first, each stance comes from your answer, and then the skill goes deeper with sources.
 
 ## Later, if needed
 
