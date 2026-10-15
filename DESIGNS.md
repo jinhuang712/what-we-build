@@ -1,40 +1,147 @@
-<!-- what-we-build: drafted 2026-10-15 -->
+<!-- what-we-build: drafted 2026-10-16 -->
 
 # Designs
 
 How what-we-build is built, and why. What goes in is a project folder and a conversation with the user. What comes out is a set of Markdown docs, each with a mark that says drafted or approved. In between is the skill: Markdown instructions that an agent reads. What the skill does for the user is in [FEATURES.md](FEATURES.md).
 
-## Principles
+## TL;DR
 
-Each principle names the choice, what it costs, and how to check that it holds.
+The principles by area, then the decisions. Below, each principle names the choice, what it costs, and how to check that it holds.
 
-### Context
+**Context**
 
-- **Short core, detail on demand.** `SKILL.md` holds what every session needs. The doc guides and the wording rules wait in reference files until a step points to them. Cost: a step must name its reference, or the agent never reads it. Holds as: `SKILL.md` stays within the limit in GOALS.md G6, and each step that needs a reference names its path.
+| Principle | What it means |
+|---|---|
+| Short core, detail on demand | `SKILL.md` holds what every session needs, and the guides wait until a step points to them |
 
-### State
+**State**
 
-- **The docs are the state.** A mark on each doc's first line over a separate state file. Cost: points agreed for a doc that is not drafted yet are lost when the sitting ends. Holds as: no file but the docs records where a session stopped.
+| Principle | What it means |
+|---|---|
+| The docs are the state | a mark on each doc's first line, with no separate state file |
 
-### Portability
+**Portability**
 
-- **No dependencies.** The skill is Markdown only. Cost: nothing checks the docs by machine. Holds as: `skills/what-we-build/` holds only Markdown files.
+| Principle | What it means |
+|---|---|
+| No dependencies | the skill is Markdown only |
 
-### Words
+**Words**
 
-- **Our own words over borrowed text.** The wording rules take methods from controlled languages such as ASD-STE100, and from other writing guides, and rewrite them for this skill. Cost: a reader cannot check a rule against its source line by line. Holds as: the sources are named, in `references/wording.md` and in the decisions below, and no passage is copied from them.
-- **Made-up examples over real projects.** Each example in the skill is invented for it, or taken from this repo. Cost: an example carries no proof that it worked somewhere. Holds as: no example in `skills/` names or quotes another project.
-- **Teach over order.** A guide explains why each rule holds and shows it at work in a made-up example, so a session can apply the rule to a case the guide did not foresee. A session that only obeys follows the letter: one followed a guide's "table: pain → what the project does" exactly, and the user rejected the tables. Cost: a guide grows longer, and the agent reads more before it starts a doc. Holds as: each rule in a guide gives its reason.
-- **Reasons over counts.** A rule says what it protects, not a number to meet. Cost: no one can check the rule by counting, and two sessions may judge the same case differently. Holds as: no rule in `skills/` sets a count or a limit. Numbers appear only inside examples.
+| Principle | What it means |
+|---|---|
+| Our own words over borrowed text | the rules take methods from other guides and rewrite them |
+| Made-up examples over real projects | every example is invented, or taken from this repo |
+| Teach over order | each rule gives its reason, so a session can apply it to a new case |
+| Reasons over counts | a rule says what it protects, not a number to meet |
 
-### Checks
+**Checks**
 
-- **Readers check the docs, not scripts.** Cost: a broken link, a missing blank line or a wrong fact stays until a reader catches it. Holds as: every goal measured on this repo is measured by a reader who did not write the change ([GOALS.md](GOALS.md)).
+| Principle | What it means |
+|---|---|
+| Readers check the docs, not scripts | a reader checks links, blank lines and facts, and no script does |
 
-### Testing
+**Testing**
 
-- **Test by use first.** Real sessions come before prepared test prompts, and the prompts follow from what the sessions show ([ROADMAP.md](ROADMAP.md) → M3). Cost: evidence comes slowly, one session at a time. Holds as: each rule in `SKILL.md` that a session taught names the failure that taught it.
-- **The repo is its own first example.** Its docs follow the skill. Cost: every rule change means checking this repo's docs again. Holds as: every core doc in this repo carries a what-we-build mark.
+| Principle | What it means |
+|---|---|
+| Test by use first | real sessions come before prepared test prompts |
+| The repo is its own first example | this repo's docs follow the skill |
+
+**Decisions**
+
+| Decision | Date |
+|---|---|
+| One skill with its modes over a skill per mode | 2026-10-12 |
+| Manual start over automatic loading | 2026-10-12 |
+| The plugin manifest at the repo root over a plugin-only layout | 2026-10-12 |
+| Our own skill over jig's `vision-elicitation` | 2026-10-12 |
+| One guide file per kind of doc over one shared reference | 2026-10-13 |
+| Three ideas from mattpocock/skills over the whole guide | 2026-10-13 |
+| DESIGNS third, before GOALS and FEATURES | 2026-10-14 |
+
+## Context
+
+### Short core, detail on demand
+
+`SKILL.md` holds what every session needs. The doc guides and the wording rules wait in reference files until a step points to them.
+
+- **Cost:** a step must name its reference, or the agent never reads it.
+- **Holds as:** `SKILL.md` stays within the limit in GOALS.md G6, and each step that needs a reference names its path.
+
+## State
+
+### The docs are the state
+
+A mark on each doc's first line over a separate state file.
+
+- **Cost:** points agreed for a doc that is not drafted yet are lost when the sitting ends.
+- **Holds as:** no file but the docs records where a session stopped.
+
+## Portability
+
+### No dependencies
+
+The skill is Markdown only.
+
+- **Cost:** nothing checks the docs by machine.
+- **Holds as:** `skills/what-we-build/` holds only Markdown files.
+
+## Words
+
+### Our own words over borrowed text
+
+The wording rules take methods from controlled languages such as ASD-STE100, and from other writing guides, and rewrite them for this skill.
+
+- **Cost:** a reader cannot check a rule against its source line by line.
+- **Holds as:** the sources are named, in `references/wording.md` and in the decisions below, and no passage is copied from them.
+
+### Made-up examples over real projects
+
+Each example in the skill is invented for it, or taken from this repo.
+
+- **Cost:** an example carries no proof that it worked somewhere.
+- **Holds as:** no example in `skills/` names or quotes another project.
+
+### Teach over order
+
+A guide explains why each rule holds and shows it at work in a made-up example, so a session can apply the rule to a case the guide did not foresee.
+
+- A session that only obeys follows the letter. One followed a guide's "table: pain → what the project does" exactly, and the user rejected the tables.
+- **Cost:** a guide grows longer, and the agent reads more before it starts a doc.
+- **Holds as:** each rule in a guide gives its reason.
+
+### Reasons over counts
+
+A rule says what it protects, not a number to meet.
+
+- **Cost:** no one can check the rule by counting, and two sessions may judge the same case differently.
+- **Holds as:** no rule in `skills/` sets a count or a limit. Numbers appear only inside examples.
+
+## Checks
+
+### Readers check the docs, not scripts
+
+A reader checks links, blank lines and facts. No script does.
+
+- **Cost:** a broken link, a missing blank line or a wrong fact stays until a reader catches it.
+- **Holds as:** every goal measured on this repo is measured by a reader who did not write the change ([GOALS.md](GOALS.md)).
+
+## Testing
+
+### Test by use first
+
+Real sessions come before prepared test prompts, and the prompts follow from what the sessions show ([ROADMAP.md](ROADMAP.md) → M3).
+
+- **Cost:** evidence comes slowly, one session at a time.
+- **Holds as:** each rule in `SKILL.md` that a session taught names the failure that taught it.
+
+### The repo is its own first example
+
+Its docs follow the skill.
+
+- **Cost:** every rule change means checking this repo's docs again.
+- **Holds as:** every core doc in this repo carries a what-we-build mark.
 
 ## Decision: one skill with its modes over a skill per mode — 2026-10-12
 
