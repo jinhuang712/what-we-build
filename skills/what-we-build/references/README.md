@@ -14,6 +14,7 @@ It comes last in a session, because it sums up the approved docs. Beyond install
 
 - **Lead with the one constraint that sets the project apart.** "It writes no document until you agree on its key points" tells a visitor more than "a flexible documentation tool".
 - **Say what it does in a few bullets,** then link to the doc that holds the detail.
+- **Point to the status instead of copying it.** A table of what is done copies the marks in FEATURES.md, and the copy drifts the first time a feature changes. In one doc set, a check found the README's status table disagreeing with FEATURES.md on several rows. Name the known limits, and link FEATURES.md for the rest.
 - **Use a table when the content is records,** such as the docs with the question each answers, or situations with the command for each.
 - **Give the install steps exactly,** as commands that can be copied.
 - **List the known limits** a new user must know before starting. Hiding them costs more trust than stating them.
@@ -25,6 +26,7 @@ It comes last in a session, because it sums up the approved docs. Beyond install
 |---|---|---|
 | "A powerful, flexible documentation framework." | "It writes no document until you have agreed on its key points." | The one constraint, not a category |
 | A copy of the full feature list | Four bullets, then a link to FEATURES.md | A summary, not a copy |
+| A "Feature status" table with done and planned for each area | The known limits, then "What is built: FEATURES.md" | The status stays in one home |
 
 ## Explore
 

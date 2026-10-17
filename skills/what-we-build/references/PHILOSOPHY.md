@@ -85,7 +85,7 @@ The search follows the question, not the product. A budget app's question about 
 The page is long where the thinking is long, and it still reads fast, because each part has one job.
 
 - **The preamble** states the belief the project starts from: a premise most people would accept, and what the project does about it.
-- **The bold lines** are the short form. A reader in a hurry reads only them and knows every stance. Each one must make sense alone, because it gets quoted alone.
+- **The bold lines** are the short form. A reader in a hurry reads only them and knows every stance. Each one must make sense alone, because it gets quoted alone. So a bold line is written in the user's words, or in words the user approved. Until a line is agreed, its place stays empty, and the session says so: a line the agent wrote in bold reads as the project's stance, and the user has not taken it. In one session, the user rejected the agent's line, and the page kept an empty place for it until the user had one.
 - **The argument under each line** is for the reader who must apply the stance to a new case. It holds the reason, the cost, the answer to the other side, a refusal when one sharpens the stance, and the quotes.
 - **The tie-break** says which answer wins when two collide. Without it, each side of an argument quotes the line it likes.
 - ***Reflections*** holds what is not settled: a doubt, a tension between two sources, an analogy, a stance that may need another look, and how the stances changed and why. A philosophy that records its open questions is more honest than one that looks finished.
@@ -115,7 +115,7 @@ This doc needs the most discussion, and the stances come from the user. A list o
 2. Which questions must the project take a stance on? Ask about the world, not the product: "What is a budget?" has an answer that steers everything, and "Should the app send reminders?" has an answer that is a feature. Propose a few, such as "What is <the core thing>?", "Why is <the problem> hard?", "How does <our user> differ from <the usual one>?" and "What makes a <tool of this kind> good?" The user's own questions count most.
 3. Take one question at a time. Let the user answer in their own words, reflect back what you heard, and keep asking why until the answer reaches something about the world (see [Ask why, and keep asking](#ask-why-and-keep-asking)).
 4. Bring in the sources, on both sides, as in [How a stance gets deeper](#how-a-stance-gets-deeper). Show the user their words, and ask whether the stance changes.
-5. Find the one quotable line, and check it with the user.
+5. Find the one quotable line, and check it with the user. When none is agreed yet, leave its place empty.
 6. Test the line two ways. Opposite: a sensible team could answer the same question differently. A line that fails is a premise, and it goes in the preamble. Reach: the line steers more than the build, such as a goal, a feature or a README claim. A line that steers only the build goes in DESIGNS.md.
 7. When two answers collide, which one wins?
 8. What is still open, or still forming? It goes in *Reflections*.
@@ -160,4 +160,4 @@ When two answers collide, <which wins>, then <which>.
 
 ## Done when
 
-Each stance answers a question the user agreed on, comes from the user's answer, passes the opposite and reach tests, and names no feature the product has. Each stance carries its reason, its cost and its answer to the other side, and has been tested against sources the user has seen. Every quote is checked and listed in *Sources*. The tie-break is there.
+Each stance answers a question the user agreed on, comes from the user's answer, has a bold line the user wrote or approved, passes the opposite and reach tests, and names no feature the product has. Each stance carries its reason, its cost and its answer to the other side, and has been tested against sources the user has seen. Every quote is checked and listed in *Sources*. The tie-break is there.

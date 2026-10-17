@@ -12,16 +12,27 @@
 - The docs come in a new order: PROPOSAL → PHILOSOPHY → DESIGNS → GOALS → FEATURES → ROADMAP → README. The design comes right after the philosophy, because the design guides the features.
 - TODO.md and CHANGELOG.md are recommended for every project, and created as soon as the doc set is agreed.
 - The placement test sends a stance that steers the whole project to PHILOSOPHY.md. A rule that steers only how the project is built goes to DESIGNS.md.
+- The placement test sends a decision that concerns one feature to FEATURES.md, beside that feature, and an open design question to ROADMAP.md, or to TODO.md until the roadmap is drafted. A fact goes to DESIGNS.md when it is a design principle, or a decision that spans the project.
+- The agent pushes back with its reason and keeps making the case until the user decides, instead of once. Once the user rejects a point, the agent drops it, and raises it again only with a new fact.
+- The agent explains each choice in plain words, with a concrete case or a real sample, before asking, and ties each option to the case where it matters.
+- When the user brings a list of their own, the agent says what it would add and what it doubts before adopting it.
+- The agent draws a choice with several moving parts before asking about it, and parks a point that needs design the project is not ready for in TODO.md, so the current doc can close. The point moves to ROADMAP.md once that doc is drafted.
+- When the user points out one wrong word or row, the agent re-reads the whole doc and fixes every place the idea appears.
 
 ### Doc guides
 
 - The guides teach instead of ordering: each rule gives its reason, and no rule sets a count to meet. The PHILOSOPHY guide is the first rewritten this way.
-- The proposal guide teaches the case from the pain: pain points, then what we want and don't want, then the idea. The agent talks the case through with the user before writing. The three lists are prose, not tables, and measured results stay in GOALS.
+- The proposal guide teaches the case from the pain: pain points first, then the shift that lets them be eased now, the idea, and what we want and don't want. The wants describe needs, not one answer per pain. The agent talks the case through with the user before writing. The three lists are prose, not tables, measured results stay in GOALS, and the line under the title says where the state of the work lives.
 - The rules give reasons instead of counts: how many questions to batch, how long a roadmap row, a sentence or a noun cluster may be, and how many negations a sentence may hold.
 - The philosophy comes from questions. The agent asks the questions the project must take a stance on, and each stance comes from the user's answer, not from a list of ready-made principles. The page answers each question with a stance and its reasoning, then holds the deeper thinking in *Reflections*.
 - The philosophy is where the project thinks. The agent keeps asking why until an answer reaches something about people or the world. Then it looks for books and papers on the same question, both those that agree and those that disagree, and quotes their checked words under the stance they test. Each stance is argued in full, and the page has no length limit: the bold lines carry the short form.
-- Each design decision gets its own section, `## Decision: <the choice> — YYYY-MM-DD`, with room for prose, a list or a table of the options.
-- The design guide asks how the design fails, and lists failure among the areas.
+- The design guide teaches DESIGNS as a few principles and the decisions they drive. The page opens with the principles, numbered. Each principle asks a question of every new requirement, and lists its decisions, each named as the choice, with what it was chosen instead of and why. A decision that weighed several options keeps a table and its recorded date. A decision about one feature, open questions and failure behavior leave DESIGNS. The page ends with the order that decides when two principles collide.
+- FEATURES keeps each feature's own decisions under it, and ends with a table of what happens when something fails.
+- ROADMAP holds the open design questions: a design discussion before the milestone it blocks, and a table of features waiting for design.
+- GOALS holds two kinds of number: goals that pass or fail, and benchmarks tracked against a reference. Every measured number says how to reproduce it, and is measured on work close to real use.
+- A bold stance line in PHILOSOPHY is the user's or approved by the user. Until one is agreed, its place stays empty.
+- The README points to FEATURES.md for status instead of copying it in a table.
+- The glossary can give each term's name in today's code, while the code still lags the docs.
 - The skeletons keep a blank line around every block, so a doc copied from them no longer joins two lines or turns a line into a table row.
 - Each doc's form lives in its guide. The style table in the wording rules, which had drifted from the guides, is gone.
 - Every skeleton heading stays, with "None yet" when it has nothing to hold. No heading is marked optional.
@@ -29,13 +40,15 @@
 - The CLI.md and AGENTS.md guides are removed. A command reference copies the program, and an agent file holds commands the code already shows.
 - Examples follow the rules they teach: the FEATURES setting gives its reason, the PHILOSOPHY principle names its refusal, and the history example says why.
 - A *Later* item that gets a milestone becomes a planned feature, and the roadmap schedules it.
-- FEATURES and DESIGNS open with a TL;DR: an outline of the whole doc, one small table per group. FEATURES gives each capability its own row, with its feature and its status. The details follow in the same order, a `##` heading per group and a `###` per item, and are written to scan: a lead sentence, then short lines, tables, small diagrams or short snippets.
+- FEATURES opens with a TL;DR: an outline of the whole doc, one small table per group. It gives each capability its own row, with its feature and its status. The details follow in the same order, a `##` heading per group and a `###` per item, and are written to scan: a lead sentence, then short lines, tables, small diagrams or short snippets.
 - DESIGNS holds no status. A principle the code does not hold yet is still the design, and the gap is tracked in FEATURES, TODO or GOALS.
 
 ### Wording
 
 - The blank-line rule says what a missing blank line breaks.
 - Five rules are removed: write in your default voice, three layers per section, the format by the shape of the data, one clause per decision, and the story in git.
+- A long doc opens so the reader sees all of it: a TL;DR outline, or the few points it is built around.
+- A doc describes the project in its own terms, not as a version of another project.
 
 ### Checks
 
@@ -47,7 +60,8 @@
 - ROADMAP's question reads "When, and how far along?" in every doc, as in SKILL.md.
 - The proposal says "one sitting" for goal G1, as GOALS.md does.
 - An audit of the repo's own docs against the skill's rules fixed most lines that broke a rule. Conflicts that need the owner's decision stay open.
-- DESIGNS.md holds each decision in its own dated section, and records the new doc order as a decision. Goal G4 counts those sections, and stays open until someone measures it again.
+- DESIGNS.md holds each decision in its own dated section, and records the new doc order as a decision. Goal G4 now reads every decision for the option it beat and its reason, and stays open until this repo's docs take the forms of 2026-10-17 (ROADMAP.md → M2.5).
+- FEATURES.md lists the new conversation rules and doc forms.
 
 ## 0.3.0 — 2026-10-13
 

@@ -4,11 +4,11 @@ FEATURES.md is the contract with the user: what the product does today, and what
 
 It comes fifth in a session: each feature delivers a want from the proposal within the design that DESIGNS sets, and the proposal's stances become its *Not planned* list. A fact belongs here when the user can see it or do it.
 
-**Owns:** each feature's behavior from the user's side (keys, commands, settings, config keys, files the user sees), its status, the *Later* list, and the *Not planned* list with reasons.
+**Owns:** each feature's behavior from the user's side (keys, commands, settings, config keys, files the user sees), its status, the decisions that concern only that feature, what the user sees when something fails, the *Later* list, and the *Not planned* list with reasons.
 
-**Leaves out:** type names, code paths, module names, algorithms and design reasons (all DESIGNS), layout and motion (UIUX), schedule (ROADMAP).
+**Leaves out:** type names, code paths, module names and algorithms, the principles and the decisions that span the project (all DESIGNS), layout and motion (UIUX), schedule (ROADMAP).
 
-**Push back on:** type names or algorithms in a feature, a setting with no reason, and a *Not planned* item with no reason.
+**Push back on:** type names or algorithms in a feature, a setting with no reason, a decision that spans the project, and a *Not planned* item with no reason.
 
 ## Guidelines
 
@@ -20,6 +20,8 @@ It comes fifth in a session: each feature delivers a want from the proposal with
 - **Describe what the user does and what happens, in the present tense.** A reader should be able to predict the result before trying it.
 - **State the defaults, and every setting with its key.** Each setting needs a reason, because a setting is a decision handed back to the user.
 - **Name the gap** on every 🚧 feature, so nobody mistakes "built" for "finished".
+- **Keep a feature's own decisions beside it.** A decision that concerns one feature, such as whether a payment that arrives after a cancellation is refunded, goes under that feature as a `####` heading that names the choice, with the same **Instead of:** and **Why:** lines a decision has in DESIGNS. When it weighed several options, it keeps a table with the columns Option, For and Against, and the date it was made, when one was recorded. A developer finds the reason where they read the behavior, and DESIGNS keeps only the decisions that span the project. In one session, the user moved such decisions out of DESIGNS for this reason.
+- **Say what happens when something fails.** End with a table of failure cases: the case, what the user or caller sees and can do next, and the feature it belongs to. A doc that covers only the working path gets its failures by accident. In one session, the design guide never asked about failure, and the user added a whole failure area to the design by hand. What a caller meets when a part fails belongs here, beside the features it touches.
 - **Give every *Not planned* item a reason.** This list is where people look before proposing something, and a reason stops the same proposal from coming back.
 - **Move an item out of *Later* once it has a milestone.** It becomes a ⬜ planned feature here, and ROADMAP.md schedules it, so *Later* only holds what is not yet scheduled.
 - **Keep progress out.** "Not yet used in real life" is progress, and it lives in ROADMAP.md. A 🚧 gap names what the feature lacks.
@@ -33,6 +35,7 @@ It comes fifth in a session: each feature delivers a want from the proposal with
 | "Uses a cron job and a retry queue." | Move it to DESIGNS.md. | Implementation, not behavior |
 | "Configurable reminders." | "One reminder, 3 days before the due date. Setting: `reminders.enabled`, on by default, because a customer who pays by standing order may not want reminders." | The default, and the one setting with its reason |
 | One TL;DR row: "Invoicing, sends invoices, F2, ✅". | Three rows for F2: monthly invoices, a retry 3 days after a failed payment, and a reminder before the due date. | One row per capability, so the outline shows all that the product does |
+| In DESIGNS: "Decision: a late payment on a cancelled invoice is refunded" | Under F2 in FEATURES: "#### A late payment on a cancelled invoice is refunded", with the options it beat | A feature's decision lives with the feature |
 
 ## Explore
 
@@ -43,8 +46,10 @@ It comes fifth in a session: each feature delivers a want from the proposal with
 3. For each feature: what does the user do, and what happens? What are the defaults?
 4. Which settings does it need? Recommend none. Each setting needs a reason.
 5. What is its status: built, built with a gap, or planned?
-6. What is deliberately left for later?
-7. What will the project never do? Turn the stances in PROPOSAL into concrete items, each with a reason.
+6. Which choices concern only this feature? Record each beside it, with the option it beat.
+7. When a part fails, what does the user see, and what can they do next?
+8. What is deliberately left for later?
+9. What will the project never do? Turn the stances in PROPOSAL into concrete items, each with a reason.
 
 ## Skeleton
 
@@ -73,6 +78,15 @@ Settings: <none, or each with its key and reason>
 
 Gap: <for 🚧 only>
 
+#### <a decision that concerns only this feature>
+
+- **Instead of:** <the real alternative it beat>
+- **Why:** <the reason>
+
+<when it weighed several options: a table with Option, For and Against, and the date, when it was recorded>
+
+## When something fails   (table: case → what the user sees → feature)
+
 ## Later, if needed   (table: idea → note)
 
 ## Not planned        (table: not this → why)
@@ -80,8 +94,8 @@ Gap: <for 🚧 only>
 
 ## Style
 
-A TL;DR outline, then one section per group and one per feature, in the same order. Present tense, from the user's side. Tables for keys, commands and settings.
+A TL;DR outline, then one section per group and one per feature, in the same order, with each feature's own decisions under it. The failure table follows the features. Present tense, from the user's side. Tables for keys, commands, settings and failures.
 
 ## Done when
 
-Every want in PROPOSAL maps to a feature or to *Not planned*, every capability has a row in the TL;DR, every 🚧 names its gap, and no line describes the code.
+Every want in PROPOSAL maps to a feature or to *Not planned*, every capability has a row in the TL;DR, every 🚧 names its gap, every decision here concerns one feature, the failure table is there, and no line describes the code.
