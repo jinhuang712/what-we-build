@@ -1,4 +1,4 @@
-<!-- what-we-build: drafted 2026-10-16 -->
+<!-- what-we-build: drafted 2026-10-17 -->
 
 # Features
 
@@ -21,8 +21,14 @@ Every capability by group, with the feature it belongs to and its status. The de
 | Frame the idea | you say the idea and who it is for, and the skill says what the folder already holds | F1 | ✅ |
 | Agree on the doc set | you confirm or change the recommended docs | F1 | ✅ |
 | Talk each doc through | discuss, brainstorm or decide, with a recommendation whenever a choice is ready | F1 | ✅ |
-| Push back | one push-back with its reason when something does not fit | F1 | ✅ |
+| Plain questions | each choice is explained in plain words, with a concrete case or a real sample, before you are asked | F1 | ✅ |
+| Options tied to cases | each option names the case where it matters | F1 | ✅ |
+| Choices drawn | a choice with several moving parts is shown as a small diagram first | F1 | ✅ |
+| Your own list, discussed | a list you bring, such as principles, gets the agent's additions and doubts before it is adopted | F1 | ✅ |
+| Push back | a push-back with its reason when something does not fit, kept up until you decide | F1 | ✅ |
+| Open points parked | a point that needs design you are not ready for goes to TODO, then to the roadmap, so the doc can close | F1 | ✅ |
 | Write after you agree | a doc is written only after its key points are agreed, and marked `drafted` | F1 | ✅ |
+| Fixes across the whole doc | when you point out one wrong word, every place with the same idea is fixed | F1 | ✅ |
 | Approve | your approval turns the mark to `approved` | F1 | ✅ |
 | Docs in order | each doc builds on the ones before it, so you never answer twice | F1 | ✅ |
 | Close | each doc's status, and the questions you still own | F1 | ✅ |
@@ -42,8 +48,9 @@ Every capability by group, with the feature it belongs to and its status. The de
 | Short sentences | one point per sentence, with conditions first | F4 | ✅ |
 | Numbers with sources | a number instead of an adjective, and a source for every number that states a fact | F4 | ✅ |
 | Shared status marks | ✅ 🚧 🟨 ⬜ ❌ mean the same in every doc | F4 | ✅ |
-| A form per doc | for example, GOALS is a short intro and one table of checks | F4 | ✅ |
-| An outline up front | FEATURES and DESIGNS open with a TL;DR of every item, by group | F4 | ✅ |
+| A form per doc | for example, GOALS is a short intro and two tables, goals and benchmarks | F4 | ✅ |
+| An outline up front | FEATURES opens with a TL;DR of every capability, and DESIGNS with the principles it is built around | F4 | ✅ |
+| Principles that drive decisions | each design principle asks a question of new requirements and lists the decisions it drives. A feature's own decisions stay with the feature | F4 | ✅ |
 | Philosophy from questions | each stance comes from your answer, then is tested against books and papers | F4 | ✅ |
 
 ## Running a session
@@ -61,7 +68,7 @@ A session turns an idea into the founding documents of a project.
 | Frame | Describe the idea and who it is for | A one-line summary of what the folder already holds |
 | Doc set | Confirm or change the recommended docs | The 7 core docs, plus the optional ones the project needs |
 | Each doc | Talk each point through: discuss it, brainstorm it, or pick from options | A recommendation with its reason whenever a choice is ready |
-| Each doc | Hear what does not fit, and keep or drop it | One push-back with its reason, such as an adjective where a goal needs a number |
+| Each doc | Hear what does not fit, and keep or drop it | A push-back with its reason, such as an adjective where a goal needs a number, until you decide |
 | Each doc | Agree on the doc's key points | The doc, written and marked `drafted` |
 | Each doc | Approve it, or ask for changes | The mark becomes `approved` |
 | Close | Read the summary | Each doc's status, and the questions you still own |
@@ -113,8 +120,9 @@ The docs come out in plain, precise English, so a reader finds a fact fast and u
 
 Each doc also has its own form:
 
-- GOALS is a short intro and one table of checks.
-- FEATURES and DESIGNS open with a TL;DR: an outline of every capability or principle, by group. The details follow in the same order, written to scan.
+- GOALS is a short intro and two tables: goals that pass or fail, and benchmarks tracked against a reference.
+- FEATURES opens with a TL;DR: an outline of every capability, by group. The details follow in the same order, written to scan, with each feature's own decisions under it and a table of what happens when something fails.
+- DESIGNS opens with the few principles the design is built around. Each principle asks a question of every new requirement and lists the decisions it drives, each with the option it beat. Open design questions wait in TODO, then in ROADMAP.
 - PHILOSOPHY is where the project thinks: a few questions the project takes a stance on, each argued in full and tested against books and papers, with room below for reflections. The skill asks you those questions first, each stance comes from your answer, and then the skill goes deeper with sources.
 
 ## Later, if needed
@@ -135,6 +143,6 @@ Each doc also has its own form:
 | Choosing how a product should feel | That is the user's call. The skill records the user's words when they bring them. |
 | User manuals (tutorials, how-to guides, API and command references) | They answer other questions, after the founding docs exist. |
 | Agent instruction files (AGENTS.md, CLAUDE.md) | They hold the commands and rules for the code, which comes after the founding docs. Claude Code's `/init` writes one from the code. |
-| Decision records (ADRs) | DESIGNS.md holds each decision in its own dated section, with the options it beat and its reason. |
+| Decision records (ADRs) | DESIGNS.md holds the decisions that span the project, under the principles that drive them, and FEATURES.md holds each feature's own decisions, each with the option it beat and its reason. |
 | Standard texts (LICENSE, CODE_OF_CONDUCT) | They need a choice of a standard text, not a discussion. |
 | Scripts that check the docs, such as links or blank lines | The skill's job is the conversation. The agent keeps links and blank lines right while it writes. |

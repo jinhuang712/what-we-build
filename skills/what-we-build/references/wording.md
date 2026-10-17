@@ -6,10 +6,13 @@ People read these docs to decide and to build. Every rule below serves one of th
 
 Put the answer first. When a section is long, its first sentence says what the section concludes. A reader who stops after one sentence should still leave with the point.
 
+Open a long doc so the reader sees all of it at a glance. The opening is either a TL;DR outline of its groups and items, or the few points the doc is built around, numbered, one sentence each. Then each group or point gets its own section, in the same order. A reader who knows the shape of a doc finds a fact in it without reading the rest. Which opening fits depends on the doc: an inventory such as FEATURES.md reads best as an outline, and a doc built on a few ideas, such as DESIGNS.md, reads best as its points. One session's user preferred "we are built around these points" to a TL;DR table for the design.
+
 ## Words
 
 - Use one name per thing, and one thing per name. When two words compete, pick one and record it in `GLOSSARY.md` if the project has one.
 - Use the names the project already uses, so the docs and the code speak one language.
+- Describe the project in its own terms, not as a version of another project ("X for Y", "an X-like tool"). The comparison borrows the other project's meaning, including the parts you do not mean, and it ages with that project.
 - When you must coin a name, make it short and clear.
 - Spell out an abbreviation the first time, then use one form.
 - Explain a term the first time a reader is likely to meet it.

@@ -1,4 +1,4 @@
-<!-- what-we-build: drafted 2026-10-15 -->
+<!-- what-we-build: drafted 2026-10-17 -->
 
 # Roadmap
 
@@ -36,7 +36,8 @@ Status: ✅ done · 🟨 in progress · ⬜ not started.
 | M2.1 | A second review of this repo's docs, released as 0.3.0 | 2026-10-13 |
 | M2.2 | A new project's 7 core docs, drafted and approved with the skill | |
 | M2.3 | A resumed session, to test the marks | |
-| M2.4 | Fixes to the skill from what the sessions showed | Under way: each guide is rewritten to teach, one at a time. PHILOSOPHY and PROPOSAL are done |
+| M2.4 | Fixes to the skill from what the sessions showed | Under way: each guide is rewritten to teach, one at a time. PHILOSOPHY, PROPOSAL and DESIGNS are done. Lessons from the 2026-10-16 session, added 2026-10-17, brought the conversation rules and changed the PROPOSAL, DESIGNS, FEATURES, GOALS and ROADMAP forms |
+| M2.5 | This repo's docs in the forms of 2026-10-17: DESIGNS around its principles, FEATURES with its feature decisions and failure table, GOALS with benchmarks, PROPOSAL with the pains before the shift, and the open questions in ROADMAP | |
 
 **Exit criteria:** GOALS.md G1–G5 and G8, measured on a new project.
 
