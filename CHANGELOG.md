@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 0.4.0 — 2026-10-18
+
 ### Sessions
 
 - `/what-we-build revisit` is removed. The skill drafts a doc set and resumes it. A folder with docs but no marks starts a new project that builds on those docs.
