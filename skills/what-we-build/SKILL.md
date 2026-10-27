@@ -62,6 +62,7 @@ These rules keep a doc set easy to trust: one place to look for each fact, and e
 - **The code is a home too.** A doc repeats the code, the config or a command's output only when looking it up is expensive. It keeps what looking cannot find: the reason, the convention, the trap. A restated fact goes stale the day the code changes.
 - **Headings are addresses.** Code comments and other docs cite headings (`FEATURES.md → Not planned`). Keep them stable. When one must change, search the code and the docs for references first, and fix every one in the same change. Renamed headings once broke the comments that pointed to them.
 - **One language per doc set,** so a reader never switches languages mid-doc.
+- **Where the docs live is the user's choice, and a doc's name does not change.** The default is every doc at the project root. A user may prefer folders, for example the reasons at the root, the contract in `specs/` and the progress in `plans/`. Each doc keeps its job and its guide wherever it sits. Cite a doc from code by its path from the project root (`specs/FEATURES.md → Not planned`), and in Resume mode read the root and any folder the docs use. Moving a doc changes every reference to it, so search first and fix them all in the same change.
 
 ### The placement test
 
@@ -106,7 +107,7 @@ The first minutes decide what the session is about. Ask for the idea in brief, a
 
 ### 2. Agree on the doc set
 
-Recommend the core seven, `TODO.md` and `CHANGELOG.md`, plus the other optional docs that fit, each with one clause of reason. Each optional doc's guide says when the project needs it. The user confirms or changes the list. When the list is agreed, create `TODO.md` and `CHANGELOG.md` if the user kept them, so a finding or a change has a home from the start.
+Recommend the core seven, `TODO.md` and `CHANGELOG.md`, plus the other optional docs that fit, each with one clause of reason. Each optional doc's guide says when the project needs it. The user confirms or changes the list. Then ask where the docs live, with the options in the next sentence: all at the root *(the default)*, or grouped into folders such as `specs/` and `plans/` (see Rules between docs). Record the answer in the project's `AGENTS.md`, so a later session finds the docs. When the list is agreed, create `TODO.md` and `CHANGELOG.md` if the user kept them, so a finding or a change has a home from the start.
 
 ### 3. Work through the docs, in order
 
