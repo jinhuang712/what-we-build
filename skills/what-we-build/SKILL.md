@@ -22,7 +22,7 @@ Seven documents form the core of a new project. Each one answers a single questi
 | `GOALS.md` | What do we measure? | goals that pass or fail, each with the want it serves, a method and a status, and benchmarks, each with what it is compared with, a method and its last value | anything vague, non-goals |
 | `FEATURES.md` | What does it do, and what will it do? | behavior from the user's side, each feature's status (built, built with a gap, planned), each feature's own decisions, what happens when something fails, *Later*, *Not planned* | type names, code paths, the principles and the decisions that span the project, progress |
 | `ROADMAP.md` | When, and how far along? | milestones, tasks, progress, exit criteria that point to goals, and the design questions still open | behavior, the *Later* list |
-| `README.md` | What is this, and how do I start? | a short description, what it does, install, first use, known limits, links | detail another doc owns |
+| `README.md` | What is this, and how do I start? | a short description, what it does, install, first use, links | detail another doc owns |
 
 Add an optional doc only when the project needs it. Give every doc a job, because only a doc with a job gets kept true.
 
