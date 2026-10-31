@@ -14,6 +14,12 @@ ROADMAP.md answers "when?" and "how far along?". It breaks the work into milesto
 - **Put an open design question before the milestone it blocks.**
 - **Point exit criteria to GOALS.**
 
+## You have it when
+
+- A reader knows what comes next and what done means for it.
+- Every milestone's exit criteria point to GOALS.
+- Every open design question sits before the milestone it blocks.
+
 ## Skeleton
 
 ```markdown
