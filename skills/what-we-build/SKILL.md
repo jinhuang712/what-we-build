@@ -152,7 +152,7 @@ Ask the questions in order. The first yes names the fact's home.
 | Can the user see it or do it? | `FEATURES.md` for what happens and whether it is built, `specs/UIUX.md` for how it looks |
 | Is it a feature the project will not build? | `FEATURES.md` → *Not planned* |
 | Is it a choice between ways, with the others not taken? | `specs/decisions/`, whether it concerns the whole design or one feature |
-| Is it a design question nobody has answered yet? | `ROADMAP.md`, before the work it blocks, or `TODO.md` until the roadmap is drafted |
+| Is it a question nobody has answered yet? | `TODO.md`, as a `DISCUSSION` |
 | Is it a commitment the whole design must meet? | `DESIGNS.md` |
 | Is it how a part works inside? | `specs/` |
 | Is it about when, or about progress? | `ROADMAP.md` |

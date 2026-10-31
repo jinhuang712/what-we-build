@@ -43,7 +43,7 @@ TODO.md tracks what is open: issues found, discussions to hold, tasks to do and 
 | `branch` | The branch or worktree the work is in. |
 | `evidence` | Links to logs, screenshots or snippets kept as files in `plan/evidence/`. |
 | `next` | The next step. |
-| `blocks` | What waits for this item. |
+| `blocks` | The milestone, feature or item that waits for this one. |
 | `related` | Links to FEATURES, specs, decisions or other items. |
 
 Use the fields an item needs. Leave out the rest.
