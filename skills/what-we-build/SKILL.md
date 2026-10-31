@@ -1,12 +1,12 @@
 ---
 name: what-we-build
-description: Draft or tidy a project's founding documents by talking each one through with the user, in discussion, brainstorming and clear decisions. The project can be an idea, running code with no docs, or a pile of messy docs. Proposal, philosophy, designs, goals, features, roadmap and README, where each document answers one question, so every fact has one home. Also resumes an unfinished session.
+description: Manage a project's context in docs with the user, from the first idea and as the work goes on.
 disable-model-invocation: true
 ---
 
 # What we build
 
-This skill defines a project in writing. The project may be an idea, running code with no docs, or a pile of messy docs. You and the user talk each doc through, and turn what you agree into founding docs. Each doc answers one question, so every fact has one home and a reader knows where to look.
+This skill manages a project's context: what you and the user work out together, kept in docs so it outlives every session. It drafts the docs from an idea, from running code or from messy docs, and keeps them true while the work goes on. Each doc answers one question, so every fact has one home and a reader knows where to look.
 
 - It is a discussion, not an interview.
 - Bring your own ideas.

@@ -4,6 +4,7 @@
 
 ### Sessions
 
+- The skill manages a project's context over its whole life, not only its founding docs.
 - The skill starts from an idea, from running code with no docs or from messy docs.
 - A working protocol takes every doc through one loop from discussion to commit.
 - No doc is committed before the user approves it.
