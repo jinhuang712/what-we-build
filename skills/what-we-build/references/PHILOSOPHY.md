@@ -4,31 +4,57 @@ The philosophy is where the project thinks. It goes under the decisions to the b
 
 It comes second, after the proposal. DESIGNS builds on its stances.
 
-**Owns:** the belief the project starts from, the questions it takes a stance on with their arguments, quotes from sources that shaped or tested them, and the sources.
+**Owns:** the belief the project starts from, the questions it takes a stance on with their arguments, quotes from sources that shaped or tested them, and the sources when there are any.
 
 **Leaves out:** any feature, setting or screen (FEATURES), and how the project is built (DESIGNS).
 
-**Push back on:** a stance with no argument, one no team would answer differently ("quality matters"), a quote that decorates and does not test, and a quote nobody checked.
+**Push back on:** a stance with no argument, one no team would answer differently ("quality matters"), a stance that sounds deep and says nothing, a quote that decorates and does not test, and a quote nobody checked.
 
-## Depth
+## What you are after
 
-A stance is used in cases nobody foresaw. Months later someone proposes a feature, and a reader opens the philosophy to see whether it fits. A slogan cannot answer, because a slogan says what the project believes and not why. The argument under the stance carries it into a new case.
+The project's thought. It is not a summary of the project, and it is not a list of values. It is the lens the project looks through. Everything else is downstream of it. The designs are what the thought demands, the features are what it allows, and *Not planned* is what it forbids.
 
-A deep stance has three parts:
+A thought has three parts:
 
-- **The reason.** Why it is true, traced down to something about the world or about people that no longer depends on the product.
-- **The cost.** What the project gives up by holding it. A stance that costs nothing is a premise every team shares.
-- **The other side.** What a thoughtful person who disagrees would say, and the project's answer.
+- **A premise:** what the project takes to be true.
+- **A stance:** what it chooses because of that premise, where a reasonable person could choose otherwise.
+- **A refusal:** what it will not do in principle, even when tempted.
 
-Get there by asking why, and keep asking. The user's first answer is true and shallow, because anyone would give it. Each why moves it one level down, until another why would only repeat the answer. Ask in the flow of the conversation, and reflect back what you heard before the next why. The user's answer is the next step down, not yours.
+You have it when four things hold:
 
-Then test the stance with sources. Look for one that agrees, which gives it a deeper reason. Look for one that disagrees, which forces it to state its cost. Quote only what you have checked. Sources test a stance and do not supply it.
+- **Prediction:** given a case nobody foresaw, a reader can say what the project would do, and why.
+- **Opposition:** a reasonable team could have chosen the other way.
+- **Recognition:** the user reads it and says, "Yes, that is it," in words that are theirs.
+- **Derivation:** the design guidelines can be traced back to it.
+
+It starts from whatever the user brings: a pain, an idea, a conviction, a taste. The form does not matter.
+
+## How
+
+You are a thinking partner, not an interviewer.
+
+- Listen for the thought inside what the user says. It often hides in a complaint, an aside, or a thing they refuse.
+- Say it back in one line and test it. A wrong candidate gets corrected faster than a right one gets produced.
+- Bring contrast: how another project, field or thinker holds the opposite. A thought gets its edges from what it is against.
+- Push on what is thin: ask for the case, the cost and the exception.
+- Organize what comes out, show it, and go back and forth until the user recognizes it.
+- Stop when the four tests hold. Do not pad.
+
+## Seeds
+
+A pool of words and scenes to grow questions from. Pick what fits this user, and make the question yourself. Never ask them all.
+
+what goes first · two good things collide · what is left behind · the clumsy way · someone copies it · taste · red line · the start · elegance · taken for granted · rather have nothing · believe · what they already know · someone asks for a feature · trade-off · the fear · sacrifice · a counterexample · two people argue · the heir reads this · the day you quit · everyone assumes · collapse · where they are right · even if it pays · what failure looks like · underrated · who pays · growing bigger · why now · who is responsible · day one hundred · the popular way · not for whom · rough but right · the end · responsibility · slow · left unfinished · freedom or constraint · bottom line · polish · cannot have both · who the user is · cost · never · trust · actually not · the exit condition · good enough · another road · what they refuse to do · for whom · what should not exist · fast · peers · the rival's way · power · a newcomer joins · flavor · the criticized way · going astray · against whom · where we fall short · the boss says add one more · can but won't · what stays · why others do it · adding a feature · the old way · more · why not before · what changes · looking back at this decision · simple or powerful · temptation · an incident at midnight · less · who would be let down · a year later · the clever way · who yields · counterintuitive · quiet decay · an incident · overrated · a changing world · fast or right · who decides · never said aloud · a case nobody foresaw · if it were the opposite · refuse · day one · the field's common sense · ten years from now · ugly · the regret · veto · predecessors
 
 ## Guidelines
 
 - **This doc is prose.** It is the place for explanation that does not break into bullets.
-- **The stances are the user's.** Ask the whys and bring the sources. Do not invent the beliefs.
+- **The stances are the user's.** Do not invent the beliefs.
 - **State each stance as one quotable line,** then argue it.
+- **Quote only what you have checked.**
+- **Two or three stances are enough.** An empty section is worse than a missing one.
+- **A stance changes what problem the project solves.** If reversing it changes only how, it is a design and goes in DESIGNS.
+- **A stance that restates the README is a feature.** It goes in FEATURES.
 
 ## Skeleton
 
