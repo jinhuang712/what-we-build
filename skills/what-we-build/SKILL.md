@@ -1,32 +1,112 @@
 ---
 name: what-we-build
-description: Draft a new project's founding documents by talking each one through with the user, in discussion, brainstorming and clear decisions. Proposal, philosophy, designs, goals, features, roadmap and README, where each document answers one question, so every fact has one home. Also resumes an unfinished session.
+description: Draft or tidy a project's founding documents by talking each one through with the user, in discussion, brainstorming and clear decisions. The project can be an idea, running code with no docs, or a pile of messy docs. Proposal, philosophy, designs, goals, features, roadmap and README, where each document answers one question, so every fact has one home. Also resumes an unfinished session.
 disable-model-invocation: true
 ---
 
 # What we build
 
-Use this skill to define a project in writing, together with the user. The user brings the idea. You talk it through with them, discussing, brainstorming and deciding, and turn what you agree into documents. Each document answers one question, so each fact has one home and a reader always knows where to look.
+This skill defines a project in writing. The project may be an idea, running code with no docs, or a pile of messy docs. You and the user talk each doc through, and turn what you agree into founding docs. Each doc answers one question, so every fact has one home and a reader knows where to look.
 
-The conversation is the method. A document records decisions. It cannot make them, and text written before the thinking is done looks finished when it is not. So a document is written only after its key points are agreed. The user decides. You recommend, and when you disagree, you say why and keep the discussion going until the user decides. Then you follow the user's call.
+- It is a discussion, not an interview.
+- Bring your own ideas.
+- Bring questions and research.
+- Take a stance and say why.
+- Challenge the user's ideas.
+- The user decides.
+- Write a doc only after its key points are agreed.
+
+## Working protocol
+
+Each doc goes through the same loop:
+
+1. Discuss until its key points are agreed.
+2. Draft it with a `drafted` mark.
+3. Show the user the changes as before and after.
+4. Wait for the user to approve, then mark it `approved`.
+5. Commit it, never before it is approved.
+6. Move to the next doc.
+
+- Only the user approves.
+- Any later edit sets the mark back to `drafted`.
+- When the user stops you, stop.
+- Park what cannot be decided yet in `TODO.md`.
+- Tell the user when the docs and the code disagree.
+- Leave an unknown number open.
+- At the end, report each doc's status and the open questions.
+
+The mark is the first line of a doc:
+
+```markdown
+<!-- what-we-build: drafted 2026-10-12 -->
+<!-- what-we-build: approved 2026-10-12 -->
+```
+
+- A doc that grows one entry at a time carries no mark.
+
+## How to talk
+
+| Way | When it fits | What you do |
+|---|---|---|
+| Discuss | The idea is still forming, or the user is thinking out loud | Ask open questions, offer your own angle, and challenge weak spots. No options yet. |
+| Brainstorm | Early in a doc, or when the user is stuck | List many options quickly, without judging them. Then group them and point out the strongest. |
+| Decide | A choice is ready | Give lettered options, mark one as recommended, and give the reason in a clause. |
+
+- Take the cue from the user.
+- Ask one decision per question when deciding.
+- Recommend one option with the reason.
+- Explain before you ask.
+- Show one concrete case.
+- Offer your own list beside the user's.
+- Say what you would add and what you doubt.
+- Draw what has moving parts.
+- Keep each turn short.
+
+## Choose the start
+
+Read the project folder first.
+
+| It has | Start by |
+|---|---|
+| An idea and nothing written | Discussing the idea with the user |
+| Running code and no docs | Reading the code, then discussing each doc |
+| Messy docs | Sorting them into the doc set, then discussing the gaps |
+| Docs with marks and not all approved | Resuming |
+
+- Ask when the folder and the request disagree.
+- Ask the user what to do with what no doc owns.
+- Agree the doc set first.
+- Then agree where the docs live.
+- Work through the docs in this order:
+
+`PROPOSAL.md` → `PHILOSOPHY.md` → `DESIGNS.md` → `GOALS.md` → `FEATURES.md` → `ROADMAP.md` → `README.md`
+
+- Each doc builds on the ones before it.
+- Follow the wording rules when you write.
+
+### Resuming
+
+- Read every doc and its mark.
+- Summarize the approved docs, the drafted docs and the doc to continue.
+- Continue at the first doc in the order that is not approved.
+- Re-read the approved docs before you ask anything.
 
 ## The doc set
 
-Seven documents form the core of a new project. Each one answers a single question, and together they cover why the project exists, how it sees the problem, how it is built, what it must achieve, what it does and when it ships.
+| Doc | Answers |
+|---|---|
+| `PROPOSAL.md` | Why did we start this? |
+| `PHILOSOPHY.md` | Why is it this way? |
+| `DESIGNS.md` | What must the design always satisfy? |
+| `GOALS.md` | What do we measure? |
+| `FEATURES.md` | What does it do, and what will it do? |
+| `ROADMAP.md` | When, and how far along? |
+| `README.md` | What is this, and how do I start? |
 
-| Doc | Answers | Owns | Leaves out |
-|---|---|---|---|
-| `PROPOSAL.md` | Why did we start this? | pain points, the shift, the idea, what we want, what we don't want, approach, risks | exact behavior, numbers to check, progress |
-| `PHILOSOPHY.md` | Why is it this way? | the belief behind the project, the questions it takes a stance on with their answers and arguments, quotes from sources, a tie-break, reflections | any feature the product has, setting or screen, how it is built |
-| `DESIGNS.md` | What must the design always satisfy? | the design guidelines: hard commitments, each with its cost, the question it asks of a new requirement, and links to its decisions and specs | user-visible behavior (link the feature), the choices behind a guideline (`specs/decisions/`), how it works (`specs/`), whether it is built yet, open questions, a map of the code |
-| `GOALS.md` | What do we measure? | goals that pass or fail, each with the want it serves, a method and a status, and benchmarks, each with what it is compared with, a method and its last value | anything vague, non-goals |
-| `FEATURES.md` | What does it do, and what will it do? | behavior from the user's side, each feature's status (built, built with a gap, planned), what happens when something fails, *Later*, *Not planned* | type names, code paths, how a feature works inside (`specs/`), the choices behind it (`specs/decisions/`), progress |
-| `ROADMAP.md` | When, and how far along? | milestones, tasks, progress, exit criteria that point to goals, and the design questions still open | behavior, the *Later* list |
-| `README.md` | What is this, and how do I start? | a short description, what it does, install, first use, links | detail another doc owns |
-
-Add an optional doc only when the project needs it. Give every doc a job, because only a doc with a job gets kept true.
-
-Each kind of doc has its own guide. Read the guide for a doc before you start that doc, and only that guide. A guide holds everything the session needs about its doc.
+- Each doc has a guide.
+- The guide says what the doc owns and leaves out.
+- Read a doc's guide before you start that doc.
+- Add an optional doc only when the project needs it.
 
 Core docs:
 
@@ -38,7 +118,7 @@ Core docs:
 - [ROADMAP.md](references/ROADMAP.md)
 - [README.md](references/README.md)
 
-Beside the core, the first three are recommended for every project and the rest are optional:
+Beside the core, the first three are recommended for every project:
 
 - [TODO.md](references/TODO.md)
 - [CHANGELOG.md](references/CHANGELOG.md)
@@ -48,19 +128,6 @@ Beside the core, the first three are recommended for every project and the rest 
 - [CONTRIBUTING.md](references/CONTRIBUTING.md)
 - [SECURITY.md](references/SECURITY.md)
 - [RUNBOOK.md](references/RUNBOOK.md)
-
-## Rules between docs
-
-These rules keep a doc set easy to trust: one place to look for each fact, and each doc readable on its own.
-
-- **One home per fact.** A fact lives in the doc that owns it. When a fact has two homes, one of them goes stale, and the reader cannot tell which. Another doc may summarize it, but the same detail written out in two docs is a second home.
-- **Each doc reads on its own.** Summarize what your reader needs to follow, and link only for depth. A reader who must jump between files to understand one point has been handed the work of assembling the doc.
-- **The owner changes first.** When a fact changes, update its summaries in the same change, so they never disagree. The same holds for the skill's rules: when a rule changes, check the docs written under the old one.
-- **Reasons have homes.** Why something will not be built goes in `FEATURES.md` → *Not planned*, because that is where someone looks before proposing it. Why something is built a certain way goes in `specs/decisions/`, and the docs that depend on it link to it. A decision that only carries out a product decision links to that reason instead of restating it.
-- **Claims are checked.** A statement about behavior, such as an install command or a command name, is checked by running it, or marked "not yet verified". A goal or criterion is met only with a measurement or the user's own report, made by someone who did not write the change. A claim nobody checked is a guess that looks like a fact.
-- **Never put a code chunk in a doc.** The code is the one home of its own text. A doc names the thing, says why, and links to it.
-- **One language per doc set,** so a reader never switches languages mid-doc.
-- **Where the docs live is the user's choice, and a doc's name does not change.** The default is the reasons and the contract at the project root, `specs/` for how each part works with `specs/decisions/` under it, and `plan/` for `GOALS.md`, `ROADMAP.md` and `TODO.md`. A user may prefer another layout, for example every doc at the root. Each doc keeps its job and its guide wherever it sits. Cite a doc from code by its path from the project root (`specs/FEATURES.md → Not planned`), and in Resume mode read the root and any folder the docs use. Moving a doc changes every reference to it, so search first and fix them all in the same change.
 
 ### The placement test
 
@@ -79,88 +146,42 @@ Ask the questions in order. The first yes names the fact's home.
 | Is it about when, or about progress? | `ROADMAP.md` |
 | Did it ship in a release? | `CHANGELOG.md` |
 
-## How each doc is written
+## Rules
 
-Each doc has its own style, meaning its form, given in its guide. For example, `GOALS.md` is a short intro and two tables, the goals and the benchmarks, and `PHILOSOPHY.md` is a preamble, a few questions each answered with a stance and argued with checked quotes, a tie-break, *Reflections* and *Sources*. The full wording rules are in [references/wording.md](references/wording.md).
+- A fact lives in the doc that owns it.
+- Another doc may summarize it.
+- The same detail in two docs is a second home.
+- Each doc reads on its own.
+- Link only for depth.
+- When a fact changes, update its summaries in the same change.
+- Why something will not be built goes in `FEATURES.md` → *Not planned*.
+- Why something is built a certain way goes in `specs/decisions/`.
+- Check a behavior claim by running it, or mark it "not yet verified".
+- A goal is met only with a measurement or the user's own report.
+- Never put a code chunk in a doc.
+- Where the docs live is the user's choice.
+- The default keeps the reasons and the contract at the root.
+- `specs/` holds how each part works, with `specs/decisions/` under it.
+- `plan/` holds `GOALS.md`, `ROADMAP.md` and `TODO.md`.
+- A doc keeps its name wherever it sits.
+- Record the layout in the project's `AGENTS.md`.
 
-Judge a doc by how fast a reader finds a fact, not by its line count.
-## Choose the mode
+## Wording
 
-Read the project folder first. Then pick one:
+- Write in bullets.
+- Keep one sentence on a line.
+- Keep at most one comma on a line.
+- Put the answer first.
+- Use one name per thing.
+- Prefer a number to an adjective.
+- Write dates as `YYYY-MM-DD`.
+- Give every number its source, or leave it open.
+- Use tables for facts that share a shape.
 
-| Mode | When | Go to |
+| Mark | Means | Used in |
 |---|---|---|
-| New | no founding docs exist, docs exist without marks, or the user starts a new project | [New project](#new-project-talk-it-through) |
-| Resume | the docs carry marks, and not every doc is approved | [Resume](#resume) |
-
-When the user passed an argument (`new` or `resume`), use it. When the folder and the request disagree, ask.
-
-## New project: talk it through
-
-A session turns an idea into the founding docs. It works because the user makes each decision while it is still cheap to change, before any text exists that looks finished.
-
-### 1. Frame it
-
-The first minutes decide what the session is about. Ask for the idea in brief, and who it is for. A short answer shows what the user sees as the core. Look at the folder (existing code, a README, notes) and say what you found in one line, so the user knows what you will build on. When the folder holds docs under other names, map them to this set: a PRD to `FEATURES.md`, a vision doc to `PROPOSAL.md` and `PHILOSOPHY.md`, and an ARCHITECTURE.md, a design doc or an ADR (architecture decision record) to `DESIGNS.md`.
-
-### 2. Agree on the doc set
-
-Recommend the core seven, `TODO.md`, `CHANGELOG.md` and `specs/decisions/`, plus the other optional docs that fit, each with one clause of reason. The user confirms or changes the list. Then ask where the docs live, with the options in the next sentence: grouped into `specs/` and `plan/` *(the default)*, or all at the root (see Rules between docs). Record the answer in the project's `AGENTS.md`, so a later session finds the docs. When the list is agreed, create `TODO.md` and `CHANGELOG.md` if the user kept them, so a finding or a change has a home from the start.
-
-### 3. Work through the docs, in order
-
-`PROPOSAL.md` → `PHILOSOPHY.md` → `DESIGNS.md` → `GOALS.md` → `FEATURES.md` → `ROADMAP.md` → `README.md`.
-
-The order matters, because each doc builds on the ones before it. The design comes right after the philosophy, because the design guides the features. Each doc's guide says what it takes from the docs before it, and where an optional doc fits in the order.
-
-For each doc:
-
-1. **Open it.** Name the doc and the one question it answers, so the user knows what kind of decision comes next.
-2. **Carry forward.** List what earlier docs already settled that this doc builds on. The user answered those once, and asking again wastes their attention.
-3. **Explore the key points** listed in the doc's guide, in the way of talking that fits where the user is: discuss, brainstorm or decide (see [How to talk](#how-to-talk)). Open the doc wide, then narrow it down, and close each point with a clear choice.
-4. **Push back on what does not fit.** Each doc's guide lists the mistakes it invites, such as an adjective where `GOALS.md` needs a number. Say why, and keep making the case while the user is still weighing it. When the user rejects it, drop it, and raise it again only with a new fact: the user decides.
-5. **Draft.** Start from the guide's skeleton and style, and follow [references/wording.md](references/wording.md). Keep every skeleton heading, and write "None yet" under one that has nothing to hold, so a reader sees the gap. Write the file with a `drafted` mark on its first line. Show the path and the key lines, not the whole file, unless it is short.
-6. **Approve.** Ask for changes or approval. When the user points out one wrong word or row, re-read the whole doc before you edit: the idea behind it usually appears in other places too, and a fix to one spot leaves the rest disagreeing. On approval, change the mark to `approved` and move on.
-
-The mark is an HTML comment, invisible when rendered. It is the only state the skill keeps, so a session can stop, and resume after Claude Code restarts:
-
-```markdown
-<!-- what-we-build: drafted 2026-10-12 -->
-<!-- what-we-build: approved 2026-10-12 -->
-```
-
-Only the user approves: write `approved` after the user says so. Any later edit sets the mark back to `drafted`, with the date of the edit, because the user has not read the new text.
-
-The core docs carry a mark, and so does an optional doc that a session drafts as a whole, such as a spec. A doc that grows one entry at a time, such as `CHANGELOG.md`, `TODO.md` or a decision, carries none.
-
-### 4. Close the session
-
-Report each doc with its status (approved, drafted, skipped) and the open questions the user still owns. Leave an unknown number open. A guessed number looks like a decision the user made.
-
-### How to talk
-
-Writing the docs is a conversation, not a form. A point that is still forming needs room. A point that is ready needs a clear choice. Read where the user is, and talk in the way that fits:
-
-| Way | When it fits | What you do |
-|---|---|---|
-| Discuss | The idea is still forming, or the user is thinking out loud | Ask open questions, reflect back what you heard, offer another angle, test the weak spots, and build on the user's ideas. No options yet. |
-| Brainstorm | Early in a doc, or when the user is stuck | List many options quickly, together, without judging them. Then group them and point out the strongest. |
-| Decide | A choice is ready | Give lettered options, mark one as recommended, and give the reason in a clause. |
-
-Each doc usually moves through all three: open up, narrow down, decide, then write. Take the cue from the user. A long, exploratory message or "not sure" asks for discussion. "Let's brainstorm" or a stalled answer asks for a brainstorm. A clear fork asks for a decision. Offer a switch when it would help: "Want to brainstorm this one first?"
-
-### Conversation rules
-
-- **Ask for one decision per question when deciding.** Batch independent questions in one message, numbered, each with lettered options, but only as many as the user can weigh with care. Past that, the user starts skimming and answers the last ones without reading them.
-- **Recommend, with the reason in one clause.** The user decides.
-- **Explain before you ask.** Say what the thing is in plain words, and show one concrete case or a real sample, such as the actual text a step produces. A question the user cannot picture cannot be decided.
-- **Think along with the user's own list.** When the user offers a list of their own, such as principles or pains, say what you would add and what you doubt before you adopt it.
-- **Draw what has moving parts.** When a choice involves several parts talking to each other, show a small diagram of the flow before asking about it.
-- **Park what cannot be decided yet.** When a point needs design the project is not ready for, record it as an open question in `TODO.md` and move on, so the current doc can close. When `ROADMAP.md` is drafted, the question moves there, before the milestone it blocks.
-- **Agree first, then write, one doc at a time.** A doc is written only after its key points are agreed.
-- **Keep each turn short.** The docs hold the detail. The chat holds the decisions.
-- **When the user stops you, stop.** Wait for an explicit go before you write again.
-
-## Resume
-
-Read every doc in the set and its mark. Summarize in a few lines: approved docs, drafted docs, the doc to continue. Continue at the first doc in the order above that is not approved. Re-read the approved docs before you ask anything, so you carry their answers forward.
+| ✅ | built, done, or met | FEATURES, ROADMAP, GOALS |
+| 🚧 | built, with a gap named beside it | FEATURES |
+| 🟨 | in progress | ROADMAP |
+| ⬜ | planned, not started, or not yet measured | FEATURES, ROADMAP, GOALS |
+| ❌ | measured and not met | GOALS |
