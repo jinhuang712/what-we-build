@@ -56,13 +56,11 @@ These rules keep a doc set easy to trust: one place to look for each fact, and e
 - **One home per fact.** A fact lives in the doc that owns it. When a fact has two homes, one of them goes stale, and the reader cannot tell which.
 - **Each doc reads on its own.** Summarize what your reader needs to follow, and link only for depth. A reader who must jump between files to understand one point has been handed the work of assembling the doc.
 - **A summary is shorter than its owner.** Any doc may summarize what its reader needs, and the README and the proposal summarize the most. A summary may repeat the owner's records, such as the list of docs in a README. The same detail written out in two docs is a second home, not a summary.
-- **The owner changes first.** When a fact changes, update its summaries in the same change, so they never disagree. The same holds for the skill's rules: when a rule changes, check the docs written under the old one. Version 0.2.0 changed five rules, and five docs kept the old ones until the next audit.
-- **Place each fact with the placement test** below, so two writers put the same fact in the same doc.
+- **The owner changes first.** When a fact changes, update its summaries in the same change, so they never disagree. The same holds for the skill's rules: when a rule changes, check the docs written under the old one.- **Place each fact with the placement test** below, so two writers put the same fact in the same doc.
 - **Reasons have homes.** Why something will not be built goes in `FEATURES.md` → *Not planned*, because that is where someone looks before proposing it. Why something is built a certain way goes in `specs/decisions/`, and the docs that depend on it link to it. A decision that only carries out a product decision links to that reason instead of restating it.
-- **Claims are checked.** A statement about behavior, such as an install command or a command name, is checked by running it, or marked "not yet verified". A goal or criterion is met only with a measurement or the user's own report, made by someone who did not write the change. A claim nobody checked is a guess that looks like a fact: one rewrite marked two goals met, and an independent count failed both.
+- **Claims are checked.** A statement about behavior, such as an install command or a command name, is checked by running it, or marked "not yet verified". A goal or criterion is met only with a measurement or the user's own report, made by someone who did not write the change. A claim nobody checked is a guess that looks like a fact.
 - **The code is a home too.** A doc repeats the code, the config or a command's output only when looking it up is expensive. It keeps what looking cannot find: the reason, the convention, the trap. A restated fact goes stale the day the code changes.
-- **Headings are addresses.** Code comments and other docs cite headings (`FEATURES.md → Not planned`). Keep them stable. When one must change, search the code and the docs for references first, and fix every one in the same change. Renamed headings once broke the comments that pointed to them.
-- **One language per doc set,** so a reader never switches languages mid-doc.
+- **Headings are addresses.** Code comments and other docs cite headings (`FEATURES.md → Not planned`). Keep them stable. When one must change, search the code and the docs for references first, and fix every one in the same change.- **One language per doc set,** so a reader never switches languages mid-doc.
 - **Where the docs live is the user's choice, and a doc's name does not change.** The default is the reasons and the contract at the project root, `specs/` for how each part works with `specs/decisions/` under it, and `plan/` for `GOALS.md`, `ROADMAP.md` and `TODO.md`. A user may prefer another layout, for example every doc at the root. Each doc keeps its job and its guide wherever it sits. Cite a doc from code by its path from the project root (`specs/FEATURES.md → Not planned`), and in Resume mode read the root and any folder the docs use. Moving a doc changes every reference to it, so search first and fix them all in the same change.
 
 ### The placement test
@@ -86,8 +84,7 @@ Ask the questions in order. The first yes names the fact's home.
 
 Each doc has its own style, meaning its form, given in its guide. For example, `GOALS.md` is a short intro and two tables, the goals and the benchmarks, and `PHILOSOPHY.md` is a preamble, a few questions each answered with a stance and argued with checked quotes, a tie-break, *Reflections* and *Sources*. The full wording rules are in [references/wording.md](references/wording.md).
 
-Judge a doc by how fast a reader finds a fact, not by its line count. Sessions met line limits by deleting blank lines, and doubled a doc with nested lists.
-
+Judge a doc by how fast a reader finds a fact, not by its line count.
 ## Choose the mode
 
 Read the project folder first. Then pick one:
@@ -143,7 +140,7 @@ Report each doc with its status (approved, drafted, skipped) and the open questi
 
 ### How to talk
 
-Writing the docs is a conversation, not a form: a session run as a questionnaire felt like filling in one. A point that is still forming needs room. A point that is ready needs a clear choice. Read where the user is, and talk in the way that fits:
+Writing the docs is a conversation, not a form. A point that is still forming needs room. A point that is ready needs a clear choice. Read where the user is, and talk in the way that fits:
 
 | Way | When it fits | What you do |
 |---|---|---|
@@ -157,13 +154,7 @@ Each doc usually moves through all three: open up, narrow down, decide, then wri
 
 - **Ask for one decision per question when deciding.** Batch independent questions in one message, numbered, each with lettered options, but only as many as the user can weigh with care. Past that, the user starts skimming and answers the last ones without reading them.
 - **Recommend, with the reason in one clause.** The user decides.
-- **Explain before you ask.** Say what the thing is in plain words, and show one concrete case or a real sample, such as the actual text a step produces. A question the user cannot picture cannot be decided. In one session, the user answered "I don't follow" and "for example?" again and again, because the questions used names the agent had just made up.
-- **Tie each option to the case where it matters.** "When would anyone need this?" decides many choices. In one session, the user asked it of option after option, and dropped every option that had no case.
-- **Think along with the user's own list.** When the user offers a list of their own, such as principles or pains, say what you would add and what you doubt before you adopt it. In one session, the agent took the user's list as given, and the user asked it to discuss instead of agreeing.
-- **Draw what has moving parts.** When a choice involves several parts talking to each other, show a small diagram of the flow before asking about it. One session's user asked twice to see the paths drawn before deciding.
-- **Park what cannot be decided yet.** When a point needs design the project is not ready for, record it as an open question in `TODO.md` and move on, so the current doc can close. When `ROADMAP.md` is drafted, the question moves there, before the milestone it blocks. One session's user parked every feature that still needed design, to finish the current phase first.
-- **Agree first, then write, one doc at a time.** A doc is written only after its key points are agreed. Drafting three docs before the first was agreed wasted the user's time.
-- **Ask for facts, numbers and dates.** When the user does not know one yet, mark it open.
+- **Explain before you ask.** Say what the thing is in plain words, and show one concrete case or a real sample, such as the actual text a step produces. A question the user cannot picture cannot be decided.- **Tie each option to the case where it matters.** "When would anyone need this?" decides many choices.- **Think along with the user's own list.** When the user offers a list of their own, such as principles or pains, say what you would add and what you doubt before you adopt it.- **Draw what has moving parts.** When a choice involves several parts talking to each other, show a small diagram of the flow before asking about it.- **Park what cannot be decided yet.** When a point needs design the project is not ready for, record it as an open question in `TODO.md` and move on, so the current doc can close. When `ROADMAP.md` is drafted, the question moves there, before the milestone it blocks.- **Agree first, then write, one doc at a time.** A doc is written only after its key points are agreed.- **Ask for facts, numbers and dates.** When the user does not know one yet, mark it open.
 - **Keep each turn short.** The docs hold the detail. The chat holds the decisions.
 - **When the user stops you, stop.** Wait for an explicit go before you write again.
 
