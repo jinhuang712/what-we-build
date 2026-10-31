@@ -25,6 +25,13 @@ An objective has a measurement and a threshold. A benchmark has a measurement an
 - **Mark an objective met only with evidence** from someone who did not write the change.
 - **Say where and when each number was measured.**
 
+## You have it when
+
+- Every objective has a measurement and a threshold, or says the threshold is open.
+- Every benchmark has a comparison.
+- Every "met" has evidence and a date.
+- ROADMAP can point its exit criteria to these IDs.
+
 ## Skeleton
 
 ```markdown
