@@ -2,6 +2,33 @@
 
 ## Unreleased
 
+### Sessions
+
+- The skill starts from an idea, from running code with no docs or from messy docs.
+- A working protocol takes every doc through one loop from discussion to commit.
+- No doc is committed before the user approves it.
+- The agent re-reads the whole doc before any edit, even of one word.
+- Before it changes a fact, the agent reads the doc that owns it.
+- A decision is written down when it is made.
+- A finding that cannot be handled now goes to TODO.md at once.
+- When the docs and the code disagree, the agent asks the user instead of picking a side.
+- The agent writes the read order into the project's AGENTS.md.
+- The agent is a thinking partner that brings its own ideas and challenges the user's.
+- No doc holds a code chunk.
+- The default layout puts the reasons at the root.
+- `specs/` holds how each part works, and `plan/` holds the goals, the roadmap and the todo list.
+- Before, every doc sat at the root.
+- SKILL.md is half as long, without the session stories.
+- The wording rules move into SKILL.md, and `references/wording.md` is gone.
+
+### Doc guides
+
+- Every guide is rewritten. See [the guides](skills/what-we-build/references/).
+- New guides: `specs/` and `specs/decisions/`.
+- The UIUX guide is gone, because UIUX is now a spec.
+- Decisions move out of DESIGNS and FEATURES into `specs/decisions/`.
+- PHILOSOPHY drops *Reflections* and the tie-break.
+
 ## 0.4.0 — 2026-10-18
 
 ### Sessions
