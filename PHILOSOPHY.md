@@ -1,14 +1,76 @@
-<!-- what-we-build: drafted 2026-10-14 -->
+<!-- what-we-build: drafted 2026-10-31 -->
 
 # Philosophy
 
-Agents write faster than people decide. So what-we-build slows the writing down to the speed of the decisions. Every change to the skill must agree with the lines below.
+A project manages one thing: its context.
 
-- **Talk before you write.** Decisions over drafts. No drafting without a conversation: agree the key points, then write them down.
-- **One home over handy copies.** No fact written out in full twice: summarize it, and link the doc that owns it.
-- **The user's call over the agent's speed.** No starting on its own: a session begins when the user types the command.
-- **An open question over a confident wish.** No guessed numbers: a number stays open until the user sets it.
-- **Less is more.** Seven docs, not fourteen: an optional doc joins only when the project has a job for it.
-- **Grow from use.** Lessons over best practices. No rule for a problem no session has shown: a good idea from elsewhere waits until a session needs it.
+The context is what the people and the agent worked out together. It is made in discussion, and it is both the process and the result of that discussion. It has to be kept over the whole life of the project, from the first idea to the last release. Everything this skill writes down is a part of it.
 
-When two principles collide, the user's call wins, then one home.
+## What should a project manage?
+
+**Its context, over the whole life of the project.**
+
+Building is no longer the hard part. A current model implements almost anything it is told, and fast. What goes wrong is the context around the work. These are the ways it goes wrong:
+
+- The agent does not like to record. What it records has no fixed shape, and no one can say where it went.
+- It patches. A doc is edited again and again, twenty times, until no person can read it, and the agent that reads it is lost too.
+- It loses the thread. The window fills, the agent gets confused somewhere past 600K tokens, and when it is compacted the decisions are gone. The next session does not know what we were doing.
+- It does not read. A requirement was agreed and written down. The code came out a different shape. When asked, the agent searched for a long time, found the doc, and said it was right.
+- It works from git alone. The file tree and the log say what changed. The session continues the last motion, with no way to know whether it was right.
+- It scatters. The same fact is in several places, and unrelated things are piled together.
+
+All of these are one failure. The context was lost, or could not be found, or was not read, and the work drifted. So the thing to manage is the context, and the skill is built around that.
+
+Two meanings of "context" must be kept apart. The window is what a model can hold at one time. It fills up, it is compacted, and it is lost. The project context is what the people and the agent have decided, and it has to outlive every window.
+
+## What is in it?
+
+**A result, which stands still, and a process, which moves.**
+
+The result is what the project is. The process is why it is this way, and where it is going. A project needs both.
+
+| Half | Doc | Answers |
+|---|---|---|
+| Result | Proposal | Why did we start this? |
+| Result | Philosophy | Why is it this way? |
+| Result | Designs | What must the design always satisfy? |
+| Result | Features | What does it do? |
+| Result | Specs | How does each part work? |
+| Result | README | What is this, and how do I start? |
+| Process | Decisions | Why did we choose this, and what did we not choose? |
+| Process | TODO | What is open? |
+| Process | Change list | What changed in each release? |
+| Process | Goals | What do we measure? |
+| Process | Roadmap | When, and how far along? |
+
+The goals and the roadmap are the plan. The plan is the process looking forward, and the decisions and the change list are the process looking back. TODO is the process at this moment.
+
+The two halves cannot be separated cleanly, and they should not be. A decision is the output of a discussion, and it is also the trace of that discussion. Keeping one keeps the other. The static half and the dynamic half together are the context.
+
+Each half fails without the other. A result with no process says what is, and not why, so the next person undoes it without knowing. A process with no result is a diary. With both, a new session can answer three questions without asking anyone: what are we building, why this way, and where are we now.
+
+## Where does it live?
+
+**In docs, with one home for each fact. Not in the window, and not in git.**
+
+The window is the wrong home. It is lost when it is compacted, and models grow less reliable as the input grows (Chroma, 2025). A project that lives in the window is gone at the end of the session.
+
+Git is the wrong home too. It holds what changed and says nothing of why. It can tell a session where the work stopped, and it cannot tell it where the work should go.
+
+Docs survive both. They fail in two ways, and the skill is built against both. The first is that a fact has several homes, so they disagree. The second is that a doc has no fixed shape, so it has to be guessed at. So each doc answers one question, each fact has one home, and every doc has a skeleton.
+
+No doc holds code. A spec that holds code has two copies of it, one to read and one to run. The copy made by hand breaks. The doc names the thing, says why, and links to it.
+
+## How is it carried from one session to the next?
+
+**Writing and reading are one chain, and the chain breaks at its weakest link.**
+
+To write, the agent must be willing to write. It must know where the fact goes, and how to write it. Then it writes, and the user confirms, and only then does the text count as part of the context.
+
+To read, the agent must know where to look and how to read what it finds. It must understand it the same way each time, and only then can it act on it.
+
+If one link is missing, the others do not help. A doc in the right place is no use to an agent that does not know to read it before it acts. Most of the failures above are failures of reading: the doc was there, and nobody went to it. So the skill fixes the places, gives every doc a fixed shape, and tells the agent where to start.
+
+## Sources
+
+- Hong, Kelly, Anton Troynikov and Jeff Huber. "Context Rot: How Increasing Input Tokens Impacts LLM Performance". Chroma, 2025. [trychroma.com/research/context-rot](https://trychroma.com/research/context-rot). Paraphrased, not quoted.

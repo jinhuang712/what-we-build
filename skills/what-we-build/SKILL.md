@@ -18,6 +18,8 @@ This skill defines a project in writing. The project may be an idea, running cod
 
 ## Working protocol
 
+### Writing a doc
+
 Each doc goes through the same loop:
 
 1. Discuss until its key points are agreed.
@@ -29,11 +31,9 @@ Each doc goes through the same loop:
 
 - Only the user approves.
 - Any later edit sets the mark back to `drafted`.
-- When the user stops you, stop.
-- Park what cannot be decided yet in `TODO.md`.
-- Tell the user when the docs and the code disagree.
 - Leave an unknown number open.
 - At the end, report each doc's status and the open questions.
+- Even when only one word or row should be edited, re-read the whole doc before editing anything.
 
 The mark is the first line of a doc:
 
@@ -43,6 +43,17 @@ The mark is the first line of a doc:
 ```
 
 - A doc that grows one entry at a time carries no mark.
+
+### While you work
+
+- When a session starts or the window was compacted, read the read order in `AGENTS.md`.
+- Before you change something, read the doc that owns it.
+- When a choice between ways is made, write a decision at once.
+- When something cannot be handled now, add it to `TODO.md` at once.
+- When the docs and the code disagree, tell the user and let them decide.
+- When a change is done, update `CHANGELOG.md` and the feature's status in the same change.
+- When a todo is handled, delete it in the same change.
+- When the user stops you, stop.
 
 ## How to talk
 
