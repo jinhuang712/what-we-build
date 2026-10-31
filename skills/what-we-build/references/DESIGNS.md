@@ -16,6 +16,12 @@ It comes third in a session, right after the philosophy, because the design guid
 - **State each one as a commitment a reader can test.** "Every payment can be retried safely" is testable. "Payments are reliable" is not.
 - **Give each a short section:** why it holds and what it costs, an **Ask:** line, and links to its decisions and specs.
 
+## You have it when
+
+- A reader can check a new design against the guidelines and name the one it breaks.
+- Every guideline names its cost and has an **Ask:** line.
+- Nothing in it is a mechanism or a feature.
+
 ## Skeleton
 
 ```markdown
