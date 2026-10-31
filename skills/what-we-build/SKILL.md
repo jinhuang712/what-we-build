@@ -154,12 +154,10 @@ Each doc usually moves through all three: open up, narrow down, decide, then wri
 - **Ask for one decision per question when deciding.** Batch independent questions in one message, numbered, each with lettered options, but only as many as the user can weigh with care. Past that, the user starts skimming and answers the last ones without reading them.
 - **Recommend, with the reason in one clause.** The user decides.
 - **Explain before you ask.** Say what the thing is in plain words, and show one concrete case or a real sample, such as the actual text a step produces. A question the user cannot picture cannot be decided.
-- **Tie each option to the case where it matters.** "When would anyone need this?" decides many choices.
 - **Think along with the user's own list.** When the user offers a list of their own, such as principles or pains, say what you would add and what you doubt before you adopt it.
 - **Draw what has moving parts.** When a choice involves several parts talking to each other, show a small diagram of the flow before asking about it.
 - **Park what cannot be decided yet.** When a point needs design the project is not ready for, record it as an open question in `TODO.md` and move on, so the current doc can close. When `ROADMAP.md` is drafted, the question moves there, before the milestone it blocks.
 - **Agree first, then write, one doc at a time.** A doc is written only after its key points are agreed.
-- **Ask for facts, numbers and dates.** When the user does not know one yet, mark it open.
 - **Keep each turn short.** The docs hold the detail. The chat holds the decisions.
 - **When the user stops you, stop.** Wait for an explicit go before you write again.
 
