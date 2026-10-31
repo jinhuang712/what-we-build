@@ -33,6 +33,6 @@ It comes third in a session, right after the philosophy, because the design guid
 
 **Ask:** <the question it asks of a new requirement>
 
-- **Decisions:** <links to decisions/>
+- **Decisions:** <links to specs/decisions/>
 - **How it works:** <links to specs/>
 ```
