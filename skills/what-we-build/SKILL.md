@@ -88,6 +88,7 @@ Read the project folder first.
 - Ask the user what to do with what no doc owns.
 - Agree the doc set first.
 - Then agree where the docs live.
+- Write the read order into the project's `AGENTS.md`.
 - Work through the docs in this order:
 
 `PROPOSAL.md` → `PHILOSOPHY.md` → `DESIGNS.md` → `GOALS.md` → `FEATURES.md` → `ROADMAP.md` → `README.md`
