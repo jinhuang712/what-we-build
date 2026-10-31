@@ -12,6 +12,12 @@ The decisions folder records the forks the project took: what we chose, what we 
 - **Keep the title to the choice, in one line,** such as "A busy Session queues messages instead of refusing them". The reason goes in the file.
 - **Keep a file under one page,** and keep an index in `specs/decisions/README.md`.
 
+## You have it when
+
+- A reader can tell what was chosen and what was not without asking.
+- The reason is one the code cannot show.
+- The index lists every decision.
+
 ## Skeleton
 
 ```markdown
