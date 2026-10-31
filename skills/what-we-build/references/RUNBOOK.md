@@ -6,6 +6,22 @@ RUNBOOK.md is for the person keeping a service running: how to deploy, roll back
 
 **Add when** the project is a service someone must keep running. Draft it after DESIGNS.md, once the service's parts are known.
 
-| Weak | Strong |
-|---|---|
-| "Check the logs if something breaks." | "Alert `queue-lag > 5 min`: run `kubectl rollout restart deploy/worker`. If lag stays after 10 minutes, page the on-call." |
+## Skeleton
+
+```markdown
+# Runbook
+
+## Deploy
+<commands>
+
+## Roll back
+<commands>
+
+## Alerts
+
+| Alert | Response | Escalate when |
+|---|---|---|
+
+## On call
+<who, and how to reach them>
+```

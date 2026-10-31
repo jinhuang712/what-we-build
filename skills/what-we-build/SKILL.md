@@ -162,7 +162,7 @@ Ask the questions in order. The first yes names the fact's home.
 - Where the docs live is the user's choice.
 - The default keeps the reasons and the contract at the root.
 - `specs/` holds how each part works, with `specs/decisions/` under it.
-- `plan/` holds `GOALS.md`, `ROADMAP.md` and `TODO.md`.
+- `plan/` holds `GOALS.md`, `ROADMAP.md`, `TODO.md` and `plan/evidence/`.
 - A doc keeps its name wherever it sits.
 - Record the layout in the project's `AGENTS.md`.
 

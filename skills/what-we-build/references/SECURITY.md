@@ -5,3 +5,21 @@ SECURITY.md tells people how to report a vulnerability safely. GitHub shows it a
 **Owns:** where to report, what to include, which versions are supported, what happens next.
 
 **Add when** the project is public. Draft it at the end of a session.
+
+## Skeleton
+
+```markdown
+# Security
+
+## Report a vulnerability
+<where to send it, and that it must not be a public issue>
+
+## What to include
+<the details that help us reproduce it>
+
+## Supported versions
+<which versions get fixes>
+
+## What happens next
+<how fast we reply, and how we disclose>
+```

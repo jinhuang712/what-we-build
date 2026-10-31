@@ -8,5 +8,23 @@ CONTRIBUTING.md tells outside contributors how to help: how to set up, how work 
 
 ## Guidelines
 
-- **State the bar for a change,** so contributors know before they invest. For example: a change needs a failure seen in real use.
+- **State the bar for a change,** so contributors know before they invest.
 - **List the checks that must pass,** as commands.
+
+## Skeleton
+
+```markdown
+# Contributing
+
+## Before you start
+<the bar for a change, and where to ask first>
+
+## Set up
+<commands>
+
+## Make a change
+<branch, commit and review flow>
+
+## Checks
+<commands that must pass>
+```
