@@ -19,6 +19,12 @@ It comes last, because it sums up the approved docs.
 - **Put a warning up front** when the tool is unofficial or risks an account.
 - **Link to the status.** Do not copy it.
 
+## You have it when
+
+- A visitor can decide in thirty seconds whether the project is for them.
+- A user can install and run it without asking anyone.
+- Nothing is written only here.
+
 ## Skeleton
 
 ```markdown

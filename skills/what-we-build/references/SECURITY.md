@@ -6,6 +6,11 @@ SECURITY.md tells people how to report a vulnerability safely. GitHub shows it a
 
 **Add when** the project is public. Draft it at the end of a session.
 
+## You have it when
+
+- A reporter knows where to send a report and what happens next.
+- Nothing in it asks them to report in public.
+
 ## Skeleton
 
 ```markdown

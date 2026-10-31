@@ -6,6 +6,11 @@ RUNBOOK.md is for the person keeping a service running: how to deploy, roll back
 
 **Add when** the project is a service someone must keep running. Draft it after DESIGNS.md, once the service's parts are known.
 
+## You have it when
+
+- Someone paged at night can act from the page alone.
+- Every alert has a response and a point to escalate.
+
 ## Skeleton
 
 ```markdown

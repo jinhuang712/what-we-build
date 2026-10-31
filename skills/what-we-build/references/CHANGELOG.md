@@ -11,6 +11,12 @@ The changelog tells users what changed in each release, in words they understand
 - **Write from the user's side:** what they can now do, or what no longer breaks.
 - **Give a break a before and after.**
 
+## You have it when
+
+- A user can tell from it whether to upgrade, and what to change when they do.
+- Every break has a before and an after.
+- The *Unreleased* section holds the changes not yet released.
+
 ## Skeleton
 
 ```markdown

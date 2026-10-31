@@ -48,6 +48,12 @@ TODO.md tracks what is open: issues found, discussions to hold, tasks to do and 
 
 Use the fields an item needs. Leave out the rest.
 
+## You have it when
+
+- A stranger can take the top item and act on it without asking anyone.
+- Every item has a priority and a type.
+- Nothing handled is left in it.
+
 ## Skeleton
 
 ```markdown

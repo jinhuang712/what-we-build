@@ -11,6 +11,11 @@ CONTRIBUTING.md tells outside contributors how to help: how to set up, how work 
 - **State the bar for a change,** so contributors know before they invest.
 - **List the checks that must pass,** as commands.
 
+## You have it when
+
+- A contributor can set up and send a change without asking anyone.
+- The bar for a change is stated before they start.
+
 ## Skeleton
 
 ```markdown

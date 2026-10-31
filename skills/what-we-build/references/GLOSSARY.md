@@ -12,6 +12,12 @@ The glossary fixes the project's words: one name per thing, each with a one-line
 - **Define each term in one line.**
 - **Give the name in today's code when it differs,** until the code catches up.
 
+## You have it when
+
+- No two words name one thing.
+- Every term has one line.
+- A reader of the code can find each term by the name the code uses.
+
 ## Skeleton
 
 ```markdown
