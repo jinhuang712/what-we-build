@@ -17,6 +17,12 @@ It comes fifth in a session: each feature delivers a want from the proposal with
 - **Describe what the user does and what happens,** in the present tense, short. Link each feature to what it rests on: the guideline in DESIGNS, the spec, the decisions, and UIUX when it has a screen.
 - **End with the failure table, *Later* and *Not planned*,** each *Not planned* item with its reason.
 
+## You have it when
+
+- A user can predict what happens when they use a feature, and when it fails.
+- Every want in the proposal is a feature or sits in *Not planned*.
+- No line describes the code.
+
 ## Skeleton
 
 ```markdown
