@@ -168,9 +168,10 @@ Ask the questions in order. The first yes names the fact's home.
 
 ## Wording
 
-- Write in bullets.
+- Turn a paragraph that could be bullets into bullets.
 - Keep one sentence on a line.
 - Keep at most one comma on a line.
+- Explanatory prose stays prose, as in `PHILOSOPHY.md`.
 - Put the answer first.
 - Use one name per thing.
 - Prefer a number to an adjective.

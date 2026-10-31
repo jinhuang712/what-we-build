@@ -1,18 +1,29 @@
 # GOALS.md
 
-GOALS.md turns the wants in the proposal into numbers. A goal here is something a script, a benchmark or the user's own use can confirm or refute on a given day. It keeps the project honest: when someone claims progress, this is where the claim is tested. ROADMAP uses these goals as its exit criteria.
+GOALS.md turns the wants in the proposal into numbers. It keeps the project honest: when someone claims progress, this is where the claim is tested. ROADMAP uses these goals as its exit criteria.
 
-**Owns:** goals that pass or fail, and benchmarks tracked against a reference, each with its method.
+**Owns:** objectives with thresholds, and benchmarks with comparisons, each with its measurement.
 
 **Leaves out:** anything vague, non-goals (FEATURES → *Not planned*), and how anything works (`specs/`).
 
-**Push back on:** an adjective where a number belongs, a goal with no method, a "met" with no evidence, and a benchmark with nothing to compare it with.
+**Push back on:** an adjective where a number belongs, an objective with no measurement, a threshold made up for a number that only needs tracking, a benchmark with no comparison, and a "met" with no evidence.
+
+## The five parts
+
+| Part | Means |
+|---|---|
+| Objective | What we want to achieve, tied to a want in the proposal. |
+| Measurement | What we measure and how: the metric, the script or the run. |
+| Threshold | The line between pass and fail, with a unit. Leave it open when it is not known. |
+| Benchmark | A number we track over time, with no pass or fail. |
+| Comparison | What a benchmark is compared with: the previous release, another tool, or the larger cost. |
+
+An objective has a measurement and a threshold. A benchmark has a measurement and a comparison.
 
 ## Guidelines
 
-- **Give a goal a threshold and a method.** Leave the number open when it is not known.
-- **Give a benchmark what it is compared with.** A number alone means nothing.
-- **Mark a goal met only with evidence** from someone who did not write the change.
+- **Mark an objective met only with evidence** from someone who did not write the change.
+- **Say where and when each number was measured.**
 
 ## Skeleton
 
@@ -21,13 +32,15 @@ GOALS.md turns the wants in the proposal into numbers. A goal here is something 
 
 <where and how the numbers are measured>
 
-## Goals
+## Objectives
 
-| # | Goal | Want | Measure | Method | Status |
+| # | Objective | Want | Measurement | Threshold | Status |
 |---|---|---|---|---|---|
+| G1 | <short name> | <the proposal's want> | <metric, and the script or run> | <number with a unit> | ⬜ |
 
 ## Benchmarks
 
-| # | Benchmark | Compared with | Method | Last measured |
+| # | Benchmark | Measurement | Comparison | Last value |
 |---|---|---|---|---|
+| B1 | <short name> | <metric, and the script or run> | <what it is compared with> | <value and date, or "not measured"> |
 ```
