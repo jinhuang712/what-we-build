@@ -28,6 +28,8 @@
 - The UIUX guide is gone, because UIUX is now a spec.
 - Decisions move out of DESIGNS and FEATURES into `specs/decisions/`.
 - PHILOSOPHY drops *Reflections* and the tie-break.
+- PROPOSAL no longer assumes a pain: *Pain points* sits under *Why it should exist* and is written only when there are pains.
+- PROPOSAL drops *How it works*, *Approach* and *How we know it works*, which FEATURES, DESIGNS and GOALS own.
 
 ## 0.4.0 — 2026-10-18
 
