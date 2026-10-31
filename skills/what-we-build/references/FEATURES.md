@@ -1,6 +1,6 @@
 # FEATURES.md
 
-FEATURES.md is the contract with the user: what the product does today, and what it will and won't do. A user reads it to learn what happens when they press a key or run a command. A contributor reads it to see what exists and what was ruled out. It describes behavior from the user's side, never the code.
+FEATURES.md is the contract with the user: what the product does today, and what it will and won't do. A user reads it to learn what happens when they use it. A contributor reads it to see what exists and what was ruled out. It describes behavior from the user's side, never the code.
 
 It comes fifth in a session: each feature delivers a want from the proposal within the design that DESIGNS sets.
 
