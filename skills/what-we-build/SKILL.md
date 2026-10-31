@@ -18,9 +18,9 @@ Seven documents form the core of a new project. Each one answers a single questi
 |---|---|---|---|
 | `PROPOSAL.md` | Why did we start this? | pain points, the shift, the idea, what we want, what we don't want, approach, risks | exact behavior, numbers to check, progress |
 | `PHILOSOPHY.md` | Why is it this way? | the belief behind the project, the questions it takes a stance on with their answers and arguments, quotes from sources, a tie-break, reflections | any feature the product has, setting or screen, how it is built |
-| `DESIGNS.md` | What must the design always satisfy? | the design guidelines: hard commitments, each with its cost, the question it asks of a new requirement, and links to its decisions and specs | user-visible behavior (link the feature), the choices behind a guideline (`decisions/`), how it works (`specs/`), whether it is built yet, open questions, a map of the code |
+| `DESIGNS.md` | What must the design always satisfy? | the design guidelines: hard commitments, each with its cost, the question it asks of a new requirement, and links to its decisions and specs | user-visible behavior (link the feature), the choices behind a guideline (`specs/decisions/`), how it works (`specs/`), whether it is built yet, open questions, a map of the code |
 | `GOALS.md` | What do we measure? | goals that pass or fail, each with the want it serves, a method and a status, and benchmarks, each with what it is compared with, a method and its last value | anything vague, non-goals |
-| `FEATURES.md` | What does it do, and what will it do? | behavior from the user's side, each feature's status (built, built with a gap, planned), what happens when something fails, *Later*, *Not planned* | type names, code paths, how a feature works inside (`specs/`), the choices behind it (`decisions/`), progress |
+| `FEATURES.md` | What does it do, and what will it do? | behavior from the user's side, each feature's status (built, built with a gap, planned), what happens when something fails, *Later*, *Not planned* | type names, code paths, how a feature works inside (`specs/`), the choices behind it (`specs/decisions/`), progress |
 | `ROADMAP.md` | When, and how far along? | milestones, tasks, progress, exit criteria that point to goals, and the design questions still open | behavior, the *Later* list |
 | `README.md` | What is this, and how do I start? | a short description, what it does, install, first use, links | detail another doc owns |
 
@@ -42,7 +42,7 @@ Beside the core, the first three are recommended for every project and the rest 
 
 - [TODO.md](references/TODO.md)
 - [CHANGELOG.md](references/CHANGELOG.md)
-- [decisions/](references/DECISIONS.md): one file per fork the project took
+- [specs/decisions/](references/DECISIONS.md): one file per fork the project took
 - [specs/](references/SPECS.md): how each part works, and `specs/UIUX.md` with `prototype/*.html` for a visual interface
 - [GLOSSARY.md](references/GLOSSARY.md)
 - [CONTRIBUTING.md](references/CONTRIBUTING.md)
@@ -58,12 +58,12 @@ These rules keep a doc set easy to trust: one place to look for each fact, and e
 - **A summary is shorter than its owner.** Any doc may summarize what its reader needs, and the README and the proposal summarize the most. A summary may repeat the owner's records, such as the list of docs in a README. The same detail written out in two docs is a second home, not a summary.
 - **The owner changes first.** When a fact changes, update its summaries in the same change, so they never disagree. The same holds for the skill's rules: when a rule changes, check the docs written under the old one. Version 0.2.0 changed five rules, and five docs kept the old ones until the next audit.
 - **Place each fact with the placement test** below, so two writers put the same fact in the same doc.
-- **Reasons have homes.** Why something will not be built goes in `FEATURES.md` → *Not planned*, because that is where someone looks before proposing it. Why something is built a certain way goes in `decisions/`, and the docs that depend on it link to it. A decision that only carries out a product decision links to that reason instead of restating it.
+- **Reasons have homes.** Why something will not be built goes in `FEATURES.md` → *Not planned*, because that is where someone looks before proposing it. Why something is built a certain way goes in `specs/decisions/`, and the docs that depend on it link to it. A decision that only carries out a product decision links to that reason instead of restating it.
 - **Claims are checked.** A statement about behavior, such as an install command or a command name, is checked by running it, or marked "not yet verified". A goal or criterion is met only with a measurement or the user's own report, made by someone who did not write the change. A claim nobody checked is a guess that looks like a fact: one rewrite marked two goals met, and an independent count failed both.
 - **The code is a home too.** A doc repeats the code, the config or a command's output only when looking it up is expensive. It keeps what looking cannot find: the reason, the convention, the trap. A restated fact goes stale the day the code changes.
 - **Headings are addresses.** Code comments and other docs cite headings (`FEATURES.md → Not planned`). Keep them stable. When one must change, search the code and the docs for references first, and fix every one in the same change. Renamed headings once broke the comments that pointed to them.
 - **One language per doc set,** so a reader never switches languages mid-doc.
-- **Where the docs live is the user's choice, and a doc's name does not change.** The default is the reasons and the contract at the project root, `specs/` for how each part works, and `plan/` for `GOALS.md`, `ROADMAP.md`, `TODO.md` and `decisions/`. A user may prefer another layout, for example every doc at the root. Each doc keeps its job and its guide wherever it sits. Cite a doc from code by its path from the project root (`specs/FEATURES.md → Not planned`), and in Resume mode read the root and any folder the docs use. Moving a doc changes every reference to it, so search first and fix them all in the same change.
+- **Where the docs live is the user's choice, and a doc's name does not change.** The default is the reasons and the contract at the project root, `specs/` for how each part works with `specs/decisions/` under it, and `plan/` for `GOALS.md`, `ROADMAP.md` and `TODO.md`. A user may prefer another layout, for example every doc at the root. Each doc keeps its job and its guide wherever it sits. Cite a doc from code by its path from the project root (`specs/FEATURES.md → Not planned`), and in Resume mode read the root and any folder the docs use. Moving a doc changes every reference to it, so search first and fix them all in the same change.
 
 ### The placement test
 
@@ -75,7 +75,7 @@ Ask the questions in order. The first yes names the fact's home.
 | Can it be checked with a number? | `GOALS.md` |
 | Can the user see it or do it? | `FEATURES.md` for what happens and whether it is built, `specs/UIUX.md` for how it looks |
 | Is it a feature the project will not build? | `FEATURES.md` → *Not planned* |
-| Is it a choice between ways, with the others not taken? | `decisions/`, whether it concerns the whole design or one feature |
+| Is it a choice between ways, with the others not taken? | `specs/decisions/`, whether it concerns the whole design or one feature |
 | Is it a design question nobody has answered yet? | `ROADMAP.md`, before the work it blocks, or `TODO.md` until the roadmap is drafted |
 | Is it a commitment the whole design must meet? | `DESIGNS.md` |
 | Is it how a part works inside? | `specs/` |
@@ -109,7 +109,7 @@ The first minutes decide what the session is about. Ask for the idea in brief, a
 
 ### 2. Agree on the doc set
 
-Recommend the core seven, `TODO.md`, `CHANGELOG.md` and `decisions/`, plus the other optional docs that fit, each with one clause of reason. The user confirms or changes the list. Then ask where the docs live, with the options in the next sentence: grouped into `specs/` and `plan/` *(the default)*, or all at the root (see Rules between docs). Record the answer in the project's `AGENTS.md`, so a later session finds the docs. When the list is agreed, create `TODO.md` and `CHANGELOG.md` if the user kept them, so a finding or a change has a home from the start.
+Recommend the core seven, `TODO.md`, `CHANGELOG.md` and `specs/decisions/`, plus the other optional docs that fit, each with one clause of reason. The user confirms or changes the list. Then ask where the docs live, with the options in the next sentence: grouped into `specs/` and `plan/` *(the default)*, or all at the root (see Rules between docs). Record the answer in the project's `AGENTS.md`, so a later session finds the docs. When the list is agreed, create `TODO.md` and `CHANGELOG.md` if the user kept them, so a finding or a change has a home from the start.
 
 ### 3. Work through the docs, in order
 

@@ -6,7 +6,7 @@ It comes third in a session, right after the philosophy, because the design guid
 
 **Owns:** the guidelines, numbered, one line each. Under each: why it holds, what it costs, the question it asks of a new requirement, and links to its decisions and specs.
 
-**Leaves out:** the choices made to meet a guideline (`decisions/`), how the thing works (`specs/`), what the user sees (FEATURES), whether it is built yet, and open questions.
+**Leaves out:** the choices made to meet a guideline (`specs/decisions/`), how the thing works (`specs/`), what the user sees (FEATURES), whether it is built yet, and open questions.
 
 **Push back on:** a guideline every team would sign ("keep it simple"), one that reads like a feature, and one that is really a mechanism.
 

@@ -6,7 +6,7 @@ It comes fifth in a session: each feature delivers a want from the proposal with
 
 **Owns:** each feature's behavior from the user's side, its status, what the user sees when something fails, the *Later* list, and the *Not planned* list with reasons.
 
-**Leaves out:** how a feature works inside (`specs/`), the choices behind it (`decisions/`), type names and code paths, layout and motion (UIUX), and schedule (ROADMAP).
+**Leaves out:** how a feature works inside (`specs/`), the choices behind it (`specs/decisions/`), type names and code paths, layout and motion (UIUX), and schedule (ROADMAP).
 
 **Push back on:** a long feature that needs a spec instead, a setting with no reason, and a *Not planned* item with no reason.
 

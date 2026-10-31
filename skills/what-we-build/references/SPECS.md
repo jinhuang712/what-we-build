@@ -4,7 +4,7 @@ The specs folder explains how each part of the project works, like a technical d
 
 **Owns:** the mechanism of one part of the project, one file per part.
 
-**Leaves out:** what the user sees (FEATURES), the guidelines the design must meet (DESIGNS), and the forks behind it (`decisions/`).
+**Leaves out:** what the user sees (FEATURES), the guidelines the design must meet (DESIGNS), and the forks behind it (`specs/decisions/`).
 
 **UIUX is a spec too.** A project with a visual interface keeps `specs/UIUX.md`, which explains how the product looks and moves, and `prototype/*.html`, the final screens. Change them together. Options weighed on the way are process files, and they stay out.
 
