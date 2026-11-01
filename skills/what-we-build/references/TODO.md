@@ -1,12 +1,26 @@
 # TODO.md
 
-TODO.md tracks what is open: issues found, discussions to hold, tasks to do and ideas to keep. Each item has a priority, a type and a time, so a reader sees what matters first and how old it is.
+TODO.md tracks what is open:
 
-**Owns:** the open items, each with enough context and evidence to act on.
+- Issues found.
+- Discussions to hold.
+- Tasks to do.
+- Ideas to keep.
 
-**Leaves out:** work with a milestone (ROADMAP) and what is already decided (`specs/decisions/`).
+Each item has a priority, a type and a time.
+A reader sees what matters first and how old it is.
 
-**Add when** the doc set is agreed, for every project, so a finding has a home the moment it comes up.
+**Owns:**
+
+- The open items, each with enough context and evidence to act on.
+
+**Leaves out:**
+
+- Work with a milestone (ROADMAP).
+- What is already decided (`specs/decisions/`).
+
+**Add when** the doc set is agreed, in every project.
+A finding then has a home the moment it comes up.
 
 ## Guidelines
 
@@ -44,7 +58,7 @@ TODO.md tracks what is open: issues found, discussions to hold, tasks to do and 
 | `evidence` | Links to logs, screenshots or snippets kept as files in `plan/evidence/`. |
 | `next` | The next step. |
 | `blocks` | The milestone, feature or item that waits for this one. |
-| `related` | Links to FEATURES, specs, decisions or other items. |
+| `related` | Links to related docs or other items. |
 
 Use the fields an item needs. Leave out the rest.
 

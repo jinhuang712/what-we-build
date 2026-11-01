@@ -1,12 +1,28 @@
 # ROADMAP.md
 
-ROADMAP.md answers "when?" and "how far along?". It breaks the work into milestones, each a usable or proven state of the project, and shows where the work stands. It schedules features. It does not describe them.
+ROADMAP.md answers "when?" and "how far along?".
+It breaks the work into milestones, each a usable or proven state of the project.
+It shows where the work stands.
+It schedules features and does not describe them.
 
-**Owns:** milestones in order, their tasks and progress, and exit criteria that point to GOALS.
+**Owns:**
 
-**Leaves out:** feature behavior and the *Later* list (FEATURES), open questions (TODO), their answers once decided (`specs/decisions/`), and release notes (CHANGELOG).
+- Milestones in order.
+- Their tasks and progress.
+- Exit criteria that point to GOALS.
 
-**Push back on:** a milestone nobody could use, exit criteria that restate goals instead of pointing to them, and a milestone that starts building before its design is decided.
+**Leaves out:**
+
+- Feature behavior and the *Later* list (FEATURES).
+- Open questions (TODO).
+- Their answers once decided (`specs/decisions/`).
+- Release notes (CHANGELOG).
+
+**Push back on:**
+
+- A milestone nobody could use.
+- Exit criteria that restate goals instead of pointing to them.
+- A milestone that starts building before its design is decided.
 
 ## Guidelines
 
