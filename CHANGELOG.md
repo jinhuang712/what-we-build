@@ -31,6 +31,7 @@
 - PHILOSOPHY drops *Reflections* and the tie-break.
 - An open question lives in TODO.md as a `DISCUSSION`, and ROADMAP no longer holds one or a *Waiting for design* list.
 - PROPOSAL no longer assumes a pain: *Pain points* sits under *Why it should exist* and is written only when there are pains.
+- PROPOSAL gives each pain its own section, in whatever shape shows its evidence.
 - PROPOSAL drops *How it works*, *Approach* and *How we know it works*, which FEATURES, DESIGNS and GOALS own.
 
 ## 0.4.0 — 2026-10-18

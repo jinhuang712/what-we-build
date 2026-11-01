@@ -1,120 +1,170 @@
-<!-- what-we-build: drafted 2026-10-14 -->
+<!-- what-we-build: approved 2026-11-02 -->
 
 # what-we-build — Proposal
 
-> Talk a project into being, one document at a time.
+> Keep a project's context in docs.
 
-Proposed 2026-10-12. For where the work stands today, see [ROADMAP.md](ROADMAP.md).
+Proposed 2026-10-12.
+For where the work stands today, see [ROADMAP.md](ROADMAP.md).
 
 ## In short
 
-You have an idea. You ask your coding agent for a README, a design doc and a roadmap. Ninety seconds later you have 2,000 confident words, and most of them describe decisions you never made.
+You build a project with a coding agent over many sessions.
+On day one you agree on what to build and why.
+Some weeks later the agent is writing code for a project you no longer recognize.
 
-Agents write documents faster than people think, and they fill every gap with a guess that sounds sure. what-we-build is a skill that drafts a project's founding documents through a conversation instead: one question per document, one home for each fact, and nothing written before you agree.
+Nothing was built badly.
+The context was lost: what you decided and why.
 
-## The shift
+what-we-build keeps that context in docs, made with you through discussion.
+Each doc answers one question, so every fact has one home.
+Nothing is written down before you agree.
+
+## Why it should exist
+
+Building is no longer the hard part.
+An agent implements almost anything it is told, and fast.
+What goes wrong is the context around the work.
+
+### Pain points
+
+The first five come from one real project built with coding agents over two weeks.
+The rest come from building this skill.
+
+#### Every fact in several places
+
+"What we will not build" was written in five docs:
+
+- The philosophy.
+- The goals.
+- The features.
+- The roadmap.
+- The command reference.
+
+A change to it had to be made five times, and it never was.
+
+#### Docs that tire the reader
+
+| Doc | Size | What filled it |
+|---|---|---|
+| Design | 489 lines | Every detail of every part |
+| Roadmap | 273 lines | Build logs, such as "Checked headless…" |
+
+#### Goals that are wishes
+
+> Launches quickly.
+
+> Answered with one search, most of the time.
+
+Neither goal can be checked.
+
+#### Principles that are features
+
+Four of ten principles restated goals.
+Others named parts of the screen.
+
+#### Agents that agree too fast
+
+Asked to discuss a design, the agent started writing files.
+The user had to stop it:
+
+> dont be eager to implement it first
+
+#### Agents that do not record
+
+A rule said to write a changelog entry with every change.
+The agent forgot it twice in one session.
+What an agent records has no fixed shape, so nobody can say where it went.
+
+#### Docs patched until nobody can read them
+
+A doc was edited in twenty small patches.
+It lost its shape, and no person could read it.
+The agent reading it got lost too.
+
+#### Context lost to the window
+
+Past about 600K tokens the agent grew confused.
+Then the window was compacted, and the session's decisions were gone.
+The next session did not know what the last one had been doing.
+
+#### Docs not read
+
+1. A requirement was agreed and written down.
+2. The code came out a different shape.
+3. Asked about it, the agent searched for a long time.
+4. It found the doc and said the doc was right.
+
+#### Work from git alone
+
+A new session read the file tree and the log.
+They said what changed and not why.
+The session continued the last change with no way to know whether it was right.
+
+**The result:** the work drifts away from what was agreed.
+
+## Why now
+
+Agents changed what is cheap and what gets lost.
 
 | Before agents | With agents |
 |---|---|
 | Docs are slow to write, so few exist | An agent writes a whole doc set in one sitting |
 | The author decides each line | The agent fills each gap with a guess |
-| Docs drift slowly | Every sitting adds a little, in a new place |
-| A reader opens one doc to find a fact | A reader opens all of them |
-
-## Pain points
-
-The numbers come from one real project built with coding agents over two weeks.
-
-1. **Every fact in several places.** "What we will not build" was written in five docs: philosophy, goals, features, roadmap and the command reference.
-2. **Docs that tire the reader.** The design doc had 489 lines, and the roadmap 273 lines of build logs: "Checked headless…", "Not seen…".
-3. **Goals that are wishes.** "Launches quickly." "Answered with one search, most of the time." Neither can be checked.
-4. **Principles that are features.** Four of ten principles restated goals. Others named screen parts.
-5. **Agents that agree too fast.** Asked to discuss a design, the agent started writing files. The user had to stop it: "dont be eager to implement it first."
-
-**The result:** docs that cost more attention than they save.
+| A project lives in a few heads | A project lives across many sessions that forget |
+| Docs drift slowly | Every session adds a little in a new place |
 
 ## The idea
 
-**Each document answers exactly one question.** Then every fact has exactly one home: a reader always knows where to look, and a change is made in one place.
+**Keep the project's context in docs, and give each fact one home.**
+
+Each doc answers one question.
+A reader always knows where to look, and a change is made in one place.
+The agent writes the docs with the user and reads them before it works.
 
 | Doc | The one question it answers |
 |---|---|
 | PROPOSAL (this file) | Why did we start this? |
 | [PHILOSOPHY](PHILOSOPHY.md) | Why is it this way? |
-| [DESIGNS](DESIGNS.md) | How is it built, and why that way? |
-| [GOALS](GOALS.md) | What do we measure? |
+| [DESIGNS](DESIGNS.md) | What must the design always satisfy? |
 | [FEATURES](FEATURES.md) | What does it do, and what will it do? |
+| `specs/` | How does each part work? |
+| `specs/decisions/` | Why did we choose this, and what did we not choose? |
+| [GOALS](GOALS.md) | What do we measure? |
 | [ROADMAP](ROADMAP.md) | When, and how far along? |
+| TODO | What is open? |
+| [CHANGELOG](CHANGELOG.md) | What changed? |
 | [README](README.md) | What is this, and how do I start? |
 
 This repo's own docs use the same set.
 
 ## What we want
 
-| Pain | What what-we-build does |
-|---|---|
-| Every fact in several places | One question per doc (above). A placement test gives each new fact its home. Other docs link to it. |
-| Docs that tire the reader | Wording rules and a style per doc. |
-| Goals that are wishes | Each goal needs a number. Without one, it stays open. |
-| Principles that are features | Each principle picks a side a sensible team could reverse, and names one thing it refuses. |
-| Agents that agree too fast | Discussion and brainstorming before decisions, a recommendation with a reason when a choice is ready, and no doc before its key points are agreed. |
-
-Underneath all five: **the user decides.** The skill asks and recommends. It does not choose.
-
-## How it works
-
-The user types `/what-we-build` in an empty folder and says what they want to build. The agent talks it through with them. A doc often opens wide and ends with a choice:
-
-```text
-PROPOSAL.md answers: why did we start this?
-
-Agent: Let's list what hurts first, as fast as it comes. I'll start:
-       receipts lost in email, card lines with no receipt,
-       an evening each month matching them by hand.
-User:  Add one: finance asks for the same receipt twice.
-Agent: Four pains. If you could fix only one, which would it be?
-       A. Matching by hand: it costs an evening every month (recommended)
-       B. Lost receipts
-       C. Something else: ...
-```
-
-- **Talk, not a form:** discussion and brainstorming open each doc, and a recommended choice closes each point.
-- **In order:** each doc builds on the ones before it, and is written only after its key points are agreed.
-- **Strict where it counts:** a pain needs an example, a principle must pick a side and refuse one thing, a goal needs a number, a decision needs a reason and the option it beat.
-- **Marked as it goes:** each doc stays `drafted` until the user approves it, so a session can stop and resume later.
-
-The exact behavior is in [FEATURES.md](FEATURES.md) → F1–F2.
+- **One home for every fact:** each doc answers one question, and a placement test places each new fact.
+- **Context that outlives the session:** what is decided goes into a doc at once.
+- **Docs a person can read:** each doc follows its guide and is re-read in full before any edit.
+- **An agent that reads before it works:** the project's `AGENTS.md` names the read order.
+- **Goals that can be checked:** each goal needs a number or stays open.
+- **The user decides:** nothing is committed before the user approves it.
 
 ## What we don't want
 
-| Not this | Why |
-|---|---|
-| A faster way to get confident text | Asking the agent directly already gives you pages of confident text about decisions nobody made. |
-| A form to fill in | Templates and fixed questionnaires produce answers, not decisions. |
-| Something that runs on its own | A session needs your full attention, so it starts when you type it. |
+- **A faster way to get confident text:** asking the agent directly already gives that.
+- **A form to fill in:** templates and fixed questionnaires produce answers, not decisions.
+- **Something that runs on its own:** a session needs your full attention, so it starts when you type it.
 
 The full list of what is not planned, with reasons: [FEATURES.md → Not planned](FEATURES.md#not-planned).
 
 ## Who it is for
 
-Developers who start a project with a coding agent and want the thinking written down before the code. The first user is the author.
-
-## Approach
-
-- **One Claude Code skill,** started only by hand with `/what-we-build`.
-- **Two modes:** a new project, and resuming a session.
-- **Reference files loaded when needed,** so the skill stays short: one per doc, plus the wording rules.
-- **Distributed** as a public plugin, or as a folder linked into `~/.claude/skills`.
+Developers who build a project with a coding agent over many sessions and want its context kept.
+The first user is the author.
 
 ## Risks
 
-| Risk | Mitigation |
+| Risk | What reduces it |
 |---|---|
-| The user wants the docs, not the talk | The skill drafts quickly once a doc's key points are agreed. A recommendation comes with every choice, so a ready decision takes one answer. |
+| The user wants the docs, not the talk | The skill drafts quickly once a doc's key points are agreed. Every choice comes with a recommendation. |
 | Too many docs for a small project | Seven core docs. The rest only when needed. |
-| The skill itself grows too long | `SKILL.md` has a line limit (GOALS.md G6). Detail lives in reference files. |
-| The agent pads or splits text | Wording rules, and rules that name the session failure behind them. |
-
-## How we know it works
-
-[GOALS.md](GOALS.md) holds the checks: the core docs drafted and approved in one sitting, no fact with two homes, every goal with a number, every decision with a reason and a date.
+| The skill itself grows too long | `SKILL.md` has a line limit (GOALS.md G6). Detail lives in the guides. |
+| The docs fall behind the work | The agent updates the owning doc in the change that does the work. |

@@ -34,10 +34,10 @@ It comes first, because every other doc builds on the reason it gives.
 
 ## Guidelines
 
-- **Start from what the user brings.** It can take any form.
-- **When the project eases a pain, list each pain** with the moment or number that proves it.
-- **Show the reason** with a moment, a number or a sample.
-- **Argue the case.** Every section should make it stronger.
+- **Start from what the user brings,** in whatever form it takes.
+- **Show the reason with an example.**
+- **Give each pain its own section** with the moment, number or sample that proves it.
+- **Argue the case,** so that every section makes it stronger.
 - **Write *Why now* only when something changed.**
 
 ## You have it when
@@ -61,19 +61,21 @@ It comes first, because every other doc builds on the reason it gives.
 
 ### Pain points
 <when the project eases a pain>
-1. **<the pain, one line>.** <the moment or number that proves it>
+
+#### <the pain, in one line>
+<the moment, number or sample that proves it>
 
 ## Why now
 <what changed that makes it possible or urgent. Leave it out when nothing did>
 
 ## The idea
-**<one sentence>.** <what it means>
+<the idea in one sentence, then what it means>
 
 ## What we want
-- **<what someone needs>.** <how the project meets it>
+- **<what someone needs>:** <how the project meets it, in one sentence>
 
 ## What we don't want
-- **<what the project refuses to become>.** <the reason>
+- **<what the project refuses to become>:** <the reason>
 
 ## Who it is for
 <the people, and what each gets>
