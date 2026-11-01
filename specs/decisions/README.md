@@ -1,5 +1,3 @@
-<!-- what-we-build: approved 2026-11-02 -->
-
 # Decisions
 
 | # | Decision | Decided |

@@ -31,8 +31,8 @@ It comes fifth in a session: each feature delivers a want from the proposal with
 
 ## Guidelines
 
-- **Open with a TL;DR,** an outline of every capability by group.
-- **Give each TL;DR row its feature and status.**
+- **Open with a Summary,** an outline of every capability by group.
+- **Give each Summary row its feature and status.**
 - **Give each feature an ID that never changes,** so other docs can point to it. A new feature takes a new number.
 - **Describe what the user does and what happens,** short and in the present tense.
 - **Link each feature to what it rests on,** as the skeleton shows.
@@ -51,7 +51,7 @@ It comes fifth in a session: each feature delivers a want from the proposal with
 
 <one line per status mark: ✅ built · 🚧 built with a gap · ⬜ planned>
 
-## TL;DR
+## Summary
 
 **<Group>**
 
