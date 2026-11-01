@@ -1,14 +1,35 @@
 # specs/
 
-The specs folder explains how each part of the project works, like a technical design written for readers outside the team. A spec reads like a short paper: prose that explains, with ASCII diagrams where several parts talk to each other. A reader who has not seen the code can follow how the part works.
+The specs folder explains how each part of the project works, like a technical design written for readers outside the team.
+A spec reads like a short paper: prose that explains, with ASCII diagrams where several parts talk to each other.
+A reader who has not seen the code can follow how the part works.
 
-**Owns:** the mechanism of one part of the project, one file per part.
+**Owns:**
 
-**Leaves out:** what the user sees (FEATURES), the guidelines the design must meet (DESIGNS), and the forks behind it (`specs/decisions/`).
+- The mechanism of one part of the project, one file per part.
 
-**UIUX is a spec too.** A project with a visual interface keeps `specs/UIUX.md`, which explains how the product looks and moves, and `prototype/*.html`, the final screens. Change them together. Options weighed on the way are process files, and they stay out.
+**Leaves out:**
 
-**Add when** a part has a mechanism worth explaining. A spec and the code guide each other: a spec drafted first guides the code, and a better implementation updates the spec. When they disagree, tell the user and let them decide.
+- What the user sees (FEATURES).
+- The guidelines the design must meet (DESIGNS).
+- The forks behind it (`specs/decisions/`).
+
+**UIUX is a spec too.**
+A project with a visual interface keeps two things:
+
+- `specs/UIUX.md`, which explains how the product looks and moves.
+- `prototype/*.html`, the final screens.
+
+Change them together.
+Options weighed on the way are process files, and they stay out.
+
+**Add when** a part has a mechanism worth explaining.
+
+A spec and the code guide each other:
+
+- A spec drafted first guides the code.
+- A better implementation updates the spec.
+- When they disagree, tell the user and let them decide.
 
 ## You have it when
 
@@ -23,5 +44,5 @@ The specs folder explains how each part of the project works, like a technical d
 
 <what the part does and why it exists, in a paragraph>
 
-<the mechanism, in prose, with a diagram>
+<the mechanism in prose, with a diagram>
 ```
