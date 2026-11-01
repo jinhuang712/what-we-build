@@ -1,12 +1,27 @@
 # GOALS.md
 
-GOALS.md turns the wants in the proposal into numbers. It keeps the project honest: when someone claims progress, this is where the claim is tested. ROADMAP uses these goals as its exit criteria.
+GOALS.md turns the wants in the proposal into numbers.
+It keeps the project honest: when someone claims progress, this is where the claim is tested.
+ROADMAP uses these goals as its exit criteria.
 
-**Owns:** objectives with thresholds, and benchmarks with comparisons, each with its measurement.
+**Owns:**
 
-**Leaves out:** anything vague, non-goals (FEATURES → *Not planned*), and how anything works (`specs/`).
+- Objectives, each with a measurement and a threshold.
+- Benchmarks, each with a measurement and a comparison.
 
-**Push back on:** an adjective where a number belongs, an objective with no measurement, a threshold made up for a number that only needs tracking, a benchmark with no comparison, and a "met" with no evidence.
+**Leaves out:**
+
+- Anything vague.
+- Non-goals (FEATURES → *Not planned*).
+- How anything works (`specs/`).
+
+**Push back on:**
+
+- An adjective where a number belongs.
+- An objective with no measurement.
+- A threshold made up for a number that only needs tracking.
+- A benchmark with no comparison.
+- A "met" with no evidence.
 
 ## The five parts
 
@@ -16,9 +31,10 @@ GOALS.md turns the wants in the proposal into numbers. It keeps the project hone
 | Measurement | What we measure and how: the metric, the script or the run. |
 | Threshold | The line between pass and fail, with a unit. Leave it open when it is not known. |
 | Benchmark | A number we track over time, with no pass or fail. |
-| Comparison | What a benchmark is compared with: the previous release, another tool, or the larger cost. |
+| Comparison | What a benchmark is compared with: the previous release, another tool or the larger cost. |
 
-An objective has a measurement and a threshold. A benchmark has a measurement and a comparison.
+An objective has a measurement and a threshold.
+A benchmark has a measurement and a comparison.
 
 ## Guidelines
 
