@@ -1,21 +1,42 @@
 # FEATURES.md
 
-FEATURES.md is the contract with the user: what the product does today, and what it will and won't do. A user reads it to learn what happens when they use it. A contributor reads it to see what exists and what was ruled out. It describes behavior from the user's side, never the code.
+FEATURES.md is the contract with the user: what the product does today, and what it will and won't do.
+A user reads it to learn what happens when they use it.
+A contributor reads it to see what exists and what was ruled out.
+It describes behavior from the user's side, never the code.
 
 It comes fifth in a session: each feature delivers a want from the proposal within the design that DESIGNS sets.
 
-**Owns:** each feature's behavior from the user's side, its status, what the user sees when something fails, the *Later* list, and the *Not planned* list with reasons.
+**Owns:**
 
-**Leaves out:** how a feature works inside (`specs/`), the choices behind it (`specs/decisions/`), type names and code paths, layout and motion (`specs/UIUX.md`), and schedule (ROADMAP).
+- Each feature's behavior from the user's side.
+- Each feature's status.
+- What the user sees when something fails.
+- The *Later* list.
+- The *Not planned* list, with reasons.
 
-**Push back on:** a long feature that needs a spec instead, a setting with no reason, and a *Not planned* item with no reason.
+**Leaves out:**
+
+- How a feature works inside (`specs/`).
+- The choices behind it (`specs/decisions/`).
+- Type names and code paths.
+- Layout and motion (`specs/UIUX.md`).
+- Schedule (ROADMAP).
+
+**Push back on:**
+
+- A long feature that needs a spec instead.
+- A setting with no reason.
+- A *Not planned* item with no reason.
 
 ## Guidelines
 
-- **Open with a TL;DR,** an outline of every capability by group, each row with its feature and status (✅ built, 🚧 built with a gap, ⬜ planned).
+- **Open with a TL;DR,** an outline of every capability by group.
+- **Give each TL;DR row its feature and status.**
 - **Give each feature an ID that never changes,** so other docs can point to it. A new feature takes a new number.
-- **Describe what the user does and what happens,** in the present tense, short. Link each feature to what it rests on: the guideline in DESIGNS, the spec, the decisions, and UIUX when it has a screen.
-- **End with the failure table, *Later* and *Not planned*,** each *Not planned* item with its reason.
+- **Describe what the user does and what happens,** short and in the present tense.
+- **Link each feature to what it rests on,** as the skeleton shows.
+- **End with the failure table, *Later* and *Not planned*.**
 
 ## You have it when
 
