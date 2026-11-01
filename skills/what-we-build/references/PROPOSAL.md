@@ -1,18 +1,40 @@
 # PROPOSAL.md
 
-The proposal is where the project begins: the case for why it should exist. It says what gap the project fills, why now, and the idea that fills it. A reader finishes it knowing whether the project is worth building.
+The proposal is where the project begins: the case for why it should exist.
+It says what gap the project fills and why now.
+It gives the idea that fills the gap.
+A reader finishes it knowing whether the project is worth building.
 
 It comes first, because every other doc builds on the reason it gives.
 
-**Owns:** why the project should exist, why now, the idea, what we want, what we don't want, who it is for, and the risks.
+**Owns:**
 
-**Leaves out:** how it is built (DESIGNS), exact behavior (FEATURES), the numbers (GOALS), progress (ROADMAP), and the index of docs (README).
+- Why the project should exist.
+- Why now.
+- The idea.
+- What we want.
+- What we don't want.
+- Who it is for.
+- The risks.
 
-**Push back on:** a case that opens with the solution, a reason with no example, a want that serves no reason, and a "don't want" with no reason.
+**Leaves out:**
+
+- How it is built (DESIGNS).
+- Exact behavior (FEATURES).
+- The numbers (GOALS).
+- Progress (ROADMAP).
+- The index of docs (README).
+
+**Push back on:**
+
+- A case that opens with the solution.
+- A reason with no example.
+- A want that serves no reason.
+- A "don't want" with no reason.
 
 ## Guidelines
 
-- **Start from what the user brings.** It may be a pain, an opportunity, a conviction or a taste.
+- **Start from what the user brings.** It can take any form.
 - **When the project eases a pain, list each pain** with the moment or number that proves it.
 - **Show the reason** with a moment, a number or a sample.
 - **Argue the case.** Every section should make it stronger.
@@ -35,7 +57,7 @@ It comes first, because every other doc builds on the reason it gives.
 <a scene the reader knows, then the one-line answer>
 
 ## Why it should exist
-<the reason, in the form the user brings it, with a moment, a number or a sample>
+<the reason in the user's own form, shown with an example>
 
 ### Pain points
 <when the project eases a pain>
