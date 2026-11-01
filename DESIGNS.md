@@ -1,185 +1,99 @@
-<!-- what-we-build: drafted 2026-10-16 -->
+<!-- what-we-build: approved 2026-11-02 -->
 
 # Designs
 
-How what-we-build is built, and why. What goes in is a project folder and a conversation with the user. What comes out is a set of Markdown docs, each with a mark that says drafted or approved. In between is the skill: Markdown instructions that an agent reads. What the skill does for the user is in [FEATURES.md](FEATURES.md).
+What goes in is a project folder and a conversation with the user.
+What comes out is a set of Markdown docs that hold the project's context.
+In between is the skill: Markdown instructions that an agent reads.
+What the skill does for the user is in [FEATURES.md](FEATURES.md).
 
-## TL;DR
+what-we-build is designed around 9 guidelines:
 
-The principles by area, then the decisions. Below, each principle names the choice, what it costs, and how to check that it holds.
+1. **A short core with detail on demand:** `SKILL.md` holds what every session needs and points to the guides.
+2. **The docs are the state:** a mark on each doc's first line says drafted or approved.
+3. **No dependencies:** the skill is Markdown only.
+4. **Our own words over borrowed text:** methods from other guides are rewritten and never copied.
+5. **Made-up examples over real projects:** every example is invented or taken from this repo.
+6. **Trust the model:** a guide says what a doc is for and leaves the method to the model.
+7. **Readers check the docs, not scripts:** a reader checks the links and the facts.
+8. **Test by use first:** real sessions come before prepared test prompts.
+9. **The repo is its own first example:** its docs follow the skill.
 
-**Context**
+## 1. A short core with detail on demand
 
-| Principle | What it means |
-|---|---|
-| Short core, detail on demand | `SKILL.md` holds what every session needs, and the guides wait until a step points to them |
+The agent reads `SKILL.md` in every session, so it holds only what every session needs.
+Each doc's guide waits in `references/` until a step points to it.
+`SKILL.md` stays within the limit in [GOALS.md](GOALS.md) G6.
+The cost is that a step must name its guide, or the agent never reads it.
 
-**State**
+**Ask:** does every session need this, or only the step that writes one doc?
 
-| Principle | What it means |
-|---|---|
-| The docs are the state | a mark on each doc's first line, with no separate state file |
+- **Decisions:** [001](specs/decisions/001-one-skill-for-every-start.md), [005](specs/decisions/005-one-guide-per-kind-of-doc.md)
 
-**Portability**
+## 2. The docs are the state
 
-| Principle | What it means |
-|---|---|
-| No dependencies | the skill is Markdown only |
+A mark on each doc's first line says whether it is drafted or approved.
+No separate file records where a session stopped.
+The cost is that points agreed for a doc not yet drafted are lost when the sitting ends.
 
-**Words**
+**Ask:** does this need a file other than the docs to remember it?
 
-| Principle | What it means |
-|---|---|
-| Our own words over borrowed text | the rules take methods from other guides and rewrite them |
-| Made-up examples over real projects | every example is invented, or taken from this repo |
-| Teach over order | each rule gives its reason, so a session can apply it to a new case |
-| Reasons over counts | a rule says what it protects, not a number to meet |
+## 3. No dependencies
 
-**Checks**
+The skill is Markdown only, so it works anywhere an agent can read files.
+The cost is that nothing checks the docs by machine.
 
-| Principle | What it means |
-|---|---|
-| Readers check the docs, not scripts | a reader checks links, blank lines and facts, and no script does |
+**Ask:** does this add anything that must be installed or run?
 
-**Testing**
+- **Decisions:** [003](specs/decisions/003-plugin-manifest-at-the-repo-root.md)
 
-| Principle | What it means |
-|---|---|
-| Test by use first | real sessions come before prepared test prompts |
-| The repo is its own first example | this repo's docs follow the skill |
+## 4. Our own words over borrowed text
 
-**Decisions**
+The rules take methods from other writing guides and rewrite them for this skill.
+The sources are named in the decisions, and no passage is copied.
+The cost is that a reader cannot check a rule against its source line by line.
 
-| Decision | Date |
-|---|---|
-| One skill with its modes over a skill per mode | 2026-10-12 |
-| Manual start over automatic loading | 2026-10-12 |
-| The plugin manifest at the repo root over a plugin-only layout | 2026-10-12 |
-| Our own skill over jig's `vision-elicitation` | 2026-10-12 |
-| One guide file per kind of doc over one shared reference | 2026-10-13 |
-| Three ideas from mattpocock/skills over the whole guide | 2026-10-13 |
-| DESIGNS third, before GOALS and FEATURES | 2026-10-14 |
+**Ask:** is any passage copied from somewhere else?
 
-## Context
+- **Decisions:** [004](specs/decisions/004-our-own-skill-over-vision-elicitation.md), [006](specs/decisions/006-three-ideas-from-mattpocock-skills.md)
 
-### Short core, detail on demand
+## 5. Made-up examples over real projects
 
-`SKILL.md` holds what every session needs. The doc guides and the wording rules wait in reference files until a step points to them.
+Each example in the skill is invented for it or taken from this repo.
+The cost is that an example carries no proof that it worked somewhere.
 
-- **Cost:** a step must name its reference, or the agent never reads it.
-- **Holds as:** `SKILL.md` stays within the limit in GOALS.md G6, and each step that needs a reference names its path.
+**Ask:** does any example name or quote another project?
 
-## State
+## 6. Trust the model
 
-### The docs are the state
+A guide says what a doc is for and what goes wrong.
+It leaves the method to the model, because a model told every step stops using its judgment.
+One session followed a guide's "table: pain → what the project does" to the letter, and the user rejected the tables.
+The cost is that two sessions may write the same doc differently.
 
-A mark on each doc's first line over a separate state file.
+**Ask:** does this teach the model something it already knows?
 
-- **Cost:** points agreed for a doc that is not drafted yet are lost when the sitting ends.
-- **Holds as:** no file but the docs records where a session stopped.
+## 7. Readers check the docs, not scripts
 
-## Portability
+A reader checks the links and the facts, and no script does.
+Every goal measured on this repo is measured by a reader who did not write the change.
+The cost is that a broken link stays until a reader catches it.
 
-### No dependencies
+**Ask:** does this need a script to stay true?
 
-The skill is Markdown only.
+## 8. Test by use first
 
-- **Cost:** nothing checks the docs by machine.
-- **Holds as:** `skills/what-we-build/` holds only Markdown files.
+Real sessions come before prepared test prompts.
+The prompts follow from what the sessions show ([ROADMAP.md](ROADMAP.md) → M3).
+The cost is that evidence comes slowly, one session at a time.
 
-## Words
+**Ask:** which real session showed the failure this rule fixes?
 
-### Our own words over borrowed text
+## 9. The repo is its own first example
 
-The wording rules take methods from controlled languages such as ASD-STE100, and from other writing guides, and rewrite them for this skill.
+This repo's docs follow the skill.
+The cost is that every rule change means checking these docs again.
 
-- **Cost:** a reader cannot check a rule against its source line by line.
-- **Holds as:** the sources are named, in `references/wording.md` and in the decisions below, and no passage is copied from them.
+**Ask:** does this repo's own doc still follow the changed rule?
 
-### Made-up examples over real projects
-
-Each example in the skill is invented for it, or taken from this repo.
-
-- **Cost:** an example carries no proof that it worked somewhere.
-- **Holds as:** no example in `skills/` names or quotes another project.
-
-### Teach over order
-
-A guide explains why each rule holds and shows it at work in a made-up example, so a session can apply the rule to a case the guide did not foresee.
-
-- A session that only obeys follows the letter. One followed a guide's "table: pain → what the project does" exactly, and the user rejected the tables.
-- **Cost:** a guide grows longer, and the agent reads more before it starts a doc.
-- **Holds as:** each rule in a guide gives its reason.
-
-### Reasons over counts
-
-A rule says what it protects, not a number to meet.
-
-- **Cost:** no one can check the rule by counting, and two sessions may judge the same case differently.
-- **Holds as:** no rule in `skills/` sets a count or a limit. Numbers appear only inside examples.
-
-## Checks
-
-### Readers check the docs, not scripts
-
-A reader checks links, blank lines and facts. No script does.
-
-- **Cost:** a broken link, a missing blank line or a wrong fact stays until a reader catches it.
-- **Holds as:** every goal measured on this repo is measured by a reader who did not write the change ([GOALS.md](GOALS.md)).
-
-## Testing
-
-### Test by use first
-
-Real sessions come before prepared test prompts, and the prompts follow from what the sessions show ([ROADMAP.md](ROADMAP.md) → M3).
-
-- **Cost:** evidence comes slowly, one session at a time.
-- **Holds as:** each rule in `SKILL.md` that a session taught names the failure that taught it.
-
-### The repo is its own first example
-
-Its docs follow the skill.
-
-- **Cost:** every rule change means checking this repo's docs again.
-- **Holds as:** every core doc in this repo carries a what-we-build mark.
-
-## Decision: one skill with its modes over a skill per mode — 2026-10-12
-
-The modes share the roles, the rules and the wording, and a user should not need to know which skill to call.
-
-## Decision: manual start over automatic loading — 2026-10-12
-
-The skill sets `disable-model-invocation: true`, because a session starts only when the user types the command (reason: FEATURES.md → Not planned).
-
-## Decision: the plugin manifest at the repo root over a plugin-only layout — 2026-10-12
-
-The repo then installs as a plugin, and also works when its skill folder is linked into `~/.claude/skills`. Install steps are in [README.md](README.md).
-
-## Decision: our own skill over jig's `vision-elicitation` — 2026-10-12
-
-jig's `vision-elicitation` (ramboz/jig, MIT) runs a fixed 13-section questionnaire after jig's own scaffold and fills two templates. It has no doc set, no push-back, no goals with numbers and no manual start. Its per-section fill marks gave the idea for the doc marks. The format here is our own.
-
-## Decision: one guide file per kind of doc over one shared reference — 2026-10-13
-
-Each guide holds everything about its doc, over one shared reference and notes in `SKILL.md`. A step works on one doc, and reading all 17 guides cost about 700 lines each time. `SKILL.md` then keeps only the flow.
-
-## Decision: three ideas from mattpocock/skills over the whole guide — 2026-10-13
-
-Only three ideas in the writing guidance of mattpocock/skills (MIT) matched a failure a session had shown:
-
-- State the target instead of the ban.
-- Treat a doc that restates the code as a cache.
-- Record only decisions that are hard to reverse, surprising and a real trade-off.
-
-## Decision: DESIGNS third, before GOALS and FEATURES — 2026-10-14
-
-The design comes right after the philosophy, because the design guides the features. In a real session on 2026-10-14, the platform and the language were settled long before any feature was listed, and the user moved DESIGNS ahead of GOALS.
-
-| Option | For | Against |
-|---|---|---|
-| **DESIGNS third** | The philosophy's stances turn into how the project is built while they are fresh, and the features are then written within that design. | A number the design needs stays open until GOALS sets it. |
-| DESIGNS fifth, after FEATURES | Every feature and every number is known before the design starts. | The features are written without the design that shapes them. |
-
-## Open questions
-
-- How to evaluate the skill: which test prompts, and what a good session looks like in numbers. (ROADMAP.md → M3.)
+- **Decisions:** [007](specs/decisions/007-designs-third.md)
