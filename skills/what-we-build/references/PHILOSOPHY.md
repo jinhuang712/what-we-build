@@ -1,18 +1,47 @@
 # PHILOSOPHY.md
 
-The philosophy is where the project thinks. It goes under the decisions to the beliefs they come from: what the problem is, why it is hard, and what the project holds to be true about it. It is a set of questions about the world the project works in. Each has a stance in one line that people quote, and an argument under it.
+The philosophy is where the project thinks.
+It goes under the decisions to the beliefs they come from:
 
-It comes second, after the proposal. DESIGNS builds on its stances.
+- What the problem is.
+- Why it is hard.
+- What the project holds to be true about it.
 
-**Owns:** the belief the project starts from, the questions it takes a stance on with their arguments, quotes from sources that shaped or tested them, and the sources when there are any.
+It is a set of questions about the world the project works in.
+Each has a stance in one line that people quote, and an argument under it.
 
-**Leaves out:** any feature, setting or screen (FEATURES), and how the project is built (DESIGNS).
+It comes second, after the proposal.
+DESIGNS builds on its stances.
 
-**Push back on:** a stance with no argument, one no team would answer differently ("quality matters"), a stance that sounds deep and says nothing, a quote that decorates and does not test, and a quote nobody checked.
+**Owns:**
+
+- The belief the project starts from.
+- The questions it takes a stance on, with their arguments.
+- Quotes from sources that shaped or tested them.
+- The sources, when there are any.
+
+**Leaves out:**
+
+- Any feature, setting or screen (FEATURES).
+- How the project is built (DESIGNS).
+
+**Push back on:**
+
+- A stance with no argument.
+- A stance no team would answer differently ("quality matters").
+- A stance that sounds deep and says nothing.
+- A quote that decorates and does not test.
+- A quote nobody checked.
 
 ## What you are after
 
-The project's thought. It is not a summary of the project, and it is not a list of values. It is the lens the project looks through. Everything else is downstream of it. The designs are what the thought demands, the features are what it allows, and *Not planned* is what it forbids.
+The project's thought.
+It is neither a summary of the project nor a list of values.
+It is the lens the project looks through, and everything else is downstream of it:
+
+- The designs are what it demands.
+- The features are what it allows.
+- *Not planned* is what it forbids.
 
 A thought has three parts:
 
@@ -22,22 +51,23 @@ A thought has three parts:
 
 You have it when four things hold:
 
-- **Prediction:** given a case nobody foresaw, a reader can say what the project would do, and why.
+- **Prediction:** given a case nobody foresaw, a reader can say what the project would do and why.
 - **Opposition:** a reasonable team could have chosen the other way.
-- **Recognition:** the user reads it and says, "Yes, that is it," in words that are theirs.
+- **Recognition:** the user reads it and says "Yes, that is it" in their own words.
 - **Derivation:** the design guidelines can be traced back to it.
 
-It starts from whatever the user brings: a pain, an idea, a conviction, a taste. The form does not matter.
+It starts from whatever the user brings, in any form.
 
 ## How
 
 You are a thinking partner, not an interviewer.
 
-- Listen for the thought inside what the user says. It often hides in a complaint, an aside, or a thing they refuse.
+- Listen for the thought inside what the user says. It often hides in an aside or a complaint.
 - Say it back in one line and test it. A wrong candidate gets corrected faster than a right one gets produced.
 - Bring contrast: how another project, field or thinker holds the opposite. A thought gets its edges from what it is against.
 - Push on what is thin: ask for the case, the cost and the exception.
-- Organize what comes out, show it, and go back and forth until the user recognizes it.
+- Organize what comes out and show it.
+- Go back and forth until the user recognizes it.
 - Stop when the four tests hold. Do not pad.
 
 ## Seeds
