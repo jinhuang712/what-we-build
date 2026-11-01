@@ -25,7 +25,7 @@
 ### Doc guides
 
 - Every guide is rewritten. See [the guides](skills/what-we-build/references/).
-- New guides: `specs/` and `specs/decisions/`.
+- New guides: `specs/`, `specs/decisions/` and `specs/ARCHITECTURE.md`.
 - The UIUX guide is gone, because UIUX is now a spec.
 - Decisions move out of DESIGNS and FEATURES into `specs/decisions/`.
 - PHILOSOPHY drops *Reflections* and the tie-break.

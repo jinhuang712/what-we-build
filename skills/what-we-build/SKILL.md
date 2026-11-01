@@ -136,6 +136,7 @@ Beside the core, the first three are recommended for every project:
 - [CHANGELOG.md](references/CHANGELOG.md)
 - [specs/decisions/](references/DECISIONS.md): one file per fork the project took
 - [specs/](references/SPECS.md): how each part works, and `specs/UIUX.md` with `prototype/*.html` for a visual interface
+- [specs/ARCHITECTURE.md](references/ARCHITECTURE.md): the map of the parts and how they connect
 - [GLOSSARY.md](references/GLOSSARY.md)
 - [CONTRIBUTING.md](references/CONTRIBUTING.md)
 - [SECURITY.md](references/SECURITY.md)
@@ -154,6 +155,7 @@ Ask the questions in order. The first yes names the fact's home.
 | Is it a choice between ways, with the others not taken? | `specs/decisions/`, whether it concerns the whole design or one feature |
 | Is it a question nobody has answered yet? | `TODO.md`, as a `DISCUSSION` |
 | Is it a commitment the whole design must meet? | `DESIGNS.md` |
+| How do the parts fit together? | `specs/ARCHITECTURE.md` |
 | Is it how a part works inside? | `specs/` |
 | Is it about when, or about progress? | `ROADMAP.md` |
 | Did it ship in a release? | `CHANGELOG.md` |
