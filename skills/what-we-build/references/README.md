@@ -1,14 +1,28 @@
 # README.md
 
-The README is the front door. A visitor reads it to decide, in about thirty seconds, whether the project is for them, and then to start using it. It summarizes the other docs at pitch level and points to them.
+The README is the front door.
+A visitor reads it in about thirty seconds to decide whether the project is for them.
+Then they read it to start using it.
+It summarizes the other docs at pitch level and points to them.
 
 It comes last, because it sums up the approved docs.
 
-**Owns:** the tagline, what it is, what it does, how to get started, and links to every other doc.
+**Owns:**
 
-**Leaves out:** detail any other doc owns.
+- The tagline.
+- What it is.
+- What it does.
+- How to get started.
+- Links to every other doc.
 
-**Push back on:** a fact written only in the README, and a copy of another doc's detail.
+**Leaves out:**
+
+- Detail any other doc owns.
+
+**Push back on:**
+
+- A fact written only in the README.
+- A copy of another doc's detail.
 
 ## Guidelines
 

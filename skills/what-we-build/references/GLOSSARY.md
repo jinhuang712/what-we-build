@@ -1,10 +1,16 @@
 # GLOSSARY.md
 
-The glossary fixes the project's words: one name per thing, each with a one-line meaning. It stops two words from naming one thing, which is how docs and code start to disagree.
+The glossary fixes the project's words: one name per thing, each with a one-line meaning.
+It stops two words from naming one thing.
+That is how docs and code start to disagree.
 
-**Owns:** the project's terms, and the one name chosen for each thing.
+**Owns:**
 
-**Add when** the domain has its own terms, or two words compete for one thing. Start it with the first doc and add terms as they appear.
+- The project's terms.
+- The one name chosen for each thing.
+
+**Add when** the domain has its own terms, or two words compete for one thing.
+Start it with the first doc and add terms as they appear.
 
 ## Guidelines
 

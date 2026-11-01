@@ -1,10 +1,18 @@
 # RUNBOOK.md
 
-RUNBOOK.md is for the person keeping a service running: how to deploy, roll back and respond to each alert. It is read under pressure, so each procedure is short and exact.
+RUNBOOK.md is for the person keeping a service running.
+It is read under pressure, so each procedure is short and exact.
 
-**Owns:** deploy, rollback, monitoring, each alert and its response, who is on call.
+**Owns:**
 
-**Add when** the project is a service someone must keep running. Draft it after DESIGNS.md, once the service's parts are known.
+- Deploy.
+- Rollback.
+- Monitoring.
+- Each alert and its response.
+- Who is on call.
+
+**Add when** the project is a service someone must keep running.
+Draft it after DESIGNS.md, once the service's parts are known.
 
 ## You have it when
 

@@ -1,10 +1,15 @@
 # CHANGELOG.md
 
-The changelog tells users what changed in each release, in words they understand. It is the doc people read before they upgrade.
+The changelog tells users what changed in each release, in words they understand.
+It is the doc people read before they upgrade.
 
-**Owns:** one section per version with its date, grouped by area.
+**Owns:**
 
-**Add when** the doc set is agreed, for every project, with an empty *Unreleased* section so the first change has a place to land. Fill it in the change that does the work.
+- One section per version with its date, grouped by area.
+
+**Add when** the doc set is agreed, in every project.
+Start it with an empty *Unreleased* section so the first change has a place to land.
+Fill it in the change that does the work.
 
 ## Guidelines
 

@@ -6,7 +6,11 @@ disable-model-invocation: true
 
 # What we build
 
-This skill manages a project's context: what you and the user work out together, kept in docs so it outlives every session. It drafts the docs from an idea, from running code or from messy docs, and keeps them true while the work goes on. Each doc answers one question, so every fact has one home and a reader knows where to look.
+This skill manages a project's context: what you and the user work out together, kept in docs so it outlives every session.
+It drafts the docs from an idea, running code or messy docs.
+It keeps them true while the work goes on.
+Each doc answers one question, so every fact has one home.
+A reader knows where to look.
 
 - It is a discussion, not an interview.
 - Bring your own ideas.
@@ -59,9 +63,9 @@ The mark is the first line of a doc:
 
 | Way | When it fits | What you do |
 |---|---|---|
-| Discuss | The idea is still forming, or the user is thinking out loud | Ask open questions, offer your own angle, and challenge weak spots. No options yet. |
+| Discuss | The idea is still forming, or the user is thinking out loud | Ask open questions and offer your own angle. Challenge weak spots. No options yet. |
 | Brainstorm | Early in a doc, or when the user is stuck | List many options quickly, without judging them. Then group them and point out the strongest. |
-| Decide | A choice is ready | Give lettered options, mark one as recommended, and give the reason in a clause. |
+| Decide | A choice is ready | Give lettered options and mark one as recommended. Give the reason in a clause. |
 
 - Take the cue from the user.
 - Ask one decision per question when deciding.
@@ -176,7 +180,8 @@ Ask the questions in order. The first yes names the fact's home.
 - Where the docs live is the user's choice.
 - The default keeps the reasons and the contract at the root.
 - `specs/` holds how each part works, with `specs/decisions/` under it.
-- `plan/` holds `GOALS.md`, `ROADMAP.md`, `TODO.md` and `plan/evidence/`.
+- `plan/` holds the plan: `GOALS.md`, `ROADMAP.md` and `TODO.md`.
+- `plan/evidence/` holds the files that TODO items point to.
 - A doc keeps its name wherever it sits.
 - Record the layout in the project's `AGENTS.md`.
 
@@ -195,8 +200,8 @@ Ask the questions in order. The first yes names the fact's home.
 
 | Mark | Means | Used in |
 |---|---|---|
-| ✅ | built, done, or met | FEATURES, ROADMAP, GOALS |
+| ✅ | built, done or met | FEATURES, ROADMAP and GOALS |
 | 🚧 | built, with a gap named beside it | FEATURES |
 | 🟨 | in progress | ROADMAP |
-| ⬜ | planned, not started, or not yet measured | FEATURES, ROADMAP, GOALS |
+| ⬜ | planned, not started or not measured yet | FEATURES, ROADMAP and GOALS |
 | ❌ | measured and not met | GOALS |
