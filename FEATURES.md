@@ -2,22 +2,22 @@
 
 What what-we-build does today, and what it will and won't do. Each feature is described from the user's side: what you type, what you see and what you decide.
 
-Status: ✅ built · 🚧 built, with a gap named beside it · ⬜ planned.
+Status: ✅ built · 🚧 built, with a gap named beside it · ⬜ planned. A ✅ says the skill does it, and whether it works on a real project is checked in ROADMAP and GOALS.
 
 ## Summary
 
 ```
 Features
-├── 🚧 F1: Writing the docs with you — the skill starts from your folder and talks each doc through with you
+├── ✅ F1: Writing the docs with you — the skill starts from your folder and talks each doc through with you
 │   ├── ✅ F1.1: Start from where the project is — an idea, running code or messy docs
 │   ├── ✅ F1.2: Agree the doc set — you confirm the docs and where they live
 │   ├── ✅ F1.3: Talk each doc through — discuss, brainstorm or decide with a recommendation
 │   ├── ✅ F1.4: Push back — the agent says what does not fit and why
 │   ├── ✅ F1.5: See the change — every change is shown as before and after
-│   └── 🚧 F1.7: Resume — you stop at any point and pick up later, verified only in part
-├── 🚧 F2: Keeping the context — the docs stay true as the work goes on
+│   └── ✅ F1.7: Resume — you stop at any point and pick up later
+├── ✅ F2: Keeping the context — the docs stay true as the work goes on
 │   ├── ✅ F2.1: Keep the context while you work — the agent reads the owning doc first and records at once
-│   └── 🚧 F2.2: A wiki when others build on it — the agent tells you when the project may need one, not yet seen in use
+│   └── ✅ F2.2: A wiki when others build on it — the agent tells you when the project may need one
 └── ✅ F3: Getting the docs — the docs a project needs, each with a guide
     ├── ✅ F3.1: The core docs — the seven docs every project gets
     ├── ✅ F3.2: Docs that join later — the recommended docs and the ones a project grows into
@@ -28,7 +28,7 @@ Features
 
 ## F1: Writing the docs with you
 
-**Status:** 🚧 [F1.7: Resume](#f17-resume) is verified only in part
+**Status:** ✅
 
 The skill starts from your folder and talks each doc through with you, from the first agreed point to the commit. You can stop at any point and pick up later.
 
@@ -96,7 +96,7 @@ You see each change as its skeleton first and then as a diff of before and after
 
 ### F1.7: Resume
 
-**Status:** 🚧 the report on the whole doc set ran on 2026-11-03, and the resume of a doc set in progress is not yet verified
+**Status:** ✅
 
 You can stop at any point and pick up later, because every agreed point is already in its doc and every open one is in `TODO.md`. On a later `/what-we-build` the agent tells you where the work stopped: the first doc in the order that is not written yet or still has an open question. When the whole doc set is written, it reports where the project stands and what changed since each doc's last commit. You then see which doc may have fallen behind.
 
@@ -110,7 +110,7 @@ You can stop at any point and pick up later, because every agreed point is alrea
 
 ## F2: Keeping the context
 
-**Status:** 🚧 [F2.2: A wiki when others build on it](#f22-a-wiki-when-others-build-on-it) is not yet seen in use
+**Status:** ✅
 
 The docs stay true as the work goes on, not only while they are first written.
 
@@ -134,7 +134,7 @@ The skill starts only when you type `/what-we-build`, so these rules live in the
 
 ### F2.2: A wiki when others build on it
 
-**Status:** 🚧 not yet seen on a project that others build on
+**Status:** ✅
 
 When other developers start to build on your project, often with their own agents, the source alone leaves them guessing how to use it. The agent tells you then that the project may need a wiki. What the wiki holds and where it lives is your call, and the skill gives it no guide.
 

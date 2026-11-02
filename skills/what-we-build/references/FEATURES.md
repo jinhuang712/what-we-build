@@ -35,6 +35,8 @@ It comes fifth in the doc order: each feature delivers a want from the proposal 
 - **Split a feature that does several things** into parts such as F1.1.1.
 - **Give each feature an ID that never changes,** so other docs can point to it.
 - **Give a new feature a new number.**
+- **Mark a feature ✅ once it is built,** and leave whether it works in real use to GOALS.
+- **Keep 🚧 for a gap in what is built,** and name the gap beside the mark.
 - **Describe what the user does and what happens,** short and in the present tense.
 - **Give each feature its stories,** one sentence each that says who does what and for what.
 - **Write a story without a template** such as "As a … I want … so that …".
@@ -55,7 +57,7 @@ It comes fifth in the doc order: each feature delivers a want from the proposal 
 ````markdown
 # Features
 
-<what the status marks mean: ✅ built · 🚧 built with a gap · ⬜ planned>
+<what the status marks mean: ✅ built · 🚧 built, with a gap named beside it · ⬜ planned>
 
 ## Summary
 
