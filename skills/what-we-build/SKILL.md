@@ -122,12 +122,13 @@ To find the owner, ask these questions in order. The first yes names the fact's 
 | Question | Home |
 |---|---|
 | Is it a stance that steers the whole project, not only how it is built? | `PHILOSOPHY.md` |
-| Can it be checked, with a test or a number? | `GOALS.md` |
+| Is it a commitment the whole design must meet? | `DESIGNS.md` |
+| Is it a rule for how the work is done here? | `AGENTS.md` |
+| Is it an effect the project must have, with a test or a number? | `GOALS.md` |
 | Can the user see it or do it? | `FEATURES.md` for what happens and whether it is built, `specs/UIUX.md` for how it looks |
 | Is it a feature the project will not build? | `FEATURES.md` → *Not planned* |
 | Is it a choice between ways, with the others not taken? | `specs/decisions/`, whether it concerns the whole design or one feature |
 | Is it a question nobody has answered yet? | `TODO.md`, as a `DISCUSSION` |
-| Is it a commitment the whole design must meet? | `DESIGNS.md` |
 | How do the parts fit together? | `specs/ARCHITECTURE.md` |
 | Is it how a part works inside? | `specs/` |
 | Is it how to install, update or remove it? | `INSTALL.md` |
