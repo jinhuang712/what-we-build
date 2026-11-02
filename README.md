@@ -75,7 +75,6 @@ This repo's docs were written with the skill, so each one is an example of its o
 
 - The wording rules are written for English docs.
 - It has been tested by hand and not yet with evals.
-- The work rules reach the agent only while the skill is loaded ([FEATURES.md → F5](FEATURES.md#f5--keep-the-context-while-you-work-)).
 
 ## License
 

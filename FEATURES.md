@@ -35,10 +35,10 @@ Status: ✅ built · 🚧 built with a gap named in its section · ⬜ planned.
 | Capability | What it does | Feature | Status |
 |---|---|---|---|
 | Read order | the project's `AGENTS.md` says which docs to read first | F5 | ✅ |
-| Read before a change | the agent reads the doc that owns a thing before it changes it | F5 | 🚧 |
-| Record at once | a decision or an open item is written down when it comes up | F5 | 🚧 |
-| Ask on a mismatch | when the docs and the code disagree you decide | F5 | 🚧 |
-| Done means recorded | a finished change updates CHANGELOG and the feature's status | F5 | 🚧 |
+| Read before a change | the agent reads the doc that owns a thing before it changes it | F5 | ✅ |
+| Record at once | a decision or an open item is written down when it comes up | F5 | ✅ |
+| Ask on a mismatch | when the docs and the code disagree you decide | F5 | ✅ |
+| Done means recorded | a finished change updates CHANGELOG and the feature's status | F5 | ✅ |
 
 **Getting the docs**
 
@@ -68,6 +68,7 @@ The skill reads the folder and starts from what it finds.
 
 First you agree the doc set and where the docs live.
 You go through the project's `AGENTS.md` with the agent and decide together what it should hold.
+The agent recommends the read order, the layout and the work rules of F5.
 Then each doc goes through the same loop:
 
 1. You talk it through until its key points are agreed.
@@ -98,10 +99,10 @@ A doc that grows one entry at a time carries no mark, such as TODO or CHANGELOG.
 
 ## Keeping the context
 
-### F5 — Keep the context while you work 🚧
+### F5 — Keep the context while you work ✅
 
 The docs stay true after the first session.
-The agent follows these rules whenever it works with the skill loaded:
+The agent follows these rules in every sitting:
 
 | When | The agent |
 |---|---|
@@ -114,9 +115,9 @@ The agent follows these rules whenever it works with the skill loaded:
 | A todo is handled | deletes it in the same change |
 | You stop it | stops |
 
-**The gap:** the skill starts only when you type `/what-we-build`.
-In a sitting that never typed it, only the read order in `AGENTS.md` reaches the agent.
-The other rules wait until the skill is loaded.
+The skill starts only when you type `/what-we-build`.
+The rules still reach every sitting through the project's `AGENTS.md`.
+You agree to record them there when you go through it with the agent.
 
 - **Design:** [2. The docs are the state](DESIGNS.md#2-the-docs-are-the-state)
 - **Why:** [002](specs/decisions/002-manual-start.md)
@@ -196,6 +197,6 @@ A reader finds a fact fast and understands it the first time.
 | More docs than the project needs | Only a doc with a job gets kept true. |
 | Choosing how a product should feel | That is the user's call. The skill records the user's words when they bring them. |
 | User manuals such as tutorials and API references | They say how to use the product, not why it is this way. |
-| A whole `AGENTS.md` | The skill writes only the read order and the layout. Claude Code's `/init` writes the rest from the code. |
+| A whole `AGENTS.md` | The skill recommends only the read order, the layout and the work rules. Claude Code's `/init` writes the rest from the code. |
 | Standard texts such as LICENSE | They need a choice of a standard text, not a discussion. |
 | Scripts that check the docs | A reader checks the links and the facts ([DESIGNS.md](DESIGNS.md) 7). |

@@ -94,6 +94,7 @@ Read the project folder first.
 - Agree the doc set first.
 - Then agree where the docs live.
 - Go through the project's `AGENTS.md` with the user, and decide together what it should hold.
+- Recommend that it hold the read order, the layout and the rules in *While you work*.
 - Work through the docs in this order:
 
 `PROPOSAL.md` → `PHILOSOPHY.md` → `DESIGNS.md` → `GOALS.md` → `FEATURES.md` → `ROADMAP.md` → `README.md`
