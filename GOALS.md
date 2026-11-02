@@ -63,7 +63,13 @@ The agent reads the doc that owns a thing before it changes that thing.
 
 **Want:** an agent that reads before it works.
 
-**How:** the share of changes in sampled sittings made after reading the owning doc.
+**How:** every change in the 3 latest sittings at the checkpoint, read for whether the owning doc was read first.
+
+**Formula:**
+
+```
+M1 (%) = 100 × changes made after reading the owning doc / all changes in the sample
+```
 
 **Checked:** each checkpoint.
 
@@ -75,7 +81,13 @@ At a checkpoint the docs still say what the project is.
 
 **Want:** the risk that the docs fall behind the work.
 
-**How:** a reader who did not write the change lists every claim in the docs that the work now contradicts.
+**How:** a reader who did not write the change reads the whole doc set against the work.
+
+**Formula:**
+
+```
+M4 (claims) = claims in the whole doc set that the work now contradicts
+```
 
 **Checked:** each checkpoint.
 
@@ -102,6 +114,13 @@ Sessions with the skill are scored on a fixed set of prompts.
 - Each doc's content came from the talk and not from the blanks of a skeleton.
 - Each doc has a job in that project.
 
+**Formula:**
+
+```
+run score = checks passed / 8
+B1 = mean of the 3 run scores
+```
+
 **Checked:** each checkpoint.
 
 **Last score:** not run.
@@ -117,6 +136,13 @@ The skill earns its place only if it beats the same agent without it.
 **Against:** the same agent without the skill.
 
 **How:** the prompts of [B1: Session quality](#b1-session-quality) run both ways and scored the same way.
+
+**Formula:**
+
+```
+lead = run score with the skill − run score without it, for each prompt
+C1 = prompts with a lead above 0 / 3, with the mean lead
+```
 
 **Checked:** each checkpoint.
 

@@ -20,6 +20,7 @@ GOALS.md turns the wants in the proposal into checks. It keeps the project hones
 - An adjective where a number belongs.
 - An objective with no acceptance test.
 - A threshold with no limit.
+- A number with no formula.
 - A comparison with nothing to compare against.
 - A constraint nobody could check.
 - A "met" with no evidence.
@@ -63,6 +64,7 @@ Every goal stands all the time, but its check runs only at a moment that calls f
 - **Open with a Summary,** a tree of every goal by kind with its status and a short description.
 - **Write under each label what the goal needs,** in whatever form fits.
 - **Mark a goal met only with evidence** from someone who did not write the change.
+- **Write the formula of every number in a code block,** with its sample and unit beside it.
 - **Say where and when each number was measured.**
 - **Leave a number open when it is not known.**
 
@@ -71,13 +73,14 @@ Every goal stands all the time, but its check runs only at a moment that calls f
 - Every goal sits under its kind and names when it is checked.
 - Every objective has an acceptance test.
 - Every threshold has a limit.
+- Every measure, benchmark and comparison has a formula.
 - Every comparison names what it is compared against.
 - Every "met" has evidence and a date.
 - ROADMAP can point its exit criteria to these IDs.
 
 ## Skeleton
 
-```markdown
+````markdown
 # Goals
 
 <where and how the goals are checked>
@@ -110,7 +113,13 @@ Every goal stands all the time, but its check runs only at a moment that calls f
 
 <short description>
 
-**How:** <how it is measured>
+**How:** <the sample it is measured on>
+
+**Formula:**
+
+```
+M1 = <what is counted> / <what it is counted over>
+```
 
 **Checked:** <each checkpoint or a release>
 
@@ -123,6 +132,12 @@ Every goal stands all the time, but its check runs only at a moment that calls f
 <short description>
 
 **Problem set:** <the fixed set it is scored on>
+
+**Formula:**
+
+```
+B1 = <how the scores of the set combine into one>
+```
 
 **Checked:** <each checkpoint or a release>
 
@@ -137,6 +152,12 @@ Every goal stands all the time, but its check runs only at a moment that calls f
 **Against:** <the tool it is compared with>
 
 **How:** <how both runs are made and scored>
+
+**Formula:**
+
+```
+C1 = <how the two scores are set against each other>
+```
 
 **Checked:** <each checkpoint or a release>
 
@@ -169,4 +190,4 @@ Every goal stands all the time, but its check runs only at a moment that calls f
 **Checked:** <each checkpoint or a release>
 
 **Status:** ⬜ | ✅ <date> | ❌ <date>
-```
+````

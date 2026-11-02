@@ -47,6 +47,7 @@
 - GOALS holds six kinds of goal, each in its own section.
 - GOALS holds only the effects the skill must have, and each rule lives in its own home.
 - Each goal says when it is checked, at a checkpoint or a release.
+- Every measure, benchmark and comparison writes its formula in a code block.
 - GOALS opens with a Summary, and each goal has its own section with an ID that names its kind.
 - This repo's goals take the new IDs, so G6 is now T4 and G2 is a check in B1: Session quality.
 - ROADMAP calls its stages checkpoints, with IDs such as CP2, so they no longer clash with the measures.
