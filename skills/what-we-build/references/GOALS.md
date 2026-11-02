@@ -13,7 +13,7 @@ GOALS.md turns the wants in the proposal into checks. It keeps the project hones
 - Anything vague.
 - Features the project will not build (FEATURES → *Not planned*).
 - How anything works (`specs/`).
-- The commitment behind a constraint (DESIGNS), which the constraint links to.
+- A rule for how the work is done (DESIGNS or AGENTS.md).
 
 **Push back on:**
 
@@ -23,6 +23,7 @@ GOALS.md turns the wants in the proposal into checks. It keeps the project hones
 - A number with no formula.
 - A comparison with nothing to compare against.
 - A constraint nobody could check.
+- A rule dressed as a goal.
 - A "met" with no evidence.
 
 ## The six kinds
@@ -51,7 +52,7 @@ A threshold is a limit the product must never cross. It fails the moment it is c
 
 ### Constraint
 
-A constraint is a rule the work itself must keep, not a feature left out. It fails the moment it is broken, such as a dependency outside the standard library.
+A constraint is a condition the product must always meet, checked on the product itself and not on how the work was done. It has no number and fails the moment it no longer holds, such as an app that must run with no network.
 
 ## When to check
 
@@ -113,6 +114,8 @@ Every goal stands all the time, but its check runs only at a moment that calls f
 
 <short description>
 
+**Want:** <the wants or risks in PROPOSAL it serves>
+
 **How:** <the sample it is measured on>
 
 **Formula:**
@@ -131,6 +134,8 @@ M1 = <what is counted> / <what it is counted over>
 
 <short description>
 
+**Want:** <the wants or risks in PROPOSAL it serves>
+
 **Problem set:** <the fixed set it is scored on>
 
 **Formula:**
@@ -148,6 +153,8 @@ B1 = <how the scores of the set combine into one>
 #### C1: <one sentence name>
 
 <short description>
+
+**Want:** <the wants or risks in PROPOSAL it serves>
 
 **Against:** <the tool it is compared with>
 
@@ -169,6 +176,8 @@ C1 = <how the two scores are set against each other>
 
 <short description>
 
+**Want:** <the wants or risks in PROPOSAL it serves>
+
 **Limit:** <the limit never crossed>
 
 **How:** <how it is checked>
@@ -183,7 +192,9 @@ C1 = <how the two scores are set against each other>
 
 <short description>
 
-**Rule:** <the commitment in DESIGNS, as a link>
+**Want:** <the wants or risks in PROPOSAL it serves>
+
+**Condition:** <what must always hold>
 
 **How:** <how it is checked>
 

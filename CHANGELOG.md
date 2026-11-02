@@ -48,6 +48,8 @@
 - GOALS holds only the effects the skill must have, and each rule lives in its own home.
 - Each goal says when it is checked, at a checkpoint or a release.
 - Every measure, benchmark and comparison writes its formula in a code block.
+- A constraint is a condition the product must always meet, and a rule for how the work is done stays out of GOALS.
+- Every goal in the skeleton names the want it serves.
 - GOALS opens with a Summary, and each goal has its own section with an ID that names its kind.
 - This repo's goals take the new IDs, so G6 is now T4 and G2 is a check in B1: Session quality.
 - ROADMAP calls its stages checkpoints, with IDs such as CP2, so they no longer clash with the measures.
