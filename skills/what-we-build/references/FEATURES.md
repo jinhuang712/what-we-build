@@ -54,7 +54,9 @@ It comes fifth in a session: each feature delivers a want from the proposal with
 
 ## <Group>
 
-### F1 — <name> ⬜
+### F1: <name>
+
+**Status:** ⬜
 
 <what it gives the user, and what happens>
 

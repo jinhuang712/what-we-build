@@ -18,11 +18,11 @@ what-we-build is designed around 9 guidelines:
 
 ## 1. A short core with detail on demand
 
-The agent reads `SKILL.md` in every session, so it holds only what every session needs. Each doc's guide waits in `references/` until a step points to it. `SKILL.md` stays within the limit in [GOALS.md](GOALS.md) G6. The cost is that a step must name its guide, or the agent never reads it.
+The agent reads `SKILL.md` in every session, so it holds only what every session needs. Each doc's guide waits in `references/` until a step points to it. `SKILL.md` stays within the limit in [T4: A short skill](GOALS.md#t4-a-short-skill). The cost is that a step must name its guide, or the agent never reads it.
 
 **Ask:** does every session need this, or only the step that writes one doc?
 
-- **Decisions:** [001](specs/decisions/001-one-skill-for-every-start.md), [005](specs/decisions/005-one-guide-per-kind-of-doc.md)
+- **Decisions:** [001: One skill holds every start](specs/decisions/001-one-skill-for-every-start.md) and [005: One guide file per kind of doc](specs/decisions/005-one-guide-per-kind-of-doc.md)
 
 ## 2. The docs are the state
 
@@ -36,7 +36,7 @@ The skill is Markdown only, so it works anywhere an agent can read files. The co
 
 **Ask:** does this add anything that must be installed or run?
 
-- **Decisions:** [003](specs/decisions/003-plugin-manifest-at-the-repo-root.md)
+- **Decisions:** [003: The plugin manifest sits at the repo root](specs/decisions/003-plugin-manifest-at-the-repo-root.md)
 
 ## 4. Our own words over borrowed text
 
@@ -44,7 +44,7 @@ The rules take methods from other writing guides and rewrite them for this skill
 
 **Ask:** is any passage copied from somewhere else?
 
-- **Decisions:** [004](specs/decisions/004-our-own-skill-over-vision-elicitation.md), [006](specs/decisions/006-three-ideas-from-mattpocock-skills.md)
+- **Decisions:** [004: Our own skill over jig's `vision-elicitation`](specs/decisions/004-our-own-skill-over-vision-elicitation.md) and [006: Three ideas from mattpocock/skills over the whole guide](specs/decisions/006-three-ideas-from-mattpocock-skills.md)
 
 ## 5. Made-up examples over real projects
 
@@ -66,7 +66,7 @@ A reader checks the links and the facts, and no script does. Every goal measured
 
 ## 8. Test by use first
 
-Real sessions come before prepared test prompts. The prompts follow from what the sessions show ([ROADMAP.md](ROADMAP.md) → M3). The cost is that evidence comes slowly, one session at a time.
+Real sessions come before prepared test prompts. The prompts follow from what the sessions show ([CP3: Proven useful](ROADMAP.md#cp3-proven-useful)). The cost is that evidence comes slowly, one session at a time.
 
 **Ask:** which real session showed the failure this rule fixes?
 
@@ -76,4 +76,4 @@ This repo's docs follow the skill. The cost is that every rule change means chec
 
 **Ask:** does this repo's own doc still follow the changed rule?
 
-- **Decisions:** [007](specs/decisions/007-designs-third.md)
+- **Decisions:** [007: DESIGNS comes third, before GOALS and FEATURES](specs/decisions/007-designs-third.md)

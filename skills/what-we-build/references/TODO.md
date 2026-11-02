@@ -15,7 +15,7 @@ Each item has a priority, a type and a time. A reader sees what matters first an
 
 **Leaves out:**
 
-- Work with a milestone (ROADMAP).
+- Work with a checkpoint (ROADMAP).
 - What is already decided (`specs/decisions/`).
 
 **Add when** the doc set is agreed, in every project. A finding then has a home the moment it comes up.
@@ -24,14 +24,14 @@ Each item has a priority, a type and a time. A reader sees what matters first an
 
 - **Delete an item in the change that handles it,** because history lives in git.
 - **Delete its evidence files too.**
-- **Move an item to ROADMAP** once it has a milestone.
+- **Move an item to ROADMAP** once it has a checkpoint.
 
 ## Priority
 
 | Tag | Means |
 |---|---|
 | `P0` | Something is broken or blocked now. Do it first. |
-| `P1` | Important. Do it in the current milestone. |
+| `P1` | Important. Do it before the current checkpoint. |
 | `P2` | Worth doing. No deadline. |
 | `P3` | Nice to have. It may never happen. |
 
@@ -55,7 +55,7 @@ Each item has a priority, a type and a time. A reader sees what matters first an
 | `branch` | The branch or worktree the work is in. |
 | `evidence` | Links to logs, screenshots or snippets kept as files in `plan/evidence/`. |
 | `next` | The next step. |
-| `blocks` | The milestone, feature or item that waits for this one. |
+| `blocks` | The checkpoint, feature or item that waits for this one. |
 | `related` | Links to related docs or other items. |
 
 Use the fields an item needs, and leave out the rest.

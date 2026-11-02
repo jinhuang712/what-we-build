@@ -155,6 +155,9 @@ The docs stay true only if every sitting keeps them true. These rules belong in 
 - Keep at most one comma in a sentence.
 - Put the answer first.
 - Use one name per thing.
+- Write an ID only as a link with its name, such as `[T4: A short skill](GOALS.md#t4-a-short-skill)`.
+- List the items instead of giving a range.
+- Keep status marks out of headings, so the links to them stay stable.
 - Prefer a number to an adjective, with its source or left open.
 - Write dates as `YYYY-MM-DD`.
 

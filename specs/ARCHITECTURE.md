@@ -37,14 +37,14 @@ what-we-build is a skill: Markdown instructions that a coding agent reads. The a
 It tells Claude Code how to install the skill as a plugin.
 
 - **Lives in:** `.claude-plugin/`
-- **Why:** [003](decisions/003-plugin-manifest-at-the-repo-root.md)
+- **Why:** [003: The plugin manifest sits at the repo root](decisions/003-plugin-manifest-at-the-repo-root.md)
 
 ## SKILL.md
 
 It holds what every session needs: the protocol, the doc set and the rules.
 
 - **Lives in:** `skills/what-we-build/`
-- **Why:** [001](decisions/001-one-skill-for-every-start.md) and [005](decisions/005-one-guide-per-kind-of-doc.md)
+- **Why:** [001: One skill holds every start](decisions/001-one-skill-for-every-start.md) and [005: One guide file per kind of doc](decisions/005-one-guide-per-kind-of-doc.md)
 
 ## The guides
 

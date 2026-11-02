@@ -144,5 +144,5 @@ Developers who build a project with a coding agent over many sessions and want i
 |---|---|
 | The user wants the docs, not the talk | The skill drafts quickly once a doc's key points are agreed. Every choice comes with a recommendation. |
 | Too many docs for a small project | Seven core docs. The rest only when needed. |
-| The skill itself grows too long | `SKILL.md` has a line limit (GOALS.md G6). Detail lives in the guides. |
+| The skill itself grows too long | `SKILL.md` has a line limit ([T4: A short skill](GOALS.md#t4-a-short-skill)). Detail lives in the guides. |
 | The docs fall behind the work | The agent updates the owning doc in the change that does the work. |

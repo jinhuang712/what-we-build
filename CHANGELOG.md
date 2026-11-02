@@ -36,8 +36,12 @@
 - PROPOSAL gives each pain its own section, in whatever shape shows its evidence.
 - FEATURES opens with *Summary* instead of *TL;DR*.
 - GOALS holds six kinds of goal, each in its own section.
-- Each goal says when it is checked: with every change or at the end of a phase.
+- Each goal says when it is checked: with every change or at each checkpoint.
 - GOALS opens with a Summary, and each goal has its own section with an ID that names its kind.
+- This repo's goals take the new IDs, so G6 is now T4 and G2 is now T1.
+- ROADMAP calls its stages checkpoints, with IDs such as CP2, so they no longer clash with the measures.
+- An ID is always a link with its name, and a list of IDs replaces a range.
+- Status marks move out of headings into a *Status* line, so links to a feature or a checkpoint stay stable.
 - A skeleton suggests a form, and the writer changes it where the content needs another.
 - Explanation is written in short paragraphs, with good use of tables, lists and diagrams.
 - A paragraph is one block and a bullet is one sentence, so sentences are no longer stacked one to a line.
