@@ -139,6 +139,7 @@ The docs stay true only if every sitting keeps them true. These rules belong in 
 
 - When a sitting starts or the window was compacted, read the read order in `AGENTS.md`.
 - Before you change something, read the doc that owns it.
+- Track where the project stands by scanning `TODO.md`, `ROADMAP.md` and `GOALS.md`.
 - When a choice between ways is made, write a decision at once.
 - When something cannot be handled now, add it to `TODO.md` at once.
 - When the docs and the code disagree, tell the user and let them decide.

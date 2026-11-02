@@ -98,6 +98,7 @@ The docs stay true after the first session. The agent follows these rules in eve
 |---|---|
 | A sitting starts or the window was compacted | reads the read order in `AGENTS.md` |
 | It is about to change something | reads the doc that owns it |
+| It needs to know where the project stands | scans `TODO.md`, `ROADMAP.md` and `GOALS.md` |
 | A choice between ways is made | writes a decision at once |
 | Something cannot be handled now | adds it to `TODO.md` at once |
 | The docs and the code disagree | tells you and lets you decide |

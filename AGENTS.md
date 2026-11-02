@@ -23,6 +23,7 @@ Before a change, also read the doc that owns it.
 ## While you work
 
 - Before you change something, read the doc that owns it.
+- Track where the project stands by scanning `TODO.md`, `ROADMAP.md` and `GOALS.md`.
 - When a choice between ways is made, write a decision in `specs/decisions/` at once.
 - When something cannot be handled now, add it to `TODO.md` at once.
 - When the docs and the code disagree, tell the user and let them decide.

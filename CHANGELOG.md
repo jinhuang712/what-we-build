@@ -16,6 +16,7 @@
 - The agent goes through the project's AGENTS.md with the user and decides with them what it holds.
 - The agent leaves the outcome open until it has discussed it with the user.
 - The agent recommends that the project's AGENTS.md hold the work rules, so they reach every sitting.
+- The agent tracks where the project stands by scanning TODO, ROADMAP and GOALS.
 - The agent is a thinking partner that brings its own ideas and challenges the user's.
 - No doc holds a code chunk.
 - The default layout puts the reasons at the root.
