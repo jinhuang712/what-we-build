@@ -78,13 +78,12 @@ The other docs join when the project needs them:
 | `specs/decisions/` | Recommended from the start | [DECISIONS](references/DECISIONS.md) |
 | `specs/` | A part needs its working explained | [SPECS](references/SPECS.md) |
 | `specs/ARCHITECTURE.md` | The project has more than one part worth a spec | [ARCHITECTURE](references/ARCHITECTURE.md) |
+| `specs/UIUX.md` | The project has a visual interface, with `prototype/*.html` beside it | [UIUX](references/UIUX.md) |
 | `GLOSSARY.md` | The domain has its own terms or two words compete for one thing | [GLOSSARY](references/GLOSSARY.md) |
 | `INSTALL.md` | One install line is not enough | [INSTALL](references/INSTALL.md) |
 | `CONTRIBUTING.md` | The project is public and accepts contributions | [CONTRIBUTING](references/CONTRIBUTING.md) |
 | `SECURITY.md` | Users need a way to report a vulnerability | [SECURITY](references/SECURITY.md) |
 | `RUNBOOK.md` | Someone must keep a service running | [RUNBOOK](references/RUNBOOK.md) |
-
-A visual interface also gets `specs/UIUX.md`, with `prototype/*.html` beside it.
 
 Where the docs live is the user's choice, and a doc keeps its name wherever it sits. By default the layout looks like this:
 
@@ -144,9 +143,10 @@ A link points to what the doc rests on, never the other way. A doc still makes i
 | `PHILOSOPHY.md` and `CHANGELOG.md` | nothing |
 | `PROPOSAL.md` | rarely anything |
 | `DESIGNS.md` | a few to PHILOSOPHY, and down to its decisions and specs |
-| `FEATURES.md` | the DESIGNS points it rests on, a PHILOSOPHY stance only where it forces a feature, and down to its UIUX section, prototype page, specs and decisions |
+| `FEATURES.md` | the DESIGNS points it rests on, a PHILOSOPHY stance only where it forces a feature, and down to the UIUX flow of each story, its specs and its decisions |
 | `GOALS.md`, `ROADMAP.md` and `TODO.md` | each other, FEATURES and DESIGNS |
 | `specs/` and `specs/decisions/` | up to the doc they serve, never beside them |
+| `specs/UIUX.md` | up to the stories in FEATURES, and down to every page in `prototype/` |
 | `README.md` | every doc once in *Docs*, and `INSTALL.md` again from *Install* |
 | `AGENTS.md` | the docs in its read order |
 

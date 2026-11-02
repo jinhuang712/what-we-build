@@ -35,7 +35,10 @@
 
 - Every guide is rewritten, and SKILL.md is half as long.
 - New guides cover `specs/` and `specs/decisions/`, ARCHITECTURE and INSTALL.
-- The UIUX guide is gone, because UIUX is now a spec with `prototype/*.html` beside it.
+- UIUX is a spec with `prototype/*.html` beside it, and it has its own guide.
+- Its *Screens* table links every page, so UIUX is the way into the prototype.
+- UIUX draws each story's flow across the screens it passes.
+- Each feature lists its stories, one sentence each that says who does what and for what.
 - The wording rules move into SKILL.md, and `references/wording.md` is gone.
 - Decisions move out of DESIGNS and FEATURES into `specs/decisions/`.
 - The placement test asks about a design commitment and a rule for the work before it asks about a goal.
@@ -72,7 +75,7 @@
 - A bullet holds at most one comma, and a paragraph is not held to a count.
 - An ID is always written with its name, and a list of IDs replaces a range.
 - A link points only to what its doc rests on.
-- A feature links up to what it rests on and down to everything that builds it, including its UIUX section and its prototype page.
+- A feature links up to what it rests on and down to everything that builds it, including the UIUX flow of each story.
 - No doc holds a code chunk, which is code from the project or a command over two lines.
 - A code block is fine for a formula or a tree.
 - The docs speak of the window and the project context instead of sessions and sittings.

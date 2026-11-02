@@ -7,6 +7,7 @@ It comes fifth in the doc order: each feature delivers a want from the proposal 
 **Owns:**
 
 - Each feature's behavior from the user's side.
+- Each feature's stories: who does what, and for what.
 - Each feature's status.
 - What the user sees when something fails.
 - The *Later* list.
@@ -17,7 +18,7 @@ It comes fifth in the doc order: each feature delivers a want from the proposal 
 - How a feature works inside (`specs/`).
 - The choices behind it (`specs/decisions/`).
 - Type names and code paths.
-- Layout and motion (`specs/UIUX.md`).
+- How a story moves across the screens, and how they look (`specs/UIUX.md`).
 - Schedule (ROADMAP).
 
 **Push back on:**
@@ -35,8 +36,10 @@ It comes fifth in the doc order: each feature delivers a want from the proposal 
 - **Give each feature an ID that never changes,** so other docs can point to it.
 - **Give a new feature a new number.**
 - **Describe what the user does and what happens,** short and in the present tense.
+- **Give each feature its stories,** one sentence each that says who does what and for what.
+- **Write a story without a template** such as "As a … I want … so that …".
 - **Link a feature up to the design guidelines it rests on,** and to a PHILOSOPHY stance only when the stance forces it.
-- **Link a feature down to everything that builds it:** its UIUX section, its prototype page, its specs and its decisions.
+- **Link a feature down to everything that builds it:** the UIUX flow of each story, its specs and its decisions.
 - **Leave the checkpoint to ROADMAP,** which links to the features it delivers.
 - **End with what happens when something fails,** then *Later* and *Not planned*.
 
@@ -74,9 +77,12 @@ Features
 
 <what it gives the user, and what happens>
 
+**Stories:**
+
+- <who does what, for what> → <its flow in specs/UIUX.md, when there is one>
+
 - **Stance:** <the PHILOSOPHY stance that forces it, if one does>
 - **Design:** <the DESIGNS guidelines it rests on>
-- **Looks like:** <its section in specs/UIUX.md and its page in prototype/>
 - **How it works:** <its specs>
 - **Why:** <its decisions>
 
