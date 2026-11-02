@@ -28,7 +28,8 @@ It comes fifth in a session: each feature delivers a want from the proposal with
 
 ## Guidelines
 
-- **Open with a Summary,** an outline of every capability by group.
+- **Open with a Summary,** a tree of every feature by group with its status and a short description.
+- **Split a feature that does several things** into parts such as F1.1 and F1.2.
 - **Give each feature an ID that never changes,** so other docs can point to it.
 - **Give a new feature a new number.**
 - **Describe what the user does and what happens,** short and in the present tense.
@@ -50,7 +51,8 @@ It comes fifth in a session: each feature delivers a want from the proposal with
 
 ## Summary
 
-<every capability by group, with its status>
+- ⬜ [F1: <name>](#f1-name): <a short description>
+  - ⬜ [F1.1: <name>](#f11-name): <a short description>
 
 ## <Group>
 
@@ -63,6 +65,12 @@ It comes fifth in a session: each feature delivers a want from the proposal with
 - **Design:** <the DESIGNS guideline it serves>
 - **How it works:** <a link to its spec>
 - **Why:** <links to its decisions>
+
+#### F1.1: <name>
+
+**Status:** ⬜
+
+<what this part does>
 
 ## When something fails
 

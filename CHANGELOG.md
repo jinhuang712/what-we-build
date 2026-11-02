@@ -20,6 +20,10 @@
 - When every change is committed, a resume reports where the project stands and what may have drifted since each doc's last commit.
 - A commit records the user's approval, so no doc carries a mark any more.
 - A link points only to what its doc rests on, and PHILOSOPHY and CHANGELOG link to nothing.
+- FEATURES, ROADMAP and GOALS open with a summary tree that gives each entry its status and a short description.
+- A feature that does several things splits into parts such as F1.1.
+- Each roadmap item has its own status.
+- A threshold keeps every doc within one Claude Code read, in place of the count of core doc lines.
 - The agent is a thinking partner that brings its own ideas and challenges the user's.
 - No doc holds a code chunk.
 - The default layout puts the reasons at the root.

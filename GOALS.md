@@ -4,27 +4,42 @@ Each goal ties to a want or a risk in the proposal. A goal met on one project st
 
 ## Summary
 
-| Goal | Checked | Status |
-|---|---|---|
-| [O1: One sitting](#o1-one-sitting) | each checkpoint | ⬜ |
-| [O2: Context survives compaction](#o2-context-survives-compaction) | each checkpoint | ⬜ |
-| [M1: Reads before it changes](#m1-reads-before-it-changes) | each checkpoint | not measured |
-| [M2: Sentences over the comma rule](#m2-sentences-over-the-comma-rule) | every change | 0 |
-| [M3: Length of the core docs](#m3-length-of-the-core-docs) | every change | 885 lines |
-| [B1: Session quality](#b1-session-quality) | each checkpoint | not run |
-| [C1: With and without the skill](#c1-with-and-without-the-skill) | each checkpoint | not run |
-| [T1: One home per fact](#t1-one-home-per-fact) | each checkpoint | ❌ |
-| [T2: Goals that can be checked](#t2-goals-that-can-be-checked) | every change | ✅ |
-| [T3: Decisions with reasons](#t3-decisions-with-reasons) | every change | ✅ |
-| [T4: A short skill](#t4-a-short-skill) | every change | ✅ |
-| [T5: Links that work](#t5-links-that-work) | every change | ✅ |
-| [T6: Manual start only](#t6-manual-start-only) | each checkpoint | ⬜ |
-| [T7: Guidelines that can be tested](#t7-guidelines-that-can-be-tested) | each checkpoint | ✅ |
-| [R1: No draft before agreement](#r1-no-draft-before-agreement) | every change | ⬜ |
-| [R2: No dependencies](#r2-no-dependencies) | every change | ✅ |
-| [R3: Our own words](#r3-our-own-words) | every change | ⬜ |
-| [R4: Made-up examples](#r4-made-up-examples) | every change | ✅ |
-| [R5: No code chunks](#r5-no-code-chunks) | every change | ✅ |
+**Objectives**
+
+- ⬜ [O1: One sitting](#o1-one-sitting): the 7 core docs of a new project agreed in 1 sitting
+- ⬜ [O2: Context survives compaction](#o2-context-survives-compaction): after a compaction the agent knows the task from the docs alone
+
+**Measures**
+
+- [M1: Reads before it changes](#m1-reads-before-it-changes): not measured yet
+- [M2: Sentences over the comma rule](#m2-sentences-over-the-comma-rule): 0 on 2026-11-02
+
+**Benchmarks**
+
+- [B1: Session quality](#b1-session-quality): not run yet
+
+**Comparisons**
+
+- [C1: With and without the skill](#c1-with-and-without-the-skill): not run yet
+
+**Thresholds**
+
+- ❌ [T1: One home per fact](#t1-one-home-per-fact): no fact written out in full in two docs
+- ✅ [T2: Goals that can be checked](#t2-goals-that-can-be-checked): every goal has a check
+- ✅ [T3: Decisions with reasons](#t3-decisions-with-reasons): every decision says what was not chosen
+- ✅ [T4: A short skill](#t4-a-short-skill): `SKILL.md` within 500 lines
+- ✅ [T5: Links that work](#t5-links-that-work): no broken link or anchor
+- ⬜ [T6: Manual start only](#t6-manual-start-only): no automatic start
+- ✅ [T7: Guidelines that can be tested](#t7-guidelines-that-can-be-tested): every guideline rejects a design a reader can name
+- ✅ [T8: A doc read in one go](#t8-a-doc-read-in-one-go): every doc within one Claude Code read
+
+**Constraints**
+
+- ⬜ [R1: No draft before agreement](#r1-no-draft-before-agreement): no draft before agreement and no commit before approval
+- ✅ [R2: No dependencies](#r2-no-dependencies): the skill is Markdown only
+- ⬜ [R3: Our own words](#r3-our-own-words): methods from other guides are rewritten
+- ✅ [R4: Made-up examples](#r4-made-up-examples): no example names another project
+- ✅ [R5: No code chunks](#r5-no-code-chunks): no doc pastes code
 
 ## Goals
 
@@ -75,16 +90,6 @@ Short sentences keep the docs easy to read.
 **Checked:** every change.
 
 **Last value:** 0 on 2026-11-02 by the author, against 34 lines at v0.4.0.
-
-#### M3: Length of the core docs
-
-The core docs stay short enough to read in full.
-
-**How:** `wc -l` over the 7 core docs.
-
-**Checked:** every change.
-
-**Last value:** 885 lines on 2026-11-02 by the author, against 614 at v0.4.0. GOALS alone grew from 56 to 270 lines when each goal got its own section.
 
 ### Benchmarks
 
@@ -207,6 +212,18 @@ A guideline that rejects nothing guides nothing.
 **Checked:** each checkpoint.
 
 **Status:** ✅ 2026-11-02 by independent audit.
+
+#### T8: A doc read in one go
+
+The agent re-reads a whole doc before any edit, so one read must return all of it.
+
+**Limit:** every doc within 25000 tokens and 2000 lines, the default limits of one Claude Code read.
+
+**How:** `wc -l` for lines, and a read that returns the whole file without a cut.
+
+**Checked:** each checkpoint.
+
+**Status:** ✅ 2026-11-02 by the author, with the largest doc CHANGELOG at about 4000 tokens.
 
 ### Constraints
 

@@ -60,7 +60,7 @@ Every goal stands all the time, but its check runs on a cadence. Measures, thres
 
 - **Give each goal an ID that never changes,** so ROADMAP can point to it.
 - **Let the letter of the ID name its kind,** as the skeleton shows.
-- **Open with a Summary** of every goal, its cadence and its status.
+- **Open with a Summary,** a tree of every goal by kind with its status and a short description.
 - **Write under each label what the goal needs,** in whatever form fits.
 - **Mark a goal met only with evidence** from someone who did not write the change.
 - **Say where and when each number was measured.**
@@ -84,9 +84,9 @@ Every goal stands all the time, but its check runs on a cadence. Measures, thres
 
 ## Summary
 
-| Goal | Checked | Status |
-|---|---|---|
-| [O1: <name>](#o1-name) | each checkpoint | ⬜ |
+**Objectives**
+
+- ⬜ [O1: <name>](#o1-one-sentence-name): <a short description>
 
 ## Goals
 

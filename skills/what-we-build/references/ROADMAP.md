@@ -41,13 +41,14 @@ ROADMAP.md answers "when?" and "how far along?". It breaks the work into checkpo
 
 ## Overview
 
-<every checkpoint with what it delivers and its status>
+- ⬜ [CP1: <name>](#cp1-name): <what it delivers>
+  - ⬜ CP1.1: <an item>
 
 ## CP1: <name>
 
 **Status:** ⬜
 
-<what it delivers, item by item>
+<each item with its status>
 
 **Exit criteria:** <links to the goals>
 ```
