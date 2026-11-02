@@ -19,7 +19,7 @@ what-we-build is a Claude Code skill that keeps a project's context in docs. You
 ## Install
 
 ```sh
-claude plugin marketplace add jinhuang712/what-we-build && claude plugin install what-we-build@what-we-build
+git clone https://github.com/jinhuang712/what-we-build.git ~/dev/skills/what-we-build && ln -s ~/dev/skills/what-we-build/skills/what-we-build ~/.claude/skills/what-we-build
 ```
 
 Other ways to install, update or remove it are in [INSTALL.md](INSTALL.md).
@@ -27,7 +27,7 @@ Other ways to install, update or remove it are in [INSTALL.md](INSTALL.md).
 ## How to use
 
 1. Open Claude Code in an empty folder.
-2. Type `/what-we-build:what-we-build` and say in a sentence what you want to build.
+2. Type `/what-we-build` and say in a sentence what you want to build.
 3. Talk the proposal through until its key points are agreed.
 4. Read the draft as before and after, then approve it.
 5. The agent commits it and moves on to the philosophy.

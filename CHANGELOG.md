@@ -2,6 +2,13 @@
 
 ## Unreleased
 
+### Install
+
+- what-we-build installs as a personal skill only, and the plugin is gone.
+- Before, it installed with `claude plugin install` and was typed as `/what-we-build:what-we-build`.
+- Now it is a cloned folder linked into `~/.claude/skills` and typed as `/what-we-build`.
+- To move over, uninstall the plugin and follow INSTALL.md.
+
 ### Sessions
 
 - The skill manages a project's context over its whole life, not only its founding docs.

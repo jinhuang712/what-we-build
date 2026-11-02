@@ -16,4 +16,4 @@ The manifest sits in `.claude-plugin/` at the repo root. The repo installs as a 
 
 ## Consequences
 
-Both ways to install must keep working, and INSTALL.md describes each.
+Both ways to install must keep working, and INSTALL.md describes each. Replaced by 016: A skill and no plugin.

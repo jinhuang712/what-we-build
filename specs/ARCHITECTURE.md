@@ -7,8 +7,8 @@ what-we-build is a skill: Markdown instructions that a coding agent reads. The a
               │
               ▼
   ┌─────────────────────────┐
-  │ Claude Code             │ ◀── installed from .claude-plugin/
-  │ loads the skill         │     or a linked folder
+  │ Claude Code             │ ◀── the skill folder linked
+  │ loads the skill         │     into ~/.claude/skills
   └────────────┬────────────┘
                │ reads
                ▼
@@ -29,12 +29,6 @@ what-we-build is a skill: Markdown instructions that a coding agent reads. The a
   │ and its AGENTS.md       │
   └─────────────────────────┘
 ```
-
-## The plugin manifest
-
-It tells Claude Code how to install the skill as a plugin.
-
-- **Lives in:** `.claude-plugin/`
 
 ## SKILL.md
 

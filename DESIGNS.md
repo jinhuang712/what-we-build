@@ -33,7 +33,7 @@ The skill is Markdown only, so it works anywhere an agent can read files. The co
 
 **Ask:** does this add anything that must be installed or run?
 
-- **Decisions:** [003: The plugin manifest sits at the repo root](specs/decisions/003-plugin-manifest-at-the-repo-root.md)
+- **Decisions:** [016: A skill and no plugin](specs/decisions/016-a-skill-and-no-plugin.md)
 
 ## 4. Our own words over borrowed text
 

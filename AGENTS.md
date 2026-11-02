@@ -58,6 +58,5 @@ Before a change, also read the doc that owns it.
 ## Releasing
 
 1. Move the *Unreleased* entries in `CHANGELOG.md` under the new version and date.
-2. Set the version in `.claude-plugin/plugin.json` and `.claude-plugin/marketplace.json` to the same value.
-3. Go through the whole goal sheet in `GOALS.md`.
-4. Commit and tag `vX.Y.Z`, then push the branch and the tag.
+2. Go through the whole goal sheet in `GOALS.md`.
+3. Commit and tag `vX.Y.Z`, then push the branch and the tag.
