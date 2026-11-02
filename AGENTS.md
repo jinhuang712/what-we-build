@@ -4,7 +4,7 @@ Guidance for coding agents working on what-we-build. It holds what an agent cann
 
 ## Read order
 
-Read these when a sitting starts or after the window was compacted:
+Read these when the window is new or was compacted:
 
 1. [PHILOSOPHY.md](PHILOSOPHY.md): the thought every change agrees with.
 2. [DESIGNS.md](DESIGNS.md): the guidelines a change must meet.
@@ -41,7 +41,7 @@ Before a change, also read the doc that owns it.
 - **Keep `SKILL.md` within T4: A short skill,** and put detail in a guide it points to.
 - **Follow the guidelines in [DESIGNS.md](DESIGNS.md).**
 - **A reader who did not write a change checks it,** and no script does.
-- **Test the skill in real sessions first,** and write test prompts from what they show.
+- **Test the skill in real use first,** and write test prompts from what they show.
 - **Never commit a doc before the user approves it.**
 - **Leave the outcome open until you have discussed it with the user,** and look at what exists together first.
 - **Show a change as its skeleton first and then as a diff.**

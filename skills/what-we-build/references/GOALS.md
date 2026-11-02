@@ -36,7 +36,7 @@ An objective is a result the project must reach. It passes or fails by its accep
 
 ### Measure
 
-A measure is something watched while the work goes on. It has no pass or fail, such as how full the window gets in a long sitting.
+A measure is something watched while the work goes on. It has no pass or fail, such as how full the window gets during long work.
 
 ### Benchmark
 

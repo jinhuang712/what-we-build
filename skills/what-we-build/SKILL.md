@@ -6,7 +6,7 @@ disable-model-invocation: true
 
 # What we build
 
-This skill keeps a project's context in docs, so it outlives every session. The context is what you and the user work out together. Each doc answers one question, which gives every fact one home and tells a reader where to look. The skill drafts the docs from whatever the project already has, and keeps them true as the work goes on.
+This skill keeps a project's context in docs, so it outlives every window. The context is what you and the user work out together. Each doc answers one question, which gives every fact one home and tells a reader where to look. The skill drafts the docs from whatever the project already has, and keeps them true as the work goes on.
 
 ## How you work with the user
 
@@ -48,7 +48,7 @@ Read the project folder first, and start from what it holds.
 - Go through the project's `AGENTS.md` with the user, and decide together what it holds.
 - Recommend the read order, the layout and the rules in *While you work*.
 
-To resume, read every doc and run `git status`. A doc with uncommitted changes is a draft the user has not approved. Tell the user where the session stopped. Re-read the committed docs before you continue at that draft, or at the first doc in the order not yet written.
+To resume, read every doc and run `git status`. A doc with uncommitted changes is a draft the user has not approved. Tell the user where the work stopped. Re-read the committed docs before you continue at that draft, or at the first doc in the order not yet written.
 
 When every change is committed, report where the project stands. Scan `TODO.md`, `ROADMAP.md` and `GOALS.md` for it. Then look at what changed since each doc's last commit. Point out where a doc may have fallen behind. Ask the user what to work on next.
 
@@ -109,7 +109,7 @@ Write a doc only after its key points are agreed. Then every doc goes through th
 
 - Only the user approves, and any later edit is a draft until they approve it.
 - Re-read the whole doc before any edit, even of one word.
-- At the end of a session, report each doc's status and the open questions.
+- Before the work stops, report each doc's status and the open questions.
 
 A commit records the approval, so git tells a draft from an approved doc. No doc carries a mark of its own.
 
@@ -152,9 +152,9 @@ A claim needs its proof. Check a behavior claim by running it, or mark it "not y
 
 ## While you work
 
-The docs stay true only if every sitting keeps them true. These rules belong in the project's `AGENTS.md`, so they reach a sitting that never loaded this skill.
+The docs stay true only if the agent keeps them true in every new window. These rules belong in the project's `AGENTS.md`, so they reach a window that never loaded this skill.
 
-- When a sitting starts or the window was compacted, read the read order in `AGENTS.md`.
+- When the window is new or was compacted, read the read order in `AGENTS.md`.
 - Before you change something, read the doc that owns it.
 - Track where the project stands by scanning `TODO.md`, `ROADMAP.md` and `GOALS.md`.
 - When a choice between ways is made, write a decision at once.

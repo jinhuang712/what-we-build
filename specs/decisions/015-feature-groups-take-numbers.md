@@ -8,7 +8,7 @@ FEATURES grouped its features under headings with no ID, and the features inside
 
 ## The choice
 
-Each group is a feature with an ID, and the features in it are its parts. Running a session is F1, Keeping the context is F2 and Getting the docs is F3. The old F1 and F3 merge into their groups, so their parts keep their IDs. Resume becomes F1.7, Keep the context while you work becomes F2.1 and Wording rules becomes F3.5.
+Each group is a feature with an ID, and the features in it are its parts. Writing the docs with you is F1, Keeping the context is F2 and Getting the docs is F3. The old F1 and F3 merge into their groups, so their parts keep their IDs. Resume becomes F1.7, Keep the context while you work becomes F2.1 and Wording rules becomes F3.5.
 
 ## Not chosen
 

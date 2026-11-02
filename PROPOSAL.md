@@ -6,7 +6,7 @@ Proposed 2026-10-12.
 
 ## In short
 
-You build a project with a coding agent over many sessions. On day one you agree on what to build and why. Some weeks later the agent is writing code for a project you no longer recognize.
+You build a project with a coding agent over many weeks. On day one you agree on what to build and why. Some weeks later the agent is writing code for a project you no longer recognize.
 
 Nothing was built badly. The context was lost: what you decided and why.
 
@@ -59,7 +59,7 @@ Asked to discuss a design, the agent started writing files. The user had to stop
 
 #### Agents that do not record
 
-A rule said to write a changelog entry with every change. The agent forgot it twice in one session. What an agent records has no fixed shape, so nobody can say where it went.
+A rule said to write a changelog entry with every change. The agent forgot it twice in one window. What an agent records has no fixed shape, so nobody can say where it went.
 
 #### Docs patched until nobody can read them
 
@@ -67,7 +67,7 @@ A doc was edited in twenty small patches. It lost its shape, and no person could
 
 #### Context lost to the window
 
-Past about 600K tokens the agent grew confused. Then the window was compacted, and the session's decisions were gone. The next session did not know what the last one had been doing.
+Past about 600K tokens the agent grew confused. Then the window was compacted, and the decisions in it were gone. The next window did not know what the last one had been doing.
 
 #### Docs not read
 
@@ -78,7 +78,7 @@ Past about 600K tokens the agent grew confused. Then the window was compacted, a
 
 #### Work from git alone
 
-A new session read the file tree and the log. They said what changed and not why. The session continued the last change with no way to know whether it was right.
+An agent in a new window read the file tree and the log. They said what changed and not why. It continued the last change with no way to know whether it was right.
 
 **The result:** the work drifts away from what was agreed.
 
@@ -88,10 +88,10 @@ Agents changed what is cheap and what gets lost.
 
 | Before agents | With agents |
 |---|---|
-| Docs are slow to write, so few exist | An agent writes a whole doc set in one sitting |
+| Docs are slow to write, so few exist | An agent writes a whole doc set in one go |
 | The author decides each line | The agent fills each gap with a guess |
-| A project lives in a few heads | A project lives across many sessions that forget |
-| Docs drift slowly | Every session adds a little in a new place |
+| A project lives in a few heads | A project lives across many windows that forget |
+| Docs drift slowly | Every window adds a little in a new place |
 
 ## The idea
 
@@ -102,7 +102,7 @@ Each doc answers one question, such as why the project was started or what is st
 ## What we want
 
 - **One home for every fact:** each doc answers one question, and a placement test places each new fact.
-- **Context that outlives the session:** what is decided goes into a doc at once.
+- **Context that outlives the window:** what is decided goes into a doc at once.
 - **Docs a person can read:** each doc follows its guide and is re-read in full before any edit.
 - **An agent that reads before it works:** the project's `AGENTS.md` names the read order.
 - **Goals that can be checked:** each goal needs a number or stays open.
@@ -112,11 +112,11 @@ Each doc answers one question, such as why the project was started or what is st
 
 - **A faster way to get confident text:** asking the agent directly already gives that.
 - **A form to fill in:** templates and fixed questionnaires produce answers, not decisions.
-- **Something that runs on its own:** a session needs your full attention, so it starts when you type it.
+- **Something that runs on its own:** the talk needs your full attention, so it starts when you type it.
 
 ## Who it is for
 
-It is for developers who build a project with a coding agent over many sessions and want its context kept. The first user is the author.
+It is for developers who build a project with a coding agent over many weeks and want its context kept. The first user is the author.
 
 ## Risks
 

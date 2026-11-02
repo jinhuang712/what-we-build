@@ -8,7 +8,7 @@ GOALS mixed the effects the skill must have with rules the work must keep, such 
 
 ## The choice
 
-GOALS holds only effects, each tied to a want or a risk in the proposal. A rule lives in its own home: SKILL.md, DESIGNS or AGENTS.md. After a change the agent checks only the rules that change touched. The goals are checked at a moment that calls for it, such as the end of a checkpoint or a release. A small change never runs them. The rules that only a real session shows become the scoring criteria of B1: Session quality.
+GOALS holds only effects, each tied to a want or a risk in the proposal. A rule lives in its own home: SKILL.md, DESIGNS or AGENTS.md. After a change the agent checks only the rules that change touched. The goals are checked at a moment that calls for it, such as the end of a checkpoint or a release. A small change never runs them. The rules that only a real run shows become the scoring criteria of B1: Run quality.
 
 ## Not chosen
 

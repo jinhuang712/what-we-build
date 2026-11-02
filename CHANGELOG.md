@@ -9,7 +9,7 @@
 - Now it is a cloned folder linked into `~/.claude/skills` and typed as `/what-we-build`.
 - To move over, uninstall the plugin and follow INSTALL.md.
 
-### Sessions
+### The agent
 
 - The skill manages a project's context over its whole life, not only its founding docs.
 - The skill starts from an idea, from running code with no docs or from messy docs.
@@ -22,14 +22,14 @@
 - When the docs and the code disagree, the agent asks the user instead of picking a side.
 - The agent goes through the project's AGENTS.md with the user and decides with them what it holds.
 - The agent leaves the outcome open until it has discussed it with the user.
-- The agent recommends that the project's AGENTS.md hold the work rules, so they reach every sitting.
+- The agent recommends that the project's AGENTS.md hold the work rules, so they reach every new window.
 - The agent tracks where the project stands by scanning TODO, ROADMAP and GOALS.
 - After a change the agent checks only the rules it touched, and it checks the goals only at a checkpoint or a release.
 - The placement test asks about a design commitment and a rule for the work before it asks about a goal, so a rule no longer lands in GOALS.
 - When every change is committed, a resume reports where the project stands and what may have drifted since each doc's last commit.
 - A commit records the user's approval, so no doc carries a mark any more.
 - The agent is a thinking partner that brings its own ideas and challenges the user's.
-- SKILL.md is half as long, without the session stories.
+- SKILL.md is half as long, without the stories from past use.
 - The wording rules move into SKILL.md, and `references/wording.md` is gone.
 
 ### Layout
@@ -47,6 +47,7 @@
 - A link points only to what its doc rests on, and PHILOSOPHY and CHANGELOG link to nothing.
 - README links INSTALL from its install line too, so the line and the rest change together.
 - The comma rule holds for a bullet, and a paragraph is not held to it.
+- The docs drop session and sitting as terms and speak of the window and the project context instead.
 
 ### Doc guides
 
@@ -94,7 +95,7 @@
 - This repo's decision 002 holds the reason for the manual start, and FEATURES links to it.
 - This repo's features take group numbers, so Resume is now F1.7 and the work rules are F2.1.
 - This repo's roadmap splits the rebuild in this repo from the first use on a new project, so Proven useful is now CP4.
-- This repo's goals take the new IDs, so G6 is now T4 and G2 is a check in B1: Session quality.
+- This repo's goals take the new IDs, so G6 is now T4 and G2 is a check in B1: Run quality.
 - A threshold keeps every doc within one Claude Code read, in place of the count of core doc lines.
 
 ## 0.4.0 — 2026-10-18

@@ -36,21 +36,21 @@ The goals and the roadmap are the plan. The plan is the process looking forward,
 
 The two halves cannot be separated cleanly, and they should not be. A decision is the output of a discussion, and it is also the trace of that discussion. Keeping one keeps the other. The static half and the dynamic half together are the context.
 
-Each half fails without the other. A result with no process says what is, and not why, so the next person undoes it without knowing. A process with no result is a diary. With both, a new session can answer three questions without asking anyone: what are we building, why this way, and where are we now.
+Each half fails without the other. A result with no process says what is, and not why, so the next person undoes it without knowing. A process with no result is a diary. With both, an agent in a new window can answer three questions without asking anyone: what are we building, why this way, and where are we now.
 
 ## Where does it live?
 
 **In docs, with one home for each fact. Not in the window, and not in git.**
 
-The window is the wrong home. It is lost when it is compacted, and models grow less reliable as the input grows (Chroma, 2025). A project that lives in the window is gone at the end of the session.
+The window is the wrong home. It is lost when it is compacted, and models grow less reliable as the input grows (Chroma, 2025). A project that lives in the window is gone with it.
 
-Git is the wrong home too. It holds what changed and says nothing of why. It can tell a session where the work stopped, and it cannot tell it where the work should go.
+Git is the wrong home too. It holds what changed and says nothing of why. It can tell an agent where the work stopped, and it cannot tell it where the work should go.
 
 Docs survive both. They fail in two ways, and the skill is built against both. The first is that a fact has several homes, so they disagree. The second is that a doc has no known shape, so it has to be guessed at. So each doc answers one question, each fact has one home, and every doc has a skeleton.
 
 No doc holds code. A spec that holds code has two copies of it, one to read and one to run. The copy made by hand breaks. The doc names the thing, says why, and links to it.
 
-## How is it carried from one session to the next?
+## How is it carried from one window to the next?
 
 **Writing and reading are one chain, and the chain breaks at its weakest link.**
 

@@ -2,7 +2,7 @@
 
 DESIGNS.md holds the project's design guidelines: the few hard commitments the whole design is built around. Its reader is a developer about to change the code or propose something new. A guideline is concrete and not up for negotiation. A reader can check any design against it and name the one it breaks.
 
-It comes third in a session, right after the philosophy. The design guides the features, so it comes before them.
+It comes third in the doc order, right after the philosophy. The design guides the features, so it comes before them.
 
 **Owns:**
 

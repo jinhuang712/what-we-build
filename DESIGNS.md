@@ -4,8 +4,8 @@ What goes in is a project folder and a conversation with the user. What comes ou
 
 what-we-build is designed around 6 guidelines:
 
-1. **A short core with detail on demand:** `SKILL.md` holds what every session needs and points to the guides.
-2. **The docs are the state:** with git beside them, they hold where a session stopped.
+1. **A short core with detail on demand:** `SKILL.md` holds what every start needs and points to the guides.
+2. **The docs are the state:** with git beside them, they hold where the work stopped.
 3. **No dependencies:** the skill is Markdown only.
 4. **Our own words over borrowed text:** methods from other guides are rewritten and never copied.
 5. **Made-up examples over real projects:** every example is invented or taken from this repo.
@@ -13,15 +13,15 @@ what-we-build is designed around 6 guidelines:
 
 ## 1. A short core with detail on demand
 
-The agent reads `SKILL.md` in every session, so it holds only what every session needs. Each doc's guide waits in `references/` until a step points to it. `SKILL.md` stays within a line limit. The cost is that a step must name its guide, or the agent never reads it.
+The agent reads `SKILL.md` each time the skill starts, so it holds only what every start needs. Each doc's guide waits in `references/` until a step points to it. `SKILL.md` stays within a line limit. The cost is that a step must name its guide, or the agent never reads it.
 
-**Ask:** does every session need this, or only the step that writes one doc?
+**Ask:** does every start need this, or only the step that writes one doc?
 
 - **Decisions:** [001: One skill holds every start](specs/decisions/001-one-skill-for-every-start.md) and [005: One guide file per kind of doc](specs/decisions/005-one-guide-per-kind-of-doc.md)
 
 ## 2. The docs are the state
 
-A doc is committed only after the user approves it, so a committed doc is approved and an uncommitted change is a draft. Neither a mark nor a separate file records where a session stopped. A project without git cannot tell the two apart. The cost is that points agreed for a doc not yet drafted are lost when the sitting ends.
+A doc is committed only after the user approves it, so a committed doc is approved and an uncommitted change is a draft. Neither a mark nor a separate file records where the work stopped. A project without git cannot tell the two apart. The cost is that points agreed for a doc not yet drafted are lost with the window.
 
 **Ask:** does this need a file other than the docs to remember it?
 
@@ -51,6 +51,6 @@ Each example in the skill is invented for it or taken from this repo. The cost i
 
 ## 6. Trust the model
 
-A guide says what a doc is for and what goes wrong. It leaves the method to the model, because a model told every step stops using its judgment. One session followed a guide's "table: pain → what the project does" to the letter, and the user rejected the tables. The cost is that two sessions may write the same doc differently.
+A guide says what a doc is for and what goes wrong. It leaves the method to the model, because a model told every step stops using its judgment. One run followed a guide's "table: pain → what the project does" to the letter, and the user rejected the tables. The cost is that two runs may write the same doc differently.
 
 **Ask:** does this teach the model something it already knows?

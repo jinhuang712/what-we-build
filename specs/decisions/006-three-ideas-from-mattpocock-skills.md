@@ -4,7 +4,7 @@ Decided: 2026-10-13
 
 ## The problem
 
-The writing guidance in mattpocock/skills (MIT) is long. Only part of it matched a failure a session had shown.
+The writing guidance in mattpocock/skills (MIT) is long. Only part of it matched a failure that real use had shown.
 
 ## The choice
 
@@ -16,8 +16,8 @@ We take three ideas and rewrite them in our own words:
 
 ## Not chosen
 
-- The whole guide: most of it fixes failures no session had shown.
+- The whole guide: most of it fixes failures no real use had shown.
 
 ## Consequences
 
-Each idea taken traces to a failure a session showed. The DECISIONS guide later rewrote the third idea as its own three tests, and the guide is what holds now.
+Each idea taken traces to a failure that real use showed. The DECISIONS guide later rewrote the third idea as its own three tests, and the guide is what holds now.

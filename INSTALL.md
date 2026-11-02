@@ -9,7 +9,7 @@ git clone https://github.com/jinhuang712/what-we-build.git ~/dev/skills/what-we-
 ln -s ~/dev/skills/what-we-build/skills/what-we-build ~/.claude/skills/what-we-build
 ```
 
-Start a new Claude Code session. Type `/what-we-build` to check that it loaded.
+Restart Claude Code. Type `/what-we-build` to check that it loaded.
 
 ## Update
 
@@ -23,5 +23,5 @@ Start a new Claude Code session. Type `/what-we-build` to check that it loaded.
 
 | What you see | What to do |
 |---|---|
-| The command is not found | Start a new Claude Code session and type it again |
+| The command is not found | Restart Claude Code and type it again |
 | The skill folder is empty | Check the clone path in the `ln -s` line |

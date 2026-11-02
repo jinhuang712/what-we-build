@@ -7,13 +7,13 @@ Each goal is an effect the skill must have, tied to a want or a risk in the prop
 ```
 Goals
 ├── Objectives
-│   ├── ⬜ O1: One sitting — the 7 core docs of a new project agreed in 1 sitting
+│   ├── ⬜ O1: The core docs in one go — the 7 core docs of a new project agreed in one go
 │   └── ⬜ O2: Context survives compaction — after a compaction the agent knows the task from the docs alone
 ├── Measures
 │   ├── M1: Reads before it changes — not measured yet
 │   └── M4: Docs that fell behind — not measured yet
 ├── Benchmarks
-│   └── B1: Session quality — not run yet
+│   └── B1: Run quality — not run yet
 ├── Comparisons
 │   └── C1: With and without the skill — not run yet
 └── Thresholds
@@ -25,13 +25,13 @@ Goals
 
 ### Objectives
 
-#### O1: One sitting
+#### O1: The core docs in one go
 
 A new project gets its whole doc set without the talk dragging on.
 
 **Want:** the risk that the user wants the docs and not the talk.
 
-**Acceptance:** a new project's 7 core docs are drafted and approved in 1 sitting.
+**Acceptance:** a new project's 7 core docs are drafted and approved in one go.
 
 **Checked:** each checkpoint, on a new project.
 
@@ -41,7 +41,7 @@ A new project gets its whole doc set without the talk dragging on.
 
 What was decided stays known after the window is compacted.
 
-**Want:** context that outlives the session.
+**Want:** context that outlives the window.
 
 **Acceptance:** after a compaction the agent names the current task and the latest decisions from the docs alone.
 
@@ -57,7 +57,7 @@ The agent reads the doc that owns a thing before it changes that thing.
 
 **Want:** an agent that reads before it works.
 
-**How:** every change in the 3 latest sittings at the checkpoint, read for whether the owning doc was read first.
+**How:** every change made in the 3 latest windows before the checkpoint, read for whether the owning doc was read first.
 
 **Formula:**
 
@@ -89,15 +89,15 @@ M4 (claims) = claims in the whole doc set that the work now contradicts
 
 ### Benchmarks
 
-#### B1: Session quality
+#### B1: Run quality
 
-Sessions with the skill are scored on a fixed set of prompts.
+Runs with the skill are scored on a fixed set of prompts.
 
-**Want:** the wants and risks in the proposal that only a real session shows.
+**Want:** the wants and risks in the proposal that only a real run shows.
 
 **Problem set:** the three realistic project prompts of [CP4: Proven useful](ROADMAP.md#cp4-proven-useful).
 
-**Scored on:** a reader who did not run the session checks each of these:
+**Scored on:** a reader who did not take part in the run checks each of these:
 
 - Every fact has one home.
 - Every goal has a check.
@@ -129,7 +129,7 @@ The skill earns its place only if it beats the same agent without it.
 
 **Against:** the same agent without the skill.
 
-**How:** the prompts of [B1: Session quality](#b1-session-quality) run both ways and scored the same way.
+**How:** the prompts of [B1: Run quality](#b1-run-quality) run both ways and scored the same way.
 
 **Formula:**
 
@@ -146,7 +146,7 @@ C1 = prompts with a lead above 0 / 3, with the mean lead
 
 #### T4: A short skill
 
-`SKILL.md` is read in every session, so it stays short enough to read in full.
+`SKILL.md` is read each time the skill starts, so it stays short enough to read in full.
 
 **Want:** the risk that the skill itself grows too long.
 

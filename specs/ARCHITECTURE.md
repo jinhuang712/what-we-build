@@ -32,7 +32,7 @@ what-we-build is a skill: Markdown instructions that a coding agent reads. The a
 
 ## SKILL.md
 
-It holds what every session needs: the protocol, the doc set and the rules.
+It holds what every start needs: the protocol, the doc set and the rules.
 
 - **Lives in:** `skills/what-we-build/`
 

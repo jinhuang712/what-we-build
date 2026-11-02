@@ -8,7 +8,7 @@ Each doc carried a mark on its first line saying drafted or approved, and any ed
 
 ## The choice
 
-No doc carries a mark. A commit records the user's approval, so a committed doc is approved and an uncommitted change is a draft. A resume reads `git status` for where the session stopped and each doc's last commit for drift.
+No doc carries a mark. A commit records the user's approval, so a committed doc is approved and an uncommitted change is a draft. A resume reads `git status` for where the work stopped and each doc's last commit for drift.
 
 ## Not chosen
 

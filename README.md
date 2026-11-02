@@ -6,7 +6,7 @@
 
 > Keep a project's context in docs.
 
-what-we-build is a Claude Code skill that keeps a project's context in docs. You and the agent work out what to build and why. The skill writes it down so it outlives every session. It writes no doc until you agree on its key points.
+what-we-build is a Claude Code skill that keeps a project's context in docs. You and the agent work out what to build and why. The skill writes it down so it outlives every window. It writes no doc until you agree on its key points.
 
 ## What it does
 

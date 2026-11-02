@@ -24,7 +24,7 @@ Roadmap
 │   └── ⬜ CP2.5: Release 0.5.0
 ├── ⬜ CP3: First real use — the skill used on a new project
 │   ├── ⬜ CP3.1: A new project's 7 core docs drafted and approved with the skill
-│   └── ⬜ CP3.2: A resumed session to test F1.7: Resume
+│   └── ⬜ CP3.2: A real resume to test F1.7: Resume
 └── ⬜ CP4: Proven useful — runs with the skill beat runs without it
     ├── ⬜ CP4.1: Three realistic project prompts
     └── ⬜ CP4.2: Runs with and without the skill
@@ -68,11 +68,11 @@ Roadmap
 | ID | What it delivers | Status | Note |
 |---|---|---|---|
 | CP3.1 | A new project's 7 core docs drafted and approved with the skill | ⬜ | |
-| CP3.2 | A resumed session to test [F1.7: Resume](FEATURES.md#f17-resume) | ⬜ | |
+| CP3.2 | A real resume to test [F1.7: Resume](FEATURES.md#f17-resume) | ⬜ | |
 
 **Exit criteria,** checked on a new project:
 
-- [O1: One sitting](GOALS.md#o1-one-sitting)
+- [O1: The core docs in one go](GOALS.md#o1-the-core-docs-in-one-go)
 - [O2: Context survives compaction](GOALS.md#o2-context-survives-compaction)
 - [M4: Docs that fell behind](GOALS.md#m4-docs-that-fell-behind)
 
@@ -82,7 +82,7 @@ Roadmap
 
 | ID | What it delivers | Status | Note |
 |---|---|---|---|
-| CP4.1 | Three realistic project prompts | ⬜ | The problem set of [B1: Session quality](GOALS.md#b1-session-quality) |
+| CP4.1 | Three realistic project prompts | ⬜ | The problem set of [B1: Run quality](GOALS.md#b1-run-quality) |
 | CP4.2 | Runs with and without the skill | ⬜ | Scored as [C1: With and without the skill](GOALS.md#c1-with-and-without-the-skill) |
 
-**Exit criteria:** [B1: Session quality](GOALS.md#b1-session-quality) and [C1: With and without the skill](GOALS.md#c1-with-and-without-the-skill), with the runs with the skill ahead on every check that B1 scores.
+**Exit criteria:** [B1: Run quality](GOALS.md#b1-run-quality) and [C1: With and without the skill](GOALS.md#c1-with-and-without-the-skill), with the runs with the skill ahead on every check that B1 scores.

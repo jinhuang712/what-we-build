@@ -2,28 +2,21 @@
 
 What what-we-build does today, and what it will and won't do. Each feature is described from the user's side: what you type, what you see and what you decide.
 
-Two words have one meaning each here:
-
-- A **session** is one what-we-build conversation, from `/what-we-build` to the last approval.
-- A **sitting** is one Claude Code session.
-
-A session can span several sittings through resume.
-
 Status: ✅ built · 🚧 built with a gap named in its section · ⬜ planned.
 
 ## Summary
 
 ```
 Features
-├── 🚧 F1: Running a session — the skill starts from your folder and takes each doc from talk to commit
+├── 🚧 F1: Writing the docs with you — the skill starts from your folder and takes each doc from talk to commit
 │   ├── ✅ F1.1: Start from where the project is — an idea, running code or messy docs
 │   ├── ✅ F1.2: Agree the doc set — you confirm the docs and where they live
 │   ├── ✅ F1.3: Talk each doc through — discuss, brainstorm or decide with a recommendation
 │   ├── ✅ F1.4: Push back — the agent says what does not fit and why
 │   ├── ✅ F1.5: See the change — every change is shown as before and after
 │   ├── ✅ F1.6: Commit after approval — nothing is committed before you approve it
-│   └── 🚧 F1.7: Resume — a later sitting picks up where the last one stopped, not yet verified
-├── ✅ F2: Keeping the context — the docs stay true after the first session
+│   └── 🚧 F1.7: Resume — the work picks up later from the docs, not yet verified
+├── ✅ F2: Keeping the context — the docs stay true as the work goes on
 │   └── ✅ F2.1: Keep the context while you work — the agent reads the owning doc first and records at once
 └── ✅ F3: Getting the docs — the docs a project needs, each with a guide
     ├── ✅ F3.1: The core docs — the seven docs every project gets
@@ -33,11 +26,11 @@ Features
     └── ✅ F3.5: Wording rules — short bullets and one name per thing
 ```
 
-## F1: Running a session
+## F1: Writing the docs with you
 
 **Status:** 🚧 [F1.7: Resume](#f17-resume) is not yet verified
 
-The skill starts from your folder. Then each doc goes through one loop from talk to commit, and a later sitting picks up where the last one stopped.
+The skill starts from your folder. Then each doc goes through one loop from talk to commit, and the work picks up later from the docs.
 
 - **Design:** [DESIGNS 6: Trust the model](DESIGNS.md#6-trust-the-model)
 - **Why:** [001: One skill holds every start](specs/decisions/001-one-skill-for-every-start.md) and [007: DESIGNS comes third, before GOALS and FEATURES](specs/decisions/007-designs-third.md)
@@ -89,9 +82,9 @@ You approve a doc, and the agent commits it. Nothing is committed before you app
 
 ### F1.7: Resume
 
-**Status:** 🚧 not yet verified in a resumed session
+**Status:** 🚧 not yet verified on a real resume
 
-A session can stop at any point and pick up in a later sitting. Git tells the agent which docs you approved. On a later `/what-we-build` the agent tells you where the session stopped. It continues at the uncommitted draft or at the first doc in the order not yet written. When every change is committed, it reports where the project stands and what changed since each doc's last commit. You then see which doc may have fallen behind.
+The work can stop at any point and pick up later from the docs. Git tells the agent which docs you approved. On a later `/what-we-build` the agent tells you where the work stopped. It continues at the uncommitted draft or at the first doc in the order not yet written. When every change is committed, it reports where the project stands and what changed since each doc's last commit. You then see which doc may have fallen behind.
 
 - **Design:** [DESIGNS 2: The docs are the state](DESIGNS.md#2-the-docs-are-the-state)
 - **Why:** [008: A resume with nothing to draft looks for drift](specs/decisions/008-resume-looks-for-drift.md) and [009: Git tells a draft from an approved doc](specs/decisions/009-git-tells-a-draft-from-an-approved-doc.md)
@@ -100,15 +93,15 @@ A session can stop at any point and pick up in a later sitting. Git tells the ag
 
 **Status:** ✅
 
-The docs stay true after the first session, because every sitting keeps them true.
+The docs stay true as the work goes on, because the agent keeps them true in every new window.
 
 ### F2.1: Keep the context while you work
 
 **Status:** ✅
 
-In every sitting the agent reads the doc that owns a thing before it changes it, records each decision and open item at once, and asks you when the docs and the code disagree.
+In every new window the agent reads the doc that owns a thing before it changes it, records each decision and open item at once, and asks you when the docs and the code disagree.
 
-The skill starts only when you type `/what-we-build`. The rules still reach every sitting through the project's `AGENTS.md`. You agree to record them there when you go through it with the agent.
+The skill starts only when you type `/what-we-build`. The rules still reach every new window through the project's `AGENTS.md`. You agree to record them there when you go through it with the agent.
 
 - **Design:** [DESIGNS 2: The docs are the state](DESIGNS.md#2-the-docs-are-the-state)
 - **Why:** [002: The skill starts only by hand](specs/decisions/002-manual-start.md)
