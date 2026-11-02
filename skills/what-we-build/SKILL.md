@@ -76,10 +76,10 @@ The other docs join when the project needs them:
 | `CHANGELOG.md` | Recommended from the start | [CHANGELOG](references/CHANGELOG.md) |
 | `specs/decisions/` | Recommended from the start | [DECISIONS](references/DECISIONS.md) |
 | `specs/` | A part needs its working explained | [SPECS](references/SPECS.md) |
-| `specs/ARCHITECTURE.md` | The project has more than one part | [ARCHITECTURE](references/ARCHITECTURE.md) |
-| `GLOSSARY.md` | Two words compete for one thing | [GLOSSARY](references/GLOSSARY.md) |
+| `specs/ARCHITECTURE.md` | The project has more than one part worth a spec | [ARCHITECTURE](references/ARCHITECTURE.md) |
+| `GLOSSARY.md` | The domain has its own terms or two words compete for one thing | [GLOSSARY](references/GLOSSARY.md) |
 | `INSTALL.md` | One install line is not enough | [INSTALL](references/INSTALL.md) |
-| `CONTRIBUTING.md` | Outsiders can help | [CONTRIBUTING](references/CONTRIBUTING.md) |
+| `CONTRIBUTING.md` | The project is public and accepts contributions | [CONTRIBUTING](references/CONTRIBUTING.md) |
 | `SECURITY.md` | Users need a way to report a vulnerability | [SECURITY](references/SECURITY.md) |
 | `RUNBOOK.md` | Someone must keep a service running | [RUNBOOK](references/RUNBOOK.md) |
 

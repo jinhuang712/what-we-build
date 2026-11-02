@@ -19,8 +19,6 @@ The specs folder explains how each part of the project works, like a technical d
 
 Change them together. Options weighed on the way are process files, and they stay out.
 
-**Add when** a part has a mechanism worth explaining.
-
 A spec and the code guide each other:
 
 - A spec drafted first guides the code.

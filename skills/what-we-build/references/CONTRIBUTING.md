@@ -9,7 +9,7 @@ CONTRIBUTING.md tells outside contributors how to help. GitHub links it from iss
 - The checks that must pass.
 - Where to ask.
 
-**Add when** the project is public and accepts contributions. Draft it at the end of a session, once the workflow is known.
+Draft it at the end of a session, once the workflow is known.
 
 ## Guidelines
 

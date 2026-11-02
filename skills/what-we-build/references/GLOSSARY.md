@@ -7,7 +7,7 @@ The glossary fixes the project's words: one name per thing, each with its meanin
 - The project's terms.
 - The one name chosen for each thing.
 
-**Add when** the domain has its own terms, or two words compete for one thing. Start it with the first doc and add terms as they appear.
+Start it with the first doc and add terms as they appear.
 
 ## Guidelines
 

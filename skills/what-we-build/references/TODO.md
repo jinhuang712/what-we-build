@@ -18,8 +18,6 @@ Each item has a priority, a type and a time. A reader sees what matters first an
 - Work with a checkpoint (ROADMAP).
 - What is already decided (`specs/decisions/`).
 
-**Add when** the doc set is agreed, in every project. A finding then has a home the moment it comes up.
-
 ## Guidelines
 
 - **Delete an item in the change that handles it,** because history lives in git.

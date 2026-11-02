@@ -22,8 +22,6 @@ INSTALL.md holds everything about installing beyond the one line in the README. 
 - A command longer than two lines instead of a script.
 - A way to install that nobody has tried.
 
-**Add when** the one line in the README is not the whole story.
-
 ## Guidelines
 
 - **Put the most common way first.**

@@ -21,8 +21,6 @@ ARCHITECTURE.md is the map of the whole project. A new contributor reads it firs
 - A map that lists files instead of parts.
 - A map with no diagram.
 
-**Add when** the project has more than one part worth a spec.
-
 ## Guidelines
 
 - **Always open with a diagram of the whole,** so the reader sees the shape before the words.

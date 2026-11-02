@@ -51,6 +51,7 @@
 ### Doc guides
 
 - Every guide is rewritten.
+- When to add an optional doc is said only in SKILL.md, and each guide says when to draft it.
 - New guides: `specs/`, `specs/decisions/` and `specs/ARCHITECTURE.md`.
 - The UIUX guide is gone, because UIUX is now a spec.
 - Decisions move out of DESIGNS and FEATURES into `specs/decisions/`.

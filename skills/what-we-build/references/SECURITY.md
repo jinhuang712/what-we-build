@@ -9,7 +9,7 @@ SECURITY.md tells people how to report a vulnerability safely. GitHub shows it a
 - Which versions are supported.
 - What happens next.
 
-**Add when** the project is public. Draft it at the end of a session.
+Draft it at the end of a session.
 
 ## You have it when
 

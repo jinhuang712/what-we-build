@@ -6,7 +6,7 @@ The changelog tells users what changed in each release, in words they understand
 
 - One section per version with its date, grouped by area.
 
-**Add when** the doc set is agreed, in every project. Start it with an empty *Unreleased* section so the first change has a place to land. Fill it in the change that does the work.
+Start it with an empty *Unreleased* section so the first change has a place to land. Fill it in the change that does the work.
 
 ## Guidelines
 
