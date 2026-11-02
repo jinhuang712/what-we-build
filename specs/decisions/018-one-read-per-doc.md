@@ -8,11 +8,11 @@ M3: Length of the core docs counted the lines of the 7 core docs and stood at 88
 
 ## The choice
 
-T8: A doc read in one go replaces M3. Every doc stays within the default limits of one Claude Code read, which are 25000 tokens and 2000 lines.
+T8: A doc read in one go replaces M3: Length of the core docs. Every doc stays within the default limits of one Claude Code read, which are 25000 tokens and 2000 lines.
 
 ## Not chosen
 
-- Keeping M3: a number with no limit and no link to any harm.
+- Keeping the line count: a number with no limit and no link to any harm.
 - A limit set by taste such as 300 lines per doc: it would fail a doc that reads fine and pass one that does not.
 
 ## Consequences

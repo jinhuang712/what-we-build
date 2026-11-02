@@ -12,9 +12,9 @@ The three move to *Rules* in AGENTS.md, which the placement test now names as th
 
 ## Not chosen
 
-- Keeping readers check the docs in DESIGNS: its product side is already covered by no dependencies, and the rest is how this repo is checked.
+- Keeping the guideline that readers check the docs in DESIGNS: its product side is already covered by DESIGNS 3: No dependencies, and the rest is how this repo is checked.
 - Keeping all three as design guidelines: each would keep a second home or teach the wrong placement.
 
 ## Consequences
 
-DESIGNS lists 6 guidelines. The links from FEATURES and ROADMAP to the old guideline 7 now point to DESIGNS 3: No dependencies.
+DESIGNS lists 6 guidelines. The links from FEATURES and ROADMAP to the old DESIGNS 7: Readers check the docs, not scripts now point to DESIGNS 3: No dependencies.

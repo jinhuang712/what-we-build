@@ -129,7 +129,7 @@ The skill earns its place only if it beats the same agent without it.
 
 **Against:** the same agent without the skill.
 
-**How:** the prompts of [B1: Run quality](#b1-run-quality) run both ways and scored the same way.
+**How:** the prompts of [B1: Run quality](#b1-run-quality) run both ways and are scored the same way.
 
 **Formula:**
 

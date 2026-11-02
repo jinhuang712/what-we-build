@@ -4,7 +4,7 @@ Decided: 2026-11-03
 
 ## The problem
 
-SKILL.md said to write a doc only after its key points were agreed. Points agreed for a doc not yet drafted lived only in the window, and DESIGNS 2 named their loss as its cost. That broke the want in the proposal that what is decided goes into a doc at once, and it lost exactly the context the skill exists to keep.
+SKILL.md said to write a doc only after its key points were agreed. Points agreed for a doc not yet drafted lived only in the window, and DESIGNS 2: The docs are the state named their loss as its cost. That broke the want in the proposal that what is decided goes into a doc at once, and it lost exactly the context the skill exists to keep.
 
 ## The choice
 

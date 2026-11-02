@@ -62,4 +62,6 @@ If one link is missing, the others do not help. A doc in the right place is no u
 
 ## Sources
 
-- Hong, Kelly, Anton Troynikov and Jeff Huber. "Context Rot: How Increasing Input Tokens Impacts LLM Performance". Chroma, 2025. [trychroma.com/research/context-rot](https://trychroma.com/research/context-rot). Paraphrased, not quoted.
+Each source is paraphrased here, not quoted.
+
+- Kelly Hong, Anton Troynikov and Jeff Huber. *Context Rot: How Increasing Input Tokens Impacts LLM Performance*. 2025. [trychroma.com/research/context-rot](https://trychroma.com/research/context-rot)
