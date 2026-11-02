@@ -100,18 +100,19 @@ Work through the core docs in order, since each builds on the ones before it:
 
 `PROPOSAL.md` → `PHILOSOPHY.md` → `DESIGNS.md` → `GOALS.md` → `FEATURES.md` → `ROADMAP.md` → `README.md`
 
-Write each point into its doc as soon as it is agreed, and nothing before that. Then every doc goes through the same loop:
+Talk each doc through with the user, and write each point into it as soon as it is agreed. Nothing goes in before that. A new doc and every later change then go through the same loop:
 
-1. Draft it.
-2. Show the user the change as before and after.
-3. Wait for the user to approve it.
-4. Commit it, never before it is approved.
+1. Show the user the change: its skeleton first, then a diff of before and after.
+2. Wait for the user to approve it.
+3. Commit it, never before it is approved.
 
 - Only the user approves, and any later edit is a draft until they approve it.
 - Re-read the whole doc before any edit, even of one word.
 - Before the work stops, report each doc's status and the open questions.
 
 A commit records the approval, so git tells a draft from an approved doc. No doc carries a mark of its own.
+
+A claim needs its proof. Check a behavior claim by running it, or mark it "not yet verified". A goal is met only with a measurement or the user's own report.
 
 ## Where a fact goes
 
@@ -148,8 +149,6 @@ A link points to what the doc rests on, never the other way. A doc still makes i
 | `README.md` | every doc once in *Docs*, and `INSTALL.md` again from *Install* |
 | `AGENTS.md` | the docs in its read order |
 
-A claim needs its proof. Check a behavior claim by running it, or mark it "not yet verified". A goal is met only with a measurement or the user's own report.
-
 ## While you work
 
 The docs stay true only if the agent keeps them true in every new window. These rules belong in the project's `AGENTS.md`, so they reach a window that never loaded this skill.
@@ -163,8 +162,7 @@ The docs stay true only if the agent keeps them true in every new window. These 
 - When a change is done, update `CHANGELOG.md` and the feature's status in the same change.
 - When a todo is handled, delete it in the same change.
 - After a change, check only what it touched against the rules.
-- Check the goals at a moment that calls for it, such as the end of a checkpoint or a release.
-- A small change never runs the goal checks.
+- Check the goals at the end of a checkpoint or before a release, and never for a small change.
 - When the user stops you, stop.
 
 ## Wording

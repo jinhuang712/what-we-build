@@ -34,7 +34,7 @@ It comes fifth in the doc order: each feature delivers a want from the proposal 
 - **Give each feature an ID that never changes,** so other docs can point to it.
 - **Give a new feature a new number.**
 - **Describe what the user does and what happens,** short and in the present tense.
-- **Link each feature to its design guideline,** and down to its spec and its decisions.
+- **Link a feature to a design guideline only when the guideline shapes it,** and down to its spec and its decisions.
 - **End with what happens when something fails,** then *Later* and *Not planned*.
 
 ## You have it when
@@ -70,7 +70,7 @@ Features
 
 <what it gives the user, and what happens>
 
-- **Design:** <the DESIGNS guideline it serves>
+- **Design:** <the DESIGNS guideline that shapes it, if one does>
 - **How it works:** <a link to its spec>
 - **Why:** <links to its decisions>
 

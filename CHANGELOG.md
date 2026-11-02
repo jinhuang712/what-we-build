@@ -16,6 +16,7 @@
 - A working protocol takes every doc through one loop from discussion to commit.
 - No doc is committed before the user approves it.
 - Each point goes into its doc as soon as it is agreed, so an agreed point is never left only in the window.
+- The agent shows a new doc or a change as its skeleton first, then as a diff of before and after.
 - The agent re-reads the whole doc before any edit, even of one word.
 - Before it changes a fact, the agent reads the doc that owns it.
 - A decision is written down when it is made.
@@ -66,7 +67,7 @@
 - FEATURES opens with *Summary* instead of *TL;DR*.
 - GOALS holds six kinds of goal, each in its own section.
 - GOALS holds only the effects the skill must have, and each rule lives in its own home.
-- Each goal says when it is checked, at a checkpoint or a release.
+- Each goal names the checkpoint from which it can run, and a checkpoint ends with every goal that can run by then.
 - Every measure, benchmark and comparison writes its formula in a code block.
 - A constraint is a condition the product must always meet, and a rule for how the work is done stays out of GOALS.
 - Every goal in the skeleton names the want it serves.

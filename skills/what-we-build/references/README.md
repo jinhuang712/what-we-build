@@ -44,7 +44,7 @@ Add a section only when the project needs it. Each one summarizes its owner doc.
 
 | Section | Add when | Owner |
 |---|---|---|
-| Architecture | Recommended for a project with more than one part | `specs/ARCHITECTURE.md` |
+| Architecture | Recommended when the project has `specs/ARCHITECTURE.md` | `specs/ARCHITECTURE.md` |
 | Demo | A screenshot or a recording shows it faster than words | — |
 | Why | The reason is not obvious from what it is | PROPOSAL |
 | Examples | A real case teaches faster than the rules | FEATURES |
@@ -53,7 +53,7 @@ Add a section only when the project needs it. Each one summarizes its owner doc.
 | FAQ | The same questions keep coming | The doc that owns each answer |
 | Known limits | A user should know a limit before trying it | FEATURES |
 | Status | The project is not yet stable | ROADMAP |
-| Contributing | Outsiders can help | CONTRIBUTING |
+| Contributing | The project has `CONTRIBUTING.md` | CONTRIBUTING |
 | Acknowledgements | It builds on others' work | `specs/decisions/` |
 
 ## You have it when

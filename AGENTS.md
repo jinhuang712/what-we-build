@@ -31,8 +31,7 @@ Before a change, also read the doc that owns it.
 - When the docs and the code disagree, tell the user and let them decide.
 - When a change is done, update `CHANGELOG.md` and the feature's status in the same change.
 - When a todo is handled, delete it in the same change.
-- Check the goals in `GOALS.md` at a moment that calls for it, such as the end of a checkpoint or a release.
-- A small change never runs the goal checks.
+- Check the goals in `GOALS.md` at the end of a checkpoint or before a release, and never for a small change.
 - When the user stops you, stop.
 
 ## Rules
@@ -40,11 +39,11 @@ Before a change, also read the doc that owns it.
 - **This repo is the skill's first example,** so it follows the skill's format and placement test.
 - **Keep `SKILL.md` within T4: A short skill,** and put detail in a guide it points to.
 - **Follow the guidelines in [DESIGNS.md](DESIGNS.md).**
-- **A reader who did not write a change checks it,** and no script does.
+- **A reader checks the links and the facts in the docs,** and no script does.
 - **Test the skill in real use first,** and write test prompts from what they show.
 - **Never commit a doc before the user approves it.**
 - **Leave the outcome open until you have discussed it with the user,** and look at what exists together first.
-- **Show a change as its skeleton first and then as a diff.**
+- **Show a change as its skeleton first and then as a diff of before and after.**
 
 ## Before you finish
 
@@ -58,5 +57,5 @@ Before a change, also read the doc that owns it.
 ## Releasing
 
 1. Move the *Unreleased* entries in `CHANGELOG.md` under the new version and date.
-2. Go through the whole goal sheet in `GOALS.md`.
+2. Go through every goal in `GOALS.md` that can run by then.
 3. Commit and tag `vX.Y.Z`, then push the branch and the tag.

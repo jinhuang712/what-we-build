@@ -4,7 +4,7 @@ What goes in is a project folder and a conversation with the user. What comes ou
 
 what-we-build is designed around 6 guidelines:
 
-1. **A short core with detail on demand:** `SKILL.md` holds what every start needs and points to the guides.
+1. **A short core with detail on demand:** `SKILL.md` holds only what the agent always needs and points to the guides.
 2. **The docs are the state:** with git beside them, they hold where the work stopped.
 3. **No dependencies:** the skill is Markdown only.
 4. **Our own words over borrowed text:** methods from other guides are rewritten and never copied.
@@ -13,15 +13,15 @@ what-we-build is designed around 6 guidelines:
 
 ## 1. A short core with detail on demand
 
-The agent reads `SKILL.md` each time the skill starts, so it holds only what every start needs. Each doc's guide waits in `references/` until a step points to it. `SKILL.md` stays within a line limit. The cost is that a step must name its guide, or the agent never reads it.
+The agent reads `SKILL.md` in full each time the skill starts, so it holds only what the agent always needs. Each doc's guide waits in `references/` until a step points to it. `SKILL.md` stays within a line limit. The cost is that a step must name its guide, or the agent never reads it.
 
-**Ask:** does every start need this, or only the step that writes one doc?
+**Ask:** does the agent always need this, or only the step that writes one doc?
 
 - **Decisions:** [001: One skill holds every start](specs/decisions/001-one-skill-for-every-start.md) and [005: One guide file per kind of doc](specs/decisions/005-one-guide-per-kind-of-doc.md)
 
 ## 2. The docs are the state
 
-A doc is committed only after the user approves it, so a committed doc is approved and an uncommitted change is a draft. Neither a mark nor a separate file records where the work stopped. A project without git cannot tell the two apart. The cost is that a doc fills in point by point, so a draft may stand half written until its last point is agreed.
+A doc is committed only after the user approves it, so a committed doc is approved and an uncommitted change is a draft. Neither a mark nor a separate file records where the work stopped, because git already does. The costs are that a project without git cannot tell a draft from an approved doc, and that a draft may stand half written until its last point is agreed.
 
 **Ask:** does this need a file other than the docs to remember it?
 

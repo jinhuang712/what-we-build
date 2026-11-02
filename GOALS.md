@@ -7,15 +7,15 @@ Each goal is an effect the skill must have, tied to a want or a risk in the prop
 ```
 Goals
 ├── Objectives
-│   ├── ⬜ O1: The core docs in one go — the 7 core docs of a new project agreed in one go
+│   ├── ⬜ O1: The core docs without a long talk — the 7 core docs of a new project agreed within a time limit
 │   └── ⬜ O2: Context survives compaction — after a compaction the agent knows the task from the docs alone
 ├── Measures
-│   ├── M1: Reads before it changes — not measured yet
-│   └── M4: Docs that fell behind — not measured yet
+│   ├── ⬜ M1: Reads before it changes — not measured yet
+│   └── ⬜ M4: Docs that fell behind — not measured yet
 ├── Benchmarks
-│   └── B1: Run quality — not run yet
+│   └── ⬜ B1: Run quality — not run yet
 ├── Comparisons
-│   └── C1: With and without the skill — not run yet
+│   └── ⬜ C1: With and without the skill — not run yet
 └── Thresholds
     ├── ✅ T4: A short skill — SKILL.md within 500 lines
     └── ✅ T8: A doc read in one go — every doc within one Claude Code read
@@ -25,13 +25,13 @@ Goals
 
 ### Objectives
 
-#### O1: The core docs in one go
+#### O1: The core docs without a long talk
 
 A new project gets its whole doc set without the talk dragging on.
 
 **Want:** the risk that the user wants the docs and not the talk.
 
-**Acceptance:** a new project's 7 core docs are drafted and approved in one go.
+**Acceptance:** a new project's 7 core docs are drafted and approved within N hours of talk. N is open until it is set before CP3: First real use.
 
 **Checked:** from [CP3: First real use](ROADMAP.md#cp3-first-real-use) on, at each checkpoint on a new project.
 
@@ -57,7 +57,7 @@ The agent reads the doc that owns a thing before it changes that thing.
 
 **Want:** an agent that reads before it works.
 
-**How:** every change made in the 3 latest windows before the checkpoint, read for whether the owning doc was read first.
+**How:** every change in the last 3 windows of work before the checkpoint, each read for whether the owning doc was read first.
 
 **Formula:**
 
@@ -156,7 +156,7 @@ C1 = prompts with a lead above 0 / 3, with the mean lead
 
 **Checked:** each checkpoint.
 
-**Status:** ✅ 195 lines on 2026-11-02 by the author.
+**Status:** ✅ 194 lines on 2026-11-03.
 
 #### T8: A doc read in one go
 

@@ -13,7 +13,8 @@ GOALS.md turns the wants in the proposal into checks. It keeps the project hones
 - Anything vague.
 - Features the project will not build (FEATURES → *Not planned*).
 - How anything works (`specs/`).
-- A rule for how the work is done (DESIGNS or AGENTS.md).
+- A commitment the design must meet (DESIGNS).
+- A rule for how the work is done (AGENTS.md).
 
 **Push back on:**
 
@@ -24,7 +25,7 @@ GOALS.md turns the wants in the proposal into checks. It keeps the project hones
 - A comparison with nothing to compare against.
 - A constraint nobody could check.
 - A rule dressed as a goal.
-- A "met" with no evidence.
+- A "met" with no measurement or report.
 
 ## The six kinds
 
@@ -56,7 +57,7 @@ A constraint is a condition the product must always meet, checked on the product
 
 ## When to check
 
-Every goal stands all the time, but its check runs only at a moment that calls for it. A check is worth its cost once enough has landed, such as at the end of a checkpoint or before a release. At each checkpoint, go through the whole sheet. A small change runs no goal check, because the rules it touched are checked where they live.
+Every goal stands all the time, but its check runs only at a moment that calls for it. A goal names the checkpoint from which it can run, and from then on it runs at the end of each checkpoint or before a release. At those moments, go through every goal that can run. A small change runs no goal check, because the rules it touched are checked where they live.
 
 ## Guidelines
 
@@ -76,7 +77,7 @@ Every goal stands all the time, but its check runs only at a moment that calls f
 - Every threshold has a limit.
 - Every measure, benchmark and comparison has a formula.
 - Every comparison names what it is compared against.
-- Every "met" has evidence and a date.
+- Every "met" has a measurement or the user's report, with its date.
 - ROADMAP can point its exit criteria to these IDs.
 
 ## Skeleton
@@ -106,7 +107,7 @@ Goals
 
 **Acceptance:** <the test that passes or fails>
 
-**Checked:** <each checkpoint or a release, and how>
+**Checked:** <from which checkpoint it can run, and how>
 
 **Status:** ⬜ | ✅ <date> | ❌ <date>
 
@@ -126,7 +127,7 @@ Goals
 M1 = <what is counted> / <what it is counted over>
 ```
 
-**Checked:** <each checkpoint or a release>
+**Checked:** <from which checkpoint it can run>
 
 **Last value:** <value> on <date>
 
@@ -146,7 +147,7 @@ M1 = <what is counted> / <what it is counted over>
 B1 = <how the scores of the set combine into one>
 ```
 
-**Checked:** <each checkpoint or a release>
+**Checked:** <from which checkpoint it can run>
 
 **Last score:** <score> on <date>
 
@@ -168,7 +169,7 @@ B1 = <how the scores of the set combine into one>
 C1 = <how the two scores are set against each other>
 ```
 
-**Checked:** <each checkpoint or a release>
+**Checked:** <from which checkpoint it can run>
 
 **Last result:** <result> on <date>
 
@@ -184,7 +185,7 @@ C1 = <how the two scores are set against each other>
 
 **How:** <how it is checked>
 
-**Checked:** <each checkpoint or a release>
+**Checked:** <from which checkpoint it can run>
 
 **Status:** ⬜ | ✅ <date> | ❌ <date>
 
@@ -200,7 +201,7 @@ C1 = <how the two scores are set against each other>
 
 **How:** <how it is checked>
 
-**Checked:** <each checkpoint or a release>
+**Checked:** <from which checkpoint it can run>
 
 **Status:** ⬜ | ✅ <date> | ❌ <date>
 ````

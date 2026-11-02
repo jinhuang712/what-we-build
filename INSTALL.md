@@ -2,7 +2,7 @@
 
 You need [Claude Code](https://docs.claude.com/en/docs/claude-code/overview).
 
-## As a personal skill
+## Clone and link
 
 ```sh
 git clone https://github.com/jinhuang712/what-we-build.git ~/dev/skills/what-we-build

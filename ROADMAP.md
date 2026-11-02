@@ -1,6 +1,6 @@
 # Roadmap
 
-Where what-we-build stands and what comes next. Each checkpoint is a usable or proven state of the skill. Its exit criteria point to [GOALS.md](GOALS.md), and it ends with a pass over the whole goal sheet.
+Where what-we-build stands and what comes next. Each checkpoint is a usable or proven state of the skill. Its exit criteria point to [GOALS.md](GOALS.md), and it ends with a pass over every goal that can run by then.
 
 Status: ✅ done · 🟨 in progress · ⬜ not started.
 
@@ -55,7 +55,7 @@ Roadmap
 | CP2.2 | A second review of this repo's docs, released as 0.3.0 | ✅ | 2026-10-13 |
 | CP2.3 | Lessons from a real design session, released as 0.4.0 | ✅ | 2026-10-18 |
 | CP2.4 | The skill rebuilt around a project's context | ✅ | Not yet released |
-| CP2.5 | This repo's docs in the new forms | 🟨 | Under way on 2026-11-02 |
+| CP2.5 | This repo's docs in the new forms | 🟨 | Under way since 2026-11-02 |
 | CP2.6 | Release 0.5.0 | ⬜ | |
 
 **Exit criteria:**
@@ -74,7 +74,7 @@ Roadmap
 
 **Exit criteria,** checked on a new project:
 
-- [O1: The core docs in one go](GOALS.md#o1-the-core-docs-in-one-go)
+- [O1: The core docs without a long talk](GOALS.md#o1-the-core-docs-without-a-long-talk)
 - [O2: Context survives compaction](GOALS.md#o2-context-survives-compaction)
 - [M4: Docs that fell behind](GOALS.md#m4-docs-that-fell-behind)
 
