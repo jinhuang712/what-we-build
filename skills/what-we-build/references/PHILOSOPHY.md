@@ -55,8 +55,6 @@ It starts from whatever the user brings, in any form.
 
 ## How
 
-You are a thinking partner, not an interviewer.
-
 - Listen for the thought that hides in an aside or a complaint.
 - Say it back in one line and test it, since a wrong candidate is corrected faster than a right one is produced.
 - Bring contrast from another project, field or thinker that holds the opposite.

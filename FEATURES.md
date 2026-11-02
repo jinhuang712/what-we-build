@@ -154,20 +154,7 @@ You decide with the agent whether `AGENTS.md` records the layout.
 
 **Status:** ✅
 
-The docs come out in plain and precise English. A reader finds a fact fast and understands it the first time.
-
-| Rule | What you see in the docs |
-|---|---|
-| Paragraphs or bullets | A paragraph is one block and a bullet is one sentence |
-| Short bullets | A bullet holds at most one comma |
-| Bullets for lists | A list is never packed into a sentence |
-| Prose for reasons | An argument stays prose, as in PHILOSOPHY |
-| One name per thing | A word means the same thing in every doc |
-| Numbers with sources | A number instead of an adjective, with its source |
-| Shared status marks | ✅ 🚧 🟨 ⬜ ❌ mean the same in every doc |
-| No code chunks | A doc explains and never pastes code |
-
-- **Design:** [DESIGNS 4: Our own words over borrowed text](DESIGNS.md#4-our-own-words-over-borrowed-text)
+The docs come out in plain and precise English. A reader finds a fact fast and understands it the first time, because every doc explains in short paragraphs, keeps a bullet to one sentence and calls each thing by one name. Status marks, IDs and dates look the same in every doc, and no doc pastes code.
 
 ## When something fails
 

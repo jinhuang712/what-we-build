@@ -91,6 +91,7 @@
 - This repo's rules for checking by a reader and testing by use move from DESIGNS to AGENTS.md, which already held the rule that the repo is its own first example.
 - This repo's read order adds ROADMAP and GOALS, which the agent scans for where the project stands.
 - This repo's README is the only place that pairs each doc with its question, and PROPOSAL and PHILOSOPHY no longer repeat the list.
+- This repo's FEATURES describes what the wording rules give the reader, and SKILL.md alone lists them.
 - This repo's FEATURES describes what keeping the context gives the user, and AGENTS.md alone lists the work rules.
 - This repo's decision 002 holds the reason for the manual start, and FEATURES links to it.
 - This repo's features take group numbers, so Resume is now F1.7 and the work rules are F2.1.
