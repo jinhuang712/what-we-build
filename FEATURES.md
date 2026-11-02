@@ -106,7 +106,7 @@ The docs stay true after the first session, because every sitting keeps them tru
 
 **Status:** ✅
 
-The docs stay true after the first session. In every sitting the agent reads the doc that owns a thing before it changes it, records each decision and open item at once, and asks you when the docs and the code disagree.
+In every sitting the agent reads the doc that owns a thing before it changes it, records each decision and open item at once, and asks you when the docs and the code disagree.
 
 The skill starts only when you type `/what-we-build`. The rules still reach every sitting through the project's `AGENTS.md`. You agree to record them there when you go through it with the agent.
 

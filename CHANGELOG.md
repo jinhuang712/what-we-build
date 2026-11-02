@@ -38,6 +38,7 @@
 - A paragraph is one block and a bullet is one sentence, so sentences are no longer stacked one to a line.
 - An ID is always written with its name, and a list of IDs replaces a range.
 - A link points only to what its doc rests on, and PHILOSOPHY and CHANGELOG link to nothing.
+- README links INSTALL from its install line too, so the line and the rest change together.
 - The comma rule holds for a bullet, and a paragraph is not held to it.
 
 ### Doc guides

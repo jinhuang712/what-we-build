@@ -22,6 +22,8 @@ what-we-build is a Claude Code skill that keeps a project's context in docs. You
 claude plugin marketplace add jinhuang712/what-we-build && claude plugin install what-we-build@what-we-build
 ```
 
+Other ways to install, update or remove it are in [INSTALL.md](INSTALL.md).
+
 ## How to use
 
 1. Open Claude Code in an empty folder.

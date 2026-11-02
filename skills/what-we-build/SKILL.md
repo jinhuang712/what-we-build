@@ -145,7 +145,7 @@ A link points to what the doc rests on, never the other way. A doc still makes i
 | `FEATURES.md` | a few to DESIGNS, and down to its decisions and specs |
 | `GOALS.md`, `ROADMAP.md` and `TODO.md` | each other, FEATURES and DESIGNS |
 | `specs/` and `specs/decisions/` | up to the doc they serve, never beside them |
-| `README.md` | every doc, once each |
+| `README.md` | every doc once in *Docs*, and `INSTALL.md` again from *Install* |
 | `AGENTS.md` | the docs in its read order |
 
 A claim needs its proof. Check a behavior claim by running it, or mark it "not yet verified". A goal is met only with a measurement or the user's own report.

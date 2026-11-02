@@ -36,6 +36,7 @@ It comes last, because it sums up the approved docs.
 - **Use emoji where they carry meaning,** such as a mark beside each capability.
 - **Give the page color** through the hero and the diagrams, with badges and callouts.
 - **Link each doc once in *Docs*,** and copy no status.
+- **Link INSTALL from *Install* too,** so whoever changes the one line finds the rest.
 
 ## Optional sections
 
@@ -79,6 +80,8 @@ Add a section only when the project needs it. Each one summarizes its owner doc.
 ## Install
 
 <one line>
+
+<a link to INSTALL.md, when there is one>
 
 ## How to use
 
