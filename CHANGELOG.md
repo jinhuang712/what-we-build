@@ -77,13 +77,6 @@
 - The docs speak of the window and the project context instead of sessions and sittings.
 - The guides set no counts such as two or three stances.
 
-### This repo's docs
-
-- This repo's docs follow every change above.
-- Its goals keep only effects, and the checks for its rules moved to AGENTS.md.
-- Its work rules moved from DESIGNS to AGENTS.md.
-- Its features and its roadmap are numbered by group and by checkpoint.
-
 ## 0.4.0 — 2026-10-18
 
 ### Sessions
