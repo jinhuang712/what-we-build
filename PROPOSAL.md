@@ -97,23 +97,7 @@ Agents changed what is cheap and what gets lost.
 
 **Keep the project's context in docs, and give each fact one home.**
 
-Each doc answers one question. A reader always knows where to look, and a change is made in one place. The agent writes the docs with the user and reads them before it works.
-
-| Doc | The one question it answers |
-|---|---|
-| PROPOSAL (this file) | Why did we start this? |
-| PHILOSOPHY | Why is it this way? |
-| DESIGNS | What must the design always satisfy? |
-| FEATURES | What does it do, and what will it do? |
-| `specs/` | How does each part work? |
-| `specs/decisions/` | Why did we choose this, and what did we not choose? |
-| GOALS | What do we measure? |
-| ROADMAP | When, and how far along? |
-| TODO | What is open? |
-| CHANGELOG | What changed? |
-| README | What is this, and how do I start? |
-
-This repo's own docs use the same set.
+Each doc answers one question, such as why the project was started or what is still open. A reader always knows where to look, and a change is made in one place. The agent writes the docs with the user and reads them before it works.
 
 ## What we want
 

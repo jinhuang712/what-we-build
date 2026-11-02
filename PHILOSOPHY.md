@@ -27,21 +27,12 @@ Two meanings of "context" must be kept apart. The window is what a model can hol
 
 The result is what the project is. The process is why it is this way, and where it is going. A project needs both.
 
-| Half | Doc | Answers |
-|---|---|---|
-| Result | Proposal | Why did we start this? |
-| Result | Philosophy | Why is it this way? |
-| Result | Designs | What must the design always satisfy? |
-| Result | Features | What does it do? |
-| Result | Specs | How does each part work? |
-| Result | README | What is this, and how do I start? |
-| Process | Decisions | Why did we choose this, and what did we not choose? |
-| Process | TODO | What is open? |
-| Process | Change list | What changed in each release? |
-| Process | Goals | What do we measure? |
-| Process | Roadmap | When, and how far along? |
+| Half | Docs |
+|---|---|
+| Result | Proposal · Philosophy · Designs · Features · Specs · README |
+| Process | Decisions · TODO · Changelog · Goals · Roadmap |
 
-The goals and the roadmap are the plan. The plan is the process looking forward, and the decisions and the change list are the process looking back. TODO is the process at this moment.
+The goals and the roadmap are the plan. The plan is the process looking forward, and the decisions and the changelog are the process looking back. TODO is the process at this moment.
 
 The two halves cannot be separated cleanly, and they should not be. A decision is the output of a discussion, and it is also the trace of that discussion. Keeping one keeps the other. The static half and the dynamic half together are the context.
 

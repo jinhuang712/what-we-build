@@ -80,6 +80,7 @@
 
 - This repo's rules for checking by a reader and testing by use move from DESIGNS to AGENTS.md, which already held the rule that the repo is its own first example.
 - This repo's read order adds ROADMAP and GOALS, which the agent scans for where the project stands.
+- This repo's README is the only place that pairs each doc with its question, and PROPOSAL and PHILOSOPHY no longer repeat the list.
 - This repo's features take group numbers, so Resume is now F1.7 and the work rules are F2.1.
 - This repo's roadmap splits the rebuild in this repo from the first use on a new project, so Proven useful is now CP4.
 - This repo's goals take the new IDs, so G6 is now T4 and G2 is a check in B1: Session quality.
