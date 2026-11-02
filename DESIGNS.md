@@ -25,6 +25,8 @@ A doc is committed only after the user approves it, so a committed doc is approv
 
 **Ask:** does this need a file other than the docs to remember it?
 
+- **Decisions:** [008: A resume with nothing to draft looks for drift](specs/decisions/008-resume-looks-for-drift.md) and [009: Git tells a draft from an approved doc](specs/decisions/009-git-tells-a-draft-from-an-approved-doc.md)
+
 ## 3. No dependencies
 
 The skill is Markdown only, so it works anywhere an agent can read files. The cost is that nothing checks the docs by machine.

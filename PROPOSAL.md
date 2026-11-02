@@ -132,7 +132,7 @@ This repo's own docs use the same set.
 
 ## Who it is for
 
-Developers who build a project with a coding agent over many sessions and want its context kept. The first user is the author.
+It is for developers who build a project with a coding agent over many sessions and want its context kept. The first user is the author.
 
 ## Risks
 

@@ -21,6 +21,7 @@ Status: ✅ done · 🟨 in progress · ⬜ not started.
   - ⬜ CP2.3: A resumed session to test F2: Resume
   - ✅ CP2.4: The skill rebuilt around a project's context
   - 🟨 CP2.5: This repo's docs in the new forms
+  - ⬜ CP2.6: Release 0.5.0
 - ⬜ [CP3: Proven useful](#cp3-proven-useful): runs with the skill beat runs without it
   - ⬜ CP3.1: Three realistic project prompts
   - ⬜ CP3.2: Runs with and without the skill
@@ -49,8 +50,9 @@ Status: ✅ done · 🟨 in progress · ⬜ not started.
 | CP2.1 | A second review of this repo's docs, released as 0.3.0 | ✅ | 2026-10-13 |
 | CP2.2 | A new project's 7 core docs drafted and approved with the skill | ⬜ | |
 | CP2.3 | A resumed session to test [F2: Resume](FEATURES.md#f2-resume) | ⬜ | |
-| CP2.4 | The skill rebuilt around a project's context | ✅ | Done in the 0.5.0 work |
+| CP2.4 | The skill rebuilt around a project's context | ✅ | Not yet released |
 | CP2.5 | This repo's docs in the new forms | 🟨 | Under way on 2026-11-02 |
+| CP2.6 | Release 0.5.0 | ⬜ | |
 
 **Exit criteria,** checked on a new project:
 

@@ -22,7 +22,7 @@ Status: ✅ built · 🚧 built with a gap named in its section · ⬜ planned.
   - ✅ [F1.4: Push back](#f14-push-back): the agent says what does not fit and why
   - ✅ [F1.5: See the change](#f15-see-the-change): every change is shown as before and after
   - ✅ [F1.6: Commit after approval](#f16-commit-after-approval): nothing is committed before you approve it
-- ✅ [F2: Resume](#f2-resume): a later sitting picks up where the last one stopped
+- 🚧 [F2: Resume](#f2-resume): a later sitting picks up where the last one stopped, not yet verified
 
 **Keeping the context**
 
@@ -95,7 +95,7 @@ You approve a doc, and the agent commits it. Nothing is committed before you app
 
 ### F2: Resume
 
-**Status:** ✅
+**Status:** 🚧 not yet verified in a resumed session
 
 A session can stop at any point and pick up in a later sitting. Git tells the agent which docs you approved. On a later `/what-we-build` the agent tells you where the session stopped. It continues at the uncommitted draft or at the first doc in the order not yet written. When every change is committed, it reports where the project stands and what changed since each doc's last commit. You then see which doc may have fallen behind.
 
@@ -151,7 +151,7 @@ Every project gets seven core docs: PROPOSAL · PHILOSOPHY · DESIGNS · GOALS �
 | Kind | Docs |
 |---|---|
 | Recommended for every project | TODO · CHANGELOG · `specs/decisions/` |
-| Optional | `specs/` with ARCHITECTURE and UIUX · GLOSSARY · CONTRIBUTING · SECURITY · RUNBOOK |
+| Optional | `specs/` with ARCHITECTURE and UIUX · GLOSSARY · INSTALL · CONTRIBUTING · SECURITY · RUNBOOK |
 
 The recommended docs start once you agree the doc set. A finding or a change then has a home from the start. The optional docs join only when the project needs them.
 

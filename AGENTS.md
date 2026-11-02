@@ -9,7 +9,9 @@ Read these when a sitting starts or after the window was compacted:
 1. [PHILOSOPHY.md](PHILOSOPHY.md): the thought every change agrees with.
 2. [DESIGNS.md](DESIGNS.md): the guidelines a change must meet.
 3. [FEATURES.md](FEATURES.md): what the skill does.
-4. [TODO.md](TODO.md): what is open.
+4. [ROADMAP.md](ROADMAP.md): where the work stands.
+5. [GOALS.md](GOALS.md): what is checked and its last result.
+6. [TODO.md](TODO.md): what is open.
 
 Before a change, also read the doc that owns it.
 

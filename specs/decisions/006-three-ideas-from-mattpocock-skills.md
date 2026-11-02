@@ -20,4 +20,4 @@ We take three ideas and rewrite them in our own words:
 
 ## Consequences
 
-Each idea taken traces to a failure a session showed.
+Each idea taken traces to a failure a session showed. The DECISIONS guide later rewrote the third idea as its own three tests, and the guide is what holds now.
