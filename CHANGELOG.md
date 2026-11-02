@@ -4,107 +4,82 @@
 
 ### Install
 
-- what-we-build installs as a personal skill only, and the plugin is gone.
-- Before, it installed with `claude plugin install` and was typed as `/what-we-build:what-we-build`.
-- Now it is a cloned folder linked into `~/.claude/skills` and typed as `/what-we-build`.
+- what-we-build installs as a personal skill, and the plugin is gone.
+- Before, you installed it with `claude plugin install` and typed `/what-we-build:what-we-build`.
+- Now you clone the repo, link its skill folder into `~/.claude/skills` and type `/what-we-build`.
 - To move over, uninstall the plugin and follow INSTALL.md.
 
-### The agent
+### Working with the agent
 
-- The skill manages a project's context over its whole life, not only its founding docs.
-- The skill starts from an idea, from running code with no docs or from messy docs.
-- A working protocol takes every doc through one loop from discussion to commit.
-- No doc is committed before the user approves it.
-- Each point goes into its doc as soon as it is agreed, so an agreed point is never left only in the window.
-- The agent shows a new doc or a change as its skeleton first, then as a diff of before and after.
+- The skill keeps a project's context over its whole life, not only while the first docs are written.
+- It starts from an idea, from running code with no docs or from messy docs.
+- The agent is a thinking partner that brings its own ideas and challenges yours.
+- It leaves the outcome open until it has discussed it with you.
+- Each point goes into its doc as soon as you agree it, so an agreed point never lives only in the window.
+- You see each change as its skeleton first and then as a diff of before and after.
+- Nothing is committed before you approve it.
+- A commit records your approval, and no doc carries a mark any more.
 - The agent re-reads the whole doc before any edit, even of one word.
-- Before it changes a fact, the agent reads the doc that owns it.
-- A decision is written down when it is made.
-- A finding that cannot be handled now goes to TODO.md at once.
-- When the docs and the code disagree, the agent asks the user instead of picking a side.
-- The agent goes through the project's AGENTS.md with the user and decides with them what it holds.
-- The agent leaves the outcome open until it has discussed it with the user.
-- The agent recommends that the project's AGENTS.md hold the work rules, so they reach every new window.
-- The agent tracks where the project stands by scanning TODO, ROADMAP and GOALS.
+- With every change committed, `/what-we-build` reports where the project stands and which docs fell behind the work since their last commit.
+- Without git, the agent recommends `git init`.
+- The agent goes through your project's AGENTS.md with you and recommends its read order, layout and work rules.
+- The work rules reach every new window through AGENTS.md, even when the skill is not loaded.
+- They say to read the doc that owns a thing first and to record each decision and open item at once.
+- When the docs and the code disagree, the agent asks you instead of picking a side.
 - After a change the agent checks only the rules it touched, and it checks the goals only at a checkpoint or a release.
-- The placement test asks about a design commitment and a rule for the work before it asks about a goal, so a rule no longer lands in GOALS.
-- Without git, the agent recommends `git init`, because a commit records each approval.
-- A report on a committed doc set reads what the project changed after each doc's last commit.
-- When every change is committed, a resume reports where the project stands and what may have drifted since each doc's last commit.
-- A commit records the user's approval, so no doc carries a mark any more.
-- The agent is a thinking partner that brings its own ideas and challenges the user's.
-- SKILL.md is half as long, without the stories from past use.
+
+### The doc set
+
+- Every guide is rewritten, and SKILL.md is half as long.
+- New guides cover `specs/` and `specs/decisions/`, ARCHITECTURE and INSTALL.
+- The UIUX guide is gone, because UIUX is now a spec with `prototype/*.html` beside it.
 - The wording rules move into SKILL.md, and `references/wording.md` is gone.
-
-### Layout
-
-- The default layout puts the reasons at the root.
-- `specs/` holds how each part works and `plan/` holds the goals, the roadmap and the todo list.
+- Decisions move out of DESIGNS and FEATURES into `specs/decisions/`.
+- The placement test asks about a design commitment and a rule for the work before it asks about a goal.
+- When to add an optional doc is said only in SKILL.md, and each guide says when to draft it.
+- An open question lives in TODO.md as a `DISCUSSION`.
+- A skeleton suggests a form, and you change it where the content needs another.
+- The default layout puts the reasons at the root with `specs/` and `plan/` beside them.
 - Before, every doc sat at the root.
+- PROPOSAL writes *Pain points* only when there are pains, each in its own section.
+- PROPOSAL drops *How it works*, *Approach* and *How we know it works* because other docs own them.
+- PHILOSOPHY drops *Reflections* and argues in prose with any structure that shows the thought.
+- FEATURES numbers its groups, so F1 is a group and F1.1 a feature in it.
+- FEATURES, ROADMAP and GOALS open with an ASCII tree of every entry and its status.
+- README opens with a hero image and always has *Install* and *How to use*.
+- README lists its optional sections with the doc that owns each one.
+- ARCHITECTURE opens with a diagram of the whole.
+- CONTRIBUTING and RUNBOOK name a script instead of listing commands.
+
+### Goals and the roadmap
+
+- GOALS holds only the effects the project must have, in six kinds that each have a section.
+- A commitment goes to DESIGNS and a rule for the work goes to AGENTS.md, not to GOALS.
+- Every goal names the want it serves and the checkpoint from which it can run.
+- Every measure, benchmark and comparison writes its formula in a code block.
+- A constraint is a condition the product must always meet.
+- A goal is met only with a measurement or the user's own report.
+- ROADMAP calls its stages checkpoints with IDs such as CP2, and each item has its own status.
+- A checkpoint ends with every goal that can run by then.
+- Status marks sit on a *Status* line and not in headings, so links stay stable.
 
 ### Wording
 
-- No doc holds a code chunk.
-- Explanation is written in short paragraphs with good use of tables, lists and diagrams.
-- A paragraph is one block and a bullet is one sentence, so sentences are no longer stacked one to a line.
+- Explanation is a short paragraph, and separate points are a list with one sentence to a bullet.
+- A bullet holds at most one comma, and a paragraph is not held to a count.
 - An ID is always written with its name, and a list of IDs replaces a range.
-- A link points only to what its doc rests on, and PHILOSOPHY and CHANGELOG link to nothing.
-- README links INSTALL from its install line too, so the line and the rest change together.
-- The comma rule holds for a bullet, and a paragraph is not held to it.
-- A code chunk means code pasted from the project or a command over two lines, and a code block for a formula or a tree is fine.
-- The docs drop session and sitting as terms and speak of the window and the project context instead.
-
-### Doc guides
-
-- Every guide is rewritten.
-- When to add an optional doc is said only in SKILL.md, and each guide says when to draft it.
-- New guides: `specs/`, `specs/decisions/` and `specs/ARCHITECTURE.md`.
-- The UIUX guide is gone, because UIUX is now a spec.
-- Decisions move out of DESIGNS and FEATURES into `specs/decisions/`.
-- PHILOSOPHY drops *Reflections* and the tie-break.
-- PHILOSOPHY argues in prose and uses any structure that shows the thought better.
-- An open question lives in TODO.md as a `DISCUSSION`, and ROADMAP no longer holds one or a *Waiting for design* list.
-- PROPOSAL no longer assumes a pain: *Pain points* sits under *Why it should exist* and is written only when there are pains.
-- PROPOSAL gives each pain its own section, in whatever shape shows its evidence.
-- FEATURES opens with *Summary* instead of *TL;DR*.
-- GOALS holds six kinds of goal, each in its own section.
-- GOALS holds only the effects the skill must have, and each rule lives in its own home.
-- Each goal names the checkpoint from which it can run, and a checkpoint ends with every goal that can run by then.
-- Every measure, benchmark and comparison writes its formula in a code block.
-- A constraint is a condition the product must always meet, and a rule for how the work is done stays out of GOALS.
-- Every goal in the skeleton names the want it serves.
-- A goal is met only with a measurement or the user's own report.
-- GOALS opens with a Summary, and each goal has its own section with an ID that names its kind.
-- ROADMAP calls its stages checkpoints with IDs such as CP2, so they no longer clash with the measures.
-- Status marks move out of headings into a *Status* line, so links to a feature or a checkpoint stay stable.
-- A skeleton suggests a form, and the writer changes it where the content needs another.
-- SKILL.md explains each step in short paragraphs instead of a list of rules, and lists every guide in two tables.
-- The guides set no counts, such as two or three stances or a page per decision.
-- A CHANGELOG groups its entries by area, as its guide always said.
-- CONTRIBUTING and RUNBOOK name a script instead of listing commands.
-- README opens with a hero image and always has *Install* and *How to use*.
-- README lists its optional sections, each with when to add it and the doc that owns it.
-- ARCHITECTURE always opens with a diagram of the whole.
-- New guide: INSTALL.md, for everything beyond the README's one install line.
-- A command longer than two lines belongs in a script.
-- PROPOSAL drops *How it works*, *Approach* and *How we know it works* because other docs own them.
-- FEATURES, ROADMAP and GOALS open with a summary drawn as an ASCII tree, which gives each entry its status and a short description.
-- FEATURES numbers its groups too, so F1 is a group and F1.1 a feature in it.
-- Each roadmap item has its own status.
+- A link points only to what its doc rests on.
+- No doc holds a code chunk, which is code from the project or a command over two lines.
+- A code block is fine for a formula or a tree.
+- The docs speak of the window and the project context instead of sessions and sittings.
+- The guides set no counts such as two or three stances.
 
 ### This repo's docs
 
-- This repo's rules for checking by a reader and testing by use move from DESIGNS to AGENTS.md, which already held the rule that the repo is its own first example.
-- This repo's read order adds ROADMAP and GOALS, which the agent scans for where the project stands.
-- This repo's README is the only place that pairs each doc with its question, and PROPOSAL and PHILOSOPHY no longer repeat the list.
-- This repo's FEATURES describes what the wording rules give the reader, and SKILL.md alone lists them.
-- This repo's FEATURES describes what keeping the context gives the user, and AGENTS.md alone lists the work rules.
-- This repo's decision 002 holds the reason for the manual start, and FEATURES links to it.
-- This repo's goals name the checkpoint from which each one can run, and its roadmap lists the 0.4.0 release.
-- This repo's features take group numbers, so Resume is now F1.7 and the work rules are F2.1.
-- This repo's roadmap splits the rebuild in this repo from the first use on a new project, so Proven useful is now CP4.
-- This repo's goals take the new IDs, so G6 is now T4 and G2 is a check in B1: Run quality.
-- A threshold keeps every doc within one Claude Code read, in place of the count of core doc lines.
+- This repo's docs follow every change above.
+- Its goals keep only effects, and the checks for its rules moved to AGENTS.md.
+- Its work rules moved from DESIGNS to AGENTS.md.
+- Its features and its roadmap are numbered by group and by checkpoint.
 
 ## 0.4.0 — 2026-10-18
 
