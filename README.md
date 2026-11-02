@@ -1,73 +1,81 @@
-<!-- what-we-build: drafted 2026-10-14 -->
+<!-- what-we-build: approved 2026-11-02 -->
 
 # what-we-build
 
-> Talk a project into being, one document at a time.
+![what-we-build](assets/hero.svg)
 
-what-we-build is a Claude Code skill for the start of a project. It writes no document until you have agreed on its key points.
+![License: MIT](https://img.shields.io/badge/license-MIT-green) ![Claude Code skill](https://img.shields.io/badge/Claude%20Code-skill-orange)
 
-Coding agents write documents faster than people think, and they fill every gap with a guess that sounds sure. This skill slows the writing down to the speed of your decisions: you talk each document through first, and the agent writes down what you agreed.
+> Keep a project's context in docs.
 
-> **Status:** how far it has been used, and what comes next, is in [ROADMAP.md](ROADMAP.md).
+what-we-build is a Claude Code skill that keeps a project's context in docs.
+You and the agent work out what to build and why.
+The skill writes it down so it outlives every session.
+It writes no doc until you agree on its key points.
+
+> [!NOTE]
+> How far it has been used and what comes next is in [ROADMAP.md](ROADMAP.md).
 
 ## What it does
 
-- **Talks before it writes.** It discusses and brainstorms with you, recommends a choice when one is ready, and drafts a doc only after you agree on its key points.
-- **Pushes back** on goals without numbers, and on principles that name features.
-- **Gives every fact one home:** seven documents, each answering one question.
-- **Resumes** where you stopped.
+- 💬 **Talks before it writes:** it discusses each doc with you and drafts it only after you agree.
+- 📍 **Starts from where you are:** an idea, running code or messy docs.
+- 🏠 **Gives every fact one home:** each doc answers one question.
+- 🧠 **Keeps the context while you work:** the agent reads the owning doc first and records each decision at once.
+- ⏯️ **Resumes where you stopped.**
 
-## What you get
-
-| Doc | The question it answers |
-|---|---|
-| [PROPOSAL](PROPOSAL.md) | Why did we start this? |
-| [PHILOSOPHY](PHILOSOPHY.md) | Why is it this way? |
-| [DESIGNS](DESIGNS.md) | How is it built, and why that way? |
-| [GOALS](GOALS.md) | What do we measure? |
-| [FEATURES](FEATURES.md) | What does it do, and what will it do? |
-| [ROADMAP](ROADMAP.md) | When, and how far along? |
-| README | What is this, and how do I start? |
-
-This repo's own docs were written with the skill, so each link is an example of its output.
+The detail is in [FEATURES.md](FEATURES.md).
 
 ## Install
 
-### As a plugin
-
 ```sh
-claude plugin marketplace add jinhuang712/what-we-build
-claude plugin install what-we-build@what-we-build
+claude plugin marketplace add jinhuang712/what-we-build && claude plugin install what-we-build@what-we-build
 ```
 
-The command is then `/what-we-build:what-we-build`, because a plugin's skills carry the plugin's name (not yet verified with this plugin).
+Other ways, updates and removal are in [INSTALL.md](INSTALL.md).
 
-### As a personal skill
+## How to use
 
-```sh
-git clone https://github.com/jinhuang712/what-we-build.git ~/dev/skills/what-we-build
-ln -s ~/dev/skills/what-we-build/skills/what-we-build ~/.claude/skills/what-we-build
+1. Open Claude Code in an empty folder.
+2. Type `/what-we-build:what-we-build` and say in a sentence what you want to build.
+3. Talk the proposal through until its key points are agreed.
+4. Read the draft as before and after, then approve it.
+5. The agent commits it and moves on to the philosophy.
+
+The skill also starts from running code or messy docs, and it resumes where you stopped.
+
+## Architecture
+
+```text
+/what-we-build ──▶ SKILL.md ──▶ references/ ──▶ your docs
 ```
 
-The command is then `/what-we-build`. Start a new Claude Code session after you install it.
+The full map is in [specs/ARCHITECTURE.md](specs/ARCHITECTURE.md).
 
-## When to reach for it
+## Docs
 
-| Situation | Type |
+This repo's docs were written with the skill, so each one is an example of its output.
+
+| Doc | Answers |
 |---|---|
-| You are starting a project | `/what-we-build` |
-| You stopped halfway | `/what-we-build resume` |
-
-It starts only when you type it. Installed as a plugin, type `/what-we-build:what-we-build` in place of `/what-we-build` (not yet verified).
+| [PROPOSAL](PROPOSAL.md) | Why did we start this? |
+| [PHILOSOPHY](PHILOSOPHY.md) | Why is it this way? |
+| [DESIGNS](DESIGNS.md) | What must the design always satisfy? |
+| [GOALS](GOALS.md) | What do we check, and when? |
+| [FEATURES](FEATURES.md) | What does it do, and what will it do? |
+| [ROADMAP](ROADMAP.md) | When, and how far along? |
+| [Architecture](specs/ARCHITECTURE.md) | How do the parts fit together? |
+| [Decisions](specs/decisions/README.md) | Why did we choose this, and what did we not choose? |
+| [TODO](TODO.md) | What is open? |
+| [CHANGELOG](CHANGELOG.md) | What changed? |
+| [INSTALL](INSTALL.md) | How do I install, update or remove it? |
+| [AGENTS](AGENTS.md) | What must a coding agent working here know? |
 
 ## Known limits
 
-- Its wording rules are written for English docs. Rules for other languages are on the *Later* list.
-- It has been tested by hand, not yet with evals.
-
-## More documents
-
-[Changelog](CHANGELOG.md) · [Agents](AGENTS.md) (for coding agents working here)
+- The wording rules are written for English docs.
+- It has been tested by hand and not yet with evals.
+- The work rules reach the agent only while the skill is loaded ([FEATURES.md → F5](FEATURES.md#f5--keep-the-context-while-you-work-)).
 
 ## License
 
