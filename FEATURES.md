@@ -95,6 +95,8 @@ You can stop at any point and pick up later. Git tells the agent which docs you 
 
 The docs stay true as the work goes on, not only while they are first written.
 
+- **Stance:** [What should a project manage?](PHILOSOPHY.md#what-should-a-project-manage)
+
 ### F2.1: Keep the context while you work
 
 **Status:** ✅

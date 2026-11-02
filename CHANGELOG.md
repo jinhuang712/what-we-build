@@ -72,6 +72,7 @@
 - A bullet holds at most one comma, and a paragraph is not held to a count.
 - An ID is always written with its name, and a list of IDs replaces a range.
 - A link points only to what its doc rests on.
+- A feature links up to what it rests on and down to everything that builds it, including its UIUX section and its prototype page.
 - No doc holds a code chunk, which is code from the project or a command over two lines.
 - A code block is fine for a formula or a tree.
 - The docs speak of the window and the project context instead of sessions and sittings.

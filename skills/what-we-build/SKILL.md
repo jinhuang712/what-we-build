@@ -144,7 +144,7 @@ A link points to what the doc rests on, never the other way. A doc still makes i
 | `PHILOSOPHY.md` and `CHANGELOG.md` | nothing |
 | `PROPOSAL.md` | rarely anything |
 | `DESIGNS.md` | a few to PHILOSOPHY, and down to its decisions and specs |
-| `FEATURES.md` | a few to DESIGNS, and down to its decisions and specs |
+| `FEATURES.md` | the DESIGNS points it rests on, a PHILOSOPHY stance only where it forces a feature, and down to its UIUX section, prototype page, specs and decisions |
 | `GOALS.md`, `ROADMAP.md` and `TODO.md` | each other, FEATURES and DESIGNS |
 | `specs/` and `specs/decisions/` | up to the doc they serve, never beside them |
 | `README.md` | every doc once in *Docs*, and `INSTALL.md` again from *Install* |
