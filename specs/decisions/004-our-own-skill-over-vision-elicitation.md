@@ -1,5 +1,3 @@
-<!-- what-we-build: approved 2026-11-02 -->
-
 # 004. Our own skill over jig's `vision-elicitation`
 
 Decided: 2026-10-12

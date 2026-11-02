@@ -17,7 +17,8 @@
 - The agent leaves the outcome open until it has discussed it with the user.
 - The agent recommends that the project's AGENTS.md hold the work rules, so they reach every sitting.
 - The agent tracks where the project stands by scanning TODO, ROADMAP and GOALS.
-- When every doc is approved, a resume reports where the project stands and what may have drifted since each approval.
+- When every change is committed, a resume reports where the project stands and what may have drifted since each doc's last commit.
+- No doc carries a mark any more. A commit records the user's approval, and an uncommitted change is a draft.
 - The agent is a thinking partner that brings its own ideas and challenges the user's.
 - No doc holds a code chunk.
 - The default layout puts the reasons at the root.

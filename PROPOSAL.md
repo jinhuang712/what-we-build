@@ -1,5 +1,3 @@
-<!-- what-we-build: approved 2026-11-02 -->
-
 # what-we-build — Proposal
 
 > Keep a project's context in docs.

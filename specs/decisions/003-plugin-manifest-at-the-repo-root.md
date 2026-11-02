@@ -1,5 +1,3 @@
-<!-- what-we-build: approved 2026-11-02 -->
-
 # 003. The plugin manifest sits at the repo root
 
 Decided: 2026-10-12

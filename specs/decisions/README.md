@@ -1,7 +1,7 @@
 # Decisions
 
 | Decision | Decided |
-|---|---|---|
+|---|---|
 | [001: One skill holds every start](001-one-skill-for-every-start.md) | 2026-10-12 |
 | [002: The skill starts only by hand](002-manual-start.md) | 2026-10-12 |
 | [003: The plugin manifest sits at the repo root](003-plugin-manifest-at-the-repo-root.md) | 2026-10-12 |
@@ -10,3 +10,4 @@
 | [006: Three ideas from mattpocock/skills over the whole guide](006-three-ideas-from-mattpocock-skills.md) | 2026-10-13 |
 | [007: DESIGNS comes third, before GOALS and FEATURES](007-designs-third.md) | 2026-10-14 |
 | [008: A resume with nothing to draft looks for drift](008-resume-looks-for-drift.md) | 2026-11-02 |
+| [009: Git tells a draft from an approved doc](009-git-tells-a-draft-from-an-approved-doc.md) | 2026-11-02 |

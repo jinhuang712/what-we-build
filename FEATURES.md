@@ -1,5 +1,3 @@
-<!-- what-we-build: approved 2026-11-02 -->
-
 # Features
 
 What what-we-build does today, and what it will and won't do. Each feature is described from the user's side: what you type, what you see and what you decide. How far each feature has been used in real life is in [ROADMAP.md](ROADMAP.md).
@@ -25,8 +23,7 @@ Status: ✅ built · 🚧 built with a gap named in its section · ⬜ planned.
 | Push back | the agent says what does not fit and why | [F1: Start and talk each doc through](#f1-start-and-talk-each-doc-through) | ✅ |
 | See the change | every change is shown as before and after | [F1: Start and talk each doc through](#f1-start-and-talk-each-doc-through) | ✅ |
 | Commit after approval | a doc is committed only after you approve it | [F1: Start and talk each doc through](#f1-start-and-talk-each-doc-through) | ✅ |
-| Marks | a hidden mark on each doc's first line says `drafted` or `approved` | [F2: Resume](#f2-resume) | ✅ |
-| Resume | a later sitting continues at the first doc not approved | [F2: Resume](#f2-resume) | ✅ |
+| Resume | a later sitting continues at the draft or the first doc not yet written | [F2: Resume](#f2-resume) | ✅ |
 
 **Keeping the context**
 
@@ -62,17 +59,16 @@ You bring an idea, a codebase or a pile of docs. The skill reads the folder and 
 | An idea and nothing written | discussing the idea with you |
 | Running code and no docs | reading the code and then discussing each doc |
 | Messy docs | sorting them into the doc set and then discussing the gaps |
-| Docs with marks and not all approved | resuming ([F2: Resume](#f2-resume)) |
-| Docs with marks and all approved | reporting where the project stands and what may have drifted ([F2: Resume](#f2-resume)) |
+| The doc set with uncommitted changes | resuming ([F2: Resume](#f2-resume)) |
+| The doc set with every change committed | reporting where the project stands and what may have drifted ([F2: Resume](#f2-resume)) |
 | Something that disagrees with your request | asking you |
 
 First you agree the doc set and where the docs live. You go through the project's `AGENTS.md` with the agent and decide together what it should hold. The agent recommends the read order, the layout and the work rules of [F5: Keep the context while you work](#f5-keep-the-context-while-you-work). Then each doc goes through the same loop:
 
 1. You talk it through until its key points are agreed.
-2. The agent drafts it and marks it `drafted`.
+2. The agent drafts it.
 3. You see the change as before and after.
-4. You approve it, and the mark becomes `approved`.
-5. The agent commits it.
+4. You approve it, and the agent commits it.
 
 The docs come in order: PROPOSAL → PHILOSOPHY → DESIGNS → GOALS → FEATURES → ROADMAP → README. Each one builds on the ones before it, so you never answer the same question twice. Every choice comes with a recommendation. The agent pushes back when something does not fit and keeps it up until you decide.
 
@@ -83,10 +79,10 @@ The docs come in order: PROPOSAL → PHILOSOPHY → DESIGNS → GOALS → FEATUR
 
 **Status:** ✅
 
-A session can stop at any point and pick up in a later sitting. Each drafted doc carries a mark on its first line that does not show when rendered. The mark becomes `approved` when you approve the doc. It goes back to `drafted` whenever the doc is edited again. On a later `/what-we-build` the agent reads the marks and tells you where the session stopped. It continues at the first doc in the order that is not approved. When every doc is approved, it reports where the project stands and what changed since each approval. You then see which doc may have fallen behind. A doc that grows one entry at a time carries no mark, such as TODO or CHANGELOG.
+A session can stop at any point and pick up in a later sitting. Git tells the agent which docs you approved. On a later `/what-we-build` the agent tells you where the session stopped. It continues at the uncommitted draft or at the first doc in the order not yet written. When every change is committed, it reports where the project stands and what changed since each doc's last commit. You then see which doc may have fallen behind.
 
 - **Design:** [DESIGNS 2: The docs are the state](DESIGNS.md#2-the-docs-are-the-state)
-- **Why:** [008: A resume with nothing to draft looks for drift](specs/decisions/008-resume-looks-for-drift.md)
+- **Why:** [008: A resume with nothing to draft looks for drift](specs/decisions/008-resume-looks-for-drift.md) and [009: Git tells a draft from an approved doc](specs/decisions/009-git-tells-a-draft-from-an-approved-doc.md)
 
 ## Keeping the context
 

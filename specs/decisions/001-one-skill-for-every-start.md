@@ -1,5 +1,3 @@
-<!-- what-we-build: approved 2026-11-02 -->
-
 # 001. One skill holds every start
 
 Decided: 2026-10-12

@@ -1,5 +1,3 @@
-<!-- what-we-build: approved 2026-10-31 -->
-
 # Philosophy
 
 A project manages one thing: its context.

@@ -1,5 +1,3 @@
-<!-- what-we-build: approved 2026-11-02 -->
-
 # 002. The skill starts only by hand
 
 Decided: 2026-10-12

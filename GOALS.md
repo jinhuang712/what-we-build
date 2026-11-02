@@ -1,5 +1,3 @@
-<!-- what-we-build: approved 2026-11-02 -->
-
 # Goals
 
 Each goal ties to a want or a risk in [PROPOSAL.md](PROPOSAL.md). A goal met on one project stays open for another until it is checked there, and a status changes only with a check and its date. For goals checked on this repo, the reader who checks did not write the change unless the status says "by the author". The audit of 2026-11-02 ran before the wording pass of that day, which joined lines but changed no facts.
@@ -131,14 +129,13 @@ A fact written out in full in two docs drifts.
 
 **Checked:** each checkpoint.
 
-**Status:** ❌ 2026-11-02 by independent audit, with 6 facts:
+**Status:** ❌ 2026-11-02 by independent audit, with 5 facts left after the doc mark was removed:
 
 - The question each doc answers, in PROPOSAL, PHILOSOPHY and README.
 - The work rules, in [F5: Keep the context while you work](FEATURES.md#f5-keep-the-context-while-you-work) and AGENTS.md.
 - The install commands, in README and INSTALL.
 - The failure stories, in PROPOSAL and PHILOSOPHY.
 - The reason for the manual start, in FEATURES, PROPOSAL and [002: The skill starts only by hand](specs/decisions/002-manual-start.md).
-- The doc mark, in [DESIGNS 2: The docs are the state](DESIGNS.md#2-the-docs-are-the-state) and [F2: Resume](FEATURES.md#f2-resume).
 
 #### T2: Goals that can be checked
 

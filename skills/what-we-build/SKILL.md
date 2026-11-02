@@ -40,17 +40,17 @@ Read the project folder first, and start from what it holds.
 | An idea and nothing written | Discussing the idea with the user |
 | Running code and no docs | Reading the code, then discussing each doc |
 | Messy docs | Sorting them into the doc set, then discussing the gaps |
-| Docs with marks and not all approved | Resuming |
-| Docs with marks and all approved | Reporting where the project stands and what may have drifted |
+| The doc set with uncommitted changes | Resuming |
+| The doc set with every change committed | Reporting where the project stands and what may have drifted |
 
 - When the folder and the request disagree, ask.
 - Agree the doc set first, and then where the docs live.
 - Go through the project's `AGENTS.md` with the user, and decide together what it holds.
 - Recommend the read order, the layout and the rules in *While you work*.
 
-To resume, read every doc and its mark. Then tell the user where the session stopped. Re-read the approved docs before you continue at the first doc in the order that is not approved.
+To resume, read every doc and run `git status`. A doc with uncommitted changes is a draft the user has not approved. Tell the user where the session stopped. Re-read the committed docs before you continue at that draft, or at the first doc in the order not yet written.
 
-When every doc is approved, report where the project stands. Scan `TODO.md`, `ROADMAP.md` and `GOALS.md` for it. Then look at what changed since the date in each doc's mark. Point out where a doc may have fallen behind. Ask the user what to work on next.
+When every change is committed, report where the project stands. Scan `TODO.md`, `ROADMAP.md` and `GOALS.md` for it. Then look at what changed since each doc's last commit. Point out where a doc may have fallen behind. Ask the user what to work on next.
 
 ## The doc set
 
@@ -102,16 +102,16 @@ Work through the core docs in order, since each builds on the ones before it:
 
 Write a doc only after its key points are agreed. Then every doc goes through the same loop:
 
-1. Draft it with a `drafted` mark.
+1. Draft it.
 2. Show the user the change as before and after.
-3. Wait for the user to approve it, then mark it `approved`.
+3. Wait for the user to approve it.
 4. Commit it, never before it is approved.
 
-- Only the user approves, and any later edit sets the mark back to `drafted`.
+- Only the user approves, and any later edit is a draft until they approve it.
 - Re-read the whole doc before any edit, even of one word.
 - At the end of a session, report each doc's status and the open questions.
 
-The mark is the doc's first line, such as `<!-- what-we-build: approved 2026-10-12 -->`. A doc that grows one entry at a time carries no mark, such as TODO or CHANGELOG.
+A commit records the approval, so git tells a draft from an approved doc. No doc carries a mark of its own.
 
 ## Where a fact goes
 

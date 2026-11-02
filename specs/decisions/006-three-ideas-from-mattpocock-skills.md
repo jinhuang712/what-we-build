@@ -1,5 +1,3 @@
-<!-- what-we-build: approved 2026-11-02 -->
-
 # 006. Three ideas from mattpocock/skills over the whole guide
 
 Decided: 2026-10-13

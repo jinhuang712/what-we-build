@@ -1,5 +1,3 @@
-<!-- what-we-build: approved 2026-11-02 -->
-
 # Architecture
 
 what-we-build is a skill: Markdown instructions that a coding agent reads. The agent reads them when the user types `/what-we-build`. Then it writes and keeps a project's docs with the user.

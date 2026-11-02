@@ -1,5 +1,3 @@
-<!-- what-we-build: approved 2026-11-02 -->
-
 # Install
 
 You need [Claude Code](https://docs.claude.com/en/docs/claude-code/overview).

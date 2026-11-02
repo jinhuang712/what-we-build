@@ -1,5 +1,3 @@
-<!-- what-we-build: approved 2026-11-02 -->
-
 # Roadmap
 
 Where what-we-build stands and what comes next. Each checkpoint is a usable or proven state of the skill. Its exit criteria point to [GOALS.md](GOALS.md), and it ends with a pass over the whole goal sheet.
@@ -42,7 +40,7 @@ Status: ✅ done · 🟨 in progress · ⬜ not started.
 | CP2.0 | A first review of this repo's docs with the skill, released as 0.2.0 | 2026-10-13 |
 | CP2.1 | A second review of this repo's docs, released as 0.3.0 | 2026-10-13 |
 | CP2.2 | A new project's 7 core docs drafted and approved with the skill | |
-| CP2.3 | A resumed session to test the marks | |
+| CP2.3 | A resumed session to test [F2: Resume](FEATURES.md#f2-resume) | |
 | CP2.4 | The skill rebuilt around a project's context | Done in the 0.5.0 work |
 | CP2.5 | This repo's docs in the new forms | Under way on 2026-11-02 |
 

@@ -1,5 +1,3 @@
-<!-- what-we-build: approved 2026-11-02 -->
-
 # 007. DESIGNS comes third, before GOALS and FEATURES
 
 Decided: 2026-10-14

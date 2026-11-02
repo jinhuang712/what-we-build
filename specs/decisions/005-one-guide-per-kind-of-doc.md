@@ -1,5 +1,3 @@
-<!-- what-we-build: approved 2026-11-02 -->
-
 # 005. One guide file per kind of doc
 
 Decided: 2026-10-13

@@ -1,5 +1,3 @@
-<!-- what-we-build: approved 2026-11-02 -->
-
 # Designs
 
 What goes in is a project folder and a conversation with the user. What comes out is a set of Markdown docs that hold the project's context. In between is the skill: Markdown instructions that an agent reads. What the skill does for the user is in [FEATURES.md](FEATURES.md).
@@ -7,7 +5,7 @@ What goes in is a project folder and a conversation with the user. What comes ou
 what-we-build is designed around 9 guidelines:
 
 1. **A short core with detail on demand:** `SKILL.md` holds what every session needs and points to the guides.
-2. **The docs are the state:** a mark on each doc's first line says drafted or approved.
+2. **The docs are the state:** with git beside them, they hold where a session stopped.
 3. **No dependencies:** the skill is Markdown only.
 4. **Our own words over borrowed text:** methods from other guides are rewritten and never copied.
 5. **Made-up examples over real projects:** every example is invented or taken from this repo.
@@ -26,7 +24,7 @@ The agent reads `SKILL.md` in every session, so it holds only what every session
 
 ## 2. The docs are the state
 
-A mark on each doc's first line says whether it is drafted or approved. No separate file records where a session stopped. The cost is that points agreed for a doc not yet drafted are lost when the sitting ends.
+A doc is committed only after the user approves it, so a committed doc is approved and an uncommitted change is a draft. Neither a mark nor a separate file records where a session stopped. A project without git cannot tell the two apart. The cost is that points agreed for a doc not yet drafted are lost when the sitting ends.
 
 **Ask:** does this need a file other than the docs to remember it?
 
