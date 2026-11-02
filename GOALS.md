@@ -1,6 +1,6 @@
 # Goals
 
-Each goal ties to a want or a risk in the proposal. A goal met on one project stays open for another until it is checked there, and a status changes only with a check and its date. For goals checked on this repo, the reader who checks did not write the change unless the status says "by the author". The audit of 2026-11-02 ran before the wording pass of that day, which joined lines but changed no facts.
+Each goal is an effect the skill must have, tied to a want or a risk in the proposal. A goal met on one project stays open for another until it is checked there, and a status changes only with a check and its date. For goals checked on this repo, the reader who checks did not write the change unless the status says "by the author".
 
 ## Summary
 
@@ -12,7 +12,7 @@ Each goal ties to a want or a risk in the proposal. A goal met on one project st
 **Measures**
 
 - [M1: Reads before it changes](#m1-reads-before-it-changes): not measured yet
-- [M2: Sentences over the comma rule](#m2-sentences-over-the-comma-rule): 0 on 2026-11-02
+- [M4: Docs that fell behind](#m4-docs-that-fell-behind): not measured yet
 
 **Benchmarks**
 
@@ -24,22 +24,8 @@ Each goal ties to a want or a risk in the proposal. A goal met on one project st
 
 **Thresholds**
 
-- ❌ [T1: One home per fact](#t1-one-home-per-fact): no fact written out in full in two docs
-- ✅ [T2: Goals that can be checked](#t2-goals-that-can-be-checked): every goal has a check
-- ✅ [T3: Decisions with reasons](#t3-decisions-with-reasons): every decision says what was not chosen
 - ✅ [T4: A short skill](#t4-a-short-skill): `SKILL.md` within 500 lines
-- ✅ [T5: Links that work](#t5-links-that-work): no broken link or anchor
-- ⬜ [T6: Manual start only](#t6-manual-start-only): no automatic start
-- ✅ [T7: Guidelines that can be tested](#t7-guidelines-that-can-be-tested): every guideline rejects a design a reader can name
 - ✅ [T8: A doc read in one go](#t8-a-doc-read-in-one-go): every doc within one Claude Code read
-
-**Constraints**
-
-- ⬜ [R1: No draft before agreement](#r1-no-draft-before-agreement): no draft before agreement and no commit before approval
-- ✅ [R2: No dependencies](#r2-no-dependencies): the skill is Markdown only
-- ⬜ [R3: Our own words](#r3-our-own-words): methods from other guides are rewritten
-- ✅ [R4: Made-up examples](#r4-made-up-examples): no example names another project
-- ✅ [R5: No code chunks](#r5-no-code-chunks): no doc pastes code
 
 ## Goals
 
@@ -75,21 +61,25 @@ What was decided stays known after the window is compacted.
 
 The agent reads the doc that owns a thing before it changes that thing.
 
+**Want:** an agent that reads before it works.
+
 **How:** the share of changes in sampled sittings made after reading the owning doc.
 
 **Checked:** each checkpoint.
 
 **Last value:** not measured.
 
-#### M2: Sentences over the comma rule
+#### M4: Docs that fell behind
 
-Short sentences keep the docs easy to read.
+At a checkpoint the docs still say what the project is.
 
-**How:** count the sentences outside tables and code with two or more commas in the core docs except PHILOSOPHY.
+**Want:** the risk that the docs fall behind the work.
 
-**Checked:** every change.
+**How:** a reader who did not write the change lists every claim in the docs that the work now contradicts.
 
-**Last value:** 0 on 2026-11-02 by the author, against 34 lines at v0.4.0.
+**Checked:** each checkpoint.
+
+**Last value:** not measured.
 
 ### Benchmarks
 
@@ -97,12 +87,20 @@ Short sentences keep the docs easy to read.
 
 Sessions with the skill are scored on a fixed set of prompts.
 
-**Problem set:** the three realistic project prompts of [CP3: Proven useful](ROADMAP.md#cp3-proven-useful), each run scored against:
+**Want:** the wants and risks in the proposal that only a real session shows.
 
-- [T1: One home per fact](#t1-one-home-per-fact)
-- [T2: Goals that can be checked](#t2-goals-that-can-be-checked)
-- [T3: Decisions with reasons](#t3-decisions-with-reasons)
-- [R1: No draft before agreement](#r1-no-draft-before-agreement)
+**Problem set:** the three realistic project prompts of [CP3: Proven useful](ROADMAP.md#cp3-proven-useful).
+
+**Scored on:** a reader who did not run the session checks each of these:
+
+- Every fact has one home.
+- Every goal has a check.
+- Every decision says what was not chosen and why.
+- No doc was drafted before its key points were agreed or committed before it was approved.
+- A reader who did not write a doc can retell its main points after one read.
+- The user recognizes each doc as what was decided.
+- Each doc's content came from the talk and not from the blanks of a skeleton.
+- Each doc has a job in that project.
 
 **Checked:** each checkpoint.
 
@@ -114,6 +112,8 @@ Sessions with the skill are scored on a fixed set of prompts.
 
 The skill earns its place only if it beats the same agent without it.
 
+**Want:** the risk that the skill is only a faster way to get confident text.
+
 **Against:** the same agent without the skill.
 
 **How:** the prompts of [B1: Session quality](#b1-session-quality) run both ways and scored the same way.
@@ -124,98 +124,25 @@ The skill earns its place only if it beats the same agent without it.
 
 ### Thresholds
 
-#### T1: One home per fact
-
-A fact written out in full in two docs drifts.
-
-**Limit:** 0 facts written out in full in two docs.
-
-**How:** an independent audit lists every such fact.
-
-**Checked:** each checkpoint.
-
-**Status:** ❌ 2026-11-02 by independent audit, with 6 facts. The author fixed two of them later, which leaves 4:
-
-- The question each doc answers, in PROPOSAL, PHILOSOPHY and README.
-- The work rules, in [F5: Keep the context while you work](FEATURES.md#f5-keep-the-context-while-you-work) and AGENTS.md.
-- The install commands, in README and INSTALL.
-- The reason for the manual start, in FEATURES, PROPOSAL and decision 002: The skill starts only by hand.
-
-#### T2: Goals that can be checked
-
-A goal nobody can check is a wish.
-
-**Limit:** 0 goals without a check.
-
-**How:** read GOALS.md goal by goal.
-
-**Checked:** every change.
-
-**Status:** ✅ 2026-11-02 by independent audit.
-
-#### T3: Decisions with reasons
-
-A decision that hides the road not taken gets undone.
-
-**Limit:** 0 decisions without what was not chosen and why.
-
-**How:** read every file in `specs/decisions/`.
-
-**Checked:** every change.
-
-**Status:** ✅ 2026-11-02 by independent audit.
-
 #### T4: A short skill
 
 `SKILL.md` is read in every session, so it stays short enough to read in full.
+
+**Want:** the risk that the skill itself grows too long.
 
 **Limit:** `SKILL.md` ≤ 500 lines.
 
 **How:** `wc -l skills/what-we-build/SKILL.md`
 
-**Checked:** every change.
-
-**Status:** ✅ 171 lines on 2026-11-02 by the author.
-
-#### T5: Links that work
-
-A broken link sends the reader nowhere.
-
-**Limit:** 0 broken relative links and anchors.
-
-**How:** a reader follows every relative link and anchor.
-
-**Checked:** every change.
-
-**Status:** ✅ 2026-11-02 by independent audit.
-
-#### T6: Manual start only
-
-The skill loads only when the user types `/what-we-build`.
-
-**Limit:** 0 automatic starts.
-
-**How:** watch sittings for a load without `/what-we-build`.
-
 **Checked:** each checkpoint.
 
-**Status:** ⬜
-
-#### T7: Guidelines that can be tested
-
-A guideline that rejects nothing guides nothing.
-
-**Limit:** 0 guidelines a reader cannot test.
-
-**How:** a reader names a design that each DESIGNS guideline rejects.
-
-**Checked:** each checkpoint.
-
-**Status:** ✅ 2026-11-02 by independent audit.
+**Status:** ✅ 195 lines on 2026-11-02 by the author.
 
 #### T8: A doc read in one go
 
 The agent re-reads a whole doc before any edit, so one read must return all of it.
+
+**Want:** docs a person can read.
 
 **Limit:** every doc within 25000 tokens and 2000 lines, the default limits of one Claude Code read.
 
@@ -224,65 +151,3 @@ The agent re-reads a whole doc before any edit, so one read must return all of i
 **Checked:** each checkpoint.
 
 **Status:** ✅ 2026-11-02 by the author, with the largest doc CHANGELOG at about 4000 tokens.
-
-### Constraints
-
-#### R1: No draft before agreement
-
-No doc is drafted before its key points are agreed, and none is committed before it is approved.
-
-**Rule:** the loop in *Writing a doc* of `SKILL.md`.
-
-**How:** read the session for each doc's first write and its commit.
-
-**Checked:** every change.
-
-**Status:** ⬜ last not met 2026-10-13.
-
-#### R2: No dependencies
-
-The skill stays plain Markdown.
-
-**Rule:** [DESIGNS 3: No dependencies](DESIGNS.md#3-no-dependencies)
-
-**How:** `skills/what-we-build/` holds only Markdown files.
-
-**Checked:** every change.
-
-**Status:** ✅ 2026-11-02 by independent audit.
-
-#### R3: Our own words
-
-Methods from other guides are rewritten and never copied.
-
-**Rule:** [DESIGNS 4: Our own words over borrowed text](DESIGNS.md#4-our-own-words-over-borrowed-text)
-
-**How:** no passage in `skills/` is copied from a source.
-
-**Checked:** every change.
-
-**Status:** ⬜
-
-#### R4: Made-up examples
-
-No example points at another project.
-
-**Rule:** [DESIGNS 5: Made-up examples over real projects](DESIGNS.md#5-made-up-examples-over-real-projects)
-
-**How:** no example in `skills/` names or quotes another project.
-
-**Checked:** every change.
-
-**Status:** ✅ 2026-11-02 by independent audit.
-
-#### R5: No code chunks
-
-A doc explains and links, and never pastes code.
-
-**Rule:** the *Wording* section of `SKILL.md`.
-
-**How:** no doc in this repo pastes code or a command longer than two lines.
-
-**Checked:** every change.
-
-**Status:** ✅ 2026-11-02 by independent audit, with one doubt: the README install line joins two commands with `&&`.

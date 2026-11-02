@@ -37,10 +37,7 @@ Status: ✅ done · 🟨 in progress · ⬜ not started.
 | CP1.4 | This repo's docs in the skill's own format | ✅ | |
 | CP1.5 | Public repo and plugin manifest at version 0.1.0 | ✅ | 2026-10-12 |
 
-**Exit criteria:**
-
-- [T4: A short skill](GOALS.md#t4-a-short-skill)
-- [T5: Links that work](GOALS.md#t5-links-that-work)
+**Exit criteria:** [T4: A short skill](GOALS.md#t4-a-short-skill)
 
 ## CP2: First real use
 
@@ -58,11 +55,8 @@ Status: ✅ done · 🟨 in progress · ⬜ not started.
 **Exit criteria,** checked on a new project:
 
 - [O1: One sitting](GOALS.md#o1-one-sitting)
-- [T1: One home per fact](GOALS.md#t1-one-home-per-fact)
-- [T2: Goals that can be checked](GOALS.md#t2-goals-that-can-be-checked)
-- [T3: Decisions with reasons](GOALS.md#t3-decisions-with-reasons)
-- [T6: Manual start only](GOALS.md#t6-manual-start-only)
-- [R1: No draft before agreement](GOALS.md#r1-no-draft-before-agreement)
+- [O2: Context survives compaction](GOALS.md#o2-context-survives-compaction)
+- [M4: Docs that fell behind](GOALS.md#m4-docs-that-fell-behind)
 
 ## CP3: Proven useful
 
@@ -73,4 +67,4 @@ Status: ✅ done · 🟨 in progress · ⬜ not started.
 | CP3.1 | Three realistic project prompts | ⬜ | The problem set of [B1: Session quality](GOALS.md#b1-session-quality) |
 | CP3.2 | Runs with and without the skill | ⬜ | Scored as [C1: With and without the skill](GOALS.md#c1-with-and-without-the-skill) |
 
-**Exit criteria:** [B1: Session quality](GOALS.md#b1-session-quality) and [C1: With and without the skill](GOALS.md#c1-with-and-without-the-skill), with the runs with the skill ahead on every goal that B1 scores.
+**Exit criteria:** [B1: Session quality](GOALS.md#b1-session-quality) and [C1: With and without the skill](GOALS.md#c1-with-and-without-the-skill), with the runs with the skill ahead on every check that B1 scores.

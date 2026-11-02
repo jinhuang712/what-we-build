@@ -161,6 +161,9 @@ The docs stay true only if every sitting keeps them true. These rules belong in 
 - When the docs and the code disagree, tell the user and let them decide.
 - When a change is done, update `CHANGELOG.md` and the feature's status in the same change.
 - When a todo is handled, delete it in the same change.
+- After a change, check only what it touched against the rules.
+- Check the goals at a moment that calls for it, such as the end of a checkpoint or a release.
+- A small change never runs the goal checks.
 - When the user stops you, stop.
 
 ## Wording

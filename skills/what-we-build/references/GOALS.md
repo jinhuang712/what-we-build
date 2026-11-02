@@ -54,7 +54,7 @@ A constraint is a rule the work itself must keep, not a feature left out. It fai
 
 ## When to check
 
-Every goal stands all the time, but its check runs on a cadence. Measures, thresholds and constraints that cost little run with every change. They catch a slip at once. Objectives, benchmarks and comparisons run at each checkpoint of the roadmap. A large run is worth it only once enough has landed. At each checkpoint, go through the whole sheet.
+Every goal stands all the time, but its check runs only at a moment that calls for it. A check is worth its cost once enough has landed, such as at the end of a checkpoint or before a release. At each checkpoint, go through the whole sheet. A small change runs no goal check, because the rules it touched are checked where they live.
 
 ## Guidelines
 
@@ -100,7 +100,7 @@ Every goal stands all the time, but its check runs on a cadence. Measures, thres
 
 **Acceptance:** <the test that passes or fails>
 
-**Checked:** <every change or each checkpoint, and how>
+**Checked:** <each checkpoint or a release, and how>
 
 **Status:** ⬜ | ✅ <date> | ❌ <date>
 
@@ -112,7 +112,7 @@ Every goal stands all the time, but its check runs on a cadence. Measures, thres
 
 **How:** <how it is measured>
 
-**Checked:** <every change or each checkpoint>
+**Checked:** <each checkpoint or a release>
 
 **Last value:** <value> on <date>
 
@@ -124,7 +124,7 @@ Every goal stands all the time, but its check runs on a cadence. Measures, thres
 
 **Problem set:** <the fixed set it is scored on>
 
-**Checked:** <every change or each checkpoint>
+**Checked:** <each checkpoint or a release>
 
 **Last score:** <score> on <date>
 
@@ -138,7 +138,7 @@ Every goal stands all the time, but its check runs on a cadence. Measures, thres
 
 **How:** <how both runs are made and scored>
 
-**Checked:** <every change or each checkpoint>
+**Checked:** <each checkpoint or a release>
 
 **Last result:** <result> on <date>
 
@@ -152,7 +152,7 @@ Every goal stands all the time, but its check runs on a cadence. Measures, thres
 
 **How:** <how it is checked>
 
-**Checked:** <every change or each checkpoint>
+**Checked:** <each checkpoint or a release>
 
 **Status:** ⬜ | ✅ <date> | ❌ <date>
 
@@ -166,7 +166,7 @@ Every goal stands all the time, but its check runs on a cadence. Measures, thres
 
 **How:** <how it is checked>
 
-**Checked:** <every change or each checkpoint>
+**Checked:** <each checkpoint or a release>
 
 **Status:** ⬜ | ✅ <date> | ❌ <date>
 ```

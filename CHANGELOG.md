@@ -17,6 +17,7 @@
 - The agent leaves the outcome open until it has discussed it with the user.
 - The agent recommends that the project's AGENTS.md hold the work rules, so they reach every sitting.
 - The agent tracks where the project stands by scanning TODO, ROADMAP and GOALS.
+- After a change the agent checks only the rules it touched, and it checks the goals only at a checkpoint or a release.
 - When every change is committed, a resume reports where the project stands and what may have drifted since each doc's last commit.
 - A commit records the user's approval, so no doc carries a mark any more.
 - A link points only to what its doc rests on, and PHILOSOPHY and CHANGELOG link to nothing.
@@ -44,9 +45,10 @@
 - PROPOSAL gives each pain its own section, in whatever shape shows its evidence.
 - FEATURES opens with *Summary* instead of *TL;DR*.
 - GOALS holds six kinds of goal, each in its own section.
-- Each goal says when it is checked: with every change or at each checkpoint.
+- GOALS holds only the effects the skill must have, and each rule lives in its own home.
+- Each goal says when it is checked, at a checkpoint or a release.
 - GOALS opens with a Summary, and each goal has its own section with an ID that names its kind.
-- This repo's goals take the new IDs, so G6 is now T4 and G2 is now T1.
+- This repo's goals take the new IDs, so G6 is now T4 and G2 is a check in B1: Session quality.
 - ROADMAP calls its stages checkpoints, with IDs such as CP2, so they no longer clash with the measures.
 - An ID is always a link with its name, and a list of IDs replaces a range.
 - Status marks move out of headings into a *Status* line, so links to a feature or a checkpoint stay stable.

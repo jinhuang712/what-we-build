@@ -29,6 +29,8 @@ Before a change, also read the doc that owns it.
 - When the docs and the code disagree, tell the user and let them decide.
 - When a change is done, update `CHANGELOG.md` and the feature's status in the same change.
 - When a todo is handled, delete it in the same change.
+- Check the goals in `GOALS.md` at a moment that calls for it, such as the end of a checkpoint or a release.
+- A small change never runs the goal checks.
 - When the user stops you, stop.
 
 ## Rules
@@ -45,7 +47,9 @@ Before a change, also read the doc that owns it.
 - Check each sentence you changed against the *Wording* section of `skills/what-we-build/SKILL.md`.
 - Check each line in a doc against that doc's guide in `skills/what-we-build/references/`.
 - Check each link you touched against its target.
-- Run the checks in `GOALS.md` marked `every change`.
+- Check that each fact you added or moved has no second home.
+- Check that each decision you wrote says what was not chosen and why.
+- Check that what you added to `skills/` is Markdown in our own words with made-up examples.
 
 ## Releasing
 
