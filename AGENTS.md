@@ -1,29 +1,56 @@
 # AGENTS.md
 
-Guidance for coding agents working on what-we-build. These rules cover what an agent cannot learn by reading the files.
+Guidance for coding agents working on what-we-build.
+It holds what an agent cannot learn by reading the files.
 
-## Read first
+## Read order
 
-- [PHILOSOPHY.md](PHILOSOPHY.md): the choices every change must agree with.
-- [FEATURES.md](FEATURES.md): what the skill does.
-- [DESIGNS.md](DESIGNS.md): how it is built, and why.
+Read these when a sitting starts or after the window was compacted:
+
+1. [PHILOSOPHY.md](PHILOSOPHY.md): the thought every change agrees with.
+2. [DESIGNS.md](DESIGNS.md): the guidelines a change must meet.
+3. [FEATURES.md](FEATURES.md): what the skill does.
+4. [TODO.md](TODO.md): what is open.
+
+Before a change, also read the doc that owns it.
+
+## Layout
+
+- The core docs sit at the root with TODO, CHANGELOG and INSTALL.
+- `specs/` holds ARCHITECTURE and `decisions/`.
+- The skill lives in `skills/what-we-build/`, with a guide per doc in `references/`.
+- This repo does not use `plan/`.
+
+## While you work
+
+- Before you change something, read the doc that owns it.
+- When a choice between ways is made, write a decision in `specs/decisions/` at once.
+- When something cannot be handled now, add it to `TODO.md` at once.
+- When the docs and the code disagree, tell the user and let them decide.
+- When a change is done, update `CHANGELOG.md` and the feature's status in the same change.
+- When a todo is handled, delete it in the same change.
+- When the user stops you, stop.
 
 ## Rules
 
-- **This repo uses its own format.** Place every fact with the placement test in `skills/what-we-build/SKILL.md`, because this repo is the skill's first example and must follow it.
-- **Keep `SKILL.md` within the limit in GOALS.md G6.** Detail goes into a reference file that `SKILL.md` points to, because the agent reads `SKILL.md` in every session.
-- **Follow the design principles in DESIGNS.md,** including no dependencies, our own words and made-up examples. They keep the skill installable anywhere, and free of borrowed text and of other projects.
-- **Trust the model, and leave it room.** A guide says what a doc is for and what goes wrong, and leaves the method to the model. Do not teach what the model already knows, because a model told every step follows the steps and stops using its judgment.
-- **Keep the marks honest.** Only the user approves a doc. An agent writes `drafted`, because an `approved` the user never gave claims an agreement that did not happen.
+- **This repo is the skill's first example,** so it follows the skill's format and placement test.
+- **Keep `SKILL.md` within G6 in [GOALS.md](GOALS.md),** and put detail in a guide it points to.
+- **Follow the guidelines in [DESIGNS.md](DESIGNS.md).**
+- **Only the user approves a doc,** so an agent writes `drafted`.
+- **Never commit a doc before the user approves it.**
 - **Leave the outcome open until you have discussed it with the user,** and look at what exists together first.
-- **Show changes before asking for approval,** as before-and-after text, because the user reviews changes side by side.
+- **Show a change as its skeleton first and then as a diff.**
 
 ## Before you finish
 
-Check each line you changed against the *Wording* section of `skills/what-we-build/SKILL.md`, each line in a doc against that doc's guide in `skills/what-we-build/references/`, and each link you touched against its target. No script checks these rules.
+- Check each line you changed against the *Wording* section of `skills/what-we-build/SKILL.md`.
+- Check each line in a doc against that doc's guide in `skills/what-we-build/references/`.
+- Check each link you touched against its target.
+- Run the checks in [GOALS.md](GOALS.md) marked `every change`.
 
 ## Releasing
 
 1. Move the *Unreleased* entries in [CHANGELOG.md](CHANGELOG.md) under the new version and date.
 2. Set the version in `.claude-plugin/plugin.json` and `.claude-plugin/marketplace.json` to the same value.
-3. Commit, tag `vX.Y.Z`, and push the branch and the tag.
+3. Go through the whole goal sheet in [GOALS.md](GOALS.md).
+4. Commit and tag `vX.Y.Z`, then push the branch and the tag.
