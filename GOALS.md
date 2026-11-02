@@ -4,28 +4,22 @@ Each goal is an effect the skill must have, tied to a want or a risk in the prop
 
 ## Summary
 
-**Objectives**
-
-- ⬜ [O1: One sitting](#o1-one-sitting): the 7 core docs of a new project agreed in 1 sitting
-- ⬜ [O2: Context survives compaction](#o2-context-survives-compaction): after a compaction the agent knows the task from the docs alone
-
-**Measures**
-
-- [M1: Reads before it changes](#m1-reads-before-it-changes): not measured yet
-- [M4: Docs that fell behind](#m4-docs-that-fell-behind): not measured yet
-
-**Benchmarks**
-
-- [B1: Session quality](#b1-session-quality): not run yet
-
-**Comparisons**
-
-- [C1: With and without the skill](#c1-with-and-without-the-skill): not run yet
-
-**Thresholds**
-
-- ✅ [T4: A short skill](#t4-a-short-skill): `SKILL.md` within 500 lines
-- ✅ [T8: A doc read in one go](#t8-a-doc-read-in-one-go): every doc within one Claude Code read
+```
+Goals
+├── Objectives
+│   ├── ⬜ O1: One sitting — the 7 core docs of a new project agreed in 1 sitting
+│   └── ⬜ O2: Context survives compaction — after a compaction the agent knows the task from the docs alone
+├── Measures
+│   ├── M1: Reads before it changes — not measured yet
+│   └── M4: Docs that fell behind — not measured yet
+├── Benchmarks
+│   └── B1: Session quality — not run yet
+├── Comparisons
+│   └── C1: With and without the skill — not run yet
+└── Thresholds
+    ├── ✅ T4: A short skill — SKILL.md within 500 lines
+    └── ✅ T8: A doc read in one go — every doc within one Claude Code read
+```
 
 ## Goals
 
@@ -101,7 +95,7 @@ Sessions with the skill are scored on a fixed set of prompts.
 
 **Want:** the wants and risks in the proposal that only a real session shows.
 
-**Problem set:** the three realistic project prompts of [CP3: Proven useful](ROADMAP.md#cp3-proven-useful).
+**Problem set:** the three realistic project prompts of [CP4: Proven useful](ROADMAP.md#cp4-proven-useful).
 
 **Scored on:** a reader who did not run the session checks each of these:
 

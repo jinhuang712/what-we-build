@@ -13,29 +13,27 @@ Status: ✅ built · 🚧 built with a gap named in its section · ⬜ planned.
 
 ## Summary
 
-**Running a session**
-
-- ✅ [F1: Start and talk each doc through](#f1-start-and-talk-each-doc-through): the skill starts from your folder and writes each doc with you
-  - ✅ [F1.1: Start from where the project is](#f11-start-from-where-the-project-is): an idea, running code or messy docs
-  - ✅ [F1.2: Agree the doc set](#f12-agree-the-doc-set): you confirm the docs and where they live
-  - ✅ [F1.3: Talk each doc through](#f13-talk-each-doc-through): discuss, brainstorm or decide with a recommendation
-  - ✅ [F1.4: Push back](#f14-push-back): the agent says what does not fit and why
-  - ✅ [F1.5: See the change](#f15-see-the-change): every change is shown as before and after
-  - ✅ [F1.6: Commit after approval](#f16-commit-after-approval): nothing is committed before you approve it
-- 🚧 [F2: Resume](#f2-resume): a later sitting picks up where the last one stopped, not yet verified
-
-**Keeping the context**
-
-- ✅ [F5: Keep the context while you work](#f5-keep-the-context-while-you-work): the agent reads the owning doc first and records at once
-
-**Getting the docs**
-
-- ✅ [F3: The doc set](#f3-the-doc-set): the docs a project needs, each with a guide
-  - ✅ [F3.1: The core docs](#f31-the-core-docs): the seven docs every project gets
-  - ✅ [F3.2: Docs that join later](#f32-docs-that-join-later): the recommended docs and the ones a project grows into
-  - ✅ [F3.3: A guide per doc](#f33-a-guide-per-doc): what each doc owns and what it leaves out
-  - ✅ [F3.4: A default layout](#f34-a-default-layout): the reasons at the root with `specs/` and `plan/` beside them
-- ✅ [F4: Wording rules](#f4-wording-rules): short sentences and one name per thing
+```
+Features
+├── Running a session
+│   ├── ✅ F1: Start and talk each doc through — the skill starts from your folder and writes each doc with you
+│   │   ├── ✅ F1.1: Start from where the project is — an idea, running code or messy docs
+│   │   ├── ✅ F1.2: Agree the doc set — you confirm the docs and where they live
+│   │   ├── ✅ F1.3: Talk each doc through — discuss, brainstorm or decide with a recommendation
+│   │   ├── ✅ F1.4: Push back — the agent says what does not fit and why
+│   │   ├── ✅ F1.5: See the change — every change is shown as before and after
+│   │   └── ✅ F1.6: Commit after approval — nothing is committed before you approve it
+│   └── 🚧 F2: Resume — a later sitting picks up where the last one stopped, not yet verified
+├── Keeping the context
+│   └── ✅ F5: Keep the context while you work — the agent reads the owning doc first and records at once
+└── Getting the docs
+    ├── ✅ F3: The doc set — the docs a project needs, each with a guide
+    │   ├── ✅ F3.1: The core docs — the seven docs every project gets
+    │   ├── ✅ F3.2: Docs that join later — the recommended docs and the ones a project grows into
+    │   ├── ✅ F3.3: A guide per doc — what each doc owns and what it leaves out
+    │   └── ✅ F3.4: A default layout — the reasons at the root with specs/ and plan/ beside them
+    └── ✅ F4: Wording rules — short sentences and one name per thing
+```
 
 ## Running a session
 

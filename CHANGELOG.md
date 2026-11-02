@@ -72,7 +72,7 @@
 - New guide: INSTALL.md, for everything beyond the README's one install line.
 - A command longer than two lines belongs in a script.
 - PROPOSAL drops *How it works*, *Approach* and *How we know it works* because other docs own them.
-- FEATURES, ROADMAP and GOALS open with a summary tree that gives each entry its status and a short description.
+- FEATURES, ROADMAP and GOALS open with a summary drawn as an ASCII tree, which gives each entry its status and a short description.
 - A feature that does several things splits into parts such as F1.1.
 - Each roadmap item has its own status.
 
@@ -80,6 +80,7 @@
 
 - This repo's rules for checking by a reader and testing by use move from DESIGNS to AGENTS.md, which already held the rule that the repo is its own first example.
 - This repo's read order adds ROADMAP and GOALS, which the agent scans for where the project stands.
+- This repo's roadmap splits the rebuild in this repo from the first use on a new project, so Proven useful is now CP4.
 - This repo's goals take the new IDs, so G6 is now T4 and G2 is a check in B1: Session quality.
 - A threshold keeps every doc within one Claude Code read, in place of the count of core doc lines.
 

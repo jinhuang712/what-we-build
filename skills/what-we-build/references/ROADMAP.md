@@ -23,6 +23,7 @@ ROADMAP.md answers "when?" and "how far along?". It breaks the work into checkpo
 
 ## Guidelines
 
+- **Open with an Overview,** an ASCII tree in a code block of every checkpoint and its items with their status.
 - **Keep the first checkpoint small enough to finish soon.**
 - **Point exit criteria to GOALS.**
 - **End each checkpoint by going through the whole goal sheet,** including the checks that wait for it.
@@ -34,15 +35,18 @@ ROADMAP.md answers "when?" and "how far along?". It breaks the work into checkpo
 
 ## Skeleton
 
-```markdown
+````markdown
 # Roadmap
 
 **Current checkpoint:** <a link to it>. <where the work stands>
 
 ## Overview
 
-- ⬜ [CP1: <name>](#cp1-name): <what it delivers>
-  - ⬜ CP1.1: <an item>
+```
+Roadmap
+└── ⬜ CP1: <name> — <what it delivers>
+    └── ⬜ CP1.1: <an item>
+```
 
 ## CP1: <name>
 
@@ -51,4 +55,4 @@ ROADMAP.md answers "when?" and "how far along?". It breaks the work into checkpo
 <each item with its status>
 
 **Exit criteria:** <links to the goals>
-```
+````

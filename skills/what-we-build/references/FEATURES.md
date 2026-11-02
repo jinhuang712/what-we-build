@@ -28,7 +28,7 @@ It comes fifth in a session: each feature delivers a want from the proposal with
 
 ## Guidelines
 
-- **Open with a Summary,** a tree of every feature by group with its status and a short description.
+- **Open with a Summary,** an ASCII tree in a code block of every feature by group with its status and a short description.
 - **Split a feature that does several things** into parts such as F1.1 and F1.2.
 - **Give each feature an ID that never changes,** so other docs can point to it.
 - **Give a new feature a new number.**
@@ -44,15 +44,19 @@ It comes fifth in a session: each feature delivers a want from the proposal with
 
 ## Skeleton
 
-```markdown
+````markdown
 # Features
 
 <what the status marks mean: ✅ built · 🚧 built with a gap · ⬜ planned>
 
 ## Summary
 
-- ⬜ [F1: <name>](#f1-name): <a short description>
-  - ⬜ [F1.1: <name>](#f11-name): <a short description>
+```
+Features
+└── <Group>
+    └── ⬜ F1: <name> — <a short description>
+        └── ⬜ F1.1: <name> — <a short description>
+```
 
 ## <Group>
 
@@ -83,4 +87,4 @@ It comes fifth in a session: each feature delivers a want from the proposal with
 ## Not planned
 
 - **<not this>:** <why>
-```
+````

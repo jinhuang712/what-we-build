@@ -62,7 +62,7 @@ Every goal stands all the time, but its check runs only at a moment that calls f
 
 - **Give each goal an ID that never changes,** so ROADMAP can point to it.
 - **Let the letter of the ID name its kind,** as the skeleton shows.
-- **Open with a Summary,** a tree of every goal by kind with its status and a short description.
+- **Open with a Summary,** an ASCII tree in a code block of every goal by kind with its status and a short description.
 - **Write under each label what the goal needs,** in whatever form fits.
 - **Mark a goal met only with evidence** from someone who did not write the change.
 - **Write the formula of every number in a code block,** with its sample and unit beside it.
@@ -88,9 +88,11 @@ Every goal stands all the time, but its check runs only at a moment that calls f
 
 ## Summary
 
-**Objectives**
-
-- ⬜ [O1: <name>](#o1-one-sentence-name): <a short description>
+```
+Goals
+└── Objectives
+    └── ⬜ O1: <name> — <a short description>
+```
 
 ## Goals
 

@@ -5,7 +5,7 @@
 ### [P2][DISCUSSION] How to evaluate the skill
 - description: which test prompts to use, and what a good session looks like in numbers
 - created: 2026-11-02
-- blocks: [CP3: Proven useful](ROADMAP.md#cp3-proven-useful)
+- blocks: [CP4: Proven useful](ROADMAP.md#cp4-proven-useful)
 
 ### [P2][ISSUE] The question each doc answers has three homes
 - description: PROPOSAL, PHILOSOPHY and README each list the question every doc answers and the lists have drifted
