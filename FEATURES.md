@@ -50,17 +50,29 @@ You bring an idea, a codebase or a pile of docs. The skill reads the folder and 
 | The whole doc set, with every change committed | reporting where the project stands and what may have drifted ([F1.7: Resume](#f17-resume)) |
 | Something that disagrees with your request | asking you |
 
+**Stories:**
+
+- Whoever types `/what-we-build` starts from what the folder already holds, so nobody starts from a blank form.
+
 ### F1.2: Agree the doc set
 
 **Status:** ✅
 
 First you agree the doc set and where the docs live. You go through the project's `AGENTS.md` with the agent and decide together what it should hold. The agent recommends the read order, the layout and the work rules of [F2.1: Keep the context while you work](#f21-keep-the-context-while-you-work).
 
+**Stories:**
+
+- You confirm which docs the project gets and where they live, so no doc exists without a job.
+
 ### F1.3: Talk each doc through
 
 **Status:** ✅
 
-The docs come in order: PROPOSAL → PHILOSOPHY → DESIGNS → GOALS → FEATURES → ROADMAP → README. Each one builds on the ones before it, so you never answer the same question twice. You talk a doc through point by point, and every choice comes with a recommendation.
+The docs come in order: PROPOSAL → PHILOSOPHY → DESIGNS → GOALS → FEATURES → ROADMAP → README. Each one builds on the ones before it, so you never answer the same question twice. Every choice comes with a recommendation.
+
+**Stories:**
+
+- You talk a doc through point by point with the agent, so the doc says what you decided.
 
 ### F1.4: Push back
 
@@ -68,23 +80,40 @@ The docs come in order: PROPOSAL → PHILOSOPHY → DESIGNS → GOALS → FEATUR
 
 The agent pushes back when something does not fit. It keeps it up until you decide.
 
+**Stories:**
+
+- You hear why an idea does not fit before it goes into a doc, so a weak point is caught early.
+
 ### F1.5: See the change
 
 **Status:** ✅
 
-The agent writes each point into its doc once you agree it, and nothing before. You see each change as its skeleton first and then as a diff of before and after.
+The agent writes each point into its doc once you agree it, and nothing before.
+
+**Stories:**
+
+- You read the skeleton and then the diff of each change, so you approve only what you have seen.
 
 ### F1.6: Commit after approval
 
 **Status:** ✅
 
-You approve a doc, and the agent commits it. Nothing is committed before you approve it.
+Nothing is committed before you approve it, and any later edit is a draft until you do.
+
+**Stories:**
+
+- You approve a change and the agent commits it, so git tells your approved docs from the drafts.
 
 ### F1.7: Resume
 
 **Status:** 🚧 the report on the whole doc set ran on 2026-11-03, and the resume at a draft or a missing doc is not yet verified
 
 You can stop at any point and pick up later. Git tells the agent which docs you approved, so on a later `/what-we-build` it tells you where the work stopped. When a doc is a draft you have not approved or a core doc is not written yet, the agent continues at the first such doc in the order. When the whole doc set is written and committed, it reports where the project stands and what changed since each doc's last commit. You then see which doc may have fallen behind.
+
+**Stories:**
+
+- You come back another day and the agent picks up at the first doc you have not approved.
+- You return to a finished doc set and learn which docs fell behind the work.
 
 - **Design:** [DESIGNS 2: The docs are the state](DESIGNS.md#2-the-docs-are-the-state)
 - **Why:** [008: A resume with nothing to draft looks for drift](specs/decisions/008-resume-looks-for-drift.md) and [009: Git tells a draft from an approved doc](specs/decisions/009-git-tells-a-draft-from-an-approved-doc.md)
@@ -105,6 +134,11 @@ The agent reads the doc that owns a thing before it changes it. It records an op
 
 The skill starts only when you type `/what-we-build`, so these rules live in the project's `AGENTS.md`, which the agent reads whenever its window is new. You agree to record them there when you go through it with the agent.
 
+**Stories:**
+
+- An agent in a new window reads the docs in the read order, so it knows the project before it works.
+- You find the open items and the decisions written down at once, so nothing lives only in the window.
+
 - **Design:** [DESIGNS 2: The docs are the state](DESIGNS.md#2-the-docs-are-the-state)
 - **Why:** [002: The skill starts only by hand](specs/decisions/002-manual-start.md)
 
@@ -123,6 +157,10 @@ A project gets the docs it needs and no more. Each kind of doc has a guide.
 
 Every project gets seven core docs: PROPOSAL · PHILOSOPHY · DESIGNS · GOALS · FEATURES · ROADMAP · README.
 
+**Stories:**
+
+- You get the seven docs every project needs, so the reasons and the contract are written down.
+
 ### F3.2: Docs that join later
 
 **Status:** ✅
@@ -134,11 +172,19 @@ Every project gets seven core docs: PROPOSAL · PHILOSOPHY · DESIGNS · GOALS �
 
 The recommended docs start once you agree the doc set. A finding or a change then has a home from the start. The optional docs join only when the project needs them.
 
+**Stories:**
+
+- You add an optional doc only when the project needs it, so you keep no doc without a job.
+
 ### F3.3: A guide per doc
 
 **Status:** ✅
 
 The agent reads a doc's guide before it starts that doc. The guide says what the doc owns and what it leaves out.
+
+**Stories:**
+
+- The agent reads a doc's guide before it writes that doc, so each doc holds only what it owns.
 
 ### F3.4: A default layout
 
@@ -152,11 +198,19 @@ You choose where the docs live. By default the layout looks like this:
 
 You decide with the agent whether `AGENTS.md` records the layout.
 
+**Stories:**
+
+- You keep the default layout or choose your own, and each doc keeps its name wherever it sits.
+
 ### F3.5: Wording rules
 
 **Status:** ✅
 
 The docs come out in plain and precise English. A reader finds a fact fast and understands it the first time, because every doc explains in short paragraphs, keeps a bullet to one sentence and calls each thing by one name. Status marks, IDs and dates look the same in every doc, and no doc pastes code.
+
+**Stories:**
+
+- A reader finds a fact on the first read, because every doc uses the same plain wording.
 
 ## When something fails
 
