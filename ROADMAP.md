@@ -21,7 +21,7 @@ Roadmap
 │   ├── ✅ CP2.2: A second review of this repo's docs, released as 0.3.0
 │   ├── ✅ CP2.3: Lessons from a real design session, released as 0.4.0
 │   ├── ✅ CP2.4: The skill rebuilt around a project's context
-│   ├── 🟨 CP2.5: This repo's docs in the new forms
+│   ├── ✅ CP2.5: This repo's docs in the new forms
 │   └── ⬜ CP2.6: Release 0.5.0
 ├── ⬜ CP3: First real use — the skill used on a new project
 │   ├── ⬜ CP3.1: A new project's 7 core docs drafted and approved with the skill
@@ -55,7 +55,7 @@ Roadmap
 | CP2.2 | A second review of this repo's docs, released as 0.3.0 | ✅ | 2026-10-13 |
 | CP2.3 | Lessons from a real design session, released as 0.4.0 | ✅ | 2026-10-18 |
 | CP2.4 | The skill rebuilt around a project's context | ✅ | Not yet released |
-| CP2.5 | This repo's docs in the new forms | 🟨 | Under way since 2026-11-02 |
+| CP2.5 | This repo's docs in the new forms | ✅ | 2026-11-03 |
 | CP2.6 | Release 0.5.0 | ⬜ | |
 
 **Exit criteria:**
