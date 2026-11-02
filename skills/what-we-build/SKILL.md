@@ -1,5 +1,7 @@
 ---
-name: what-we-build description: Manage a project's context in docs with the user, from the first idea and as the work goes on. disable-model-invocation: true
+name: what-we-build
+description: Manage a project's context in docs with the user, from the first idea and as the work goes on.
+disable-model-invocation: true
 ---
 
 # What we build
