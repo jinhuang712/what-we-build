@@ -15,38 +15,34 @@ Status: ✅ built · 🚧 built with a gap named in its section · ⬜ planned.
 
 ```
 Features
-├── Running a session
-│   ├── ✅ F1: Start and talk each doc through — the skill starts from your folder and writes each doc with you
-│   │   ├── ✅ F1.1: Start from where the project is — an idea, running code or messy docs
-│   │   ├── ✅ F1.2: Agree the doc set — you confirm the docs and where they live
-│   │   ├── ✅ F1.3: Talk each doc through — discuss, brainstorm or decide with a recommendation
-│   │   ├── ✅ F1.4: Push back — the agent says what does not fit and why
-│   │   ├── ✅ F1.5: See the change — every change is shown as before and after
-│   │   └── ✅ F1.6: Commit after approval — nothing is committed before you approve it
-│   └── 🚧 F2: Resume — a later sitting picks up where the last one stopped, not yet verified
-├── Keeping the context
-│   └── ✅ F5: Keep the context while you work — the agent reads the owning doc first and records at once
-└── Getting the docs
-    ├── ✅ F3: The doc set — the docs a project needs, each with a guide
-    │   ├── ✅ F3.1: The core docs — the seven docs every project gets
-    │   ├── ✅ F3.2: Docs that join later — the recommended docs and the ones a project grows into
-    │   ├── ✅ F3.3: A guide per doc — what each doc owns and what it leaves out
-    │   └── ✅ F3.4: A default layout — the reasons at the root with specs/ and plan/ beside them
-    └── ✅ F4: Wording rules — short sentences and one name per thing
+├── 🚧 F1: Running a session — the skill starts from your folder and takes each doc from talk to commit
+│   ├── ✅ F1.1: Start from where the project is — an idea, running code or messy docs
+│   ├── ✅ F1.2: Agree the doc set — you confirm the docs and where they live
+│   ├── ✅ F1.3: Talk each doc through — discuss, brainstorm or decide with a recommendation
+│   ├── ✅ F1.4: Push back — the agent says what does not fit and why
+│   ├── ✅ F1.5: See the change — every change is shown as before and after
+│   ├── ✅ F1.6: Commit after approval — nothing is committed before you approve it
+│   └── 🚧 F1.7: Resume — a later sitting picks up where the last one stopped, not yet verified
+├── ✅ F2: Keeping the context — the docs stay true after the first session
+│   └── ✅ F2.1: Keep the context while you work — the agent reads the owning doc first and records at once
+└── ✅ F3: Getting the docs — the docs a project needs, each with a guide
+    ├── ✅ F3.1: The core docs — the seven docs every project gets
+    ├── ✅ F3.2: Docs that join later — the recommended docs and the ones a project grows into
+    ├── ✅ F3.3: A guide per doc — what each doc owns and what it leaves out
+    ├── ✅ F3.4: A default layout — the reasons at the root with specs/ and plan/ beside them
+    └── ✅ F3.5: Wording rules — short bullets and one name per thing
 ```
 
-## Running a session
+## F1: Running a session
 
-### F1: Start and talk each doc through
+**Status:** 🚧 [F1.7: Resume](#f17-resume) is not yet verified
 
-**Status:** ✅
-
-The skill starts from your folder. Then each doc goes through one loop from talk to commit.
+The skill starts from your folder. Then each doc goes through one loop from talk to commit, and a later sitting picks up where the last one stopped.
 
 - **Design:** [DESIGNS 6: Trust the model](DESIGNS.md#6-trust-the-model)
 - **Why:** [001: One skill holds every start](specs/decisions/001-one-skill-for-every-start.md) and [007: DESIGNS comes third, before GOALS and FEATURES](specs/decisions/007-designs-third.md)
 
-#### F1.1: Start from where the project is
+### F1.1: Start from where the project is
 
 **Status:** ✅
 
@@ -57,41 +53,41 @@ You bring an idea, a codebase or a pile of docs. The skill reads the folder and 
 | An idea and nothing written | discussing the idea with you |
 | Running code and no docs | reading the code and then discussing each doc |
 | Messy docs | sorting them into the doc set and then discussing the gaps |
-| The doc set with uncommitted changes | resuming ([F2: Resume](#f2-resume)) |
-| The doc set with every change committed | reporting where the project stands and what may have drifted ([F2: Resume](#f2-resume)) |
+| The doc set with uncommitted changes | resuming ([F1.7: Resume](#f17-resume)) |
+| The doc set with every change committed | reporting where the project stands and what may have drifted ([F1.7: Resume](#f17-resume)) |
 | Something that disagrees with your request | asking you |
 
-#### F1.2: Agree the doc set
+### F1.2: Agree the doc set
 
 **Status:** ✅
 
-First you agree the doc set and where the docs live. You go through the project's `AGENTS.md` with the agent and decide together what it should hold. The agent recommends the read order, the layout and the work rules of [F5: Keep the context while you work](#f5-keep-the-context-while-you-work).
+First you agree the doc set and where the docs live. You go through the project's `AGENTS.md` with the agent and decide together what it should hold. The agent recommends the read order, the layout and the work rules of [F2.1: Keep the context while you work](#f21-keep-the-context-while-you-work).
 
-#### F1.3: Talk each doc through
+### F1.3: Talk each doc through
 
 **Status:** ✅
 
 The docs come in order: PROPOSAL → PHILOSOPHY → DESIGNS → GOALS → FEATURES → ROADMAP → README. Each one builds on the ones before it, so you never answer the same question twice. You talk a doc through until its key points are agreed. Every choice comes with a recommendation.
 
-#### F1.4: Push back
+### F1.4: Push back
 
 **Status:** ✅
 
 The agent pushes back when something does not fit. It keeps it up until you decide.
 
-#### F1.5: See the change
+### F1.5: See the change
 
 **Status:** ✅
 
 The agent drafts a doc only after its key points are agreed. You see the draft and every later change as before and after.
 
-#### F1.6: Commit after approval
+### F1.6: Commit after approval
 
 **Status:** ✅
 
 You approve a doc, and the agent commits it. Nothing is committed before you approve it.
 
-### F2: Resume
+### F1.7: Resume
 
 **Status:** 🚧 not yet verified in a resumed session
 
@@ -100,9 +96,13 @@ A session can stop at any point and pick up in a later sitting. Git tells the ag
 - **Design:** [DESIGNS 2: The docs are the state](DESIGNS.md#2-the-docs-are-the-state)
 - **Why:** [008: A resume with nothing to draft looks for drift](specs/decisions/008-resume-looks-for-drift.md) and [009: Git tells a draft from an approved doc](specs/decisions/009-git-tells-a-draft-from-an-approved-doc.md)
 
-## Keeping the context
+## F2: Keeping the context
 
-### F5: Keep the context while you work
+**Status:** ✅
+
+The docs stay true after the first session, because every sitting keeps them true.
+
+### F2.1: Keep the context while you work
 
 **Status:** ✅
 
@@ -125,9 +125,7 @@ The skill starts only when you type `/what-we-build`. The rules still reach ever
 - **Design:** [DESIGNS 2: The docs are the state](DESIGNS.md#2-the-docs-are-the-state)
 - **Why:** [002: The skill starts only by hand](specs/decisions/002-manual-start.md)
 
-## Getting the docs
-
-### F3: The doc set
+## F3: Getting the docs
 
 **Status:** ✅
 
@@ -136,13 +134,13 @@ A project gets the docs it needs and no more. Each kind of doc has a guide.
 - **Design:** [DESIGNS 1: A short core with detail on demand](DESIGNS.md#1-a-short-core-with-detail-on-demand)
 - **Why:** [005: One guide file per kind of doc](specs/decisions/005-one-guide-per-kind-of-doc.md)
 
-#### F3.1: The core docs
+### F3.1: The core docs
 
 **Status:** ✅
 
 Every project gets seven core docs: PROPOSAL · PHILOSOPHY · DESIGNS · GOALS · FEATURES · ROADMAP · README.
 
-#### F3.2: Docs that join later
+### F3.2: Docs that join later
 
 **Status:** ✅
 
@@ -153,13 +151,13 @@ Every project gets seven core docs: PROPOSAL · PHILOSOPHY · DESIGNS · GOALS �
 
 The recommended docs start once you agree the doc set. A finding or a change then has a home from the start. The optional docs join only when the project needs them.
 
-#### F3.3: A guide per doc
+### F3.3: A guide per doc
 
 **Status:** ✅
 
 The agent reads a doc's guide before it starts that doc. The guide says what the doc owns and what it leaves out.
 
-#### F3.4: A default layout
+### F3.4: A default layout
 
 **Status:** ✅
 
@@ -171,7 +169,7 @@ You choose where the docs live. By default the layout looks like this:
 
 You decide with the agent whether `AGENTS.md` records the layout.
 
-### F4: Wording rules
+### F3.5: Wording rules
 
 **Status:** ✅
 
@@ -197,9 +195,9 @@ The docs come out in plain and precise English. A reader finds a fact fast and u
 | The folder and your request disagree | the agent asks you which to follow | F1.1: Start from where the project is |
 | A fact has no doc to own it | the agent asks you what to do with it | F1.3: Talk each doc through |
 | A number is not known | it stays open in the doc | F1.3: Talk each doc through |
-| The docs and the code disagree | the agent tells you and you decide | F5: Keep the context while you work |
-| The window was compacted | the agent reads the read order again | F5: Keep the context while you work |
-| You stop the agent | it stops | F5: Keep the context while you work |
+| The docs and the code disagree | the agent tells you and you decide | F2.1: Keep the context while you work |
+| The window was compacted | the agent reads the read order again | F2.1: Keep the context while you work |
+| You stop the agent | it stops | F2.1: Keep the context while you work |
 
 ## Later, if needed
 

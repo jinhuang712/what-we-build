@@ -24,7 +24,7 @@ Roadmap
 │   └── ⬜ CP2.5: Release 0.5.0
 ├── ⬜ CP3: First real use — the skill used on a new project
 │   ├── ⬜ CP3.1: A new project's 7 core docs drafted and approved with the skill
-│   └── ⬜ CP3.2: A resumed session to test F2: Resume
+│   └── ⬜ CP3.2: A resumed session to test F1.7: Resume
 └── ⬜ CP4: Proven useful — runs with the skill beat runs without it
     ├── ⬜ CP4.1: Three realistic project prompts
     └── ⬜ CP4.2: Runs with and without the skill
@@ -68,7 +68,7 @@ Roadmap
 | ID | What it delivers | Status | Note |
 |---|---|---|---|
 | CP3.1 | A new project's 7 core docs drafted and approved with the skill | ⬜ | |
-| CP3.2 | A resumed session to test [F2: Resume](FEATURES.md#f2-resume) | ⬜ | |
+| CP3.2 | A resumed session to test [F1.7: Resume](FEATURES.md#f17-resume) | ⬜ | |
 
 **Exit criteria,** checked on a new project:
 

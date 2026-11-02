@@ -29,7 +29,8 @@ It comes fifth in a session: each feature delivers a want from the proposal with
 ## Guidelines
 
 - **Open with a Summary,** an ASCII tree in a code block of every feature by group with its status and a short description.
-- **Split a feature that does several things** into parts such as F1.1 and F1.2.
+- **Number the groups too,** so F1 is a group and F1.1 a feature in it.
+- **Split a feature that does several things** into parts such as F1.1.1.
 - **Give each feature an ID that never changes,** so other docs can point to it.
 - **Give a new feature a new number.**
 - **Describe what the user does and what happens,** short and in the present tense.
@@ -53,14 +54,17 @@ It comes fifth in a session: each feature delivers a want from the proposal with
 
 ```
 Features
-└── <Group>
-    └── ⬜ F1: <name> — <a short description>
-        └── ⬜ F1.1: <name> — <a short description>
+└── ⬜ F1: <group> — <a short description>
+    └── ⬜ F1.1: <name> — <a short description>
 ```
 
-## <Group>
+## F1: <group>
 
-### F1: <name>
+**Status:** ⬜
+
+<what the group gives the user>
+
+### F1.1: <name>
 
 **Status:** ⬜
 
@@ -70,7 +74,7 @@ Features
 - **How it works:** <a link to its spec>
 - **Why:** <links to its decisions>
 
-#### F1.1: <name>
+#### F1.1.1: <name>
 
 **Status:** ⬜
 

@@ -13,7 +13,7 @@
 - found: the audit of 2026-11-02
 
 ### [P2][ISSUE] The work rules have two homes
-- description: F5: Keep the context while you work in FEATURES and *While you work* in AGENTS.md both list the work rules
+- description: F2.1: Keep the context while you work in FEATURES and *While you work* in AGENTS.md both list the work rules
 - created: 2026-11-02
 - found: the audit of 2026-11-02
 
