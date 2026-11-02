@@ -100,7 +100,7 @@ Work through the core docs in order, since each builds on the ones before it:
 
 `PROPOSAL.md` → `PHILOSOPHY.md` → `DESIGNS.md` → `GOALS.md` → `FEATURES.md` → `ROADMAP.md` → `README.md`
 
-Write a doc only after its key points are agreed. Then every doc goes through the same loop:
+Write each point into its doc as soon as it is agreed, and nothing before that. Then every doc goes through the same loop:
 
 1. Draft it.
 2. Show the user the change as before and after.
@@ -183,7 +183,7 @@ The docs stay true only if the agent keeps them true in every new window. These 
 - Prefer a number to an adjective, with its source or left open.
 - Write dates as `YYYY-MM-DD`.
 
-No doc holds a code chunk. A command longer than two lines belongs in a script, and the doc names the script.
+No doc holds a code chunk, which is code pasted from the project or a command longer than two lines. Such a command belongs in a script, and the doc names the script. A code block for a formula, a tree or a short command is fine.
 
 The status marks mean the same in every doc:
 

@@ -1,6 +1,6 @@
 # Goals
 
-Each goal is an effect the skill must have, tied to a want or a risk in the proposal. A goal met on one project stays open for another until it is checked there, and a status changes only with a check and its date. For goals checked on this repo, the reader who checks did not write the change unless the status says "by the author".
+Each goal is an effect the skill must have, tied to a want or a risk in the proposal. A goal met on one project stays open for another until it is checked there, and a status changes only with a check and its date.
 
 ## Summary
 
@@ -33,7 +33,7 @@ A new project gets its whole doc set without the talk dragging on.
 
 **Acceptance:** a new project's 7 core docs are drafted and approved in one go.
 
-**Checked:** each checkpoint, on a new project.
+**Checked:** from [CP3: First real use](ROADMAP.md#cp3-first-real-use) on, at each checkpoint on a new project.
 
 **Status:** ⬜
 
@@ -45,7 +45,7 @@ What was decided stays known after the window is compacted.
 
 **Acceptance:** after a compaction the agent names the current task and the latest decisions from the docs alone.
 
-**Checked:** each checkpoint.
+**Checked:** from [CP3: First real use](ROADMAP.md#cp3-first-real-use) on, at each checkpoint.
 
 **Status:** ⬜
 
@@ -95,14 +95,14 @@ Runs with the skill are scored on a fixed set of prompts.
 
 **Want:** the wants and risks in the proposal that only a real run shows.
 
-**Problem set:** the three realistic project prompts of [CP4: Proven useful](ROADMAP.md#cp4-proven-useful).
+**Problem set:** three realistic project prompts, not chosen yet (TODO: How to evaluate the skill).
 
 **Scored on:** a reader who did not take part in the run checks each of these:
 
 - Every fact has one home.
 - Every goal has a check.
 - Every decision says what was not chosen and why.
-- No doc was drafted before its key points were agreed or committed before it was approved.
+- Nothing went into a doc before it was agreed, and nothing was committed before it was approved.
 - A reader who did not write a doc can retell its main points after one read.
 - The user recognizes each doc as what was decided.
 - Each doc's content came from the talk and not from the blanks of a skeleton.
@@ -115,7 +115,7 @@ run score = checks passed / 8
 B1 = mean of the 3 run scores
 ```
 
-**Checked:** each checkpoint.
+**Checked:** from [CP4: Proven useful](ROADMAP.md#cp4-proven-useful) on, at each checkpoint.
 
 **Last score:** not run.
 
@@ -138,7 +138,7 @@ lead = run score with the skill − run score without it, for each prompt
 C1 = prompts with a lead above 0 / 3, with the mean lead
 ```
 
-**Checked:** each checkpoint.
+**Checked:** from [CP4: Proven useful](ROADMAP.md#cp4-proven-useful) on, at each checkpoint.
 
 **Last result:** not run.
 

@@ -19,9 +19,10 @@ Roadmap
 ├── 🟨 CP2: Rebuild around the context — the skill rebuilt in this repo from what its own use showed
 │   ├── ✅ CP2.1: A first review of this repo's docs with the skill, released as 0.2.0
 │   ├── ✅ CP2.2: A second review of this repo's docs, released as 0.3.0
-│   ├── ✅ CP2.3: The skill rebuilt around a project's context
-│   ├── 🟨 CP2.4: This repo's docs in the new forms
-│   └── ⬜ CP2.5: Release 0.5.0
+│   ├── ✅ CP2.3: Lessons from a real design session, released as 0.4.0
+│   ├── ✅ CP2.4: The skill rebuilt around a project's context
+│   ├── 🟨 CP2.5: This repo's docs in the new forms
+│   └── ⬜ CP2.6: Release 0.5.0
 ├── ⬜ CP3: First real use — the skill used on a new project
 │   ├── ⬜ CP3.1: A new project's 7 core docs drafted and approved with the skill
 │   └── ⬜ CP3.2: A real resume to test F1.7: Resume
@@ -52,9 +53,10 @@ Roadmap
 |---|---|---|---|
 | CP2.1 | A first review of this repo's docs with the skill, released as 0.2.0 | ✅ | 2026-10-13 |
 | CP2.2 | A second review of this repo's docs, released as 0.3.0 | ✅ | 2026-10-13 |
-| CP2.3 | The skill rebuilt around a project's context | ✅ | Not yet released |
-| CP2.4 | This repo's docs in the new forms | 🟨 | Under way on 2026-11-02 |
-| CP2.5 | Release 0.5.0 | ⬜ | |
+| CP2.3 | Lessons from a real design session, released as 0.4.0 | ✅ | 2026-10-18 |
+| CP2.4 | The skill rebuilt around a project's context | ✅ | Not yet released |
+| CP2.5 | This repo's docs in the new forms | 🟨 | Under way on 2026-11-02 |
+| CP2.6 | Release 0.5.0 | ⬜ | |
 
 **Exit criteria:**
 

@@ -2,7 +2,7 @@
 
 What what-we-build does today, and what it will and won't do. Each feature is described from the user's side: what you type, what you see and what you decide.
 
-Status: ✅ built · 🚧 built with a gap named in its section · ⬜ planned.
+Status: ✅ built · 🚧 built with a gap named in its section · ⬜ planned. A ✅ feature has been used on this repo, and none has been used on a new project yet.
 
 ## Summary
 
@@ -15,7 +15,7 @@ Features
 │   ├── ✅ F1.4: Push back — the agent says what does not fit and why
 │   ├── ✅ F1.5: See the change — every change is shown as before and after
 │   ├── ✅ F1.6: Commit after approval — nothing is committed before you approve it
-│   └── 🚧 F1.7: Resume — the work picks up later from the docs, not yet verified
+│   └── 🚧 F1.7: Resume — the work picks up later from the docs, verified only in part
 ├── ✅ F2: Keeping the context — the docs stay true as the work goes on
 │   └── ✅ F2.1: Keep the context while you work — the agent reads the owning doc first and records at once
 └── ✅ F3: Getting the docs — the docs a project needs, each with a guide
@@ -28,7 +28,7 @@ Features
 
 ## F1: Writing the docs with you
 
-**Status:** 🚧 [F1.7: Resume](#f17-resume) is not yet verified
+**Status:** 🚧 [F1.7: Resume](#f17-resume) is verified only in part
 
 The skill starts from your folder. Then each doc goes through one loop from talk to commit, and the work picks up later from the docs.
 
@@ -72,7 +72,7 @@ The agent pushes back when something does not fit. It keeps it up until you deci
 
 **Status:** ✅
 
-The agent drafts a doc only after its key points are agreed. You see the draft and every later change as before and after.
+The agent writes each point into its doc once you agree it, and nothing before. You see the draft and every later change as before and after.
 
 ### F1.6: Commit after approval
 
@@ -82,7 +82,7 @@ You approve a doc, and the agent commits it. Nothing is committed before you app
 
 ### F1.7: Resume
 
-**Status:** 🚧 not yet verified on a real resume
+**Status:** 🚧 the report on a fully committed doc set ran on 2026-11-03, and the resume at an uncommitted draft is not yet verified
 
 The work can stop at any point and pick up later from the docs. Git tells the agent which docs you approved. On a later `/what-we-build` the agent tells you where the work stopped. It continues at the uncommitted draft or at the first doc in the order not yet written. When every change is committed, it reports where the project stands and what changed since each doc's last commit. You then see which doc may have fallen behind.
 
@@ -178,7 +178,7 @@ The docs come out in plain and precise English. A reader finds a fact fast and u
 
 | Not this | Why |
 |---|---|
-| Starting on its own | [002: The skill starts only by hand](specs/decisions/002-manual-start.md) |
+| Starting on its own | The talk needs your full attention ([002: The skill starts only by hand](specs/decisions/002-manual-start.md)). |
 | Drafting without a conversation | Text nobody decided is the problem the skill exists to solve. |
 | A fixed questionnaire or template | Fixed questions fill forms. Decisions come from a conversation. |
 | More docs than the project needs | Only a doc with a job gets kept true. |

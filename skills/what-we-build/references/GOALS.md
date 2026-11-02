@@ -64,7 +64,7 @@ Every goal stands all the time, but its check runs only at a moment that calls f
 - **Let the letter of the ID name its kind,** as the skeleton shows.
 - **Open with a Summary,** an ASCII tree in a code block of every goal by kind with its status and a short description.
 - **Write under each label what the goal needs,** in whatever form fits.
-- **Mark a goal met only with evidence** from someone who did not write the change.
+- **Mark a goal met only with a measurement or the user's own report,** with its date.
 - **Write the formula of every number in a code block,** with its sample and unit beside it.
 - **Say where and when each number was measured.**
 - **Leave a number open when it is not known.**

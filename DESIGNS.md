@@ -21,7 +21,7 @@ The agent reads `SKILL.md` each time the skill starts, so it holds only what eve
 
 ## 2. The docs are the state
 
-A doc is committed only after the user approves it, so a committed doc is approved and an uncommitted change is a draft. Neither a mark nor a separate file records where the work stopped. A project without git cannot tell the two apart. The cost is that points agreed for a doc not yet drafted are lost with the window.
+A doc is committed only after the user approves it, so a committed doc is approved and an uncommitted change is a draft. Neither a mark nor a separate file records where the work stopped. A project without git cannot tell the two apart. The cost is that a doc fills in point by point, so a draft may stand half written until its last point is agreed.
 
 **Ask:** does this need a file other than the docs to remember it?
 

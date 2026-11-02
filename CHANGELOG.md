@@ -15,6 +15,7 @@
 - The skill starts from an idea, from running code with no docs or from messy docs.
 - A working protocol takes every doc through one loop from discussion to commit.
 - No doc is committed before the user approves it.
+- Each point goes into its doc as soon as it is agreed, so an agreed point is never left only in the window.
 - The agent re-reads the whole doc before any edit, even of one word.
 - Before it changes a fact, the agent reads the doc that owns it.
 - A decision is written down when it is made.
@@ -47,6 +48,7 @@
 - A link points only to what its doc rests on, and PHILOSOPHY and CHANGELOG link to nothing.
 - README links INSTALL from its install line too, so the line and the rest change together.
 - The comma rule holds for a bullet, and a paragraph is not held to it.
+- A code chunk means code pasted from the project or a command over two lines, and a code block for a formula or a tree is fine.
 - The docs drop session and sitting as terms and speak of the window and the project context instead.
 
 ### Doc guides
@@ -68,6 +70,7 @@
 - Every measure, benchmark and comparison writes its formula in a code block.
 - A constraint is a condition the product must always meet, and a rule for how the work is done stays out of GOALS.
 - Every goal in the skeleton names the want it serves.
+- A goal is met only with a measurement or the user's own report.
 - GOALS opens with a Summary, and each goal has its own section with an ID that names its kind.
 - ROADMAP calls its stages checkpoints with IDs such as CP2, so they no longer clash with the measures.
 - Status marks move out of headings into a *Status* line, so links to a feature or a checkpoint stay stable.
@@ -94,6 +97,7 @@
 - This repo's FEATURES describes what the wording rules give the reader, and SKILL.md alone lists them.
 - This repo's FEATURES describes what keeping the context gives the user, and AGENTS.md alone lists the work rules.
 - This repo's decision 002 holds the reason for the manual start, and FEATURES links to it.
+- This repo's goals name the checkpoint from which each one can run, and its roadmap lists the 0.4.0 release.
 - This repo's features take group numbers, so Resume is now F1.7 and the work rules are F2.1.
 - This repo's roadmap splits the rebuild in this repo from the first use on a new project, so Proven useful is now CP4.
 - This repo's goals take the new IDs, so G6 is now T4 and G2 is a check in B1: Run quality.

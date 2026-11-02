@@ -8,7 +8,7 @@ The context is what the people and the agent worked out together. It is made in 
 
 **Its context, over the whole life of the project.**
 
-Building is no longer the hard part. A current model implements almost anything it is told, and fast. What goes wrong is the context around the work. These are the ways it goes wrong:
+When a project built with an agent goes wrong, its context goes wrong first. These are the ways it goes wrong:
 
 - **It does not record:** what it keeps has no fixed shape and no home.
 - **It patches:** a doc edited again and again ends up unreadable to people and agents alike.
