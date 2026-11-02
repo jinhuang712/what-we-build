@@ -75,6 +75,5 @@ Design: <the DESIGNS guideline it serves>. How it works: <link to the spec>. Why
 
 ## Not planned
 
-| Not this | Why |
-|---|---|
+<each thing the project will not build, and why>
 ```

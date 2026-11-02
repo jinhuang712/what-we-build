@@ -28,35 +28,53 @@ ROADMAP uses these goals as its exit criteria.
 
 ## The six kinds
 
-| Kind | Answers | Passes or fails |
-|---|---|---|
-| Objective | What result must we reach? | Yes, by its acceptance test |
-| Measure | What do we watch while we work? | No |
-| Benchmark | What do we score on a fixed problem set? | No |
-| Comparison | How do we stand against other tools? | No |
-| Threshold | What limit must the product never cross? | Yes, the moment it is crossed |
-| Constraint | What must we never do along the way? | Yes, the moment it is broken |
-
 A project uses the kinds it needs and leaves out the rest.
-A constraint is not a feature left out.
-It is a rule the work itself must keep.
+
+### Objective
+
+An objective is a result the project must reach.
+It passes or fails by its acceptance test, such as a headless run from one command.
+
+### Measure
+
+A measure is something watched while the work goes on.
+It has no pass or fail, such as how full the window gets in a long sitting.
+
+### Benchmark
+
+A benchmark scores the project on a fixed problem set.
+Its score is tracked over time, such as the score on a public set of coding tasks.
+
+### Comparison
+
+A comparison runs the same work with this project and with another tool.
+It shows where the project stands, not whether it passes.
+
+### Threshold
+
+A threshold is a limit the product must never cross.
+It fails the moment it is crossed, such as a package over 100 MB.
+
+### Constraint
+
+A constraint is a rule the work itself must keep, not a feature left out.
+It fails the moment it is broken, such as a dependency outside the standard library.
 
 ## When to check
 
-The goals always stand, but not every check runs every time.
-Each goal names when it is checked.
-
-| Cadence | Fits | Why |
-|---|---|---|
-| Every change | Cheap measures, thresholds and constraints | They cost little and catch a slip at once |
-| End of a phase | Objectives, benchmarks and comparisons | A large run is worth it only once enough features have landed |
-
-- A small change does not run a benchmark or a comparison.
-- At the end of each phase, go through the whole sheet.
+Every goal stands all the time, but its check runs on a cadence.
+Measures, thresholds and constraints that cost little run with every change.
+They catch a slip at once.
+Objectives, benchmarks and comparisons run at the end of a phase.
+A large run is worth it only once enough has landed.
+At the end of each phase, go through the whole sheet.
 
 ## Guidelines
 
 - **Give each goal an ID that never changes,** so ROADMAP can point to it.
+- **Let the letter of the ID name its kind:** O, M, B, C, T or R.
+- **Open with a Summary** of every goal, its cadence and its status.
+- **Under each label, write what the goal needs,** in whatever form fits.
 - **Mark a goal met only with evidence** from someone who did not write the change.
 - **Say where and when each number was measured.**
 - **Leave a number open when it is not known.**
@@ -77,33 +95,91 @@ Each goal names when it is checked.
 
 <where and how the goals are checked>
 
-## Objectives
+## Summary
 
-| # | Objective | Want | Acceptance | Checked | Status |
-|---|---|---|---|---|---|
+| Goal | Checked | Status |
+|---|---|---|
+| [O1: <name>](#o1-name) | end of phase | ⬜ |
 
-## Measures
+## Goals
 
-| # | Measure | How it is measured | Checked | Last value |
-|---|---|---|---|---|
+### Objectives
 
-## Benchmarks
+#### O1: <one sentence name>
 
-| # | Benchmark | Problem set | Checked | Last score |
-|---|---|---|---|---|
+<short description>
 
-## Comparisons
+**Want:** <the wants or risks in PROPOSAL it serves>
 
-| # | Comparison | Against | How it is run | Checked | Last result |
-|---|---|---|---|---|---|
+**Acceptance:** <the test that passes or fails>
 
-## Thresholds
+**Checked:** <every change or end of phase, and how>
 
-| # | Threshold | Limit | How it is checked | Checked | Status |
-|---|---|---|---|---|---|
+**Status:** ⬜ | ✅ <date> | ❌ <date>
 
-## Constraints
+### Measures
 
-| # | Constraint | How it is checked | Checked | Status |
-|---|---|---|---|---|
+#### M1: <one sentence name>
+
+<short description>
+
+**How:** <how it is measured>
+
+**Checked:** <every change or end of phase>
+
+**Last value:** <value> on <date>
+
+### Benchmarks
+
+#### B1: <one sentence name>
+
+<short description>
+
+**Problem set:** <the fixed set it is scored on>
+
+**Checked:** <every change or end of phase>
+
+**Last score:** <score> on <date>
+
+### Comparisons
+
+#### C1: <one sentence name>
+
+<short description>
+
+**Against:** <the tool it is compared with>
+
+**How:** <how both runs are made and scored>
+
+**Checked:** <every change or end of phase>
+
+**Last result:** <result> on <date>
+
+### Thresholds
+
+#### T1: <one sentence name>
+
+<short description>
+
+**Limit:** <the limit never crossed>
+
+**How:** <how it is checked>
+
+**Checked:** <every change or end of phase>
+
+**Status:** ⬜ | ✅ <date> | ❌ <date>
+
+### Constraints
+
+#### R1: <one sentence name>
+
+<short description>
+
+**Rule:** <a link to the commitment in DESIGNS>
+
+**How:** <how it is checked>
+
+**Checked:** <every change or end of phase>
+
+**Status:** ⬜ | ✅ <date> | ❌ <date>
 ```

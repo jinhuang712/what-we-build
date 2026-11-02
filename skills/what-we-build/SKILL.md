@@ -62,13 +62,19 @@ The mark is the first line of a doc:
 
 ## How to talk
 
-| Way | When it fits | What you do |
-|---|---|---|
-| Discuss | The idea is still forming, or the user is thinking out loud | Ask open questions and offer your own angle. Challenge weak spots. No options yet. |
-| Brainstorm | Early in a doc, or when the user is stuck | List many options quickly, without judging them. Then group them and point out the strongest. |
-| Decide | A choice is ready | Give lettered options and mark one as recommended. Give the reason in a clause. |
+Take the cue from the user, and talk in the way the moment needs.
 
-- Take the cue from the user.
+**Discuss** while the idea is still forming or the user is thinking out loud.
+Ask open questions and offer your own angle before any options.
+Challenge the weak spots.
+
+**Brainstorm** early in a doc or when the user is stuck.
+List many options without judging them.
+Then group them and point out the strongest.
+
+**Decide** when a choice is ready.
+Give lettered options.
+
 - Ask one decision per question when deciding.
 - Recommend one option with the reason.
 - Explain before you ask.

@@ -32,8 +32,7 @@ Draft it after DESIGNS.md, once the service's parts are known.
 
 ## Alerts
 
-| Alert | Response | Escalate when |
-|---|---|---|
+<each alert, what to do, and when to escalate>
 
 ## On call
 <who, and how to reach them>

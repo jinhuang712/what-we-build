@@ -81,7 +81,6 @@ It comes first, because every other doc builds on the reason it gives.
 <the people, and what each gets>
 
 ## Risks
-| Risk | What reduces it |
-|---|---|
-| <risk> | <mitigation> |
+
+<each risk, and what reduces it>
 ```
