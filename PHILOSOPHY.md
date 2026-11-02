@@ -55,7 +55,7 @@ The window is the wrong home. It is lost when it is compacted, and models grow l
 
 Git is the wrong home too. It holds what changed and says nothing of why. It can tell a session where the work stopped, and it cannot tell it where the work should go.
 
-Docs survive both. They fail in two ways, and the skill is built against both. The first is that a fact has several homes, so they disagree. The second is that a doc has no fixed shape, so it has to be guessed at. So each doc answers one question, each fact has one home, and every doc has a skeleton.
+Docs survive both. They fail in two ways, and the skill is built against both. The first is that a fact has several homes, so they disagree. The second is that a doc has no known shape, so it has to be guessed at. So each doc answers one question, each fact has one home, and every doc has a skeleton.
 
 No doc holds code. A spec that holds code has two copies of it, one to read and one to run. The copy made by hand breaks. The doc names the thing, says why, and links to it.
 
@@ -67,7 +67,7 @@ To write, the agent must be willing to write. It must know where the fact goes, 
 
 To read, the agent must know where to look and how to read what it finds. It must understand it the same way each time, and only then can it act on it.
 
-If one link is missing, the others do not help. A doc in the right place is no use to an agent that does not know to read it before it acts. Most of the failures above are failures of reading: the doc was there, and nobody went to it. So the skill fixes the places, gives every doc a fixed shape, and tells the agent where to start.
+If one link is missing, the others do not help. A doc in the right place is no use to an agent that does not know to read it before it acts. Most of the failures above are failures of reading: the doc was there, and nobody went to it. So the skill fixes the places, gives every doc a known shape, and tells the agent where to start.
 
 ## Sources
 

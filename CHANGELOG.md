@@ -19,22 +19,25 @@
 - The agent tracks where the project stands by scanning TODO, ROADMAP and GOALS.
 - After a change the agent checks only the rules it touched, and it checks the goals only at a checkpoint or a release.
 - The placement test asks about a design commitment and a rule for the work before it asks about a goal, so a rule no longer lands in GOALS.
-- This repo's rules for checking by a reader and testing by use move from DESIGNS to AGENTS.md, which already held the rule that the repo is its own first example.
-- This repo's read order adds ROADMAP and GOALS, which the agent scans for where the project stands.
 - When every change is committed, a resume reports where the project stands and what may have drifted since each doc's last commit.
 - A commit records the user's approval, so no doc carries a mark any more.
-- A link points only to what its doc rests on, and PHILOSOPHY and CHANGELOG link to nothing.
-- FEATURES, ROADMAP and GOALS open with a summary tree that gives each entry its status and a short description.
-- A feature that does several things splits into parts such as F1.1.
-- Each roadmap item has its own status.
-- A threshold keeps every doc within one Claude Code read, in place of the count of core doc lines.
 - The agent is a thinking partner that brings its own ideas and challenges the user's.
-- No doc holds a code chunk.
+- SKILL.md is half as long, without the session stories.
+- The wording rules move into SKILL.md, and `references/wording.md` is gone.
+
+### Layout
+
 - The default layout puts the reasons at the root.
 - `specs/` holds how each part works, and `plan/` holds the goals, the roadmap and the todo list.
 - Before, every doc sat at the root.
-- SKILL.md is half as long, without the session stories.
-- The wording rules move into SKILL.md, and `references/wording.md` is gone.
+
+### Wording
+
+- No doc holds a code chunk.
+- Explanation is written in short paragraphs, with good use of tables, lists and diagrams.
+- A paragraph is one block and a bullet is one sentence, so sentences are no longer stacked one to a line.
+- An ID is always written with its name, and a list of IDs replaces a range.
+- A link points only to what its doc rests on, and PHILOSOPHY and CHANGELOG link to nothing.
 
 ### Doc guides
 
@@ -54,13 +57,9 @@
 - A constraint is a condition the product must always meet, and a rule for how the work is done stays out of GOALS.
 - Every goal in the skeleton names the want it serves.
 - GOALS opens with a Summary, and each goal has its own section with an ID that names its kind.
-- This repo's goals take the new IDs, so G6 is now T4 and G2 is a check in B1: Session quality.
 - ROADMAP calls its stages checkpoints, with IDs such as CP2, so they no longer clash with the measures.
-- An ID is always a link with its name, and a list of IDs replaces a range.
 - Status marks move out of headings into a *Status* line, so links to a feature or a checkpoint stay stable.
 - A skeleton suggests a form, and the writer changes it where the content needs another.
-- Explanation is written in short paragraphs, with good use of tables, lists and diagrams.
-- A paragraph is one block and a bullet is one sentence, so sentences are no longer stacked one to a line.
 - SKILL.md explains each step in short paragraphs instead of a list of rules, and lists every guide in two tables.
 - The guides set no counts, such as two or three stances or a page per decision.
 - A CHANGELOG groups its entries by area, as its guide always said.
@@ -71,6 +70,16 @@
 - New guide: INSTALL.md, for everything beyond the README's one install line.
 - A command longer than two lines belongs in a script.
 - PROPOSAL drops *How it works*, *Approach* and *How we know it works*, which FEATURES, DESIGNS and GOALS own.
+- FEATURES, ROADMAP and GOALS open with a summary tree that gives each entry its status and a short description.
+- A feature that does several things splits into parts such as F1.1.
+- Each roadmap item has its own status.
+
+### This repo's docs
+
+- This repo's rules for checking by a reader and testing by use move from DESIGNS to AGENTS.md, which already held the rule that the repo is its own first example.
+- This repo's read order adds ROADMAP and GOALS, which the agent scans for where the project stands.
+- This repo's goals take the new IDs, so G6 is now T4 and G2 is a check in B1: Session quality.
+- A threshold keeps every doc within one Claude Code read, in place of the count of core doc lines.
 
 ## 0.4.0 — 2026-10-18
 
