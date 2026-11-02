@@ -163,6 +163,7 @@ The docs come out in plain and precise English. A reader finds a fact fast and u
 | Case | What you see | Feature |
 |---|---|---|
 | The folder and your request disagree | the agent asks you which to follow | F1.1: Start from where the project is |
+| The folder has no git | the agent recommends `git init`, since git records each approval | F1.1: Start from where the project is |
 | A fact has no doc to own it | the agent asks you what to do with it | F1.3: Talk each doc through |
 | A number is not known | it stays open in the doc | F1.3: Talk each doc through |
 | The docs and the code disagree | the agent tells you and you decide | F2.1: Keep the context while you work |

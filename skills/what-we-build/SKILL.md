@@ -44,13 +44,14 @@ Read the project folder first, and start from what it holds.
 | The doc set with every change committed | Reporting where the project stands and what may have drifted |
 
 - When the folder and the request disagree, ask.
+- When the folder has no git, recommend `git init`, because a commit is what records an approval.
 - Agree the doc set first, and then where the docs live.
 - Go through the project's `AGENTS.md` with the user, and decide together what it holds.
 - Recommend the read order, the layout and the rules in *While you work*.
 
 To resume, read every doc and run `git status`. A doc with uncommitted changes is a draft the user has not approved. Tell the user where the work stopped. Re-read the committed docs before you continue at that draft, or at the first doc in the order not yet written.
 
-When every change is committed, report where the project stands. Scan `TODO.md`, `ROADMAP.md` and `GOALS.md` for it. Then look at what changed since each doc's last commit. Point out where a doc may have fallen behind. Ask the user what to work on next.
+When every change is committed, report where the project stands from `TODO.md`, `ROADMAP.md` and `GOALS.md`. Then take each doc's last commit and read what the project changed after it. Where the work moved and the doc did not, point out that the doc may have fallen behind. Ask the user what to work on next.
 
 ## The doc set
 

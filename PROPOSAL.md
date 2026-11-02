@@ -105,7 +105,7 @@ Each doc answers one question, such as why the project was started or what is st
 - **Context that outlives the window:** what is decided goes into a doc at once.
 - **Docs a person can read:** each doc follows its guide and is re-read in full before any edit.
 - **An agent that reads before it works:** the project's `AGENTS.md` names the read order.
-- **Goals that can be checked:** each goal needs a number or stays open.
+- **Goals that can be checked:** each goal has a check, and a number nobody knows yet stays open.
 - **The user decides:** nothing is committed before the user approves it.
 
 ## What we don't want

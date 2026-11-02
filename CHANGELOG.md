@@ -28,6 +28,8 @@
 - The agent tracks where the project stands by scanning TODO, ROADMAP and GOALS.
 - After a change the agent checks only the rules it touched, and it checks the goals only at a checkpoint or a release.
 - The placement test asks about a design commitment and a rule for the work before it asks about a goal, so a rule no longer lands in GOALS.
+- Without git, the agent recommends `git init`, because a commit records each approval.
+- A report on a committed doc set reads what the project changed after each doc's last commit.
 - When every change is committed, a resume reports where the project stands and what may have drifted since each doc's last commit.
 - A commit records the user's approval, so no doc carries a mark any more.
 - The agent is a thinking partner that brings its own ideas and challenges the user's.
