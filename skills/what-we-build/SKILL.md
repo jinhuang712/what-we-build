@@ -142,6 +142,7 @@ Beside the core, the first three are recommended for every project:
 - [specs/](references/SPECS.md): how each part works, and `specs/UIUX.md` with `prototype/*.html` for a visual interface
 - [specs/ARCHITECTURE.md](references/ARCHITECTURE.md): the map of the parts and how they connect
 - [GLOSSARY.md](references/GLOSSARY.md)
+- [INSTALL.md](references/INSTALL.md)
 - [CONTRIBUTING.md](references/CONTRIBUTING.md)
 - [SECURITY.md](references/SECURITY.md)
 - [RUNBOOK.md](references/RUNBOOK.md)
@@ -161,6 +162,7 @@ Ask the questions in order. The first yes names the fact's home.
 | Is it a commitment the whole design must meet? | `DESIGNS.md` |
 | How do the parts fit together? | `specs/ARCHITECTURE.md` |
 | Is it how a part works inside? | `specs/` |
+| Is it how to install, update or remove it? | `INSTALL.md` |
 | Is it about when, or about progress? | `ROADMAP.md` |
 | Did it ship in a release? | `CHANGELOG.md` |
 
@@ -177,6 +179,7 @@ Ask the questions in order. The first yes names the fact's home.
 - Check a behavior claim by running it, or mark it "not yet verified".
 - A goal is met only with a measurement or the user's own report.
 - Never put a code chunk in a doc.
+- A command longer than two lines belongs in a script, and the doc names the script.
 - Where the docs live is the user's choice.
 - The default keeps the reasons and the contract at the root.
 - `specs/` holds how each part works, with `specs/decisions/` under it.

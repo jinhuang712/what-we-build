@@ -12,7 +12,7 @@ It comes last, because it sums up the approved docs.
 - The hero image and the tagline.
 - What it is.
 - What it does.
-- How to install it.
+- How to install it in one line.
 - How to use it.
 - Links to every other doc.
 
@@ -33,7 +33,7 @@ It comes last, because it sums up the approved docs.
 - **Open with a hero image.** It shows what the project is before a word is read.
 - **Lead with the one constraint that sets the project apart.**
 - **Say what it does in a few bullets,** and link to the doc that holds the detail.
-- **Make every install step work as written.**
+- **Install in one line,** and link to INSTALL.md for the rest.
 - **Show how to use it with the first real task,** from start to result.
 - **Recommend an architecture diagram** that sums up `specs/ARCHITECTURE.md`.
 - **Use emoji where they carry meaning,** such as a mark beside each capability.
@@ -80,7 +80,7 @@ Each one summarizes its owner doc and links to it.
 - <a mark> <a capability, in a line>
 
 ## Install
-<each step works as written>
+<one line, then a link to INSTALL.md>
 
 ## How to use
 <the first real task, from start to result>

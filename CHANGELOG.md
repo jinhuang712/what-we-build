@@ -38,6 +38,8 @@
 - README opens with a hero image and always has *Install* and *How to use*.
 - README lists its optional sections, each with when to add it and the doc that owns it.
 - ARCHITECTURE always opens with a diagram of the whole.
+- New guide: INSTALL.md, for everything beyond the README's one install line.
+- A command longer than two lines belongs in a script.
 - PROPOSAL drops *How it works*, *Approach* and *How we know it works*, which FEATURES, DESIGNS and GOALS own.
 
 ## 0.4.0 — 2026-10-18
