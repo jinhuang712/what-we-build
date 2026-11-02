@@ -77,14 +77,14 @@ Features
 
 <what it gives the user, and what happens>
 
-**Stories:**
-
-- <who does what, for what> → <its flow in specs/UIUX.md, when there is one>
-
 - **Stance:** <the PHILOSOPHY stance that forces it, if one does>
 - **Design:** <the DESIGNS guidelines it rests on>
 - **How it works:** <its specs>
 - **Why:** <its decisions>
+
+**Stories:**
+
+- <who does what, for what> → <its flow in specs/UIUX.md, when there is one>
 
 #### F1.1.1: <name>
 

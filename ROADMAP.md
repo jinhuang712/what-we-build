@@ -4,7 +4,7 @@ Where what-we-build stands and what comes next. Each checkpoint is a usable or p
 
 Status: ✅ done · 🟨 in progress · ⬜ not started.
 
-**Current checkpoint:** [CP2: Rebuild around the context](#cp2-rebuild-around-the-context). The skill has been used on this repo and not yet on a new project.
+**Current checkpoint:** [CP2: Rebuild around the context](#cp2-rebuild-around-the-context). The skill has been used on this repo and not yet on a new project, and it has no evals until [CP4: Proven useful](#cp4-proven-useful).
 
 ## Summary
 

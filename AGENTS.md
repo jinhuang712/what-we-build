@@ -32,6 +32,7 @@ Before a change, also read the doc that owns it.
 - Once other developers build on the project, tell the user it may need a wiki and leave its form to them.
 - When a change is done, update `CHANGELOG.md` and the feature's status in the same change.
 - When a todo is handled, delete it in the same change.
+- After a change, check only what it touched against the rules.
 - Check the goals in `GOALS.md` at the end of a checkpoint or before a release, and never for a small change.
 - When the user stops you, stop at once.
 

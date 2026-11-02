@@ -89,11 +89,11 @@ The agent pushes back when something does not fit. It keeps it up until you deci
 
 **Status:** ✅
 
-The agent writes each point into its doc once you agree it, and nothing before.
+You see each change as its skeleton first and then as a diff of before and after. The agent writes each point into its doc once you agree it, and nothing before.
 
 **Stories:**
 
-- You read the skeleton and then the diff of each change, so you approve only what you have seen.
+- You approve a change only after you have seen it, so nothing reaches a doc behind your back.
 
 ### F1.6: Commit after approval
 
@@ -111,13 +111,13 @@ Nothing is committed before you approve it, and any later edit is a draft until 
 
 You can stop at any point and pick up later. Git tells the agent which docs you approved, so on a later `/what-we-build` it tells you where the work stopped. When a doc is a draft you have not approved or a core doc is not written yet, the agent continues at the first such doc in the order. When the whole doc set is written and committed, it reports where the project stands and what changed since each doc's last commit. You then see which doc may have fallen behind.
 
+- **Design:** [DESIGNS 2: The docs are the state](DESIGNS.md#2-the-docs-are-the-state)
+- **Why:** [008: A resume with nothing to draft looks for drift](specs/decisions/008-resume-looks-for-drift.md) and [009: Git tells a draft from an approved doc](specs/decisions/009-git-tells-a-draft-from-an-approved-doc.md)
+
 **Stories:**
 
 - You come back another day and the agent picks up at the first doc you have not approved.
 - You return to a finished doc set and learn which docs fell behind the work.
-
-- **Design:** [DESIGNS 2: The docs are the state](DESIGNS.md#2-the-docs-are-the-state)
-- **Why:** [008: A resume with nothing to draft looks for drift](specs/decisions/008-resume-looks-for-drift.md) and [009: Git tells a draft from an approved doc](specs/decisions/009-git-tells-a-draft-from-an-approved-doc.md)
 
 ## F2: Keeping the context
 
@@ -135,13 +135,13 @@ The agent reads the doc that owns a thing before it changes it. It records an op
 
 The skill starts only when you type `/what-we-build`, so these rules live in the project's `AGENTS.md`, which the agent reads whenever its window is new. You agree to record them there when you go through it with the agent.
 
+- **Design:** [DESIGNS 2: The docs are the state](DESIGNS.md#2-the-docs-are-the-state)
+- **Why:** [002: The skill starts only by hand](specs/decisions/002-manual-start.md)
+
 **Stories:**
 
 - An agent in a new window reads the docs in the read order, so it knows the project before it works.
 - You find the open items and the decisions written down at once, so nothing lives only in the window.
-
-- **Design:** [DESIGNS 2: The docs are the state](DESIGNS.md#2-the-docs-are-the-state)
-- **Why:** [002: The skill starts only by hand](specs/decisions/002-manual-start.md)
 
 ### F2.2: A wiki when others build on it
 

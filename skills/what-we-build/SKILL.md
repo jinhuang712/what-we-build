@@ -136,7 +136,7 @@ To find the owner, run the placement test: ask these questions in order. The fir
 | Is it about when, or about progress? | `ROADMAP.md` |
 | Did it ship in a release? | `CHANGELOG.md` |
 
-A link points to what the doc rests on, never the other way. A doc still makes its point without the reader following the link. The link table says where each doc may link.
+A link points to what the doc rests on, never the other way. A doc still makes its point without the reader following the link. The link table says where each doc may link inside the project, and a source outside it may be cited from any doc.
 
 | Doc | Links to |
 |---|---|

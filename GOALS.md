@@ -166,8 +166,8 @@ The agent re-reads a whole doc before any edit, so one read must return all of i
 
 **Limit:** every doc within 25000 tokens and 2000 lines, the default limits of one Claude Code read.
 
-**How:** `wc -l` for lines, and a read that returns the whole file without a cut.
+**How:** `wc -l` for lines and `wc -c` for bytes on every doc, since a doc never has more tokens than bytes.
 
 **Checked:** from [CP2: Rebuild around the context](ROADMAP.md#cp2-rebuild-around-the-context) on, at each checkpoint.
 
-**Status:** ✅ 2026-11-02 by the author, with the largest doc CHANGELOG at about 4000 tokens.
+**Status:** ✅ 2026-11-03, with FEATURES.md the longest at 259 lines and CHANGELOG.md the largest at 16955 bytes.
