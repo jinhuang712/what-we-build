@@ -16,8 +16,9 @@ Features
 │   ├── ✅ F1.5: See the change — every change is shown as before and after
 │   ├── ✅ F1.6: Commit after approval — nothing is committed before you approve it
 │   └── 🚧 F1.7: Resume — you stop at any point and pick up later, verified only in part
-├── ✅ F2: Keeping the context — the docs stay true as the work goes on
-│   └── ✅ F2.1: Keep the context while you work — the agent reads the owning doc first and records at once
+├── 🚧 F2: Keeping the context — the docs stay true as the work goes on
+│   ├── ✅ F2.1: Keep the context while you work — the agent reads the owning doc first and records at once
+│   └── 🚧 F2.2: A wiki when others build on it — the agent tells you when the project may need one, not yet seen in use
 └── ✅ F3: Getting the docs — the docs a project needs, each with a guide
     ├── ✅ F3.1: The core docs — the seven docs every project gets
     ├── ✅ F3.2: Docs that join later — the recommended docs and the ones a project grows into
@@ -120,7 +121,7 @@ You can stop at any point and pick up later. Git tells the agent which docs you 
 
 ## F2: Keeping the context
 
-**Status:** ✅
+**Status:** 🚧 [F2.2: A wiki when others build on it](#f22-a-wiki-when-others-build-on-it) is not yet seen in use
 
 The docs stay true as the work goes on, not only while they are first written.
 
@@ -141,6 +142,18 @@ The skill starts only when you type `/what-we-build`, so these rules live in the
 
 - **Design:** [DESIGNS 2: The docs are the state](DESIGNS.md#2-the-docs-are-the-state)
 - **Why:** [002: The skill starts only by hand](specs/decisions/002-manual-start.md)
+
+### F2.2: A wiki when others build on it
+
+**Status:** 🚧 not yet seen on a project that others build on
+
+When other developers start to build on your project, often with their own agents, the source alone leaves them guessing how to use it. The agent tells you then that the project may need a wiki. What the wiki holds and where it lives is your call, and the skill gives it no guide.
+
+- **Why:** [023: The skill points to a wiki and leaves its form to the project](specs/decisions/023-the-skill-points-to-a-wiki.md)
+
+**Stories:**
+
+- You hear at the right time that the project may need a wiki, so the developers who build on it do not have to read the source.
 
 ## F3: Getting the docs
 
@@ -240,7 +253,7 @@ The docs come out in plain and precise English. A reader finds a fact fast and u
 | A fixed questionnaire or template | Fixed questions fill forms. Decisions come from a conversation. |
 | More docs than the project needs | Only a doc with a job gets kept true. |
 | Choosing how a product should feel | That is the user's call. The skill records the user's words when they bring them. |
-| User manuals such as tutorials and API references | They say how to use the product, not why it is this way. |
+| Writing or shaping a wiki | What it holds depends on the project, so the skill only says when one may be needed ([F2.2: A wiki when others build on it](#f22-a-wiki-when-others-build-on-it)). |
 | A whole `AGENTS.md` | The skill recommends only the read order, the layout and the work rules. Claude Code's `/init` writes the rest from the code. |
 | Standard texts such as LICENSE | They need a choice of a standard text, not a discussion. |
 | Scripts that check the docs | The skill is Markdown only, so a reader checks the links and the facts ([DESIGNS 3: No dependencies](DESIGNS.md#3-no-dependencies)). |

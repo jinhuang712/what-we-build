@@ -160,6 +160,7 @@ The docs stay true only if the agent keeps them true in every new window. These 
 - Write a decision at once when a choice had another way open, may be undone later and has a reason the code does not show.
 - When something cannot be handled now, add it to `TODO.md` at once.
 - When the docs and the code disagree, tell the user and let them decide.
+- Once other developers build on the project, tell the user it may need a wiki and leave its form to them.
 - When a change is done, update `CHANGELOG.md` and the feature's status in the same change.
 - When a todo is handled, delete it in the same change.
 - After a change, check only what it touched against the rules.

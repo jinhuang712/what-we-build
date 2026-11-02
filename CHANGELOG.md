@@ -29,6 +29,7 @@
 - They say to read the doc that owns a thing first and to record each open item at once.
 - A decision is recorded at once when another way was open and the code does not show the reason.
 - When the docs and the code disagree, the agent asks you instead of picking a side.
+- Once other developers build on your project, the agent tells you it may need a wiki and leaves its form to you.
 - After a change the agent checks only the rules it touched, and it checks the goals only at a checkpoint or a release.
 
 ### The doc set
