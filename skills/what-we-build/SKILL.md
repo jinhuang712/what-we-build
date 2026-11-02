@@ -18,6 +18,7 @@ A reader knows where to look.
 - Take a stance and say why.
 - Challenge the user's ideas.
 - The user decides.
+- Leave the outcome open until you have discussed it with the user.
 - Write a doc only after its key points are agreed.
 
 ## Working protocol
@@ -92,7 +93,7 @@ Read the project folder first.
 - Ask the user what to do with what no doc owns.
 - Agree the doc set first.
 - Then agree where the docs live.
-- Write the read order into the project's `AGENTS.md`.
+- Go through the project's `AGENTS.md` with the user, and decide together what it should hold.
 - Work through the docs in this order:
 
 `PROPOSAL.md` → `PHILOSOPHY.md` → `DESIGNS.md` → `GOALS.md` → `FEATURES.md` → `ROADMAP.md` → `README.md`
@@ -186,7 +187,6 @@ Ask the questions in order. The first yes names the fact's home.
 - `plan/` holds the plan: `GOALS.md`, `ROADMAP.md` and `TODO.md`.
 - `plan/evidence/` holds the files that TODO items point to.
 - A doc keeps its name wherever it sits.
-- Record the layout in the project's `AGENTS.md`.
 
 ## Wording
 

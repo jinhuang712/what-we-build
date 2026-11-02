@@ -15,6 +15,7 @@ Guidance for coding agents working on what-we-build. These rules cover what an a
 - **Follow the design principles in DESIGNS.md,** including no dependencies, our own words and made-up examples. They keep the skill installable anywhere, and free of borrowed text and of other projects.
 - **Trust the model, and leave it room.** A guide says what a doc is for and what goes wrong, and leaves the method to the model. Do not teach what the model already knows, because a model told every step follows the steps and stops using its judgment.
 - **Keep the marks honest.** Only the user approves a doc. An agent writes `drafted`, because an `approved` the user never gave claims an agreement that did not happen.
+- **Leave the outcome open until you have discussed it with the user,** and look at what exists together first.
 - **Show changes before asking for approval,** as before-and-after text, because the user reviews changes side by side.
 
 ## Before you finish

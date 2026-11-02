@@ -67,7 +67,7 @@ The skill reads the folder and starts from what it finds.
 | Something that disagrees with your request | asking you |
 
 First you agree the doc set and where the docs live.
-The skill writes the read order into the project's `AGENTS.md`.
+You go through the project's `AGENTS.md` with the agent and decide together what it should hold.
 Then each doc goes through the same loop:
 
 1. You talk it through until its key points are agreed.
@@ -146,7 +146,7 @@ By default the layout looks like this:
 - `specs/` holds how each part works, with `specs/decisions/` under it.
 - `plan/` holds GOALS, ROADMAP and TODO.
 
-The agent records the layout in the project's `AGENTS.md`.
+You decide with the agent whether `AGENTS.md` records the layout.
 
 - **Design:** [1. A short core with detail on demand](DESIGNS.md#1-a-short-core-with-detail-on-demand)
 - **Why:** [005](specs/decisions/005-one-guide-per-kind-of-doc.md)

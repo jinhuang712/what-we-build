@@ -13,7 +13,8 @@
 - A decision is written down when it is made.
 - A finding that cannot be handled now goes to TODO.md at once.
 - When the docs and the code disagree, the agent asks the user instead of picking a side.
-- The agent writes the read order into the project's AGENTS.md.
+- The agent goes through the project's AGENTS.md with the user and decides with them what it holds.
+- The agent leaves the outcome open until it has discussed it with the user.
 - The agent is a thinking partner that brings its own ideas and challenges the user's.
 - No doc holds a code chunk.
 - The default layout puts the reasons at the root.
