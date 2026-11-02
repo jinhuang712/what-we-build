@@ -23,17 +23,19 @@ How each part works inside goes in that part's own spec.
 - A part explained in detail that needs its own spec.
 - A map that lists files instead of parts.
 - A part that has a spec but no link to it.
+- A map with no diagram.
 
 **Add when** the project has more than one part worth a spec.
 
 ## Guidelines
 
-- **Open with one diagram of the whole.** The reader sees the shape before the words.
+- **Always open with a diagram of the whole.** The reader sees the shape before the words.
 - **Name each part by what it does,** and link to its spec.
 - **Name the folder each part lives in, not the files.** Folders change less often.
 
 ## You have it when
 
+- It opens with a diagram of the whole.
 - A new contributor knows where to look for any change.
 - Every part in the code is on the map.
 - Nothing in it explains how a part works inside.

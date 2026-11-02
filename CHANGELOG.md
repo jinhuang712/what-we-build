@@ -35,6 +35,9 @@
 - FEATURES opens with *Summary* instead of *TL;DR*.
 - GOALS holds six kinds of goal, each in its own section.
 - Each goal says when it is checked: with every change or at the end of a phase.
+- README opens with a hero image and always has *Install* and *How to use*.
+- README lists its optional sections, each with when to add it and the doc that owns it.
+- ARCHITECTURE always opens with a diagram of the whole.
 - PROPOSAL drops *How it works*, *Approach* and *How we know it works*, which FEATURES, DESIGNS and GOALS own.
 
 ## 0.4.0 — 2026-10-18
