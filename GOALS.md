@@ -55,6 +55,6 @@ The docs were rewritten after 2026-10-13, so every result from that day waits fo
 | G17 | No dependencies ([DESIGNS 3](DESIGNS.md#3-no-dependencies)) | `skills/what-we-build/` holds only Markdown files | every change | ⬜ |
 | G18 | Our own words ([DESIGNS 4](DESIGNS.md#4-our-own-words-over-borrowed-text)) | No passage in `skills/` is copied from a source | every change | ⬜ |
 | G19 | Made-up examples ([DESIGNS 5](DESIGNS.md#5-made-up-examples-over-real-projects)) | No example in `skills/` names or quotes another project | every change | ⬜ |
-| G20 | No code chunks in docs | No doc in this repo pastes code | every change | ⬜ |
+| G20 | No code chunks in docs | No doc in this repo pastes code or a command longer than two lines | every change | ⬜ |
 
 G10 was retired on 2026-11-02 and its number is not reused.
