@@ -119,7 +119,7 @@ A claim needs its proof. Check a behavior claim by running it, or mark it "not y
 
 A fact lives in the doc that owns it. Another doc may say less about it. The same detail in two docs is a second home, and the two drift apart. Each doc still reads on its own, so a summary keeps enough to make sense there. When a fact changes, update its summaries in the same change.
 
-To find the owner, ask these questions in order. The first yes names the fact's home. When none fits, ask the user.
+To find the owner, run the placement test: ask these questions in order. The first yes names the fact's home. When none fits, ask the user.
 
 | Question | Home |
 |---|---|
@@ -137,7 +137,7 @@ To find the owner, ask these questions in order. The first yes names the fact's 
 | Is it about when, or about progress? | `ROADMAP.md` |
 | Did it ship in a release? | `CHANGELOG.md` |
 
-A link points to what the doc rests on, never the other way. A doc still makes its point without the reader following the link.
+A link points to what the doc rests on, never the other way. A doc still makes its point without the reader following the link. The link table says where each doc may link.
 
 | Doc | Links to |
 |---|---|
@@ -176,7 +176,7 @@ The docs stay true only if the agent keeps them true in every new window. These 
 - Put the answer first.
 - Use one name per thing.
 - Write an ID with its name, such as "T4: A short skill".
-- Link an ID only where the table in *Where a fact goes* allows.
+- Link an ID only where the link table in *Where a fact goes* allows.
 - List the items instead of giving a range.
 - Keep status marks out of headings, so the links to them stay stable.
 - Prefer a number to an adjective, with its source or left open.

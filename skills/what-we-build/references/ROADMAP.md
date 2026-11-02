@@ -23,7 +23,7 @@ ROADMAP.md answers "when?" and "how far along?". It breaks the work into checkpo
 
 ## Guidelines
 
-- **Open with an Overview,** an ASCII tree in a code block of every checkpoint and its items with their status.
+- **Open with a Summary,** an ASCII tree in a code block of every checkpoint and its items with their status.
 - **Keep the first checkpoint small enough to finish soon.**
 - **Point exit criteria to GOALS.**
 - **End each checkpoint by going through every goal that can run by then.**
@@ -40,7 +40,7 @@ ROADMAP.md answers "when?" and "how far along?". It breaks the work into checkpo
 
 **Current checkpoint:** <a link to it>. <where the work stands>
 
-## Overview
+## Summary
 
 ```
 Roadmap

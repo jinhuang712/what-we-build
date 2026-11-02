@@ -48,7 +48,7 @@
 - PROPOSAL drops *How it works*, *Approach* and *How we know it works* because other docs own them.
 - PHILOSOPHY drops *Reflections* and argues in prose with any structure that shows the thought.
 - FEATURES numbers its groups, so F1 is a group and F1.1 a feature in it.
-- FEATURES, ROADMAP and GOALS open with an ASCII tree of every entry and its status.
+- FEATURES, ROADMAP and GOALS open with a *Summary*, an ASCII tree of every entry and its status.
 - README opens with a hero image and always has *Install* and *How to use*.
 - README lists its optional sections with the doc that owns each one.
 - ARCHITECTURE opens with a diagram of the whole.

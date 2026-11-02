@@ -6,7 +6,7 @@ Status: ✅ done · 🟨 in progress · ⬜ not started.
 
 **Current checkpoint:** [CP2: Rebuild around the context](#cp2-rebuild-around-the-context). The skill has been used on this repo and not yet on a new project.
 
-## Overview
+## Summary
 
 ```
 Roadmap
@@ -76,6 +76,7 @@ Roadmap
 
 - [O1: The core docs without a long talk](GOALS.md#o1-the-core-docs-without-a-long-talk)
 - [O2: Context survives compaction](GOALS.md#o2-context-survives-compaction)
+- [M1: Reads before it changes](GOALS.md#m1-reads-before-it-changes)
 - [M4: Docs that fell behind](GOALS.md#m4-docs-that-fell-behind)
 
 ## CP4: Proven useful

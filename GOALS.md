@@ -65,7 +65,7 @@ The agent reads the doc that owns a thing before it changes that thing.
 M1 (%) = 100 × changes made after reading the owning doc / all changes in the sample
 ```
 
-**Checked:** each checkpoint.
+**Checked:** from [CP3: First real use](ROADMAP.md#cp3-first-real-use) on, at each checkpoint.
 
 **Last value:** not measured.
 
@@ -83,7 +83,7 @@ At a checkpoint the docs still say what the project is.
 M4 (claims) = claims in the whole doc set that the work now contradicts
 ```
 
-**Checked:** each checkpoint.
+**Checked:** from [CP3: First real use](ROADMAP.md#cp3-first-real-use) on, at each checkpoint.
 
 **Last value:** not measured.
 
@@ -154,9 +154,9 @@ C1 = prompts with a lead above 0 / 3, with the mean lead
 
 **How:** `wc -l skills/what-we-build/SKILL.md`
 
-**Checked:** each checkpoint.
+**Checked:** from [CP2: Rebuild around the context](ROADMAP.md#cp2-rebuild-around-the-context) on, at each checkpoint.
 
-**Status:** ✅ 194 lines on 2026-11-03.
+**Status:** ✅ 195 lines on 2026-11-03.
 
 #### T8: A doc read in one go
 
@@ -168,6 +168,6 @@ The agent re-reads a whole doc before any edit, so one read must return all of i
 
 **How:** `wc -l` for lines, and a read that returns the whole file without a cut.
 
-**Checked:** each checkpoint.
+**Checked:** from [CP2: Rebuild around the context](ROADMAP.md#cp2-rebuild-around-the-context) on, at each checkpoint.
 
 **Status:** ✅ 2026-11-02 by the author, with the largest doc CHANGELOG at about 4000 tokens.

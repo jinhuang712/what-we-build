@@ -2,9 +2,7 @@
 
 What what-we-build does today, and what it will and won't do. Each feature is described from the user's side: what you type, what you see and what you decide.
 
-Status: ✅ built · 🚧 built with a gap named in its section · ⬜ planned.
-
-Every ✅ feature has been used on this repo. None has been used on a new project yet.
+Status: ✅ built · 🚧 built, with a gap named beside it · ⬜ planned.
 
 ## Summary
 
