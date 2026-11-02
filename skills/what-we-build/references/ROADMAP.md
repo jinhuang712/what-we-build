@@ -28,6 +28,7 @@ It schedules features and does not describe them.
 
 - **Keep the first milestone small enough to finish soon.**
 - **Point exit criteria to GOALS.**
+- **End each milestone by going through the whole goal sheet,** including the checks that wait for the end of a phase.
 
 ## You have it when
 

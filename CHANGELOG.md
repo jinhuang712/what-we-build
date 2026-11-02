@@ -33,6 +33,8 @@
 - PROPOSAL no longer assumes a pain: *Pain points* sits under *Why it should exist* and is written only when there are pains.
 - PROPOSAL gives each pain its own section, in whatever shape shows its evidence.
 - FEATURES opens with *Summary* instead of *TL;DR*.
+- GOALS holds six kinds of goal, each in its own section.
+- Each goal says when it is checked: with every change or at the end of a phase.
 - PROPOSAL drops *How it works*, *Approach* and *How we know it works*, which FEATURES, DESIGNS and GOALS own.
 
 ## 0.4.0 — 2026-10-18

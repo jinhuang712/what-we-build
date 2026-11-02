@@ -114,7 +114,7 @@ Read the project folder first.
 | `PROPOSAL.md` | Why did we start this? |
 | `PHILOSOPHY.md` | Why is it this way? |
 | `DESIGNS.md` | What must the design always satisfy? |
-| `GOALS.md` | What do we measure? |
+| `GOALS.md` | What do we check, and when? |
 | `FEATURES.md` | What does it do, and what will it do? |
 | `ROADMAP.md` | When, and how far along? |
 | `README.md` | What is this, and how do I start? |
@@ -153,7 +153,7 @@ Ask the questions in order. The first yes names the fact's home.
 | Question | Home |
 |---|---|
 | Is it a stance that steers the whole project, not only how it is built? | `PHILOSOPHY.md` |
-| Can it be checked with a number? | `GOALS.md` |
+| Can it be checked, with a test or a number? | `GOALS.md` |
 | Can the user see it or do it? | `FEATURES.md` for what happens and whether it is built, `specs/UIUX.md` for how it looks |
 | Is it a feature the project will not build? | `FEATURES.md` → *Not planned* |
 | Is it a choice between ways, with the others not taken? | `specs/decisions/`, whether it concerns the whole design or one feature |
