@@ -156,7 +156,7 @@ C1 = prompts with a lead above 0 / 3, with the mean lead
 
 **Checked:** from [CP2: Rebuild around the context](ROADMAP.md#cp2-rebuild-around-the-context) on, at each checkpoint.
 
-**Status:** ✅ 196 lines on 2026-11-03.
+**Status:** ✅ 195 lines on 2026-11-03.
 
 #### T8: A doc read in one go
 
@@ -170,4 +170,4 @@ The agent re-reads a whole doc before any edit, so one read must return all of i
 
 **Checked:** from [CP2: Rebuild around the context](ROADMAP.md#cp2-rebuild-around-the-context) on, at each checkpoint.
 
-**Status:** ✅ 2026-11-03, with FEATURES.md the longest at 259 lines and CHANGELOG.md the largest at 16955 bytes.
+**Status:** ✅ 2026-11-03, with FEATURES.md the longest at 248 lines and CHANGELOG.md the largest at 17047 bytes.

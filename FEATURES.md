@@ -14,7 +14,6 @@ Features
 │   ├── ✅ F1.3: Talk each doc through — discuss, brainstorm or decide with a recommendation
 │   ├── ✅ F1.4: Push back — the agent says what does not fit and why
 │   ├── ✅ F1.5: See the change — every change is shown as before and after
-│   ├── ✅ F1.6: Commit after approval — nothing is committed before you approve it
 │   └── 🚧 F1.7: Resume — you stop at any point and pick up later, verified only in part
 ├── 🚧 F2: Keeping the context — the docs stay true as the work goes on
 │   ├── ✅ F2.1: Keep the context while you work — the agent reads the owning doc first and records at once
@@ -47,8 +46,8 @@ You bring an idea, a codebase or a pile of docs. The skill reads the folder and 
 | An idea and nothing written | discussing the idea with you |
 | Running code and no docs | reading the code and then discussing each doc |
 | Messy docs | sorting them into the doc set and then discussing the gaps |
-| Part of the doc set, or changes not yet committed | resuming at the first doc you have not approved ([F1.7: Resume](#f17-resume)) |
-| The whole doc set, with every change committed | reporting where the project stands and what may have drifted ([F1.7: Resume](#f17-resume)) |
+| Part of the doc set | resuming where the work stopped ([F1.7: Resume](#f17-resume)) |
+| The whole doc set | reporting where the project stands and what may have drifted ([F1.7: Resume](#f17-resume)) |
 | Something that disagrees with your request | asking you |
 
 **Stories:**
@@ -89,34 +88,24 @@ The agent pushes back when something does not fit. It keeps it up until you deci
 
 **Status:** ✅
 
-You see each change as its skeleton first and then as a diff of before and after. The agent writes each point into its doc once you agree it, and nothing before.
+You see each change as its skeleton first and then as a diff of before and after. The agent writes each point into its doc once you agree it, and nothing before. It commits the change once you approve it.
 
 **Stories:**
 
 - You approve a change only after you have seen it, so nothing reaches a doc behind your back.
 
-### F1.6: Commit after approval
-
-**Status:** ✅
-
-Nothing is committed before you approve it, and any later edit is a draft until you do.
-
-**Stories:**
-
-- You approve a change and the agent commits it, so git tells your approved docs from the drafts.
-
 ### F1.7: Resume
 
-**Status:** 🚧 the report on the whole doc set ran on 2026-11-03, and the resume at a draft or a missing doc is not yet verified
+**Status:** 🚧 the report on the whole doc set ran on 2026-11-03, and the resume of a doc set in progress is not yet verified
 
-You can stop at any point and pick up later. Git tells the agent which docs you approved, so on a later `/what-we-build` it tells you where the work stopped. When a doc is a draft you have not approved or a core doc is not written yet, the agent continues at the first such doc in the order. When the whole doc set is written and committed, it reports where the project stands and what changed since each doc's last commit. You then see which doc may have fallen behind.
+You can stop at any point and pick up later, because every agreed point is already in its doc and every open one is in `TODO.md`. On a later `/what-we-build` the agent tells you where the work stopped: the first doc in the order that is not written yet or still has an open question. When the whole doc set is written, it reports where the project stands and what changed since each doc's last commit. You then see which doc may have fallen behind.
 
 - **Design:** [DESIGNS 2: The docs are the state](DESIGNS.md#2-the-docs-are-the-state)
-- **Why:** [008: A resume with nothing to draft looks for drift](specs/decisions/008-resume-looks-for-drift.md) and [009: Git tells a draft from an approved doc](specs/decisions/009-git-tells-a-draft-from-an-approved-doc.md)
+- **Why:** [008: A resume with nothing to draft looks for drift](specs/decisions/008-resume-looks-for-drift.md) and [024: Approval lives in the conversation](specs/decisions/024-approval-lives-in-the-conversation.md)
 
 **Stories:**
 
-- You come back another day and the agent picks up at the first doc you have not approved.
+- You come back another day and the agent picks up at the first doc that is not finished.
 - You return to a finished doc set and learn which docs fell behind the work.
 
 ## F2: Keeping the context
@@ -230,7 +219,7 @@ The docs come out in plain and precise English. A reader finds a fact fast and u
 | Case | What you see | Feature |
 |---|---|---|
 | The folder and your request disagree | the agent asks you which to follow | F1.1: Start from where the project is |
-| The folder has no git | the agent recommends `git init`, since git records each approval | F1.1: Start from where the project is |
+| The folder has no git | the agent recommends `git init`, since the drift report reads each doc's history | F1.1: Start from where the project is |
 | A fact has no doc to own it | the agent asks you what to do with it | F1.3: Talk each doc through |
 | A number is not known | it stays open in the doc | F1.3: Talk each doc through |
 | The docs and the code disagree | the agent tells you and you decide | F2.1: Keep the context while you work |

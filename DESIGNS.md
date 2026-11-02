@@ -21,11 +21,11 @@ The agent reads `SKILL.md` in full each time the skill starts, so it holds only 
 
 ## 2. The docs are the state
 
-A doc is committed only after the user approves it, so a committed doc is approved and an uncommitted change is a draft. Neither a mark nor a separate file records where the work stopped, because git already does. The costs are that a project without git cannot tell a draft from an approved doc, and that a draft may stand half written until its last point is agreed.
+Each point goes into its doc as soon as the user agrees it, and a point still open goes to `TODO.md`. So the docs hold everything decided, and neither a mark nor a separate file records where the work stopped. Git keeps each doc's history, which shows what changed in the project after a doc was last touched. The cost is that a doc can stand half written while its open points wait in `TODO.md`.
 
 **Ask:** does this need a file other than the docs to remember it?
 
-- **Decisions:** [008: A resume with nothing to draft looks for drift](specs/decisions/008-resume-looks-for-drift.md) and [009: Git tells a draft from an approved doc](specs/decisions/009-git-tells-a-draft-from-an-approved-doc.md)
+- **Decisions:** [008: A resume with nothing to draft looks for drift](specs/decisions/008-resume-looks-for-drift.md) and [024: Approval lives in the conversation](specs/decisions/024-approval-lives-in-the-conversation.md)
 
 ## 3. No dependencies
 

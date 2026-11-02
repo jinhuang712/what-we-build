@@ -40,18 +40,18 @@ Read the project folder first, and start from what it holds.
 | An idea and nothing written | Discussing the idea with the user |
 | Running code and no docs | Reading the code, then discussing each doc |
 | Messy docs | Sorting them into the doc set, then discussing the gaps |
-| Part of the doc set, or changes not yet committed | Resuming at the first doc not yet approved |
-| The whole doc set, with every change committed | Reporting where the project stands and what may have drifted |
+| Part of the doc set | Resuming where the work stopped |
+| The whole doc set | Reporting where the project stands and what may have drifted |
 
 - When the folder and the request disagree, ask.
-- Recommend `git init` when the folder has no git, since a commit records each approval.
+- Recommend `git init` when the folder has no git, since the drift report reads each doc's history.
 - Agree the doc set first, and then where the docs live.
 - Go through the project's `AGENTS.md` with the user, and decide together what it holds.
 - Recommend the read order, the layout and the rules in *While you work*.
 
-To resume, read every doc and run `git status`. A doc with uncommitted changes is a draft the user has not approved, and a core doc that does not exist is not written yet. Tell the user where the work stopped, then continue at the first such doc in the order of *Writing a doc*. Re-read the committed docs it builds on before you go on.
+To resume, read every doc and `TODO.md`. The work stopped at the first doc in the order of *Writing a doc* that is not written yet or still has an open question in `TODO.md`. Tell the user, and continue there once you have re-read the docs it builds on.
 
-Report only when the whole doc set is written and every change is committed. Say where the project stands from `TODO.md`, `ROADMAP.md` and `GOALS.md`. Then take each doc's last commit and read what the project changed after it. Where the work moved and the doc did not, point out that the doc may have fallen behind. Ask the user what to work on next.
+Report when the whole doc set is written. Say where the project stands from `TODO.md`, `ROADMAP.md` and `GOALS.md`. Then take each doc's last commit and read what the project changed after it. Where the work moved and the doc did not, point out that the doc may have fallen behind. Ask the user what to work on next.
 
 ## The doc set
 
@@ -104,13 +104,12 @@ Talk each doc through with the user, and write each point into it as soon as it 
 
 1. Show the user the change: its skeleton first, then a diff of before and after.
 2. Wait for the user to approve it.
-3. Commit it, never before it is approved.
+3. Commit it.
 
-- Only the user approves, and any later edit is a draft until they approve it.
+- Only the user approves.
+- A point still open goes to `TODO.md` as a `DISCUSSION`, so the work can stop at any time.
 - Re-read the whole doc before any edit, even of one word.
 - When you pause on your own, first report each doc's status and the open questions.
-
-A commit records the approval, so git tells a draft from an approved doc. No doc carries a mark of its own.
 
 A claim needs its proof. Check a behavior claim by running it, or mark it "not yet verified". A goal is met only with a measurement or the user's own report.
 

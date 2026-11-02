@@ -18,12 +18,13 @@
 - Each point goes into its doc as soon as you agree it, so an agreed point never lives only in the window.
 - You see each change as its skeleton first and then as a diff of before and after.
 - Nothing is committed before you approve it.
-- A commit records your approval, and no doc carries a mark any more.
+- You approve in the conversation, and no doc carries a mark any more.
 - The agent re-reads the whole doc before any edit, even of one word.
 - When you stop the agent, it stops at once and reports only when it pauses on its own.
-- When a doc is a draft or a core doc is missing, `/what-we-build` resumes at the first such doc.
-- When the whole doc set is committed, it reports where the project stands and which docs fell behind the work since their last commit.
-- Without git, the agent recommends `git init`.
+- A point still open waits in TODO.md, so the work can stop at any time.
+- With part of the doc set written, `/what-we-build` resumes at the first doc that is not finished.
+- With the whole doc set written, it reports where the project stands and which docs fell behind the work since their last commit.
+- Without git, the agent recommends `git init` for the drift report.
 - The agent goes through your project's AGENTS.md with you and recommends its read order, layout and work rules.
 - The work rules reach every new window through AGENTS.md, even when the skill is not loaded.
 - They say to read the doc that owns a thing first and to record each open item at once.
