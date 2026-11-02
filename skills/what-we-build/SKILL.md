@@ -41,13 +41,16 @@ Read the project folder first, and start from what it holds.
 | Running code and no docs | Reading the code, then discussing each doc |
 | Messy docs | Sorting them into the doc set, then discussing the gaps |
 | Docs with marks and not all approved | Resuming |
+| Docs with marks and all approved | Reporting where the project stands and what may have drifted |
 
 - When the folder and the request disagree, ask.
 - Agree the doc set first, and then where the docs live.
 - Go through the project's `AGENTS.md` with the user, and decide together what it holds.
 - Recommend the read order, the layout and the rules in *While you work*.
 
-To resume, read every doc and its mark, then tell the user where the session stopped. Re-read the approved docs before you continue at the first doc in the order that is not approved.
+To resume, read every doc and its mark. Then tell the user where the session stopped. Re-read the approved docs before you continue at the first doc in the order that is not approved.
+
+When every doc is approved, report where the project stands. Scan `TODO.md`, `ROADMAP.md` and `GOALS.md` for it. Then look at what changed since the date in each doc's mark. Point out where a doc may have fallen behind. Ask the user what to work on next.
 
 ## The doc set
 

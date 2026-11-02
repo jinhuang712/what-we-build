@@ -9,3 +9,4 @@
 | [005: One guide file per kind of doc](005-one-guide-per-kind-of-doc.md) | 2026-10-13 |
 | [006: Three ideas from mattpocock/skills over the whole guide](006-three-ideas-from-mattpocock-skills.md) | 2026-10-13 |
 | [007: DESIGNS comes third, before GOALS and FEATURES](007-designs-third.md) | 2026-10-14 |
+| [008: A resume with nothing to draft looks for drift](008-resume-looks-for-drift.md) | 2026-11-02 |

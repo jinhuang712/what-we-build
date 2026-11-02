@@ -63,6 +63,7 @@ You bring an idea, a codebase or a pile of docs. The skill reads the folder and 
 | Running code and no docs | reading the code and then discussing each doc |
 | Messy docs | sorting them into the doc set and then discussing the gaps |
 | Docs with marks and not all approved | resuming ([F2: Resume](#f2-resume)) |
+| Docs with marks and all approved | reporting where the project stands and what may have drifted ([F2: Resume](#f2-resume)) |
 | Something that disagrees with your request | asking you |
 
 First you agree the doc set and where the docs live. You go through the project's `AGENTS.md` with the agent and decide together what it should hold. The agent recommends the read order, the layout and the work rules of [F5: Keep the context while you work](#f5-keep-the-context-while-you-work). Then each doc goes through the same loop:
@@ -82,9 +83,10 @@ The docs come in order: PROPOSAL → PHILOSOPHY → DESIGNS → GOALS → FEATUR
 
 **Status:** ✅
 
-A session can stop at any point and pick up in a later sitting. Each drafted doc carries a mark on its first line that does not show when rendered. The mark becomes `approved` when you approve the doc. It goes back to `drafted` whenever the doc is edited again. On a later `/what-we-build` the agent reads the marks and tells you where the session stopped. It continues at the first doc in the order that is not approved. A doc that grows one entry at a time carries no mark, such as TODO or CHANGELOG.
+A session can stop at any point and pick up in a later sitting. Each drafted doc carries a mark on its first line that does not show when rendered. The mark becomes `approved` when you approve the doc. It goes back to `drafted` whenever the doc is edited again. On a later `/what-we-build` the agent reads the marks and tells you where the session stopped. It continues at the first doc in the order that is not approved. When every doc is approved, it reports where the project stands and what changed since each approval. You then see which doc may have fallen behind. A doc that grows one entry at a time carries no mark, such as TODO or CHANGELOG.
 
 - **Design:** [DESIGNS 2: The docs are the state](DESIGNS.md#2-the-docs-are-the-state)
+- **Why:** [008: A resume with nothing to draft looks for drift](specs/decisions/008-resume-looks-for-drift.md)
 
 ## Keeping the context
 
