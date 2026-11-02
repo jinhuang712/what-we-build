@@ -12,7 +12,7 @@ The skill sets `disable-model-invocation: true`. A session starts only when the 
 
 ## Not chosen
 
-- Automatic loading: a session needs the user's full attention ([FEATURES.md → Not planned](../../FEATURES.md#not-planned)).
+- Automatic loading: a session needs the user's full attention, and a skill that loads itself starts one when the user is busy with something else.
 
 ## Consequences
 

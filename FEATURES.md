@@ -198,7 +198,7 @@ The docs come out in plain and precise English. A reader finds a fact fast and u
 
 | Not this | Why |
 |---|---|
-| Starting on its own | A session needs the user's full attention, so it starts when the user types it. |
+| Starting on its own | [002: The skill starts only by hand](specs/decisions/002-manual-start.md) |
 | Drafting without a conversation | Text nobody decided is the problem the skill exists to solve. |
 | A fixed questionnaire or template | Fixed questions fill forms. Decisions come from a conversation. |
 | More docs than the project needs | Only a doc with a job gets kept true. |

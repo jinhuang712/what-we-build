@@ -83,6 +83,7 @@
 - This repo's read order adds ROADMAP and GOALS, which the agent scans for where the project stands.
 - This repo's README is the only place that pairs each doc with its question, and PROPOSAL and PHILOSOPHY no longer repeat the list.
 - This repo's FEATURES describes what keeping the context gives the user, and AGENTS.md alone lists the work rules.
+- This repo's decision 002 holds the reason for the manual start, and FEATURES links to it.
 - This repo's features take group numbers, so Resume is now F1.7 and the work rules are F2.1.
 - This repo's roadmap splits the rebuild in this repo from the first use on a new project, so Proven useful is now CP4.
 - This repo's goals take the new IDs, so G6 is now T4 and G2 is a check in B1: Session quality.
