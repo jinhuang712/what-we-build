@@ -33,7 +33,7 @@ Status: ✅ done · 🟨 in progress · ⬜ not started.
 |---|---|---|---|
 | CP1.1 | `SKILL.md` | ✅ | |
 | CP1.2 | A guide for each doc | ✅ | |
-| CP1.3 | Scripts that check links and blank lines | ✅ | Removed later for readers who check ([DESIGNS 7: Readers check the docs, not scripts](DESIGNS.md#7-readers-check-the-docs-not-scripts)) |
+| CP1.3 | Scripts that check links and blank lines | ✅ | Removed later for readers who check ([DESIGNS 3: No dependencies](DESIGNS.md#3-no-dependencies)) |
 | CP1.4 | This repo's docs in the skill's own format | ✅ | |
 | CP1.5 | Public repo and plugin manifest at version 0.1.0 | ✅ | 2026-10-12 |
 

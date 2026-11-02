@@ -19,6 +19,7 @@
 - The agent tracks where the project stands by scanning TODO, ROADMAP and GOALS.
 - After a change the agent checks only the rules it touched, and it checks the goals only at a checkpoint or a release.
 - The placement test asks about a design commitment and a rule for the work before it asks about a goal, so a rule no longer lands in GOALS.
+- This repo's rules for checking by a reader and testing by use move from DESIGNS to AGENTS.md, which already held the rule that the repo is its own first example.
 - When every change is committed, a resume reports where the project stands and what may have drifted since each doc's last commit.
 - A commit records the user's approval, so no doc carries a mark any more.
 - A link points only to what its doc rests on, and PHILOSOPHY and CHANGELOG link to nothing.

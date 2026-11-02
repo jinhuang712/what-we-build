@@ -222,4 +222,4 @@ The docs come out in plain and precise English. A reader finds a fact fast and u
 | User manuals such as tutorials and API references | They say how to use the product, not why it is this way. |
 | A whole `AGENTS.md` | The skill recommends only the read order, the layout and the work rules. Claude Code's `/init` writes the rest from the code. |
 | Standard texts such as LICENSE | They need a choice of a standard text, not a discussion. |
-| Scripts that check the docs | A reader checks the links and the facts ([DESIGNS 7: Readers check the docs, not scripts](DESIGNS.md#7-readers-check-the-docs-not-scripts)). |
+| Scripts that check the docs | The skill is Markdown only, so a reader checks the links and the facts ([DESIGNS 3: No dependencies](DESIGNS.md#3-no-dependencies)). |
