@@ -1,32 +1,34 @@
-<!-- what-we-build: drafted 2026-10-17 -->
+<!-- what-we-build: approved 2026-11-02 -->
 
 # Roadmap
 
-Where what-we-build stands, and what comes next. Each milestone is a usable or proven state of the skill, and its exit criteria point to [GOALS.md](GOALS.md).
+Where what-we-build stands and what comes next.
+Each milestone is a usable or proven state of the skill.
+Its exit criteria point to [GOALS.md](GOALS.md), and it ends with a pass over the whole goal sheet.
 
 Status: ✅ done · 🟨 in progress · ⬜ not started.
 
-**Current milestone:** M2. The skill has been used on this repo, twice. It has not yet been used on a new project.
+**Current milestone:** M2. The skill has been used on this repo and not yet on a new project.
 
 ## Overview
 
-| Milestone | Delivers | Features | Depends on | Status |
-|---|---|---|---|---|
-| **M1** Write and publish | the skill, its guides and checks, this repo's docs, a public repo | F1–F4 | — | ✅ |
-| **M2** First real use | the skill used for real, and fixed from what the sessions show | F1–F2 | M1 | 🟨 |
-| **M3** Proven useful | runs with the skill beat runs without it | F1–F2 | M2 | ⬜ |
+| Milestone | Delivers | Features | Status |
+|---|---|---|---|
+| **M1** Write and publish | the skill and its guides in a public repo | F1–F4 | ✅ |
+| **M2** First real use | the skill used for real and fixed from what the sessions show | F1–F5 | 🟨 |
+| **M3** Proven useful | runs with the skill beat runs without it | F1–F5 | ⬜ |
 
 ## M1 — Write and publish ✅
 
 | ID | What it delivers | Note |
 |---|---|---|
-| M1.1 | `SKILL.md`: roles, rules, modes, flow | |
-| M1.2 | The guides: each doc, and the wording rules | |
-| M1.3 | `check_links.py` and `blank_lines.py` | |
-| M1.4 | This repo's docs, in the skill's own format | |
-| M1.5 | Public repo and plugin manifest, version 0.1.0 | 2026-10-12 |
+| M1.1 | `SKILL.md` | |
+| M1.2 | A guide for each doc | |
+| M1.3 | Scripts that check links and blank lines | Removed later for readers who check ([DESIGNS 7](DESIGNS.md#7-readers-check-the-docs-not-scripts)) |
+| M1.4 | This repo's docs in the skill's own format | |
+| M1.5 | Public repo and plugin manifest at version 0.1.0 | 2026-10-12 |
 
-**Exit criteria:** GOALS.md G6 and G7.
+**Exit criteria:** G6 and G7.
 
 ## M2 — First real use 🟨
 
@@ -34,21 +36,21 @@ Status: ✅ done · 🟨 in progress · ⬜ not started.
 |---|---|---|
 | M2.0 | A first review of this repo's docs with the skill, released as 0.2.0 | 2026-10-13 |
 | M2.1 | A second review of this repo's docs, released as 0.3.0 | 2026-10-13 |
-| M2.2 | A new project's 7 core docs, drafted and approved with the skill | |
-| M2.3 | A resumed session, to test the marks | |
-| M2.4 | Fixes to the skill from what the sessions showed | Under way: each guide is rewritten to teach, one at a time. PHILOSOPHY, PROPOSAL and DESIGNS are done. Lessons from the 2026-10-16 session, added 2026-10-17, brought the conversation rules and changed the PROPOSAL, DESIGNS, FEATURES, GOALS and ROADMAP forms |
-| M2.5 | This repo's docs in the forms of 2026-10-17: DESIGNS around its principles, FEATURES with its feature decisions and failure table, GOALS with benchmarks, PROPOSAL with the pains before the shift, and the open questions in ROADMAP | |
+| M2.2 | A new project's 7 core docs drafted and approved with the skill | |
+| M2.3 | A resumed session to test the marks | |
+| M2.4 | The skill rebuilt around a project's context | Done in the 0.5.0 work |
+| M2.5 | This repo's docs in the new forms | Under way on 2026-11-02 |
 
-**Exit criteria:** GOALS.md G1–G5 and G8, measured on a new project.
+**Exit criteria:** G1–G5 and G8, checked on a new project.
 
 ## M3 — Proven useful ⬜
 
 | ID | What it delivers | Note |
 |---|---|---|
-| M3.1 | Three realistic test prompts | |
-| M3.2 | Runs with and without the skill, scored against G2–G5 | |
+| M3.1 | Three realistic project prompts | The problem set of G15 |
+| M3.2 | Runs with and without the skill | Scored as G16 |
 
-**Exit criteria:** the runs with the skill beat the runs without it on G2–G5.
+**Exit criteria:** G15 and G16, with the runs with the skill ahead on G2–G5.
 
 ## Later
 
