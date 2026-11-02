@@ -20,11 +20,14 @@
 - Nothing is committed before you approve it.
 - A commit records your approval, and no doc carries a mark any more.
 - The agent re-reads the whole doc before any edit, even of one word.
-- With every change committed, `/what-we-build` reports where the project stands and which docs fell behind the work since their last commit.
+- When you stop the agent, it stops at once and reports only when it pauses on its own.
+- When a doc is a draft or a core doc is missing, `/what-we-build` resumes at the first such doc.
+- When the whole doc set is committed, it reports where the project stands and which docs fell behind the work since their last commit.
 - Without git, the agent recommends `git init`.
 - The agent goes through your project's AGENTS.md with you and recommends its read order, layout and work rules.
 - The work rules reach every new window through AGENTS.md, even when the skill is not loaded.
-- They say to read the doc that owns a thing first and to record each decision and open item at once.
+- They say to read the doc that owns a thing first and to record each open item at once.
+- A decision is recorded at once when another way was open and the code does not show the reason.
 - When the docs and the code disagree, the agent asks you instead of picking a side.
 - After a change the agent checks only the rules it touched, and it checks the goals only at a checkpoint or a release.
 

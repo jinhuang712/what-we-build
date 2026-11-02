@@ -87,4 +87,7 @@ Roadmap
 | CP4.1 | Three realistic project prompts | ⬜ | The problem set of [B1: Run quality](GOALS.md#b1-run-quality) |
 | CP4.2 | Runs with and without the skill | ⬜ | Scored as [C1: With and without the skill](GOALS.md#c1-with-and-without-the-skill) |
 
-**Exit criteria:** [B1: Run quality](GOALS.md#b1-run-quality) and [C1: With and without the skill](GOALS.md#c1-with-and-without-the-skill), with the runs with the skill ahead on every check that B1 scores.
+**Exit criteria:**
+
+- [B1: Run quality](GOALS.md#b1-run-quality) on all three prompts
+- [C1: With and without the skill](GOALS.md#c1-with-and-without-the-skill) at 3 / 3, so the skill leads on every prompt

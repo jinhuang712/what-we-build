@@ -48,8 +48,8 @@ You bring an idea, a codebase or a pile of docs. The skill reads the folder and 
 | An idea and nothing written | discussing the idea with you |
 | Running code and no docs | reading the code and then discussing each doc |
 | Messy docs | sorting them into the doc set and then discussing the gaps |
-| The doc set with uncommitted changes | resuming ([F1.7: Resume](#f17-resume)) |
-| The doc set with every change committed | reporting where the project stands and what may have drifted ([F1.7: Resume](#f17-resume)) |
+| Part of the doc set, or changes not yet committed | resuming at the first doc you have not approved ([F1.7: Resume](#f17-resume)) |
+| The whole doc set, with every change committed | reporting where the project stands and what may have drifted ([F1.7: Resume](#f17-resume)) |
 | Something that disagrees with your request | asking you |
 
 ### F1.2: Agree the doc set
@@ -84,9 +84,9 @@ You approve a doc, and the agent commits it. Nothing is committed before you app
 
 ### F1.7: Resume
 
-**Status:** 🚧 the report on a fully committed doc set ran on 2026-11-03, and the resume at an uncommitted draft is not yet verified
+**Status:** 🚧 the report on the whole doc set ran on 2026-11-03, and the resume at a draft or a missing doc is not yet verified
 
-You can stop at any point and pick up later. Git tells the agent which docs you approved. On a later `/what-we-build` the agent tells you where the work stopped. It continues at the uncommitted draft or at the first doc in the order not yet written. When every change is committed, it reports where the project stands and what changed since each doc's last commit. You then see which doc may have fallen behind.
+You can stop at any point and pick up later. Git tells the agent which docs you approved, so on a later `/what-we-build` it tells you where the work stopped. When a doc is a draft you have not approved or a core doc is not written yet, the agent continues at the first such doc in the order. When the whole doc set is written and committed, it reports where the project stands and what changed since each doc's last commit. You then see which doc may have fallen behind.
 
 - **Design:** [DESIGNS 2: The docs are the state](DESIGNS.md#2-the-docs-are-the-state)
 - **Why:** [008: A resume with nothing to draft looks for drift](specs/decisions/008-resume-looks-for-drift.md) and [009: Git tells a draft from an approved doc](specs/decisions/009-git-tells-a-draft-from-an-approved-doc.md)
@@ -101,7 +101,7 @@ The docs stay true as the work goes on, not only while they are first written.
 
 **Status:** ✅
 
-The agent reads the doc that owns a thing before it changes it, records each decision and open item at once, and asks you when the docs and the code disagree.
+The agent reads the doc that owns a thing before it changes it. It records an open item at once. It records a decision at once too, but only for a choice that had another way open, may be undone later and has a reason the code does not show. When the docs and the code disagree, it asks you.
 
 The skill starts only when you type `/what-we-build`, so these rules live in the project's `AGENTS.md`, which the agent reads whenever its window is new. You agree to record them there when you go through it with the agent.
 
@@ -168,7 +168,7 @@ The docs come out in plain and precise English. A reader finds a fact fast and u
 | A number is not known | it stays open in the doc | F1.3: Talk each doc through |
 | The docs and the code disagree | the agent tells you and you decide | F2.1: Keep the context while you work |
 | The window was compacted | the agent reads the read order again | F2.1: Keep the context while you work |
-| You stop the agent | it stops | F2.1: Keep the context while you work |
+| You stop the agent | it stops at once | F2.1: Keep the context while you work |
 
 ## Later, if needed
 

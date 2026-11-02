@@ -40,22 +40,22 @@ Read the project folder first, and start from what it holds.
 | An idea and nothing written | Discussing the idea with the user |
 | Running code and no docs | Reading the code, then discussing each doc |
 | Messy docs | Sorting them into the doc set, then discussing the gaps |
-| The doc set with uncommitted changes | Resuming |
-| The doc set with every change committed | Reporting where the project stands and what may have drifted |
+| Part of the doc set, or changes not yet committed | Resuming at the first doc not yet approved |
+| The whole doc set, with every change committed | Reporting where the project stands and what may have drifted |
 
 - When the folder and the request disagree, ask.
-- When the folder has no git, recommend `git init`, because a commit is what records an approval.
+- Recommend `git init` when the folder has no git, since a commit records each approval.
 - Agree the doc set first, and then where the docs live.
 - Go through the project's `AGENTS.md` with the user, and decide together what it holds.
 - Recommend the read order, the layout and the rules in *While you work*.
 
-To resume, read every doc and run `git status`. A doc with uncommitted changes is a draft the user has not approved. Tell the user where the work stopped. Re-read the committed docs before you continue at that draft, or at the first doc in the order not yet written.
+To resume, read every doc and run `git status`. A doc with uncommitted changes is a draft the user has not approved, and a core doc that does not exist is not written yet. Tell the user where the work stopped, then continue at the first such doc in the order of *Writing a doc*. Re-read the committed docs it builds on before you go on.
 
-When every change is committed, report where the project stands from `TODO.md`, `ROADMAP.md` and `GOALS.md`. Then take each doc's last commit and read what the project changed after it. Where the work moved and the doc did not, point out that the doc may have fallen behind. Ask the user what to work on next.
+Report only when the whole doc set is written and every change is committed. Say where the project stands from `TODO.md`, `ROADMAP.md` and `GOALS.md`. Then take each doc's last commit and read what the project changed after it. Where the work moved and the doc did not, point out that the doc may have fallen behind. Ask the user what to work on next.
 
 ## The doc set
 
-Every doc has a guide, and you read it before you start that doc. The guide says what the doc owns and leaves out. Its skeleton suggests a form, and you change it where the content needs another.
+Every doc has a guide, which you read before you start that doc. The guide says what the doc owns and what it leaves out. Its skeleton suggests a form, and you change it where the content needs another. The project's `AGENTS.md` is the one doc without a guide, because *Start* and *While you work* already say what it holds.
 
 Every project gets the core docs:
 
@@ -109,7 +109,7 @@ Talk each doc through with the user, and write each point into it as soon as it 
 
 - Only the user approves, and any later edit is a draft until they approve it.
 - Re-read the whole doc before any edit, even of one word.
-- Before the work stops, report each doc's status and the open questions.
+- When you pause on your own, first report each doc's status and the open questions.
 
 A commit records the approval, so git tells a draft from an approved doc. No doc carries a mark of its own.
 
@@ -157,14 +157,14 @@ The docs stay true only if the agent keeps them true in every new window. These 
 - When the window is new or was compacted, read the read order in `AGENTS.md`.
 - Before you change something, read the doc that owns it.
 - Track where the project stands by scanning `TODO.md`, `ROADMAP.md` and `GOALS.md`.
-- When a choice between ways is made, write a decision at once.
+- Write a decision at once when a choice had another way open, may be undone later and has a reason the code does not show.
 - When something cannot be handled now, add it to `TODO.md` at once.
 - When the docs and the code disagree, tell the user and let them decide.
 - When a change is done, update `CHANGELOG.md` and the feature's status in the same change.
 - When a todo is handled, delete it in the same change.
 - After a change, check only what it touched against the rules.
 - Check the goals at the end of a checkpoint or before a release, and never for a small change.
-- When the user stops you, stop.
+- When the user stops you, stop at once.
 
 ## Wording
 
