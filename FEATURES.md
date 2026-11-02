@@ -106,19 +106,7 @@ The docs stay true after the first session, because every sitting keeps them tru
 
 **Status:** ✅
 
-The docs stay true after the first session. The agent follows these rules in every sitting:
-
-| When | The agent |
-|---|---|
-| A sitting starts or the window was compacted | reads the read order in `AGENTS.md` |
-| It is about to change something | reads the doc that owns it |
-| It needs to know where the project stands | scans `TODO.md`, `ROADMAP.md` and `GOALS.md` |
-| A choice between ways is made | writes a decision at once |
-| Something cannot be handled now | adds it to `TODO.md` at once |
-| The docs and the code disagree | tells you and lets you decide |
-| A change is done | updates `CHANGELOG.md` and the feature's status |
-| A todo is handled | deletes it in the same change |
-| You stop it | stops |
+The docs stay true after the first session. In every sitting the agent reads the doc that owns a thing before it changes it, records each decision and open item at once, and asks you when the docs and the code disagree.
 
 The skill starts only when you type `/what-we-build`. The rules still reach every sitting through the project's `AGENTS.md`. You agree to record them there when you go through it with the agent.
 
