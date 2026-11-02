@@ -18,7 +18,8 @@
 - The agent recommends that the project's AGENTS.md hold the work rules, so they reach every sitting.
 - The agent tracks where the project stands by scanning TODO, ROADMAP and GOALS.
 - When every change is committed, a resume reports where the project stands and what may have drifted since each doc's last commit.
-- No doc carries a mark any more. A commit records the user's approval, and an uncommitted change is a draft.
+- A commit records the user's approval, so no doc carries a mark any more.
+- A link points only to what its doc rests on, and PHILOSOPHY and CHANGELOG link to nothing.
 - The agent is a thinking partner that brings its own ideas and challenges the user's.
 - No doc holds a code chunk.
 - The default layout puts the reasons at the root.
@@ -29,7 +30,7 @@
 
 ### Doc guides
 
-- Every guide is rewritten. See [the guides](skills/what-we-build/references/).
+- Every guide is rewritten.
 - New guides: `specs/`, `specs/decisions/` and `specs/ARCHITECTURE.md`.
 - The UIUX guide is gone, because UIUX is now a spec.
 - Decisions move out of DESIGNS and FEATURES into `specs/decisions/`.

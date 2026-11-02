@@ -16,4 +16,4 @@ The manifest sits in `.claude-plugin/` at the repo root. The repo installs as a 
 
 ## Consequences
 
-The install steps are in [README.md](../../README.md).
+Both ways to install must keep working, and INSTALL.md describes each.

@@ -41,7 +41,7 @@ ROADMAP.md answers "when?" and "how far along?". It breaks the work into checkpo
 
 ## Overview
 
-<every checkpoint with what it delivers, its features and its status>
+<every checkpoint with what it delivers and its status>
 
 ## CP1: <name>
 

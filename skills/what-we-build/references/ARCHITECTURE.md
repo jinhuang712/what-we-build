@@ -19,7 +19,6 @@ ARCHITECTURE.md is the map of the whole project. A new contributor reads it firs
 
 - A part explained in detail that needs its own spec.
 - A map that lists files instead of parts.
-- A part that has a spec but no link to it.
 - A map with no diagram.
 
 **Add when** the project has more than one part worth a spec.
@@ -27,7 +26,7 @@ ARCHITECTURE.md is the map of the whole project. A new contributor reads it firs
 ## Guidelines
 
 - **Always open with a diagram of the whole,** so the reader sees the shape before the words.
-- **Name each part by what it does,** and link to its spec.
+- **Name each part by what it does.**
 - **Name each part's folder rather than its files,** because folders change less often.
 
 ## You have it when
@@ -50,5 +49,5 @@ ARCHITECTURE.md is the map of the whole project. A new contributor reads it firs
 
 <what it does, in a few lines>
 
-<the folder it lives in, and a link to its spec>
+<the folder it lives in>
 ```

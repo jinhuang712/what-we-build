@@ -1,6 +1,6 @@
 # Designs
 
-What goes in is a project folder and a conversation with the user. What comes out is a set of Markdown docs that hold the project's context. In between is the skill: Markdown instructions that an agent reads. What the skill does for the user is in [FEATURES.md](FEATURES.md).
+What goes in is a project folder and a conversation with the user. What comes out is a set of Markdown docs that hold the project's context. In between is the skill: Markdown instructions that an agent reads.
 
 what-we-build is designed around 9 guidelines:
 
@@ -16,7 +16,7 @@ what-we-build is designed around 9 guidelines:
 
 ## 1. A short core with detail on demand
 
-The agent reads `SKILL.md` in every session, so it holds only what every session needs. Each doc's guide waits in `references/` until a step points to it. `SKILL.md` stays within the limit in [T4: A short skill](GOALS.md#t4-a-short-skill). The cost is that a step must name its guide, or the agent never reads it.
+The agent reads `SKILL.md` in every session, so it holds only what every session needs. Each doc's guide waits in `references/` until a step points to it. `SKILL.md` stays within a line limit. The cost is that a step must name its guide, or the agent never reads it.
 
 **Ask:** does every session need this, or only the step that writes one doc?
 
@@ -64,7 +64,7 @@ A reader checks the links and the facts, and no script does. Every goal measured
 
 ## 8. Test by use first
 
-Real sessions come before prepared test prompts. The prompts follow from what the sessions show ([CP3: Proven useful](ROADMAP.md#cp3-proven-useful)). The cost is that evidence comes slowly, one session at a time.
+Real sessions come before prepared test prompts. The prompts follow from what the sessions show. The cost is that evidence comes slowly, one session at a time.
 
 **Ask:** which real session showed the failure this rule fixes?
 

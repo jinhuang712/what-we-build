@@ -8,11 +8,11 @@ Status: ✅ done · 🟨 in progress · ⬜ not started.
 
 ## Overview
 
-| Checkpoint | Delivers | Features | Status |
-|---|---|---|---|
-| [CP1: Write and publish](#cp1-write-and-publish) | the skill and its guides in a public repo | [F1: Start and talk each doc through](FEATURES.md#f1-start-and-talk-each-doc-through) · [F2: Resume](FEATURES.md#f2-resume) · [F3: The doc set](FEATURES.md#f3-the-doc-set) · [F4: Wording rules](FEATURES.md#f4-wording-rules) | ✅ |
-| [CP2: First real use](#cp2-first-real-use) | the skill used for real and fixed from what the sessions show | [F1: Start and talk each doc through](FEATURES.md#f1-start-and-talk-each-doc-through) · [F2: Resume](FEATURES.md#f2-resume) · [F3: The doc set](FEATURES.md#f3-the-doc-set) · [F4: Wording rules](FEATURES.md#f4-wording-rules) · [F5: Keep the context while you work](FEATURES.md#f5-keep-the-context-while-you-work) | 🟨 |
-| [CP3: Proven useful](#cp3-proven-useful) | runs with the skill beat runs without it | [F1: Start and talk each doc through](FEATURES.md#f1-start-and-talk-each-doc-through) · [F2: Resume](FEATURES.md#f2-resume) · [F3: The doc set](FEATURES.md#f3-the-doc-set) · [F4: Wording rules](FEATURES.md#f4-wording-rules) · [F5: Keep the context while you work](FEATURES.md#f5-keep-the-context-while-you-work) | ⬜ |
+| Checkpoint | Delivers | Status |
+|---|---|---|
+| [CP1: Write and publish](#cp1-write-and-publish) | the skill and its guides in a public repo | ✅ |
+| [CP2: First real use](#cp2-first-real-use) | the skill used for real and fixed from what the sessions show | 🟨 |
+| [CP3: Proven useful](#cp3-proven-useful) | runs with the skill beat runs without it | ⬜ |
 
 ## CP1: Write and publish
 
@@ -62,13 +62,4 @@ Status: ✅ done · 🟨 in progress · ⬜ not started.
 | CP3.1 | Three realistic project prompts | The problem set of [B1: Session quality](GOALS.md#b1-session-quality) |
 | CP3.2 | Runs with and without the skill | Scored as [C1: With and without the skill](GOALS.md#c1-with-and-without-the-skill) |
 
-**Exit criteria:** [B1: Session quality](GOALS.md#b1-session-quality) and [C1: With and without the skill](GOALS.md#c1-with-and-without-the-skill), with the runs with the skill ahead on:
-
-- [T1: One home per fact](GOALS.md#t1-one-home-per-fact)
-- [T2: Goals that can be checked](GOALS.md#t2-goals-that-can-be-checked)
-- [T3: Decisions with reasons](GOALS.md#t3-decisions-with-reasons)
-- [R1: No draft before agreement](GOALS.md#r1-no-draft-before-agreement)
-
-## Later
-
-See [FEATURES.md → Later, if needed](FEATURES.md#later-if-needed).
+**Exit criteria:** [B1: Session quality](GOALS.md#b1-session-quality) and [C1: With and without the skill](GOALS.md#c1-with-and-without-the-skill), with the runs with the skill ahead on every goal that B1 scores.

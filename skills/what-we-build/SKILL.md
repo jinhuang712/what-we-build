@@ -115,7 +115,7 @@ A commit records the approval, so git tells a draft from an approved doc. No doc
 
 ## Where a fact goes
 
-A fact lives in the doc that owns it. Another doc may say less about it and link to it for depth. The same detail in two docs is a second home, and the two drift apart. Each doc still reads on its own, so a summary keeps enough to make sense there. When a fact changes, update its summaries in the same change.
+A fact lives in the doc that owns it. Another doc may say less about it. The same detail in two docs is a second home, and the two drift apart. Each doc still reads on its own, so a summary keeps enough to make sense there. When a fact changes, update its summaries in the same change.
 
 To find the owner, ask these questions in order. The first yes names the fact's home. When none fits, ask the user.
 
@@ -133,6 +133,19 @@ To find the owner, ask these questions in order. The first yes names the fact's 
 | Is it how to install, update or remove it? | `INSTALL.md` |
 | Is it about when, or about progress? | `ROADMAP.md` |
 | Did it ship in a release? | `CHANGELOG.md` |
+
+A link points to what the doc rests on, never the other way. A doc still makes its point without the reader following the link.
+
+| Doc | Links to |
+|---|---|
+| `PHILOSOPHY.md` and `CHANGELOG.md` | nothing |
+| `PROPOSAL.md` | rarely anything |
+| `DESIGNS.md` | a few to PHILOSOPHY, and down to its decisions and specs |
+| `FEATURES.md` | a few to DESIGNS, and down to its decisions and specs |
+| `GOALS.md`, `ROADMAP.md` and `TODO.md` | each other, FEATURES and DESIGNS |
+| `specs/` and `specs/decisions/` | up to the doc they serve, never beside them |
+| `README.md` | every doc, once each |
+| `AGENTS.md` | the docs in its read order |
 
 A claim needs its proof. Check a behavior claim by running it, or mark it "not yet verified". A goal is met only with a measurement or the user's own report.
 
@@ -159,7 +172,8 @@ The docs stay true only if every sitting keeps them true. These rules belong in 
 - Keep at most one comma in a sentence.
 - Put the answer first.
 - Use one name per thing.
-- Write an ID only as a link with its name, such as `[T4: A short skill](GOALS.md#t4-a-short-skill)`.
+- Write an ID with its name, such as "T4: A short skill".
+- Link an ID only where the table in *Where a fact goes* allows.
 - List the items instead of giving a range.
 - Keep status marks out of headings, so the links to them stay stable.
 - Prefer a number to an adjective, with its source or left open.

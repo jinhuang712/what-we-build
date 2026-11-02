@@ -12,10 +12,11 @@ We write our own skill and our own format.
 
 ## Not chosen
 
-- jig's `vision-elicitation` (ramboz/jig, MIT): it runs a fixed 13-section questionnaire after jig's own scaffold.
-  It fills two templates.
-  It has no doc set and no push-back.
-  It has no goals with numbers and no manual start.
+- jig's `vision-elicitation` (ramboz/jig, MIT) falls short in four ways:
+  - It runs a fixed 13-section questionnaire after jig's own scaffold.
+  - It fills two templates.
+  - It has no doc set and no push-back.
+  - It has no goals with numbers and no manual start.
 
 ## Consequences
 

@@ -1,6 +1,6 @@
 # Features
 
-What what-we-build does today, and what it will and won't do. Each feature is described from the user's side: what you type, what you see and what you decide. How far each feature has been used in real life is in [ROADMAP.md](ROADMAP.md).
+What what-we-build does today, and what it will and won't do. Each feature is described from the user's side: what you type, what you see and what you decide.
 
 Two words have one meaning each here:
 
@@ -15,36 +15,36 @@ Status: ✅ built · 🚧 built with a gap named in its section · ⬜ planned.
 
 **Running a session**
 
-| Capability | What it does | Feature | Status |
-|---|---|---|---|
-| Start from where the project is | an idea, running code or messy docs | [F1: Start and talk each doc through](#f1-start-and-talk-each-doc-through) | ✅ |
-| Agree the doc set | you confirm the docs and where they live | [F1: Start and talk each doc through](#f1-start-and-talk-each-doc-through) | ✅ |
-| Talk each doc through | discuss, brainstorm or decide with a recommendation | [F1: Start and talk each doc through](#f1-start-and-talk-each-doc-through) | ✅ |
-| Push back | the agent says what does not fit and why | [F1: Start and talk each doc through](#f1-start-and-talk-each-doc-through) | ✅ |
-| See the change | every change is shown as before and after | [F1: Start and talk each doc through](#f1-start-and-talk-each-doc-through) | ✅ |
-| Commit after approval | a doc is committed only after you approve it | [F1: Start and talk each doc through](#f1-start-and-talk-each-doc-through) | ✅ |
-| Resume | a later sitting continues at the draft or the first doc not yet written | [F2: Resume](#f2-resume) | ✅ |
+| Capability | What it does | Status |
+|---|---|---|
+| Start from where the project is | an idea, running code or messy docs | ✅ |
+| Agree the doc set | you confirm the docs and where they live | ✅ |
+| Talk each doc through | discuss, brainstorm or decide with a recommendation | ✅ |
+| Push back | the agent says what does not fit and why | ✅ |
+| See the change | every change is shown as before and after | ✅ |
+| Commit after approval | a doc is committed only after you approve it | ✅ |
+| Resume | a later sitting continues at the draft or the first doc not yet written | ✅ |
 
 **Keeping the context**
 
-| Capability | What it does | Feature | Status |
-|---|---|---|---|
-| Read order | the project's `AGENTS.md` says which docs to read first | [F5: Keep the context while you work](#f5-keep-the-context-while-you-work) | ✅ |
-| Read before a change | the agent reads the doc that owns a thing before it changes it | [F5: Keep the context while you work](#f5-keep-the-context-while-you-work) | ✅ |
-| Record at once | a decision or an open item is written down when it comes up | [F5: Keep the context while you work](#f5-keep-the-context-while-you-work) | ✅ |
-| Ask on a mismatch | when the docs and the code disagree you decide | [F5: Keep the context while you work](#f5-keep-the-context-while-you-work) | ✅ |
-| Done means recorded | a finished change updates CHANGELOG and the feature's status | [F5: Keep the context while you work](#f5-keep-the-context-while-you-work) | ✅ |
+| Capability | What it does | Status |
+|---|---|---|
+| Read order | the project's `AGENTS.md` says which docs to read first | ✅ |
+| Read before a change | the agent reads the doc that owns a thing before it changes it | ✅ |
+| Record at once | a decision or an open item is written down when it comes up | ✅ |
+| Ask on a mismatch | when the docs and the code disagree you decide | ✅ |
+| Done means recorded | a finished change updates CHANGELOG and the feature's status | ✅ |
 
 **Getting the docs**
 
-| Capability | What it does | Feature | Status |
-|---|---|---|---|
-| Core docs | the seven docs every project gets | [F3: The doc set](#f3-the-doc-set) | ✅ |
-| Recommended docs | TODO, CHANGELOG and `specs/decisions/` from the start | [F3: The doc set](#f3-the-doc-set) | ✅ |
-| Optional docs | specs and the rest only when the project needs them | [F3: The doc set](#f3-the-doc-set) | ✅ |
-| A guide per doc | what the doc owns and what it leaves out | [F3: The doc set](#f3-the-doc-set) | ✅ |
-| A default layout | the reasons at the root with `specs/` and `plan/` beside them | [F3: The doc set](#f3-the-doc-set) | ✅ |
-| Wording rules | short lines and one name per thing | [F4: Wording rules](#f4-wording-rules) | ✅ |
+| Capability | What it does | Status |
+|---|---|---|
+| Core docs | the seven docs every project gets | ✅ |
+| Recommended docs | TODO, CHANGELOG and `specs/decisions/` from the start | ✅ |
+| Optional docs | specs and the rest only when the project needs them | ✅ |
+| A guide per doc | what the doc owns and what it leaves out | ✅ |
+| A default layout | the reasons at the root with `specs/` and `plan/` beside them | ✅ |
+| Wording rules | short lines and one name per thing | ✅ |
 
 ## Running a session
 
@@ -159,12 +159,12 @@ The docs come out in plain and precise English. A reader finds a fact fast and u
 
 | Case | What you see | Feature |
 |---|---|---|
-| The folder and your request disagree | the agent asks you which to follow | [F1: Start and talk each doc through](#f1-start-and-talk-each-doc-through) |
-| A fact has no doc to own it | the agent asks you what to do with it | [F1: Start and talk each doc through](#f1-start-and-talk-each-doc-through) |
-| A number is not known | it stays open in the doc | [F1: Start and talk each doc through](#f1-start-and-talk-each-doc-through) |
-| The docs and the code disagree | the agent tells you and you decide | [F5: Keep the context while you work](#f5-keep-the-context-while-you-work) |
-| The window was compacted | the agent reads the read order again | [F5: Keep the context while you work](#f5-keep-the-context-while-you-work) |
-| You stop the agent | it stops | [F5: Keep the context while you work](#f5-keep-the-context-while-you-work) |
+| The folder and your request disagree | the agent asks you which to follow | F1: Start and talk each doc through |
+| A fact has no doc to own it | the agent asks you what to do with it | F1: Start and talk each doc through |
+| A number is not known | it stays open in the doc | F1: Start and talk each doc through |
+| The docs and the code disagree | the agent tells you and you decide | F5: Keep the context while you work |
+| The window was compacted | the agent reads the read order again | F5: Keep the context while you work |
+| You stop the agent | it stops | F5: Keep the context while you work |
 
 ## Later, if needed
 

@@ -10,12 +10,12 @@ The context is what the people and the agent worked out together. It is made in 
 
 Building is no longer the hard part. A current model implements almost anything it is told, and fast. What goes wrong is the context around the work. These are the ways it goes wrong:
 
-- The agent does not like to record. What it records has no fixed shape, and no one can say where it went.
-- It patches. A doc is edited again and again, twenty times, until no person can read it, and the agent that reads it is lost too.
-- It loses the thread. The window fills, the agent gets confused somewhere past 600K tokens, and when it is compacted the decisions are gone. The next session does not know what we were doing.
-- It does not read. A requirement was agreed and written down. The code came out a different shape. When asked, the agent searched for a long time, found the doc, and said it was right.
-- It works from git alone. The file tree and the log say what changed. The session continues the last motion, with no way to know whether it was right.
-- It scatters. The same fact is in several places, and unrelated things are piled together.
+- **It does not record:** what it keeps has no fixed shape and no home.
+- **It patches:** a doc edited again and again ends up unreadable to people and agents alike.
+- **It loses the thread:** a compacted window takes the decisions with it.
+- **It does not read:** the doc was right, and the code went its own way.
+- **It works from git alone:** the log says what changed and never whether it was right.
+- **It scatters:** one fact sits in several places, and unrelated things pile together.
 
 All of these are one failure. The context was lost, or could not be found, or was not read, and the work drifted. So the thing to manage is the context, and the skill is built around that.
 

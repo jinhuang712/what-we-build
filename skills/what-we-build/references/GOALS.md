@@ -162,7 +162,7 @@ Every goal stands all the time, but its check runs on a cadence. Measures, thres
 
 <short description>
 
-**Rule:** <a link to the commitment in DESIGNS>
+**Rule:** <the commitment in DESIGNS, as a link>
 
 **How:** <how it is checked>
 

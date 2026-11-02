@@ -1,6 +1,6 @@
 # Goals
 
-Each goal ties to a want or a risk in [PROPOSAL.md](PROPOSAL.md). A goal met on one project stays open for another until it is checked there, and a status changes only with a check and its date. For goals checked on this repo, the reader who checks did not write the change unless the status says "by the author". The audit of 2026-11-02 ran before the wording pass of that day, which joined lines but changed no facts.
+Each goal ties to a want or a risk in the proposal. A goal met on one project stays open for another until it is checked there, and a status changes only with a check and its date. For goals checked on this repo, the reader who checks did not write the change unless the status says "by the author". The audit of 2026-11-02 ran before the wording pass of that day, which joined lines but changed no facts.
 
 ## Summary
 
@@ -129,13 +129,12 @@ A fact written out in full in two docs drifts.
 
 **Checked:** each checkpoint.
 
-**Status:** ❌ 2026-11-02 by independent audit, with 5 facts left after the doc mark was removed:
+**Status:** ❌ 2026-11-02 by independent audit, with 6 facts. The author fixed two of them later, which leaves 4:
 
 - The question each doc answers, in PROPOSAL, PHILOSOPHY and README.
 - The work rules, in [F5: Keep the context while you work](FEATURES.md#f5-keep-the-context-while-you-work) and AGENTS.md.
 - The install commands, in README and INSTALL.
-- The failure stories, in PROPOSAL and PHILOSOPHY.
-- The reason for the manual start, in FEATURES, PROPOSAL and [002: The skill starts only by hand](specs/decisions/002-manual-start.md).
+- The reason for the manual start, in FEATURES, PROPOSAL and decision 002: The skill starts only by hand.
 
 #### T2: Goals that can be checked
 
@@ -215,7 +214,7 @@ A guideline that rejects nothing guides nothing.
 
 No doc is drafted before its key points are agreed, and none is committed before it is approved.
 
-**Rule:** [SKILL.md → Writing a doc](skills/what-we-build/SKILL.md#writing-a-doc)
+**Rule:** the loop in *Writing a doc* of `SKILL.md`.
 
 **How:** read the session for each doc's first write and its commit.
 
@@ -263,7 +262,7 @@ No example points at another project.
 
 A doc explains and links, and never pastes code.
 
-**Rule:** [SKILL.md → Wording](skills/what-we-build/SKILL.md#wording)
+**Rule:** the *Wording* section of `SKILL.md`.
 
 **How:** no doc in this repo pastes code or a command longer than two lines.
 

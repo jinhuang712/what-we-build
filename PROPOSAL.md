@@ -2,7 +2,7 @@
 
 > Keep a project's context in docs.
 
-Proposed 2026-10-12. For where the work stands today, see [ROADMAP.md](ROADMAP.md).
+Proposed 2026-10-12.
 
 ## In short
 
@@ -102,16 +102,16 @@ Each doc answers one question. A reader always knows where to look, and a change
 | Doc | The one question it answers |
 |---|---|
 | PROPOSAL (this file) | Why did we start this? |
-| [PHILOSOPHY](PHILOSOPHY.md) | Why is it this way? |
-| [DESIGNS](DESIGNS.md) | What must the design always satisfy? |
-| [FEATURES](FEATURES.md) | What does it do, and what will it do? |
+| PHILOSOPHY | Why is it this way? |
+| DESIGNS | What must the design always satisfy? |
+| FEATURES | What does it do, and what will it do? |
 | `specs/` | How does each part work? |
 | `specs/decisions/` | Why did we choose this, and what did we not choose? |
-| [GOALS](GOALS.md) | What do we measure? |
-| [ROADMAP](ROADMAP.md) | When, and how far along? |
+| GOALS | What do we measure? |
+| ROADMAP | When, and how far along? |
 | TODO | What is open? |
-| [CHANGELOG](CHANGELOG.md) | What changed? |
-| [README](README.md) | What is this, and how do I start? |
+| CHANGELOG | What changed? |
+| README | What is this, and how do I start? |
 
 This repo's own docs use the same set.
 
@@ -130,8 +130,6 @@ This repo's own docs use the same set.
 - **A form to fill in:** templates and fixed questionnaires produce answers, not decisions.
 - **Something that runs on its own:** a session needs your full attention, so it starts when you type it.
 
-The full list of what is not planned, with reasons: [FEATURES.md → Not planned](FEATURES.md#not-planned).
-
 ## Who it is for
 
 Developers who build a project with a coding agent over many sessions and want its context kept. The first user is the author.
@@ -142,5 +140,5 @@ Developers who build a project with a coding agent over many sessions and want i
 |---|---|
 | The user wants the docs, not the talk | The skill drafts quickly once a doc's key points are agreed. Every choice comes with a recommendation. |
 | Too many docs for a small project | Seven core docs. The rest only when needed. |
-| The skill itself grows too long | `SKILL.md` has a line limit ([T4: A short skill](GOALS.md#t4-a-short-skill)). Detail lives in the guides. |
+| The skill itself grows too long | `SKILL.md` has a line limit. Detail lives in the guides. |
 | The docs fall behind the work | The agent updates the owning doc in the change that does the work. |

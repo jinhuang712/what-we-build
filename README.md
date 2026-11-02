@@ -8,9 +8,6 @@
 
 what-we-build is a Claude Code skill that keeps a project's context in docs. You and the agent work out what to build and why. The skill writes it down so it outlives every session. It writes no doc until you agree on its key points.
 
-> [!NOTE]
-> How far it has been used and what comes next is in [ROADMAP.md](ROADMAP.md).
-
 ## What it does
 
 - 💬 **Talks before it writes:** it discusses each doc with you and drafts it only after you agree.
@@ -19,15 +16,11 @@ what-we-build is a Claude Code skill that keeps a project's context in docs. You
 - 🧠 **Keeps the context while you work:** the agent reads the owning doc first and records each decision at once.
 - ⏯️ **Resumes where you stopped.**
 
-The detail is in [FEATURES.md](FEATURES.md).
-
 ## Install
 
 ```sh
 claude plugin marketplace add jinhuang712/what-we-build && claude plugin install what-we-build@what-we-build
 ```
-
-Other ways, updates and removal are in [INSTALL.md](INSTALL.md).
 
 ## How to use
 
@@ -45,8 +38,6 @@ The skill also starts from running code or messy docs, and it resumes where you 
 /what-we-build ──▶ SKILL.md ──▶ references/ ──▶ your docs
 ```
 
-The full map is in [specs/ARCHITECTURE.md](specs/ARCHITECTURE.md).
-
 ## Docs
 
 This repo's docs were written with the skill, so each one is an example of its output.
@@ -60,7 +51,7 @@ This repo's docs were written with the skill, so each one is an example of its o
 | [FEATURES](FEATURES.md) | What does it do, and what will it do? |
 | [ROADMAP](ROADMAP.md) | When, and how far along? |
 | [Architecture](specs/ARCHITECTURE.md) | How do the parts fit together? |
-| [Decisions](specs/decisions/README.md) | Why did we choose this, and what did we not choose? |
+| [Decisions](specs/decisions/) | Why did we choose this, and what did we not choose? |
 | [TODO](TODO.md) | What is open? |
 | [CHANGELOG](CHANGELOG.md) | What changed? |
 | [INSTALL](INSTALL.md) | How do I install, update or remove it? |

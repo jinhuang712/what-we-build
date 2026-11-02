@@ -34,7 +34,7 @@ Before a change, also read the doc that owns it.
 ## Rules
 
 - **This repo is the skill's first example,** so it follows the skill's format and placement test.
-- **Keep `SKILL.md` within [T4: A short skill](GOALS.md#t4-a-short-skill),** and put detail in a guide it points to.
+- **Keep `SKILL.md` within T4: A short skill,** and put detail in a guide it points to.
 - **Follow the guidelines in [DESIGNS.md](DESIGNS.md).**
 - **Never commit a doc before the user approves it.**
 - **Leave the outcome open until you have discussed it with the user,** and look at what exists together first.
@@ -45,11 +45,11 @@ Before a change, also read the doc that owns it.
 - Check each sentence you changed against the *Wording* section of `skills/what-we-build/SKILL.md`.
 - Check each line in a doc against that doc's guide in `skills/what-we-build/references/`.
 - Check each link you touched against its target.
-- Run the checks in [GOALS.md](GOALS.md) marked `every change`.
+- Run the checks in `GOALS.md` marked `every change`.
 
 ## Releasing
 
-1. Move the *Unreleased* entries in [CHANGELOG.md](CHANGELOG.md) under the new version and date.
+1. Move the *Unreleased* entries in `CHANGELOG.md` under the new version and date.
 2. Set the version in `.claude-plugin/plugin.json` and `.claude-plugin/marketplace.json` to the same value.
-3. Go through the whole goal sheet in [GOALS.md](GOALS.md).
+3. Go through the whole goal sheet in `GOALS.md`.
 4. Commit and tag `vX.Y.Z`, then push the branch and the tag.

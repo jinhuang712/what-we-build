@@ -31,13 +31,12 @@ A decision about the whole design and a decision about one feature live in the s
 - **A change that only says what changed belongs in CHANGELOG.**
 - **Keep the title to the choice in one line,** such as "A busy Session queues messages instead of refusing them".
 - **Put the reason in the file, not the title.**
-- **Keep a file short,** and keep an index in `specs/decisions/README.md`.
+- **Keep a file short,** and number it, so the folder lists the decisions in order.
 
 ## You have it when
 
 - A reader can tell what was chosen and what was not without asking.
 - The reason is one the code cannot show.
-- The index lists every decision.
 
 ## Skeleton
 

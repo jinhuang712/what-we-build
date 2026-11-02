@@ -29,17 +29,17 @@ It comes last, because it sums up the approved docs.
 
 - **Open with a hero image,** which shows what the project is before a word is read.
 - **Lead with the one constraint that sets the project apart.**
-- **Say what it does in a few bullets,** and link to the doc that holds the detail.
-- **Install in one line,** and link to INSTALL.md for the rest.
+- **Say what it does in a few bullets.**
+- **Install in one line.**
 - **Show how to use it with the first real task,** from start to result.
 - **Recommend an architecture diagram** that sums up `specs/ARCHITECTURE.md`.
 - **Use emoji where they carry meaning,** such as a mark beside each capability.
 - **Give the page color** through the hero and the diagrams, with badges and callouts.
-- **Link to the status instead of copying it.**
+- **Link each doc once, in *Docs*,** and copy no status.
 
 ## Optional sections
 
-Add a section only when the project needs it. Each one summarizes its owner doc and links to it.
+Add a section only when the project needs it. Each one summarizes its owner doc.
 
 | Section | Add when | Owner |
 |---|---|---|
@@ -78,7 +78,7 @@ Add a section only when the project needs it. Each one summarizes its owner doc 
 
 ## Install
 
-<one line, then a link to INSTALL.md>
+<one line>
 
 ## How to use
 
@@ -86,7 +86,7 @@ Add a section only when the project needs it. Each one summarizes its owner doc 
 
 ## Architecture
 
-<the diagram from specs/ARCHITECTURE.md, and a link to it>
+<the diagram from specs/ARCHITECTURE.md>
 
 ## Docs
 
