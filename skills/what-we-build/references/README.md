@@ -35,7 +35,7 @@ It comes last, because it sums up the approved docs.
 - **Recommend an architecture diagram** that sums up `specs/ARCHITECTURE.md`.
 - **Use emoji where they carry meaning,** such as a mark beside each capability.
 - **Give the page color** through the hero and the diagrams, with badges and callouts.
-- **Link each doc once, in *Docs*,** and copy no status.
+- **Link each doc once in *Docs*,** and copy no status.
 
 ## Optional sections
 

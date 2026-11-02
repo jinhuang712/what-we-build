@@ -8,7 +8,7 @@
 - blocks: [CP3: Proven useful](ROADMAP.md#cp3-proven-useful)
 
 ### [P2][ISSUE] The question each doc answers has three homes
-- description: PROPOSAL, PHILOSOPHY and README each list the question every doc answers, and the lists have drifted
+- description: PROPOSAL, PHILOSOPHY and README each list the question every doc answers and the lists have drifted
 - created: 2026-11-02
 - found: the audit of 2026-11-02
 

@@ -182,7 +182,7 @@ The docs come out in plain and precise English. A reader finds a fact fast and u
 | Rule | What you see in the docs |
 |---|---|
 | Paragraphs or bullets | A paragraph is one block and a bullet is one sentence |
-| Short sentences | A sentence holds at most one comma |
+| Short bullets | A bullet holds at most one comma |
 | Bullets for lists | A list is never packed into a sentence |
 | Prose for reasons | An argument stays prose, as in PHILOSOPHY |
 | One name per thing | A word means the same thing in every doc |

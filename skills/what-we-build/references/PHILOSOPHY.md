@@ -73,7 +73,7 @@ what goes first · two good things collide · what is left behind · the clumsy 
 
 ## Guidelines
 
-- **This doc is prose,** the place for explanation that does not break into bullets.
+- **Argue in prose,** and use a list or a table wherever it shows the thought better.
 - **The stances are the user's,** so do not invent the beliefs.
 - **State each stance as one quotable line,** then argue it.
 - **Quote only what you have checked.**

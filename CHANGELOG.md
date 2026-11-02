@@ -28,16 +28,17 @@
 ### Layout
 
 - The default layout puts the reasons at the root.
-- `specs/` holds how each part works, and `plan/` holds the goals, the roadmap and the todo list.
+- `specs/` holds how each part works and `plan/` holds the goals, the roadmap and the todo list.
 - Before, every doc sat at the root.
 
 ### Wording
 
 - No doc holds a code chunk.
-- Explanation is written in short paragraphs, with good use of tables, lists and diagrams.
+- Explanation is written in short paragraphs with good use of tables, lists and diagrams.
 - A paragraph is one block and a bullet is one sentence, so sentences are no longer stacked one to a line.
 - An ID is always written with its name, and a list of IDs replaces a range.
 - A link points only to what its doc rests on, and PHILOSOPHY and CHANGELOG link to nothing.
+- The comma rule holds for a bullet, and a paragraph is not held to it.
 
 ### Doc guides
 
@@ -46,6 +47,7 @@
 - The UIUX guide is gone, because UIUX is now a spec.
 - Decisions move out of DESIGNS and FEATURES into `specs/decisions/`.
 - PHILOSOPHY drops *Reflections* and the tie-break.
+- PHILOSOPHY argues in prose and uses any structure that shows the thought better.
 - An open question lives in TODO.md as a `DISCUSSION`, and ROADMAP no longer holds one or a *Waiting for design* list.
 - PROPOSAL no longer assumes a pain: *Pain points* sits under *Why it should exist* and is written only when there are pains.
 - PROPOSAL gives each pain its own section, in whatever shape shows its evidence.
@@ -57,7 +59,7 @@
 - A constraint is a condition the product must always meet, and a rule for how the work is done stays out of GOALS.
 - Every goal in the skeleton names the want it serves.
 - GOALS opens with a Summary, and each goal has its own section with an ID that names its kind.
-- ROADMAP calls its stages checkpoints, with IDs such as CP2, so they no longer clash with the measures.
+- ROADMAP calls its stages checkpoints with IDs such as CP2, so they no longer clash with the measures.
 - Status marks move out of headings into a *Status* line, so links to a feature or a checkpoint stay stable.
 - A skeleton suggests a form, and the writer changes it where the content needs another.
 - SKILL.md explains each step in short paragraphs instead of a list of rules, and lists every guide in two tables.
@@ -69,7 +71,7 @@
 - ARCHITECTURE always opens with a diagram of the whole.
 - New guide: INSTALL.md, for everything beyond the README's one install line.
 - A command longer than two lines belongs in a script.
-- PROPOSAL drops *How it works*, *Approach* and *How we know it works*, which FEATURES, DESIGNS and GOALS own.
+- PROPOSAL drops *How it works*, *Approach* and *How we know it works* because other docs own them.
 - FEATURES, ROADMAP and GOALS open with a summary tree that gives each entry its status and a short description.
 - A feature that does several things splits into parts such as F1.1.
 - Each roadmap item has its own status.

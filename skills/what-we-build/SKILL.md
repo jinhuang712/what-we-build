@@ -173,7 +173,7 @@ The docs stay true only if every sitting keeps them true. These rules belong in 
 - Put separate points in a list, one sentence to a bullet.
 - Never stack sentences line by line, which is neither.
 - Make good use of tables and diagrams.
-- Keep at most one comma in a sentence.
+- Keep at most one comma in a bullet.
 - Put the answer first.
 - Use one name per thing.
 - Write an ID with its name, such as "T4: A short skill".
