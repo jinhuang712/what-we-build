@@ -6,8 +6,7 @@ Decided: 2026-10-12
 
 ## The problem
 
-A project can start from an idea, from running code or from messy docs.
-A session can also resume one that stopped.
+A project can start from an idea, from running code or from messy docs. A session can also resume one that stopped.
 
 ## The choice
 

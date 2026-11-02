@@ -10,8 +10,7 @@ An agent can load a skill on its own when a prompt seems to match.
 
 ## The choice
 
-The skill sets `disable-model-invocation: true`.
-A session starts only when the user types `/what-we-build`.
+The skill sets `disable-model-invocation: true`. A session starts only when the user types `/what-we-build`.
 
 ## Not chosen
 

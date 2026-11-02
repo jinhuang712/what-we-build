@@ -11,8 +11,7 @@ claude plugin marketplace add jinhuang712/what-we-build
 claude plugin install what-we-build@what-we-build
 ```
 
-Start a new Claude Code session.
-Type `/what-we-build:what-we-build` to check that it loaded (not yet verified with this plugin).
+Start a new Claude Code session. Type `/what-we-build:what-we-build` to check that it loaded (not yet verified with this plugin).
 
 ## As a personal skill
 
@@ -21,8 +20,7 @@ git clone https://github.com/jinhuang712/what-we-build.git ~/dev/skills/what-we-
 ln -s ~/dev/skills/what-we-build/skills/what-we-build ~/.claude/skills/what-we-build
 ```
 
-Start a new Claude Code session.
-Type `/what-we-build` to check that it loaded.
+Start a new Claude Code session. Type `/what-we-build` to check that it loaded.
 
 ## Update
 

@@ -2,11 +2,7 @@
 
 # Goals
 
-Each goal ties to a want or a risk in [PROPOSAL.md](PROPOSAL.md).
-A goal met on one project stays open for another until it is checked there.
-A status changes only with a check and its date.
-For goals checked on this repo, the reader who checks did not write the change.
-The docs were rewritten after 2026-10-13, so every result from that day waits for a new check.
+Each goal ties to a want or a risk in [PROPOSAL.md](PROPOSAL.md). A goal met on one project stays open for another until it is checked there. A status changes only with a check and its date. For goals checked on this repo, the reader who checks did not write the change. The docs were rewritten after 2026-10-13, so every result from that day waits for a new check.
 
 ## Objectives
 
@@ -20,7 +16,7 @@ The docs were rewritten after 2026-10-13, so every result from that day waits fo
 | # | Measure | How it is measured | Checked | Last value |
 |---|---|---|---|---|
 | G12 | Reads before it changes | Share of changes in sampled sittings made after reading the owning doc | end of phase | not measured |
-| G13 | Lines over the comma rule | Lines outside tables with two or more commas in the core docs except PHILOSOPHY | every change | 5 on 2026-11-02 and 34 at v0.4.0 |
+| G13 | Sentences over the comma rule | Sentences outside tables with two or more commas in the core docs except PHILOSOPHY | every change | 5 on 2026-11-02 and 34 at v0.4.0 |
 | G14 | Length of the core docs | `wc -l` over the 7 core docs | every change | 693 on 2026-11-02 and 614 at v0.4.0 |
 
 ## Benchmarks

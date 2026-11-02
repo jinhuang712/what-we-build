@@ -1,17 +1,14 @@
 # PHILOSOPHY.md
 
-The philosophy is where the project thinks.
-It goes under the decisions to the beliefs they come from:
+The philosophy is where the project thinks. It goes under the decisions to the beliefs they come from:
 
 - What the problem is.
 - Why it is hard.
 - What the project holds to be true about it.
 
-It is a set of questions about the world the project works in.
-Each has a stance in one line that people quote, and an argument under it.
+It is a set of questions about the world the project works in. Each has a stance in one line that people quote, and an argument under it.
 
-It comes second, after the proposal.
-DESIGNS builds on its stances.
+It comes second, after the proposal. DESIGNS builds on its stances.
 
 **Owns:**
 
@@ -35,9 +32,7 @@ DESIGNS builds on its stances.
 
 ## What you are after
 
-The project's thought.
-It is neither a summary of the project nor a list of values.
-It is the lens the project looks through, and everything else is downstream of it:
+The project's thought. It is neither a summary of the project nor a list of values. It is the lens the project looks through, and everything else is downstream of it:
 
 - The designs are what it demands.
 - The features are what it allows.
@@ -62,13 +57,13 @@ It starts from whatever the user brings, in any form.
 
 You are a thinking partner, not an interviewer.
 
-- Listen for the thought inside what the user says. It often hides in an aside or a complaint.
-- Say it back in one line and test it. A wrong candidate gets corrected faster than a right one gets produced.
-- Bring contrast: how another project, field or thinker holds the opposite. A thought gets its edges from what it is against.
+- Listen for the thought that hides in an aside or a complaint.
+- Say it back in one line and test it, since a wrong candidate is corrected faster than a right one is produced.
+- Bring contrast from another project, field or thinker that holds the opposite.
 - Push on what is thin: ask for the case, the cost and the exception.
 - Organize what comes out and show it.
 - Go back and forth until the user recognizes it.
-- Stop when the four tests hold. Do not pad.
+- Stop when the four tests hold, without padding.
 
 ## Seeds
 
@@ -78,13 +73,13 @@ what goes first · two good things collide · what is left behind · the clumsy 
 
 ## Guidelines
 
-- **This doc is prose.** It is the place for explanation that does not break into bullets.
-- **The stances are the user's.** Do not invent the beliefs.
+- **This doc is prose,** the place for explanation that does not break into bullets.
+- **The stances are the user's,** so do not invent the beliefs.
 - **State each stance as one quotable line,** then argue it.
 - **Quote only what you have checked.**
-- **Two or three stances are enough.** An empty section is worse than a missing one.
-- **A stance changes what problem the project solves.** If reversing it changes only how, it is a design and goes in DESIGNS.
-- **A stance that restates the README is a feature.** It goes in FEATURES.
+- **Write only the stances the project truly holds,** since an empty section is worse than a missing one.
+- **A stance changes what problem the project solves,** and one that changes only how is a design for DESIGNS.
+- **A stance that restates the README is a feature** for FEATURES.
 
 ## Skeleton
 

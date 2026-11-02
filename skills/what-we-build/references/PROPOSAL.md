@@ -1,9 +1,6 @@
 # PROPOSAL.md
 
-The proposal is where the project begins: the case for why it should exist.
-It says what gap the project fills and why now.
-It gives the idea that fills the gap.
-A reader finishes it knowing whether the project is worth building.
+The proposal is where the project begins: the case for why it should exist. It says what gap the project fills and why now. It gives the idea that fills the gap. A reader finishes it knowing whether the project is worth building.
 
 It comes first, because every other doc builds on the reason it gives.
 
@@ -54,30 +51,39 @@ It comes first, because every other doc builds on the reason it gives.
 > <tagline>
 
 ## In short
+
 <a scene the reader knows, then the one-line answer>
 
 ## Why it should exist
+
 <the reason in the user's own form, shown with an example>
 
 ### Pain points
+
 <when the project eases a pain>
 
-#### <the pain, in one line>
+#### <the pain>
+
 <the moment, number or sample that proves it>
 
 ## Why now
+
 <what changed that makes it possible or urgent. Leave it out when nothing did>
 
 ## The idea
+
 <the idea in one sentence, then what it means>
 
 ## What we want
-- **<what someone needs>:** <how the project meets it, in one sentence>
+
+- **<what someone needs>:** <how the project meets it>
 
 ## What we don't want
-- **<what the project refuses to become>:** <the reason>
+
+- **<what the project refuses to become>:** <why>
 
 ## Who it is for
+
 <the people, and what each gets>
 
 ## Risks

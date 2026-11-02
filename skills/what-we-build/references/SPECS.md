@@ -1,8 +1,6 @@
 # specs/
 
-The specs folder explains how each part of the project works, like a technical design written for readers outside the team.
-A spec reads like a short paper: prose that explains, with ASCII diagrams where several parts talk to each other.
-A reader who has not seen the code can follow how the part works.
+The specs folder explains how each part of the project works, like a technical design written for readers outside the team. A spec reads like a short paper: prose that explains, with ASCII diagrams where several parts talk to each other. A reader who has not seen the code can follow how the part works.
 
 **Owns:**
 
@@ -14,14 +12,12 @@ A reader who has not seen the code can follow how the part works.
 - The guidelines the design must meet (DESIGNS).
 - The forks behind it (`specs/decisions/`).
 
-**UIUX is a spec too.**
-A project with a visual interface keeps two things:
+**UIUX is a spec too.** A project with a visual interface keeps two things:
 
 - `specs/UIUX.md`, which explains how the product looks and moves.
 - `prototype/*.html`, the final screens.
 
-Change them together.
-Options weighed on the way are process files, and they stay out.
+Change them together. Options weighed on the way are process files, and they stay out.
 
 **Add when** a part has a mechanism worth explaining.
 

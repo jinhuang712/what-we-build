@@ -7,8 +7,7 @@ TODO.md tracks what is open:
 - Tasks to do.
 - Ideas to keep.
 
-Each item has a priority, a type and a time.
-A reader sees what matters first and how old it is.
+Each item has a priority, a type and a time. A reader sees what matters first and how old it is.
 
 **Owns:**
 
@@ -19,12 +18,11 @@ A reader sees what matters first and how old it is.
 - Work with a milestone (ROADMAP).
 - What is already decided (`specs/decisions/`).
 
-**Add when** the doc set is agreed, in every project.
-A finding then has a home the moment it comes up.
+**Add when** the doc set is agreed, in every project. A finding then has a home the moment it comes up.
 
 ## Guidelines
 
-- **Delete an item when it is handled,** in the change that handles it. History lives in git.
+- **Delete an item in the change that handles it,** because history lives in git.
 - **Delete its evidence files too.**
 - **Move an item to ROADMAP** once it has a milestone.
 
@@ -60,7 +58,7 @@ A finding then has a home the moment it comes up.
 | `blocks` | The milestone, feature or item that waits for this one. |
 | `related` | Links to related docs or other items. |
 
-Use the fields an item needs. Leave out the rest.
+Use the fields an item needs, and leave out the rest.
 
 ## You have it when
 
@@ -76,6 +74,7 @@ Use the fields an item needs. Leave out the rest.
 ## ongoing
 
 ### [P0][ISSUE] <what is wrong>
+
 - description: <what happens, and what should happen>
 - created: YYYY-MM-DD
 - status: open
@@ -84,6 +83,7 @@ Use the fields an item needs. Leave out the rest.
 - next: <the next step>
 
 ### [P1][DISCUSSION] <the question>
+
 - description: <why it is open>
 - created: YYYY-MM-DD
 - blocks: <what waits for the answer>

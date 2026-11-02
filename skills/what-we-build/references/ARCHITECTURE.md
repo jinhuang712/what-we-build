@@ -1,9 +1,6 @@
 # specs/ARCHITECTURE.md
 
-ARCHITECTURE.md is the map of the whole project.
-A new contributor reads it first to learn what the parts are and where to look.
-It stays at the macro level.
-How each part works inside goes in that part's own spec.
+ARCHITECTURE.md is the map of the whole project. A new contributor reads it first to learn what the parts are and where to look. It stays at the macro level. How each part works inside goes in that part's own spec.
 
 **Owns:**
 
@@ -29,9 +26,9 @@ How each part works inside goes in that part's own spec.
 
 ## Guidelines
 
-- **Always open with a diagram of the whole.** The reader sees the shape before the words.
+- **Always open with a diagram of the whole,** so the reader sees the shape before the words.
 - **Name each part by what it does,** and link to its spec.
-- **Name the folder each part lives in, not the files.** Folders change less often.
+- **Name each part's folder rather than its files,** because folders change less often.
 
 ## You have it when
 
@@ -53,5 +50,5 @@ How each part works inside goes in that part's own spec.
 
 <what it does, in a few lines>
 
-Lives in: `<folder>`. How it works: <link to its spec>.
+<the folder it lives in, and a link to its spec>
 ```

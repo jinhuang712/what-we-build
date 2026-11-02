@@ -1,9 +1,6 @@
 # ROADMAP.md
 
-ROADMAP.md answers "when?" and "how far along?".
-It breaks the work into milestones, each a usable or proven state of the project.
-It shows where the work stands.
-It schedules features and does not describe them.
+ROADMAP.md answers "when?" and "how far along?". It breaks the work into milestones, each a usable or proven state of the project. It shows where the work stands. It schedules features and does not describe them.
 
 **Owns:**
 
@@ -40,17 +37,15 @@ It schedules features and does not describe them.
 ```markdown
 # Roadmap
 
-**Current milestone:** M1. <one line>
+**Current milestone:** M1. <where the work stands>
 
 ## Overview
 
-| Milestone | Delivers | Features | Status |
-|---|---|---|---|
+<every milestone with what it delivers, its features and its status>
 
 ## M1 — <name> ⬜
 
-| ID | What it delivers | Note |
-|---|---|---|
+<what it delivers, item by item>
 
 **Exit criteria:** <GOALS ids>
 ```

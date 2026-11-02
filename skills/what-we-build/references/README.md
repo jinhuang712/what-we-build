@@ -1,9 +1,6 @@
 # README.md
 
-The README is the front door.
-A visitor reads it in about thirty seconds to decide whether the project is for them.
-Then they read it to start using it.
-It summarizes the other docs at pitch level and points to them.
+The README is the front door. A visitor reads it in about thirty seconds to decide whether the project is for them. Then they read it to start using it. It summarizes the other docs at pitch level and points to them.
 
 It comes last, because it sums up the approved docs.
 
@@ -14,7 +11,7 @@ It comes last, because it sums up the approved docs.
 - What it does.
 - How to install it in one line.
 - How to use it.
-- Links to every other doc.
+- A link to every other doc.
 
 **Leaves out:**
 
@@ -30,7 +27,7 @@ It comes last, because it sums up the approved docs.
 
 ## Guidelines
 
-- **Open with a hero image.** It shows what the project is before a word is read.
+- **Open with a hero image,** which shows what the project is before a word is read.
 - **Lead with the one constraint that sets the project apart.**
 - **Say what it does in a few bullets,** and link to the doc that holds the detail.
 - **Install in one line,** and link to INSTALL.md for the rest.
@@ -38,12 +35,11 @@ It comes last, because it sums up the approved docs.
 - **Recommend an architecture diagram** that sums up `specs/ARCHITECTURE.md`.
 - **Use emoji where they carry meaning,** such as a mark beside each capability.
 - **Give the page color** through the hero and the diagrams, with badges and callouts.
-- **Link to the status.** Do not copy it.
+- **Link to the status instead of copying it.**
 
 ## Optional sections
 
-Add a section only when the project needs it.
-Each one summarizes its owner doc and links to it.
+Add a section only when the project needs it. Each one summarizes its owner doc and links to it.
 
 | Section | Add when | Owner |
 |---|---|---|
@@ -77,22 +73,24 @@ Each one summarizes its owner doc and links to it.
 <what it is, and what sets it apart>
 
 ## What it does
-- <a mark> <a capability, in a line>
+
+- <a mark> **<a capability>:** <what it does, in a line>
 
 ## Install
+
 <one line, then a link to INSTALL.md>
 
 ## How to use
+
 <the first real task, from start to result>
 
 ## Architecture
+
 <the diagram from specs/ARCHITECTURE.md, and a link to it>
 
 ## Docs
 
-| Doc | Answers |
-|---|---|
-| [FEATURES.md](FEATURES.md) | <the question it answers> |
+<a link to every other doc>
 
 ## License
 ```

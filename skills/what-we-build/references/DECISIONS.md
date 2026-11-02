@@ -6,9 +6,7 @@ The decisions folder records the forks the project took:
 - What we did not choose.
 - Why.
 
-It keeps the reason alive after the people who knew it have moved on.
-One decision is one short file.
-DESIGNS, FEATURES and the specs link to it instead of retelling it.
+It keeps the reason alive after the people who knew it have moved on. One decision is one short file. DESIGNS, FEATURES and the specs link to it instead of retelling it.
 
 **Owns:**
 
@@ -31,8 +29,9 @@ A decision about the whole design and a decision about one feature live in the s
   - Someone may later want to undo the choice.
   - The code does not show the reason.
 - **A change that only says what changed belongs in CHANGELOG.**
-- **Keep the title to the choice in one line,** such as "A busy Session queues messages instead of refusing them". The reason goes in the file.
-- **Keep a file under one page,** and keep an index in `specs/decisions/README.md`.
+- **Keep the title to the choice in one line,** such as "A busy Session queues messages instead of refusing them".
+- **Put the reason in the file, not the title.**
+- **Keep a file short,** and keep an index in `specs/decisions/README.md`.
 
 ## You have it when
 
@@ -48,8 +47,18 @@ A decision about the whole design and a decision about one feature live in the s
 Decided: YYYY-MM-DD
 
 ## The problem
+
+<what forced a choice>
+
 ## The choice
+
+<what we chose>
+
 ## Not chosen
-- <an alternative>: <why not>
+
+<each alternative, and why not>
+
 ## Consequences
+
+<what it costs, and what follows from it>
 ```

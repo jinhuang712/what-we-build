@@ -1,7 +1,6 @@
 # AGENTS.md
 
-Guidance for coding agents working on what-we-build.
-It holds what an agent cannot learn by reading the files.
+Guidance for coding agents working on what-we-build. It holds what an agent cannot learn by reading the files.
 
 ## Read order
 
@@ -43,7 +42,7 @@ Before a change, also read the doc that owns it.
 
 ## Before you finish
 
-- Check each line you changed against the *Wording* section of `skills/what-we-build/SKILL.md`.
+- Check each sentence you changed against the *Wording* section of `skills/what-we-build/SKILL.md`.
 - Check each line in a doc against that doc's guide in `skills/what-we-build/references/`.
 - Check each link you touched against its target.
 - Run the checks in [GOALS.md](GOALS.md) marked `every change`.

@@ -6,8 +6,7 @@ Decided: 2026-10-13
 
 ## The problem
 
-A step works on one doc, but the rules for every doc sat in one shared reference.
-Reading all of it cost about 700 lines each time.
+A step works on one doc, but the rules for every doc sat in one shared reference. Reading all of it cost about 700 lines each time.
 
 ## The choice
 

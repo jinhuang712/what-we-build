@@ -6,8 +6,7 @@ Decided: 2026-10-13
 
 ## The problem
 
-The writing guidance in mattpocock/skills (MIT) is long.
-Only part of it matched a failure a session had shown.
+The writing guidance in mattpocock/skills (MIT) is long. Only part of it matched a failure a session had shown.
 
 ## The choice
 

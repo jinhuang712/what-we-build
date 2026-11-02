@@ -38,7 +38,13 @@
 - GOALS holds six kinds of goal, each in its own section.
 - Each goal says when it is checked: with every change or at the end of a phase.
 - GOALS opens with a Summary, and each goal has its own section with an ID that names its kind.
-- A skeleton says what each part holds and leaves its form to the writer.
+- A skeleton suggests a form, and the writer changes it where the content needs another.
+- Explanation is written in short paragraphs, with good use of tables, lists and diagrams.
+- A paragraph is one block and a bullet is one sentence, so sentences are no longer stacked one to a line.
+- SKILL.md explains each step in short paragraphs instead of a list of rules, and lists every guide in two tables.
+- The guides set no counts, such as two or three stances or a page per decision.
+- A CHANGELOG groups its entries by area, as its guide always said.
+- CONTRIBUTING and RUNBOOK name a script instead of listing commands.
 - README opens with a hero image and always has *Install* and *How to use*.
 - README lists its optional sections, each with when to add it and the doc that owns it.
 - ARCHITECTURE always opens with a diagram of the whole.

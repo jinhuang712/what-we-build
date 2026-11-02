@@ -1,7 +1,6 @@
 # INSTALL.md
 
-INSTALL.md holds everything about installing beyond the one line in the README.
-A user reads it when that line is not enough.
+INSTALL.md holds everything about installing beyond the one line in the README. A user reads it when that line is not enough.
 
 **Owns:**
 
@@ -52,6 +51,5 @@ A user reads it when that line is not enough.
 
 ## When it fails
 
-| What you see | What to do |
-|---|---|
+<what the user sees, and what to do>
 ```

@@ -1,9 +1,6 @@
 # FEATURES.md
 
-FEATURES.md is the contract with the user: what the product does today, and what it will and won't do.
-A user reads it to learn what happens when they use it.
-A contributor reads it to see what exists and what was ruled out.
-It describes behavior from the user's side, never the code.
+FEATURES.md is the contract with the user: what the product does today, and what it will and won't do. A user reads it to learn what happens when they use it. A contributor reads it to see what exists and what was ruled out. It describes behavior from the user's side, never the code.
 
 It comes fifth in a session: each feature delivers a want from the proposal within the design that DESIGNS sets.
 
@@ -32,11 +29,11 @@ It comes fifth in a session: each feature delivers a want from the proposal with
 ## Guidelines
 
 - **Open with a Summary,** an outline of every capability by group.
-- **Give each Summary row its feature and status.**
-- **Give each feature an ID that never changes,** so other docs can point to it. A new feature takes a new number.
+- **Give each feature an ID that never changes,** so other docs can point to it.
+- **Give a new feature a new number.**
 - **Describe what the user does and what happens,** short and in the present tense.
-- **Link each feature to what it rests on,** as the skeleton shows.
-- **End with the failure table, *Later* and *Not planned*.**
+- **Link each feature to what it rests on,** such as its design guideline and its decisions.
+- **End with what happens when something fails,** then *Later* and *Not planned*.
 
 ## You have it when
 
@@ -49,14 +46,11 @@ It comes fifth in a session: each feature delivers a want from the proposal with
 ```markdown
 # Features
 
-<one line per status mark: ✅ built · 🚧 built with a gap · ⬜ planned>
+<what the status marks mean: ✅ built · 🚧 built with a gap · ⬜ planned>
 
 ## Summary
 
-**<Group>**
-
-| Capability | What it does | Feature | Status |
-|---|---|---|---|
+<every capability by group, with its feature and status>
 
 ## <Group>
 
@@ -64,16 +58,19 @@ It comes fifth in a session: each feature delivers a want from the proposal with
 
 <what it gives the user, and what happens>
 
-Design: <the DESIGNS guideline it serves>. How it works: <link to the spec>. Why: <links to decisions>. Look: <link to UIUX, for a feature with a screen>.
+- **Design:** <the DESIGNS guideline it serves>
+- **How it works:** <a link to its spec>
+- **Why:** <links to its decisions>
 
 ## When something fails
 
-| Case | What the user sees | Feature |
-|---|---|---|
+<each failure, what the user sees and the feature it belongs to>
 
 ## Later, if needed
 
+<ideas that may come, and what would bring them>
+
 ## Not planned
 
-<each thing the project will not build, and why>
+- **<not this>:** <why>
 ```

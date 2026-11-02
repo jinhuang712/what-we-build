@@ -1,7 +1,6 @@
 # SECURITY.md
 
-SECURITY.md tells people how to report a vulnerability safely.
-GitHub shows it as the project's security policy.
+SECURITY.md tells people how to report a vulnerability safely. GitHub shows it as the project's security policy.
 
 **Owns:**
 
@@ -10,8 +9,7 @@ GitHub shows it as the project's security policy.
 - Which versions are supported.
 - What happens next.
 
-**Add when** the project is public.
-Draft it at the end of a session.
+**Add when** the project is public. Draft it at the end of a session.
 
 ## You have it when
 
@@ -24,14 +22,18 @@ Draft it at the end of a session.
 # Security
 
 ## Report a vulnerability
+
 <where to send it, and that it must not be a public issue>
 
 ## What to include
+
 <the details that help us reproduce it>
 
 ## Supported versions
+
 <which versions get fixes>
 
 ## What happens next
+
 <how fast we reply, and how we disclose>
 ```

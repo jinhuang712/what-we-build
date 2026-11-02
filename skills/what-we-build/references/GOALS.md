@@ -1,8 +1,6 @@
 # GOALS.md
 
-GOALS.md turns the wants in the proposal into checks.
-It keeps the project honest: when someone claims progress, this is where the claim is tested.
-ROADMAP uses these goals as its exit criteria.
+GOALS.md turns the wants in the proposal into checks. It keeps the project honest: when someone claims progress, this is where the claim is tested. ROADMAP uses these goals as its exit criteria.
 
 **Owns:**
 
@@ -32,49 +30,38 @@ A project uses the kinds it needs and leaves out the rest.
 
 ### Objective
 
-An objective is a result the project must reach.
-It passes or fails by its acceptance test, such as a headless run from one command.
+An objective is a result the project must reach. It passes or fails by its acceptance test, such as a headless run from one command.
 
 ### Measure
 
-A measure is something watched while the work goes on.
-It has no pass or fail, such as how full the window gets in a long sitting.
+A measure is something watched while the work goes on. It has no pass or fail, such as how full the window gets in a long sitting.
 
 ### Benchmark
 
-A benchmark scores the project on a fixed problem set.
-Its score is tracked over time, such as the score on a public set of coding tasks.
+A benchmark scores the project on a fixed problem set. Its score is tracked over time, such as the score on a public set of coding tasks.
 
 ### Comparison
 
-A comparison runs the same work with this project and with another tool.
-It shows where the project stands, not whether it passes.
+A comparison runs the same work with this project and with another tool. It shows where the project stands, not whether it passes.
 
 ### Threshold
 
-A threshold is a limit the product must never cross.
-It fails the moment it is crossed, such as a package over 100 MB.
+A threshold is a limit the product must never cross. It fails the moment it is crossed, such as a package over 100 MB.
 
 ### Constraint
 
-A constraint is a rule the work itself must keep, not a feature left out.
-It fails the moment it is broken, such as a dependency outside the standard library.
+A constraint is a rule the work itself must keep, not a feature left out. It fails the moment it is broken, such as a dependency outside the standard library.
 
 ## When to check
 
-Every goal stands all the time, but its check runs on a cadence.
-Measures, thresholds and constraints that cost little run with every change.
-They catch a slip at once.
-Objectives, benchmarks and comparisons run at the end of a phase.
-A large run is worth it only once enough has landed.
-At the end of each phase, go through the whole sheet.
+Every goal stands all the time, but its check runs on a cadence. Measures, thresholds and constraints that cost little run with every change. They catch a slip at once. Objectives, benchmarks and comparisons run at the end of a phase. A large run is worth it only once enough has landed. At the end of each phase, go through the whole sheet.
 
 ## Guidelines
 
 - **Give each goal an ID that never changes,** so ROADMAP can point to it.
-- **Let the letter of the ID name its kind:** O, M, B, C, T or R.
+- **Let the letter of the ID name its kind,** as the skeleton shows.
 - **Open with a Summary** of every goal, its cadence and its status.
-- **Under each label, write what the goal needs,** in whatever form fits.
+- **Write under each label what the goal needs,** in whatever form fits.
 - **Mark a goal met only with evidence** from someone who did not write the change.
 - **Say where and when each number was measured.**
 - **Leave a number open when it is not known.**

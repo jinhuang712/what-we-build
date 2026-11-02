@@ -2,9 +2,7 @@
 
 # Roadmap
 
-Where what-we-build stands and what comes next.
-Each milestone is a usable or proven state of the skill.
-Its exit criteria point to [GOALS.md](GOALS.md), and it ends with a pass over the whole goal sheet.
+Where what-we-build stands and what comes next. Each milestone is a usable or proven state of the skill. Its exit criteria point to [GOALS.md](GOALS.md), and it ends with a pass over the whole goal sheet.
 
 Status: ✅ done · 🟨 in progress · ⬜ not started.
 

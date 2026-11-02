@@ -10,8 +10,7 @@ The skill should install as a plugin and also as a linked folder.
 
 ## The choice
 
-The manifest sits in `.claude-plugin/` at the repo root.
-The repo installs as a plugin, and its skill folder also works when linked into `~/.claude/skills`.
+The manifest sits in `.claude-plugin/` at the repo root. The repo installs as a plugin, and its skill folder also works when linked into `~/.claude/skills`.
 
 ## Not chosen
 

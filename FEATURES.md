@@ -2,9 +2,7 @@
 
 # Features
 
-What what-we-build does today, and what it will and won't do.
-Each feature is described from the user's side: what you type, what you see and what you decide.
-How far each feature has been used in real life is in [ROADMAP.md](ROADMAP.md).
+What what-we-build does today, and what it will and won't do. Each feature is described from the user's side: what you type, what you see and what you decide. How far each feature has been used in real life is in [ROADMAP.md](ROADMAP.md).
 
 Two words have one meaning each here:
 
@@ -55,8 +53,7 @@ Status: ✅ built · 🚧 built with a gap named in its section · ⬜ planned.
 
 ### F1 — Start and talk each doc through ✅
 
-You bring an idea, a codebase or a pile of docs.
-The skill reads the folder and starts from what it finds.
+You bring an idea, a codebase or a pile of docs. The skill reads the folder and starts from what it finds.
 
 | The folder holds | The skill starts by |
 |---|---|
@@ -66,10 +63,7 @@ The skill reads the folder and starts from what it finds.
 | Docs with marks and not all approved | resuming (F2) |
 | Something that disagrees with your request | asking you |
 
-First you agree the doc set and where the docs live.
-You go through the project's `AGENTS.md` with the agent and decide together what it should hold.
-The agent recommends the read order, the layout and the work rules of F5.
-Then each doc goes through the same loop:
+First you agree the doc set and where the docs live. You go through the project's `AGENTS.md` with the agent and decide together what it should hold. The agent recommends the read order, the layout and the work rules of F5. Then each doc goes through the same loop:
 
 1. You talk it through until its key points are agreed.
 2. The agent drafts it and marks it `drafted`.
@@ -77,23 +71,14 @@ Then each doc goes through the same loop:
 4. You approve it, and the mark becomes `approved`.
 5. The agent commits it.
 
-The docs come in order: PROPOSAL → PHILOSOPHY → DESIGNS → GOALS → FEATURES → ROADMAP → README.
-Each one builds on the ones before it, so you never answer the same question twice.
-Every choice comes with a recommendation.
-The agent pushes back when something does not fit and keeps it up until you decide.
+The docs come in order: PROPOSAL → PHILOSOPHY → DESIGNS → GOALS → FEATURES → ROADMAP → README. Each one builds on the ones before it, so you never answer the same question twice. Every choice comes with a recommendation. The agent pushes back when something does not fit and keeps it up until you decide.
 
 - **Design:** [6. Trust the model](DESIGNS.md#6-trust-the-model)
 - **Why:** [001](specs/decisions/001-one-skill-for-every-start.md) and [007](specs/decisions/007-designs-third.md)
 
 ### F2 — Resume ✅
 
-A session can stop at any point and pick up in a later sitting.
-Each drafted doc carries a mark on its first line that does not show when rendered.
-The mark becomes `approved` when you approve the doc.
-It goes back to `drafted` whenever the doc is edited again.
-On a later `/what-we-build` the agent reads the marks and tells you where the session stopped.
-It continues at the first doc in the order that is not approved.
-A doc that grows one entry at a time carries no mark, such as TODO or CHANGELOG.
+A session can stop at any point and pick up in a later sitting. Each drafted doc carries a mark on its first line that does not show when rendered. The mark becomes `approved` when you approve the doc. It goes back to `drafted` whenever the doc is edited again. On a later `/what-we-build` the agent reads the marks and tells you where the session stopped. It continues at the first doc in the order that is not approved. A doc that grows one entry at a time carries no mark, such as TODO or CHANGELOG.
 
 - **Design:** [2. The docs are the state](DESIGNS.md#2-the-docs-are-the-state)
 
@@ -101,8 +86,7 @@ A doc that grows one entry at a time carries no mark, such as TODO or CHANGELOG.
 
 ### F5 — Keep the context while you work ✅
 
-The docs stay true after the first session.
-The agent follows these rules in every sitting:
+The docs stay true after the first session. The agent follows these rules in every sitting:
 
 | When | The agent |
 |---|---|
@@ -115,9 +99,7 @@ The agent follows these rules in every sitting:
 | A todo is handled | deletes it in the same change |
 | You stop it | stops |
 
-The skill starts only when you type `/what-we-build`.
-The rules still reach every sitting through the project's `AGENTS.md`.
-You agree to record them there when you go through it with the agent.
+The skill starts only when you type `/what-we-build`. The rules still reach every sitting through the project's `AGENTS.md`. You agree to record them there when you go through it with the agent.
 
 - **Design:** [2. The docs are the state](DESIGNS.md#2-the-docs-are-the-state)
 - **Why:** [002](specs/decisions/002-manual-start.md)
@@ -132,16 +114,11 @@ You agree to record them there when you go through it with the agent.
 | Recommended for every project | TODO · CHANGELOG · `specs/decisions/` |
 | Optional | `specs/` with ARCHITECTURE and UIUX · GLOSSARY · CONTRIBUTING · SECURITY · RUNBOOK |
 
-The recommended docs start once you agree the doc set.
-A finding or a change then has a home from the start.
-The optional docs join only when the project needs them.
+The recommended docs start once you agree the doc set. A finding or a change then has a home from the start. The optional docs join only when the project needs them.
 
-Each kind of doc has a guide.
-The agent reads it before it starts that doc.
-The guide says what the doc owns and what it leaves out.
+Each kind of doc has a guide. The agent reads it before it starts that doc. The guide says what the doc owns and what it leaves out.
 
-You choose where the docs live.
-By default the layout looks like this:
+You choose where the docs live. By default the layout looks like this:
 
 - The reasons and the contract sit at the root.
 - `specs/` holds how each part works, with `specs/decisions/` under it.
@@ -154,12 +131,12 @@ You decide with the agent whether `AGENTS.md` records the layout.
 
 ### F4 — Wording rules ✅
 
-The docs come out in plain and precise English.
-A reader finds a fact fast and understands it the first time.
+The docs come out in plain and precise English. A reader finds a fact fast and understands it the first time.
 
 | Rule | What you see in the docs |
 |---|---|
-| One sentence per line | Each line holds one point with at most one comma |
+| Paragraphs or bullets | A paragraph is one block and a bullet is one sentence |
+| Short sentences | A sentence holds at most one comma |
 | Bullets for lists | A list is never packed into a sentence |
 | Prose for reasons | An argument stays prose, as in PHILOSOPHY |
 | One name per thing | A word means the same thing in every doc |

@@ -1,16 +1,12 @@
 # DESIGNS.md
 
-DESIGNS.md holds the project's design guidelines: the few hard commitments the whole design is built around.
-Its reader is a developer about to change the code or propose something new.
-A guideline is concrete and not up for negotiation.
-A reader can check any design against it and name the one it breaks.
+DESIGNS.md holds the project's design guidelines: the few hard commitments the whole design is built around. Its reader is a developer about to change the code or propose something new. A guideline is concrete and not up for negotiation. A reader can check any design against it and name the one it breaks.
 
-It comes third in a session, right after the philosophy.
-The design guides the features, so it comes before them.
+It comes third in a session, right after the philosophy. The design guides the features, so it comes before them.
 
 **Owns:**
 
-- The guidelines, numbered and one line each.
+- The guidelines, numbered.
 - Under each: why it holds and what it costs.
 - Under each: the question it asks of a new requirement.
 - Under each: links to its decisions and specs.
@@ -31,15 +27,15 @@ The design guides the features, so it comes before them.
 
 ## Guidelines
 
-- **Open with the numbered guidelines, one line each.** A reader then sees the whole design at a glance.
-- **State each one as a commitment a reader can test.** "Every payment can be retried safely" is testable. "Payments are reliable" is not.
+- **Open with the numbered guidelines,** so a reader sees the whole design at a glance.
+- **State each one as a commitment a reader can test,** such as "Every payment can be retried safely" and not "Payments are reliable".
 - **Give each a short section** on why it holds and what it costs.
-- **End each section with an Ask: line** and links to its decisions and specs.
+- **Give each the question it asks of a new requirement,** and link its decisions and specs.
 
 ## You have it when
 
 - A reader can check a new design against the guidelines and name the one it breaks.
-- Every guideline names its cost and has an **Ask:** line.
+- Every guideline names its cost and the question it asks.
 - Nothing in it is a mechanism or a feature.
 
 ## Skeleton
@@ -51,7 +47,7 @@ The design guides the features, so it comes before them.
 
 <Name> is designed around <N> guidelines:
 
-1. **<guideline>.** <one line>
+1. **<guideline>:** <its gist>
 
 ## 1. <guideline>
 

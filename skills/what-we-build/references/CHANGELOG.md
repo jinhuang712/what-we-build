@@ -1,15 +1,12 @@
 # CHANGELOG.md
 
-The changelog tells users what changed in each release, in words they understand.
-It is the doc people read before they upgrade.
+The changelog tells users what changed in each release, in words they understand. It is the doc people read before they upgrade.
 
 **Owns:**
 
 - One section per version with its date, grouped by area.
 
-**Add when** the doc set is agreed, in every project.
-Start it with an empty *Unreleased* section so the first change has a place to land.
-Fill it in the change that does the work.
+**Add when** the doc set is agreed, in every project. Start it with an empty *Unreleased* section so the first change has a place to land. Fill it in the change that does the work.
 
 ## Guidelines
 
@@ -31,12 +28,7 @@ Fill it in the change that does the work.
 
 ## <X.Y.Z> — <YYYY-MM-DD>
 
-### Added
-- <what the user can now do>
+### <area>
 
-### Changed
-- <what behaves differently, with before and after>
-
-### Fixed
-- <what no longer breaks>
+<what changed, from the user's side>
 ```

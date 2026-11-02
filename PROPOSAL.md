@@ -4,32 +4,23 @@
 
 > Keep a project's context in docs.
 
-Proposed 2026-10-12.
-For where the work stands today, see [ROADMAP.md](ROADMAP.md).
+Proposed 2026-10-12. For where the work stands today, see [ROADMAP.md](ROADMAP.md).
 
 ## In short
 
-You build a project with a coding agent over many sessions.
-On day one you agree on what to build and why.
-Some weeks later the agent is writing code for a project you no longer recognize.
+You build a project with a coding agent over many sessions. On day one you agree on what to build and why. Some weeks later the agent is writing code for a project you no longer recognize.
 
-Nothing was built badly.
-The context was lost: what you decided and why.
+Nothing was built badly. The context was lost: what you decided and why.
 
-what-we-build keeps that context in docs, made with you through discussion.
-Each doc answers one question, so every fact has one home.
-Nothing is written down before you agree.
+what-we-build keeps that context in docs, made with you through discussion. Each doc answers one question, so every fact has one home. Nothing is written down before you agree.
 
 ## Why it should exist
 
-Building is no longer the hard part.
-An agent implements almost anything it is told, and fast.
-What goes wrong is the context around the work.
+Building is no longer the hard part. An agent implements almost anything it is told, and fast. What goes wrong is the context around the work.
 
 ### Pain points
 
-The first five come from one real project built with coding agents over two weeks.
-The rest come from building this skill.
+The first five come from one real project built with coding agents over two weeks. The rest come from building this skill.
 
 #### Every fact in several places
 
@@ -60,33 +51,25 @@ Neither goal can be checked.
 
 #### Principles that are features
 
-Four of ten principles restated goals.
-Others named parts of the screen.
+Four of ten principles restated goals. Others named parts of the screen.
 
 #### Agents that agree too fast
 
-Asked to discuss a design, the agent started writing files.
-The user had to stop it:
+Asked to discuss a design, the agent started writing files. The user had to stop it:
 
 > dont be eager to implement it first
 
 #### Agents that do not record
 
-A rule said to write a changelog entry with every change.
-The agent forgot it twice in one session.
-What an agent records has no fixed shape, so nobody can say where it went.
+A rule said to write a changelog entry with every change. The agent forgot it twice in one session. What an agent records has no fixed shape, so nobody can say where it went.
 
 #### Docs patched until nobody can read them
 
-A doc was edited in twenty small patches.
-It lost its shape, and no person could read it.
-The agent reading it got lost too.
+A doc was edited in twenty small patches. It lost its shape, and no person could read it. The agent reading it got lost too.
 
 #### Context lost to the window
 
-Past about 600K tokens the agent grew confused.
-Then the window was compacted, and the session's decisions were gone.
-The next session did not know what the last one had been doing.
+Past about 600K tokens the agent grew confused. Then the window was compacted, and the session's decisions were gone. The next session did not know what the last one had been doing.
 
 #### Docs not read
 
@@ -97,9 +80,7 @@ The next session did not know what the last one had been doing.
 
 #### Work from git alone
 
-A new session read the file tree and the log.
-They said what changed and not why.
-The session continued the last change with no way to know whether it was right.
+A new session read the file tree and the log. They said what changed and not why. The session continued the last change with no way to know whether it was right.
 
 **The result:** the work drifts away from what was agreed.
 
@@ -118,9 +99,7 @@ Agents changed what is cheap and what gets lost.
 
 **Keep the project's context in docs, and give each fact one home.**
 
-Each doc answers one question.
-A reader always knows where to look, and a change is made in one place.
-The agent writes the docs with the user and reads them before it works.
+Each doc answers one question. A reader always knows where to look, and a change is made in one place. The agent writes the docs with the user and reads them before it works.
 
 | Doc | The one question it answers |
 |---|---|
@@ -157,8 +136,7 @@ The full list of what is not planned, with reasons: [FEATURES.md → Not planned
 
 ## Who it is for
 
-Developers who build a project with a coding agent over many sessions and want its context kept.
-The first user is the author.
+Developers who build a project with a coding agent over many sessions and want its context kept. The first user is the author.
 
 ## Risks
 
