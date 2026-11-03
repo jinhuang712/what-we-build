@@ -2,32 +2,11 @@
 
 ## Unreleased
 
-### Doc guides
-
-- A ROADMAP checkpoint lists the features it delivers, and its exit criteria are bullets grouped by the kind of goal.
-- Goals that are checked but do not block a release sit in their own group.
-- A sub-checkpoint may have its own exit criteria, and its parent only says it is met.
-- FEATURES no longer names a version, and each decision in it carries a short name.
-- A doc links every ID it names where it may, and never shows a bare ID.
-- CHANGELOG holds no IDs or links, and no table of renamed IDs.
-- DESIGNS holds no order for when guidelines collide, since a guideline is never traded.
-- TODO has three priorities from `P0` to `P2`, and an idea that may never happen is an `IDEA` at `P2`.
-- A TODO item's status is `OPEN` or `HALT` in place of open, in progress and blocked.
-
-### Start
-
-- On each start the agent shows you any part of a doc that its guide no longer asks for.
-- The agent adds a `CLAUDE.md` with `@AGENTS.md` when your project has none.
-- The agent no longer compares your `AGENTS.md` with the skill's rules on each start, and talks the rules through with you instead.
-
-### Working with the agent
-
-- `SKILL.md` is written in plain words with one point to a line.
-
 ## 0.6.0 — 2026-11-03
 
 ### Working with the agent
 
+- `SKILL.md` is written in plain words with one point to a line.
 - The agent reads every doc it works on in full and never hands a doc to a subagent.
 - When you stop the agent, it stops every agent it started and every agent those started.
 - When a project's own rules disagree with a guide, the agent tells you instead of picking one.
@@ -35,12 +14,13 @@
 
 ### Start
 
-- The agent makes sure your tool loads `AGENTS.md` in every window, such as with a `CLAUDE.md` that holds `@AGENTS.md`.
-- On each start the agent shows you where the rules in your `AGENTS.md` fell behind the skill.
+- The agent makes every window load `AGENTS.md`, and adds a `CLAUDE.md` with `@AGENTS.md` when your project has none.
+- The agent talks the rules for `AGENTS.md` through with you and never puts them all in at once.
+- On each start the agent shows you any part of a doc that its guide no longer asks for.
 
 ### Doc guides
 
-- Every guide and `SKILL.md` are written in tagged lines that run `[YES]`, `[NO]`, `[MAYBE]` and then `[WHEN]`.
+- Every guide and `SKILL.md` are written in tagged lines in the order `[YES]` `[NO]` `[MAYBE]` `[WHEN]`.
   - Before, a guide had lists such as *Owns* and *Push back on*.
   - Now one *What is it* list says what goes in, what goes elsewhere and how to write it.
   - Lines that said the same thing twice are gone, so the guides are 121 lines shorter.
@@ -56,6 +36,15 @@
   - GLOSSARY: a term.
 - What FEATURES called a part is now a sub-feature, so *part* means only a piece of the project.
 - Examples in the guides may come from the stable ideas of a well-known tool, such as Claude Code.
+- A ROADMAP checkpoint lists the features it delivers, and its exit criteria are bullets grouped by the kind of goal.
+- Goals that are checked but do not block a release sit in their own group.
+- A sub-checkpoint may have its own exit criteria, and its parent only says it is met.
+- FEATURES no longer names a version, and each decision in it carries a short name.
+- A doc links every ID it names where it may, and never shows a bare ID.
+- CHANGELOG holds no IDs or links, and no table of renamed IDs.
+- DESIGNS holds no order for when guidelines collide, since a guideline is never traded.
+- TODO has three priorities from `P0` to `P2`, and an idea that may never happen is an `IDEA` at `P2`.
+- A TODO item's status is `OPEN` or `HALT` in place of open, in progress and blocked.
 
 ## 0.5.0 — 2026-11-03
 
