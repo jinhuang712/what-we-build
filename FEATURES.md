@@ -89,7 +89,7 @@ You see each change as its skeleton first and then as a diff of before and after
 
 **Status:** ✅
 
-You can stop at any point and pick up later, because every agreed point is already in its doc and every open one is in `TODO.md`. On a later `/what-we-build` the agent tells you where the work stopped: the first doc in the order that is not written yet or still has an open question. When the whole doc set is written, it reports where the project stands and what changed since each doc's last commit. You then see which doc may have fallen behind.
+You can stop at any point and pick up later, because every agreed point is already in its doc and every open one is in `TODO.md`. On a later `/what-we-build` the agent tells you where the work stands, what is still open and which docs may have fallen behind it.
 
 - **Design:** [DESIGNS 2: The docs are the state](DESIGNS.md#2-the-docs-are-the-state)
 - **Why:** [008: A resume with nothing to draft looks for drift](specs/decisions/008-resume-looks-for-drift.md) and [024: Approval lives in the conversation](specs/decisions/024-approval-lives-in-the-conversation.md)
@@ -210,7 +210,6 @@ The docs come out in plain and precise English. A reader finds a fact fast and u
 | Case | What you see | Feature |
 |---|---|---|
 | The folder and your request disagree | the agent asks you which to follow | F1.1: Start from where the project is |
-| The folder has no git | the agent recommends `git init`, since the drift report reads each doc's history | F1.1: Start from where the project is |
 | A fact has no doc to own it | the agent asks you what to do with it | F1.3: Talk each doc through |
 | A number is not known | it stays open in the doc | F1.3: Talk each doc through |
 | The docs and the code disagree | the agent tells you and you decide | F2.1: Keep the context while you work |

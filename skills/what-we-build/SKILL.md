@@ -29,14 +29,9 @@ When you ask:
 
 ## Start
 
-Read the project folder first, and start from what it holds. An idea, running code and old docs are all material for the talk, and a doc set already begun is where the work picks up.
+Read the project folder first, and start from what it holds. An idea, running code and old docs are all material for the talk. When docs already exist, tell the user where the work stands, what is still open and which docs may have fallen behind it.
 
-- Recommend `git init` when the folder has no git, since the drift report reads each doc's history.
-- Decide with the user what the project's `AGENTS.md` holds, and recommend the read order, the layout and the rules in *While you work*.
-
-To resume, read every doc and `TODO.md`. The work stopped at the first doc in the order of *Writing a doc* that is not written yet or still has an open question in `TODO.md`. Tell the user, and continue there once you have re-read the docs it builds on.
-
-Report when the whole doc set is written. Say where the project stands from `TODO.md`, `ROADMAP.md` and `GOALS.md`. Then take each doc's last commit and read what the project changed after it. Where the work moved and the doc did not, point out that the doc may have fallen behind. Ask the user what to work on next.
+Decide with the user what the project's `AGENTS.md` holds, and recommend the read order, the layout and the rules in *While you work*.
 
 ## The doc set
 
