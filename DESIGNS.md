@@ -54,3 +54,5 @@ Each example in the skill is invented for it or taken from this repo. The cost i
 A guide says what a doc is for and what goes wrong. It leaves the method to the model, because a model told every step stops using its judgment. One run followed a guide's "table: pain → what the project does" to the letter, and the user rejected the tables. The cost is that two runs may write the same doc differently.
 
 **Ask:** does this teach the model something it already knows?
+
+- **Decisions:** [026: The skill says what the agent must do, not each step](specs/decisions/026-the-skill-says-what-not-how.md)

@@ -21,6 +21,7 @@
 - Nothing is committed before you approve it.
 - You approve in the conversation, and no doc carries a mark any more.
 - The agent re-reads the whole doc before any edit, even of one word.
+- The skill says what the agent must do and leaves the steps to it, keeping only the rules that stop a mistake seen in tests.
 - When you stop the agent, it stops at once.
 - A point still open waits in TODO.md, so the work can stop at any time.
 - When docs already exist, `/what-we-build` tells you where the work stands, what is still open and which docs may have fallen behind it.
