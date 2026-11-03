@@ -29,15 +29,7 @@ When you ask:
 
 ## Start
 
-Read the project folder first, and start from what it holds.
-
-| It has | Start by |
-|---|---|
-| An idea and nothing written | Discussing the idea with the user |
-| Running code and no docs | Reading the code, then discussing each doc |
-| Messy docs | Discussing them with the user as material for the doc set |
-| Part of the doc set | Resuming where the work stopped |
-| The whole doc set | Reporting where the project stands and what may have drifted |
+Read the project folder first, and start from what it holds. An idea, running code and old docs are all material for the talk, and a doc set already begun is where the work picks up.
 
 - When the folder and the request disagree, ask.
 - Recommend `git init` when the folder has no git, since the drift report reads each doc's history.

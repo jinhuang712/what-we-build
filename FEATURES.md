@@ -9,7 +9,7 @@ Status: ✅ built · 🚧 built, with a gap named beside it · ⬜ planned. A �
 ```
 Features
 ├── ✅ F1: Writing the docs with you — the skill starts from your folder and talks each doc through with you
-│   ├── ✅ F1.1: Start from where the project is — an idea, running code or messy docs
+│   ├── ✅ F1.1: Start from where the project is — an idea, running code or old docs
 │   ├── ✅ F1.2: Agree the doc set — you confirm the docs and where they live
 │   ├── ✅ F1.3: Talk each doc through — discuss, brainstorm or decide with a recommendation
 │   ├── ✅ F1.4: Push back — the agent says what does not fit and why
@@ -39,16 +39,7 @@ The skill starts from your folder and talks each doc through with you, from the 
 
 **Status:** ✅
 
-You bring an idea, a codebase or a pile of docs. The skill reads the folder and starts from what it finds.
-
-| The folder holds | The skill starts by |
-|---|---|
-| An idea and nothing written | discussing the idea with you |
-| Running code and no docs | reading the code and then discussing each doc |
-| Messy docs | discussing them with you as material for the doc set |
-| Part of the doc set | resuming where the work stopped ([F1.7: Resume](#f17-resume)) |
-| The whole doc set | reporting where the project stands and what may have drifted ([F1.7: Resume](#f17-resume)) |
-| Something that disagrees with your request | asking you |
+You bring an idea, a codebase or a pile of old docs. The agent reads the folder first, and whatever it finds is material for the talk with you. When part of the doc set is already written, the work picks up where it stopped ([F1.7: Resume](#f17-resume)).
 
 **Stories:**
 
