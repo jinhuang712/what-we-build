@@ -4,7 +4,7 @@ Where what-we-build stands and what comes next. Each checkpoint is a usable or p
 
 Status: ✅ done · 🟨 in progress · ⬜ not started.
 
-**Current checkpoint:** [CP2: Rebuild around the context](#cp2-rebuild-around-the-context). The skill has been used on this repo and not yet on a new project, and it has no evals until [CP4: Proven useful](#cp4-proven-useful).
+**Current checkpoint:** [CP3: First real use](#cp3-first-real-use). The skill has been used on this repo and not yet on a new project, and it has no evals until [CP4: Proven useful](#cp4-proven-useful).
 
 ## Summary
 
@@ -16,14 +16,14 @@ Roadmap
 │   ├── ✅ CP1.3: Scripts that check links and blank lines
 │   ├── ✅ CP1.4: This repo's docs in the skill's own format
 │   └── ✅ CP1.5: Public repo and plugin manifest at version 0.1.0
-├── 🟨 CP2: Rebuild around the context — the skill rebuilt in this repo from what its own use showed
+├── ✅ CP2: Rebuild around the context — the skill rebuilt in this repo from what its own use showed
 │   ├── ✅ CP2.1: A first review of this repo's docs with the skill, released as 0.2.0
 │   ├── ✅ CP2.2: A second review of this repo's docs, released as 0.3.0
 │   ├── ✅ CP2.3: Lessons from a real design talk, released as 0.4.0
 │   ├── ✅ CP2.4: The skill rebuilt around a project's context
 │   ├── ✅ CP2.5: This repo's docs in the new forms
-│   └── ⬜ CP2.6: Release 0.5.0
-├── ⬜ CP3: First real use — the skill used on a new project
+│   └── ✅ CP2.6: Release 0.5.0
+├── 🟨 CP3: First real use — the skill used on a new project
 │   ├── ⬜ CP3.1: A new project's 7 core docs drafted and approved with the skill
 │   └── ⬜ CP3.2: A real resume to test F1.7: Resume
 └── ⬜ CP4: Proven useful — runs with the skill beat runs without it
@@ -47,16 +47,16 @@ Roadmap
 
 ## CP2: Rebuild around the context
 
-**Status:** 🟨
+**Status:** ✅
 
 | ID | What it delivers | Status | Note |
 |---|---|---|---|
 | CP2.1 | A first review of this repo's docs with the skill, released as 0.2.0 | ✅ | 2026-10-13 |
 | CP2.2 | A second review of this repo's docs, released as 0.3.0 | ✅ | 2026-10-13 |
 | CP2.3 | Lessons from a real design talk, released as 0.4.0 | ✅ | 2026-10-18 |
-| CP2.4 | The skill rebuilt around a project's context | ✅ | Not yet released |
+| CP2.4 | The skill rebuilt around a project's context | ✅ | 2026-11-03 |
 | CP2.5 | This repo's docs in the new forms | ✅ | 2026-11-03 |
-| CP2.6 | Release 0.5.0 | ⬜ | |
+| CP2.6 | Release 0.5.0 | ✅ | 2026-11-03 |
 
 **Exit criteria:**
 
@@ -65,7 +65,7 @@ Roadmap
 
 ## CP3: First real use
 
-**Status:** ⬜
+**Status:** 🟨
 
 | ID | What it delivers | Status | Note |
 |---|---|---|---|

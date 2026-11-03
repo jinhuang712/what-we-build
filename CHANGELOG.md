@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 0.5.0 — 2026-11-03
+
 ### Install
 
 - what-we-build installs as a personal skill, and the plugin is gone.
