@@ -5,7 +5,6 @@ GOALS.md turns the wants in the proposal into checks. It keeps the project hones
 **Owns:**
 
 - The goals of each kind, each with how it is checked.
-- When each goal is checked.
 - The last result of each check, with its date.
 
 **Leaves out:**
@@ -15,6 +14,7 @@ GOALS.md turns the wants in the proposal into checks. It keeps the project hones
 - How anything works (`specs/`).
 - A commitment the design must meet (DESIGNS).
 - A rule for how the work is done (AGENTS.md).
+- When each goal is first checked (ROADMAP).
 
 **Push back on:**
 
@@ -57,7 +57,7 @@ A constraint is a condition the product must always meet, checked on the product
 
 ## When to check
 
-Every goal stands all the time, but its check runs only at a moment that calls for it. A goal names the checkpoint from which it can run, and from then on it runs at the end of each checkpoint or before a release. At those moments, go through every goal that can run. A small change runs no goal check, because the rules it touched are checked where they live.
+Every goal stands all the time, but its check runs only at a moment that calls for it. ROADMAP says when it starts: a goal can run from the first checkpoint whose exit criteria point to it. From then on it runs at the end of each checkpoint or before a release, and at those moments you go through every goal that can run. A small change runs no goal check, because the rules it touched are checked where they live.
 
 ## Guidelines
 
@@ -72,7 +72,7 @@ Every goal stands all the time, but its check runs only at a moment that calls f
 
 ## You have it when
 
-- Every goal sits under its kind and names when it is checked.
+- Every goal sits under its kind.
 - Every objective has an acceptance test.
 - Every threshold has a limit.
 - Every measure, benchmark and comparison has a formula.
@@ -107,8 +107,6 @@ Goals
 
 **Acceptance:** <the test that passes or fails>
 
-**Checked:** <from which checkpoint it can run, and how>
-
 **Status:** ⬜ | ✅ <date> | ❌ <date>
 
 ### Measures
@@ -127,8 +125,6 @@ Goals
 M1 = <what is counted> / <what it is counted over>
 ```
 
-**Checked:** <from which checkpoint it can run>
-
 **Last value:** <value> on <date>
 
 ### Benchmarks
@@ -146,8 +142,6 @@ M1 = <what is counted> / <what it is counted over>
 ```
 B1 = <how the scores of the set combine into one>
 ```
-
-**Checked:** <from which checkpoint it can run>
 
 **Last score:** <score> on <date>
 
@@ -169,8 +163,6 @@ B1 = <how the scores of the set combine into one>
 C1 = <how the two scores are set against each other>
 ```
 
-**Checked:** <from which checkpoint it can run>
-
 **Last result:** <result> on <date>
 
 ### Thresholds
@@ -185,8 +177,6 @@ C1 = <how the two scores are set against each other>
 
 **How:** <how it is checked>
 
-**Checked:** <from which checkpoint it can run>
-
 **Status:** ⬜ | ✅ <date> | ❌ <date>
 
 ### Constraints
@@ -200,8 +190,6 @@ C1 = <how the two scores are set against each other>
 **Condition:** <what must always hold>
 
 **How:** <how it is checked>
-
-**Checked:** <from which checkpoint it can run>
 
 **Status:** ⬜ | ✅ <date> | ❌ <date>
 ````

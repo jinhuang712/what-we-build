@@ -1,6 +1,6 @@
 # Goals
 
-Each goal is an effect the skill must have, tied to a want or a risk in the proposal. A goal met on one project stays open for another until it is checked there, and a status changes only with a check and its date.
+Each goal is an effect the skill must have, tied to a want or a risk in the proposal. A goal met on one project stays open for another until it is checked there, and a status changes only with a check and its date. A goal runs from the first checkpoint in [ROADMAP](ROADMAP.md) whose exit criteria point to it.
 
 ## Summary
 
@@ -33,8 +33,6 @@ A new project gets its whole doc set without the talk dragging on.
 
 **Acceptance:** a new project's 7 core docs are drafted and approved within N hours of talk. N is open until it is set before CP3: First real use.
 
-**Checked:** from [CP3: First real use](ROADMAP.md#cp3-first-real-use) on, at each checkpoint on a new project.
-
 **Status:** ⬜
 
 #### O2: Context survives compaction
@@ -44,8 +42,6 @@ What was decided stays known after the window is compacted.
 **Want:** context that outlives the window.
 
 **Acceptance:** after a compaction the agent names the current task and the latest decisions from the docs alone.
-
-**Checked:** from [CP3: First real use](ROADMAP.md#cp3-first-real-use) on, at each checkpoint.
 
 **Status:** ⬜
 
@@ -65,8 +61,6 @@ The agent reads the doc that owns a thing before it changes that thing.
 M1 (%) = 100 × changes made after reading the owning doc / all changes in the sample
 ```
 
-**Checked:** from [CP3: First real use](ROADMAP.md#cp3-first-real-use) on, at each checkpoint.
-
 **Last value:** not measured.
 
 #### M4: Docs that fell behind
@@ -82,8 +76,6 @@ At a checkpoint the docs still say what the project is.
 ```
 M4 (claims) = claims in the whole doc set that the work now contradicts
 ```
-
-**Checked:** from [CP3: First real use](ROADMAP.md#cp3-first-real-use) on, at each checkpoint.
 
 **Last value:** not measured.
 
@@ -115,8 +107,6 @@ run score = checks passed / 8
 B1 = mean of the 3 run scores
 ```
 
-**Checked:** from [CP4: Proven useful](ROADMAP.md#cp4-proven-useful) on, at each checkpoint.
-
 **Last score:** not run.
 
 ### Comparisons
@@ -138,8 +128,6 @@ lead = run score with the skill − run score without it, for each prompt
 C1 = prompts with a lead above 0 / 3, with the mean lead
 ```
 
-**Checked:** from [CP4: Proven useful](ROADMAP.md#cp4-proven-useful) on, at each checkpoint.
-
 **Last result:** not run.
 
 ### Thresholds
@@ -154,8 +142,6 @@ C1 = prompts with a lead above 0 / 3, with the mean lead
 
 **How:** `wc -l skills/what-we-build/SKILL.md`
 
-**Checked:** from [CP2: Rebuild around the context](ROADMAP.md#cp2-rebuild-around-the-context) on, at each checkpoint.
-
 **Status:** ✅ 195 lines on 2026-11-03.
 
 #### T8: A doc read in one go
@@ -167,7 +153,5 @@ The agent re-reads a whole doc before any edit, so one read must return all of i
 **Limit:** every doc within 25000 tokens and 2000 lines, the default limits of one Claude Code read.
 
 **How:** `wc -l` for lines and `wc -c` for bytes on every doc, since a doc never has more tokens than bytes.
-
-**Checked:** from [CP2: Rebuild around the context](ROADMAP.md#cp2-rebuild-around-the-context) on, at each checkpoint.
 
 **Status:** ✅ 2026-11-03, with FEATURES.md the longest at 248 lines and CHANGELOG.md the largest at 17047 bytes.

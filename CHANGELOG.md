@@ -67,7 +67,7 @@
 
 - GOALS holds only the effects the project must have, in six kinds that each have a section.
 - A commitment goes to DESIGNS and a rule for the work goes to AGENTS.md, not to GOALS.
-- Every goal names the want it serves and the checkpoint from which it can run.
+- Every goal names the want it serves, and ROADMAP says from which checkpoint it runs.
 - Every measure, benchmark and comparison writes its formula in a code block.
 - A constraint is a condition the product must always meet.
 - A goal is met only with a measurement or the user's own report.
