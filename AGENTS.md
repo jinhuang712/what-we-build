@@ -54,7 +54,7 @@ Before a change, also read the doc that owns it.
 - Check each link you touched against its target.
 - Check that each fact you added or moved has no second home.
 - Check that each decision you wrote says what was not chosen and why.
-- Check that what you added to `skills/` is Markdown in our own words with made-up examples.
+- Check that what you added to `skills/` is Markdown in our own words, with examples that meet DESIGNS 5: Examples the reader knows.
 
 ## Releasing
 

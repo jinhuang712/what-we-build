@@ -8,7 +8,7 @@ what-we-build is designed around 6 guidelines:
 2. **The docs are the state:** with git beside them, they hold where the work stopped.
 3. **No dependencies:** the skill is Markdown only.
 4. **Our own words over borrowed text:** methods from other guides are rewritten and never copied.
-5. **Made-up examples over real projects:** every example is invented or taken from this repo.
+5. **Examples the reader knows:** an example comes from this repo or from the stable ideas of a well-known tool.
 6. **Trust the model:** a guide says what a doc is for and leaves the method to the model.
 
 ## 1. A short core with detail on demand
@@ -43,11 +43,13 @@ The rules take methods from other writing guides and rewrite them for this skill
 
 - **Decisions:** [004: Our own skill over jig's `vision-elicitation`](specs/decisions/004-our-own-skill-over-vision-elicitation.md) and [006: Three ideas from mattpocock/skills over the whole guide](specs/decisions/006-three-ideas-from-mattpocock-skills.md)
 
-## 5. Made-up examples over real projects
+## 5. Examples the reader knows
 
-Each example in the skill is invented for it or taken from this repo. The cost is that an example carries no proof that it worked somewhere.
+An example comes from this repo or from the stable ideas of a well-known tool, such as the sessions and hooks of Claude Code. Both readers know Claude Code: the user works in it, and the agent that reads the skill is a Claude model. An example never names a command, a flag or text from another project, since those change or would be borrowed. An invented example is the fallback when neither source fits. The cost is that an example can age when the tool renames an idea.
 
-**Ask:** does any example name or quote another project?
+**Ask:** does an example rest on a detail the tool may change?
+
+- **Decisions:** [027: Examples come from a tool the reader knows](specs/decisions/027-examples-from-a-known-tool.md)
 
 ## 6. Trust the model
 

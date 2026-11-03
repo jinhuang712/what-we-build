@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Examples in the guides may come from the stable ideas of a well-known tool, such as Claude Code.
+
 ## 0.5.0 — 2026-11-03
 
 ### Install
