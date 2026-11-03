@@ -37,9 +37,11 @@ Read the project folder first, and start from what it holds. An idea, running co
 
 - [YES]   decide with the user what the project's `AGENTS.md` holds.
 - [YES]   recommend a read order and a layout for it, with the rules in *While you work*.
+- [YES]   make sure the host loads `AGENTS.md` in every window, such as a `CLAUDE.md` with the line `@AGENTS.md`.
 - [NO]    move old docs into the new format without a talk.
 - [WHEN]  docs already exist: tell the user where the work stands, what is still open and which docs may have fallen behind it.
 - [WHEN]  the folder has no git: recommend `git init`, since the history shows which docs fell behind.
+- [WHEN]  the rules in the project's `AGENTS.md` differ from *While you work*: show the user what changed.
 
 ## The doc set
 

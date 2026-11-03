@@ -24,6 +24,8 @@
 - When a project's own rules disagree with a guide, the agent tells you instead of picking one.
 - The agent no longer settles a point with lettered options by rule. It says when it thinks the talk is enough, and you judge it together.
 - The PHILOSOPHY guide drops two lines that the four tests already cover.
+- The agent makes sure your tool loads `AGENTS.md` in every window, such as with a `CLAUDE.md` that holds `@AGENTS.md`.
+- On each start the agent shows you where the rules in your `AGENTS.md` fell behind the skill.
 
 ## 0.5.0 — 2026-11-03
 

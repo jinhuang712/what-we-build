@@ -49,7 +49,9 @@ You bring an idea, a codebase or a pile of old docs. The agent reads the folder 
 
 **Status:** ✅
 
-You agree with the agent which docs the project gets and where they live. You also decide together what the project's `AGENTS.md` should hold. The agent recommends the read order, the layout and the work rules of [F2.1: Keep the context while you work](#f21-keep-the-context-while-you-work).
+You agree with the agent which docs the project gets and where they live. You also decide together what the project's `AGENTS.md` should hold. The agent recommends the read order, the layout and the work rules of [F2.1: Keep the context while you work](#f21-keep-the-context-while-you-work). It makes sure your tool loads `AGENTS.md` in every window, and on each start it shows you where those rules fell behind the skill.
+
+- **Why:** [032: AGENTS.md keeps a copy of the rules that the host loads](specs/decisions/032-agents-md-keeps-a-copy-the-host-loads.md)
 
 **Stories:**
 

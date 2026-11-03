@@ -32,3 +32,9 @@
 ### [P2][DISCUSSION] Reading again after a compaction
 - description: the run skipped the read order after a compaction although the rule says to read it, and the user does not want a check that thickens the rules
 - created: 2026-11-03
+
+### [P2][TASK] Test that an imported AGENTS.md survives a compaction
+- description: Claude Code's docs say the root CLAUDE.md is re-read after a compaction, and do not say whether a file it imports with `@AGENTS.md` is
+- created: 2026-11-03
+- next: compact a session in a project whose CLAUDE.md holds `@AGENTS.md`, then check whether the rules are still in context
+- related: [032: AGENTS.md keeps a copy of the rules that the host loads](specs/decisions/032-agents-md-keeps-a-copy-the-host-loads.md)
