@@ -142,7 +142,7 @@ C1 = prompts with a lead above 0 / 3, with the mean lead
 
 **How:** `wc -l skills/what-we-build/SKILL.md`
 
-**Status:** ✅ 178 lines on 2026-11-03.
+**Status:** ✅ 192 lines on 2026-11-03.
 
 #### T8: A doc read in one go
 
@@ -154,4 +154,4 @@ The agent re-reads a whole doc before any edit, so one read must return all of i
 
 **How:** `wc -l` for lines and `wc -c` for bytes on every doc, since a doc never has more tokens than bytes.
 
-**Status:** ✅ 2026-11-03, with FEATURES.md the longest at 238 lines and CHANGELOG.md the largest at 17526 bytes.
+**Status:** ✅ 2026-11-03, with FEATURES.md the longest at 243 lines and CHANGELOG.md the largest at 19159 bytes.

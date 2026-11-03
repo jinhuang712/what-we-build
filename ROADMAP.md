@@ -22,7 +22,8 @@ Roadmap
 │   ├── ✅ CP2.3: Lessons from a real design talk, released as 0.4.0
 │   ├── ✅ CP2.4: The skill rebuilt around a project's context
 │   ├── ✅ CP2.5: This repo's docs in the new forms
-│   └── ✅ CP2.6: Release 0.5.0
+│   ├── ✅ CP2.6: Release 0.5.0
+│   └── ✅ CP2.7: Lessons from a run on an existing project, released as 0.6.0
 ├── 🟨 CP3: First real use — the skill used on a new project
 │   ├── ⬜ CP3.1: A new project's 7 core docs drafted and approved with the skill
 │   └── ⬜ CP3.2: A real resume to test F1.7: Resume
@@ -57,6 +58,7 @@ Roadmap
 | CP2.4 | The skill rebuilt around a project's context | ✅ | 2026-11-03 |
 | CP2.5 | This repo's docs in the new forms | ✅ | 2026-11-03 |
 | CP2.6 | Release 0.5.0 | ✅ | 2026-11-03 |
+| CP2.7 | Lessons from a run on an existing project, released as 0.6.0 | ✅ | 2026-11-03 |
 
 **Exit criteria:**
 

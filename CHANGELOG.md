@@ -2,30 +2,38 @@
 
 ## Unreleased
 
-- Examples in the guides may come from the stable ideas of a well-known tool, such as Claude Code.
-- A guide says what its doc's core idea is and is not in tagged lines such as `[YES]` and `[NO]`.
+## 0.6.0 — 2026-11-03
+
+### Working with the agent
+
+- The agent reads every doc it works on in full and never hands a doc to a subagent.
+- When you stop the agent, it stops every agent it started and every agent those started.
+- When a project's own rules disagree with a guide, the agent tells you instead of picking one.
+- The agent says when it thinks the talk is enough and you judge it together, instead of settling each point with lettered options.
+
+### Start
+
+- The agent makes sure your tool loads `AGENTS.md` in every window, such as with a `CLAUDE.md` that holds `@AGENTS.md`.
+- On each start the agent shows you where the rules in your `AGENTS.md` fell behind the skill.
+
+### Doc guides
+
+- Every guide and `SKILL.md` are written in tagged lines that run `[YES]`, `[NO]`, `[MAYBE]` and then `[WHEN]`.
+  - Before, a guide had lists such as *Owns* and *Push back on*.
+  - Now one *What is it* list says what goes in, what goes elsewhere and how to write it.
+  - Lines that said the same thing twice are gone, so the guides are 121 lines shorter.
+- A guide says what its doc's core idea is and is not.
   - FEATURES: a group, a feature and a sub-feature.
   - PROPOSAL: a want and a pain.
   - PHILOSOPHY: a stance.
-  - DESIGNS: a guideline, in place of its *Push back on* list.
+  - DESIGNS: a guideline.
   - GOALS: a goal, and a constraint may check a DESIGNS guideline.
   - ROADMAP: a checkpoint.
   - SPECS: a part, which ARCHITECTURE shares.
   - DECISIONS: a decision.
   - GLOSSARY: a term.
 - What FEATURES called a part is now a sub-feature, so *part* means only a piece of the project.
-- Every guide is written in the same tagged lines.
-  - Before, a guide had lists such as *Owns* and *Push back on*.
-  - Now one *What is it* list says what goes in, what goes elsewhere and how to write it.
-  - Lines that said the same thing twice are gone, so the guides are 121 lines shorter.
-- `SKILL.md` is written in the same tagged lines, and its tables stay.
-- The agent reads every doc it works on in full and never hands a doc to a subagent.
-- When you stop the agent, it stops every agent it started and every agent those started.
-- When a project's own rules disagree with a guide, the agent tells you instead of picking one.
-- The agent no longer settles a point with lettered options by rule. It says when it thinks the talk is enough, and you judge it together.
-- The PHILOSOPHY guide drops two lines that the four tests already cover.
-- The agent makes sure your tool loads `AGENTS.md` in every window, such as with a `CLAUDE.md` that holds `@AGENTS.md`.
-- On each start the agent shows you where the rules in your `AGENTS.md` fell behind the skill.
+- Examples in the guides may come from the stable ideas of a well-known tool, such as Claude Code.
 
 ## 0.5.0 — 2026-11-03
 
