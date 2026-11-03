@@ -56,6 +56,7 @@
 - A ✅ in FEATURES means the feature is built, and GOALS checks whether it works in real use.
 - FEATURES, ROADMAP and GOALS open with a *Summary*, an ASCII tree of every entry and its status.
 - README opens with a hero image and always has *Install* and *How to use*.
+- When the agent cannot make the hero image, it goes to TODO.md and the README opens with the tagline until it exists.
 - README lists its optional sections with the doc that owns each one.
 - ARCHITECTURE opens with a diagram of the whole.
 - CONTRIBUTING and RUNBOOK name a script instead of listing commands.
