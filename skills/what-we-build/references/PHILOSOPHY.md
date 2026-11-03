@@ -61,8 +61,6 @@ It starts from whatever the user brings, in any form.
 - [YES]   say it back in one line and test it, since a wrong candidate is corrected faster than a right one is produced.
 - [YES]   bring contrast from another field or thinker that holds the opposite.
 - [YES]   push on what is thin by asking for the case, the cost and the exception.
-- [YES]   organize what comes out and show it.
-- [YES]   go back and forth until the user recognizes it.
 - [NO]    a belief you invented, since the stances are the user's.
 - [WHEN]  the four tests hold: stop without padding.
 
