@@ -24,7 +24,6 @@ Each item has a priority, a type and a time. A reader sees what matters first an
 | `P0` | Something is broken or blocked now. Do it first. |
 | `P1` | Important. Do it before the current checkpoint. |
 | `P2` | Worth doing. No deadline. |
-| `P3` | Nice to have. It may never happen. |
 
 ## Type
 
