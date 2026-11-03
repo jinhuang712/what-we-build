@@ -2,23 +2,19 @@
 
 ROADMAP.md answers "when?" and "how far along?". It breaks the work into checkpoints, each a usable or proven state of the project. It shows where the work stands. It schedules features and does not describe them.
 
-**Owns:**
+## What it holds
 
-- Checkpoints in order.
-- Their tasks and progress.
-- Exit criteria that point to GOALS.
+Point anything a [NO] line rules out to its home, or push back when it has none.
 
-**Leaves out:**
-
-- Feature behavior and the *Later* list (FEATURES).
-- Open questions (TODO).
-- Their answers once decided (`specs/decisions/`).
-- Release notes (CHANGELOG).
-
-**Push back on:**
-
-- Exit criteria that restate goals instead of pointing to them.
-- A checkpoint that starts building before its design is decided.
+- [YES] checkpoints in order.
+- [YES] their tasks and progress.
+- [YES] exit criteria that point to GOALS.
+- [NO] feature behavior and the *Later* list, which FEATURES holds.
+- [NO] open questions, which TODO holds.
+- [NO] their answers once decided, which `specs/decisions/` holds.
+- [NO] release notes, which CHANGELOG holds.
+- [NO] exit criteria that restate goals instead of pointing to them.
+- [NO] a checkpoint that starts building before its design is decided.
 
 ## Checkpoint
 
@@ -27,11 +23,10 @@ ROADMAP.md answers "when?" and "how far along?". It breaks the work into checkpo
 - [NO] a date or a version alone.
 - [MAYBE] a release, when it ships what the checkpoint delivers.
 
-## Guidelines
+## How to write it
 
-- **Open with a Summary,** an ASCII tree in a code block of every checkpoint and its items with their status.
-- **Keep the first checkpoint small enough to finish soon.**
-- **Point exit criteria to GOALS.**
+- [YES] open with a Summary, an ASCII tree in a code block of every checkpoint and its items with their status.
+- [YES] keep the first checkpoint small enough to finish soon.
 
 ## You have it when
 

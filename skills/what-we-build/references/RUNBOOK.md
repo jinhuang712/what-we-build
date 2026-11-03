@@ -2,13 +2,13 @@
 
 RUNBOOK.md is for the person keeping a service running. It is read under pressure, so each procedure is short and exact.
 
-**Owns:**
+## What it holds
 
-- Deploy.
-- Rollback.
-- Monitoring.
-- Each alert and its response.
-- Who is on call.
+- [YES] deploy.
+- [YES] rollback.
+- [YES] monitoring.
+- [YES] each alert and its response.
+- [YES] who is on call.
 
 ## You have it when
 

@@ -2,30 +2,26 @@
 
 INSTALL.md holds everything about installing beyond the one line in the README. A user reads it when that line is not enough.
 
-**Owns:**
+## What it holds
 
-- What must be in place first.
-- Every way to install it.
-- How to check that it worked.
-- How to update it and how to remove it.
-- What to do when the install fails.
+Point anything a [NO] line rules out to its home, or push back when it has none.
 
-**Leaves out:**
+- [YES] what must be in place first.
+- [YES] every way to install it.
+- [YES] how to check that it worked.
+- [YES] how to update it and how to remove it.
+- [YES] what to do when the install fails.
+- [NO] how to use it, which README and FEATURES hold.
+- [NO] how to deploy a service, which RUNBOOK holds.
+- [NO] how to set up for development, which CONTRIBUTING holds.
+- [NO] a step that does not work as written.
+- [NO] a command longer than two lines instead of a script.
+- [NO] a way to install that nobody has tried.
 
-- How to use it (README and FEATURES).
-- How to deploy a service (RUNBOOK).
-- How to set up for development (CONTRIBUTING).
+## How to write it
 
-**Push back on:**
-
-- A step that does not work as written.
-- A command longer than two lines instead of a script.
-- A way to install that nobody has tried.
-
-## Guidelines
-
-- **Put the most common way first.**
-- **End each way with how to check that it worked.**
+- [YES] put the most common way first.
+- [YES] end each way with how to check that it worked.
 
 ## You have it when
 

@@ -10,25 +10,20 @@ It is a set of questions about the world the project works in. Each has a stance
 
 It comes second, after the proposal. DESIGNS builds on its stances.
 
-**Owns:**
+## What it holds
 
-- The belief the project starts from.
-- The questions it takes a stance on, with their arguments.
-- Quotes from sources that shaped or tested them.
-- The sources, when there are any.
+Point anything a [NO] line rules out to its home, or push back when it has none.
 
-**Leaves out:**
-
-- Any feature, setting or screen (FEATURES).
-- How the project is built (DESIGNS).
-
-**Push back on:**
-
-- A stance with no argument.
-- A stance no team would answer differently ("quality matters").
-- A stance that sounds deep and says nothing.
-- A quote that decorates and does not test.
-- A quote nobody checked.
+- [YES] the belief the project starts from.
+- [YES] the questions it takes a stance on with their arguments.
+- [YES] quotes from sources that shaped or tested them.
+- [YES] the sources when there are any.
+- [NO] a feature or a screen, which FEATURES holds.
+- [NO] how the project is built, which DESIGNS holds.
+- [NO] a stance with no argument.
+- [NO] a stance that sounds deep and says nothing.
+- [NO] a quote that decorates and does not test.
+- [NO] a quote nobody checked.
 
 ## What you are after
 
@@ -60,15 +55,16 @@ It starts from whatever the user brings, in any form.
 - [NO] a feature, such as *resume a session*.
 - [NO] a value every team would sign, such as *quality matters*.
 
-## How
+## How to find it
 
-- Listen for the thought that hides in an aside or a complaint.
-- Say it back in one line and test it, since a wrong candidate is corrected faster than a right one is produced.
-- Bring contrast from another project, field or thinker that holds the opposite.
-- Push on what is thin: ask for the case, the cost and the exception.
-- Organize what comes out and show it.
-- Go back and forth until the user recognizes it.
-- Stop when the four tests hold, without padding.
+- [YES] listen for the thought that hides in an aside or a complaint.
+- [YES] say it back in one line and test it, since a wrong candidate is corrected faster than a right one is produced.
+- [YES] bring contrast from another field or thinker that holds the opposite.
+- [YES] push on what is thin by asking for the case, the cost and the exception.
+- [YES] organize what comes out and show it.
+- [YES] go back and forth until the user recognizes it.
+- [NO] a belief you invented, since the stances are the user's.
+- [WHEN] the four tests hold: stop without padding.
 
 ## Seeds
 
@@ -76,13 +72,11 @@ A pool of words and scenes to grow questions from. Pick what fits this user, and
 
 what goes first · two good things collide · what is left behind · the clumsy way · someone copies it · taste · red line · the start · elegance · taken for granted · rather have nothing · believe · what they already know · someone asks for a feature · trade-off · the fear · sacrifice · a counterexample · two people argue · the heir reads this · the day you quit · everyone assumes · collapse · where they are right · even if it pays · what failure looks like · underrated · who pays · growing bigger · why now · who is responsible · day one hundred · the popular way · not for whom · rough but right · the end · responsibility · slow · left unfinished · freedom or constraint · bottom line · polish · cannot have both · who the user is · cost · never · trust · actually not · the exit condition · good enough · another road · what they refuse to do · for whom · what should not exist · fast · peers · the rival's way · power · a newcomer joins · flavor · the criticized way · going astray · against whom · where we fall short · the boss says add one more · can but won't · what stays · why others do it · adding a feature · the old way · more · why not before · what changes · looking back at this decision · simple or powerful · temptation · an incident at midnight · less · who would be let down · a year later · the clever way · who yields · counterintuitive · quiet decay · an incident · overrated · a changing world · fast or right · who decides · never said aloud · a case nobody foresaw · if it were the opposite · refuse · day one · the field's common sense · ten years from now · ugly · the regret · veto · predecessors
 
-## Guidelines
+## How to write it
 
-- **Argue in prose,** and use a list or a table wherever it shows the thought better.
-- **The stances are the user's,** so do not invent the beliefs.
-- **State each stance as one quotable line,** then argue it.
-- **Quote only what you have checked.**
-- **Write only the stances the project truly holds,** since an empty section is worse than a missing one.
+- [YES] argue in prose with a list or a table wherever it shows the thought better.
+- [YES] state each stance as one quotable line and then argue it.
+- [NO] a stance the project does not truly hold, since an empty section is worse than a missing one.
 
 ## Skeleton
 

@@ -4,29 +4,24 @@ FEATURES.md is the contract with the user: what the product does today, and what
 
 It comes fifth in the doc order: each feature delivers a want from the proposal within the design that DESIGNS sets. It holds every capability the project needs, so it is the bridge between the design, the build and the progress. Each feature links up to what it rests on and down to everything that builds it.
 
-**Owns:**
+## What it holds
 
-- Each feature's behavior from the user's side.
-- Each feature's stories: who does what, and for what.
-- Each feature's status.
-- What the user sees when something fails.
-- The *Later* list.
-- The *Not planned* list, with reasons.
+Point anything a [NO] line rules out to its home, or push back when it has none.
 
-**Leaves out:**
-
-- How a feature works inside (`specs/`).
-- The choices behind it (`specs/decisions/`).
-- Type names and code paths.
-- How a story moves across the screens, and how they look (`specs/UIUX.md`).
-- Schedule (ROADMAP).
-
-**Push back on:**
-
-- A long feature that needs a spec instead.
-- A setting with no reason.
-- A feature that cannot reach what builds it.
-- A *Not planned* item with no reason.
+- [YES] each feature's behavior from the user's side.
+- [YES] each feature's stories: who does what, and for what.
+- [YES] each feature's status.
+- [YES] what the user sees when something fails.
+- [YES] the *Later* list.
+- [YES] the *Not planned* list with a reason for each item.
+- [NO] how a feature works inside, which `specs/` holds.
+- [NO] the choices behind it, which `specs/decisions/` holds.
+- [NO] type names and code paths.
+- [NO] how a story moves across the screens and how they look, which `specs/UIUX.md` holds.
+- [NO] the schedule, which ROADMAP holds.
+- [NO] a long feature that needs a spec instead.
+- [NO] a setting with no reason.
+- [NO] a feature that cannot reach what builds it.
 
 ## Group, feature and sub-feature
 
@@ -53,22 +48,23 @@ It comes fifth in the doc order: each feature delivers a want from the proposal 
 - [YES] one case of a feature, such as *Continue the latest session* under *Resume a session*.
 - [NO] a thing the user does on its own.
 
-## Guidelines
+## How to write it
 
-- **Open with a Summary,** an ASCII tree in a code block of every feature by group with its status and a short description.
-- **Number the groups too,** so F1 is a group and F1.1 a feature in it.
-- **Split a feature that does several things** into sub-features such as F1.1.1.
-- **Give each feature an ID that never changes,** so other docs can point to it.
-- **Give a new feature a new number.**
-- **Mark a feature ✅ once it is built,** and leave whether it works in real use to GOALS.
-- **Keep 🚧 for a gap in what is built,** and name the gap beside the mark.
-- **Describe what the user does and what happens,** short and in the present tense.
-- **Give each feature its stories,** one sentence each that says who does what and for what.
-- **Write a story without a template** such as "As a … I want … so that …".
-- **Link a feature up to the design guidelines it rests on,** and to a PHILOSOPHY stance only when the stance forces it.
-- **Link a feature down to everything that builds it:** the UIUX flow of each story, its specs and its decisions.
-- **Leave the checkpoint to ROADMAP,** which links to the features it delivers.
-- **End with what happens when something fails,** then *Later* and *Not planned*.
+- [YES] open with a Summary, an ASCII tree in a code block of every feature by group with its status and a short description.
+- [YES] number the groups too, so F1 is a group and F1.1 a feature in it.
+- [YES] split a feature that does several things into sub-features such as F1.1.1.
+- [YES] give each feature an ID that never changes so other docs can point to it.
+- [YES] give a new feature a new number.
+- [YES] mark a feature ✅ once it is built, and leave whether it works in real use to GOALS.
+- [WHEN] what is built has a gap: mark it 🚧 and name the gap beside the mark.
+- [YES] describe what the user does and what happens, short and in the present tense.
+- [YES] give each feature its stories, one sentence each that says who does what and for what.
+- [NO] a story in a template such as "As a … I want … so that …".
+- [YES] link a feature up to the design guidelines it rests on.
+- [WHEN] a PHILOSOPHY stance forces a feature: link the feature to it too.
+- [YES] link a feature down to everything that builds it: the UIUX flow of each story, its specs and its decisions.
+- [NO] the checkpoint, which ROADMAP links to the features it delivers.
+- [YES] end with what happens when something fails, then *Later* and *Not planned*.
 
 ## You have it when
 

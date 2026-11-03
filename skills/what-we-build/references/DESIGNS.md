@@ -4,20 +4,18 @@ DESIGNS.md holds the project's design guidelines: the few hard commitments the w
 
 It comes third in the doc order, right after the philosophy. The design guides the features, so it comes before them.
 
-**Owns:**
+## What it holds
 
-- The guidelines, numbered.
-- Under each: why it holds and what it costs.
-- Under each: the question it asks of a new requirement.
-- Under each: links to its decisions and specs.
+Point anything a [NO] line rules out to its home, or push back when it has none.
 
-**Leaves out:**
-
-- The choices made to meet a guideline (`specs/decisions/`).
-- How the thing works (`specs/`).
-- What the user sees (FEATURES).
-- Whether it is built yet (ROADMAP).
-- Open questions (TODO).
+- [YES] the guidelines in a numbered list.
+- [YES] why each holds and what it costs.
+- [YES] the question each asks of a new requirement.
+- [YES] links from each to its decisions and specs.
+- [NO] the choices made to meet a guideline, which `specs/decisions/` holds.
+- [NO] how the thing works, which `specs/` holds.
+- [NO] whether it is built yet, which ROADMAP holds.
+- [NO] open questions, which TODO holds.
 
 ## Guideline
 
@@ -28,12 +26,11 @@ It comes third in the doc order, right after the philosophy. The design guides t
 - [NO] a feature, such as *resume a session*.
 - [NO] a value every team would sign, such as *keep it simple*.
 
-## Guidelines
+## How to write it
 
-- **Open with the numbered guidelines,** so a reader sees the whole design at a glance.
-- **State each one as a commitment a reader can test.**
-- **Give each a short section** on why it holds and what it costs.
-- **Give each the question it asks of a new requirement,** and link its decisions and specs.
+- [YES] open with the numbered guidelines so a reader sees the whole design at a glance.
+- [YES] give each a short section on why it holds and what it costs.
+- [YES] give each the question it asks of a new requirement.
 
 ## You have it when
 

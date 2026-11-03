@@ -2,12 +2,13 @@
 
 SECURITY.md tells people how to report a vulnerability safely. GitHub shows it as the project's security policy.
 
-**Owns:**
+## What it holds
 
-- Where to report.
-- What to include.
-- Which versions are supported.
-- What happens next.
+- [YES] where to report.
+- [YES] what to include.
+- [YES] which versions are supported.
+- [YES] what happens next.
+- [NO] a request to report in public.
 
 ## You have it when
 

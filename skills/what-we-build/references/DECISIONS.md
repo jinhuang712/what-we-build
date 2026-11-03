@@ -8,19 +8,12 @@ The decisions folder records the forks the project took:
 
 It keeps the reason alive after the people who knew it have moved on. One decision is one short file. DESIGNS, FEATURES and the specs link to it instead of retelling it.
 
-**Owns:**
+## What it holds
 
-- Each decision.
-- Its alternatives.
-- What it costs.
-
-A decision about the whole design and a decision about one feature live in the same folder.
-
-**Leaves out:**
-
-- How the chosen thing works (`specs/`).
-- What the user sees (FEATURES).
-- What changed in a release (CHANGELOG).
+- [YES] each decision with its alternatives and what it costs.
+- [YES] a decision about the whole design and one about a single feature, in the same folder.
+- [NO] how the chosen thing works, which `specs/` holds.
+- [NO] what the user sees, which FEATURES holds.
 
 ## Decision
 
@@ -32,11 +25,11 @@ A decision needs all three of its [YES] lines.
 - [NO] a change that only says what changed, which CHANGELOG holds.
 - [NO] a commitment every design must meet, which DESIGNS holds.
 
-## Guidelines
+## How to write it
 
-- **Keep the title to the choice in one line,** such as "Settings live in JSON files instead of a settings screen".
-- **Put the reason in the file, not the title.**
-- **Keep a file short and numbered,** so the folder lists the decisions in order.
+- [YES] keep the title to the choice in one line, such as "Settings live in JSON files instead of a settings screen".
+- [NO] the reason in the title, since it goes in the file.
+- [YES] keep a file short and numbered so the folder lists the decisions in order.
 
 ## You have it when
 

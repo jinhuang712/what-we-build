@@ -1,0 +1,31 @@
+# 029. A guide is written in tagged lines
+
+Decided: 2026-11-03
+
+## The problem
+
+After [028: A guide says what its doc's core idea is and is not](028-a-guide-says-what-its-core-idea-is-and-is-not.md), a guide mixed two styles. Its core idea read as `[YES]` and `[NO]` lines, while the rest stayed as *Owns*, *Leaves out*, *Push back on* and bold *Guidelines*. The user found the tagged lines clearer and asked for the whole guide in them. Several old lists also said one thing twice, such as a *Push back on* item that repeated an *Owns* line.
+
+## The choice
+
+Every guide has the same sections:
+
+| Section | Holds |
+|---|---|
+| *What it holds* | `[YES]` for what goes in, `[NO]` for what goes elsewhere or is pushed back on |
+| the core idea | the block from 028, where a model blurs it |
+| *How to write it* | `[YES]`, `[NO]`, `[MAYBE]` and `[WHEN]` lines on the form |
+| *You have it when* | the checks, unchanged |
+| *Skeleton* | the form, unchanged |
+
+One sentence opens *What it holds* when the guide had a *Push back on* list: point anything a `[NO]` line rules out to its home, or push back when it has none. A line that repeated another was dropped. Tables such as the GOALS kinds and the TODO tags stay tables.
+
+## Not chosen
+
+- Tags for *You have it when*: each check is a test, and a `[YES]` on every line adds nothing.
+- A `[PUSH BACK]` tag: it is a fifth tag for what `[NO]` already says, and the opening sentence covers it.
+- The old lists beside the tags: two styles make a reader ask which one rules.
+
+## Consequences
+
+The guides lost 67 lines. The bold lead of each guideline is gone, so a guide is scanned by its tags instead.

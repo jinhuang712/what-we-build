@@ -2,29 +2,23 @@
 
 GOALS.md turns the wants in the proposal into checks. It keeps the project honest: when someone claims progress, this is where the claim is tested. ROADMAP uses these goals as its exit criteria.
 
-**Owns:**
+## What it holds
 
-- The goals of each kind, each with how it is checked.
-- The last result of each check, with its date.
+Point anything a [NO] line rules out to its home, or push back when it has none.
 
-**Leaves out:**
-
-- Anything vague.
-- Features the project will not build (FEATURES → *Not planned*).
-- How anything works (`specs/`).
-- A commitment the design must meet (DESIGNS).
-- A rule for how the work is done (AGENTS.md).
-- When each goal is first checked (ROADMAP).
-
-**Push back on:**
-
-- An adjective where a number belongs.
-- An objective with no acceptance test.
-- A threshold with no limit.
-- A number with no formula.
-- A comparison with nothing to compare against.
-- A constraint nobody could check.
-- A "met" with no measurement or report.
+- [YES] the goals of each kind with how each is checked.
+- [YES] the last result of each check with its date.
+- [NO] anything vague.
+- [NO] a feature the project will not build, which FEATURES lists under *Not planned*.
+- [NO] how anything works, which `specs/` holds.
+- [NO] when each goal is first checked, which ROADMAP holds.
+- [NO] an adjective where a number belongs.
+- [NO] an objective with no acceptance test.
+- [NO] a threshold with no limit.
+- [NO] a number with no formula.
+- [NO] a comparison with nothing to compare against.
+- [NO] a constraint nobody could check.
+- [NO] a "met" with no dated measurement or report from the user.
 
 ## Goal
 
@@ -65,16 +59,15 @@ A constraint is a condition the product must always meet, checked on the product
 
 Every goal stands all the time, but its check runs only at a moment that calls for it. ROADMAP says when it starts: a goal can run from the first checkpoint whose exit criteria point to it. From then on it runs at the end of each checkpoint or before a release, and at those moments you go through every goal that can run. A small change runs no goal check, because the rules it touched are checked where they live.
 
-## Guidelines
+## How to write it
 
-- **Give each goal an ID that never changes,** so ROADMAP can point to it.
-- **Let the letter of the ID name its kind,** as the skeleton shows.
-- **Open with a Summary,** an ASCII tree in a code block of every goal by kind with its status and a short description.
-- **Write under each label what the goal needs,** in whatever form fits.
-- **Mark a goal met only with a measurement or the user's own report,** with its date.
-- **Write the formula of every number in a code block,** with its sample and unit beside it.
-- **Say where and when each number was measured.**
-- **Leave a number open when it is not known.**
+- [YES] give each goal an ID that never changes so ROADMAP can point to it.
+- [YES] let the letter of the ID name its kind as the skeleton shows.
+- [YES] open with a Summary, an ASCII tree in a code block of every goal by kind with its status and a short description.
+- [YES] write under each label what the goal needs in whatever form fits.
+- [YES] write the formula of every number in a code block with its sample and unit beside it.
+- [YES] say where and when each number was measured.
+- [WHEN] a number is not known: leave it open.
 
 ## You have it when
 

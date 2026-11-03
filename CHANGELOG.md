@@ -14,6 +14,10 @@
   - DECISIONS: a decision.
   - GLOSSARY: a term.
 - What FEATURES called a part is now a sub-feature, so *part* means only a piece of the project.
+- Every guide is written in the same tagged lines.
+  - Before, a guide had lists such as *Owns* and *Push back on*.
+  - Now *What it holds* says what goes in or elsewhere, and *How to write it* says how.
+  - Lines that said the same thing twice are gone, so the guides are 67 lines shorter.
 
 ## 0.5.0 — 2026-11-03
 

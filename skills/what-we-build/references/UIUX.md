@@ -4,39 +4,34 @@ UIUX.md explains how the product looks and moves. The screens are how the storie
 
 It is a spec in `specs/`.
 
-**Owns:**
+## What it holds
 
-- The rules the interface follows, each with its reason.
-- Every screen and its page in `prototype/`.
-- The flow of each story across the screens, drawn.
-- The states, how urgent each one looks and which may interrupt the user.
-- The colors, type and motion that carry meaning.
-- The keyboard and accessibility.
+Point anything a [NO] line rules out to its home, or push back when it has none.
 
-**Leaves out:**
+- [YES] the rules the interface follows, each with its reason.
+- [YES] every screen and its page in `prototype/`.
+- [YES] the drawn flow of each story across the screens.
+- [YES] the states, how urgent each one looks and which may interrupt the user.
+- [YES] the colors, type and motion that carry meaning.
+- [YES] the keyboard and accessibility.
+- [NO] what the user does and why, which FEATURES holds.
+- [NO] the guidelines the design must meet, which DESIGNS holds.
+- [NO] the forks behind a screen, which `specs/decisions/` holds.
+- [NO] the numbers for sizes and timing, which live in the code.
+- [NO] a story in FEATURES with no flow here.
+- [NO] a flow that is only described and not drawn.
+- [NO] a screen with no page in `prototype/` or a page with no screen here.
+- [NO] a second index of the pages, such as `prototype/index.html`.
+- [NO] a rule with no reason, since it is broken the first time it gets in the way.
 
-- What the user does and why (FEATURES).
-- The guidelines the design must meet (DESIGNS).
-- The forks behind a screen (`specs/decisions/`).
-- The numbers for sizes and timing, which live in the code.
+## How to write it
 
-**Push back on:**
-
-- A story in FEATURES with no flow here.
-- A flow that is only described and not drawn.
-- A screen with no page in `prototype/`, or a page with no screen here.
-- A second index of the pages, such as `prototype/index.html`.
-- A rule with no reason.
-
-## Guidelines
-
-- **List the screens in a table with a link to each page,** so this doc is the prototype's navigation.
-- **Draw each flow as an ASCII diagram,** with the screens it passes in order and where it can fail.
-- **Link each flow up to its story in FEATURES** and to each page it passes.
-- **Rank the states by urgency,** so a minor state never looks like an error.
-- **Write each rule with its reason,** because a rule without one is broken the first time it gets in the way.
-- **Name the code that holds the numbers** instead of copying them.
-- **Change a screen and its page together.**
+- [YES] list the screens in a table with a link to each page, so this doc is the prototype's navigation.
+- [YES] draw each flow as an ASCII diagram with the screens it passes in order and where it can fail.
+- [YES] link each flow up to its story in FEATURES and to each page it passes.
+- [YES] rank the states by urgency so a minor state never looks like an error.
+- [YES] name the code that holds the numbers instead of copying them.
+- [YES] change a screen and its page together.
 
 ## You have it when
 

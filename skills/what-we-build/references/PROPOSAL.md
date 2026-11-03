@@ -4,30 +4,24 @@ The proposal is where the project begins: the case for why it should exist. It s
 
 It comes first, because every other doc builds on the reason it gives.
 
-**Owns:**
+## What it holds
 
-- Why the project should exist.
-- Why now.
-- The idea.
-- What we want.
-- What we don't want.
-- Who it is for.
-- The risks.
+Point anything a [NO] line rules out to its home, or push back when it has none.
 
-**Leaves out:**
-
-- How it is built (DESIGNS).
-- Exact behavior (FEATURES).
-- The numbers (GOALS).
-- Progress (ROADMAP).
-- The index of docs (README).
-
-**Push back on:**
-
-- A case that opens with the solution.
-- A reason with no example.
-- A want that serves no reason.
-- A "don't want" with no reason.
+- [YES] why the project should exist.
+- [YES] why now.
+- [YES] the idea.
+- [YES] what we want and what we don't want.
+- [YES] who it is for.
+- [YES] the risks.
+- [NO] how it is built, which DESIGNS holds.
+- [NO] exact behavior, which FEATURES holds.
+- [NO] the numbers, which GOALS holds.
+- [NO] progress, which ROADMAP holds.
+- [NO] the index of docs, which README holds.
+- [NO] a case that opens with the solution.
+- [NO] a reason with no example.
+- [NO] a "don't want" with no reason.
 
 ## Want and pain
 
@@ -45,13 +39,12 @@ It comes first, because every other doc builds on the reason it gives.
 - [YES] a moment someone hits with the sample or number that proves it, such as *a long session forgets what was decided*.
 - [NO] the lack of a solution, such as *there is no memory file*.
 
-## Guidelines
+## How to write it
 
-- **Start from what the user brings,** in whatever form it takes.
-- **Show the reason with an example.**
-- **Give each pain its own section** with the moment, number or sample that proves it.
-- **Argue the case,** so that every section makes it stronger.
-- **Write *Why now* only when something changed.**
+- [YES] start from what the user brings in whatever form it takes.
+- [YES] give each pain its own section with the moment, number or sample that proves it.
+- [YES] argue the case so that every section makes it stronger.
+- [WHEN] something changed: write *Why now*, and leave it out otherwise.
 
 ## You have it when
 

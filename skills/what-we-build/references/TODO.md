@@ -9,20 +9,16 @@ TODO.md tracks what is open:
 
 Each item has a priority, a type and a time. A reader sees what matters first and how old it is.
 
-**Owns:**
+## What it holds
 
-- The open items, each with enough context and evidence to act on.
+- [YES] the open items, each with enough context and evidence to act on.
+- [NO] work with a checkpoint, which ROADMAP holds.
+- [NO] what is already decided, which `specs/decisions/` holds.
 
-**Leaves out:**
+## How to write it
 
-- Work with a checkpoint (ROADMAP).
-- What is already decided (`specs/decisions/`).
-
-## Guidelines
-
-- **Delete an item in the change that handles it,** because history lives in git.
-- **Delete its evidence files too.**
-- **Move an item to ROADMAP** once it has a checkpoint.
+- [WHEN] a change handles an item: delete the item and its evidence files in that change, since git keeps the history.
+- [WHEN] an item gets a checkpoint: move it to ROADMAP.
 
 ## Priority
 

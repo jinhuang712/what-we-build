@@ -2,17 +2,17 @@
 
 CONTRIBUTING.md tells outside contributors how to help. GitHub links it from issues and pull requests.
 
-**Owns:**
+## What it holds
 
-- Setup.
-- How work flows: branches, commits and reviews.
-- The checks that must pass.
-- Where to ask.
+- [YES] setup.
+- [YES] how work flows through branches, commits and reviews.
+- [YES] the checks that must pass.
+- [YES] where to ask.
 
-## Guidelines
+## How to write it
 
-- **State the bar for a change,** so contributors know before they invest.
-- **List the checks that must pass,** and the script that runs them.
+- [YES] state the bar for a change so contributors know before they invest.
+- [YES] list the checks that must pass with the script that runs them.
 
 ## You have it when
 
