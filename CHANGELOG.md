@@ -12,11 +12,17 @@
 - CHANGELOG holds no IDs or links, and no table of renamed IDs.
 - DESIGNS holds no order for when guidelines collide, since a guideline is never traded.
 - TODO has three priorities from `P0` to `P2`, and an idea that may never happen is an `IDEA` at `P2`.
-- A TODO item's status is `OPEN` or `HALT`, in place of open, in progress and blocked.
+- A TODO item's status is `OPEN` or `HALT` in place of open, in progress and blocked.
 
 ### Start
 
 - On each start the agent shows you any part of a doc that its guide no longer asks for.
+- The agent adds a `CLAUDE.md` with `@AGENTS.md` when your project has none.
+- The agent no longer compares your `AGENTS.md` with the skill's rules on each start, and talks the rules through with you instead.
+
+### Working with the agent
+
+- `SKILL.md` is written in plain words with one point to a line.
 
 ## 0.6.0 — 2026-11-03
 
