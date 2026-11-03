@@ -25,8 +25,7 @@
 - With part of the doc set written, `/what-we-build` resumes at the first doc that is not finished.
 - With the whole doc set written, it reports where the project stands and which docs fell behind the work since their last commit.
 - Without git, the agent recommends `git init` for the drift report.
-- With messy docs, the agent first shows a table of where each old doc or section goes and leaves the files the product ships alone.
-- Once the docs are moved, the agent goes through each status they carried over with you.
+- Old docs are material for the talk, so the agent discusses them with you instead of moving their text.
 - The agent goes through your project's AGENTS.md with you and recommends its read order, layout and work rules.
 - The work rules reach every new window through AGENTS.md, even when the skill is not loaded.
 - They say to read the doc that owns a thing first and to record each open item at once.

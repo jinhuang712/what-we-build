@@ -45,7 +45,7 @@ You bring an idea, a codebase or a pile of docs. The skill reads the folder and 
 |---|---|
 | An idea and nothing written | discussing the idea with you |
 | Running code and no docs | reading the code and then discussing each doc |
-| Messy docs | sorting them into the doc set and then discussing the gaps |
+| Messy docs | discussing them with you as material for the doc set |
 | Part of the doc set | resuming where the work stopped ([F1.7: Resume](#f17-resume)) |
 | The whole doc set | reporting where the project stands and what may have drifted ([F1.7: Resume](#f17-resume)) |
 | Something that disagrees with your request | asking you |
