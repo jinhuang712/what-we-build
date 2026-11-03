@@ -45,7 +45,7 @@
 - The wording rules move into SKILL.md, and `references/wording.md` is gone.
 - Decisions move out of DESIGNS and FEATURES into `specs/decisions/`.
 - The placement test asks about a design commitment and a rule for the work before it asks about a goal.
-- When to add an optional doc is said only in SKILL.md, and each guide says when to draft it.
+- When to add an optional doc is said only in SKILL.md, and no guide says when to draft its doc.
 - An open question lives in TODO.md as a `DISCUSSION`.
 - A skeleton suggests a form, and you change it where the content needs another.
 - The default layout puts the reasons at the root with `specs/` and `plan/` beside them.

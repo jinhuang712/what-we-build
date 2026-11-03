@@ -26,7 +26,6 @@ ROADMAP.md answers "when?" and "how far along?". It breaks the work into checkpo
 - **Open with a Summary,** an ASCII tree in a code block of every checkpoint and its items with their status.
 - **Keep the first checkpoint small enough to finish soon.**
 - **Point exit criteria to GOALS.**
-- **End each checkpoint by going through every goal that can run by then,** which is every goal its exit criteria or an earlier checkpoint's point to.
 
 ## You have it when
 

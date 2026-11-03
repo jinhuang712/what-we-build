@@ -2,7 +2,7 @@
 
 UIUX.md explains how the product looks and moves. The screens are how the stories in FEATURES are carried out, so each story becomes a flow here, drawn across the screens it passes. A designer or a developer reads it before touching the interface. It is also the way into `prototype/`, because every screen links to its page there.
 
-It is a spec in `specs/`, drafted right after FEATURES, since it shapes how the features look.
+It is a spec in `specs/`.
 
 **Owns:**
 

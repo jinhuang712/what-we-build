@@ -10,8 +10,6 @@ RUNBOOK.md is for the person keeping a service running. It is read under pressur
 - Each alert and its response.
 - Who is on call.
 
-Draft it after DESIGNS.md, once the service's parts are known.
-
 ## You have it when
 
 - Someone paged at night can act from the page alone.

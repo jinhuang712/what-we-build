@@ -9,8 +9,6 @@ CONTRIBUTING.md tells outside contributors how to help. GitHub links it from iss
 - The checks that must pass.
 - Where to ask.
 
-Draft it once the workflow is known.
-
 ## Guidelines
 
 - **State the bar for a change,** so contributors know before they invest.
