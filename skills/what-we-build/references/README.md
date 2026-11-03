@@ -28,7 +28,6 @@ It comes last, because it sums up the approved docs.
 ## Guidelines
 
 - **Open with a hero image,** which shows what the project is before a word is read.
-- **Add the hero image to `TODO.md` when you cannot make it,** and open with the tagline until it exists.
 - **Lead with the one constraint that sets the project apart.**
 - **Say what it does in a few bullets.**
 - **Install in one line.**
