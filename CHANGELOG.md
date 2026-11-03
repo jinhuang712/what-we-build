@@ -12,6 +12,7 @@
 - CHANGELOG holds no IDs or links, and no table of renamed IDs.
 - DESIGNS holds no order for when guidelines collide, since a guideline is never traded.
 - TODO has three priorities from `P0` to `P2`, and an idea that may never happen is an `IDEA` at `P2`.
+- A TODO item's status is `OPEN` or `HALT`, in place of open, in progress and blocked.
 
 ### Start
 

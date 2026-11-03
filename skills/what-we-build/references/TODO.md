@@ -40,7 +40,7 @@ Each item has a priority, a type and a time. A reader sees what matters first an
 |---|---|
 | `description` | What happens, and what should happen. |
 | `created` / `updated` | Dates as `YYYY-MM-DD`. |
-| `status` | `open`, `in progress` or `blocked`. |
+| `status` | `OPEN` when it is ready to pick up, or `HALT` when it waits on something that `next` names. |
 | `found` | Where and how it was found. |
 | `branch` | The branch or worktree the work is in. |
 | `evidence` | Links to logs, screenshots or snippets kept as files in `plan/evidence/`. |
@@ -67,7 +67,7 @@ Use the fields an item needs, and leave out the rest.
 
 - description: <what happens, and what should happen>
 - created: YYYY-MM-DD
-- status: open
+- status: OPEN
 - found: <where, and how>
 - evidence: <link to a file in plan/evidence/>
 - next: <the next step>
