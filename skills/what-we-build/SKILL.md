@@ -143,8 +143,10 @@ A link points to what the doc rests on, never the other way. A doc still makes i
 | `PROPOSAL.md` | rarely anything |
 | `DESIGNS.md` | a few to PHILOSOPHY, and down to its decisions and specs |
 | `FEATURES.md` | the DESIGNS points it rests on, a PHILOSOPHY stance only where it forces a feature, and down to the UIUX flow of each story, its specs and its decisions |
-| `GOALS.md`, `ROADMAP.md` and `TODO.md` | each other, FEATURES and DESIGNS |
-| `specs/` and `specs/decisions/` | up to the doc they serve, never beside them |
+| `GOALS.md`, `ROADMAP.md` and `TODO.md` | each other, FEATURES and DESIGNS, and GOALS up to the PROPOSAL wants it serves |
+| `specs/ARCHITECTURE.md` | up to the doc it serves, and down to the spec of each part |
+| `specs/` | up to the doc they serve, and down to their decisions |
+| `specs/decisions/` | up to the doc they serve, never beside them |
 | `specs/UIUX.md` | up to the stories in FEATURES, and down to every page in `prototype/` |
 | `README.md` | every doc once in *Docs*, and `INSTALL.md` again from *Install* |
 | `AGENTS.md` | the docs in its read order |

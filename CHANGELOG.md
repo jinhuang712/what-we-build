@@ -79,6 +79,7 @@
 - An ID is always written with its name, and a list of IDs replaces a range.
 - A link points only to what its doc rests on.
 - A feature links up to what it rests on and down to everything that builds it, including the UIUX flow of each story.
+- ARCHITECTURE links down to the spec of each part, a spec links down to its decisions and a goal links up to the PROPOSAL wants it serves.
 - No doc holds a code chunk, which is code from the project or a command over two lines.
 - A code block is fine for a formula or a tree.
 - The docs speak of the window and the project context instead of sessions and sittings.
