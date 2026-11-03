@@ -53,7 +53,7 @@ To resume, read every doc and `TODO.md`. The work stopped at the first doc in th
 
 Report when the whole doc set is written. Say where the project stands from `TODO.md`, `ROADMAP.md` and `GOALS.md`. Then take each doc's last commit and read what the project changed after it. Where the work moved and the doc did not, point out that the doc may have fallen behind. Ask the user what to work on next.
 
-To sort messy docs, show the user a table before you write anything. It lists each old doc or section with its new home, which the placement test in *Where a fact goes* finds. A file the product itself ships, such as a prompt or a template, is not a doc and stays where it is. Ask the user about a doc the set has no home for, and keep it as it is until they decide. Show each new doc as its skeleton with its rows of the table, since a rewritten doc shares too few lines with the old one for a diff to read.
+To sort messy docs, show the user a table before you write anything. It lists each old doc or section with its new home, which the placement test in *Where a fact goes* finds. A file the product itself ships, such as a prompt or a template, is not a doc and stays where it is. Ask the user about a doc the set has no home for, and keep it as it is until they decide. Show each new doc as its skeleton with its rows of the table, since a rewritten doc shares too few lines with the old one for a diff to read. Once the docs are moved, go through each status they carried over with the user, since an old mark is a claim and not a result.
 
 ## The doc set
 
