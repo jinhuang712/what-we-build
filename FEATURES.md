@@ -59,7 +59,9 @@ You agree with the agent which docs the project gets and where they live. You al
 
 **Status:** ✅
 
-The docs come in order: PROPOSAL → PHILOSOPHY → DESIGNS → GOALS → FEATURES → ROADMAP → README. Each one builds on the ones before it, so you never answer the same question twice. Every choice comes with a recommendation.
+The docs come in order: PROPOSAL → PHILOSOPHY → DESIGNS → GOALS → FEATURES → ROADMAP → README. Each one builds on the ones before it, so you never answer the same question twice. Every choice comes with a recommendation. The agent says when it thinks the talk is enough and what is still open, and you judge it together.
+
+- **Why:** [031: The skill leaves the form of the talk open](specs/decisions/031-the-skill-leaves-the-form-of-the-talk-open.md)
 
 **Stories:**
 
