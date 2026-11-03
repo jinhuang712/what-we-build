@@ -15,6 +15,7 @@
 - It starts from an idea, from running code with no docs or from messy docs.
 - The agent is a thinking partner that brings its own ideas and challenges yours.
 - It leaves the outcome open until it has discussed it with you.
+- It talks in whatever way the moment needs, and the skill sets no modes for when to discuss, brainstorm or decide.
 - Each point goes into its doc as soon as you agree it, so an agreed point never lives only in the window.
 - You see each change as its skeleton first and then as a diff of before and after.
 - Nothing is committed before you approve it.
