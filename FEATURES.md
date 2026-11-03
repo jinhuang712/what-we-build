@@ -49,7 +49,7 @@ You bring an idea, a codebase or a pile of old docs. The agent reads the folder 
 
 **Status:** ✅
 
-First you agree the doc set and where the docs live. You go through the project's `AGENTS.md` with the agent and decide together what it should hold. The agent recommends the read order, the layout and the work rules of [F2.1: Keep the context while you work](#f21-keep-the-context-while-you-work).
+You agree with the agent which docs the project gets and where they live. You also decide together what the project's `AGENTS.md` should hold. The agent recommends the read order, the layout and the work rules of [F2.1: Keep the context while you work](#f21-keep-the-context-while-you-work).
 
 **Stories:**
 
