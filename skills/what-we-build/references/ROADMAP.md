@@ -6,27 +6,28 @@ ROADMAP.md answers "when?" and "how far along?". It breaks the work into checkpo
 
 Point anything a [NO] line rules out to its home, or push back when it has none.
 
-- [YES] checkpoints in order.
-- [YES] their tasks and progress.
-- [YES] exit criteria that point to GOALS.
-- [NO] feature behavior and the *Later* list, which FEATURES holds.
-- [NO] open questions, which TODO holds.
-- [NO] their answers once decided, which `specs/decisions/` holds.
-- [NO] release notes, which CHANGELOG holds.
-- [NO] exit criteria that restate goals instead of pointing to them.
-- [NO] a checkpoint that starts building before its design is decided.
+- [YES]   checkpoints in order.
+- [YES]   their tasks and progress.
+- [YES]   exit criteria that point to GOALS.
+- [NO]    feature behavior and the *Later* list, which FEATURES holds.
+- [NO]    open questions, which TODO holds.
+- [NO]    their answers once decided, which `specs/decisions/` holds.
+- [NO]    release notes, which CHANGELOG holds.
+- [NO]    exit criteria that restate goals instead of pointing to them.
+- [NO]    a checkpoint that starts building before its design is decided.
 
 ## Checkpoint
 
-- [YES] a state someone can use or a claim it proves, such as *a session survives a restart*.
-- [NO] a bag of tasks, such as *bugs found last week*.
-- [NO] a date or a version alone.
+- [YES]   a state someone can use or a claim it proves, such as *a session survives a restart*.
+- [NO]    a bag of tasks, such as *bugs found last week*.
+- [NO]    a date or a version alone.
 - [MAYBE] a release, when it ships what the checkpoint delivers.
 
 ## How to write it
 
-- [YES] open with a Summary, an ASCII tree in a code block of every checkpoint and its items with their status.
-- [YES] keep the first checkpoint small enough to finish soon.
+- [YES]   open with a Summary, an ASCII tree in a code block of every checkpoint and its items with their status.
+- [YES]   keep the first checkpoint small enough to finish soon.
+- [WHEN]  a checkpoint is done: mark it ✅ and point *Current checkpoint* to the next one.
 
 ## You have it when
 

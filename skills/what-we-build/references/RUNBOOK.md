@@ -4,11 +4,12 @@ RUNBOOK.md is for the person keeping a service running. It is read under pressur
 
 ## What it holds
 
-- [YES] deploy.
-- [YES] rollback.
-- [YES] monitoring.
-- [YES] each alert and its response.
-- [YES] who is on call.
+- [YES]   deploy.
+- [YES]   rollback.
+- [YES]   monitoring.
+- [YES]   each alert and its response.
+- [YES]   who is on call.
+- [NO]    how to install it or set up for development, which INSTALL and CONTRIBUTING hold.
 
 ## You have it when
 

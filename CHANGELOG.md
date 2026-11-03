@@ -18,6 +18,10 @@
   - Before, a guide had lists such as *Owns* and *Push back on*.
   - Now *What it holds* says what goes in or elsewhere, and *How to write it* says how.
   - Lines that said the same thing twice are gone, so the guides are 67 lines shorter.
+- `SKILL.md` is written in the same tagged lines, and its tables stay.
+- The agent reads every doc it works on in full and never hands a doc to a subagent.
+- When you stop the agent, it stops every agent it started and every agent those started.
+- When a project's own rules disagree with a guide, the agent tells you instead of picking one.
 
 ## 0.5.0 — 2026-11-03
 

@@ -111,16 +111,17 @@ The docs stay true as the work goes on, not only while they are first written.
 
 **Status:** ✅
 
-The agent reads the doc that owns a thing before it changes it. It records an open item at once. It records a decision at once too, but only for a choice that had another way open, may be undone later and has a reason the code does not show. When the docs and the code disagree, it asks you.
+The agent reads the doc that owns a thing before it changes it. It reads and writes every doc in its own window, and hands only the code to a subagent. It records an open item at once. It records a decision at once too, but only for a choice that had another way open, may be undone later and has a reason the code does not show. When the docs and the code disagree, it asks you.
 
 The skill starts only when you type `/what-we-build`, so these rules live in the project's `AGENTS.md`, which the agent reads whenever its window is new. You agree to record them there when you go through it with the agent.
 
 - **Design:** [DESIGNS 2: The docs are the state](DESIGNS.md#2-the-docs-are-the-state)
-- **Why:** [002: The skill starts only by hand](specs/decisions/002-manual-start.md)
+- **Why:** [002: The skill starts only by hand](specs/decisions/002-manual-start.md) and [030: The main window reads and writes the docs](specs/decisions/030-the-main-window-reads-and-writes-the-docs.md)
 
 **Stories:**
 
 - An agent in a new window reads the docs in the read order, so it knows the project before it works.
+- The agent reads each doc itself before a rewrite, so it learns the project instead of passing it to a subagent.
 - You find the open items and the decisions written down at once, so nothing lives only in the window.
 
 ### F2.2: A wiki when others build on it
@@ -214,7 +215,7 @@ The docs come out in plain and precise English. A reader finds a fact fast and u
 | A number is not known | it stays open in the doc | F1.3: Talk each doc through |
 | The docs and the code disagree | the agent tells you and you decide | F2.1: Keep the context while you work |
 | The window was compacted | the agent reads the read order again | F2.1: Keep the context while you work |
-| You stop the agent | it stops at once | F2.1: Keep the context while you work |
+| You stop the agent | it stops at once with every agent it started | F2.1: Keep the context while you work |
 
 ## Later, if needed
 

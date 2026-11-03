@@ -11,14 +11,15 @@ Each item has a priority, a type and a time. A reader sees what matters first an
 
 ## What it holds
 
-- [YES] the open items, each with enough context and evidence to act on.
-- [NO] work with a checkpoint, which ROADMAP holds.
-- [NO] what is already decided, which `specs/decisions/` holds.
+- [YES]   the open items, each with enough context and evidence to act on.
+- [NO]    work with a checkpoint, which ROADMAP holds.
+- [NO]    what is already decided, which `specs/decisions/` holds.
 
 ## How to write it
 
-- [WHEN] a change handles an item: delete the item and its evidence files in that change, since git keeps the history.
-- [WHEN] an item gets a checkpoint: move it to ROADMAP.
+- [YES]   a priority and a type on every item.
+- [WHEN]  a change handles an item: delete the item and its evidence files in that change, since git keeps the history.
+- [WHEN]  an item gets a checkpoint: move it to ROADMAP.
 
 ## Priority
 

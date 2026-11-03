@@ -4,11 +4,11 @@ SECURITY.md tells people how to report a vulnerability safely. GitHub shows it a
 
 ## What it holds
 
-- [YES] where to report.
-- [YES] what to include.
-- [YES] which versions are supported.
-- [YES] what happens next.
-- [NO] a request to report in public.
+- [YES]   where to report.
+- [YES]   what to include.
+- [YES]   which versions are supported.
+- [YES]   what happens next.
+- [NO]    a request to report in public.
 
 ## You have it when
 

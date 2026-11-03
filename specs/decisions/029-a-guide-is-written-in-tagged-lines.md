@@ -18,7 +18,7 @@ Every guide has the same sections:
 | *You have it when* | the checks, unchanged |
 | *Skeleton* | the form, unchanged |
 
-One sentence opens *What it holds* when the guide had a *Push back on* list: point anything a `[NO]` line rules out to its home, or push back when it has none. A line that repeated another was dropped. Tables such as the GOALS kinds and the TODO tags stay tables.
+One sentence opens *What it holds* when the guide had a *Push back on* list: point anything a `[NO]` line rules out to its home, or push back when it has none. A list always runs `[YES]`, `[NO]`, `[MAYBE]` and then `[WHEN]`, so a reader finds each kind in the same place. A list holds at least two kinds, because a list of only `[YES]` draws no edge. A line that repeated another was dropped. Tables such as the GOALS kinds and the TODO tags stay tables.
 
 ## Not chosen
 
@@ -28,4 +28,4 @@ One sentence opens *What it holds* when the guide had a *Push back on* list: poi
 
 ## Consequences
 
-The guides lost 67 lines. The bold lead of each guideline is gone, so a guide is scanned by its tags instead.
+The guides lost 67 lines. The bold lead of each guideline is gone, so a guide is scanned by its tags instead. `SKILL.md` and this repo's `AGENTS.md` follow in the same lines, and their tables stay tables. Each tag is padded so the text after it starts in one column.

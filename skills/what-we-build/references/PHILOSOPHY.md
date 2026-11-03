@@ -14,16 +14,16 @@ It comes second, after the proposal. DESIGNS builds on its stances.
 
 Point anything a [NO] line rules out to its home, or push back when it has none.
 
-- [YES] the belief the project starts from.
-- [YES] the questions it takes a stance on with their arguments.
-- [YES] quotes from sources that shaped or tested them.
-- [YES] the sources when there are any.
-- [NO] a feature or a screen, which FEATURES holds.
-- [NO] how the project is built, which DESIGNS holds.
-- [NO] a stance with no argument.
-- [NO] a stance that sounds deep and says nothing.
-- [NO] a quote that decorates and does not test.
-- [NO] a quote nobody checked.
+- [YES]   the belief the project starts from.
+- [YES]   the questions it takes a stance on with their arguments.
+- [YES]   quotes from sources that shaped or tested them.
+- [YES]   the sources when there are any.
+- [NO]    a feature or a screen, which FEATURES holds.
+- [NO]    how the project is built, which DESIGNS holds.
+- [NO]    a stance with no argument.
+- [NO]    a stance that sounds deep and says nothing.
+- [NO]    a quote that decorates and does not test.
+- [NO]    a quote nobody checked.
 
 ## What you are after
 
@@ -50,21 +50,21 @@ It starts from whatever the user brings, in any form.
 
 ## Stance
 
-- [YES] a choice about what problem to solve where a reasonable team would choose otherwise, such as *the agent works in the developer's own terminal*.
-- [NO] a design that changes only how, such as *every tool call passes a permission check*.
-- [NO] a feature, such as *resume a session*.
-- [NO] a value every team would sign, such as *quality matters*.
+- [YES]   a choice about what problem to solve where a reasonable team would choose otherwise, such as *the agent works in the developer's own terminal*.
+- [NO]    a design that changes only how, such as *every tool call passes a permission check*.
+- [NO]    a feature, such as *resume a session*.
+- [NO]    a value every team would sign, such as *quality matters*.
 
 ## How to find it
 
-- [YES] listen for the thought that hides in an aside or a complaint.
-- [YES] say it back in one line and test it, since a wrong candidate is corrected faster than a right one is produced.
-- [YES] bring contrast from another field or thinker that holds the opposite.
-- [YES] push on what is thin by asking for the case, the cost and the exception.
-- [YES] organize what comes out and show it.
-- [YES] go back and forth until the user recognizes it.
-- [NO] a belief you invented, since the stances are the user's.
-- [WHEN] the four tests hold: stop without padding.
+- [YES]   listen for the thought that hides in an aside or a complaint.
+- [YES]   say it back in one line and test it, since a wrong candidate is corrected faster than a right one is produced.
+- [YES]   bring contrast from another field or thinker that holds the opposite.
+- [YES]   push on what is thin by asking for the case, the cost and the exception.
+- [YES]   organize what comes out and show it.
+- [YES]   go back and forth until the user recognizes it.
+- [NO]    a belief you invented, since the stances are the user's.
+- [WHEN]  the four tests hold: stop without padding.
 
 ## Seeds
 
@@ -74,9 +74,9 @@ what goes first · two good things collide · what is left behind · the clumsy 
 
 ## How to write it
 
-- [YES] argue in prose with a list or a table wherever it shows the thought better.
-- [YES] state each stance as one quotable line and then argue it.
-- [NO] a stance the project does not truly hold, since an empty section is worse than a missing one.
+- [YES]   argue in prose with a list or a table wherever it shows the thought better.
+- [YES]   state each stance as one quotable line and then argue it.
+- [NO]    a stance the project does not truly hold, since an empty section is worse than a missing one.
 
 ## Skeleton
 

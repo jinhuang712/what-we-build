@@ -10,26 +10,26 @@ It keeps the reason alive after the people who knew it have moved on. One decisi
 
 ## What it holds
 
-- [YES] each decision with its alternatives and what it costs.
-- [YES] a decision about the whole design and one about a single feature, in the same folder.
-- [NO] how the chosen thing works, which `specs/` holds.
-- [NO] what the user sees, which FEATURES holds.
+- [YES]   each decision with its alternatives and what it costs.
+- [YES]   a decision about the whole design and one about a single feature, in the same folder.
+- [NO]    how the chosen thing works, which `specs/` holds.
+- [NO]    what the user sees, which FEATURES holds.
 
 ## Decision
 
 A decision needs all three of its [YES] lines.
 
-- [YES] a fork where another way was open.
-- [YES] a choice someone may later want to undo.
-- [YES] a reason the code does not show.
-- [NO] a change that only says what changed, which CHANGELOG holds.
-- [NO] a commitment every design must meet, which DESIGNS holds.
+- [YES]   a fork where another way was open.
+- [YES]   a choice someone may later want to undo.
+- [YES]   a reason the code does not show.
+- [NO]    a change that only says what changed, which CHANGELOG holds.
+- [NO]    a commitment every design must meet, which DESIGNS holds.
 
 ## How to write it
 
-- [YES] keep the title to the choice in one line, such as "Settings live in JSON files instead of a settings screen".
-- [NO] the reason in the title, since it goes in the file.
-- [YES] keep a file short and numbered so the folder lists the decisions in order.
+- [YES]   keep the title to the choice in one line, such as "Settings live in JSON files instead of a settings screen".
+- [YES]   keep a file short and numbered so the folder lists the decisions in order.
+- [NO]    the reason in the title, since it goes in the file.
 
 ## You have it when
 

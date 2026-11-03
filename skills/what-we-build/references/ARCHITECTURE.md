@@ -6,20 +6,21 @@ ARCHITECTURE.md is the map of the whole project. A new contributor reads it firs
 
 Point anything a [NO] line rules out to its home, or push back when it has none.
 
-- [YES] the parts and what each one does.
-- [YES] how the parts connect, with a diagram.
-- [YES] where each part lives in the code.
-- [NO] how a part works inside, which its spec in `specs/` holds.
-- [NO] the guidelines the design must meet, which DESIGNS holds.
-- [NO] the forks behind the shape, which `specs/decisions/` holds.
-- [NO] what the user sees, which FEATURES holds.
-- [NO] a map that lists files instead of parts.
+- [YES]   the parts and what each one does.
+- [YES]   how the parts connect, with a diagram.
+- [YES]   where each part lives in the code.
+- [NO]    how a part works inside, which its spec in `specs/` holds.
+- [NO]    the guidelines the design must meet, which DESIGNS holds.
+- [NO]    the forks behind the shape, which `specs/decisions/` holds.
+- [NO]    what the user sees, which FEATURES holds.
+- [NO]    a map that lists files instead of parts.
 
 ## How to write it
 
-- [YES] always open with a diagram of the whole so the reader sees the shape before the words.
-- [YES] name each part by what it does.
-- [YES] name each part's folder rather than its files, because folders change less often.
+- [YES]   always open with a diagram of the whole so the reader sees the shape before the words.
+- [YES]   name each part by what it does.
+- [YES]   name each part's folder rather than its files, because folders change less often.
+- [NO]    a part named for how it is built, such as *utils*.
 
 ## You have it when
 

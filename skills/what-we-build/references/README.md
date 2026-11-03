@@ -8,26 +8,26 @@ It comes last, because it sums up the approved docs.
 
 Point anything a [NO] line rules out to its home, or push back when it has none.
 
-- [YES] the hero image and the tagline.
-- [YES] what it is and what it does.
-- [YES] how to install it in one line.
-- [YES] how to use it.
-- [YES] a link to every other doc.
-- [NO] detail another doc owns, even as a copy.
-- [NO] a fact written only in the README.
-- [NO] emoji as decoration on every line.
-- [NO] an optional section with no owner doc behind it.
+- [YES]   the hero image and the tagline.
+- [YES]   what it is and what it does.
+- [YES]   how to install it in one line.
+- [YES]   how to use it.
+- [YES]   a link to every other doc.
+- [NO]    detail another doc owns, even as a copy.
+- [NO]    a fact written only in the README.
+- [NO]    emoji as decoration on every line.
+- [NO]    an optional section with no owner doc behind it.
 
 ## How to write it
 
-- [YES] open with a hero image, which shows what the project is before a word is read.
-- [YES] lead with the one constraint that sets the project apart.
-- [YES] say what it does in a few bullets.
-- [YES] show how to use it with the first real task from start to result.
-- [YES] emoji where they carry meaning, such as a mark beside each capability.
-- [YES] color on the page through the hero and the diagrams, with badges and callouts.
-- [YES] link each doc once in *Docs*, and copy no status.
-- [YES] link INSTALL from *Install* too so whoever changes the one line finds the rest.
+- [YES]   open with a hero image, which shows what the project is before a word is read.
+- [YES]   lead with the one constraint that sets the project apart.
+- [YES]   say what it does in a few bullets.
+- [YES]   show how to use it with the first real task from start to result.
+- [YES]   emoji where they carry meaning, such as a mark beside each capability.
+- [YES]   color on the page through the hero and the diagrams, with badges and callouts.
+- [YES]   link each doc once in *Docs*, and copy no status.
+- [YES]   link INSTALL from *Install* too so whoever changes the one line finds the rest.
 - [MAYBE] an architecture diagram that sums up `specs/ARCHITECTURE.md`, which you recommend.
 
 ## Optional sections

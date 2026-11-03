@@ -13,8 +13,6 @@ Read these when the window is new or was compacted:
 5. [GOALS.md](GOALS.md): what is checked and its last result.
 6. [TODO.md](TODO.md): what is open.
 
-Before a change, also read the doc that owns it.
-
 ## Layout
 
 - The core docs sit at the root with TODO, CHANGELOG and INSTALL.
@@ -24,28 +22,33 @@ Before a change, also read the doc that owns it.
 
 ## While you work
 
-- Before you change something, read the doc that owns it.
-- Track where the project stands by scanning `TODO.md`, `ROADMAP.md` and `GOALS.md`.
-- Write a decision in `specs/decisions/` at once when a choice had another way open, may be undone later and has a reason the code does not show.
-- When something cannot be handled now, add it to `TODO.md` at once.
-- When the docs and the code disagree, tell the user and let them decide.
-- Once other developers build on the project, tell the user it may need a wiki and leave its form to them.
-- When a change is done, update `CHANGELOG.md` and the feature's status in the same change.
-- When a todo is handled, delete it in the same change.
-- After a change, check only what it touched against the rules.
-- Check the goals in `GOALS.md` at the end of a checkpoint or before a release, and never for a small change.
-- When the user stops you, stop at once.
+- [YES]   read each doc you work on in the main window, in full.
+- [YES]   track where the project stands by scanning `TODO.md`, `ROADMAP.md` and `GOALS.md`.
+- [NO]    hand a doc to a subagent to read or write.
+- [NO]    a goal check for a small change.
+- [MAYBE] read all the docs in one go.
+- [WHEN]  you are about to change something: read the doc that owns it first.
+- [WHEN]  the work needs the code: a subagent may read it.
+- [WHEN]  a choice had another way open, may be undone later and has a reason the code does not show: write a decision in `specs/decisions/` at once.
+- [WHEN]  something cannot be handled now: add it to `TODO.md` at once.
+- [WHEN]  the docs and the code disagree: tell the user and let them decide.
+- [WHEN]  other developers build on the project: tell the user it may need a wiki, and leave its form to them.
+- [WHEN]  a change is done: update `CHANGELOG.md` and the feature's status in the same change.
+- [WHEN]  a todo is handled: delete it in the same change.
+- [WHEN]  a change is made: check only what it touched against the rules.
+- [WHEN]  a checkpoint ends or a release is near: check the goals in `GOALS.md`.
+- [WHEN]  the user stops you: stop at once, with every agent you started and every agent those started.
 
 ## Rules
 
-- **This repo is the skill's first example,** so it follows the skill's format and placement test.
-- **Keep `SKILL.md` within T4: A short skill,** and put detail in a guide it points to.
-- **Follow the guidelines in [DESIGNS.md](DESIGNS.md).**
-- **A reader checks the links and the facts in the docs,** and no script does.
-- **Test the skill in real use first,** and write test prompts from what they show.
-- **Never commit a doc before the user approves it.**
-- **Leave the outcome open until you have discussed it with the user,** and look at what exists together first.
-- **Show a change as its skeleton first and then as a diff of before and after.**
+- [YES]   follow the skill's format and placement test, since this repo is the skill's first example.
+- [YES]   keep `SKILL.md` within T4: A short skill, and put detail in a guide it points to.
+- [YES]   follow the guidelines in [DESIGNS.md](DESIGNS.md).
+- [YES]   test the skill in real use first, and write test prompts from what they show.
+- [YES]   show a change as its skeleton first and then as a diff of before and after.
+- [NO]    a script that checks the links and the facts in the docs, since a reader does.
+- [NO]    a doc committed before the user approves it.
+- [NO]    an outcome settled before you have discussed it with the user and looked at what exists together.
 
 ## Before you finish
 
@@ -54,6 +57,7 @@ Before a change, also read the doc that owns it.
 - Check each link you touched against its target.
 - Check that each fact you added or moved has no second home.
 - Check that each decision you wrote says what was not chosen and why.
+- Check that each list of tagged lines in `skills/` holds at least two kinds of tag in the order `[YES]` `[NO]` `[MAYBE]` `[WHEN]`.
 - Check that what you added to `skills/` is Markdown in our own words, with examples that meet DESIGNS 5: Examples the reader knows.
 
 ## Releasing

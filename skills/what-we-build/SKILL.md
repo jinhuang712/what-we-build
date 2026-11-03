@@ -12,35 +12,46 @@ This skill keeps a project's context in docs, so it outlives every window. The c
 
 You are a thinking partner, not an interviewer:
 
-- Bring your own ideas, questions and research.
-- Take a stance, and challenge the user's ideas where they are weak.
-- Leave the outcome open until you have discussed it, and look at what exists together first.
-- Let the user decide.
+- [YES]   bring your own ideas, questions and research.
+- [YES]   take a stance, and challenge the user's ideas where they are weak.
+- [YES]   look at what exists together first.
+- [YES]   let the user decide.
+- [NO]    settle an outcome before you have discussed it.
+- [NO]    add content the user has not agreed to, such as a new feature or goal.
 
 Talk in the way the moment needs:
 
-- **Discuss** with open questions and your own angle.
-- **Brainstorm,** then group the options and point out the strongest.
-- **Decide** with lettered options.
+- [NO]    lettered options before the talk has narrowed to a choice.
+- [WHEN]  the outcome is open: discuss with open questions and your own angle.
+- [WHEN]  many ways are on the table: brainstorm, group the options and point out the strongest.
+- [WHEN]  the talk has narrowed to a choice: decide with lettered options.
 
 When you ask:
 
-- Ask for one decision at a time.
-- Explain it first with a concrete case.
-- Recommend an option with its reason.
-- Draw what has moving parts.
-- Keep each turn short.
+- [YES]   ask for one decision at a time.
+- [YES]   explain it first with a concrete case.
+- [YES]   recommend an option with its reason.
+- [YES]   draw what has moving parts.
+- [YES]   keep each turn short.
+- [NO]    several decisions in one question.
 
 ## Start
 
-Read the project folder first, and start from what it holds. An idea, running code and old docs are all material for the talk. When docs already exist, tell the user where the work stands, what is still open and which docs may have fallen behind it.
+Read the project folder first, and start from what it holds. An idea, running code and old docs are all material for the talk.
 
-- Recommend `git init` when the folder has no git, since the history shows which docs fell behind.
-- Decide with the user what the project's `AGENTS.md` holds, and recommend the read order, the layout and the rules in *While you work*.
+- [YES]   decide with the user what the project's `AGENTS.md` holds.
+- [YES]   recommend a read order and a layout for it, with the rules in *While you work*.
+- [NO]    move old docs into the new format without a talk.
+- [WHEN]  docs already exist: tell the user where the work stands, what is still open and which docs may have fallen behind it.
+- [WHEN]  the folder has no git: recommend `git init`, since the history shows which docs fell behind.
 
 ## The doc set
 
-Every doc has a guide, which you read before you start that doc. The guide says what the doc owns and what it leaves out. Its skeleton suggests a form, and you change it where the content needs another. The project's `AGENTS.md` is the one doc without a guide, because *Start* and *While you work* already say what it holds.
+Every doc has a guide, which you read before you start that doc. The guide says what the doc holds and how to write it. The project's `AGENTS.md` is the one doc without a guide, because *Start* and *While you work* already say what it holds.
+
+- [YES]   start from the guide's skeleton.
+- [MAYBE] another form where the content needs it.
+- [WHEN]  the project's own rules disagree with a guide: tell the user and let them decide.
 
 Every project gets the core docs:
 
@@ -87,12 +98,12 @@ Work through the core docs in order, since each builds on the ones before it:
 
 Talk each doc through with the user, and write each point into it once it is agreed.
 
-- The user sees every change before it is committed.
-- Only the user approves.
-- A point still open goes to `TODO.md` as a `DISCUSSION`, so the work can stop at any time.
-- Re-read the whole doc before any edit, even of one word.
-
-A claim needs its proof. Check a behavior claim by running it, or mark it "not yet verified". A goal is met only with a measurement or the user's own report.
+- [YES]   show the user every change before it is committed.
+- [YES]   re-read the whole doc before any edit, even of one word.
+- [NO]    approval from anyone but the user.
+- [NO]    a goal marked met without a measurement or the user's own report.
+- [WHEN]  a point is still open: put it in `TODO.md` as a `DISCUSSION`, so the work can stop at any time.
+- [WHEN]  a doc claims a behavior: check it by running it, or mark it "not yet verified".
 
 ## Where a fact goes
 
@@ -136,34 +147,39 @@ A link points to what the doc rests on, never the other way. A doc still makes i
 
 The docs stay true only if the agent keeps them true in every new window. These rules belong in the project's `AGENTS.md`, so they reach a window that never loaded this skill.
 
-- When the window is new or was compacted, read the read order in `AGENTS.md`.
-- Before you change something, read the doc that owns it.
-- Track where the project stands by scanning `TODO.md`, `ROADMAP.md` and `GOALS.md`.
-- Write a decision at once when a choice had another way open, may be undone later and has a reason the code does not show.
-- When something cannot be handled now, add it to `TODO.md` at once.
-- When the docs and the code disagree, tell the user and let them decide.
-- Once other developers build on the project, tell the user it may need a wiki and leave its form to them.
-- When a change is done, update `CHANGELOG.md` and the feature's status in the same change.
-- When a todo is handled, delete it in the same change.
-- After a change, check only what it touched against the rules.
-- Check the goals at the end of a checkpoint or before a release, and never for a small change.
-- When the user stops you, stop at once.
+- [YES]   read each doc you work on in the main window, in full.
+- [YES]   track where the project stands by scanning `TODO.md`, `ROADMAP.md` and `GOALS.md`.
+- [NO]    hand a doc to a subagent to read or write.
+- [NO]    a goal check for a small change.
+- [MAYBE] read all the docs in one go.
+- [WHEN]  the window is new or was compacted: read the read order in `AGENTS.md`.
+- [WHEN]  you are about to change something: read the doc that owns it first.
+- [WHEN]  the work needs the code: a subagent may read it.
+- [WHEN]  a choice had another way open, may be undone later and has a reason the code does not show: write a decision at once.
+- [WHEN]  something cannot be handled now: add it to `TODO.md` at once.
+- [WHEN]  the docs and the code disagree: tell the user and let them decide.
+- [WHEN]  other developers build on the project: tell the user it may need a wiki, and leave its form to them.
+- [WHEN]  a change is done: update `CHANGELOG.md` and the feature's status in the same change.
+- [WHEN]  a todo is handled: delete it in the same change.
+- [WHEN]  a change is made: check only what it touched against the rules.
+- [WHEN]  a checkpoint ends or a release is near: check the goals.
+- [WHEN]  the user stops you: stop at once, with every agent you started and every agent those started.
 
 ## Wording
 
-- Explain in a short paragraph, written as one block.
-- Put separate points in a list, one sentence to a bullet.
-- Never stack sentences line by line, which is neither.
-- Make good use of tables and diagrams.
-- Keep at most one comma in a bullet.
-- Put the answer first.
-- Use one name per thing.
-- Write an ID with its name, such as "T4: A short skill".
-- Link an ID only where the link table in *Where a fact goes* allows.
-- List the items instead of giving a range.
-- Keep status marks out of headings, so the links to them stay stable.
-- Prefer a number to an adjective, with its source or left open.
-- Write dates as `YYYY-MM-DD`.
+- [YES]   explain in a short paragraph written as one block.
+- [YES]   put separate points in a list, one sentence to a bullet.
+- [YES]   make good use of tables and diagrams.
+- [YES]   put the answer first.
+- [YES]   use one name per thing.
+- [YES]   write an ID with its name, such as "T4: A short skill".
+- [YES]   list the items instead of giving a range.
+- [YES]   prefer a number to an adjective, with its source or left open.
+- [YES]   write dates as `YYYY-MM-DD`.
+- [NO]    sentences stacked line by line, which is neither.
+- [NO]    more than one comma in a bullet.
+- [NO]    status marks in headings, so the links to them stay stable.
+- [WHEN]  you link an ID: link it only where the link table in *Where a fact goes* allows.
 
 No doc holds a code chunk, which is code pasted from the project or a command longer than two lines. Such a command belongs in a script, and the doc names the script. A code block for a formula, a tree or a short command is fine.
 
