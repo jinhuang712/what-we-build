@@ -15,7 +15,7 @@
 - It starts from an idea, from running code with no docs or from messy docs.
 - The agent is a thinking partner that brings its own ideas and challenges yours.
 - It leaves the outcome open until it has discussed it with you.
-- It talks in whatever way the moment needs, and the skill sets no modes for when to discuss, brainstorm or decide.
+- It discusses, brainstorms or asks for a decision as the moment needs, and the skill no longer says when to use which.
 - Each point goes into its doc as soon as you agree it, so an agreed point never lives only in the window.
 - You see each change before it is committed.
 - Nothing is committed before you approve it.
@@ -24,6 +24,7 @@
 - When you stop the agent, it stops at once.
 - A point still open waits in TODO.md, so the work can stop at any time.
 - When docs already exist, `/what-we-build` tells you where the work stands, what is still open and which docs may have fallen behind it.
+- Without git, the agent recommends `git init`, since the history shows which docs fell behind.
 - An idea, running code and old docs are all material for the talk, so the agent discusses them with you instead of moving their text.
 - The agent goes through your project's AGENTS.md with you and recommends its read order, layout and work rules.
 - The work rules reach every new window through AGENTS.md, even when the skill is not loaded.
