@@ -177,7 +177,8 @@ The docs stay true only if the agent keeps them true in every new window. These 
 - [NO]    sentences stacked line by line, which is neither.
 - [NO]    more than one comma in a bullet.
 - [NO]    status marks in headings, so the links to them stay stable.
-- [WHEN]  you link an ID: link it only where the link table in *Where a fact goes* allows.
+- [NO]    a bare ID, even as the text of a link.
+- [WHEN]  a doc names an ID: link it wherever the link table in *Where a fact goes* allows.
 
 No doc holds a code chunk, which is code pasted from the project or a command longer than two lines. Such a command belongs in a script, and the doc names the script. A code block for a formula, a tree or a short command is fine.
 

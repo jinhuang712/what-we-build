@@ -28,7 +28,7 @@ Point anything a [NO] line rules out to its home, or push back when it has none.
 - [NO]    the choices behind it, which `specs/decisions/` holds.
 - [NO]    type names and code paths.
 - [NO]    how a story moves across the screens and how they look, which `specs/UIUX.md` holds.
-- [NO]    the schedule, which ROADMAP holds.
+- [NO]    the schedule or a version, which ROADMAP holds.
 - [NO]    a long feature that needs a spec instead.
 - [NO]    a setting with no reason.
 - [NO]    a feature that cannot reach what builds it.
@@ -99,7 +99,7 @@ Features
 - **Stance:** <the PHILOSOPHY stance that forces it, if one does>
 - **Design:** <the DESIGNS guidelines it rests on>
 - **How it works:** <its specs>
-- **Why:** <its decisions>
+- **Why:** <each decision as its ID with a short name, linked>
 
 **Stories:**
 

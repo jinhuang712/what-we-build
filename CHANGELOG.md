@@ -2,6 +2,15 @@
 
 ## Unreleased
 
+### Doc guides
+
+- A ROADMAP checkpoint lists the features it delivers, and its exit criteria are bullets grouped by the kind of goal.
+- Goals that are checked but do not block a release sit in their own group.
+- A sub-checkpoint may have its own exit criteria, and its parent only says it is met.
+- FEATURES no longer names a version, and each decision in it carries a short name.
+- A doc links every ID it names where it may, and never shows a bare ID.
+- CHANGELOG holds no IDs or links, and no table of renamed IDs.
+
 ## 0.6.0 — 2026-11-03
 
 ### Working with the agent
