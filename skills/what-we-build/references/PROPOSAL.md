@@ -29,6 +29,22 @@ It comes first, because every other doc builds on the reason it gives.
 - A want that serves no reason.
 - A "don't want" with no reason.
 
+## Want and pain
+
+**A want**
+
+- [YES] what someone needs in their own words, such as *pick up yesterday's work where it stopped*.
+- [YES] a reason it serves, from *Why it should exist*.
+- [NO] a feature, such as *resume a session*.
+- [NO] a number, which GOALS holds.
+- [MAYBE] several features that meet it, which FEATURES works out.
+- [WHEN] the project already has code: the want comes from the pain, not from what the code does.
+
+**A pain**
+
+- [YES] a moment someone hits with the sample or number that proves it, such as *a long session forgets what was decided*.
+- [NO] the lack of a solution, such as *there is no memory file*.
+
 ## Guidelines
 
 - **Start from what the user brings,** in whatever form it takes.

@@ -173,7 +173,7 @@ The recommended docs start once you agree the doc set. A finding or a change the
 
 **Status:** ✅
 
-The agent reads a doc's guide before it starts that doc. The guide says what the doc owns and what it leaves out.
+The agent reads a doc's guide before it starts that doc. The guide says what the doc owns and what it leaves out. Where a model tends to blur a doc's core idea, the guide says what it is and is not.
 
 **Stories:**
 

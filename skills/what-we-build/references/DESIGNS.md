@@ -19,16 +19,19 @@ It comes third in the doc order, right after the philosophy. The design guides t
 - Whether it is built yet (ROADMAP).
 - Open questions (TODO).
 
-**Push back on:**
+## Guideline
 
-- A guideline every team would sign ("keep it simple").
-- A guideline that reads like a feature.
-- A guideline that is really a mechanism.
+- [YES] a commitment a reader can check a design against, such as *an action that cannot be undone asks the user first*.
+- [NO] a stance about what problem to solve, which PHILOSOPHY holds.
+- [NO] a choice between options that a decision records, such as *settings live in JSON files*.
+- [NO] a mechanism, such as *a hook runs before each tool call*.
+- [NO] a feature, such as *resume a session*.
+- [NO] a value every team would sign, such as *keep it simple*.
 
 ## Guidelines
 
 - **Open with the numbered guidelines,** so a reader sees the whole design at a glance.
-- **State each one as a commitment a reader can test,** such as "Every payment can be retried safely" and not "Payments are reliable".
+- **State each one as a commitment a reader can test.**
 - **Give each a short section** on why it holds and what it costs.
 - **Give each the question it asks of a new requirement,** and link its decisions and specs.
 

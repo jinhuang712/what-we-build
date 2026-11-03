@@ -1,6 +1,6 @@
 # specs/ARCHITECTURE.md
 
-ARCHITECTURE.md is the map of the whole project. A new contributor reads it first to learn what the parts are and where to look. It stays at the macro level. How each part works inside goes in that part's own spec.
+ARCHITECTURE.md is the map of the whole project. A new contributor reads it first to learn what the parts are and where to look. It stays at the macro level. How each part works inside goes in that part's own spec. A part is what the [SPECS](SPECS.md) guide calls one.
 
 **Owns:**
 

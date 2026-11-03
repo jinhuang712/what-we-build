@@ -24,8 +24,14 @@ GOALS.md turns the wants in the proposal into checks. It keeps the project hones
 - A number with no formula.
 - A comparison with nothing to compare against.
 - A constraint nobody could check.
-- A rule dressed as a goal.
 - A "met" with no measurement or report.
+
+## Goal
+
+- [YES] a check that a want in PROPOSAL is met, such as *a resumed session still knows its plan*.
+- [NO] a rule such as *commit in small steps*, which AGENTS.md holds.
+- [NO] the commitment a design must meet, which DESIGNS holds.
+- [MAYBE] a constraint that checks a DESIGNS guideline, when a script can tell it broke.
 
 ## The six kinds
 

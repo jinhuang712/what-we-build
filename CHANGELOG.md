@@ -3,6 +3,17 @@
 ## Unreleased
 
 - Examples in the guides may come from the stable ideas of a well-known tool, such as Claude Code.
+- A guide says what its doc's core idea is and is not in tagged lines such as `[YES]` and `[NO]`.
+  - FEATURES: a group, a feature and a sub-feature.
+  - PROPOSAL: a want and a pain.
+  - PHILOSOPHY: a stance.
+  - DESIGNS: a guideline, in place of its *Push back on* list.
+  - GOALS: a goal, and a constraint may check a DESIGNS guideline.
+  - ROADMAP: a checkpoint.
+  - SPECS: a part, which ARCHITECTURE shares.
+  - DECISIONS: a decision.
+  - GLOSSARY: a term.
+- What FEATURES called a part is now a sub-feature, so *part* means only a piece of the project.
 
 ## 0.5.0 — 2026-11-03
 

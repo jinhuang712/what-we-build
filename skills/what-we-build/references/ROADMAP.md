@@ -17,9 +17,15 @@ ROADMAP.md answers "when?" and "how far along?". It breaks the work into checkpo
 
 **Push back on:**
 
-- A checkpoint nobody could use.
 - Exit criteria that restate goals instead of pointing to them.
 - A checkpoint that starts building before its design is decided.
+
+## Checkpoint
+
+- [YES] a state someone can use or a claim it proves, such as *a session survives a restart*.
+- [NO] a bag of tasks, such as *bugs found last week*.
+- [NO] a date or a version alone.
+- [MAYBE] a release, when it ships what the checkpoint delivers.
 
 ## Guidelines
 

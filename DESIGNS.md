@@ -57,4 +57,4 @@ A guide says what a doc is for and what goes wrong. It leaves the method to the 
 
 **Ask:** does this teach the model something it already knows?
 
-- **Decisions:** [026: The skill says what the agent must do, not each step](specs/decisions/026-the-skill-says-what-not-how.md)
+- **Decisions:** [026: The skill says what the agent must do, not each step](specs/decisions/026-the-skill-says-what-not-how.md) and [028: A guide says what its doc's core idea is and is not](specs/decisions/028-a-guide-says-what-its-core-idea-is-and-is-not.md)

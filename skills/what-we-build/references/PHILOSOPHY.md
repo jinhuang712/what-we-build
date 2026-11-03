@@ -53,6 +53,13 @@ You have it when four things hold:
 
 It starts from whatever the user brings, in any form.
 
+## Stance
+
+- [YES] a choice about what problem to solve where a reasonable team would choose otherwise, such as *the agent works in the developer's own terminal*.
+- [NO] a design that changes only how, such as *every tool call passes a permission check*.
+- [NO] a feature, such as *resume a session*.
+- [NO] a value every team would sign, such as *quality matters*.
+
 ## How
 
 - Listen for the thought that hides in an aside or a complaint.
@@ -76,8 +83,6 @@ what goes first · two good things collide · what is left behind · the clumsy 
 - **State each stance as one quotable line,** then argue it.
 - **Quote only what you have checked.**
 - **Write only the stances the project truly holds,** since an empty section is worse than a missing one.
-- **A stance changes what problem the project solves,** and one that changes only how is a design for DESIGNS.
-- **A stance that restates the README is a feature** for FEATURES.
 
 ## Skeleton
 

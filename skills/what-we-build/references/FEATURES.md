@@ -28,11 +28,36 @@ It comes fifth in the doc order: each feature delivers a want from the proposal 
 - A feature that cannot reach what builds it.
 - A *Not planned* item with no reason.
 
+## Group, feature and sub-feature
+
+**A group**
+
+- [YES] an area of the product the user knows by name, such as *Sessions* or *Hooks* in Claude Code.
+- [YES] every feature of that area.
+- [NO] a code module the user never sees.
+- [NO] one group per GLOSSARY term, since *Turn* is a term and not a group.
+- [MAYBE] a core GLOSSARY term as its name.
+- [MAYBE] two groups once one area grows too large to scan.
+- [WHEN] the area has specs and decisions: they show what the group must hold.
+- [WHEN] it has none yet: PROPOSAL and DESIGNS show it.
+
+**A feature**
+
+- [YES] one thing the user does or meets in its group, such as *Resume a session*.
+- [YES] stories of its own.
+- [NO] a case of another feature.
+- [MAYBE] a group of its own once it gathers features of its own, as *Subagents* may grow out of *Tools*.
+
+**A sub-feature**
+
+- [YES] one case of a feature, such as *Continue the latest session* under *Resume a session*.
+- [NO] a thing the user does on its own.
+
 ## Guidelines
 
 - **Open with a Summary,** an ASCII tree in a code block of every feature by group with its status and a short description.
 - **Number the groups too,** so F1 is a group and F1.1 a feature in it.
-- **Split a feature that does several things** into parts such as F1.1.1.
+- **Split a feature that does several things** into sub-features such as F1.1.1.
 - **Give each feature an ID that never changes,** so other docs can point to it.
 - **Give a new feature a new number.**
 - **Mark a feature ✅ once it is built,** and leave whether it works in real use to GOALS.
@@ -92,7 +117,7 @@ Features
 
 **Status:** ⬜
 
-<what this part does>
+<what this sub-feature does>
 
 ## When something fails
 
