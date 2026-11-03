@@ -10,6 +10,11 @@
 - FEATURES no longer names a version, and each decision in it carries a short name.
 - A doc links every ID it names where it may, and never shows a bare ID.
 - CHANGELOG holds no IDs or links, and no table of renamed IDs.
+- DESIGNS holds no order for when guidelines collide, since a guideline is never traded.
+
+### Start
+
+- On each start the agent shows you any part of a doc that its guide no longer asks for.
 
 ## 0.6.0 — 2026-11-03
 

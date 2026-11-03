@@ -25,6 +25,7 @@ Point anything a [NO] line rules out to its home, or push back when it has none.
 - [NO]    a mechanism, such as *a hook runs before each tool call*.
 - [NO]    a feature, such as *resume a session*.
 - [NO]    a value every team would sign, such as *keep it simple*.
+- [NO]    an order for when guidelines collide, since a guideline is never traded.
 
 ## You have it when
 

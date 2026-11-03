@@ -42,6 +42,7 @@ Read the project folder first, and start from what it holds. An idea, running co
 - [WHEN]  docs already exist: tell the user where the work stands, what is still open and which docs may have fallen behind it.
 - [WHEN]  the folder has no git: recommend `git init`, since the history shows which docs fell behind.
 - [WHEN]  the rules in the project's `AGENTS.md` differ from *While you work*: show the user what changed.
+- [WHEN]  a doc holds a part its guide no longer asks for: show the user.
 
 ## The doc set
 
