@@ -79,7 +79,7 @@ The agent pushes back when something does not fit. It keeps it up until you deci
 
 **Status:** ✅
 
-You see each change as its skeleton first and then as a diff of before and after. The agent writes each point into its doc once you agree it, and nothing before. It commits the change once you approve it.
+You see each change before it is committed. The agent writes each point into its doc once you agree it, and nothing before. It commits the change once you approve it.
 
 **Stories:**
 

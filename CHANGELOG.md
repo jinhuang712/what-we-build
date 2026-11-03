@@ -17,11 +17,11 @@
 - It leaves the outcome open until it has discussed it with you.
 - It talks in whatever way the moment needs, and the skill sets no modes for when to discuss, brainstorm or decide.
 - Each point goes into its doc as soon as you agree it, so an agreed point never lives only in the window.
-- You see each change as its skeleton first and then as a diff of before and after.
+- You see each change before it is committed.
 - Nothing is committed before you approve it.
 - You approve in the conversation, and no doc carries a mark any more.
 - The agent re-reads the whole doc before any edit, even of one word.
-- When you stop the agent, it stops at once and reports only when it pauses on its own.
+- When you stop the agent, it stops at once.
 - A point still open waits in TODO.md, so the work can stop at any time.
 - When docs already exist, `/what-we-build` tells you where the work stands, what is still open and which docs may have fallen behind it.
 - An idea, running code and old docs are all material for the talk, so the agent discusses them with you instead of moving their text.

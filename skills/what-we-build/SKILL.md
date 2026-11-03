@@ -80,16 +80,12 @@ Work through the core docs in order, since each builds on the ones before it:
 
 `PROPOSAL.md` → `PHILOSOPHY.md` → `DESIGNS.md` → `GOALS.md` → `FEATURES.md` → `ROADMAP.md` → `README.md`
 
-Talk each doc through with the user, and write each point into it as soon as it is agreed. Nothing goes in before that. A new doc and every later change then go through the same loop:
+Talk each doc through with the user, and write each point into it once it is agreed.
 
-1. Show the user the change: its skeleton first, then a diff of before and after.
-2. Wait for the user to approve it.
-3. Commit it.
-
+- The user sees every change before it is committed.
 - Only the user approves.
 - A point still open goes to `TODO.md` as a `DISCUSSION`, so the work can stop at any time.
 - Re-read the whole doc before any edit, even of one word.
-- When you pause on your own, first report each doc's status and the open questions.
 
 A claim needs its proof. Check a behavior claim by running it, or mark it "not yet verified". A goal is met only with a measurement or the user's own report.
 
