@@ -16,8 +16,8 @@
 - What FEATURES called a part is now a sub-feature, so *part* means only a piece of the project.
 - Every guide is written in the same tagged lines.
   - Before, a guide had lists such as *Owns* and *Push back on*.
-  - Now *What it holds* says what goes in or elsewhere, and *How to write it* says how.
-  - Lines that said the same thing twice are gone, so the guides are 67 lines shorter.
+  - Now one *What is it* list says what goes in, what goes elsewhere and how to write it.
+  - Lines that said the same thing twice are gone, so the guides are 121 lines shorter.
 - `SKILL.md` is written in the same tagged lines, and its tables stay.
 - The agent reads every doc it works on in full and never hands a doc to a subagent.
 - When you stop the agent, it stops every agent it started and every agent those started.

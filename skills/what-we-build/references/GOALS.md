@@ -2,12 +2,18 @@
 
 GOALS.md turns the wants in the proposal into checks. It keeps the project honest: when someone claims progress, this is where the claim is tested. ROADMAP uses these goals as its exit criteria.
 
-## What it holds
+## What is it
 
 Point anything a [NO] line rules out to its home, or push back when it has none.
 
 - [YES]   the goals of each kind with how each is checked.
 - [YES]   the last result of each check with its date.
+- [YES]   give each goal an ID that never changes so ROADMAP can point to it.
+- [YES]   let the letter of the ID name its kind as the skeleton shows.
+- [YES]   open with a Summary, an ASCII tree in a code block of every goal by kind with its status and a short description.
+- [YES]   write under each label what the goal needs in whatever form fits.
+- [YES]   write the formula of every number in a code block with its sample and unit beside it.
+- [YES]   say where and when each number was measured.
 - [NO]    anything vague.
 - [NO]    a feature the project will not build, which FEATURES lists under *Not planned*.
 - [NO]    how anything works, which `specs/` holds.
@@ -19,6 +25,7 @@ Point anything a [NO] line rules out to its home, or push back when it has none.
 - [NO]    a comparison with nothing to compare against.
 - [NO]    a constraint nobody could check.
 - [NO]    a "met" with no dated measurement or report from the user.
+- [WHEN]  a number is not known: leave it open.
 
 ## Goal
 
@@ -58,16 +65,6 @@ A constraint is a condition the product must always meet, checked on the product
 ## When to check
 
 Every goal stands all the time, but its check runs only at a moment that calls for it. ROADMAP says when it starts: a goal can run from the first checkpoint whose exit criteria point to it. From then on it runs at the end of each checkpoint or before a release, and at those moments you go through every goal that can run. A small change runs no goal check, because the rules it touched are checked where they live.
-
-## How to write it
-
-- [YES]   give each goal an ID that never changes so ROADMAP can point to it.
-- [YES]   let the letter of the ID name its kind as the skeleton shows.
-- [YES]   open with a Summary, an ASCII tree in a code block of every goal by kind with its status and a short description.
-- [YES]   write under each label what the goal needs in whatever form fits.
-- [YES]   write the formula of every number in a code block with its sample and unit beside it.
-- [YES]   say where and when each number was measured.
-- [WHEN]  a number is not known: leave it open.
 
 ## You have it when
 

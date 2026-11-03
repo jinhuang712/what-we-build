@@ -2,7 +2,9 @@
 
 The specs folder explains how each part of the project works, like a technical design written for readers outside the team. A spec reads like a short paper: prose that explains, with ASCII diagrams where several parts talk to each other. A reader who has not seen the code can follow how the part works.
 
-## What it holds
+## What is it
+
+A spec and the code guide each other.
 
 - [YES]   the mechanism of one part of the project in a file of its own.
 - [NO]    what the user sees, which FEATURES holds.
@@ -10,6 +12,9 @@ The specs folder explains how each part of the project works, like a technical d
 - [NO]    the forks behind it, which `specs/decisions/` holds.
 - [NO]    the options weighed on the way, since they are process files.
 - [WHEN]  the project has a visual interface: it keeps `specs/UIUX.md` with the final screens in `prototype/*.html`, as the [UIUX](UIUX.md) guide says.
+- [WHEN]  a spec is drafted first: it guides the code.
+- [WHEN]  a better implementation lands: it updates the spec.
+- [WHEN]  they disagree: tell the user and let them decide.
 
 ## Part
 
@@ -19,15 +24,6 @@ The specs folder explains how each part of the project works, like a technical d
 - [NO]    a single code file.
 - [MAYBE] the same name as a FEATURES group, as *Hooks* can be both.
 - [WHEN]  a part grows too large for a short paper: it splits into specs of its own.
-
-## A spec and the code
-
-A spec and the code guide each other.
-
-- [NO]    a spec that silently disagrees with the code.
-- [WHEN]  a spec is drafted first: it guides the code.
-- [WHEN]  a better implementation lands: it updates the spec.
-- [WHEN]  they disagree: tell the user and let them decide.
 
 ## You have it when
 

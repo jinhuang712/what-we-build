@@ -4,7 +4,7 @@ UIUX.md explains how the product looks and moves. The screens are how the storie
 
 It is a spec in `specs/`.
 
-## What it holds
+## What is it
 
 Point anything a [NO] line rules out to its home, or push back when it has none.
 
@@ -14,6 +14,11 @@ Point anything a [NO] line rules out to its home, or push back when it has none.
 - [YES]   the states, how urgent each one looks and which may interrupt the user.
 - [YES]   the colors, type and motion that carry meaning.
 - [YES]   the keyboard and accessibility.
+- [YES]   list the screens in a table with a link to each page, so this doc is the prototype's navigation.
+- [YES]   draw each flow as an ASCII diagram with the screens it passes in order and where it can fail.
+- [YES]   link each flow up to its story in FEATURES and to each page it passes.
+- [YES]   rank the states by urgency so a minor state never looks like an error.
+- [YES]   name the code that holds the numbers instead of copying them.
 - [NO]    what the user does and why, which FEATURES holds.
 - [NO]    the guidelines the design must meet, which DESIGNS holds.
 - [NO]    the forks behind a screen, which `specs/decisions/` holds.
@@ -23,14 +28,6 @@ Point anything a [NO] line rules out to its home, or push back when it has none.
 - [NO]    a screen with no page in `prototype/` or a page with no screen here.
 - [NO]    a second index of the pages, such as `prototype/index.html`.
 - [NO]    a rule with no reason, since it is broken the first time it gets in the way.
-
-## How to write it
-
-- [YES]   list the screens in a table with a link to each page, so this doc is the prototype's navigation.
-- [YES]   draw each flow as an ASCII diagram with the screens it passes in order and where it can fail.
-- [YES]   link each flow up to its story in FEATURES and to each page it passes.
-- [YES]   rank the states by urgency so a minor state never looks like an error.
-- [YES]   name the code that holds the numbers instead of copying them.
 - [WHEN]  a screen changes: change its page in the same change.
 
 ## You have it when

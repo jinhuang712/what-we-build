@@ -2,7 +2,7 @@
 
 RUNBOOK.md is for the person keeping a service running. It is read under pressure, so each procedure is short and exact.
 
-## What it holds
+## What is it
 
 - [YES]   deploy.
 - [YES]   rollback.

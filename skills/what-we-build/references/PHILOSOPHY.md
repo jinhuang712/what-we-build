@@ -10,7 +10,7 @@ It is a set of questions about the world the project works in. Each has a stance
 
 It comes second, after the proposal. DESIGNS builds on its stances.
 
-## What it holds
+## What is it
 
 Point anything a [NO] line rules out to its home, or push back when it has none.
 
@@ -18,12 +18,15 @@ Point anything a [NO] line rules out to its home, or push back when it has none.
 - [YES]   the questions it takes a stance on with their arguments.
 - [YES]   quotes from sources that shaped or tested them.
 - [YES]   the sources when there are any.
+- [YES]   argue in prose with a list or a table wherever it shows the thought better.
+- [YES]   state each stance as one quotable line and then argue it.
 - [NO]    a feature or a screen, which FEATURES holds.
 - [NO]    how the project is built, which DESIGNS holds.
 - [NO]    a stance with no argument.
 - [NO]    a stance that sounds deep and says nothing.
 - [NO]    a quote that decorates and does not test.
 - [NO]    a quote nobody checked.
+- [NO]    a stance the project does not truly hold, since an empty section is worse than a missing one.
 
 ## What you are after
 
@@ -69,12 +72,6 @@ It starts from whatever the user brings, in any form.
 A pool of words and scenes to grow questions from. Pick what fits this user, and make the question yourself. Never ask them all.
 
 what goes first · two good things collide · what is left behind · the clumsy way · someone copies it · taste · red line · the start · elegance · taken for granted · rather have nothing · believe · what they already know · someone asks for a feature · trade-off · the fear · sacrifice · a counterexample · two people argue · the heir reads this · the day you quit · everyone assumes · collapse · where they are right · even if it pays · what failure looks like · underrated · who pays · growing bigger · why now · who is responsible · day one hundred · the popular way · not for whom · rough but right · the end · responsibility · slow · left unfinished · freedom or constraint · bottom line · polish · cannot have both · who the user is · cost · never · trust · actually not · the exit condition · good enough · another road · what they refuse to do · for whom · what should not exist · fast · peers · the rival's way · power · a newcomer joins · flavor · the criticized way · going astray · against whom · where we fall short · the boss says add one more · can but won't · what stays · why others do it · adding a feature · the old way · more · why not before · what changes · looking back at this decision · simple or powerful · temptation · an incident at midnight · less · who would be let down · a year later · the clever way · who yields · counterintuitive · quiet decay · an incident · overrated · a changing world · fast or right · who decides · never said aloud · a case nobody foresaw · if it were the opposite · refuse · day one · the field's common sense · ten years from now · ugly · the regret · veto · predecessors
-
-## How to write it
-
-- [YES]   argue in prose with a list or a table wherever it shows the thought better.
-- [YES]   state each stance as one quotable line and then argue it.
-- [NO]    a stance the project does not truly hold, since an empty section is worse than a missing one.
 
 ## Skeleton
 

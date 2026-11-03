@@ -2,19 +2,14 @@
 
 CONTRIBUTING.md tells outside contributors how to help. GitHub links it from issues and pull requests.
 
-## What it holds
+## What is it
 
 - [YES]   setup.
 - [YES]   how work flows through branches, commits and reviews.
-- [YES]   the checks that must pass.
 - [YES]   where to ask.
-- [NO]    how to install it for use, which INSTALL holds.
-
-## How to write it
-
 - [YES]   state the bar for a change so contributors know before they invest.
 - [YES]   list the checks that must pass with the script that runs them.
-- [WHEN]  no script runs the checks yet: name each command.
+- [NO]    how to install it for use, which INSTALL holds.
 
 ## You have it when
 

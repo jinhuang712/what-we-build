@@ -4,11 +4,11 @@ DESIGNS.md holds the project's design guidelines: the few hard commitments the w
 
 It comes third in the doc order, right after the philosophy. The design guides the features, so it comes before them.
 
-## What it holds
+## What is it
 
 Point anything a [NO] line rules out to its home, or push back when it has none.
 
-- [YES]   the guidelines in a numbered list.
+- [YES]   open with the numbered guidelines so a reader sees the whole design at a glance.
 - [YES]   why each holds and what it costs.
 - [YES]   the question each asks of a new requirement.
 - [YES]   links from each to its decisions and specs.
@@ -25,13 +25,6 @@ Point anything a [NO] line rules out to its home, or push back when it has none.
 - [NO]    a mechanism, such as *a hook runs before each tool call*.
 - [NO]    a feature, such as *resume a session*.
 - [NO]    a value every team would sign, such as *keep it simple*.
-
-## How to write it
-
-- [YES]   open with the numbered guidelines so a reader sees the whole design at a glance.
-- [YES]   give each a short section on why it holds and what it costs.
-- [YES]   give each the question it asks of a new requirement.
-- [NO]    a guideline with its cost left out.
 
 ## You have it when
 

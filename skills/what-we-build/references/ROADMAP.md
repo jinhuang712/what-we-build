@@ -2,13 +2,15 @@
 
 ROADMAP.md answers "when?" and "how far along?". It breaks the work into checkpoints, each a usable or proven state of the project. It shows where the work stands. It schedules features and does not describe them.
 
-## What it holds
+## What is it
 
 Point anything a [NO] line rules out to its home, or push back when it has none.
 
 - [YES]   checkpoints in order.
 - [YES]   their tasks and progress.
 - [YES]   exit criteria that point to GOALS.
+- [YES]   open with a Summary, an ASCII tree in a code block of every checkpoint and its items with their status.
+- [YES]   keep the first checkpoint small enough to finish soon.
 - [NO]    feature behavior and the *Later* list, which FEATURES holds.
 - [NO]    open questions, which TODO holds.
 - [NO]    their answers once decided, which `specs/decisions/` holds.
@@ -22,12 +24,6 @@ Point anything a [NO] line rules out to its home, or push back when it has none.
 - [NO]    a bag of tasks, such as *bugs found last week*.
 - [NO]    a date or a version alone.
 - [MAYBE] a release, when it ships what the checkpoint delivers.
-
-## How to write it
-
-- [YES]   open with a Summary, an ASCII tree in a code block of every checkpoint and its items with their status.
-- [YES]   keep the first checkpoint small enough to finish soon.
-- [WHEN]  a checkpoint is done: mark it ✅ and point *Current checkpoint* to the next one.
 
 ## You have it when
 
