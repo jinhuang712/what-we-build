@@ -4,20 +4,23 @@ What goes in is a project folder and a conversation with the user. What comes ou
 
 what-we-build is designed around 6 guidelines:
 
-1. **A short core with detail on demand:** `SKILL.md` holds only what the agent always needs and points to the guides.
+1. **A short core with detail beside it:** `SKILL.md` holds only what the agent always needs, and the agent reads every guide with it.
 2. **The docs are the state:** with git beside them, they hold where the work stopped.
 3. **No dependencies:** the skill is Markdown only.
 4. **Our own words over borrowed text:** methods from other guides are rewritten and never copied.
 5. **Examples the reader knows:** an example comes from this repo or from the stable ideas of a well-known tool.
-6. **Trust the model:** a guide says what a doc is for and leaves the method to the model.
+6. **Hard rules for the doc, the method left to the model:** a guide fixes what a doc must and must not be, and leaves how to work to the model.
 
-## 1. A short core with detail on demand
+## 1. A short core with detail beside it
 
-The agent reads `SKILL.md` in full each time the skill starts, so it holds only what the agent always needs. Each doc's guide waits in `references/` until a step points to it. `SKILL.md` stays within a line limit. The cost is that a step must name its guide, or the agent never reads it.
+The agent reads `SKILL.md` and every guide in full each time the skill starts and after each compaction. A guide left for a step to point to was never read: in four runs before 2026-11-04 the agents read the guides only when the user told them to, and some handed them to a subagent. `SKILL.md` still holds only what the agent always needs and stays within a line limit, so the detail sits in the guides. The cost is about 1,500 lines read at every start.
 
-**Ask:** does the agent always need this, or only the step that writes one doc?
+**Ask:** is this needed for every doc, or only for one?
 
-- **Decisions:** [001: One skill holds every start](specs/decisions/001-one-skill-for-every-start.md) and [005: One guide file per kind of doc](specs/decisions/005-one-guide-per-kind-of-doc.md)
+- **Decisions:**
+  - [001: One skill holds every start](specs/decisions/001-one-skill-for-every-start.md)
+  - [005: One guide file per kind of doc](specs/decisions/005-one-guide-per-kind-of-doc.md)
+  - [034: The rules for a doc are hard and every guide is read at the start](specs/decisions/034-hard-rules-and-every-guide-read.md)
 
 ## 2. The docs are the state
 
@@ -25,7 +28,9 @@ Each point goes into its doc as soon as the user agrees it, and a point still op
 
 **Ask:** does this need a file other than the docs to remember it?
 
-- **Decisions:** [008: A resume with nothing to draft looks for drift](specs/decisions/008-resume-looks-for-drift.md) and [024: Approval lives in the conversation](specs/decisions/024-approval-lives-in-the-conversation.md)
+- **Decisions:**
+  - [008: A resume with nothing to draft looks for drift](specs/decisions/008-resume-looks-for-drift.md)
+  - [024: Approval lives in the conversation](specs/decisions/024-approval-lives-in-the-conversation.md)
 
 ## 3. No dependencies
 
@@ -41,7 +46,9 @@ The rules take methods from other writing guides and rewrite them for this skill
 
 **Ask:** is any passage copied from somewhere else?
 
-- **Decisions:** [004: Our own skill over jig's `vision-elicitation`](specs/decisions/004-our-own-skill-over-vision-elicitation.md) and [006: Three ideas from mattpocock/skills over the whole guide](specs/decisions/006-three-ideas-from-mattpocock-skills.md)
+- **Decisions:**
+  - [004: Our own skill over jig's `vision-elicitation`](specs/decisions/004-our-own-skill-over-vision-elicitation.md)
+  - [006: Three ideas from mattpocock/skills over the whole guide](specs/decisions/006-three-ideas-from-mattpocock-skills.md)
 
 ## 5. Examples the reader knows
 
@@ -51,10 +58,15 @@ An example comes from this repo or from the stable ideas of a well-known tool, s
 
 - **Decisions:** [027: Examples come from a tool the reader knows](specs/decisions/027-examples-from-a-known-tool.md)
 
-## 6. Trust the model
+## 6. Hard rules for the doc, the method left to the model
 
-A guide says what a doc is for and what goes wrong. It leaves the method to the model, because a model told every step stops using its judgment. One run followed a guide's "table: pain → what the project does" to the letter, and the user rejected the tables. The cost is that two runs may write the same doc differently.
+A guide says what a doc must and must not be, in rules that leave no way around them. A rule that leaves room is read as a choice, and an agent busy with a task takes the shorter way. In four runs before 2026-11-04 the agents numbered nothing, split nothing into a second level and linked specs to each other until the user stepped in, and one then replaced the links with plain-text pointers. How to do the work stays with the model, because a model told every step stops using its judgment. One run followed a guide's "table: pain → what the project does" to the letter, and the user rejected the tables. The cost is a longer list of `[NO]` lines in each guide.
 
-**Ask:** does this teach the model something it already knows?
+**Ask:** does this fix what the doc must be, or does it teach the model a method?
 
-- **Decisions:** [026: The skill says what the agent must do, not each step](specs/decisions/026-the-skill-says-what-not-how.md), [028: A guide says what its doc's core idea is and is not](specs/decisions/028-a-guide-says-what-its-core-idea-is-and-is-not.md), [029: A guide is written in tagged lines](specs/decisions/029-a-guide-is-written-in-tagged-lines.md) and [031: The skill leaves the form of the talk open](specs/decisions/031-the-skill-leaves-the-form-of-the-talk-open.md)
+- **Decisions:**
+  - [026: The skill says what the agent must do, not each step](specs/decisions/026-the-skill-says-what-not-how.md)
+  - [028: A guide says what its doc's core idea is and is not](specs/decisions/028-a-guide-says-what-its-core-idea-is-and-is-not.md)
+  - [029: A guide is written in tagged lines](specs/decisions/029-a-guide-is-written-in-tagged-lines.md)
+  - [031: The skill leaves the form of the talk open](specs/decisions/031-the-skill-leaves-the-form-of-the-talk-open.md)
+  - [034: The rules for a doc are hard and every guide is read at the start](specs/decisions/034-hard-rules-and-every-guide-read.md)

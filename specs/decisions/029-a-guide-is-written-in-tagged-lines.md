@@ -4,7 +4,7 @@ Decided: 2026-11-03
 
 ## The problem
 
-After [028: A guide says what its doc's core idea is and is not](028-a-guide-says-what-its-core-idea-is-and-is-not.md), a guide mixed two styles. Its core idea read as `[YES]` and `[NO]` lines, while the rest stayed as *Owns*, *Leaves out*, *Push back on* and bold *Guidelines*. The user found the tagged lines clearer and asked for the whole guide in them. Several old lists also said one thing twice, such as a *Push back on* item that repeated an *Owns* line.
+Once a guide defined its doc's core idea in tagged lines, it mixed two styles. Its core idea read as `[YES]` and `[NO]` lines, while the rest stayed as *Owns*, *Leaves out*, *Push back on* and bold *Guidelines*. The user found the tagged lines clearer and asked for the whole guide in them. Several old lists also said one thing twice, such as a *Push back on* item that repeated an *Owns* line.
 
 ## The choice
 
@@ -13,7 +13,7 @@ Every guide has the same sections:
 | Section | Holds |
 |---|---|
 | *What is it* | what goes in, what goes elsewhere or is pushed back on, and the form, in one list |
-| the core idea | the block from 028, where a model blurs it |
+| the core idea | the block of tagged lines that defines it, where a model blurs it |
 | *You have it when* | the checks, unchanged |
 | *Skeleton* | the form, unchanged |
 

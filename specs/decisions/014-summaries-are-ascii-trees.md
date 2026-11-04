@@ -1,10 +1,10 @@
 # 014. Summaries are ASCII trees
 
-Decided: 2026-11-02 and 2026-11-03
+Decided: 2026-11-03
 
 ## The problem
 
-FEATURES, ROADMAP and GOALS each hold many entries in groups and parts, such as a feature with its sub-features or a checkpoint with its items. A reader needs to see all of them at once before reading any section. A summary written as flat text or a table hid how the entries nest, and a summary is only as good as the names it gives each entry.
+FEATURES, ROADMAP and GOALS each hold many entries in groups and parts, such as a feature with its sub-features or a checkpoint with its items. A reader needs to see all of them at once before reading any section. A summary written as flat text or a table hid how the entries nest, and a summary is only as good as the names it gives each entry. The tree was chosen on 2026-11-02 and its lines took their form on 2026-11-03.
 
 ## The choice
 

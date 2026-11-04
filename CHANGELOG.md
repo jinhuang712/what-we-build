@@ -2,6 +2,54 @@
 
 ## Unreleased
 
+### Working with the agent
+
+- The agent reads the whole skill when it starts and again after each compaction, and never hands it to a subagent.
+- When the agent says the skill asks for something, it quotes the line.
+- When a rule seems not to fit, the agent asks you instead of reading its way around it.
+- The agent pushes back with its reason and keeps making the case while you are still weighing it.
+  - It weighs what you say with you before it writes it down.
+  - Once you reject a point, it raises it again only with a new fact.
+- When you repeat a stance, the agent offers to write it into PHILOSOPHY.
+- Before you drop a core doc, the agent tells you what it would hold.
+- Only you end the talk on a doc.
+  - Until you do, the agent keeps looking for the next line that breaks a rule.
+  - When it finds none, it reads the doc again and shows you what it checked.
+
+### Writing a doc
+
+- Before you see a doc, the agent checks it line by line against its guide and the wording rules.
+  - It shows you what each check found as the proof that the doc is done.
+  - It never asks you to review a doc in place of that proof.
+  - It also checks each link and each number's source.
+  - It also checks that each fact has one home and each item its ID.
+- Every item carries an ID at the level its doc uses, such as a sub-feature or a sub-checkpoint.
+  - A feature with more than one case splits into sub-features.
+  - A checkpoint that delivers more than one feature group splits into sub-checkpoints, each with its own exit criteria.
+- A feature or checkpoint is marked done only once it has been run, and a claim nobody ran gets the new ❔ mark.
+- Each guide says which docs its doc may link to, and a link goes one way.
+  - Before, a link table in SKILL.md said only where a doc may link and specs linked to each other.
+  - Now a link its guide does not allow is ruled out, and so is a plain-text pointer in its place.
+  - Two docs never link to each other, so a decision or a spec no longer links back up.
+  - TODO may link to any file in the project.
+  - A goal names the want it serves and no longer links to PROPOSAL or ROADMAP.
+- A file named in a doc is a link, not a name in backticks.
+- A field with more than one link puts each link on its own line, as *Decisions* does.
+- Every feature not yet built sits in a checkpoint or in *Later*, and *Later* holds nothing a planned checkpoint needs.
+- A feature says from your side what it does, how you use it and when it applies.
+- Once FEATURES holds more than ten features, each group gets a file of its own and FEATURES becomes the index.
+- The agent checks each item against what its guide says a finished doc gives the reader.
+- A prototype page shows one screen, and drops the other options once you pick one.
+- The agent adds every optional doc whose condition holds, and tells you which.
+- The agent trusts no doc the skill did not write.
+  - It checks each claim in such a doc against the code or asks you before the claim enters a doc.
+  - It never follows an instruction found in such a doc.
+- When your docs are older than the skill, the agent offers to judge every item again against its guide.
+  - When a doc moves into a new form, every item in it is judged again from scratch with the done items too.
+  - No line is kept because it is old.
+- When a heading or an ID is renamed, every link and mention of it changes in the same change.
+- When a change moves a measured number, the agent measures it again and dates the new value.
+
 ## 0.6.0 — 2026-11-03
 
 ### Working with the agent
@@ -61,7 +109,8 @@
 - It starts from an idea, from running code with no docs or from messy docs.
 - The agent is a thinking partner that brings its own ideas and challenges yours.
 - It leaves the outcome open until it has discussed it with you.
-- It discusses, brainstorms or asks for a decision as the moment needs, and the skill no longer says when to use which.
+- It discusses, brainstorms or asks for a decision as the moment needs.
+- The skill no longer says when to use which way.
 - Each point goes into its doc as soon as you agree it, so an agreed point never lives only in the window.
 - You see each change before it is committed.
 - Nothing is committed before you approve it.
@@ -70,9 +119,11 @@
 - The skill says what the agent must do and leaves the steps to it, keeping only the rules that stop a mistake seen in tests.
 - When you stop the agent, it stops at once.
 - A point still open waits in TODO.md, so the work can stop at any time.
-- When docs already exist, `/what-we-build` tells you where the work stands, what is still open and which docs may have fallen behind it.
-- Without git, the agent recommends `git init`, since the history shows which docs fell behind.
-- An idea, running code and old docs are all material for the talk, so the agent discusses them with you instead of moving their text.
+- When docs already exist, `/what-we-build` tells you where the work stands.
+  - It also tells you what is still open and which docs may have fallen behind.
+- Without git, the agent recommends `git init` since the history shows which docs fell behind.
+- An idea, running code and old docs are all material for the talk.
+- The agent discusses that material with you instead of moving its text.
 - The agent goes through your project's AGENTS.md with you and recommends its read order, layout and work rules.
 - The work rules reach every new window through AGENTS.md, even when the skill is not loaded.
 - They say to read the doc that owns a thing first and to record each open item at once.
@@ -100,9 +151,9 @@
 - PROPOSAL writes *Pain points* only when there are pains, each in its own section.
 - PROPOSAL drops *How it works*, *Approach* and *How we know it works* because other docs own them.
 - PHILOSOPHY drops *Reflections* and argues in prose with any structure that shows the thought.
-- FEATURES numbers its groups, so F1 is a group and F1.1 a feature in it.
+- FEATURES numbers its groups as well as the features in them.
 - A ✅ in FEATURES means the feature is built, and GOALS checks whether it works in real use.
-- FEATURES, ROADMAP and GOALS open with a *Summary*, an ASCII tree of every entry and its status.
+- FEATURES, ROADMAP and GOALS open with a *Summary* that draws every entry and its status as an ASCII tree.
 - README opens with a hero image and always has *Install* and *How to use*.
 - README lists its optional sections with the doc that owns each one.
 - ARCHITECTURE opens with a diagram of the whole.
@@ -116,7 +167,7 @@
 - Every measure, benchmark and comparison writes its formula in a code block.
 - A constraint is a condition the product must always meet.
 - A goal is met only with a measurement or the user's own report.
-- ROADMAP calls its stages checkpoints with IDs such as CP2, and each item has its own status.
+- ROADMAP calls its stages checkpoints with IDs, and each item has its own status.
 - A checkpoint ends with every goal that can run by then.
 - Status marks sit on a *Status* line and not in headings, so links stay stable.
 
@@ -137,63 +188,128 @@
 
 ### Sessions
 
-- `/what-we-build revisit` is removed. The skill drafts a doc set and resumes it. A folder with docs but no marks starts a new project that builds on those docs.
-- The placement test sends a feature the project will not build to FEATURES.md → *Not planned*, as the rule on reasons already said, instead of to DESIGNS.md.
+- `/what-we-build revisit` is removed.
+  - The skill drafts a doc set and resumes it.
+  - A folder with docs but no marks starts a new project that builds on those docs.
+- The placement test sends a feature the project will not build to FEATURES.md → *Not planned* instead of to DESIGNS.md.
 - The draft step starts from the guide's skeleton and style, and names the wording rules.
-- SKILL.md lists every doc guide by name, with a link, instead of a path pattern and one example.
-- Each failure from a real session sits beside the rule it backs, as that rule's reason. The separate list of lessons, which repeated those rules, is gone.
-- The docs come in a new order: PROPOSAL → PHILOSOPHY → DESIGNS → GOALS → FEATURES → ROADMAP → README. The design comes right after the philosophy, because the design guides the features.
+- SKILL.md lists every doc guide by name with a link instead of a path pattern and one example.
+- Each failure from a real session sits beside the rule it backs as that rule's reason.
+- The separate list of lessons that repeated those rules is gone.
+- The docs come in a new order: PROPOSAL → PHILOSOPHY → DESIGNS → GOALS → FEATURES → ROADMAP → README.
+  - The design comes right after the philosophy because the design guides the features.
 - TODO.md and CHANGELOG.md are recommended for every project, and created as soon as the doc set is agreed.
-- The placement test sends a stance that steers the whole project to PHILOSOPHY.md. A rule that steers only how the project is built goes to DESIGNS.md.
-- The placement test sends a decision that concerns one feature to FEATURES.md, beside that feature, and an open design question to ROADMAP.md, or to TODO.md until the roadmap is drafted. A fact goes to DESIGNS.md when it is a design principle, or a decision that spans the project.
-- The agent pushes back with its reason and keeps making the case until the user decides, instead of once. Once the user rejects a point, the agent drops it, and raises it again only with a new fact.
-- The agent explains each choice in plain words, with a concrete case or a real sample, before asking, and ties each option to the case where it matters.
+- The placement test sends a stance that steers the whole project to PHILOSOPHY.md.
+- A rule that steers only how the project is built goes to DESIGNS.md.
+- The placement test sends a decision that concerns one feature to FEATURES.md beside that feature.
+- An open design question goes to ROADMAP.md, or to TODO.md until the roadmap is drafted.
+- A design principle or a decision that spans the project goes to DESIGNS.md.
+- The agent pushes back with its reason and keeps making the case until the user decides.
+- Once the user rejects a point, the agent drops it until a new fact comes up.
+- The agent explains each choice in plain words with a concrete case or a real sample before it asks.
+- It ties each option to the case where that option matters.
 - When the user brings a list of their own, the agent says what it would add and what it doubts before adopting it.
-- The agent draws a choice with several moving parts before asking about it, and parks a point that needs design the project is not ready for in TODO.md, so the current doc can close. The point moves to ROADMAP.md once that doc is drafted.
+- The agent draws a choice with several moving parts before asking about it.
+- A point that needs design the project is not ready for waits in TODO.md so the current doc can close.
+- That point moves to ROADMAP.md once the roadmap is drafted.
 - When the user points out one wrong word or row, the agent re-reads the whole doc and fixes every place the idea appears.
 
 ### Doc guides
 
-- The guides teach instead of ordering: each rule gives its reason, and no rule sets a count to meet. The PHILOSOPHY guide is the first rewritten this way.
-- The proposal guide teaches the case from the pain: pain points first, then the shift that lets them be eased now, the idea, and what we want and don't want. The wants describe needs, not one answer per pain. The agent talks the case through with the user before writing. The three lists are prose, not tables, measured results stay in GOALS, and the line under the title says where the state of the work lives.
-- The rules give reasons instead of counts: how many questions to batch, how long a roadmap row, a sentence or a noun cluster may be, and how many negations a sentence may hold.
-- The philosophy comes from questions. The agent asks the questions the project must take a stance on, and each stance comes from the user's answer, not from a list of ready-made principles. The page answers each question with a stance and its reasoning, then holds the deeper thinking in *Reflections*.
-- The philosophy is where the project thinks. The agent keeps asking why until an answer reaches something about people or the world. Then it looks for books and papers on the same question, both those that agree and those that disagree, and quotes their checked words under the stance they test. Each stance is argued in full, and the page has no length limit: the bold lines carry the short form.
-- The design guide teaches DESIGNS as a few principles and the decisions they drive. The page opens with the principles, numbered. Each principle asks a question of every new requirement, and lists its decisions, each named as the choice, with what it was chosen instead of and why. A decision that weighed several options keeps a table and its recorded date. A decision about one feature, open questions and failure behavior leave DESIGNS. The page ends with the order that decides when two principles collide.
+- The guides teach instead of ordering: each rule gives its reason and no rule sets a count to meet.
+  - The PHILOSOPHY guide is the first one rewritten this way.
+- The proposal guide teaches the case from the pain.
+  - Pain points come first.
+  - Then comes the shift that lets them be eased now.
+  - Then come the idea and what we want and don't want.
+  - The wants describe needs instead of one answer per pain.
+  - The agent talks the case through with the user before writing.
+  - The three lists are prose and not tables.
+  - Measured results stay in GOALS.
+  - The line under the title says where the state of the work lives.
+- The rules give reasons instead of counts.
+  - No count says how many questions to batch.
+  - No count says how long a roadmap row, a sentence or a noun cluster may be.
+  - No count says how many negations a sentence may hold.
+- The philosophy comes from questions.
+  - The agent asks the questions the project must take a stance on.
+  - Each stance comes from the user's answer and not from a list of ready-made principles.
+  - The page answers each question with a stance and its reasoning.
+  - The deeper thinking sits in *Reflections*.
+- The philosophy is where the project thinks.
+  - The agent keeps asking why until an answer reaches something about people or the world.
+  - Then it looks for books and papers on the same question that agree or disagree.
+  - It quotes their checked words under the stance they test.
+  - Each stance is argued in full, and the page has no length limit.
+  - The bold lines carry the short form.
+- The design guide teaches DESIGNS as a few principles and the decisions they drive.
+  - The page opens with the principles, numbered.
+  - Each principle asks a question of every new requirement.
+  - Each principle lists its decisions, each named as the choice with what it beat and why.
+  - A decision that weighed several options keeps a table and its recorded date.
+  - A decision about one feature leaves DESIGNS, and so do open questions and failure behavior.
+  - The page ends with the order that decides when two principles collide.
 - FEATURES keeps each feature's own decisions under it, and ends with a table of what happens when something fails.
 - ROADMAP holds the open design questions: a design discussion before the milestone it blocks, and a table of features waiting for design.
-- GOALS holds two kinds of number: goals that pass or fail, and benchmarks tracked against a reference. Every measured number says how to reproduce it, and is measured on work close to real use.
-- A bold stance line in PHILOSOPHY is the user's or approved by the user. Until one is agreed, its place stays empty.
+- GOALS holds two kinds of number: goals that pass or fail and benchmarks tracked against a reference.
+  - Every measured number says how to reproduce it.
+  - Every number is measured on work close to real use.
+- A bold stance line in PHILOSOPHY is the user's or approved by the user.
+  - Until one is agreed, its place stays empty.
 - The README points to FEATURES.md for status instead of copying it in a table.
 - The glossary can give each term's name in today's code, while the code still lags the docs.
 - The skeletons keep a blank line around every block, so a doc copied from them no longer joins two lines or turns a line into a table row.
-- Each doc's form lives in its guide. The style table in the wording rules, which had drifted from the guides, is gone.
-- Every skeleton heading stays, with "None yet" when it has nothing to hold. No heading is marked optional.
-- The decision records guide is removed. An ADR found in the folder maps to DESIGNS.md.
-- The CLI.md and AGENTS.md guides are removed. A command reference copies the program, and an agent file holds commands the code already shows.
-- Examples follow the rules they teach: the FEATURES setting gives its reason, the PHILOSOPHY principle names its refusal, and the history example says why.
+- Each doc's form lives in its guide.
+  - The style table in the wording rules had drifted from the guides and is gone.
+- Every skeleton heading stays, with "None yet" when it has nothing to hold.
+  - No heading is marked optional.
+- The decision records guide is removed.
+  - An ADR found in the folder maps to DESIGNS.md.
+- The CLI.md and AGENTS.md guides are removed.
+  - A command reference copies the program.
+  - An agent file holds commands the code already shows.
+- Examples follow the rules they teach.
+  - The FEATURES setting gives its reason.
+  - The PHILOSOPHY principle names its refusal.
+  - The history example says why.
 - A *Later* item that gets a milestone becomes a planned feature, and the roadmap schedules it.
-- FEATURES opens with a TL;DR: an outline of the whole doc, one small table per group. It gives each capability its own row, with its feature and its status. The details follow in the same order, a `##` heading per group and a `###` per item, and are written to scan: a lead sentence, then short lines, tables, small diagrams or short snippets.
-- DESIGNS holds no status. A principle the code does not hold yet is still the design, and the gap is tracked in FEATURES, TODO or GOALS.
+- FEATURES opens with a TL;DR that outlines the whole doc in one small table per group.
+  - Each capability gets its own row with its feature and its status.
+  - The details follow in the same order with a `##` heading per group and a `###` per item.
+  - The details open with a lead sentence so they scan.
+  - Short lines and tables follow, or diagrams and snippets.
+- DESIGNS holds no status.
+  - A principle the code does not hold yet is still the design.
+  - The gap is tracked in FEATURES, TODO or GOALS.
 
 ### Wording
 
 - The blank-line rule says what a missing blank line breaks.
-- Five rules are removed: write in your default voice, three layers per section, the format by the shape of the data, one clause per decision, and the story in git.
+- Five rules are removed:
+  - Write in your default voice.
+  - Three layers per section.
+  - The format by the shape of the data.
+  - One clause per decision.
+  - The story in git.
 - A long doc opens so the reader sees all of it: a TL;DR outline, or the few points it is built around.
 - A doc describes the project in its own terms, not as a version of another project.
 
 ### Checks
 
-- `blank_lines.py` and `check_links.py` are removed, so the skill is Markdown only. The agent keeps links and blank lines right while it writes.
+- `blank_lines.py` and `check_links.py` are removed, so the skill is Markdown only.
+- The agent keeps links and blank lines right while it writes.
 
 ### This repo's docs
 
 - The README points to the roadmap for status, instead of a copy of the version and progress that had gone stale.
-- ROADMAP's question reads "When, and how far along?" in every doc, as in SKILL.md.
-- The proposal says "one sitting" for goal G1, as GOALS.md does.
-- An audit of the repo's own docs against the skill's rules fixed most lines that broke a rule. Conflicts that need the owner's decision stay open.
-- DESIGNS.md holds each decision in its own dated section, and records the new doc order as a decision. Goal G4 now reads every decision for the option it beat and its reason, and stays open until this repo's docs take the forms of 2026-10-17 (ROADMAP.md → M2.5).
+- ROADMAP's question reads "When, and how far along?" in every doc as it does in SKILL.md.
+- The proposal says "one sitting" for the goal on a short talk, as GOALS.md does.
+- An audit of the repo's own docs against the skill's rules fixed most lines that broke a rule.
+- Conflicts that need the owner's decision stay open.
+- DESIGNS.md holds each decision in its own dated section.
+- DESIGNS.md records the new doc order as a decision.
+- The goal on decisions now reads every decision for the option it beat and its reason.
+  - It stays open until this repo's docs take the forms of 2026-10-17.
 - FEATURES.md lists the new conversation rules and doc forms.
 
 ## 0.3.0 — 2026-10-13
@@ -202,7 +318,8 @@ The second revisit of this repo found 33 conflicts between its docs and the skil
 
 ### Sessions
 
-- When every doc is drafted, as after a revisit, the skill asks whether you want to approve them or revisit them again, instead of offering to resume.
+- When every doc is drafted, the skill asks whether you want to approve them or revisit them again.
+  - Before, it offered to resume.
 - A revisit gives each conflict its cause, so you see whether the doc or the skill should change.
 - Goals measured during a revisit are measured by a reader who did not write the change.
 - The revisit audit looks for principles that pick no side.
@@ -212,18 +329,26 @@ The second revisit of this repo found 33 conflicts between its docs and the skil
 - Each kind of doc has its own guide file, so a session reads only the guide for the doc it is working on.
 - Goals name the want they serve and where they were measured.
 - Status marks mean the same in every doc: ✅ 🚧 🟨 ⬜ ❌.
-- Progress, such as "not yet used on a new project", lives only in the roadmap.
+- Progress such as "not yet used on a new project" lives only in the roadmap.
 - A milestone can be a proven state, not only a usable one.
-- Decisions start with "Decided" and a date, so they can be counted, and name the option they beat.
-- The philosophy fits on one screen: a short preamble, one line per principle that picks a side and refuses one thing, and a tie-break.
-- The design doc holds design principles grouped by area, each with its cost and a rule that shows it holds, then the big decisions and the open questions. It has no map of the code and no section per feature.
+- Decisions start with "Decided" and a date so they can be counted.
+- Decisions name the option they beat.
+- The philosophy fits on one screen.
+  - It has a short preamble.
+  - It has one line per principle that picks a side and refuses one thing.
+  - It ends with a tie-break.
+- The design doc holds design principles grouped by area.
+  - Each principle has its cost and a rule that shows it holds.
+  - The big decisions and the open questions follow.
+  - It has no map of the code and no section per feature.
 - Every example in the guides is made up for the skill, or taken from this repo.
 - Optional skeleton sections are marked, and the others say "None yet" rather than disappear.
 
 ### Wording
 
-- A number in an illustrative scene may be invented. A number that states a fact needs a source.
-- Claims about behavior, such as a command name, are checked or marked "not yet verified".
+- A number in an illustrative scene may be invented.
+- A number that states a fact needs a source.
+- Claims about behavior such as a command name are checked or marked "not yet verified".
 
 ### Checks
 
@@ -233,21 +358,38 @@ The second revisit of this repo found 33 conflicts between its docs and the skil
 
 The first revisit of this repo with the skill itself. What it found changed the skill.
 
-- A session is a conversation, not a form. The agent discusses, brainstorms or asks for a decision, depending on where the user is. Each doc guide lists the points to explore, with a brainstorm to open the doc.
-- Every doc guide now opens with what the doc is for, where it sits in a session and which facts belong in it. It names what to push back on, gives guidelines with their reasons, and shows weak and strong examples. SKILL.md keeps the flow and points to the guides.
-- New rules between docs: each doc reads on its own, the owner changes first, reasons have homes, and a doc that restates the code is a cache.
+- A session is a conversation, not a form.
+  - The agent discusses, brainstorms or asks for a decision as the user needs.
+  - Each doc guide lists the points to explore and opens the doc with a brainstorm.
+- Every doc guide now opens with what the doc is for.
+  - It says where the doc sits in a session and which facts belong in it.
+  - It names what to push back on.
+  - It gives guidelines with their reasons.
+  - It shows weak and strong examples.
+- SKILL.md keeps the flow and points to the guides.
+- New rules between docs:
+  - Each doc reads on its own.
+  - The owner changes first.
+  - Reasons have homes.
+  - A doc that restates the code is a cache.
 - Formats follow the shape of the data in every doc, even when the same records appear elsewhere.
-- Goals take a method column, and a decision is recorded only when it is hard to reverse, surprising and a real trade-off.
+- Goals take a method column.
+- A decision is recorded only when it is hard to reverse, surprising and a real trade-off.
 - Any edit sets a doc's mark back to `drafted`.
-- The skill no longer defines how a product should feel. Each doc has a style, meaning its form, and the agent writes in its default voice.
-- The revisit audit checks for thin sections, numbers with no source, and text that restates the code. It ends with a changelog entry.
+- The skill no longer defines how a product should feel.
+- Each doc has a style that sets its form.
+- The agent writes in its default voice.
+- The revisit audit checks for thin sections, numbers with no source and text that restates the code.
+  - It ends with a changelog entry.
 - The lessons from real sessions are phrased as the target behavior, each with the failure that taught it.
 
 ## 0.1.0 — 2026-10-12
 
 The first release.
 
-- `/what-we-build` drafts a new project's founding docs through a conversation, one decision at a time: PROPOSAL, PHILOSOPHY, GOALS, FEATURES, DESIGNS, ROADMAP and README, plus optional docs when the project needs them.
+- `/what-we-build` drafts a new project's founding docs through a conversation, one decision at a time.
+  - The founding docs are PROPOSAL · PHILOSOPHY · GOALS · FEATURES · DESIGNS · ROADMAP · README.
+  - Optional docs join when the project needs them.
 - `/what-we-build resume` continues a session from the marks on each doc.
 - `/what-we-build revisit` cleans a doc set that overlaps, sprawls or drifted.
 - Two checks: `check_links.py` for broken links and anchors, `blank_lines.py` for blank lines around blocks.

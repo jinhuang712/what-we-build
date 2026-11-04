@@ -7,10 +7,12 @@ The specs folder explains how each part of the project works, like a technical d
 A spec and the code guide each other.
 
 - [YES]   the mechanism of one part of the project in a file of its own.
+- [YES]   link a spec to its decisions.
 - [NO]    what the user sees, which FEATURES holds.
 - [NO]    the guidelines the design must meet, which DESIGNS holds.
 - [NO]    the forks behind it, which `specs/decisions/` holds.
 - [NO]    the options weighed on the way, since they are process files.
+- [NO]    a link to another spec or to the doc it serves.
 - [WHEN]  the project has a visual interface: it keeps `specs/UIUX.md` with the final screens in `prototype/*.html`, as the [UIUX](UIUX.md) guide says.
 - [WHEN]  a spec is drafted first: it guides the code.
 - [WHEN]  a better implementation lands: it updates the spec.

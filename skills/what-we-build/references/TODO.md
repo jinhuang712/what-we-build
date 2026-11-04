@@ -12,6 +12,7 @@ Each item has a priority, a type and a time. A reader sees what matters first an
 ## What is it
 
 - [YES]   the open items, each with enough context and evidence to act on.
+- [YES]   link an item to any file it needs, since an open item may sit anywhere.
 - [NO]    work with a checkpoint, which ROADMAP holds.
 - [NO]    what is already decided, which `specs/decisions/` holds.
 - [WHEN]  a change handles an item: delete the item and its evidence files in that change, since git keeps the history.

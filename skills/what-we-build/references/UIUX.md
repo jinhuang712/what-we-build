@@ -16,7 +16,7 @@ Point anything a [NO] line rules out to its home, or push back when it has none.
 - [YES]   the keyboard and accessibility.
 - [YES]   list the screens in a table with a link to each page, so this doc is the prototype's navigation.
 - [YES]   draw each flow as an ASCII diagram with the screens it passes in order and where it can fail.
-- [YES]   link each flow up to its story in FEATURES and to each page it passes.
+- [YES]   link each flow to each page it passes.
 - [YES]   rank the states by urgency so a minor state never looks like an error.
 - [YES]   name the code that holds the numbers instead of copying them.
 - [NO]    what the user does and why, which FEATURES holds.
@@ -27,7 +27,10 @@ Point anything a [NO] line rules out to its home, or push back when it has none.
 - [NO]    a flow that is only described and not drawn.
 - [NO]    a screen with no page in `prototype/` or a page with no screen here.
 - [NO]    a second index of the pages, such as `prototype/index.html`.
+- [NO]    a page that shows more than one screen.
+- [NO]    a page that keeps the options once the user has picked one.
 - [NO]    a rule with no reason, since it is broken the first time it gets in the way.
+- [NO]    a link to FEATURES, since FEATURES links to the flows here.
 - [WHEN]  a screen changes: change its page in the same change.
 
 ## You have it when
@@ -56,8 +59,6 @@ Point anything a [NO] line rules out to its home, or push back when it has none.
 ## Flows
 
 ### <the story, in a few words>
-
-<a link to the story in FEATURES>
 
 ```
 <screen> ──<action>──▶ <screen> ──<action>──▶ <screen>

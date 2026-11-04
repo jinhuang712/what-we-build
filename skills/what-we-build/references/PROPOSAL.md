@@ -25,6 +25,7 @@ Point anything a [NO] line rules out to its home, or push back when it has none.
 - [NO]    a case that opens with the solution.
 - [NO]    a reason with no example.
 - [NO]    a "don't want" with no reason.
+- [NO]    a link to another doc in the project, since the case comes before every other doc.
 - [WHEN]  something changed: write *Why now*, and leave it out otherwise.
 
 ## Want and pain

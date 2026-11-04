@@ -18,6 +18,7 @@ Point anything a [NO] line rules out to its home, or push back when it has none.
 - [NO]    a step that does not work as written.
 - [NO]    a command longer than two lines instead of a script.
 - [NO]    a way to install that nobody has tried.
+- [NO]    a link to another doc, since README links to INSTALL.
 
 ## You have it when
 

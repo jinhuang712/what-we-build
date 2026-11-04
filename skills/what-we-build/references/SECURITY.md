@@ -9,6 +9,7 @@ SECURITY.md tells people how to report a vulnerability safely. GitHub shows it a
 - [YES]   which versions are supported.
 - [YES]   what happens next.
 - [NO]    a request to report in public.
+- [NO]    a link to another doc, since README links to SECURITY.
 
 ## You have it when
 

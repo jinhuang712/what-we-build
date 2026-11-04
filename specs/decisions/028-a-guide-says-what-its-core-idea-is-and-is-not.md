@@ -8,7 +8,7 @@ A run on a Go library rewrote FEATURES three times over. The agent grouped the f
 
 ## The choice
 
-A guide whose core idea a model tends to blur defines it in a short block of tagged lines: `[YES]` for what it is, `[NO]` for what it is not, `[MAYBE]` for what it may be and `[WHEN]` for a situation that changes it. A block uses only the tags it has something for. The idea is borrowed from NYMs, while the block stays plain Markdown. It rests on [DESIGNS 6: Trust the model](../../DESIGNS.md#6-trust-the-model), since it says what a thing is and leaves the method to the model.
+A guide whose core idea a model tends to blur defines it in a short block of tagged lines: `[YES]` for what it is, `[NO]` for what it is not, `[MAYBE]` for what it may be and `[WHEN]` for a situation that changes it. A block uses only the tags it has something for. The idea is borrowed from NYMs, while the block stays plain Markdown. It rests on DESIGNS 6: Hard rules for the doc, the method left to the model, since it says what a thing is and leaves the method to the model.
 
 ## Not chosen
 

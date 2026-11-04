@@ -14,6 +14,7 @@ Point anything a [NO] line rules out to its home, or push back when it has none.
 - [YES]   write under each label what the goal needs in whatever form fits.
 - [YES]   write the formula of every number in a code block with its sample and unit beside it.
 - [YES]   say where and when each number was measured.
+- [YES]   link a goal to the features and guidelines it checks and to the TODO item that holds what is open.
 - [NO]    anything vague.
 - [NO]    a feature the project will not build, which FEATURES lists under *Not planned*.
 - [NO]    how anything works, which `specs/` holds.
@@ -25,6 +26,7 @@ Point anything a [NO] line rules out to its home, or push back when it has none.
 - [NO]    a comparison with nothing to compare against.
 - [NO]    a constraint nobody could check.
 - [NO]    a "met" with no dated measurement or report from the user.
+- [NO]    a link to ROADMAP or PROPOSAL, since ROADMAP links here and the want is named in words.
 - [WHEN]  a number is not known: leave it open.
 
 ## Goal

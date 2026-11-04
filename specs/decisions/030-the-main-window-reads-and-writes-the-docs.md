@@ -13,7 +13,7 @@ The main window reads each doc it works on in full and writes it with the user. 
 ## Not chosen
 
 - Subagents check the docs after the main window reads them: the user chose to keep every doc task in the main window.
-- A hook that blocks a subagent from writing Markdown: it is a dependency and breaks [DESIGNS 3: No dependencies](../../DESIGNS.md#3-no-dependencies).
+- A hook that blocks a subagent from writing Markdown: it is a dependency and breaks DESIGNS 3: No dependencies.
 - A proof of reading such as quoting the doc first: the user did not want the rules to grow thick.
 
 ## Consequences

@@ -8,7 +8,7 @@ A draft of the FEATURES guide used a notes app to show a group, a feature and a 
 
 ## The choice
 
-An example comes from this repo or from the stable ideas of a well-known tool, such as the sessions and hooks of Claude Code. It never names a command or a flag. It rests on [DESIGNS 5: Examples the reader knows](../../DESIGNS.md#5-examples-the-reader-knows).
+An example comes from this repo or from the stable ideas of a well-known tool, such as the sessions and hooks of Claude Code. It never names a command or a flag. It rests on DESIGNS 5: Examples the reader knows.
 
 ## Not chosen
 

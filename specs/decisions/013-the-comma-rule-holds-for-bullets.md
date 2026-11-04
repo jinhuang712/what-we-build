@@ -1,10 +1,10 @@
 # 013. The comma rule holds for bullets, and PHILOSOPHY argues in prose with any structure
 
-Decided: 2026-10-31 and 2026-11-01
+Decided: 2026-11-01
 
 ## The problem
 
-Paragraphs that held separate points were hard to scan, so a bullet was made one sentence with at most one comma. SKILL.md later wrote the rule for every sentence, which held explanatory prose to a rule meant for bullets. The PHILOSOPHY guide also said the doc is prose only, though some of its points are separate and read better as a list or a table.
+Paragraphs that held separate points were hard to scan, so a bullet was made one sentence with at most one comma. SKILL.md later wrote the rule for every sentence, which held explanatory prose to a rule meant for bullets. The first half was decided on 2026-10-31. The PHILOSOPHY guide also said the doc is prose only, though some of its points are separate and read better as a list or a table.
 
 ## The choice
 

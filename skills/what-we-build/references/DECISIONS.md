@@ -17,6 +17,7 @@ It keeps the reason alive after the people who knew it have moved on. One decisi
 - [NO]    how the chosen thing works, which `specs/` holds.
 - [NO]    what the user sees, which FEATURES holds.
 - [NO]    the reason in the title, since it goes in the file.
+- [NO]    a link to any doc, since the docs that rest on a decision link to it.
 
 ## Decision
 

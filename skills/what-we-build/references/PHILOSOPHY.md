@@ -27,6 +27,7 @@ Point anything a [NO] line rules out to its home, or push back when it has none.
 - [NO]    a quote that decorates and does not test.
 - [NO]    a quote nobody checked.
 - [NO]    a stance the project does not truly hold, since an empty section is worse than a missing one.
+- [NO]    a link to another doc in the project, since every other doc rests on this one.
 
 ## What you are after
 

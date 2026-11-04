@@ -62,7 +62,6 @@ This repo's docs were written with the skill, so each one is an example of its o
 ## Known limits
 
 - The wording rules are written for English docs.
-- It has been tested by hand and not yet with evals.
 
 ## License
 

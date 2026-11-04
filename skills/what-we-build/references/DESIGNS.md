@@ -12,10 +12,12 @@ Point anything a [NO] line rules out to its home, or push back when it has none.
 - [YES]   why each holds and what it costs.
 - [YES]   the question each asks of a new requirement.
 - [YES]   links from each to its decisions and specs.
+- [YES]   a link from each to the PHILOSOPHY stance it derives from.
 - [NO]    the choices made to meet a guideline, which `specs/decisions/` holds.
 - [NO]    how the thing works, which `specs/` holds.
 - [NO]    whether it is built yet, which ROADMAP holds.
 - [NO]    open questions, which TODO holds.
+- [NO]    a link to the docs that link to DESIGNS, such as FEATURES or GOALS.
 
 ## Guideline
 
@@ -50,6 +52,8 @@ Point anything a [NO] line rules out to its home, or push back when it has none.
 
 **Ask:** <the question it asks of a new requirement>
 
-- **Decisions:** <links to specs/decisions/>
-- **How it works:** <links to specs/>
+- **Decisions:**
+  - <a link to one decision in specs/decisions/>
+- **How it works:**
+  - <a link to one spec in specs/>
 ```

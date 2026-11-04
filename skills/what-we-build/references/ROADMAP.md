@@ -12,7 +12,11 @@ Point anything a [NO] line rules out to its home, or push back when it has none.
 - [YES]   open with a Summary, an ASCII tree in a code block of every checkpoint and its items with their status.
 - [YES]   keep the first checkpoint small enough to finish soon.
 - [YES]   a heading for each checkpoint and each sub-checkpoint, with its status on a **Status:** line below it.
+- [YES]   split a checkpoint that delivers more than one feature group into sub-checkpoints.
+- [YES]   exit criteria of its own for each sub-checkpoint.
 - [YES]   a **Delivers:** list in each checkpoint with each feature it delivers, linked.
+- [YES]   every feature not yet built in a checkpoint or in the *Later* list of FEATURES.
+- [YES]   link an open question of a checkpoint to its TODO item.
 - [YES]   exit criteria as bullets grouped by the kind of goal, one goal to a bullet.
 - [YES]   a group headed *Do not hold the release* for goals that are checked but do not block it.
 - [NO]    feature behavior and the *Later* list, which FEATURES holds.
@@ -22,7 +26,7 @@ Point anything a [NO] line rules out to its home, or push back when it has none.
 - [NO]    exit criteria that restate goals instead of pointing to them.
 - [NO]    a checkpoint that starts building before its design is decided.
 - [NO]    one goal in two checkpoints, since a parent's exit criteria say only that its sub-checkpoints are met.
-- [MAYBE] exit criteria of its own for a sub-checkpoint.
+- [NO]    a link to any doc but GOALS, FEATURES and TODO.
 
 ## Checkpoint
 

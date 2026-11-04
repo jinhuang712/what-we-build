@@ -1,6 +1,6 @@
 # Goals
 
-Each goal is an effect the skill must have, tied to a want or a risk in the proposal. A goal met on one project stays open for another until it is checked there, and a status changes only with a check and its date. A goal runs from the first checkpoint in [ROADMAP](ROADMAP.md) whose exit criteria point to it.
+Each goal is an effect the skill must have, tied to a want or a risk in the proposal. A goal met on one project stays open for another until it is checked there, and a status changes only with a check and its date.
 
 ## Summary
 
@@ -31,7 +31,7 @@ A new project gets its whole doc set without the talk dragging on.
 
 **Want:** the risk that the user wants the docs and not the talk.
 
-**Acceptance:** a new project's 7 core docs are drafted and approved within N hours of talk. N is open until it is set before CP3: First real use.
+**Acceptance:** a new project's 7 core docs are drafted and approved within N hours of talk. N stays open while [The time limit for O1: The core docs without a long talk](TODO.md#p1discussion-the-time-limit-for-o1-the-core-docs-without-a-long-talk) is open.
 
 **Status:** ⬜
 
@@ -87,9 +87,16 @@ Runs with the skill are scored on a fixed set of prompts.
 
 **Want:** the wants and risks in the proposal that only a real run shows.
 
-**Problem set:** three realistic project prompts, not chosen yet (TODO: How to evaluate the skill).
+**Problem set:** three realistic project prompts, not chosen while [How to evaluate the skill](TODO.md#p2discussion-how-to-evaluate-the-skill) is open.
 
-**Scored on:** a reader who did not take part in the run checks each of these:
+**Formula:**
+
+```
+run score = checks passed / 8
+B1 = mean of the 3 run scores
+```
+
+A reader who did not take part in the run makes the 8 checks:
 
 - Every fact has one home.
 - Every goal has a check.
@@ -99,13 +106,6 @@ Runs with the skill are scored on a fixed set of prompts.
 - The user recognizes each doc as what was decided.
 - Each doc's content came from the talk and not from the blanks of a skeleton.
 - Each doc has a job in that project.
-
-**Formula:**
-
-```
-run score = checks passed / 8
-B1 = mean of the 3 run scores
-```
 
 **Last score:** not run.
 
@@ -142,7 +142,7 @@ C1 = prompts with a lead above 0 / 3, with the mean lead
 
 **How:** `wc -l skills/what-we-build/SKILL.md`
 
-**Status:** ✅ 200 lines on 2026-11-03.
+**Status:** ✅ 248 lines on 2026-11-04.
 
 #### T8: A doc read in one go
 
@@ -154,4 +154,4 @@ The agent re-reads a whole doc before any edit, so one read must return all of i
 
 **How:** `wc -l` for lines and `wc -c` for bytes on every doc, since a doc never has more tokens than bytes.
 
-**Status:** ✅ 2026-11-03, with CHANGELOG.md the longest at 253 lines and the largest at 20086 bytes.
+**Status:** ✅ 2026-11-04, with CHANGELOG.md the longest at 392 lines and the largest at 23641 bytes.

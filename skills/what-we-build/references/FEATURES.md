@@ -10,32 +10,32 @@ Point anything a [NO] line rules out to its home, or push back when it has none.
 
 - [YES]   each feature's behavior from the user's side.
 - [YES]   each feature's status.
-- [YES]   what the user sees when something fails.
-- [YES]   the *Later* list.
-- [YES]   the *Not planned* list with a reason for each item.
-- [YES]   open with a Summary, an ASCII tree in a code block of every feature by group with its status and a short description.
+- [YES]   open with a Summary, an ASCII tree in a code block of every item with its status and what it is in a few words.
 - [YES]   number the groups too, so F1 is a group and F1.1 a feature in it.
-- [YES]   split a feature that does several things into sub-features such as F1.1.1.
+- [YES]   split a feature with more than one case into sub-features such as F1.1.1.
 - [YES]   give each feature an ID that never changes so other docs can point to it.
 - [YES]   give a new feature a new number.
-- [YES]   mark a feature ✅ once it is built, and leave whether it works in real use to GOALS.
-- [YES]   describe what the user does and what happens, short and in the present tense.
+- [YES]   mark a feature ✅ once it is built and you have run it.
+- [YES]   leave whether it works in real use to GOALS.
 - [YES]   give each feature its stories, one sentence each that says who does what and for what.
 - [YES]   link a feature up to the design guidelines it rests on.
 - [YES]   link a feature down to everything that builds it: the UIUX flow of each story, its specs and its decisions.
-- [YES]   end with what happens when something fails, then *Later* and *Not planned*.
 - [NO]    how a feature works inside, which `specs/` holds.
 - [NO]    the choices behind it, which `specs/decisions/` holds.
 - [NO]    type names and code paths.
 - [NO]    how a story moves across the screens and how they look, which `specs/UIUX.md` holds.
 - [NO]    the schedule or a version, which ROADMAP holds.
-- [NO]    a long feature that needs a spec instead.
 - [NO]    a setting with no reason.
 - [NO]    a feature that cannot reach what builds it.
 - [NO]    a story in a template such as "As a … I want … so that …".
 - [NO]    the checkpoint, which ROADMAP links to the features it delivers.
+- [NO]    a feature in *Later* that a goal of a planned checkpoint needs.
+- [NO]    a link to GOALS or ROADMAP, since they link to FEATURES.
 - [WHEN]  what is built has a gap: mark it 🚧 and name the gap beside the mark.
 - [WHEN]  a PHILOSOPHY stance forces a feature: link the feature to it too.
+- [WHEN]  an idea may come later: list it in *Later* with what would bring it.
+- [WHEN]  a feature is ruled out: list it in *Not planned* with its reason.
+- [WHEN]  FEATURES holds more than ten features and sub-features: give each group a file of its own and keep FEATURES.md as the index.
 
 ## Group, feature and sub-feature
 
@@ -46,7 +46,6 @@ Point anything a [NO] line rules out to its home, or push back when it has none.
 - [NO]    a code module the user never sees.
 - [NO]    one group per GLOSSARY term, since *Turn* is a term and not a group.
 - [MAYBE] a core GLOSSARY term as its name.
-- [MAYBE] two groups once one area grows too large to scan.
 - [WHEN]  the area has specs and decisions: they show what the group must hold.
 - [WHEN]  it has none yet: PROPOSAL and DESIGNS show it.
 
@@ -62,6 +61,34 @@ Point anything a [NO] line rules out to its home, or push back when it has none.
 - [YES]   one case of a feature, such as *Continue the latest session* under *Resume a session*.
 - [NO]    a thing the user does on its own.
 
+**`<description>`**
+
+Each group, feature and sub-feature has one in the skeleton. It answers the reader's questions from the user's side.
+
+- [YES]   what it does for the user and what they end up with.
+- [YES]   how the user uses it step by step.
+- [YES]   when it applies, when it does not and when it fails.
+- [YES]   open with a paragraph.
+- [NO]    who uses it and what they gain, which its stories hold.
+- [NO]    how as the way it works inside, which `specs/` holds.
+- [NO]    an answer made up for a question that does not apply.
+- [NO]    steps, cases or separate points written out in a paragraph.
+- [NO]    a **Description** header.
+- [MAYBE] where the user meets it, such as a command or a screen.
+- [WHEN]  the user meets a number or a limit: give it.
+
+## The index and the group files
+
+- [YES]   the index holds the status legend and the Summary of every item with its status.
+- [YES]   the index holds *Later* and *Not planned*.
+- [YES]   a group file opens with a tree of its own items.
+- [YES]   a group file holds its features.
+- [YES]   name a group file after its group, such as `features/F1-sessions.md`.
+- [YES]   link each group in the index to its file.
+- [NO]    a status in a group file, since the index holds it.
+- [NO]    a link from a group file to the index.
+- [WHEN]  a group moves into a file: fix every link to its features.
+
 ## You have it when
 
 - A user can predict what happens when they use a feature, and when it fails.
@@ -74,27 +101,27 @@ Point anything a [NO] line rules out to its home, or push back when it has none.
 ````markdown
 # Features
 
-<what the status marks mean: ✅ built · 🚧 built, with a gap named beside it · ⬜ planned>
+<what the status marks mean: ✅ built · 🚧 built, with a gap named beside it · ❔ claimed and not yet run · ⬜ planned>
 
 ## Summary
 
 ```
 Features
-└── ⬜ F1: <group> — <a short description>
-    └── ⬜ F1.1: <name> — <a short description>
+└── ⬜ F1: <group> — <what it is in a few words>
+    └── ⬜ F1.1: <name> — <what it is in a few words>
 ```
 
 ## F1: <group>
 
 **Status:** ⬜
 
-<what the group gives the user>
+<description>
 
 ### F1.1: <name>
 
 **Status:** ⬜
 
-<what it gives the user, and what happens>
+<description>
 
 - **Stance:** <the PHILOSOPHY stance that forces it, if one does>
 - **Design:** <the DESIGNS guidelines it rests on>
@@ -109,11 +136,7 @@ Features
 
 **Status:** ⬜
 
-<what this sub-feature does>
-
-## When something fails
-
-<each failure, what the user sees and the feature it belongs to>
+<description>
 
 ## Later, if needed
 
@@ -122,4 +145,58 @@ Features
 ## Not planned
 
 - **<not this>:** <why>
+````
+
+The index, once the groups have files of their own:
+
+````markdown
+# Features
+
+<what the status marks mean>
+
+## Summary
+
+```
+Features
+└── ⬜ F1: <group> — <what it is in a few words>
+    └── ⬜ F1.1: <name> — <what it is in a few words>
+```
+
+## Groups
+
+- [F1: <group>](features/F1-<group>.md)
+
+## Later, if needed
+
+<ideas that may come, and what would bring them>
+
+## Not planned
+
+- **<not this>:** <why>
+````
+
+A group file:
+
+````markdown
+# F1: <group>
+
+```
+F1: <group>
+└── F1.1: <name> — <what it is in a few words>
+```
+
+<description>
+
+## F1.1: <name>
+
+<description>
+
+- **Stance:** <the PHILOSOPHY stance that forces it, if one does>
+- **Design:** <the DESIGNS guidelines it rests on>
+- **How it works:** <its specs>
+- **Why:** <each decision as its ID with a short name, linked>
+
+**Stories:**
+
+- <who does what, for what> → <its flow in specs/UIUX.md, when there is one>
 ````

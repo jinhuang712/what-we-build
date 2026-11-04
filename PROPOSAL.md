@@ -2,8 +2,6 @@
 
 > Keep a project's context in docs.
 
-Proposed 2026-10-12.
-
 ## In short
 
 You build a project with a coding agent over many weeks. On day one you agree on what to build and why. Some weeks later the agent is writing code for a project you no longer recognize.
