@@ -1,6 +1,6 @@
 # Install
 
-You need a coding agent that loads Agent Skills. The steps below are for [Claude Code](https://docs.claude.com/en/docs/claude-code/overview), the only agent tried so far. Another agent takes the same folder in its own skills folder.
+You need git and a coding agent that loads Agent Skills. The steps below are for [Claude Code](https://docs.claude.com/en/docs/claude-code/overview), the only agent tried so far.
 
 ## Clone and link
 
@@ -21,7 +21,6 @@ Restart Claude Code. Type `/what-we-build` to check that it loaded.
 
 ## When it fails
 
-| What you see | What to do |
-|---|---|
-| The command is not found | Restart Claude Code and type it again |
-| The skill folder is empty | Check the clone path in the `ln -s` line |
+- **The command is not found:** restart Claude Code and type it again.
+- **The skill folder is empty:** check the clone path in the `ln -s` line.
+- **`ln` says No such file or directory:** run `mkdir -p ~/.claude/skills` and run the `ln -s` line again.

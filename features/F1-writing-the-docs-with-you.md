@@ -109,31 +109,30 @@ The agent proposes the docs and you decide which ones come.
 
 ## F1.3: Talk each doc through
 
-The core docs come one at a time in a fixed order, since each builds on the ones before it. On each doc the agent asks one thing at a time, recommends an answer and says why. A point goes into the doc once you agree it. The talk on a doc ends only when you say it is done.
+The core docs come one at a time in a fixed order, since each builds on the ones before it.
 
 ```
 PROPOSAL → PHILOSOPHY → DESIGNS → GOALS → FEATURES → ROADMAP → README
 ```
 
-- **Before you end the talk:** the agent keeps looking for the next line that breaks a rule.
-- **When it finds none:** it reads the whole doc again and shows you what it checked.
-- **When it thinks the talk is enough:** it says so and names what is still open.
-- **Code, another doc or another topic:** none of them comes before you end the talk.
-
-| The point | What the agent does |
-|---|---|
-| has moving parts | draws it |
-| has an open outcome | asks open questions and gives its own view |
-| can go many ways | brainstorms and points out the best one |
-| is a fact no doc owns | asks you where it goes |
-| is a number nobody knows | leaves it open in the doc |
-| is still open | puts it in `TODO.md` as a `DISCUSSION` |
-| is a stance you state a second time | proposes to write it in PHILOSOPHY |
-
 - **Why:**
   - [007: DESIGNS comes third, before GOALS and FEATURES](../specs/decisions/007-designs-third.md)
   - [019: Agreed points go into the doc at once](../specs/decisions/019-agreed-points-go-in-at-once.md)
   - [031: The skill leaves the form of the talk open](../specs/decisions/031-the-skill-leaves-the-form-of-the-talk-open.md)
+
+On each doc the agent asks one thing at a time, recommends an answer and says why. A point goes into the doc once you agree it. The talk on a doc ends only when you say it is done.
+
+- **Before you end the talk:** the agent keeps looking for the next line that breaks a rule.
+- **When it finds none:** it reads the whole doc again and shows you what it checked.
+- **When it thinks the talk is enough:** it says so and names what is still open.
+- **Code, another doc or another topic:** none of them comes before you end the talk.
+- **A point with moving parts:** the agent draws it.
+- **A point with an open outcome:** the agent asks open questions and gives its own view.
+- **A point that can go many ways:** the agent brainstorms and points out the best one.
+- **A fact no doc owns:** the agent asks you where it goes.
+- **A number nobody knows:** the agent leaves it open in the doc.
+- **A point still open:** the agent puts it in `TODO.md` as a `DISCUSSION`.
+- **A stance you state a second time:** the agent proposes to write it in PHILOSOPHY.
 
 **Stories:**
 

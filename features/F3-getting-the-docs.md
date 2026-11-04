@@ -41,14 +41,14 @@ Three docs are recommended from the start, so a finding, a change or a choice ha
 | TODO | recommended from the start |
 | CHANGELOG | recommended from the start |
 | `specs/decisions/` | recommended from the start |
-| `specs/` | a part needs its working explained |
-| ARCHITECTURE | the project has more than one part worth a spec |
-| UIUX | a visual interface with its prototype pages beside it |
-| GLOSSARY | the domain has its own terms or two words compete for one thing |
-| INSTALL | one install line is not enough |
-| CONTRIBUTING | the project is public and accepts contributions |
-| SECURITY | users need a way to report a vulnerability |
-| RUNBOOK | someone must keep a service running |
+| `specs/` | a part whose working needs explaining |
+| ARCHITECTURE | more than one part worth a spec |
+| UIUX | a visual interface with prototype pages beside it |
+| GLOSSARY | terms of its own or two words for one thing |
+| INSTALL | more than one install line |
+| CONTRIBUTING | a public project open to contributions |
+| SECURITY | a way to report a vulnerability |
+| RUNBOOK | a service someone keeps running |
 
 **Stories:**
 
