@@ -55,3 +55,9 @@
 - created: 2026-11-03
 - next: compact a session in a project whose CLAUDE.md holds `@AGENTS.md`, then check whether the rules are still in context
 - related: [032: AGENTS.md keeps a copy of the rules that the host loads](specs/decisions/032-agents-md-keeps-a-copy-the-host-loads.md)
+
+### [P2][TASK] Install steps for other agents
+
+- description: [INSTALL.md](INSTALL.md) has tried steps only for Claude Code, though any agent that loads Agent Skills can use the skill
+- created: 2026-11-04
+- related: [037: The skill is written for any agent](specs/decisions/037-the-skill-is-written-for-any-agent.md)

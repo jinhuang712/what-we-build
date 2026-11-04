@@ -7,8 +7,8 @@ what-we-build is a skill: Markdown instructions that a coding agent reads. The a
               │
               ▼
   ┌─────────────────────────┐
-  │ Claude Code             │ ◀── the skill folder linked
-  │ loads the skill         │     into ~/.claude/skills
+  │ your agent              │ ◀── the skill folder linked
+  │ loads the skill         │     into its skills folder
   └────────────┬────────────┘
                │ reads
                ▼

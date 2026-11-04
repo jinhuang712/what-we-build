@@ -41,7 +41,6 @@ Add a section only when the project needs it. Each one summarizes its owner doc.
 | How it compares | Users will ask how it differs from a known tool | PROPOSAL |
 | FAQ | The same questions keep coming | The doc that owns each answer |
 | Known limits | A user should know a limit before trying it | FEATURES |
-| Status | The project is not yet stable | ROADMAP |
 | Contributing | The project has `CONTRIBUTING.md` | CONTRIBUTING |
 | Acknowledgements | It builds on others' work | `specs/decisions/` |
 

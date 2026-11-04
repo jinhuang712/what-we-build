@@ -4,6 +4,8 @@
 
 ### Working with the agent
 
+- The skill is written for any agent that loads Agent Skills, and the install steps cover Claude Code.
+- When your agent reads another file such as `CLAUDE.md`, the agent makes that file load `AGENTS.md`.
 - The agent reads the whole skill when it starts and again after each compaction, and never hands it to a subagent.
 - When the agent says the skill asks for something, it quotes the line.
 - When a rule seems not to fit, the agent asks you instead of reading its way around it.

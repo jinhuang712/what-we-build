@@ -2,19 +2,21 @@
 
 ![what-we-build](assets/hero.svg)
 
-![License: MIT](https://img.shields.io/badge/license-MIT-green) ![Claude Code skill](https://img.shields.io/badge/Claude%20Code-skill-orange)
+![License: MIT](https://img.shields.io/badge/license-MIT-green) ![Agent Skill](https://img.shields.io/badge/Agent-Skill-orange)
 
 > Keep a project's context in docs.
 
-what-we-build is a Claude Code skill that keeps a project's context in docs. You and the agent work out what to build and why. The skill writes it down so it outlives every window.
+what-we-build is an agent skill. It talks your project through with you and writes what you decide into a few docs, so every new window of your agent still knows it. Nothing goes into a doc before you agree it.
 
 ## What it does
 
 - 💬 **Talks before it writes:** it discusses each doc with you and writes down only what you agree.
-- 📍 **Starts from where you are:** an idea, running code or messy docs.
+- 🤔 **Pushes back:** it says why an idea is weak and keeps making its case until you decide.
+- ✅ **Proves each doc is done:** it checks every line against the doc's guide and shows you what each check found.
+- 📍 **Starts from where you are:** an idea, running code or docs it did not write.
 - 🏠 **Gives every fact one home:** each doc answers one question.
 - 🧠 **Keeps the context while you work:** the agent reads the owning doc first and records each decision at once.
-- ⏯️ **Resumes where you stopped.**
+- ⏯️ **Resumes where you stopped:** every agreed point is already in its doc and every open one in TODO.
 
 ## Install
 
@@ -26,13 +28,28 @@ How to update or remove it is in [INSTALL.md](INSTALL.md).
 
 ## How to use
 
-1. Open Claude Code in an empty folder.
-2. Type `/what-we-build` and say in a sentence what you want to build.
-3. Talk the proposal through, point by point.
-4. Read the draft as before and after, then approve it.
-5. The agent commits it and moves on to the philosophy.
+- **Start:** type `/what-we-build` in your project folder and say what you want, such as "a CLI for my reading notes".
+- **The folder:** the agent reads it first, whether it is empty or holds code or old docs.
+- **The talk:** the agent goes through each doc with you one point at a time.
+- **The commit:** each doc is committed once you approve it.
 
-The skill also starts from running code or messy docs, and it resumes where you stopped.
+Afterwards the folder holds:
+
+```
+reading-notes/
+├── AGENTS.md         what every new window reads first
+├── PROPOSAL.md       why it exists
+├── PHILOSOPHY.md     why it is this way
+├── DESIGNS.md        what the design must always satisfy
+├── FEATURES.md       what it does
+├── README.md         what it is and how to start
+├── CHANGELOG.md      what changed
+├── specs/decisions/  why each choice was made
+└── plan/
+    ├── GOALS.md      what is checked
+    ├── ROADMAP.md    how far along it is
+    └── TODO.md       what is still open
+```
 
 ## Architecture
 

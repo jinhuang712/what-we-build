@@ -105,7 +105,7 @@ The agent proposes the docs and you decide which ones come.
 - **What it holds:** a read order, a layout and the work rules of [F2.1: Keep the context while you work](F2-keeping-the-context.md#f21-keep-the-context-while-you-work).
 - **How it grows:** one rule at a time as you agree it, never all at once.
 - **What it links to:** the docs in its read order and nothing else.
-- **No `CLAUDE.md` yet:** the agent adds one with the line `@AGENTS.md` so every window loads it.
+- **Your agent reads another file such as `CLAUDE.md`:** the agent makes that file load `AGENTS.md`.
 
 ## F1.3: Talk each doc through
 

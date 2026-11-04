@@ -1,6 +1,6 @@
 # Install
 
-You need [Claude Code](https://docs.claude.com/en/docs/claude-code/overview).
+You need a coding agent that loads Agent Skills. The steps below are for [Claude Code](https://docs.claude.com/en/docs/claude-code/overview), the only agent tried so far. Another agent takes the same folder in its own skills folder.
 
 ## Clone and link
 
