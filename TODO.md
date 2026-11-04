@@ -44,11 +44,6 @@
 - created: 2026-11-03
 - related: [the GLOSSARY guide](skills/what-we-build/references/GLOSSARY.md), whose *Term* list allows a type name as a `[MAYBE]`
 
-### [P2][DISCUSSION] Reading again after a compaction
-
-- description: the run skipped the read order after a compaction although the rule says to read it, and the user does not want a check that thickens the rules
-- created: 2026-11-03
-
 ### [P2][TASK] Test that an imported AGENTS.md survives a compaction
 
 - description: Claude Code's docs say the root CLAUDE.md is re-read after a compaction, and do not say whether a file it imports with `@AGENTS.md` is
