@@ -24,7 +24,7 @@ Roadmap
 
 **Status:** ✅
 
-The skill and its guides went into a public repo. GitHub shows the repo as public since 2026-10-12, which proves the release. [T4: A short skill](GOALS.md#t4-a-short-skill) proves only that the skill stays short, so no goal yet proves the three features it delivers and [The goal that proves the doc set](TODO.md#p1discussion-the-goal-that-proves-the-doc-set) is open.
+The skill and its guides went into a public repo. GitHub shows the repo as public since 2026-10-12, which proves the release. [T4: A short skill](GOALS.md#t4-a-short-skill) proves only that the skill stays short, and the goal for its features waits on [The goal that proves the doc set](TODO.md#p1discussion-the-goal-that-proves-the-doc-set).
 
 **Delivers:**
 
@@ -42,10 +42,6 @@ The skill and its guides went into a public repo. GitHub shows the repo as publi
 **Status:** 🟨
 
 The skill was rebuilt around a project's context in this repo, and it is proven only once it holds up on a new project. Each sub-checkpoint delivers one feature group.
-
-**Delivers:**
-
-- The features listed in each sub-checkpoint below.
 
 **Exit criteria:**
 
@@ -106,7 +102,7 @@ The docs carry the work of the new project across windows.
 
 **Status:** ⬜
 
-[T8: A doc read in one go](GOALS.md#t8-a-doc-read-in-one-go) is met, and it shows only that every doc fits one read. No goal yet proves the two features below, and [The goal that proves the doc set](TODO.md#p1discussion-the-goal-that-proves-the-doc-set) is open.
+[T8: A doc read in one go](GOALS.md#t8-a-doc-read-in-one-go) is met, and the goal for its features waits on [The goal that proves the doc set](TODO.md#p1discussion-the-goal-that-proves-the-doc-set).
 
 **Delivers:**
 

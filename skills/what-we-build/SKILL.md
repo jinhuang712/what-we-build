@@ -107,7 +107,7 @@ Where the docs live is the user's choice, and a doc keeps its name wherever it s
 | Where | What |
 |---|---|
 | The root | the reasons and the contract |
-| `features/` | one file per feature group past ten features |
+| `features/` | one file per group past ten features and sub-features |
 | `specs/` | how each part works with `specs/decisions/` under it |
 | `plan/` | `GOALS.md` · `ROADMAP.md` · `TODO.md` |
 | `plan/evidence/` | the files that TODO items point to |
@@ -228,7 +228,7 @@ The docs stay true only if the agent keeps them true in every new window. These 
 - [YES]   give a number its source, or leave it open.
 - [YES]   write dates as `YYYY-MM-DD`.
 - [NO]    sentences stacked line by line, which is neither a paragraph nor a list.
-- [NO]    a sentence or more than one comma in a table cell, since a cell holds a word, a phrase or a short question.
+- [NO]    a sentence or more than one comma in a table cell.
 - [NO]    more than one comma in a bullet.
 - [NO]    status marks in headings, since they break the links.
 - [NO]    a bare ID, even as link text.

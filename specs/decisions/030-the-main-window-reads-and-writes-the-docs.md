@@ -2,6 +2,8 @@
 
 Decided: 2026-11-03
 
+Partly replaced by 038: Two guidelines leave DESIGNS, under which No dependencies is no longer a guideline.
+
 ## The problem
 
 A run on a Go library loaded the skill and sent the whole rewrite to subagents. They rewrote every doc while the main window read none of them in full. It reported only bytes and lines, and it later rebuilt FEATURES from a copy that had lost parts of the compaction design. The docs changed, but the window and the user learned nothing about the project. That defeats the skill, whose context is what the agent and the user work out together. A global rule that lists deep reading as a subagent job pushed the agent this way.

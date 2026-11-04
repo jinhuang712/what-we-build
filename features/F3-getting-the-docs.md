@@ -84,7 +84,7 @@ You choose where the docs live, and each doc keeps its name wherever it sits. Yo
 ```
 <project>/
 ├── PROPOSAL.md … README.md   the reasons and the contract
-├── features/                 one file per group once FEATURES holds more than ten features
+├── features/                 one file per group past ten features and sub-features
 ├── specs/                    how each part works
 │   └── decisions/            the choices and the ways not taken
 └── plan/                     GOALS, ROADMAP and TODO

@@ -28,7 +28,7 @@
 
 ### [P2][DISCUSSION] How to evaluate the skill
 
-- description: which test prompts to use, and what a good run looks like in numbers
+- description: which test prompts to use and how many rounds [O2: Context survives compaction](GOALS.md#o2-context-survives-compaction) runs before it compacts, with what a good run looks like in numbers
 - created: 2026-11-02
 - blocks: [CP4: Proven useful](ROADMAP.md#cp4-proven-useful)
 
@@ -36,6 +36,7 @@
 
 - description: a rewrite moved about 190 API details out of FEATURES with no home, and most were already in the code's doc comments
 - created: 2026-11-03
+- found: the rewrite of FEATURES in a run on a Go library
 - next: decide whether the placement test says a detail in a doc comment needs no doc
 
 ### [P2][DISCUSSION] Type names in the FEATURES of a library

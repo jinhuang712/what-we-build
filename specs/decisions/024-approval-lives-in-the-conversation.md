@@ -2,6 +2,8 @@
 
 Decided: 2026-11-03
 
+Partly replaced by 026: The skill says what the agent must do, not each step, under which a resume no longer names the first doc not finished.
+
 ## The problem
 
 Decision 009: Git tells a draft from an approved doc made a commit mean approval, so an uncommitted change was a draft and a resume read `git status` to find where the work stopped. Since 019: Agreed points go in at once, a doc holds only what the user has agreed, so there is no draft left for git to tell apart. The extra meaning only added a rule, and it misread any uncommitted change in the folder as a doc waiting for approval.

@@ -2,6 +2,8 @@
 
 Decided: 2026-11-03
 
+Partly replaced by 038: Two guidelines leave DESIGNS, under which DESIGNS keeps 4 guidelines and no longer holds No dependencies.
+
 ## The problem
 
 DESIGNS held three guidelines that steer how this repo is worked on and not what the skill must be. They said that readers check the docs instead of scripts, that the skill is tested by use first and that the repo is its own first example. The last one was also a rule in AGENTS.md, so it had two homes. A project that copies this repo would learn to put its work rules in DESIGNS.

@@ -27,6 +27,7 @@ Point anything a [NO] line rules out to its home, or push back when it has none.
 - [NO]    a checkpoint that starts building before its design is decided.
 - [NO]    one goal in two checkpoints, since a parent's exit criteria say only that its sub-checkpoints are met.
 - [NO]    a link to any doc but GOALS, FEATURES and TODO.
+- [WHEN]  its sub-checkpoints list what they deliver: the parent lists none.
 
 ## Checkpoint
 

@@ -48,7 +48,7 @@ What was decided stays known after the window is compacted.
 - [F2.1: Keep the context while you work](features/F2-keeping-the-context.md#f21-keep-the-context-while-you-work)
 - [DESIGNS 2: The docs are the state](DESIGNS.md#2-the-docs-are-the-state)
 
-**Acceptance:** after a few rounds of work in a real run, compact the window and ask the agent questions that were answered before it. One wrong answer fails.
+**Acceptance:** after N rounds of work in a real run, compact the window and ask the agent questions that were answered before it. One wrong answer fails. N stays open while [How to evaluate the skill](TODO.md#p2discussion-how-to-evaluate-the-skill) is open.
 
 **Status:** ⬜
 
@@ -159,7 +159,7 @@ C1 = prompts with a lead above 0 / 3, with the mean lead
 
 #### T4: A short skill
 
-`SKILL.md` is read each time the skill starts, so it stays short enough to read in full.
+[SKILL.md](skills/what-we-build/SKILL.md) is read each time the skill starts, so it stays short enough to read in full.
 
 **Want:** the risk that the skill itself grows too long.
 
@@ -169,7 +169,7 @@ C1 = prompts with a lead above 0 / 3, with the mean lead
 
 **How:** estimate the tokens of the body as its bytes divided by 3. A token of English text holds more than 3 bytes, so the estimate errs high.
 
-**Status:** ✅ about 4701 tokens from 14105 bytes on 2026-11-04.
+**Status:** ✅ about 4685 tokens from 14057 bytes on 2026-11-05.
 
 #### T8: A doc read in one go
 
@@ -179,8 +179,8 @@ The agent re-reads a whole doc before any edit, so one read must return all of i
 
 **Checks:** [F2.1: Keep the context while you work](features/F2-keeping-the-context.md#f21-keep-the-context-while-you-work)
 
-**Limit:** every doc within 25000 tokens, the limit of one Claude Code read.
+**Limit:** every doc within 25000 tokens, the default limit of one read that the [Claude Code docs](https://code.claude.com/docs/en/env-vars) give.
 
 **How:** a doc under 25000 bytes passes, since it never has more tokens than bytes. A larger doc passes when one Claude Code read with no offset returns all of it.
 
-**Status:** ✅ 2026-11-04, with every doc under 25000 bytes and CHANGELOG.md the largest at 23983 bytes.
+**Status:** ✅ 2026-11-05, with every doc under 25000 bytes and CHANGELOG.md the largest at 24765 bytes.

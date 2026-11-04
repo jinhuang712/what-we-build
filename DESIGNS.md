@@ -11,7 +11,7 @@ what-we-build is designed around 4 guidelines:
 
 ## 1. A short core with detail beside it
 
-The agent reads [SKILL.md](skills/what-we-build/SKILL.md) and every guide in full each time the skill starts and after each compaction. A guide left for a step to point to was never read: in four runs before 2026-11-04 the agents read the guides only when the user told them to, and some handed them to a subagent. [SKILL.md](skills/what-we-build/SKILL.md) still holds only what the agent always needs and stays within a size limit, so the detail sits in the guides. The cost is the whole skill read at every start, about 60000 bytes on 2026-11-04.
+The agent reads [SKILL.md](skills/what-we-build/SKILL.md) and every guide in full each time the skill starts and after each compaction. A guide left for a step to point to was never read in the runs before 2026-11-04. [SKILL.md](skills/what-we-build/SKILL.md) still holds only what the agent always needs and stays within a size limit, so the detail sits in the guides. The cost is the whole skill read at every start, about 60000 bytes on 2026-11-04.
 
 **Ask:** is this needed for every doc, or only for one?
 
@@ -46,7 +46,7 @@ An example comes from this repo or from the stable ideas of a well-known tool, s
 
 ## 4. Hard rules for the doc, the method left to the model
 
-A guide says what a doc must and must not be, in rules that leave no way around them. A rule that leaves room is read as a choice, and an agent busy with a task takes the shorter way. In four runs before 2026-11-04 the agents numbered nothing, split nothing into a second level and linked specs to each other until the user stepped in, and one then replaced the links with plain-text pointers. How to do the work stays with the model, because a model told every step stops using its judgment. One run followed a guide's "table: pain → what the project does" to the letter, and the user rejected the tables. The cost is a longer list of `[NO]` lines in each guide.
+A guide says what a doc must and must not be, in rules that leave no way around them. A rule that leaves room is read as a choice, and an agent busy with a task takes the shorter way. In the runs before 2026-11-04 the agents skipped such rules until the user stepped in. How to do the work stays with the model, because a model told every step stops using its judgment. One run followed a guide's "table: pain → what the project does" to the letter, and the user rejected the tables. The cost is a longer list of `[NO]` lines in each guide.
 
 **Ask:** does this fix what the doc must be, or does it teach the model a method?
 

@@ -115,11 +115,6 @@ The core docs come one at a time in a fixed order, since each builds on the ones
 PROPOSAL → PHILOSOPHY → DESIGNS → GOALS → FEATURES → ROADMAP → README
 ```
 
-- **Why:**
-  - [007: DESIGNS comes third, before GOALS and FEATURES](../specs/decisions/007-designs-third.md)
-  - [019: Agreed points go into the doc at once](../specs/decisions/019-agreed-points-go-in-at-once.md)
-  - [031: The skill leaves the form of the talk open](../specs/decisions/031-the-skill-leaves-the-form-of-the-talk-open.md)
-
 On each doc the agent asks one thing at a time, recommends an answer and says why. A point goes into the doc once you agree it. The talk on a doc ends only when you say it is done.
 
 - **Before you end the talk:** the agent keeps looking for the next line that breaks a rule.
@@ -133,6 +128,11 @@ On each doc the agent asks one thing at a time, recommends an answer and says wh
 - **A number nobody knows:** the agent leaves it open in the doc.
 - **A point still open:** the agent puts it in `TODO.md` as a `DISCUSSION`.
 - **A stance you state a second time:** the agent proposes to write it in PHILOSOPHY.
+
+- **Why:**
+  - [007: DESIGNS comes third, before GOALS and FEATURES](../specs/decisions/007-designs-third.md)
+  - [019: Agreed points go into the doc at once](../specs/decisions/019-agreed-points-go-in-at-once.md)
+  - [031: The skill leaves the form of the talk open](../specs/decisions/031-the-skill-leaves-the-form-of-the-talk-open.md)
 
 **Stories:**
 

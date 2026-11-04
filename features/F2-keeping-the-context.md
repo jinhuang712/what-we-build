@@ -12,14 +12,7 @@ Once the docs are written, they stay true while the work goes on in later window
 
 ## F2.1: Keep the context while you work
 
-In every window the agent works from the docs and writes back into them at once.
-
-- **Design:** [DESIGNS 2: The docs are the state](../DESIGNS.md#2-the-docs-are-the-state)
-- **Why:**
-  - [002: The skill starts only by hand](../specs/decisions/002-manual-start.md)
-  - [030: The main window reads and writes the docs](../specs/decisions/030-the-main-window-reads-and-writes-the-docs.md)
-
-The skill starts only when you type `/what-we-build`, so these rules live in the project's `AGENTS.md` and the agent reads them whenever its window is new.
+In every window the agent works from the docs and writes back into them at once. The skill starts only when you type `/what-we-build`, so these rules live in the project's `AGENTS.md` and the agent reads them whenever its window is new.
 
 - **Its window is new or was compacted:** it reads SKILL.md and every guide in full, then each doc in the read order.
 - **It needs to know where things stand:** it scans `TODO.md`, `ROADMAP.md` and `GOALS.md`.
@@ -34,6 +27,11 @@ The skill starts only when you type `/what-we-build`, so these rules live in the
 - **It changes something:** it checks only what it touched against the rules.
 - **A checkpoint ends or a release is near:** it checks the goals.
 - **You stop it:** it stops at once with every agent it started and every agent those started.
+
+- **Design:** [DESIGNS 2: The docs are the state](../DESIGNS.md#2-the-docs-are-the-state)
+- **Why:**
+  - [002: The skill starts only by hand](../specs/decisions/002-manual-start.md)
+  - [030: The main window reads and writes the docs](../specs/decisions/030-the-main-window-reads-and-writes-the-docs.md)
 
 **Stories:**
 

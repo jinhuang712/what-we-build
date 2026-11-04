@@ -28,6 +28,7 @@
 - Every item carries an ID at the level its doc uses, such as a sub-feature or a sub-checkpoint.
   - A feature with more than one case splits into sub-features.
   - A checkpoint that delivers more than one feature group splits into sub-checkpoints, each with its own exit criteria.
+  - A parent lists no features when its sub-checkpoints list them.
 - A feature or checkpoint is marked done only once it has been run, and a claim nobody ran gets the new ❔ mark.
 - Each guide says which docs its doc may link to, and a link goes one way.
   - Before, a link table in SKILL.md said only where a doc may link and specs linked to each other.
@@ -43,7 +44,7 @@
 - A field with more than one link puts each link on its own line, as *Decisions* does.
 - Every feature not yet built sits in a checkpoint or in *Later*, and *Later* holds nothing a planned checkpoint needs.
 - A feature says from your side what it does, how you use it and when it applies.
-- Once FEATURES holds more than ten features, each group gets a file of its own and FEATURES becomes the index.
+- Once FEATURES holds more than ten features and sub-features, each group gets a file of its own and FEATURES becomes the index.
   - Before, FEATURES was one file however long it grew.
   - Now a link to a feature points into its group file, and the agent fixes every link when a group moves.
 - The agent checks each item against what its guide says a finished doc gives the reader.
