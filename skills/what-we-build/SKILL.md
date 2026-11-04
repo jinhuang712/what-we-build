@@ -90,27 +90,27 @@ The other docs join when the project needs them:
 
 | Doc | Add when | Guide |
 |---|---|---|
-| `TODO.md` | Recommended from the start | [TODO](references/TODO.md) |
-| `CHANGELOG.md` | Recommended from the start | [CHANGELOG](references/CHANGELOG.md) |
-| `specs/decisions/` | Recommended from the start | [DECISIONS](references/DECISIONS.md) |
-| `specs/` | A part needs its working explained | [SPECS](references/SPECS.md) |
-| `specs/ARCHITECTURE.md` | The project has more than one part worth a spec | [ARCHITECTURE](references/ARCHITECTURE.md) |
-| `specs/UIUX.md` | The project has a visual interface, with `prototype/*.html` beside it | [UIUX](references/UIUX.md) |
-| `GLOSSARY.md` | The domain has its own terms or two words compete for one thing | [GLOSSARY](references/GLOSSARY.md) |
-| `INSTALL.md` | One install line is not enough | [INSTALL](references/INSTALL.md) |
-| `CONTRIBUTING.md` | The project is public and accepts contributions | [CONTRIBUTING](references/CONTRIBUTING.md) |
-| `SECURITY.md` | Users need a way to report a vulnerability | [SECURITY](references/SECURITY.md) |
-| `RUNBOOK.md` | Someone must keep a service running | [RUNBOOK](references/RUNBOOK.md) |
+| `TODO.md` | recommended from the start | [TODO](references/TODO.md) |
+| `CHANGELOG.md` | recommended from the start | [CHANGELOG](references/CHANGELOG.md) |
+| `specs/decisions/` | recommended from the start | [DECISIONS](references/DECISIONS.md) |
+| `specs/` | a part whose working needs explaining | [SPECS](references/SPECS.md) |
+| `specs/ARCHITECTURE.md` | more than one part worth a spec | [ARCHITECTURE](references/ARCHITECTURE.md) |
+| `specs/UIUX.md` | a visual interface with `prototype/*.html` beside it | [UIUX](references/UIUX.md) |
+| `GLOSSARY.md` | terms of its own or two words for one thing | [GLOSSARY](references/GLOSSARY.md) |
+| `INSTALL.md` | more than one install line | [INSTALL](references/INSTALL.md) |
+| `CONTRIBUTING.md` | a public project open to contributions | [CONTRIBUTING](references/CONTRIBUTING.md) |
+| `SECURITY.md` | a way to report a vulnerability | [SECURITY](references/SECURITY.md) |
+| `RUNBOOK.md` | a service someone keeps running | [RUNBOOK](references/RUNBOOK.md) |
 
 Where the docs live is the user's choice, and a doc keeps its name wherever it sits. By default the layout looks like this:
 
 | Where | What |
 |---|---|
-| The root | The reasons and the contract |
-| `features/` | One file per feature group, once FEATURES holds more than ten features |
-| `specs/` | How each part works, with `specs/decisions/` under it |
-| `plan/` | `GOALS.md`, `ROADMAP.md` and `TODO.md` |
-| `plan/evidence/` | The files that TODO items point to |
+| The root | the reasons and the contract |
+| `features/` | one file per feature group past ten features |
+| `specs/` | how each part works with `specs/decisions/` under it |
+| `plan/` | `GOALS.md` · `ROADMAP.md` · `TODO.md` |
+| `plan/evidence/` | the files that TODO items point to |
 
 ## Writing a doc
 
@@ -156,10 +156,10 @@ Every item another doc may point to carries an ID that never changes. Each guide
 | Doc | Levels | Example |
 |---|---|---|
 | `DESIGNS.md` | guideline | `5. Examples the reader knows` |
-| `GOALS.md` | goal, with a letter for its kind | `O1`, `M1`, `B1`, `C1`, `T1`, `R1` |
-| `FEATURES.md` | group, feature, sub-feature | `F1`, `F1.1`, `F1.1.1` |
-| `ROADMAP.md` | checkpoint, sub-checkpoint | `CP1`, `CP1.1` |
-| `specs/decisions/` | decision, in the file name | `019` |
+| `GOALS.md` | goal with a letter for its kind | `O1` · `M1` · `B1` · `C1` · `T1` · `R1` |
+| `FEATURES.md` | group · feature · sub-feature | `F1` · `F1.1` · `F1.1.1` |
+| `ROADMAP.md` | checkpoint · sub-checkpoint | `CP1` · `CP1.1` |
+| `specs/decisions/` | decision in the file name | `019` |
 
 - [YES]   give every item its ID in a doc that this table lists.
 - [NO]    an old ID reused for a new item.
@@ -176,10 +176,10 @@ To find the owner, run the placement test: ask these questions in order. The fir
 | Is it a commitment the whole design must meet? | `DESIGNS.md` |
 | Is it a rule for how the work is done here? | `AGENTS.md` |
 | Is it an effect the project must have, with a test or a number? | `GOALS.md` |
-| Can the user see it or do it? | `FEATURES.md` for what happens and whether it is built, `specs/UIUX.md` for how it looks |
+| Can the user see it or do it? | `FEATURES.md` for what happens · `specs/UIUX.md` for how it looks |
 | Is it a feature the project will not build? | `FEATURES.md` → *Not planned* |
-| Is it a choice between ways, with the others not taken? | `specs/decisions/`, whether it concerns the whole design or one feature |
-| Is it a question nobody has answered yet? | `TODO.md`, as a `DISCUSSION` |
+| Is it a choice between ways, with the others not taken? | `specs/decisions/` |
+| Is it a question nobody has answered yet? | `TODO.md` as a `DISCUSSION` |
 | How do the parts fit together? | `specs/ARCHITECTURE.md` |
 | Is it how a part works inside? | `specs/` |
 | Is it how to install, update or remove it? | `INSTALL.md` |
@@ -228,6 +228,7 @@ The docs stay true only if the agent keeps them true in every new window. These 
 - [YES]   give a number its source, or leave it open.
 - [YES]   write dates as `YYYY-MM-DD`.
 - [NO]    sentences stacked line by line, which is neither a paragraph nor a list.
+- [NO]    a sentence or more than one comma in a table cell, since a cell holds a word, a phrase or a short question.
 - [NO]    more than one comma in a bullet.
 - [NO]    status marks in headings, since they break the links.
 - [NO]    a bare ID, even as link text.
@@ -242,9 +243,9 @@ The status marks mean the same in every doc:
 
 | Mark | Means | Used in |
 |---|---|---|
-| ✅ | built, done or met | FEATURES, ROADMAP and GOALS |
-| 🚧 | built, with a gap named beside it | FEATURES |
+| ✅ | built · done · met | FEATURES · ROADMAP · GOALS |
+| 🚧 | built with a gap named beside it | FEATURES |
 | 🟨 | in progress | ROADMAP |
-| ⬜ | planned, not started or not measured yet | FEATURES, ROADMAP and GOALS |
+| ⬜ | planned · not started · not measured yet | FEATURES · ROADMAP · GOALS |
 | ❌ | measured and not met | GOALS |
-| ❔ | claimed and not yet run, with the reason beside it | FEATURES and ROADMAP |
+| ❔ | claimed and not yet run with its reason beside it | FEATURES and ROADMAP |

@@ -70,7 +70,7 @@ This repo's docs were written with the skill, so each one is an example of its o
 | [FEATURES](FEATURES.md) | What does it do, and what will it do? |
 | [ROADMAP](ROADMAP.md) | When, and how far along? |
 | [Architecture](specs/ARCHITECTURE.md) | How do the parts fit together? |
-| [Decisions](specs/decisions/) | Why did we choose this, and what did we not choose? |
+| [Decisions](specs/decisions/) | Why this and not the other ways? |
 | [TODO](TODO.md) | What is open? |
 | [CHANGELOG](CHANGELOG.md) | What changed? |
 | [INSTALL](INSTALL.md) | How do I install, update or remove it? |

@@ -37,6 +37,7 @@
   - A goal names the want it serves and no longer links to PROPOSAL or ROADMAP.
   - A goal links to each feature and guideline it checks.
 - A file named in a doc is a link, not a name in backticks.
+- A table cell holds a word, a phrase or a short question, with at most one comma.
 - A field with more than one link puts each link on its own line, as *Decisions* does.
 - Every feature not yet built sits in a checkpoint or in *Later*, and *Later* holds nothing a planned checkpoint needs.
 - A feature says from your side what it does, how you use it and when it applies.

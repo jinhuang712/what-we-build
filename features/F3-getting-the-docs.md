@@ -43,7 +43,7 @@ Three docs are recommended from the start, so a finding, a change or a choice ha
 | `specs/decisions/` | recommended from the start |
 | `specs/` | a part needs its working explained |
 | ARCHITECTURE | the project has more than one part worth a spec |
-| UIUX | the project has a visual interface, with its prototype pages beside it |
+| UIUX | a visual interface with its prototype pages beside it |
 | GLOSSARY | the domain has its own terms or two words compete for one thing |
 | INSTALL | one install line is not enough |
 | CONTRIBUTING | the project is public and accepts contributions |
@@ -64,7 +64,7 @@ Each kind of doc has a guide. The agent reads SKILL.md and every guide in full i
 
 | A guide holds | What it settles |
 |---|---|
-| `[YES]`, `[NO]`, `[MAYBE]` and `[WHEN]` lines | what the doc holds, what goes elsewhere and how to write it |
+| tagged lines | what goes in and elsewhere and how to write it |
 | what its core idea is and is not | where a model tends to blur the doc |
 | the docs its doc may link to | which links are allowed |
 | *You have it when* | what a finished doc gives the reader |
@@ -106,12 +106,12 @@ The docs come out in plain and precise English, so a reader finds a fact fast an
 | an explanation | a short paragraph with the answer first |
 | separate points | a list with one sentence per bullet and at most one comma |
 | a thing | one name everywhere |
-| an ID | always with its name, such as "T4: A short skill" |
+| an ID | always with its name like "T4: A short skill" |
 | a file or an ID another doc holds | a link wherever the doc's guide allows |
-| a number | its source, or left open |
+| a number | its source or left open |
 | a date | `YYYY-MM-DD` |
 | a status | the same marks in every doc |
-| code | never pasted, and a script named in its place |
+| code | a script named in place of pasted code |
 
 **Stories:**
 

@@ -33,16 +33,16 @@ Add a section only when the project needs it. Each one summarizes its owner doc.
 
 | Section | Add when | Owner |
 |---|---|---|
-| Architecture | Recommended when the project has `specs/ARCHITECTURE.md` | `specs/ARCHITECTURE.md` |
-| Demo | A screenshot or a recording shows it faster than words | — |
-| Why | The reason is not obvious from what it is | PROPOSAL |
-| Examples | A real case teaches faster than the rules | FEATURES |
-| Configuration | It has settings a user will change | FEATURES |
-| How it compares | Users will ask how it differs from a known tool | PROPOSAL |
-| FAQ | The same questions keep coming | The doc that owns each answer |
-| Known limits | A user should know a limit before trying it | FEATURES |
-| Contributing | The project has `CONTRIBUTING.md` | CONTRIBUTING |
-| Acknowledgements | It builds on others' work | `specs/decisions/` |
+| Architecture | recommended with `specs/ARCHITECTURE.md` | `specs/ARCHITECTURE.md` |
+| Demo | a screenshot or recording that shows it faster than words | — |
+| Why | a reason not obvious from what it is | PROPOSAL |
+| Examples | a real case that teaches faster than the rules | FEATURES |
+| Configuration | settings a user will change | FEATURES |
+| How it compares | questions on how it differs from a known tool | PROPOSAL |
+| FAQ | the same questions again and again | the doc that owns each answer |
+| Known limits | a limit to know before trying it | FEATURES |
+| Contributing | a `CONTRIBUTING.md` | CONTRIBUTING |
+| Acknowledgements | work it builds on | `specs/decisions/` |
 
 ## You have it when
 

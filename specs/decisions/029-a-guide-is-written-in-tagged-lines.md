@@ -12,10 +12,10 @@ Every guide has the same sections:
 
 | Section | Holds |
 |---|---|
-| *What is it* | what goes in, what goes elsewhere or is pushed back on, and the form, in one list |
-| the core idea | the block of tagged lines that defines it, where a model blurs it |
-| *You have it when* | the checks, unchanged |
-| *Skeleton* | the form, unchanged |
+| *What is it* | what goes in and elsewhere and the form in one list |
+| the core idea | a block of tagged lines where a model blurs it |
+| *You have it when* | the checks as before |
+| *Skeleton* | the form as before |
 
 One sentence opens *What is it* when the guide had a *Push back on* list: point anything a `[NO]` line rules out to its home, or push back when it has none. A list always runs `[YES]`, `[NO]`, `[MAYBE]` and then `[WHEN]`, so a reader finds each kind in the same place. A list holds at least two kinds, because a list of only `[YES]` draws no edge. A line that repeated another was dropped. Tables such as the GOALS kinds and the TODO tags stay tables.
 

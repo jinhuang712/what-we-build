@@ -34,8 +34,8 @@ A change to it had to be made five times, and it never was.
 
 | Doc | Size | What filled it |
 |---|---|---|
-| Design | 489 lines | Every detail of every part |
-| Roadmap | 273 lines | Build logs, such as "Checked headless…" |
+| Design | 489 lines | every detail of every part |
+| Roadmap | 273 lines | build logs like "Checked headless…" |
 
 #### Goals that are wishes
 
@@ -74,6 +74,14 @@ Past about 600K tokens the agent grew confused. Then the window was compacted, a
 3. Asked about it, the agent searched for a long time.
 4. It found the doc and said the doc was right.
 
+#### Rules read as choices
+
+Four runs wrote docs with a guide at hand:
+
+- None numbered its items until the user asked.
+- They linked specs to each other, and one replaced the links with plain-text pointers once told to stop.
+- They read the guides only when told to, and some handed them to a subagent.
+
 #### Work from git alone
 
 An agent in a new window read the file tree and the log. They said what changed and not why. It continued the last change with no way to know whether it was right.
@@ -86,10 +94,10 @@ Agents changed what is cheap and what gets lost.
 
 | Before agents | With agents |
 |---|---|
-| Docs are slow to write, so few exist | An agent writes a whole doc set in one go |
-| The author decides each line | The agent fills each gap with a guess |
-| A project lives in a few heads | A project lives across many windows that forget |
-| Docs drift slowly | Every window adds a little in a new place |
+| few docs that are slow to write | a whole doc set in one go |
+| each line decided by the author | each gap filled with a guess |
+| a project in a few heads | a project across many forgetful windows |
+| slow drift | a little more in a new place each window |
 
 ## The idea
 
@@ -118,9 +126,8 @@ It is for developers who build a project with a coding agent over many weeks and
 
 ## Risks
 
-| Risk | What reduces it |
-|---|---|
-| The user wants the docs, not the talk | The skill drafts quickly once a doc's key points are agreed. Every choice comes with a recommendation. |
-| Too many docs for a small project | Seven core docs. The rest only when needed. |
-| The skill itself grows too long | `SKILL.md` has a size limit. Detail lives in the guides. |
-| The docs fall behind the work | The agent updates the owning doc in the change that does the work. |
+- **The user wants the docs and not the talk:** the skill drafts quickly once a doc's key points are agreed, and every choice comes with a recommendation.
+- **Too many docs for a small project:** every project gets seven core docs and the rest only when needed.
+- **The skill itself grows too long:** `SKILL.md` has a size limit and the detail lives in the guides.
+- **The docs fall behind the work:** the agent updates the owning doc in the change that does the work.
+- **The agent reads a rule as a choice:** every rule is a plain yes or no, and the agent reads every guide in full before it touches a doc.

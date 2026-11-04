@@ -22,32 +22,32 @@ Each item has a priority, a type and a time. A reader sees what matters first an
 
 | Tag | Means |
 |---|---|
-| `P0` | Something is broken or blocked now. Do it first. |
-| `P1` | Important. Do it before the current checkpoint. |
-| `P2` | Worth doing. No deadline. |
+| `P0` | broken or blocked now and done first |
+| `P1` | done before the current checkpoint |
+| `P2` | worth doing with no deadline |
 
 ## Type
 
 | Tag | Means |
 |---|---|
-| `ISSUE` | Something is wrong. |
-| `DISCUSSION` | A decision is needed. |
-| `TASK` | Known work with a clear end. |
-| `IDEA` | Maybe. Keep it so it is not lost. |
+| `ISSUE` | something wrong |
+| `DISCUSSION` | a decision needed |
+| `TASK` | known work with a clear end |
+| `IDEA` | a maybe kept so it is not lost |
 
 ## Fields
 
 | Field | Holds |
 |---|---|
-| `description` | What happens, and what should happen. |
-| `created` / `updated` | Dates as `YYYY-MM-DD`. |
-| `status` | `OPEN` when it is ready to pick up, or `HALT` when it waits on something that `next` names. |
-| `found` | Where and how it was found. |
-| `branch` | The branch or worktree the work is in. |
-| `evidence` | Links to logs, screenshots or snippets kept as files in `plan/evidence/`. |
-| `next` | The next step. |
-| `blocks` | The checkpoint, feature or item that waits for this one. |
-| `related` | Links to related docs or other items. |
+| `description` | what happens and what should happen |
+| `created` / `updated` | dates as `YYYY-MM-DD` |
+| `status` | `OPEN` when ready or `HALT` when it waits on what `next` names |
+| `found` | where and how it was found |
+| `branch` | the branch or worktree of the work |
+| `evidence` | links to files in `plan/evidence/` such as logs or screenshots |
+| `next` | the next step |
+| `blocks` | what waits for this item |
+| `related` | links to related docs or items |
 
 Use the fields an item needs, and leave out the rest.
 

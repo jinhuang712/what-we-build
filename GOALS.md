@@ -169,7 +169,7 @@ C1 = prompts with a lead above 0 / 3, with the mean lead
 
 **How:** estimate the tokens of the body as its bytes divided by 3. A token of English text holds more than 3 bytes, so the estimate errs high.
 
-**Status:** ✅ about 4714 tokens from 14143 bytes on 2026-11-04.
+**Status:** ✅ about 4701 tokens from 14105 bytes on 2026-11-04.
 
 #### T8: A doc read in one go
 

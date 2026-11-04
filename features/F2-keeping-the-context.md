@@ -16,8 +16,8 @@ In every window the agent works from the docs and writes back into them at once.
 
 | When | What the agent does |
 |---|---|
-| its window is new or was compacted | reads SKILL.md and every guide in full, then each doc in the read order |
-| it needs to know where things stand | scans `TODO.md`, `ROADMAP.md` and `GOALS.md` |
+| its window is new or was compacted | reads SKILL.md and every guide in full and then each doc in the read order |
+| it needs to know where things stand | scans `TODO.md` · `ROADMAP.md` · `GOALS.md` |
 | it is about to change something | reads the doc that owns it first |
 | it works on a doc | reads and writes the doc itself and never hands it to a subagent |
 | the work needs the code | may hand the code to a subagent |
