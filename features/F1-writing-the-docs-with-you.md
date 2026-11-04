@@ -13,7 +13,7 @@ F1: Writing the docs with you
 ├── F1.4: Push back — the agent says what does not fit and why
 ├── F1.5: See the change — every doc is checked before you see it
 └── F1.7: Resume — you stop at any point and pick up later
-    ├── F1.7.1: Pick up an unfinished doc set — the agent starts at the first doc not finished
+    ├── F1.7.1: Pick up an unfinished doc set — the agent tells you where the work stands
     └── F1.7.2: Find the docs that fell behind — the agent compares a finished doc set with the work
 ```
 
@@ -206,12 +206,12 @@ You can stop at any point and pick up later, because every agreed point is alrea
 
 **Stories:**
 
-- You come back another day and the agent picks up at the first doc that is not finished.
+- You come back another day and learn where the work stands, so you pick where to go on.
 - You return to a finished doc set and learn which docs fell behind the work.
 
 ### F1.7.1: Pick up an unfinished doc set
 
-Part of the doc set is written. The agent starts at the first core doc in the order that is not finished and tells you what is still open for it.
+Part of the doc set is written. The agent tells you where the work stands and what is still open, and you pick where to go on.
 
 ### F1.7.2: Find the docs that fell behind
 

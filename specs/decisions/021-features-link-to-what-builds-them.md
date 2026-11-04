@@ -2,6 +2,8 @@
 
 Decided: 2026-11-03
 
+Partly replaced by 022: Stories live in FEATURES and their flows in UIUX, under which a feature reaches its pages through the flows of its stories.
+
 ## The problem
 
 FEATURES lists every capability the project must have, so the design, the build and the progress meet there. Decision 017: Links point only to what a doc rests on let a feature link to a few DESIGNS points and down to its specs and decisions. The FEATURES skeleton had no place for how a feature looks, so a feature never reached its section in `specs/UIUX.md` or its page in `prototype/`. It could not reach a PHILOSOPHY stance either, even when that stance was the reason the feature exists.

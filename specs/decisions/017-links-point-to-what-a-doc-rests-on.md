@@ -2,6 +2,8 @@
 
 Decided: 2026-11-02
 
+Partly replaced by 021: FEATURES links to all a feature rests on and all that builds it, and by 034: The rules for a doc are hard and every guide is read at the start, under which each guide lists the links its doc may make.
+
 ## The problem
 
 The docs linked to each other in every direction. Some sentences did nothing but point to another doc, the same link came back several times in one doc, and `specs/decisions/` kept a README that listed its own file names. A reader followed links in circles, and every rename broke links in places that did not need them.

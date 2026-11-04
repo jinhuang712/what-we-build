@@ -2,6 +2,8 @@
 
 Decided: 2026-11-03
 
+Replaced by 034: The rules for a doc are hard and every guide is read at the start, under which a ✅ needs a run, and by 035: A feature of this skill is ✅ once the skill covers it, for this repo.
+
 ## The problem
 
 FEATURES used two meanings for its marks. Starting from running code and keeping the context while you work were never run on a new project and were marked ✅. Resume and the wiki hint were marked 🚧 for the same reason. For a skill, a feature is built once the skill says it, and it works only once an agent follows it on a real project. ROADMAP and GOALS already track that second part, through a checkpoint that proves the skill on a new project and goals such as O2: Context survives compaction.

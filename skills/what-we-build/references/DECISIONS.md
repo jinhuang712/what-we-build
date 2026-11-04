@@ -18,6 +18,7 @@ It keeps the reason alive after the people who knew it have moved on. One decisi
 - [NO]    what the user sees, which FEATURES holds.
 - [NO]    the reason in the title, since it goes in the file.
 - [NO]    a link to any doc, since the docs that rest on a decision link to it.
+- [WHEN]  a later decision replaces all or part of it: add a line under *Decided* that names the later one and the part it replaces.
 
 ## Decision
 

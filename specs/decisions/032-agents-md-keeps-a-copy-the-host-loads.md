@@ -2,6 +2,8 @@
 
 Decided: 2026-11-03
 
+Partly replaced by 037: The skill is written for any agent, under which `CLAUDE.md` is one example of a file the agent makes load `AGENTS.md`.
+
 ## The problem
 
 The skill copies the rules of *While you work* into the project's `AGENTS.md`, so they reach a window that never loaded the skill. A run on a Go library broke both halves of that. The project had no `CLAUDE.md`, and a `CLAUDE.md` in a folder above it made Claude Code skip `AGENTS.md`, so the rules never reached the window. The copy was also older than the skill, and it said some rules in the project's own words.

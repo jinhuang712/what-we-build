@@ -20,7 +20,7 @@ Features
 │   ├── ✅ F1.4: Push back — the agent says what does not fit and why
 │   ├── ✅ F1.5: See the change — every doc is checked before you see it
 │   └── ✅ F1.7: Resume — you stop at any point and pick up later
-│       ├── ✅ F1.7.1: Pick up an unfinished doc set — the agent starts at the first doc not finished
+│       ├── ✅ F1.7.1: Pick up an unfinished doc set — the agent tells you where the work stands
 │       └── ✅ F1.7.2: Find the docs that fell behind — the agent compares a finished doc set with the work
 ├── ✅ F2: Keeping the context — the docs stay true as the work goes on
 │   ├── ✅ F2.1: Keep the context while you work — the agent reads the owning doc first and records at once

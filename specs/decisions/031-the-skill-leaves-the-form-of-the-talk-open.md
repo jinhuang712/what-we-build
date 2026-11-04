@@ -2,6 +2,8 @@
 
 Decided: 2026-11-03
 
+Partly replaced by 034: The rules for a doc are hard and every guide is read at the start, under which only the user ends the talk on a doc.
+
 ## The problem
 
 The skill told the agent to decide with lettered options. In one session the agent offered a choice to settle each point before the talk had run its course, and the user asked why it was in a hurry. A rule added against it only restated the symptom. The root was that the talk was not yet enough, and only the two sides together can tell when it is.

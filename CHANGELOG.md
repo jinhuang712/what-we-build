@@ -56,6 +56,7 @@
   - When a doc moves into a new form, every item in it is judged again from scratch with the done items too.
   - No line is kept because it is old.
 - When a heading or an ID is renamed, every link and mention of it changes in the same change.
+- A decision that a later one replaces in whole or in part says so under its date.
 - When a change moves a measured number, the agent measures it again and dates the new value.
 
 ## 0.6.0 — 2026-11-03

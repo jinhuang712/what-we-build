@@ -8,7 +8,7 @@ A test on three repos showed the agent moving old docs into the new format witho
 
 ## The choice
 
-The skill keeps what the agent would not do unasked: the stance it talks from, the home of each fact, the docs and their guides, and the rules that stop a mistake we have seen. It drops the steps a capable model takes on its own, such as how to find where the work stopped, and leaves the form of the talk to the model and the user. It rests on DESIGNS 6: Hard rules for the doc, the method left to the model.
+The skill keeps what the agent would not do unasked: the stance it talks from, the home of each fact, the docs and their guides, and the rules that stop a mistake we have seen. It drops the steps a capable model takes on its own, such as how to find where the work stopped, and leaves the form of the talk to the model and the user. It rests on DESIGNS 4: Hard rules for the doc, the method left to the model.
 
 ## Not chosen
 

@@ -2,13 +2,15 @@
 
 Decided: 2026-11-03
 
+Partly replaced by 037: The skill is written for any agent, under which the agent that reads an example is no longer only a Claude model.
+
 ## The problem
 
 A draft of the FEATURES guide used a notes app to show a group, a feature and a part. The user found it harder to grasp than an example from Claude Code. Both readers of the skill know Claude Code: the user works in it, and the agent is a Claude model.
 
 ## The choice
 
-An example comes from this repo or from the stable ideas of a well-known tool, such as the sessions and hooks of Claude Code. It never names a command or a flag. It rests on DESIGNS 5: Examples the reader knows.
+An example comes from this repo or from the stable ideas of a well-known tool, such as the sessions and hooks of Claude Code. It never names a command or a flag. It rests on DESIGNS 3: Examples the reader knows.
 
 ## Not chosen
 

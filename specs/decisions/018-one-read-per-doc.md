@@ -2,6 +2,8 @@
 
 Decided: 2026-11-02
 
+Partly replaced by 039: T8 counts tokens and not lines.
+
 ## The problem
 
 M3: Length of the core docs counted the lines of the 7 core docs and stood at 885 against 614 at v0.4.0. The count rose whenever a doc gained structure, such as a section per goal, and it said nothing about whether a doc had grown too long. What matters is that the agent re-reads the whole doc before any edit, so one read must return all of it.

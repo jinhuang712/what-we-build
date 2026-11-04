@@ -2,6 +2,8 @@
 
 Decided: 2026-11-02
 
+Replaced by 024: Approval lives in the conversation.
+
 ## The problem
 
 Each doc carried a mark on its first line saying drafted or approved, and any edit set it back to drafted. A doc is committed only once it is approved, so the mark repeated what git already held. Keeping both cost a fresh approval of the whole doc for a change of one number, such as a line count in GOALS.
