@@ -2,25 +2,27 @@
 
 What goes in is a project folder and a conversation with the user. What comes out is a set of Markdown docs that hold the project's context. In between is the skill: Markdown instructions that an agent reads.
 
-what-we-build is designed around 6 guidelines:
+what-we-build is designed around 4 guidelines:
 
-1. **A short core with detail beside it:** `SKILL.md` holds only what the agent always needs, and the agent reads every guide with it.
+1. **A short core with detail beside it:** [SKILL.md](skills/what-we-build/SKILL.md) holds only what the agent always needs, and the agent reads every guide with it.
 2. **The docs are the state:** with git beside them, they hold where the work stopped.
-3. **No dependencies:** the skill is Markdown only.
-4. **Our own words over borrowed text:** methods from other guides are rewritten and never copied.
-5. **Examples the reader knows:** an example comes from this repo or from the stable ideas of a well-known tool.
-6. **Hard rules for the doc, the method left to the model:** a guide fixes what a doc must and must not be, and leaves how to work to the model.
+3. **Examples the reader knows:** an example comes from this repo or from the stable ideas of a well-known tool.
+4. **Hard rules for the doc, the method left to the model:** a guide fixes what a doc must and must not be and leaves how to work to the model.
 
 ## 1. A short core with detail beside it
 
-The agent reads `SKILL.md` and every guide in full each time the skill starts and after each compaction. A guide left for a step to point to was never read: in four runs before 2026-11-04 the agents read the guides only when the user told them to, and some handed them to a subagent. `SKILL.md` still holds only what the agent always needs and stays within a size limit, so the detail sits in the guides. The cost is the whole skill read at every start, about 60000 bytes on 2026-11-04.
+The agent reads [SKILL.md](skills/what-we-build/SKILL.md) and every guide in full each time the skill starts and after each compaction. A guide left for a step to point to was never read: in four runs before 2026-11-04 the agents read the guides only when the user told them to, and some handed them to a subagent. [SKILL.md](skills/what-we-build/SKILL.md) still holds only what the agent always needs and stays within a size limit, so the detail sits in the guides. The cost is the whole skill read at every start, about 60000 bytes on 2026-11-04.
 
 **Ask:** is this needed for every doc, or only for one?
 
+- **Stance:** [How is it carried from one window to the next?](PHILOSOPHY.md#how-is-it-carried-from-one-window-to-the-next)
 - **Decisions:**
   - [001: One skill holds every start](specs/decisions/001-one-skill-for-every-start.md)
   - [005: One guide file per kind of doc](specs/decisions/005-one-guide-per-kind-of-doc.md)
   - [034: The rules for a doc are hard and every guide is read at the start](specs/decisions/034-hard-rules-and-every-guide-read.md)
+- **How it works:**
+  - [SKILL.md](specs/ARCHITECTURE.md#skillmd)
+  - [The guides](specs/ARCHITECTURE.md#the-guides)
 
 ## 2. The docs are the state
 
@@ -28,42 +30,27 @@ Each point goes into its doc as soon as the user agrees it, and a point still op
 
 **Ask:** does this need a file other than the docs to remember it?
 
+- **Stance:** [Where does it live?](PHILOSOPHY.md#where-does-it-live)
 - **Decisions:**
   - [008: A resume with nothing to draft looks for drift](specs/decisions/008-resume-looks-for-drift.md)
   - [024: Approval lives in the conversation](specs/decisions/024-approval-lives-in-the-conversation.md)
 
-## 3. No dependencies
+## 3. Examples the reader knows
 
-The skill is Markdown only, so it works anywhere an agent can read files. The cost is that nothing checks the docs by machine.
-
-**Ask:** does this add anything that must be installed or run?
-
-- **Decisions:** [016: A skill and no plugin](specs/decisions/016-a-skill-and-no-plugin.md)
-
-## 4. Our own words over borrowed text
-
-The rules take methods from other writing guides and rewrite them for this skill. The sources are named in the decisions, and no passage is copied. The cost is that a reader cannot check a rule against its source line by line.
-
-**Ask:** is any passage copied from somewhere else?
-
-- **Decisions:**
-  - [004: Our own skill over jig's `vision-elicitation`](specs/decisions/004-our-own-skill-over-vision-elicitation.md)
-  - [006: Three ideas from mattpocock/skills over the whole guide](specs/decisions/006-three-ideas-from-mattpocock-skills.md)
-
-## 5. Examples the reader knows
-
-An example comes from this repo or from the stable ideas of a well-known tool, such as the sessions and hooks of Claude Code. Both readers know Claude Code: the user works in it, and the agent that reads the skill is a Claude model. An example never names a command, a flag or text from another project, since those change or would be borrowed. An invented example is the fallback when neither source fits. The cost is that an example can age when the tool renames an idea.
+An example comes from this repo or from the stable ideas of a well-known tool, such as the sessions and hooks of Claude Code. Claude Code is where this skill was built and tested, and a user of another coding agent knows the same ideas. An example never names a command, a flag or text from another project, since those change or would be borrowed. An invented example is the fallback when neither source fits. The cost is that an example can age when the tool renames an idea.
 
 **Ask:** does an example rest on a detail the tool may change?
 
+- **Stance:** [How is it carried from one window to the next?](PHILOSOPHY.md#how-is-it-carried-from-one-window-to-the-next)
 - **Decisions:** [027: Examples come from a tool the reader knows](specs/decisions/027-examples-from-a-known-tool.md)
 
-## 6. Hard rules for the doc, the method left to the model
+## 4. Hard rules for the doc, the method left to the model
 
 A guide says what a doc must and must not be, in rules that leave no way around them. A rule that leaves room is read as a choice, and an agent busy with a task takes the shorter way. In four runs before 2026-11-04 the agents numbered nothing, split nothing into a second level and linked specs to each other until the user stepped in, and one then replaced the links with plain-text pointers. How to do the work stays with the model, because a model told every step stops using its judgment. One run followed a guide's "table: pain → what the project does" to the letter, and the user rejected the tables. The cost is a longer list of `[NO]` lines in each guide.
 
 **Ask:** does this fix what the doc must be, or does it teach the model a method?
 
+- **Stance:** [What does a model do with a rule?](PHILOSOPHY.md#what-does-a-model-do-with-a-rule)
 - **Decisions:**
   - [026: The skill says what the agent must do, not each step](specs/decisions/026-the-skill-says-what-not-how.md)
   - [028: A guide says what its doc's core idea is and is not](specs/decisions/028-a-guide-says-what-its-core-idea-is-and-is-not.md)

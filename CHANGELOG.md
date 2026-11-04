@@ -36,6 +36,7 @@
   - TODO may link to any file in the project.
   - A goal names the want it serves and no longer links to PROPOSAL or ROADMAP.
   - A goal links to each feature and guideline it checks.
+  - A design guideline links to the PHILOSOPHY stance it derives from.
 - A file named in a doc is a link, not a name in backticks.
 - A table cell holds a word, a phrase or a short question, with at most one comma.
 - A field with more than one link puts each link on its own line, as *Decisions* does.

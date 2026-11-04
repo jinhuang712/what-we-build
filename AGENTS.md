@@ -56,7 +56,7 @@ Read these in full when the window is new or was compacted:
 - Run the check in *Writing a doc* of [SKILL.md](skills/what-we-build/SKILL.md) on each doc you touched.
 - Check that each decision you wrote says what was not chosen and why.
 - Check that each list of tagged lines in `skills/` holds at least two kinds of tag in the order `[YES]` `[NO]` `[MAYBE]` `[WHEN]`.
-- Check that what you added to `skills/` is Markdown in our own words, with examples that meet [DESIGNS 5: Examples the reader knows](DESIGNS.md#5-examples-the-reader-knows).
+- Check that what you added to `skills/` is Markdown in our own words, with examples that meet [DESIGNS 3: Examples the reader knows](DESIGNS.md#3-examples-the-reader-knows).
 
 ## Releasing
 

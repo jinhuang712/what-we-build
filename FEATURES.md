@@ -49,4 +49,4 @@ Features
 - **Writing or shaping a wiki:** what it holds depends on the project, so the skill only says when one may be needed ([F2.2: A wiki when others build on it](features/F2-keeping-the-context.md#f22-a-wiki-when-others-build-on-it)).
 - **A whole `AGENTS.md`:** the skill recommends only the read order, the layout and the work rules since Claude Code's `/init` writes the rest from the code.
 - **Standard texts such as LICENSE:** they need a choice of a standard text, not a discussion.
-- **Scripts that check the docs:** the skill is Markdown only, so a reader checks the links and the facts ([DESIGNS 3: No dependencies](DESIGNS.md#3-no-dependencies)).
+- **Scripts that check the docs:** the skill is Markdown only, so a reader checks the links and the facts ([037: The skill is written for any agent](specs/decisions/037-the-skill-is-written-for-any-agent.md)).

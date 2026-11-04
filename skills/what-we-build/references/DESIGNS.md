@@ -52,6 +52,7 @@ Point anything a [NO] line rules out to its home, or push back when it has none.
 
 **Ask:** <the question it asks of a new requirement>
 
+- **Stance:** <a link to the PHILOSOPHY stance it derives from>
 - **Decisions:**
   - <a link to one decision in specs/decisions/>
 - **How it works:**
