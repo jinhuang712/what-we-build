@@ -19,7 +19,7 @@ Read these in full when the window is new or was compacted:
 - The core docs sit at the root with TODO, CHANGELOG and INSTALL.
 - [features/](features/) holds one file per feature group.
 - `specs/` holds ARCHITECTURE and `decisions/`.
-- The skill lives in `skills/what-we-build/`, with a guide per doc in `references/`.
+- The skill lives in `skills/what-we-build/`, with a guide per doc in [references/](skills/what-we-build/references/).
 - This repo does not use `plan/`.
 
 ## While you work
@@ -30,13 +30,13 @@ Read these in full when the window is new or was compacted:
 - [NO]    a goal check for a small change.
 - [WHEN]  you are about to change something: read the doc that owns it first.
 - [WHEN]  the work needs the code: a subagent may read it.
-- [WHEN]  a choice had another way open, may be undone later and has a reason the code does not show: write a decision in `specs/decisions/` at once.
+- [WHEN]  you make a choice the [DECISIONS guide](skills/what-we-build/references/DECISIONS.md) counts as one: write it in `specs/decisions/` at once.
 - [WHEN]  something cannot be handled now: add it to [TODO.md](TODO.md) at once.
 - [WHEN]  the docs and the code disagree: tell the user and let them decide.
 - [WHEN]  other developers build on the project: tell the user it may need a wiki, and leave its form to them.
 - [WHEN]  a change is done: update `CHANGELOG.md` and the feature's status in the same change.
 - [WHEN]  a todo is handled: delete it in the same change.
-- [WHEN]  a change is made: check only what it touched against the rules.
+- [WHEN]  a change is made: run the check in *Writing a doc* of [SKILL.md](skills/what-we-build/SKILL.md) on only what it touched.
 - [WHEN]  a checkpoint ends or a release is near: check the goals in [GOALS.md](GOALS.md).
 - [WHEN]  the user stops you: stop at once, with every agent you started and every agent those started.
 
@@ -53,8 +53,6 @@ Read these in full when the window is new or was compacted:
 
 ## Before you finish
 
-- Run the check in *Writing a doc* of [SKILL.md](skills/what-we-build/SKILL.md) on each doc you touched.
-- Check that each decision you wrote says what was not chosen and why.
 - Check that each list of tagged lines in `skills/` holds at least two kinds of tag in the order `[YES]` `[NO]` `[MAYBE]` `[WHEN]`.
 - Check that what you added to `skills/` is Markdown in our own words, with examples that meet [DESIGNS 3: Examples the reader knows](DESIGNS.md#3-examples-the-reader-knows).
 
