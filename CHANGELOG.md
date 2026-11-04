@@ -39,11 +39,13 @@
   - A design guideline links to the PHILOSOPHY stance it derives from.
 - A file named in a doc is a link, not a name in backticks.
 - A part gets a spec only when a reader cannot follow its mechanism from its code, and ARCHITECTURE links it only then.
-- A table cell holds a word, a phrase or a short question, with at most one comma.
+- A table cell holds no sentence and at most one comma.
 - A field with more than one link puts each link on its own line, as *Decisions* does.
 - Every feature not yet built sits in a checkpoint or in *Later*, and *Later* holds nothing a planned checkpoint needs.
 - A feature says from your side what it does, how you use it and when it applies.
 - Once FEATURES holds more than ten features, each group gets a file of its own and FEATURES becomes the index.
+  - Before, FEATURES was one file however long it grew.
+  - Now a link to a feature points into its group file, and the agent fixes every link when a group moves.
 - The agent checks each item against what its guide says a finished doc gives the reader.
 - A prototype page shows one screen, and drops the other options once you pick one.
 - The agent adds every optional doc whose condition holds, and tells you which.
