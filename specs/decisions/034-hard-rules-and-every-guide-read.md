@@ -35,7 +35,7 @@ How to do the work stays with the model. A step no longer reads only its own gui
 ## Not chosen
 
 - Keep the guides on demand and name the guide in every step: the runs show the agent skips the read whatever the step says.
-- Put all the rules into `SKILL.md`: it would break the line limit and mix the rules of every doc into one list.
+- Put all the rules into `SKILL.md`: it would break the size limit and mix the rules of every doc into one list.
 - Louder wording such as MUST in capitals: it makes a model overreact and leaves the gaps where they were.
 - The talk ends when both sides judge it enough, as before: the agent judged it alone and left for code or another topic.
 - A `[WHEN]` that tells the agent where a shared fact goes when two specs share it: the rule on a second home already covers it, and one more line only adds weight.

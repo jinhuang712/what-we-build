@@ -103,6 +103,8 @@ Goals
 
 **Want:** <the wants or risks in PROPOSAL it serves>
 
+**Checks:** <each feature and guideline it checks, linked>
+
 **Acceptance:** <the test that passes or fails>
 
 **Status:** ⬜ | ✅ <date> | ❌ <date>
@@ -114,6 +116,8 @@ Goals
 <short description>
 
 **Want:** <the wants or risks in PROPOSAL it serves>
+
+**Checks:** <each feature and guideline it checks, linked>
 
 **How:** <the sample it is measured on>
 
@@ -133,6 +137,8 @@ M1 = <what is counted> / <what it is counted over>
 
 **Want:** <the wants or risks in PROPOSAL it serves>
 
+**Checks:** <each feature and guideline it checks, linked>
+
 **Problem set:** <the fixed set it is scored on>
 
 **Formula:**
@@ -150,6 +156,8 @@ B1 = <how the scores of the set combine into one>
 <short description>
 
 **Want:** <the wants or risks in PROPOSAL it serves>
+
+**Checks:** <each feature and guideline it checks, linked>
 
 **Against:** <the tool it is compared with>
 
@@ -171,6 +179,8 @@ C1 = <how the two scores are set against each other>
 
 **Want:** <the wants or risks in PROPOSAL it serves>
 
+**Checks:** <each feature and guideline it checks, linked>
+
 **Limit:** <the limit never crossed>
 
 **How:** <how it is checked>
@@ -184,6 +194,8 @@ C1 = <how the two scores are set against each other>
 <short description>
 
 **Want:** <the wants or risks in PROPOSAL it serves>
+
+**Checks:** <each feature and guideline it checks, linked>
 
 **Condition:** <what must always hold>
 

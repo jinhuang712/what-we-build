@@ -13,7 +13,7 @@ what-we-build is designed around 6 guidelines:
 
 ## 1. A short core with detail beside it
 
-The agent reads `SKILL.md` and every guide in full each time the skill starts and after each compaction. A guide left for a step to point to was never read: in four runs before 2026-11-04 the agents read the guides only when the user told them to, and some handed them to a subagent. `SKILL.md` still holds only what the agent always needs and stays within a line limit, so the detail sits in the guides. The cost is about 1,500 lines read at every start.
+The agent reads `SKILL.md` and every guide in full each time the skill starts and after each compaction. A guide left for a step to point to was never read: in four runs before 2026-11-04 the agents read the guides only when the user told them to, and some handed them to a subagent. `SKILL.md` still holds only what the agent always needs and stays within a size limit, so the detail sits in the guides. The cost is the whole skill read at every start, about 60000 bytes on 2026-11-04.
 
 **Ask:** is this needed for every doc, or only for one?
 

@@ -33,6 +33,7 @@
   - Two docs never link to each other, so a decision or a spec no longer links back up.
   - TODO may link to any file in the project.
   - A goal names the want it serves and no longer links to PROPOSAL or ROADMAP.
+  - A goal links to each feature and guideline it checks.
 - A file named in a doc is a link, not a name in backticks.
 - A field with more than one link puts each link on its own line, as *Decisions* does.
 - Every feature not yet built sits in a checkpoint or in *Later*, and *Later* holds nothing a planned checkpoint needs.
