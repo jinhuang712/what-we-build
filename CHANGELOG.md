@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 0.7.0 — 2026-11-05
+
 ### Working with the agent
 
 - The skill is written for any agent that loads Agent Skills, and the install steps cover Claude Code.

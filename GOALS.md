@@ -183,4 +183,4 @@ The agent re-reads a whole doc before any edit, so one read must return all of i
 
 **How:** a doc under 25000 bytes passes, since it never has more tokens than bytes. A larger doc passes when one Claude Code read with no offset returns all of it.
 
-**Status:** ✅ 2026-11-05, with every doc under 25000 bytes and CHANGELOG.md the largest at 24765 bytes.
+**Status:** ✅ 2026-11-05, with every doc under 25000 bytes and CHANGELOG.md the largest at 24790 bytes.
