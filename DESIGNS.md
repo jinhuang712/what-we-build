@@ -21,7 +21,7 @@ The agent reads [SKILL.md](skills/what-we-build/SKILL.md) and every guide in ful
   - [005: One guide file per kind of doc](specs/decisions/005-one-guide-per-kind-of-doc.md)
   - [034: The rules for a doc are hard and every guide is read at the start](specs/decisions/034-hard-rules-and-every-guide-read.md)
 - **How it works:**
-  - [SKILL.md](specs/ARCHITECTURE.md#skillmd)
+  - [The core](specs/ARCHITECTURE.md#the-core)
   - [The guides](specs/ARCHITECTURE.md#the-guides)
 
 ## 2. The docs are the state

@@ -21,10 +21,10 @@ A spec and the code guide each other.
 ## Part
 
 - [YES]   a piece of the project with a mechanism of its own, such as *the permission check* or *compaction* in Claude Code.
-- [YES]   one spec file.
 - [NO]    a feature, since one part can serve many features and one feature can use many parts.
 - [NO]    a single code file.
 - [MAYBE] the same name as a FEATURES group, as *Hooks* can be both.
+- [WHEN]  a part has a mechanism a reader cannot follow from its code: it gets one spec file.
 - [WHEN]  a part grows too large for a short paper: it splits into specs of its own.
 
 ## You have it when

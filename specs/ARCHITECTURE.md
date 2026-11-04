@@ -13,13 +13,14 @@ what-we-build is a skill: Markdown instructions that a coding agent reads. The a
                │ reads
                ▼
   ┌─────────────────────────┐
-  │ SKILL.md                │
-  │ the protocol and rules  │
+  │ The core                │
+  │ what the agent always   │
+  │ needs                   │
   └────────────┬────────────┘
                │ read in full with it
                ▼
   ┌─────────────────────────┐
-  │ references/             │
+  │ The guides              │
   │ one guide per doc       │
   └────────────┬────────────┘
                │ the agent writes with the user
@@ -30,20 +31,14 @@ what-we-build is a skill: Markdown instructions that a coding agent reads. The a
   └─────────────────────────┘
 ```
 
-## SKILL.md
+## The core
 
-It holds what the agent always needs: the protocol, the doc set and the rules.
+It holds what the agent always needs: how the talk runs, the doc set and the rules every doc follows.
 
-- **Lives in:** `skills/what-we-build/`
+- **Lives in:** [skills/what-we-build/](../skills/what-we-build/)
 
 ## The guides
 
 There is one guide per kind of doc. The agent reads every guide when the skill starts and after each compaction.
 
-- **Lives in:** `skills/what-we-build/references/`
-
-## The project's docs
-
-They are what the skill produces. This repo's own docs are the first example.
-
-- **Lives in:** the project's folder
+- **Lives in:** [skills/what-we-build/references/](../skills/what-we-build/references/)

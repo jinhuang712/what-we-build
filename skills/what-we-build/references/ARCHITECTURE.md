@@ -12,13 +12,13 @@ Point anything a [NO] line rules out to its home, or push back when it has none.
 - [YES]   always open with a diagram of the whole so the reader sees the shape before the words.
 - [YES]   name each part by what it does.
 - [YES]   name each part's folder rather than its files, because folders change less often.
-- [YES]   link each part to its spec.
 - [NO]    how a part works inside, which its spec in `specs/` holds.
 - [NO]    the guidelines the design must meet, which DESIGNS holds.
 - [NO]    the forks behind the shape, which `specs/decisions/` holds.
 - [NO]    what the user sees, which FEATURES holds.
 - [NO]    a map that lists files instead of parts.
 - [NO]    a link to any doc but the specs of its parts.
+- [WHEN]  a part has a spec: link it.
 
 ## You have it when
 
