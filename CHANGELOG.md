@@ -19,6 +19,9 @@
 - IDs follow the skill's format and change when the structure changes.
   - Before: an ID never changed, even when its group was wrong.
   - After: the agent can rebuild a structure and fix every link in one change.
+- A list inside a bullet keeps ` · ` after a colon and takes sub-bullets when it grows.
+  - Before: the comma rules pushed lists into chains such as "kind and label and weight".
+  - After: the skill rules out such a chain.
 
 ### Keeping the docs
 

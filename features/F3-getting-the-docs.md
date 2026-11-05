@@ -108,6 +108,7 @@ The docs come out in plain and precise English, so a reader finds a fact fast an
 |---|---|
 | an explanation | a short paragraph with the answer first |
 | separate points | a list with one sentence per bullet and at most one comma |
+| a list inside a bullet | ` · ` after a colon or sub-bullets when it grows |
 | a thing | one name everywhere |
 | an ID | always with its name like "T4: A short skill" |
 | a file or an ID another doc holds | a link wherever the doc's guide allows |

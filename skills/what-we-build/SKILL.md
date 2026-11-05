@@ -234,18 +234,21 @@ The docs stay true only if the agent keeps them true in every new window. These 
 - [YES]   write an ID with its name, such as "T4: A short skill".
 - [YES]   list the items instead of a range.
 - [YES]   put each link of a field such as **Decisions:** on its own sub-bullet when there is more than one.
+- [YES]   keep ` · ` between the items of a list after a colon.
 - [YES]   give a number its source, or leave it open.
 - [YES]   write dates as `YYYY-MM-DD`.
 - [NO]    sentences stacked line by line, which is neither a paragraph nor a list.
 - [NO]    a sentence or more than one comma in a table cell.
 - [NO]    more than one comma in a bullet.
 - [NO]    ` · ` in place of commas in a sentence.
+- [NO]    "and" repeated in place of commas or ` · `.
 - [NO]    status marks in headings, since they break the links.
 - [NO]    a bare ID, even as link text.
 - [NO]    an adjective where a number belongs.
 - [NO]    a file or folder named in backticks where a link is allowed.
 - [WHEN]  a doc names an ID: link it wherever its guide allows.
 - [WHEN]  a doc names a file or a folder: link it wherever its guide allows.
+- [WHEN]  a list outgrows one line: give each item a sub-bullet.
 
 No doc holds a code chunk, which is code pasted from the project or a command longer than two lines. Such a command belongs in a script, and the doc names the script. A code block for a formula, a tree or a short command is fine.
 
