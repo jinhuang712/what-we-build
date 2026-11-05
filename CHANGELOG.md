@@ -2,6 +2,24 @@
 
 ## Unreleased
 
+### Working with the agent
+
+- The agent follows the skill strictly until you reject a rule.
+  - Before: it could set a rule aside once you agreed.
+  - After: it never asks for a way around a rule and records each exception you make.
+- When a rule seems not to fit, the agent says why and asks for your opinion.
+- Each start puts every doc in the skill's format before any talk.
+  - Before: the agent talked with you before it moved old docs.
+  - After: it works alone, adds nothing new and gives you the proof at the end.
+  - What only you can settle waits in `TODO.md`.
+- A folder with no git gets the suggestion of `git init` before the agent touches a doc.
+
+### Writing a doc
+
+- IDs follow the skill's format and change when the structure changes.
+  - Before: an ID never changed, even when its group was wrong.
+  - After: the agent can rebuild a structure and fix every link in one change.
+
 ## 0.7.0 — 2026-11-05
 
 ### Working with the agent

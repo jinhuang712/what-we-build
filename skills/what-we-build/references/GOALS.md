@@ -8,7 +8,7 @@ Point anything a [NO] line rules out to its home, or push back when it has none.
 
 - [YES]   the goals of each kind with how each is checked.
 - [YES]   the last result of each check with its date.
-- [YES]   give each goal an ID that never changes so ROADMAP can point to it.
+- [YES]   give each goal an ID in the format of the skill's *IDs* table so ROADMAP can point to it.
 - [YES]   let the letter of the ID name its kind as the skeleton shows.
 - [YES]   open with a Summary, an ASCII tree in a code block of every goal by kind with its status and a short description.
 - [YES]   write under each label what the goal needs in whatever form fits.

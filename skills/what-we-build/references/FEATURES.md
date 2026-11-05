@@ -13,7 +13,7 @@ Point anything a [NO] line rules out to its home, or push back when it has none.
 - [YES]   open with a Summary, an ASCII tree in a code block of every item with its status and what it is in a few words.
 - [YES]   number the groups too, so F1 is a group and F1.1 a feature in it.
 - [YES]   split a feature with more than one case into sub-features such as F1.1.1.
-- [YES]   give each feature an ID that never changes so other docs can point to it.
+- [YES]   give each feature an ID in the format of the skill's *IDs* table so other docs can point to it.
 - [YES]   give a new feature a new number.
 - [YES]   mark a feature ✅ once it is built and you have run it.
 - [YES]   leave whether it works in real use to GOALS.

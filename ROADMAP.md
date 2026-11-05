@@ -67,6 +67,7 @@ A new project's core docs come out of the talk with the skill.
 - [F1.3: Talk each doc through](features/F1-writing-the-docs-with-you.md#f13-talk-each-doc-through)
 - [F1.4: Push back](features/F1-writing-the-docs-with-you.md#f14-push-back)
 - [F1.5: See the change](features/F1-writing-the-docs-with-you.md#f15-see-the-change)
+- [F1.8: Put every doc in the format](features/F1-writing-the-docs-with-you.md#f18-put-every-doc-in-the-format)
 
 **Exit criteria:**
 

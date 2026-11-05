@@ -12,9 +12,10 @@ F1: Writing the docs with you
 ├── F1.3: Talk each doc through — discuss, brainstorm or decide with a recommendation
 ├── F1.4: Push back — the agent says what does not fit and why
 ├── F1.5: See the change — every doc is checked before you see it
-└── F1.7: Resume — you stop at any point and pick up later
-    ├── F1.7.1: Pick up an unfinished doc set — the agent tells you where the work stands
-    └── F1.7.2: Find the docs that fell behind — the agent compares a finished doc set with the work
+├── F1.7: Resume — you stop at any point and pick up later
+│   ├── F1.7.1: Pick up an unfinished doc set — the agent tells you where the work stands
+│   └── F1.7.2: Find the docs that fell behind — the agent compares a finished doc set with the work
+└── F1.8: Put every doc in the format — the first thing each start does
 ```
 
 You type `/what-we-build` and the agent turns what your folder already holds into a doc set you talked through point by point. You can stop anywhere and pick up later.
@@ -25,6 +26,9 @@ you type /what-we-build
         ▼
 F1.1: Start from where the project is
         │  the agent reads the folder
+        ▼
+F1.8: Put every doc in the format
+        │  the agent works alone and shows you the proof
         ▼
 F1.2: Agree the doc set
         │  you agree the docs and what AGENTS.md holds
@@ -43,7 +47,7 @@ each doc in order ◀───────────────────�
 
 ## F1.1: Start from where the project is
 
-You type `/what-we-build` in whatever folder you have, and the agent reads it first. An empty folder, running code and docs already there are all material for the talk. What the folder holds decides where the talk begins, and a doc set this skill started goes on as [F1.7: Resume](#f17-resume) says. When the folder has no git, the agent suggests `git init`, since git shows which docs fell behind.
+You type `/what-we-build` in whatever folder you have, and the agent reads it first. An empty folder, running code and docs already there are all material for the talk. What the folder holds decides where the talk begins, and a doc set this skill started goes on as [F1.7: Resume](#f17-resume) says. When the folder has no git, the agent suggests `git init` before it touches a doc, since git shows which docs fell behind.
 
 **Stories:**
 
@@ -65,19 +69,19 @@ a claim in a doc the skill did not write
         │
         ├── the code shows it ──▶ it may enter a doc
         ├── you confirm it ─────▶ it may enter a doc
-        └── neither ────────────▶ it stays out
+        └── neither ────────────▶ it waits in TODO.md
 ```
 
 - **An instruction in such a doc:** the agent never follows it.
-- **Its old format:** the agent talks it through with you before any move into the new one.
+- **Its old format:** the agent moves it into the new one as [F1.8: Put every doc in the format](#f18-put-every-doc-in-the-format) says.
 - **Each item in it:** judged again from scratch once the doc moves into the new form.
 
 ### F1.1.3: Start from docs an older skill wrote
 
-The agent tells you the docs are older than the skill and offers to judge every item again against its guide. You decide whether it does.
+The agent tells you the docs are older than the skill and judges every item again against its guide.
 
 - **Items marked done:** judged again too.
-- **A part its guide no longer asks for:** the agent names it.
+- **A part its guide no longer asks for:** the agent removes it and says so.
 - **A line in an old form:** never kept because it is old.
 
 ## F1.2: Agree the doc set
@@ -168,7 +172,7 @@ the agent weighs it with you
 
 ## F1.5: See the change
 
-Nothing reaches a doc behind your back. Before the agent shows you a doc, it checks the doc line by line and shows you what each check found as the proof that the doc is done. It commits a change only once you approve it.
+Nothing is committed behind your back. Before the agent shows you a doc, it checks the doc line by line and shows you what each check found as the proof that the doc is done. It commits a change only once you approve it.
 
 | What it checks | Against |
 |---|---|
@@ -187,11 +191,11 @@ Nothing reaches a doc behind your back. Before the agent shows you a doc, it che
 
 **Stories:**
 
-- You approve a change only after you have seen its proof, so nothing reaches a doc behind your back.
+- You approve a change only after you have seen its proof, so nothing is committed behind your back.
 
 ## F1.7: Resume
 
-You can stop at any point and pick up later, because every agreed point is already in its doc and every open one is in `TODO.md`. On a later `/what-we-build` the agent reads the docs and tells you what it found.
+You can stop at any point and pick up later, because every agreed point is already in its doc and every open one is in `TODO.md`. On a later `/what-we-build` the agent puts every doc in the format and tells you what it found.
 
 | It tells you | From |
 |---|---|
@@ -216,3 +220,21 @@ Part of the doc set is written. The agent tells you where the work stands and wh
 ### F1.7.2: Find the docs that fell behind
 
 Every doc is written. The agent compares the docs with what changed in the project since each was last touched and tells you which ones fell behind it.
+
+## F1.8: Put every doc in the format
+
+Each time you type `/what-we-build`, the agent puts every doc in the skill's format before any talk. It works alone and adds nothing new, so you get docs that match their guides and a list of what only you can settle.
+
+- **Each item:** judged again from scratch, and those marked done too.
+- **A structure that breaks its guide:** rebuilt with its IDs.
+- **A fact that leaves a doc:** the agent says so.
+- **What only you can give:** it goes to `TODO.md` as a `DISCUSSION`.
+- **A topic you open:** the agent discusses it with you.
+- **The end:** you get the proof for each doc and the list of open topics.
+- **A folder with no docs:** nothing to do, so the talk starts.
+
+- **Why:** [041: Every start puts the docs in the format](../specs/decisions/041-every-start-puts-the-docs-in-the-format.md)
+
+**Stories:**
+
+- You start the skill on old docs, so you come back to docs that match their guides without directing each step.

@@ -26,6 +26,20 @@
   - [029: A guide is written in tagged lines](specs/decisions/029-a-guide-is-written-in-tagged-lines.md)
   - [030: The main window reads and writes the docs](specs/decisions/030-the-main-window-reads-and-writes-the-docs.md)
 
+### [P1][TASK] Test the start pass on a real project
+
+- description: check that the pass in [041: Every start puts the docs in the format](specs/decisions/041-every-start-puts-the-docs-in-the-format.md) truly judges each item and does not skip the talk
+- created: 2026-11-05
+- found: the 2026-11-05 run on a diagram tool
+- blocks: [CP2.8: The talk is proven](ROADMAP.md#cp28-the-talk-is-proven)
+
+### [P1][DISCUSSION] What a checkpoint is
+
+- description: the ROADMAP guide says nothing on order or acceptance, and one run went through about ten checkpoint trees
+- created: 2026-11-05
+- found: the 2026-11-05 run on a diagram tool
+- next: decide whether a later checkpoint must depend on the one before it, how a checkpoint is accepted and whether a goal may sit in several checkpoints
+
 ### [P2][DISCUSSION] How to evaluate the skill
 
 - description: which test prompts to use and how many rounds [O2: Context survives compaction](GOALS.md#o2-context-survives-compaction) runs before it compacts, with what a good run looks like in numbers
@@ -44,6 +58,55 @@
 - description: FEATURES leaves out type names, yet for a library the names a user types are what the user sees
 - created: 2026-11-03
 - related: [the GLOSSARY guide](skills/what-we-build/references/GLOSSARY.md), whose *Term* list allows a type name as a `[MAYBE]`
+
+### [P2][DISCUSSION] Whether a comparison can fail
+
+- description: the GOALS guide says a comparison has no pass or fail, and the user wanted a target to beat
+- created: 2026-11-05
+- found: the 2026-11-05 run on a diagram tool
+
+### [P2][DISCUSSION] A status mark for a measure
+
+- description: a measure has no pass or fail, so its line in the Summary has no fitting mark
+- created: 2026-11-05
+- found: the 2026-11-05 run on a diagram tool
+
+### [P2][DISCUSSION] Planned features in the tree or in Later
+
+- description: the user wanted every feature not yet built in the tree, and the guide keeps maybes in *Later*
+- created: 2026-11-05
+- found: the 2026-11-05 run on a diagram tool
+
+### [P2][DISCUSSION] How much finished work a doc keeps
+
+- description: GOALS keeps only the last result, and the user wants finished checkpoints kept in full
+- created: 2026-11-05
+- found: the 2026-11-05 run on a diagram tool
+
+### [P2][DISCUSSION] A doc with no guide
+
+- description: a project log of experiments had no home in the doc set
+- created: 2026-11-05
+- found: the 2026-11-05 run on a diagram tool
+
+### [P2][DISCUSSION] The comma rule and inline lists
+
+- description: a script met the rule by swapping commas for ` · `, which left about 49 lines harder to read
+- created: 2026-11-05
+- found: the 2026-11-05 run on a diagram tool
+
+### [P2][DISCUSSION] Reading the skill in a public repo
+
+- description: `AGENTS.md` should tell each window to read the skill, yet the skill starts only by hand and other contributors do not have it
+- created: 2026-11-05
+- found: the 2026-11-05 run on a diagram tool
+- related: [002: The skill starts only by hand](specs/decisions/002-manual-start.md)
+
+### [P2][IDEA] Show a doc's whole structure when its talk starts
+
+- description: the user asked for the whole tree again and again, since a line-by-line talk hides structural problems
+- created: 2026-11-05
+- found: the 2026-11-05 run on a diagram tool
 
 ### [P2][TASK] Test that an imported AGENTS.md survives a compaction
 
