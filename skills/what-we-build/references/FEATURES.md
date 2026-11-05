@@ -22,18 +22,17 @@ Point anything a [NO] line rules out to its home, or push back when it has none.
 - [YES]   link a feature down to everything that builds it: the UIUX flow of each story, its specs and its decisions.
 - [NO]    how a feature works inside, which `specs/` holds.
 - [NO]    the choices behind it, which `specs/decisions/` holds.
-- [NO]    type names and code paths.
+- [NO]    type names and code paths the user never meets.
 - [NO]    how a story moves across the screens and how they look, which `specs/UIUX.md` holds.
 - [NO]    the schedule or a version, which ROADMAP holds.
 - [NO]    a setting with no reason.
 - [NO]    a feature that cannot reach what builds it.
 - [NO]    a story in a template such as "As a … I want … so that …".
 - [NO]    the checkpoint, which ROADMAP links to the features it delivers.
-- [NO]    a feature in *Later* that a goal of a planned checkpoint needs.
 - [NO]    a link to GOALS or ROADMAP, since they link to FEATURES.
 - [WHEN]  what is built has a gap: mark it 🚧 and name the gap beside the mark.
 - [WHEN]  a PHILOSOPHY stance forces a feature: link the feature to it too.
-- [WHEN]  an idea may come later: list it in *Later* with what would bring it.
+- [WHEN]  an idea may come later: give it a ⬜ in the tree.
 - [WHEN]  a feature is ruled out: list it in *Not planned* with its reason.
 - [WHEN]  FEATURES holds more than ten features and sub-features: give each group a file of its own and keep FEATURES.md as the index.
 
@@ -80,7 +79,7 @@ Each group, feature and sub-feature has one in the skeleton. It answers the read
 ## The index and the group files
 
 - [YES]   the index holds the status legend and the Summary of every item with its status.
-- [YES]   the index holds *Later* and *Not planned*.
+- [YES]   the index holds *Not planned*.
 - [YES]   a group file opens with a tree of its own items.
 - [YES]   a group file holds its features.
 - [YES]   name a group file after its group, such as `features/F1-sessions.md`.
@@ -138,10 +137,6 @@ Features
 
 <description>
 
-## Later, if needed
-
-<ideas that may come, and what would bring them>
-
 ## Not planned
 
 - **<not this>:** <why>
@@ -165,10 +160,6 @@ Features
 ## Groups
 
 - [F1: <group>](features/F1-<group>.md)
-
-## Later, if needed
-
-<ideas that may come, and what would bring them>
 
 ## Not planned
 

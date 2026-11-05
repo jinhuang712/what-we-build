@@ -15,14 +15,16 @@ Point anything a [NO] line rules out to its home, or push back when it has none.
 - [YES]   split a checkpoint that delivers more than one feature group into sub-checkpoints.
 - [YES]   exit criteria of its own for each sub-checkpoint.
 - [YES]   a **Delivers:** list in each checkpoint with each feature it delivers, linked.
-- [YES]   every feature not yet built in a checkpoint or in the *Later* list of FEATURES.
+- [YES]   every feature not yet built in a checkpoint.
+- [YES]   a last checkpoint for the features that wait for a need.
 - [YES]   link an open question of a checkpoint to its TODO item.
 - [YES]   exit criteria as bullets grouped by the kind of goal, one goal to a bullet.
 - [YES]   a group headed *Do not hold the release* for goals that are checked but do not block it.
-- [NO]    feature behavior and the *Later* list, which FEATURES holds.
+- [NO]    feature behavior, which FEATURES holds.
 - [NO]    open questions, which TODO holds.
 - [NO]    their answers once decided, which `specs/decisions/` holds.
 - [NO]    release notes, which CHANGELOG holds.
+- [NO]    a finished checkpoint folded into a summary.
 - [NO]    exit criteria that restate goals instead of pointing to them.
 - [NO]    a checkpoint that starts building before its design is decided.
 - [NO]    one goal in two checkpoints, since a parent's exit criteria say only that its sub-checkpoints are met.

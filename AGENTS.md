@@ -36,6 +36,7 @@ Read these in full when the window is new or was compacted:
 - [WHEN]  other developers build on the project: tell the user it may need a wiki, and leave its form to them.
 - [WHEN]  a change is done: update `CHANGELOG.md` and the feature's status in the same change.
 - [WHEN]  a todo is handled: delete it in the same change.
+- [WHEN]  the work at hand is done and nothing is next: go through [TODO.md](TODO.md) with the user.
 - [WHEN]  a change is made: run the check in *Writing a doc* of [SKILL.md](skills/what-we-build/SKILL.md) on only what it touched.
 - [WHEN]  a checkpoint ends or a release is near: check the goals in [GOALS.md](GOALS.md).
 - [WHEN]  the user stops you: stop at once, with every agent you started and every agent those started.

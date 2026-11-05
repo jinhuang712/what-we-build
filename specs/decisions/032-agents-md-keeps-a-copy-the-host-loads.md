@@ -21,4 +21,4 @@ The copy stays, because it is what survives a compaction after the skill's own t
 
 ## Consequences
 
-The copy can fall behind the skill, and the agent finds that out by reading `AGENTS.md` in the talk. Whether Claude Code reloads an imported file after a compaction is not yet tested.
+The copy can fall behind the skill, and the agent finds that out by reading `AGENTS.md` in the talk. On 2026-11-05 a test with one Claude Code process found a file imported with `@AGENTS.md` still in context after a compaction.

@@ -14,7 +14,7 @@ Once the docs are written, they stay true while the work goes on in later window
 
 In every window the agent works from the docs and writes back into them at once. The skill starts only when you type `/what-we-build`, so these rules live in the project's `AGENTS.md` and the agent reads them whenever its window is new.
 
-- **Its window is new or was compacted:** it reads SKILL.md and every guide in full, then each doc in the read order.
+- **Its window is new or was compacted:** it reads SKILL.md and every guide in full if the skill is installed, then each doc in the read order.
 - **It needs to know where things stand:** it scans `TODO.md`, `ROADMAP.md` and `GOALS.md`.
 - **It is about to change something:** it reads the doc that owns it first.
 - **It works on a doc:** it reads and writes the doc itself and never hands it to a subagent.
@@ -24,6 +24,7 @@ In every window the agent works from the docs and writes back into them at once.
 - **The docs and the code disagree:** it tells you and lets you decide.
 - **A change is done:** it updates `CHANGELOG.md` and the feature's status in the same change.
 - **A todo is done:** it deletes it in the same change.
+- **The work at hand is done and nothing is next:** it goes through `TODO.md` with you.
 - **It changes something:** it checks only what it touched against the rules.
 - **A checkpoint ends or a release is near:** it checks the goals.
 - **You stop it:** it stops at once with every agent it started and every agent those started.

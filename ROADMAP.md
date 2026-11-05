@@ -24,7 +24,7 @@ Roadmap
 
 **Status:** ✅
 
-The skill and its guides went into a public repo. GitHub shows the repo as public since 2026-10-12, which proves the release. [T4: A short skill](GOALS.md#t4-a-short-skill) proves only that the skill stays short, and the goal for its features waits on [The goal that proves the doc set](TODO.md#p1discussion-the-goal-that-proves-the-doc-set).
+The skill and its guides went into a public repo. GitHub shows the repo as public since 2026-10-12, which proves the release. [T4: A short skill](GOALS.md#t4-a-short-skill) proves only that the skill stays short, and the goal for its features waits on [What a checkpoint is](TODO.md#p1discussion-what-a-checkpoint-is).
 
 **Delivers:**
 
@@ -103,7 +103,7 @@ The docs carry the work of the new project across windows.
 
 **Status:** ⬜
 
-[T8: A doc read in one go](GOALS.md#t8-a-doc-read-in-one-go) is met, and the goal for its features waits on [The goal that proves the doc set](TODO.md#p1discussion-the-goal-that-proves-the-doc-set).
+[T8: A doc read in one go](GOALS.md#t8-a-doc-read-in-one-go) is met, and the goal for its features waits on [What a checkpoint is](TODO.md#p1discussion-what-a-checkpoint-is).
 
 **Delivers:**
 

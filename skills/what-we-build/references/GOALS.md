@@ -28,6 +28,7 @@ Point anything a [NO] line rules out to its home, or push back when it has none.
 - [NO]    a "met" with no dated measurement or report from the user.
 - [NO]    a link to ROADMAP or PROPOSAL, since ROADMAP links here and the want is named in words.
 - [WHEN]  a number is not known: leave it open.
+- [WHEN]  a measure has a value: show it in the Summary in place of a status.
 
 ## Goal
 
@@ -54,7 +55,7 @@ A benchmark scores the project on a fixed problem set. Its score is tracked over
 
 ### Comparison
 
-A comparison runs the same work with this project and with another tool. It shows where the project stands, not whether it passes.
+A comparison runs the same work with this project and with another tool. It may set a target, and it fails when the project misses that target.
 
 ### Threshold
 

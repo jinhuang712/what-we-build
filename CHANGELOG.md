@@ -20,6 +20,24 @@
   - Before: an ID never changed, even when its group was wrong.
   - After: the agent can rebuild a structure and fix every link in one change.
 
+### Keeping the docs
+
+- Once the work at hand is done and nothing is next, the agent goes through `TODO.md` with you.
+- A window reads the skill first only where the skill is installed.
+- A finished checkpoint stays in ROADMAP in full.
+
+### Goals and features
+
+- A comparison may set a target and fail it.
+  - Before: a comparison only showed where the project stood.
+  - After: a missed target is marked ❌.
+- A measured measure shows its value in the Summary in place of a status.
+- *Later* is gone from FEATURES.
+  - Before: ideas waited in a *Later* list.
+  - After: every feature not yet built sits in the tree and in a checkpoint.
+- FEATURES may name the types a user meets, such as the public names of a library.
+- ` · ` may separate a list of names and never replaces commas in a sentence.
+
 ## 0.7.0 — 2026-11-05
 
 ### Working with the agent

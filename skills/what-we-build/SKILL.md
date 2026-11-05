@@ -209,7 +209,7 @@ The docs stay true only if the agent keeps them true in every new window. These 
 - [YES]   scan `TODO.md`, `ROADMAP.md` and `GOALS.md` to see where things stand.
 - [NO]    give a doc to a subagent to read or write.
 - [NO]    check the goals for a small change.
-- [WHEN]  the window is new or was compacted: read the skill's SKILL.md and guides in full, then every doc in the read order.
+- [WHEN]  the window is new or was compacted: read the skill's SKILL.md and guides in full if it is installed, then every doc in the read order.
 - [WHEN]  you are about to change something: read the doc that owns it first.
 - [WHEN]  the work needs the code: a subagent may read the code.
 - [WHEN]  you make a choice the DECISIONS guide counts as one: write it down at once.
@@ -218,6 +218,7 @@ The docs stay true only if the agent keeps them true in every new window. These 
 - [WHEN]  other developers build on the project: say it may need a wiki, and let the user pick its form.
 - [WHEN]  a change is done: update `CHANGELOG.md` and the feature's status in the same change.
 - [WHEN]  a todo is done: delete it in the same change.
+- [WHEN]  the work at hand is done and nothing is next: go through `TODO.md` with the user.
 - [WHEN]  you change something: check only what you touched against the rules.
 - [WHEN]  a checkpoint ends or a release is near: check the goals.
 - [WHEN]  the user stops you: stop at once.
@@ -238,6 +239,7 @@ The docs stay true only if the agent keeps them true in every new window. These 
 - [NO]    sentences stacked line by line, which is neither a paragraph nor a list.
 - [NO]    a sentence or more than one comma in a table cell.
 - [NO]    more than one comma in a bullet.
+- [NO]    ` · ` in place of commas in a sentence.
 - [NO]    status marks in headings, since they break the links.
 - [NO]    a bare ID, even as link text.
 - [NO]    an adjective where a number belongs.
