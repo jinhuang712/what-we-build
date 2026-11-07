@@ -1,6 +1,6 @@
 # GOALS.md
 
-GOALS.md turns the wants in the proposal into checks. It keeps the project honest: when someone claims progress, this is where the claim is tested. ROADMAP uses these goals as its exit criteria.
+GOALS.md turns the wants in the proposal into checks. It keeps the project honest: when someone claims progress, this is where the claim is tested. It is the rubric for the project's whole life, and each checkpoint in ROADMAP picks the goals it runs.
 
 ## What is it
 
@@ -18,7 +18,7 @@ Point anything a [NO] line rules out to its home, or push back when it has none.
 - [NO]    anything vague.
 - [NO]    a feature the project will not build, which FEATURES lists under *Not planned*.
 - [NO]    how anything works, which `specs/` holds.
-- [NO]    when each goal is first checked, which ROADMAP holds.
+- [NO]    which checkpoint runs a goal, which ROADMAP holds.
 - [NO]    an adjective where a number belongs.
 - [NO]    an objective with no acceptance test.
 - [NO]    a threshold with no limit.
@@ -67,7 +67,7 @@ A constraint is a condition the product must always meet, checked on the product
 
 ## When to check
 
-Every goal stands all the time, but its check runs only at a moment that calls for it. ROADMAP says when it starts: a goal can run from the first checkpoint whose exit criteria point to it. From then on it runs at the end of each checkpoint or before a release, and at those moments you go through every goal that can run. A small change runs no goal check, because the rules it touched are checked where they live.
+Every goal stands all the time, but its check runs only at a moment that calls for it. Each checkpoint names the goals it runs in its exit criteria, and one goal may run in many checkpoints. A release runs every goal that can run. A small change runs no goal check, because the rules it touched are checked where they live.
 
 ## You have it when
 

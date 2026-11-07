@@ -23,7 +23,6 @@
 - next:
   - decide whether a later checkpoint must depend on the one before it
   - decide how a checkpoint is accepted
-  - narrow the ROADMAP guide's rule to a sub-checkpoint's goal repeated in its parent, since commit 8895d27 added the wider rule with no decision and the user rejected it on 2026-11-05
   - decide which goal proves the features of [F3: Getting the docs](features/F3-getting-the-docs.md)
 - blocks: [CP2.10: The doc set is proven](ROADMAP.md#cp210-the-doc-set-is-proven)
 

@@ -38,7 +38,7 @@ Read these in full when the window is new or was compacted:
 - [WHEN]  a todo is handled: delete it in the same change.
 - [WHEN]  the work at hand is done and nothing is next: go through [TODO.md](TODO.md) with the user.
 - [WHEN]  a change is made: run the check in *Writing a doc* of [SKILL.md](skills/what-we-build/SKILL.md) on only what it touched.
-- [WHEN]  a checkpoint ends or a release is near: check the goals in [GOALS.md](GOALS.md).
+- [WHEN]  a checkpoint ends or a release is near: check the goals it names in [GOALS.md](GOALS.md).
 - [WHEN]  the user stops you: stop at once, with every agent you started and every agent those started.
 
 ## Rules

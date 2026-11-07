@@ -38,6 +38,9 @@
 - *Later* is gone from FEATURES.
   - Before: ideas waited in a *Later* list.
   - After: every feature not yet built sits in the tree and in a checkpoint.
+- Each checkpoint names the goals it runs, and one goal may run in many checkpoints.
+  - Before: ROADMAP allowed a goal in one checkpoint only.
+  - After: GOALS is the rubric for the project's whole life, such as cost and speed at every checkpoint.
 - FEATURES may name the types a user meets, such as the public names of a library.
 - ` · ` may separate a list of names and never replaces commas in a sentence.
 

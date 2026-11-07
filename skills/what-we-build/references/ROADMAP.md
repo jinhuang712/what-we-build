@@ -9,6 +9,7 @@ Point anything a [NO] line rules out to its home, or push back when it has none.
 - [YES]   checkpoints in order.
 - [YES]   their tasks and progress.
 - [YES]   exit criteria that point to GOALS.
+- [YES]   let each checkpoint name the goals it runs, such as cost and speed at every checkpoint.
 - [YES]   open with a Summary, an ASCII tree in a code block of every checkpoint and its items with their status.
 - [YES]   keep the first checkpoint small enough to finish soon.
 - [YES]   a heading for each checkpoint and each sub-checkpoint, with its status on a **Status:** line below it.
@@ -27,7 +28,7 @@ Point anything a [NO] line rules out to its home, or push back when it has none.
 - [NO]    a finished checkpoint folded into a summary.
 - [NO]    exit criteria that restate goals instead of pointing to them.
 - [NO]    a checkpoint that starts building before its design is decided.
-- [NO]    one goal in two checkpoints, since a parent's exit criteria say only that its sub-checkpoints are met.
+- [NO]    a sub-checkpoint's goal repeated in its parent, since a parent's exit criteria say only that its sub-checkpoints are met.
 - [NO]    a link to any doc but GOALS, FEATURES and TODO.
 - [WHEN]  its sub-checkpoints list what they deliver: the parent lists none.
 

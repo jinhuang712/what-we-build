@@ -220,7 +220,7 @@ The docs stay true only if the agent keeps them true in every new window. These 
 - [WHEN]  a todo is done: delete it in the same change.
 - [WHEN]  the work at hand is done and nothing is next: go through `TODO.md` with the user.
 - [WHEN]  you change something: check only what you touched against the rules.
-- [WHEN]  a checkpoint ends or a release is near: check the goals.
+- [WHEN]  a checkpoint ends or a release is near: check the goals it names.
 - [WHEN]  the user stops you: stop at once.
 - [WHEN]  the user stops you: stop every agent you started, and every agent those started.
 
