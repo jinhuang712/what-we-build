@@ -213,7 +213,31 @@ The docs stay true only if the agent keeps them true in every new window. These 
 - [WHEN]  the work at hand is done and nothing is next: go through `TODO.md` with the user.
 - [WHEN]  you change something: check only what you touched against the rules.
 - [WHEN]  a checkpoint ends or a release is near: check the goals it names.
+- [WHEN]  something in this tree happens: update the docs it names in the same change.
 - [WHEN]  the user stops you: stop at once, with all your agents.
+
+Each event names the docs it touches. Update only the ones it affects.
+
+```
+What just happened?
+├── A requirement was agreed
+│   ├── FEATURES ········· what it does
+│   ├── ROADMAP ·········· when it comes
+│   └── GOALS ············ the effect it must have
+├── A change was done
+│   ├── CHANGELOG ········ what shipped
+│   ├── FEATURES ········· its status
+│   ├── ROADMAP ·········· its progress
+│   ├── specs/ ··········· how the part works now
+│   ├── ARCHITECTURE ····· how the parts fit now
+│   └── README, INSTALL ·· how it is used now
+├── A fork was closed ······· decisions/
+├── A question stayed open ·· TODO
+├── A todo was done ········· delete it from TODO
+├── A number moved ·········· GOALS
+├── A commitment changed ···· DESIGNS
+└── A new term appeared ····· GLOSSARY
+```
 
 ## Wording
 

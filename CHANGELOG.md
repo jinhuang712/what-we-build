@@ -4,6 +4,9 @@
 
 ### Working with the agent
 
+- A tree says which docs each event updates, so the docs change when the work does.
+  - Before: only finished work, decisions and open items had a set moment.
+  - After: a new requirement reaches the plan before the work starts, and each doc has its moment.
 - The agent follows the skill strictly until you reject a rule.
   - Before: it could set a rule aside once you agreed.
   - After: it never asks for a way around a rule and records each exception you make.
