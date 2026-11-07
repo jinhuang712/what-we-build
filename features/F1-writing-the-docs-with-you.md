@@ -229,7 +229,8 @@ Each time you type `/what-we-build`, the agent puts every doc in the skill's for
 - **A structure that breaks its guide:** rebuilt with its IDs.
 - **A fact that leaves a doc:** the agent says so.
 - **What only you can give:** it goes to `TODO.md` as a `DISCUSSION`.
-- **A topic you open:** the agent discusses it with you.
+- **Approval:** the agent asks once for the whole pass.
+- **A topic you open:** the agent discusses it with you and goes back to the pass.
 - **The end:** you get the proof for each doc and the list of open topics.
 - **A folder with no docs:** nothing to do, so the talk starts.
 

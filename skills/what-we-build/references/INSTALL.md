@@ -16,7 +16,6 @@ Point anything a [NO] line rules out to its home, or push back when it has none.
 - [NO]    how to deploy a service, which RUNBOOK holds.
 - [NO]    how to set up for development, which CONTRIBUTING holds.
 - [NO]    a step that does not work as written.
-- [NO]    a command longer than two lines instead of a script.
 - [NO]    a way to install that nobody has tried.
 - [NO]    a link to another doc, since README links to INSTALL.
 

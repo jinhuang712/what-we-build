@@ -9,12 +9,11 @@ It is a spec in `specs/`.
 Point anything a [NO] line rules out to its home, or push back when it has none.
 
 - [YES]   the rules the interface follows, each with its reason.
-- [YES]   every screen and its page in `prototype/`.
 - [YES]   the drawn flow of each story across the screens.
 - [YES]   the states, how urgent each one looks and which may interrupt the user.
 - [YES]   the colors, type and motion that carry meaning.
 - [YES]   the keyboard and accessibility.
-- [YES]   list the screens in a table with a link to each page, so this doc is the prototype's navigation.
+- [YES]   list the screens in a table with a link to each page.
 - [YES]   draw each flow as an ASCII diagram with the screens it passes in order and where it can fail.
 - [YES]   link each flow to each page it passes.
 - [YES]   rank the states by urgency so a minor state never looks like an error.
@@ -22,9 +21,7 @@ Point anything a [NO] line rules out to its home, or push back when it has none.
 - [NO]    what the user does and why, which FEATURES holds.
 - [NO]    the guidelines the design must meet, which DESIGNS holds.
 - [NO]    the forks behind a screen, which `specs/decisions/` holds.
-- [NO]    the numbers for sizes and timing, which live in the code.
 - [NO]    a story in FEATURES with no flow here.
-- [NO]    a flow that is only described and not drawn.
 - [NO]    a screen with no page in `prototype/` or a page with no screen here.
 - [NO]    a second index of the pages, such as `prototype/index.html`.
 - [NO]    a page that shows more than one screen.

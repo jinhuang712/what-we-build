@@ -7,7 +7,7 @@ CONTRIBUTING.md tells outside contributors how to help. GitHub links it from iss
 - [YES]   setup.
 - [YES]   how work flows through branches, commits and reviews.
 - [YES]   where to ask.
-- [YES]   state the bar for a change so contributors know before they invest.
+- [YES]   state the bar for a change.
 - [YES]   list the checks that must pass with the script that runs them.
 - [YES]   link to the docs a contributor reads before a change, such as DESIGNS.
 - [NO]    how to install it for use, which INSTALL holds.

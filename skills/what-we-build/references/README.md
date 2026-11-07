@@ -8,14 +8,10 @@ It comes last, because it sums up the approved docs.
 
 Point anything a [NO] line rules out to its home, or push back when it has none.
 
-- [YES]   the hero image and the tagline.
-- [YES]   what it is and what it does.
+- [YES]   open with a hero image and the tagline.
+- [YES]   what it is, and what it does in a few bullets.
 - [YES]   how to install it in one line.
-- [YES]   how to use it.
-- [YES]   a link to every other doc.
-- [YES]   open with a hero image, which shows what the project is before a word is read.
 - [YES]   lead with the one constraint that sets the project apart.
-- [YES]   say what it does in a few bullets.
 - [YES]   show how to use it with the first real task from start to result.
 - [YES]   emoji where they carry meaning, such as a mark beside each capability.
 - [YES]   color on the page through the hero and the diagrams, with badges and callouts.

@@ -27,7 +27,7 @@ In every window the agent works from the docs and writes back into them at once.
 - **The work at hand is done and nothing is next:** it goes through `TODO.md` with you.
 - **It changes something:** it checks only what it touched against the rules.
 - **A checkpoint ends or a release is near:** it checks the goals the checkpoint names.
-- **You stop it:** it stops at once with every agent it started and every agent those started.
+- **You stop it:** it stops at once with all its agents.
 
 - **Design:** [DESIGNS 2: The docs are the state](../DESIGNS.md#2-the-docs-are-the-state)
 - **Why:**

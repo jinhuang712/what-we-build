@@ -8,7 +8,7 @@ It comes third in the doc order, right after the philosophy. The design guides t
 
 Point anything a [NO] line rules out to its home, or push back when it has none.
 
-- [YES]   open with the numbered guidelines so a reader sees the whole design at a glance.
+- [YES]   open with the numbered guidelines.
 - [YES]   why each holds and what it costs.
 - [YES]   the question each asks of a new requirement.
 - [YES]   links from each to its decisions and specs.

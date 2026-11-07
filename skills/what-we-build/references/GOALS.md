@@ -9,7 +9,6 @@ Point anything a [NO] line rules out to its home, or push back when it has none.
 - [YES]   the goals of each kind with how each is checked.
 - [YES]   the last result of each check with its date.
 - [YES]   give each goal an ID in the format of the skill's *IDs* table so ROADMAP can point to it.
-- [YES]   let the letter of the ID name its kind as the skeleton shows.
 - [YES]   open with a Summary, an ASCII tree in a code block of every goal by kind with its status and a short description.
 - [YES]   write under each label what the goal needs in whatever form fits.
 - [YES]   write the formula of every number in a code block with its sample and unit beside it.
@@ -19,7 +18,6 @@ Point anything a [NO] line rules out to its home, or push back when it has none.
 - [NO]    a feature the project will not build, which FEATURES lists under *Not planned*.
 - [NO]    how anything works, which `specs/` holds.
 - [NO]    which checkpoint runs a goal, which ROADMAP holds.
-- [NO]    an adjective where a number belongs.
 - [NO]    an objective with no acceptance test.
 - [NO]    a threshold with no limit.
 - [NO]    a number with no formula.

@@ -26,7 +26,6 @@ Point anything a [NO] line rules out to its home, or push back when it has none.
 - [NO]    their answers once decided, which `specs/decisions/` holds.
 - [NO]    release notes, which CHANGELOG holds.
 - [NO]    a finished checkpoint folded into a summary.
-- [NO]    exit criteria that restate goals instead of pointing to them.
 - [NO]    a checkpoint that starts building before its design is decided.
 - [NO]    a sub-checkpoint's goal repeated in its parent, since a parent's exit criteria say only that its sub-checkpoints are met.
 - [NO]    a link to any doc but GOALS, FEATURES and TODO.

@@ -26,29 +26,11 @@
   - decide which goal proves the features of [F3: Getting the docs](features/F3-getting-the-docs.md)
 - blocks: [CP2.10: The doc set is proven](ROADMAP.md#cp210-the-doc-set-is-proven)
 
-### [P1][DISCUSSION] The start pass and the user's approval rule
-
-- description: a global rule to ask before any edit stops the pass at its first edit, while one approval should carry it to the end
-- created: 2026-11-05
-- found: the 2026-11-05 run on a diagram tool
-
 ### [P1][DISCUSSION] How far the start pass verifies
 
 - description: a pass over docs already in format should cost far less than this run
 - created: 2026-11-05
 - found: the 2026-11-05 run on a diagram tool, which read about 472KB and checked licenses and CI at about $3 before any edit
-
-### [P1][DISCUSSION] Agreeing with a direction is not approving a commit
-
-- description: the run landed three changes on main before it showed a diff
-- created: 2026-11-05
-- found: the 2026-11-05 run on a diagram tool
-
-### [P1][DISCUSSION] One thing at a time against one pass
-
-- description: a pass should still run to its end when the user asks for one thing at a time
-- created: 2026-11-05
-- found: the 2026-11-05 run on a diagram tool, where the pass broke into single turns and drifted to a new goal with its fix list open
 
 ### [P2][DISCUSSION] How to evaluate the skill
 

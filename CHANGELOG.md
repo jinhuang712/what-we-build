@@ -8,10 +8,13 @@
   - Before: it could set a rule aside once you agreed.
   - After: it never asks for a way around a rule and records each exception you make.
 - When a rule seems not to fit, the agent says why and asks for your opinion.
+- Agreeing on a direction no longer counts as approving a change.
 - Each start puts every doc in the skill's format before any talk.
   - Before: the agent talked with you before it moved old docs.
   - After: it works alone, adds nothing new and gives you the proof at the end.
   - What only you can settle waits in `TODO.md`.
+  - It asks for your approval once for the whole pass.
+  - After a topic you open it goes back to the pass.
 - A folder with no git gets the suggestion of `git init` before the agent touches a doc.
 
 ### Writing a doc
@@ -19,6 +22,7 @@
 - IDs follow the skill's format and change when the structure changes.
   - Before: an ID never changed, even when its group was wrong.
   - After: the agent can rebuild a structure and fix every link in one change.
+- The skill says its rules in fewer lines with the same meaning.
 - A list inside a bullet keeps ` · ` after a colon and takes sub-bullets when it grows.
   - Before: the comma rules pushed lists into chains such as "kind and label and weight".
   - After: the skill rules out such a chain.

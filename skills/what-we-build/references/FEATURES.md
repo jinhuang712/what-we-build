@@ -11,11 +11,8 @@ Point anything a [NO] line rules out to its home, or push back when it has none.
 - [YES]   each feature's behavior from the user's side.
 - [YES]   each feature's status.
 - [YES]   open with a Summary, an ASCII tree in a code block of every item with its status and what it is in a few words.
-- [YES]   number the groups too, so F1 is a group and F1.1 a feature in it.
 - [YES]   split a feature with more than one case into sub-features such as F1.1.1.
 - [YES]   give each feature an ID in the format of the skill's *IDs* table so other docs can point to it.
-- [YES]   give a new feature a new number.
-- [YES]   mark a feature ✅ once it is built and you have run it.
 - [YES]   leave whether it works in real use to GOALS.
 - [YES]   give each feature its stories, one sentence each that says who does what and for what.
 - [YES]   link a feature up to the design guidelines it rests on.
@@ -28,7 +25,6 @@ Point anything a [NO] line rules out to its home, or push back when it has none.
 - [NO]    a setting with no reason.
 - [NO]    a feature that cannot reach what builds it.
 - [NO]    a story in a template such as "As a … I want … so that …".
-- [NO]    the checkpoint, which ROADMAP links to the features it delivers.
 - [NO]    a link to GOALS or ROADMAP, since they link to FEATURES.
 - [WHEN]  what is built has a gap: mark it 🚧 and name the gap beside the mark.
 - [WHEN]  a PHILOSOPHY stance forces a feature: link the feature to it too.
@@ -69,7 +65,6 @@ Each group, feature and sub-feature has one in the skeleton. It answers the read
 - [YES]   when it applies, when it does not and when it fails.
 - [YES]   open with a paragraph.
 - [NO]    who uses it and what they gain, which its stories hold.
-- [NO]    how as the way it works inside, which `specs/` holds.
 - [NO]    an answer made up for a question that does not apply.
 - [NO]    steps, cases or separate points written out in a paragraph.
 - [NO]    a **Description** header.

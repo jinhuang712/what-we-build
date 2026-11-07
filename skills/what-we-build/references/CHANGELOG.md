@@ -7,8 +7,7 @@ The changelog tells users what changed in each release, in words they understand
 - [YES]   one section per version with its date, grouped by area.
 - [YES]   write from the user's side: what they can now do or what no longer breaks.
 - [NO]    an ID or a link, since the reader knows none of the docs it points to.
-- [NO]    a table of renamed IDs, since it serves the docs and not the user.
-- [WHEN]  the project starts: give it an empty *Unreleased* section so the first change has a place to land.
+- [WHEN]  the project starts: give it an empty *Unreleased* section.
 - [WHEN]  a change does the work: fill its entry in that same change.
 - [WHEN]  a change breaks something: give it a before and an after.
 

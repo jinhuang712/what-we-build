@@ -5,7 +5,6 @@ The glossary fixes the project's words: one name per thing, each with its meanin
 ## What is it
 
 - [YES]   the project's terms.
-- [YES]   the one name chosen for each thing.
 - [YES]   pick one name and record the losing synonyms so search still finds them.
 - [YES]   define each term so a newcomer understands it.
 - [NO]    a link to another doc, since the docs that use a term link to it.
