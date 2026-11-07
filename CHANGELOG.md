@@ -58,6 +58,7 @@
 - *Later* is gone from FEATURES.
   - Before: ideas waited in a *Later* list.
   - After: every feature not yet built sits in the tree and in a checkpoint.
+- A checkpoint ends once each of its goals has a recorded result that meets it.
 - ROADMAP keeps each goal's result from each checkpoint.
   - Before: only GOALS held a result, and a newer one replaced it.
   - After: a goal that later fails leaves the old record in place and opens an issue.

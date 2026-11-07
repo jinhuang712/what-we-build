@@ -37,6 +37,7 @@ Point anything a [NO] line rules out to its home, or push back when it has none.
 ## Checkpoint
 
 - [YES]   a state someone can use or a claim it proves, such as *a session survives a restart*.
+- [YES]   end it once each goal in its exit criteria has a recorded result that meets it.
 - [NO]    a bag of tasks, such as *bugs found last week*.
 - [NO]    a date or a version alone.
 - [MAYBE] a release, when it ships what the checkpoint delivers.

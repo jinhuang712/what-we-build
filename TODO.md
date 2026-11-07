@@ -16,17 +16,6 @@
 - next: run it in a new window, since the 2026-11-08 run came after a compaction in an old one and still carried that talk
 - blocks: [CP2.8: The talk is proven](ROADMAP.md#cp28-the-talk-is-proven)
 
-### [P1][DISCUSSION] What a checkpoint is
-
-- description: the ROADMAP guide says nothing on order or acceptance, and one run went through about ten checkpoint trees
-- created: 2026-11-05
-- found: the 2026-11-05 run on a diagram tool
-- next:
-  - decide whether a later checkpoint must depend on the one before it
-  - decide how a checkpoint is accepted
-  - decide which goal proves the features of [F3: Getting the docs](features/F3-getting-the-docs.md)
-- blocks: [CP2.10: The doc set is proven](ROADMAP.md#cp210-the-doc-set-is-proven)
-
 ### [P2][DISCUSSION] How to evaluate the skill
 
 - description: which test prompts to use and how many rounds [O2: Context survives compaction](GOALS.md#o2-context-survives-compaction) runs before it compacts, with what a good run looks like in numbers

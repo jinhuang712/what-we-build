@@ -31,7 +31,10 @@ A new project gets its whole doc set without the talk dragging on.
 
 **Want:** the risk that the user wants the docs and not the talk.
 
-**Checks:** [F1.3: Talk each doc through](features/F1-writing-the-docs-with-you.md#f13-talk-each-doc-through)
+**Checks:**
+
+- [F1.3: Talk each doc through](features/F1-writing-the-docs-with-you.md#f13-talk-each-doc-through)
+- [F3: Getting the docs](features/F3-getting-the-docs.md)
 
 **Acceptance:** a new project's 7 core docs are drafted and approved within N hours of talk. N stays open while [The time limit for O1: The core docs without a long talk](TODO.md#p1discussion-the-time-limit-for-o1-the-core-docs-without-a-long-talk) is open.
 
