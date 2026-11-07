@@ -16,12 +16,6 @@
 - created: 2026-11-02
 - blocks: [CP4: Proven useful](ROADMAP.md#cp4-proven-useful)
 
-### [P2][IDEA] Show a doc's whole structure when its talk starts
-
-- description: the user asked for the whole tree again and again, since a line-by-line talk hides structural problems
-- created: 2026-11-05
-- found: the 2026-11-05 run on a diagram tool
-
 ### [P2][ISSUE] A hung command after the turn ended
 
 - description: an unbounded grep moved to the background as the agent ended its turn, which left the run idle for 10 minutes

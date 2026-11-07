@@ -123,6 +123,7 @@ PROPOSAL → PHILOSOPHY → DESIGNS → GOALS → FEATURES → ROADMAP → READM
 
 On each doc the agent asks one thing at a time, recommends an answer and says why. A point goes into the doc once you agree it. The talk on a doc ends only when you say it is done.
 
+- **When the talk starts:** the agent shows you the doc's whole structure.
 - **Before you end the talk:** the agent keeps looking for the next line that breaks a rule.
 - **When it finds none:** it reads the whole doc again and shows you what it checked.
 - **When it thinks the talk is enough:** it says so and names what is still open.

@@ -14,6 +14,7 @@
   - After a change it searches the docs for what the change now contradicts.
   - It tells you when your words contradict a doc.
   - It picks no side.
+- The talk on a doc opens with its whole structure.
 - When a change lands, the agent fixes what it left behind before it reports.
 - When a checkpoint ends, the agent runs the start pass again.
 - The agent follows the skill strictly until you reject a rule.

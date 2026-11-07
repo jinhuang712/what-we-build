@@ -28,7 +28,7 @@ Talk in the way the moment needs:
 - [YES]   use a case from the project or a tool the user knows.
 - [YES]   say when you think the talk is enough.
 - [YES]   say what is still open.
-- [YES]   keep each turn short.
+- [YES]   open a doc's talk with its whole structure.
 - [NO]    move on to code, another doc or another topic before the user ends the talk.
 - [WHEN]  the point has moving parts: draw it.
 - [WHEN]  the outcome is open: ask open questions and give your own view.
