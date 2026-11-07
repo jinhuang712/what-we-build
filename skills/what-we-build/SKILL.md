@@ -205,13 +205,10 @@ These rules go in the project's `AGENTS.md`, so they reach a window that never l
 - [WHEN]  you are about to change something: read the doc that owns it first.
 - [WHEN]  the work needs the code: a subagent may read it.
 - [WHEN]  you make a choice the DECISIONS guide counts as one: write it down at once.
-- [WHEN]  something cannot be done now: add it to `TODO.md` at once.
 - [WHEN]  you change a fact or a rule: search the docs for what it now contradicts.
 - [WHEN]  the user says something a doc contradicts: say so before you act.
 - [WHEN]  you find a contradiction: tell the user and pick no side.
 - [WHEN]  other developers build on the project: say it may need a wiki, and let the user pick its form.
-- [WHEN]  a change is done: update `CHANGELOG.md` and the feature's status in the same change.
-- [WHEN]  a todo is done: delete it in the same change.
 - [WHEN]  the work at hand is done and nothing is next: go through `TODO.md` with the user.
 - [WHEN]  you change something: check what you touched against the rules.
 - [WHEN]  a change lands: before you report, fix what it left behind in the docs and `TODO.md`.
@@ -220,7 +217,7 @@ These rules go in the project's `AGENTS.md`, so they reach a window that never l
 - [WHEN]  something in this tree happens: update the docs it names in the same change.
 - [WHEN]  the user stops you: stop at once, with all your agents.
 
-Each event names the docs it touches. Update only the ones it affects.
+Update only the docs an event affects.
 
 ```
 What just happened?
@@ -236,7 +233,7 @@ What just happened?
 │   ├── ARCHITECTURE ····· how the parts fit now
 │   └── README, INSTALL ·· how it is used now
 ├── A fork was closed ······· decisions/
-├── A question stayed open ·· TODO
+├── Something stayed open ··· TODO
 ├── A todo was done ········· delete it from TODO
 ├── A number moved ·········· GOALS
 ├── A commitment changed ···· DESIGNS
