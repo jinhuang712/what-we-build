@@ -231,7 +231,7 @@ Each time you type `/what-we-build`, the agent puts every doc in the skill's for
 - **What only you can give:** it goes to `TODO.md` as a `DISCUSSION`.
 - **Approval:** the agent asks once for the whole pass.
 - **A topic you open:** the agent discusses it with you and goes back to the pass.
-- **The end:** you get the proof for each doc and the list of open topics.
+- **The end:** you get the proof for each doc, what it left unchecked and the list of open topics.
 - **A folder with no docs:** nothing to do, so the talk starts.
 
 - **Why:** [041: Every start puts the docs in the format](../specs/decisions/041-every-start-puts-the-docs-in-the-format.md)

@@ -13,6 +13,7 @@
 - description: check that the pass in [041: Every start puts the docs in the format](specs/decisions/041-every-start-puts-the-docs-in-the-format.md) truly judges each item and does not skip the talk
 - created: 2026-11-05
 - found: the 2026-11-05 run on a diagram tool, which read every guide itself and still grouped FEATURES by noun
+- next: run it in a new window, since the 2026-11-08 run came after a compaction in an old one and still carried that talk
 - blocks: [CP2.8: The talk is proven](ROADMAP.md#cp28-the-talk-is-proven)
 
 ### [P1][DISCUSSION] What a checkpoint is
@@ -25,24 +26,6 @@
   - decide how a checkpoint is accepted
   - decide which goal proves the features of [F3: Getting the docs](features/F3-getting-the-docs.md)
 - blocks: [CP2.10: The doc set is proven](ROADMAP.md#cp210-the-doc-set-is-proven)
-
-### [P1][DISCUSSION] How far the start pass verifies
-
-- description: a pass over docs already in format should cost far less than this run
-- created: 2026-11-05
-- found: the 2026-11-05 run on a diagram tool, which read about 472KB and checked licenses and CI at about $3 before any edit
-
-### [P1][ISSUE] A reading pass misses a wording rule
-
-- description: a pass that read every doc called the fix thorough while lines broke a rule of *Wording*, and the check should catch that without a search step for each rule
-- created: 2026-11-08
-- found: the 2026-11-08 run on a diagram tool, which left 49 lines with three or more "and" while its lint, tests and links all passed
-
-### [P1][DISCUSSION] A pass says what it read and how
-
-- description: the proof of a pass should name what was read in full and what was only sampled
-- created: 2026-11-08
-- found: the 2026-11-08 run on a diagram tool, which admitted that its pass before had only sampled the docs
 
 ### [P2][DISCUSSION] How to evaluate the skill
 

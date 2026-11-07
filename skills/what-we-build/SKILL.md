@@ -42,7 +42,7 @@ Read the project folder first, then put every doc in the skill's format. This pa
 
 - [YES]   judge every item from scratch against its guide, even those marked done.
 - [YES]   rebuild a structure that breaks its guide.
-- [YES]   end this pass with the proof for each doc and the list of open topics.
+- [YES]   end this pass with the proof for each doc, what it left unchecked and the list of open topics.
 - [YES]   write a read order, a layout and every rule of *While you work* in `AGENTS.md`.
 - [YES]   link `AGENTS.md` to the docs in its read order and to nothing else.
 - [YES]   name every doc of the second table whose condition holds.

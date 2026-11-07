@@ -27,6 +27,7 @@
   - What only you can settle waits in `TODO.md`.
   - It asks for your approval once for the whole pass.
   - After a topic you open it goes back to the pass.
+  - At the end it says what it left unchecked.
 - A folder with no git gets the suggestion of `git init` before the agent touches a doc.
 
 ### Writing a doc
