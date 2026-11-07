@@ -12,7 +12,7 @@
 
 ### [P2][DISCUSSION] How to evaluate the skill
 
-- description: which test prompts to use and how many rounds [O2: Context survives compaction](GOALS.md#o2-context-survives-compaction) runs before it compacts, with what a good run looks like in numbers
+- description: pick the three prompts of [B1: Run quality](GOALS.md#b1-run-quality) once enough real runs show what they should be
 - created: 2026-11-02
 - blocks: [CP4: Proven useful](ROADMAP.md#cp4-proven-useful)
 

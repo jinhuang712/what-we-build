@@ -51,7 +51,7 @@ What was decided stays known after the window is compacted.
 - [F2.1: Keep the context while you work](features/F2-keeping-the-context.md#f21-keep-the-context-while-you-work)
 - [DESIGNS 2: The docs are the state](DESIGNS.md#2-the-docs-are-the-state)
 
-**Acceptance:** after N rounds of work in a real run, compact the window and ask the agent questions that were answered before it. One wrong answer fails. N stays open while [How to evaluate the skill](TODO.md#p2discussion-how-to-evaluate-the-skill) is open.
+**Acceptance:** after real work, compact the window and ask the agent questions that were answered before it. One wrong answer fails.
 
 **Status:** ⬜
 
