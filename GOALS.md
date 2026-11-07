@@ -109,7 +109,7 @@ Runs with the skill are scored on a fixed set of prompts.
 - [F1: Writing the docs with you](features/F1-writing-the-docs-with-you.md)
 - [F3: Getting the docs](features/F3-getting-the-docs.md)
 
-**Problem set:** three realistic project prompts, not chosen while [How to evaluate the skill](TODO.md#p2discussion-how-to-evaluate-the-skill) is open.
+**Problem set:** three realistic project prompts, not chosen yet.
 
 **Formula:**
 
