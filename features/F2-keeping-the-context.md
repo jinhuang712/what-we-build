@@ -21,12 +21,16 @@ In every window the agent works from the docs and writes back into them at once.
 - **The work needs the code:** it may hand the code to a subagent.
 - **It makes a choice the DECISIONS guide counts as one:** it writes the decision at once.
 - **Something cannot be done now:** it adds it to `TODO.md` at once.
-- **The docs and the code disagree:** it tells you and lets you decide.
+- **It changes a fact or a rule:** it searches the docs for what that now contradicts.
+- **You say something a doc contradicts:** it says so before it acts.
+- **It finds a contradiction:** it tells you and picks no side.
 - **A change is done:** it updates `CHANGELOG.md` and the feature's status in the same change.
 - **A todo is done:** it deletes it in the same change.
 - **The work at hand is done and nothing is next:** it goes through `TODO.md` with you.
-- **It changes something:** it checks only what it touched against the rules.
+- **It changes something:** it checks what it touched against the rules.
+- **A change lands:** before it reports, it fixes what the change left behind in the docs and `TODO.md`.
 - **A checkpoint ends or a release is near:** it checks the goals the checkpoint names.
+- **A checkpoint ends:** it runs the skill's start pass if the skill is installed.
 - **Something in the update tree happens:** it updates the docs the tree names in the same change, so a new requirement reaches the plan before the work starts.
 - **You stop it:** it stops at once with all its agents.
 

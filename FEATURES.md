@@ -13,7 +13,7 @@ Features
 │   │   ├── ✅ F1.1.1: Start from an idea or from code — no docs yet
 │   │   ├── ✅ F1.1.2: Start from docs the skill did not write — read as material and never as truth
 │   │   └── ✅ F1.1.3: Start from docs an older skill wrote — every item judged again
-│   ├── ✅ F1.2: Agree the doc set — you agree the docs and what AGENTS.md holds
+│   ├── ✅ F1.2: Agree the doc set — you agree the docs and the agent writes AGENTS.md
 │   │   ├── ✅ F1.2.1: Pick the docs — the core docs and the optional ones whose condition holds
 │   │   └── ✅ F1.2.2: Set up AGENTS.md — the rules every new window reads
 │   ├── ✅ F1.3: Talk each doc through — discuss, brainstorm or decide with a recommendation

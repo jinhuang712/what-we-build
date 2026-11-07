@@ -6,7 +6,7 @@ F1: Writing the docs with you
 │   ├── F1.1.1: Start from an idea or from code — no docs yet
 │   ├── F1.1.2: Start from docs the skill did not write — read as material and never as truth
 │   └── F1.1.3: Start from docs an older skill wrote — every item judged again
-├── F1.2: Agree the doc set — you agree the docs and what AGENTS.md holds
+├── F1.2: Agree the doc set — you agree the docs and the agent writes AGENTS.md
 │   ├── F1.2.1: Pick the docs — the core docs and the optional ones whose condition holds
 │   └── F1.2.2: Set up AGENTS.md — the rules every new window reads
 ├── F1.3: Talk each doc through — discuss, brainstorm or decide with a recommendation
@@ -31,7 +31,7 @@ F1.8: Put every doc in the format
         │  the agent works alone and shows you the proof
         ▼
 F1.2: Agree the doc set
-        │  you agree the docs and what AGENTS.md holds
+        │  you agree the docs and the agent writes AGENTS.md
         ▼
 each doc in order ◀──────────────────────────────────┐
   F1.3: Talk each doc through   one point at a time  │
@@ -104,10 +104,10 @@ The agent proposes the docs and you decide which ones come.
 
 ### F1.2.2: Set up AGENTS.md
 
-`AGENTS.md` holds the rules that every new window reads before it works. The agent proposes what goes in and you agree each rule in turn.
+`AGENTS.md` holds the rules that every new window reads before it works. The agent writes them all at the start, and you reject any you do not want.
 
 - **What it holds:** a read order, a layout and the work rules of [F2.1: Keep the context while you work](F2-keeping-the-context.md#f21-keep-the-context-while-you-work).
-- **How it grows:** one rule at a time as you agree it, never all at once.
+- **A rule you reject:** it leaves `AGENTS.md`, and the exception goes in `specs/decisions/`.
 - **What it links to:** the docs in its read order and nothing else.
 - **Your agent reads another file such as `CLAUDE.md`:** the agent makes that file load `AGENTS.md`.
 

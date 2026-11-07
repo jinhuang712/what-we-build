@@ -7,6 +7,15 @@
 - A tree says which docs each event updates, so the docs change when the work does.
   - Before: only finished work, decisions and open items had a set moment.
   - After: a new requirement reaches the plan before the work starts, and each doc has its moment.
+- `AGENTS.md` starts with every work rule, and you reject the ones you do not want.
+  - Before: the agent proposed rules and you agreed them one at a time.
+  - After: a project has the full rules from its first start.
+- The agent looks for contradictions.
+  - After a change it searches the docs for what the change now contradicts.
+  - It tells you when your words contradict a doc.
+  - It picks no side.
+- When a change lands, the agent fixes what it left behind before it reports.
+- When a checkpoint ends, the agent runs the start pass again.
 - The agent follows the skill strictly until you reject a rule.
   - Before: it could set a rule aside once you agreed.
   - After: it never asks for a way around a rule and records each exception you make.

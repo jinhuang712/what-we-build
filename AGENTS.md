@@ -24,6 +24,7 @@ Read these in full when the window is new or was compacted:
 
 ## While you work
 
+- [YES]   follow these rules strictly unless the user rejects one.
 - [YES]   read each doc you work on in the main window, in full.
 - [YES]   track where the project stands by scanning [TODO.md](TODO.md), [ROADMAP.md](ROADMAP.md) and [GOALS.md](GOALS.md).
 - [NO]    hand a doc to a subagent to read or write.
@@ -32,13 +33,17 @@ Read these in full when the window is new or was compacted:
 - [WHEN]  the work needs the code: a subagent may read it.
 - [WHEN]  you make a choice the [DECISIONS guide](skills/what-we-build/references/DECISIONS.md) counts as one: write it in `specs/decisions/` at once.
 - [WHEN]  something cannot be handled now: add it to [TODO.md](TODO.md) at once.
-- [WHEN]  the docs and the code disagree: tell the user and let them decide.
+- [WHEN]  you change a fact or a rule: search the docs for what it now contradicts.
+- [WHEN]  the user says something a doc contradicts: say so before you act.
+- [WHEN]  you find a contradiction: tell the user and pick no side.
 - [WHEN]  other developers build on the project: tell the user it may need a wiki, and leave its form to them.
 - [WHEN]  a change is done: update `CHANGELOG.md` and the feature's status in the same change.
 - [WHEN]  a todo is handled: delete it in the same change.
 - [WHEN]  the work at hand is done and nothing is next: go through [TODO.md](TODO.md) with the user.
-- [WHEN]  a change is made: run the check in *Writing a doc* of [SKILL.md](skills/what-we-build/SKILL.md) on only what it touched.
+- [WHEN]  a change is made: run the check in *Writing a doc* of [SKILL.md](skills/what-we-build/SKILL.md) on what it touched.
+- [WHEN]  a change lands: before you report, fix what it left behind in the docs and [TODO.md](TODO.md).
 - [WHEN]  a checkpoint ends or a release is near: check the goals it names in [GOALS.md](GOALS.md).
+- [WHEN]  a checkpoint ends: run the skill's start pass.
 - [WHEN]  something in this tree happens: update the docs it names in the same change.
 - [WHEN]  the user stops you: stop at once, with all your agents.
 
