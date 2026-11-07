@@ -1,6 +1,6 @@
 # Roadmap
 
-Where what-we-build stands and what comes next. Each checkpoint is a usable or proven state of the skill. Its exit criteria point to [GOALS.md](GOALS.md), and it ends with a pass over every goal that can run by then.
+Where what-we-build stands and what comes next. Each checkpoint is a usable or proven state of the skill. Its exit criteria name the goals it runs in [GOALS.md](GOALS.md) and hold their results from that checkpoint.
 
 Status: ✅ done · 🟨 in progress · ❔ claimed and not yet run · ⬜ not started.
 
@@ -35,7 +35,7 @@ The skill and its guides went into a public repo. GitHub shows the repo as publi
 **Exit criteria:**
 
 - **Thresholds**
-  - [T4: A short skill](GOALS.md#t4-a-short-skill)
+  - [T4: A short skill](GOALS.md#t4-a-short-skill): no record from when it ended
 
 ## CP2: Rebuilt and proven on a new project
 

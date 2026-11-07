@@ -17,7 +17,7 @@ Point anything a [NO] line rules out to its home, or push back when it has none.
 - [NO]    anything vague.
 - [NO]    a feature the project will not build, which FEATURES lists under *Not planned*.
 - [NO]    how anything works, which `specs/` holds.
-- [NO]    which checkpoint runs a goal, which ROADMAP holds.
+- [NO]    which checkpoint runs a goal and its result there, which ROADMAP holds.
 - [NO]    an objective with no acceptance test.
 - [NO]    a threshold with no limit.
 - [NO]    a number with no formula.

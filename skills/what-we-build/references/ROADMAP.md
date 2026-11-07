@@ -10,6 +10,7 @@ Point anything a [NO] line rules out to its home, or push back when it has none.
 - [YES]   their tasks and progress.
 - [YES]   exit criteria that point to GOALS.
 - [YES]   let each checkpoint name the goals it runs, such as cost and speed at every checkpoint.
+- [YES]   record each goal's result and date beside it once the checkpoint runs it.
 - [YES]   open with a Summary, an ASCII tree in a code block of every checkpoint and its items with their status.
 - [YES]   keep the first checkpoint small enough to finish soon.
 - [YES]   a heading for each checkpoint and each sub-checkpoint, with its status on a **Status:** line below it.
@@ -28,8 +29,10 @@ Point anything a [NO] line rules out to its home, or push back when it has none.
 - [NO]    a finished checkpoint folded into a summary.
 - [NO]    a checkpoint that starts building before its design is decided.
 - [NO]    a sub-checkpoint's goal repeated in its parent, since a parent's exit criteria say only that its sub-checkpoints are met.
+- [NO]    a recorded result rewritten after the checkpoint ends.
 - [NO]    a link to any doc but GOALS, FEATURES and TODO.
 - [WHEN]  its sub-checkpoints list what they deliver: the parent lists none.
+- [WHEN]  a goal fails after a checkpoint met it: keep the checkpoint's record and add an `ISSUE` to `TODO.md`.
 
 ## Checkpoint
 
@@ -42,6 +45,7 @@ Point anything a [NO] line rules out to its home, or push back when it has none.
 
 - A reader knows what comes next and what done means for it.
 - Every checkpoint's exit criteria point to GOALS.
+- Every finished checkpoint shows each goal's result and date.
 
 ## Skeleton
 
@@ -73,7 +77,7 @@ Roadmap
 - **Sub-checkpoints**
   - <a sub-checkpoint ID with its name, linked> is met.
 - **Do not hold the release**
-  - <a goal ID with its name, linked>
+  - <a goal ID with its name, linked>: <mark, result and date once it runs>
 
 ### CP1.1: <name>
 
@@ -84,7 +88,7 @@ Roadmap
 **Exit criteria:**
 
 - **Objectives**
-  - <a goal ID with its name, linked>
+  - <a goal ID with its name, linked>: <mark, result and date once it runs>
 - **Benchmarks**
-  - <a goal ID with its name, linked>
+  - <a goal ID with its name, linked>: <mark, result and date once it runs>
 ````
