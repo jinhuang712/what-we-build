@@ -34,7 +34,7 @@ Every project gets seven core docs, and each answers one question.
 
 ## F3.2: Docs that join later
 
-Three docs are recommended from the start, so a finding, a change or a choice has a home at once. The others join only when their condition holds in the project.
+Three docs are recommended from the start, so a finding, a change or a choice has a home at once. The others join only when their condition holds in the project. CLI is required once its condition holds, so a script can rely on the commands.
 
 | Doc | Joins when |
 |---|---|
@@ -49,10 +49,14 @@ Three docs are recommended from the start, so a finding, a change or a choice ha
 | CONTRIBUTING | a public project open to contributions |
 | SECURITY | a way to report a vulnerability |
 | RUNBOOK | a service someone keeps running |
+| CLI | required with a command line a person or a program calls |
+
+- **Why:** [053: A project with a command line must have CLI.md](../specs/decisions/053-a-project-with-a-command-line-must-have-cli-md.md)
 
 **Stories:**
 
 - You add an optional doc only when the project needs it, so you keep no doc without a job.
+- You call a project from a script and find every command and exit code in one doc, so you need not read its code.
 
 ## F3.3: A guide per doc
 

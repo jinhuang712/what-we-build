@@ -101,6 +101,7 @@ The other docs join when the project needs them:
 | `CONTRIBUTING.md` | a public project open to contributions | [CONTRIBUTING](references/CONTRIBUTING.md) |
 | `SECURITY.md` | a way to report a vulnerability | [SECURITY](references/SECURITY.md) |
 | `RUNBOOK.md` | a service someone keeps running | [RUNBOOK](references/RUNBOOK.md) |
+| `CLI.md` | required with a command line a person or a program calls | [CLI](references/CLI.md) |
 
 Where the docs live is the user's choice, and a doc keeps its name wherever it sits. By default the layout looks like this:
 
@@ -128,7 +129,7 @@ Talk each doc through with the user, and write each point into it once it is agr
 - [WHEN]  a point is still open: put it in `TODO.md` as a `DISCUSSION`.
 - [WHEN]  a doc claims a behavior you cannot run: mark it ❔ and name the reason beside it.
 - [WHEN]  the user states one stance a second time: propose to write it in PHILOSOPHY.
-- [WHEN]  the user drops a core doc: say what it would hold before you drop it.
+- [WHEN]  the user drops a core doc or `CLI.md`: say what it would hold before you drop it.
 
 Before you show the user a doc, check it line by line:
 
@@ -175,6 +176,7 @@ To find the owner, run the placement test: ask these questions in order. The fir
 | Is it a commitment the whole design must meet? | `DESIGNS.md` |
 | Is it a rule for how the work is done here? | `AGENTS.md` |
 | Is it an effect the project must have, with a test or a number? | `GOALS.md` |
+| Is it a command, its output or an exit code? | `CLI.md` |
 | Can the user see it or do it? | `FEATURES.md` for what happens · `specs/UIUX.md` for how it looks |
 | Is it a feature the project will not build? | `FEATURES.md` → *Not planned* |
 | Is it a choice between ways, with the others not taken? | `specs/decisions/` |
@@ -231,6 +233,7 @@ What just happened?
 │   ├── ROADMAP ·········· its progress
 │   ├── specs/ ··········· how the part works now
 │   ├── ARCHITECTURE ····· how the parts fit now
+│   ├── CLI ·············· how it is called now
 │   └── README, INSTALL ·· how it is used now
 ├── A fork was closed ······· decisions/
 ├── Something stayed open ··· TODO
@@ -269,9 +272,9 @@ The status marks mean the same in every doc:
 
 | Mark | Means | Used in |
 |---|---|---|
-| ✅ | built · done · met | FEATURES · ROADMAP · GOALS |
+| ✅ | built · done · met | FEATURES · ROADMAP · GOALS · CLI |
 | 🚧 | built with a gap named beside it | FEATURES |
 | 🟨 | in progress | ROADMAP |
-| ⬜ | planned · not started · not measured yet | FEATURES · ROADMAP · GOALS |
+| ⬜ | planned · not started · not measured yet | FEATURES · ROADMAP · GOALS · CLI |
 | ❌ | measured and not met | GOALS |
 | ❔ | claimed and not yet run with its reason beside it | FEATURES and ROADMAP |

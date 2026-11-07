@@ -16,11 +16,12 @@ Point anything a [NO] line rules out to its home, or push back when it has none.
 - [YES]   leave whether it works in real use to GOALS.
 - [YES]   give each feature its stories, one sentence each that says who does what and for what.
 - [YES]   link a feature up to the design guidelines it rests on.
-- [YES]   link a feature down to everything that builds it: the UIUX flow of each story, its specs and its decisions.
+- [YES]   link a feature down to everything that builds it: the UIUX flow of each story · its commands · its specs · its decisions.
 - [NO]    how a feature works inside, which `specs/` holds.
 - [NO]    the choices behind it, which `specs/decisions/` holds.
 - [NO]    type names and code paths the user never meets.
 - [NO]    how a story moves across the screens and how they look, which `specs/UIUX.md` holds.
+- [NO]    the flags and exit codes of a command, which `CLI.md` holds.
 - [NO]    the schedule or a version, which ROADMAP holds.
 - [NO]    a setting with no reason.
 - [NO]    a feature that cannot reach what builds it.
@@ -119,6 +120,7 @@ Features
 
 - **Stance:** <the PHILOSOPHY stance that forces it, if one does>
 - **Design:** <the DESIGNS guidelines it rests on>
+- **Commands:** <its commands in CLI.md>
 - **How it works:** <its specs>
 - **Why:** <each decision as its ID with a short name, linked>
 
@@ -179,6 +181,7 @@ F1: <group>
 
 - **Stance:** <the PHILOSOPHY stance that forces it, if one does>
 - **Design:** <the DESIGNS guidelines it rests on>
+- **Commands:** <its commands in CLI.md>
 - **How it works:** <its specs>
 - **Why:** <each decision as its ID with a short name, linked>
 

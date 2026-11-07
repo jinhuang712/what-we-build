@@ -42,6 +42,7 @@ reading-notes/
 ├── PHILOSOPHY.md     why it is this way
 ├── DESIGNS.md        what the design must always satisfy
 ├── FEATURES.md       what it does
+├── CLI.md            how it is called
 ├── README.md         what it is and how to start
 ├── CHANGELOG.md      what changed
 ├── specs/decisions/  why each choice was made

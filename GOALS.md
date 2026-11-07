@@ -169,7 +169,7 @@ C1 = prompts with a lead above 0 / 3, with the mean lead
 
 **How:** estimate the tokens of the body as its bytes divided by 3. A token of English text holds more than 3 bytes, so the estimate errs high.
 
-**Status:** ✅ about 4890 tokens from 14669 bytes on 2026-11-08.
+**Status:** ✅ about 4975 tokens from 14924 bytes on 2026-11-08.
 
 #### T8: A doc read in one go
 
@@ -183,4 +183,4 @@ The agent re-reads a whole doc before any edit, so one read must return all of i
 
 **How:** a doc under 25000 bytes passes, since it never has more tokens than bytes. A larger doc passes when one Claude Code read with no offset returns all of it.
 
-**Status:** ✅ 2026-11-05, with CHANGELOG.md the largest at 26486 bytes and one read with no offset returning all of it.
+**Status:** ✅ 2026-11-08, with CHANGELOG.md the largest at 28424 bytes and one read with no offset returning all of it.

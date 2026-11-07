@@ -31,6 +31,9 @@
 
 ### Writing a doc
 
+- A project with a command line must now have `CLI.md`.
+  - Before: flags and exit codes had no doc of their own since 0.4.0.
+  - After: the commands and what they return have one home that the program follows.
 - IDs follow the skill's format and change when the structure changes.
   - Before: an ID never changed, even when its group was wrong.
   - After: the agent can rebuild a structure and fix every link in one change.

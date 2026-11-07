@@ -58,6 +58,7 @@ What just happened?
 │   ├── ROADMAP ·········· its progress
 │   ├── specs/ ··········· how the part works now
 │   ├── ARCHITECTURE ····· how the parts fit now
+│   ├── CLI ·············· how it is called now
 │   └── README, INSTALL ·· how it is used now
 ├── A fork was closed ······· decisions/
 ├── Something stayed open ··· TODO
