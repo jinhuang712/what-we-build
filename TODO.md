@@ -2,12 +2,6 @@
 
 ## ongoing
 
-### [P1][DISCUSSION] The time limit for O1: The core docs without a long talk
-
-- description: set N in [O1: The core docs without a long talk](GOALS.md#o1-the-core-docs-without-a-long-talk), the hours of talk a new project's core docs may take
-- created: 2026-11-03
-- blocks: [CP2.8: The talk is proven](ROADMAP.md#cp28-the-talk-is-proven)
-
 ### [P1][TASK] Test the start pass on a real project
 
 - description: check that the pass in [041: Every start puts the docs in the format](specs/decisions/041-every-start-puts-the-docs-in-the-format.md) truly judges each item and does not skip the talk

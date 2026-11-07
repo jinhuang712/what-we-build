@@ -24,7 +24,7 @@ Roadmap
 
 **Status:** ✅
 
-The skill and its guides went into a public repo. GitHub shows the repo as public since 2026-10-12, which proves the release. [T4: A short skill](GOALS.md#t4-a-short-skill) proves only that the skill stays short, and [O1: The core docs without a long talk](GOALS.md#o1-the-core-docs-without-a-long-talk) proves its features on a new project.
+The skill and its guides went into a public repo. GitHub shows the repo as public since 2026-10-12, which proves the release. [T4: A short skill](GOALS.md#t4-a-short-skill) proves only that the skill stays short, and [O1: The core docs on a new project](GOALS.md#o1-the-core-docs-on-a-new-project) proves its features on a new project.
 
 **Delivers:**
 
@@ -56,7 +56,6 @@ The skill was rebuilt around a project's context in this repo, and it is proven 
 
 A new project's core docs come out of the talk with the skill.
 
-- Set the time limit in [O1: The core docs without a long talk](GOALS.md#o1-the-core-docs-without-a-long-talk).
 - Draft and approve a new project's seven core docs with the skill.
 - Read every change in the last three windows for [M1: Reads before it changes](GOALS.md#m1-reads-before-it-changes).
 
@@ -72,7 +71,7 @@ A new project's core docs come out of the talk with the skill.
 **Exit criteria:**
 
 - **Objectives**
-  - [O1: The core docs without a long talk](GOALS.md#o1-the-core-docs-without-a-long-talk)
+  - [O1: The core docs on a new project](GOALS.md#o1-the-core-docs-on-a-new-project)
 - **Measures**
   - [M1: Reads before it changes](GOALS.md#m1-reads-before-it-changes)
 
@@ -103,7 +102,7 @@ The docs carry the work of the new project across windows.
 
 **Status:** ⬜
 
-[T8: A doc read in one go](GOALS.md#t8-a-doc-read-in-one-go) is met, and [O1: The core docs without a long talk](GOALS.md#o1-the-core-docs-without-a-long-talk) proves its features on a new project.
+[T8: A doc read in one go](GOALS.md#t8-a-doc-read-in-one-go) is met, and [O1: The core docs on a new project](GOALS.md#o1-the-core-docs-on-a-new-project) proves its features on a new project.
 
 **Delivers:**
 
@@ -113,7 +112,7 @@ The docs carry the work of the new project across windows.
 **Exit criteria:**
 
 - **Objectives**
-  - [O1: The core docs without a long talk](GOALS.md#o1-the-core-docs-without-a-long-talk)
+  - [O1: The core docs on a new project](GOALS.md#o1-the-core-docs-on-a-new-project)
 - **Thresholds**
   - [T8: A doc read in one go](GOALS.md#t8-a-doc-read-in-one-go)
 

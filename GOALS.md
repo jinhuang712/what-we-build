@@ -7,7 +7,7 @@ Each goal is an effect the skill must have, tied to a want or a risk in the prop
 ```
 Goals
 ├── Objectives
-│   ├── ⬜ O1: The core docs without a long talk — the 7 core docs of a new project agreed within a time limit
+│   ├── ⬜ O1: The core docs on a new project — the 7 core docs of a new project drafted and approved
 │   └── ⬜ O2: Context survives compaction — questions answered before a compaction are still answered right after it
 ├── Measures
 │   ├── ⬜ M1: Reads before it changes — the share of changes made after reading the owning doc
@@ -25,9 +25,9 @@ Goals
 
 ### Objectives
 
-#### O1: The core docs without a long talk
+#### O1: The core docs on a new project
 
-A new project gets its whole doc set without the talk dragging on.
+A new project gets its whole doc set from the talk.
 
 **Want:** the risk that the user wants the docs and not the talk.
 
@@ -36,7 +36,7 @@ A new project gets its whole doc set without the talk dragging on.
 - [F1.3: Talk each doc through](features/F1-writing-the-docs-with-you.md#f13-talk-each-doc-through)
 - [F3: Getting the docs](features/F3-getting-the-docs.md)
 
-**Acceptance:** a new project's 7 core docs are drafted and approved within N hours of talk. N stays open while [The time limit for O1: The core docs without a long talk](TODO.md#p1discussion-the-time-limit-for-o1-the-core-docs-without-a-long-talk) is open.
+**Acceptance:** a new project's 7 core docs are drafted and approved.
 
 **Status:** ⬜
 
