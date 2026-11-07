@@ -20,4 +20,4 @@ We write our own skill and our own format.
 
 ## Consequences
 
-Its per-section fill marks gave the idea for the doc marks. Those marks were later removed by 009: Git tells a draft from an approved doc.
+Its per-section fill marks gave the idea for the doc marks. Those marks were later removed.

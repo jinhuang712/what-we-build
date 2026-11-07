@@ -88,7 +88,9 @@ The agent tells you the docs are older than the skill and judges every item agai
 
 Before any doc is written, you and the agent agree which docs the project gets and what its `AGENTS.md` holds. The agent brings a recommendation for each and you decide.
 
-- **Why:** [032: AGENTS.md keeps a copy of the rules that the host loads](../specs/decisions/032-agents-md-keeps-a-copy-the-host-loads.md)
+- **Why:**
+  - [032: AGENTS.md keeps a copy of the rules that the host loads](../specs/decisions/032-agents-md-keeps-a-copy-the-host-loads.md)
+  - [051: AGENTS.md starts with every work rule](../specs/decisions/051-agents-md-starts-with-every-work-rule.md)
 
 **Stories:**
 
@@ -234,7 +236,9 @@ Each time you type `/what-we-build`, the agent puts every doc in the skill's for
 - **The end:** you get the proof for each doc, what it left unchecked and the list of open topics.
 - **A folder with no docs:** nothing to do, so the talk starts.
 
-- **Why:** [041: Every start puts the docs in the format](../specs/decisions/041-every-start-puts-the-docs-in-the-format.md)
+- **Why:**
+  - [041: Every start puts the docs in the format](../specs/decisions/041-every-start-puts-the-docs-in-the-format.md)
+  - [049: A start pass takes one approval](../specs/decisions/049-a-start-pass-takes-one-approval.md)
 
 **Stories:**
 

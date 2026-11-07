@@ -2,15 +2,13 @@
 
 Decided: 2026-11-03
 
-Partly replaced by 022: Stories live in FEATURES and their flows in UIUX, under which a feature reaches its pages through the flows of its stories.
-
 ## The problem
 
-FEATURES lists every capability the project must have, so the design, the build and the progress meet there. Decision 017: Links point only to what a doc rests on let a feature link to a few DESIGNS points and down to its specs and decisions. The FEATURES skeleton had no place for how a feature looks, so a feature never reached its section in `specs/UIUX.md` or its page in `prototype/`. It could not reach a PHILOSOPHY stance either, even when that stance was the reason the feature exists.
+FEATURES lists every capability the project must have, so the design, the build and the progress meet there. A feature could link to a few DESIGNS points and down to its specs and decisions. The FEATURES skeleton had no place for how a feature looks, so a feature never reached its section in `specs/UIUX.md` or its page in `prototype/`. It could not reach a PHILOSOPHY stance either, even when that stance was the reason the feature exists.
 
 ## The choice
 
-A feature links up to the DESIGNS guidelines it rests on, and to a PHILOSOPHY stance only when the stance forces the feature. It links down to everything that builds it: its section in `specs/UIUX.md`, its page in `prototype/`, its specs and its decisions. What the feature rests on and what builds it set the number of links, and no count does. The checkpoint that delivers a feature stays in ROADMAP, which links to the feature. This replaces the FEATURES line of 017: Links point only to what a doc rests on.
+A feature links up to the DESIGNS guidelines it rests on, and to a PHILOSOPHY stance only when the stance forces the feature. It links down to everything that builds it: the flows of its stories in `specs/UIUX.md`, its specs and its decisions. What the feature rests on and what builds it set the number of links, and no count does. The checkpoint that delivers a feature stays in ROADMAP, which links to the feature.
 
 ## Not chosen
 
@@ -20,4 +18,4 @@ A feature links up to the DESIGNS guidelines it rests on, and to a PHILOSOPHY st
 
 ## Consequences
 
-The link table in SKILL.md and the FEATURES guide change with it. A reader can start at any feature and reach its reason and its build without a search.
+A reader can start at any feature and reach its reason and its build without a search.

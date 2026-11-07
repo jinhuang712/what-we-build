@@ -38,6 +38,9 @@ In every window the agent works from the docs and writes back into them at once.
 - **Why:**
   - [002: The skill starts only by hand](../specs/decisions/002-manual-start.md)
   - [030: The main window reads and writes the docs](../specs/decisions/030-the-main-window-reads-and-writes-the-docs.md)
+  - [043: TODO waits for spare time](../specs/decisions/043-todo-waits-for-spare-time.md)
+  - [046: A window reads the skill where it is installed](../specs/decisions/046-a-window-reads-the-skill-where-it-is-installed.md)
+  - [052: A contradiction goes to the user](../specs/decisions/052-a-contradiction-goes-to-the-user.md)
 
 **Stories:**
 

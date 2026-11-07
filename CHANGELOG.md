@@ -58,6 +58,9 @@
 - *Later* is gone from FEATURES.
   - Before: ideas waited in a *Later* list.
   - After: every feature not yet built sits in the tree and in a checkpoint.
+- The decisions folder holds only the decisions in force.
+  - Before: a replaced decision stayed with a line naming the later one.
+  - After: it is deleted or rewritten, and git keeps the old text.
 - A checkpoint ends once each of its goals has a recorded result that meets it.
 - ROADMAP keeps each goal's result from each checkpoint.
   - Before: only GOALS held a result, and a newer one replaced it.

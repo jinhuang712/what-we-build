@@ -10,6 +10,7 @@ It keeps the reason alive after the people who knew it have moved on. One decisi
 
 ## What is it
 
+- [YES]   only the decisions in force, since git keeps the rest.
 - [YES]   each decision with its alternatives and what it costs.
 - [YES]   a decision about the whole design and one about a single feature, in the same folder.
 - [YES]   keep the title to the choice in one line, such as "Settings live in JSON files instead of a settings screen".
@@ -18,7 +19,6 @@ It keeps the reason alive after the people who knew it have moved on. One decisi
 - [NO]    what the user sees, which FEATURES holds.
 - [NO]    the reason in the title, since it goes in the file.
 - [NO]    a link to any doc, since the docs that rest on a decision link to it.
-- [WHEN]  a later decision replaces all or part of it: add a line under *Decided* that names the later one and the part it replaces.
 
 ## Decision
 

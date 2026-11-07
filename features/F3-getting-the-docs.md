@@ -78,6 +78,12 @@ Each kind of doc has a guide. The agent reads SKILL.md and every guide in full i
 - **Why:**
   - [034: The rules for a doc are hard and every guide is read at the start](../specs/decisions/034-hard-rules-and-every-guide-read.md)
   - [040: A rule holds unless the user rejects it](../specs/decisions/040-a-rule-holds-unless-the-user-rejects-it.md)
+  - [044: Every feature sits in the tree](../specs/decisions/044-every-feature-sits-in-the-tree.md)
+  - [045: A comparison may set a target and fail it](../specs/decisions/045-a-comparison-may-fail.md)
+  - [048: Each checkpoint picks the goals it runs from GOALS](../specs/decisions/048-each-checkpoint-picks-the-goals-it-runs.md)
+  - [050: ROADMAP keeps each checkpoint's goal results](../specs/decisions/050-roadmap-keeps-each-checkpoints-goal-results.md)
+  - [054: A checkpoint ends on recorded results](../specs/decisions/054-a-checkpoint-ends-on-recorded-results.md)
+  - [055: The decisions folder holds only decisions in force](../specs/decisions/055-the-folder-holds-only-decisions-in-force.md)
 
 **Stories:**
 
@@ -120,6 +126,11 @@ The docs come out in plain and precise English, so a reader finds a fact fast an
 | a date | `YYYY-MM-DD` |
 | a status | the same marks in every doc |
 | code | a script named in place of pasted code |
+
+- **Why:**
+  - [013: The comma rule holds for bullets, and PHILOSOPHY argues in prose with any structure](../specs/decisions/013-the-comma-rule-holds-for-bullets.md)
+  - [042: An ID follows the structure](../specs/decisions/042-an-id-follows-the-structure.md)
+  - [047: A list in a bullet keeps middots after a colon or moves to sub-bullets](../specs/decisions/047-a-list-in-a-bullet-keeps-middots-or-sub-bullets.md)
 
 **Stories:**
 

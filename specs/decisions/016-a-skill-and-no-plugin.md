@@ -17,4 +17,4 @@ what-we-build is a personal skill only. A user clones the repo and links its ski
 
 ## Consequences
 
-Nobody finds the skill through a plugin marketplace. A user who installed the plugin uninstalls it and links the folder instead. It replaces 003: The plugin manifest sits at the repo root.
+Nobody finds the skill through a plugin marketplace. A user who installed the plugin uninstalls it and links the folder instead.
