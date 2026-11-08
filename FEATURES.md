@@ -27,7 +27,7 @@ Features
 │   ├── ✅ F2.1: Keep the context while you work — the agent reads the owning doc first and records at once
 │   └── ✅ F2.2: A wiki when others build on it — the agent tells you when the project may need one
 └── ✅ F3: Getting the docs — the docs a project needs, each with a guide
-    ├── ✅ F3.1: The core docs — the seven docs every project gets
+    ├── ✅ F3.1: The core docs — the docs most projects start with
     ├── ✅ F3.2: Docs that join later — the recommended docs and the ones a project grows into
     ├── ✅ F3.3: A guide per doc — what each doc owns and what it leaves out
     ├── ✅ F3.4: A default layout — the reasons at the root with specs/ and plan/ beside them

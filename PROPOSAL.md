@@ -127,7 +127,7 @@ It is for developers who build a project with a coding agent over many weeks and
 ## Risks
 
 - **The user wants the docs and not the talk:** the skill writes each point into its doc as soon as it is agreed, and every choice comes with a recommendation.
-- **Too many docs for a small project:** every project gets seven core docs and the rest only when needed.
+- **Too many docs for a small project:** the agent picks the docs a project needs, and the user decides.
 - **The skill itself grows too long:** `SKILL.md` has a size limit and the detail lives in the guides.
 - **The docs fall behind the work:** the agent updates the owning doc in the change that does the work.
 - **The agent reads a rule as a choice:** every rule is a plain yes or no, and the agent reads every guide in full before it touches a doc.

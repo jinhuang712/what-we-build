@@ -2,7 +2,7 @@
 
 ```
 F3: Getting the docs
-├── F3.1: The core docs — the seven docs every project gets
+├── F3.1: The core docs — the docs most projects start with
 ├── F3.2: Docs that join later — the recommended docs and the ones a project grows into
 ├── F3.3: A guide per doc — what each doc owns and what it leaves out
 ├── F3.4: A default layout — the reasons at the root with specs/ and plan/ beside them
@@ -16,7 +16,7 @@ A project gets the docs it needs and no more, and the agent writes each one by i
 
 ## F3.1: The core docs
 
-Every project gets seven core docs, and each answers one question.
+Most projects start with seven core docs, and each answers one question. The agent picks the ones your project needs and you decide.
 
 | Doc | Answers |
 |---|---|
@@ -28,9 +28,11 @@ Every project gets seven core docs, and each answers one question.
 | ROADMAP | When, and how far along? |
 | README | What is this, and how do I start? |
 
+- **Why:** [057: The agent picks the docs a project needs](../specs/decisions/057-the-agent-picks-the-docs.md)
+
 **Stories:**
 
-- You get the seven docs every project needs, so the reasons and the contract are written down.
+- You get the core docs your project needs, so a small project carries no empty doc.
 
 ## F3.2: Docs that join later
 

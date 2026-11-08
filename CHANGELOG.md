@@ -17,6 +17,9 @@
 - The skill leaves the form of the talk to your style for the agent.
   - Before: the skill set twenty talk rules, such as one question at a time and a drawing for moving parts.
   - After: it keeps the seven that make a doc hold only what you agreed.
+- The agent picks the docs your project needs, and you decide.
+  - Before: every project got all seven core docs.
+  - After: a small tool gets only the docs that have something to hold.
 - The check before you see a doc covers its facts, its numbers and what its guide asks of a finished doc.
   - Before: it also checked the wording, the links and the IDs.
   - After: the proof you get is shorter.

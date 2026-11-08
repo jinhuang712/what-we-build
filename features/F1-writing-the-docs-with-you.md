@@ -100,9 +100,9 @@ Before any doc is written, you and the agent agree which docs the project gets a
 
 The agent proposes the docs and you decide which ones come.
 
-- **The core docs:** all seven of [F3.1: The core docs](F3-getting-the-docs.md#f31-the-core-docs) unless you drop one.
+- **The core docs:** those of [F3.1: The core docs](F3-getting-the-docs.md#f31-the-core-docs) that your project needs.
 - **The optional docs:** each doc of [F3.2: Docs that join later](F3-getting-the-docs.md#f32-docs-that-join-later) whose condition holds in your project.
-- **You drop a core doc or CLI:** the agent first tells you what it would hold.
+- **Each doc it proposes:** the agent tells you what it would hold.
 
 ### F1.2.2: Set up AGENTS.md
 

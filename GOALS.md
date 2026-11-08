@@ -7,7 +7,7 @@ Each goal is an effect the skill must have, tied to a want or a risk in the prop
 ```
 Goals
 ├── Objectives
-│   ├── ⬜ O1: The core docs on a new project — the 7 core docs of a new project drafted and approved
+│   ├── ⬜ O1: The core docs on a new project — the core docs of a new project drafted and approved
 │   └── ⬜ O2: Context survives compaction — questions answered before a compaction are still answered right after it
 ├── Measures
 │   ├── ⬜ M1: Reads before it changes — the share of changes made after reading the owning doc
@@ -36,7 +36,7 @@ A new project gets its whole doc set from the talk.
 - [F1.3: Talk each doc through](features/F1-writing-the-docs-with-you.md#f13-talk-each-doc-through)
 - [F3: Getting the docs](features/F3-getting-the-docs.md)
 
-**Acceptance:** a new project's 7 core docs are drafted and approved.
+**Acceptance:** the core docs a new project needs are drafted and approved.
 
 **Status:** ⬜
 
@@ -172,7 +172,7 @@ C1 = prompts with a lead above 0 / 3, with the mean lead
 
 **How:** estimate the tokens of the body as its bytes divided by 3. A token of English text holds more than 3 bytes, so the estimate errs high.
 
-**Status:** ✅ about 4633 tokens from 13900 bytes on 2026-11-09.
+**Status:** ✅ about 4643 tokens from 13930 bytes on 2026-11-09.
 
 #### T8: A doc read in one go
 

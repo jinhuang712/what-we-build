@@ -56,7 +56,7 @@ The skill was rebuilt around a project's context in this repo, and it is proven 
 
 A new project's core docs come out of the talk with the skill.
 
-- Draft and approve a new project's seven core docs with the skill.
+- Draft and approve the core docs a new project needs with the skill.
 - Read every change in the last three windows for [M1: Reads before it changes](GOALS.md#m1-reads-before-it-changes).
 
 **Delivers:**

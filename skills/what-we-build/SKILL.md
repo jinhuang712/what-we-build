@@ -57,7 +57,7 @@ Every doc has a guide. The guide says what the doc holds and how to write it. `A
 - [WHEN]  the project's rules disagree with a guide: tell the user and let them decide.
 - [WHEN]  the user rejects a rule: write the exception in `specs/decisions/`.
 
-Every project gets the core docs:
+Pick the docs the project needs, and let the user decide. The core docs are where most projects start:
 
 | Doc | Answers | Guide |
 |---|---|---|
@@ -112,7 +112,7 @@ Talk each doc through with the user, and write each point into it once it is agr
 - [WHEN]  a point is still open: put it in `TODO.md` as a `DISCUSSION`.
 - [WHEN]  a doc claims a behavior you cannot run: mark it ❔ and name the reason beside it.
 - [WHEN]  the user states one stance a second time: propose to write it in PHILOSOPHY.
-- [WHEN]  the user drops a core doc or `CLI.md`: say what it would hold before you drop it.
+- [WHEN]  you propose a doc: say what it would hold.
 
 Before you show the user a doc, check it line by line:
 
