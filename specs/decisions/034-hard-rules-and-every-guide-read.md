@@ -28,7 +28,7 @@ The agent reads `SKILL.md` and every guide in full at the start and after each c
 - A line is never kept because it is old.
 - A doc that moves into a new form has every item judged again, done items too.
 - A doc the skill did not write is not trusted, and each of its claims is checked against the code or the user.
-- Only the user ends the talk on a doc, and until then the agent looks for the next line that breaks a rule.
+- Only the user ends the talk on a doc.
 
 How to do the work stays with the model. A step no longer reads only its own guide.
 

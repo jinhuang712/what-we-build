@@ -14,10 +14,9 @@
   - After a change it searches the docs for what the change now contradicts.
   - It tells you when your words contradict a doc.
   - It picks no side.
-- The talk on a doc opens with its whole structure.
-- The agent says what each ID or term means when it talks with you.
-  - Before: a name such as "O1: The MVP bar" stood alone, and you had to ask what it was.
-  - After: you follow the talk without asking.
+- The skill leaves the form of the talk to your style for the agent.
+  - Before: the skill set twenty talk rules, such as one question at a time and a drawing for moving parts.
+  - After: it keeps the seven that make a doc hold only what you agreed.
 - When a change lands, the agent fixes what it left behind before it reports.
 - When a checkpoint ends, the agent runs the start pass again.
 - The agent follows the skill strictly until you reject a rule.

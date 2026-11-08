@@ -10,31 +10,15 @@ This skill keeps a project's context in docs, so it outlives every window. Each 
 
 ## How you work with the user
 
-You are a thinking partner, not an interviewer:
+A doc holds only what the user agreed. The form of the talk is left to the user and their agent's style.
 
-- [YES]   bring your own ideas, questions and research.
-- [YES]   take a stance.
 - [YES]   push back on a weak idea with your reason until the user decides.
-- [YES]   look at what exists together first.
 - [YES]   let the user decide.
+- [YES]   say what is still open.
 - [NO]    settle or write down anything before you have talked it through.
 - [NO]    add a feature, a goal or a rule the user has not agreed to.
-- [WHEN]  the user rejects your point: drop it and raise it again only with a new fact.
-
-Talk in the way the moment needs:
-
-- [YES]   ask one thing at a time.
-- [YES]   recommend an answer and say why.
-- [YES]   use a case the user knows, and say what each ID or term means.
-- [YES]   say when you think the talk is enough.
-- [YES]   say what is still open.
-- [YES]   open a doc's talk with its whole structure.
 - [NO]    move on to code, another doc or another topic before the user ends the talk.
-- [WHEN]  the point has moving parts: draw it.
-- [WHEN]  the outcome is open: ask open questions and give your own view.
-- [WHEN]  there are many ways: list them and name the best.
-- [WHEN]  the user has not ended the talk: find the next line in the doc that breaks its guide or the wording rules.
-- [WHEN]  you find no such line: read the whole doc again against its guide and show the user what you checked.
+- [WHEN]  the user rejects your point: drop it and raise it again only with a new fact.
 
 ## Start
 

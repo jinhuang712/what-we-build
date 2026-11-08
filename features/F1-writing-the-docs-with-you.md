@@ -121,17 +121,10 @@ The core docs come one at a time in a fixed order, since each builds on the ones
 PROPOSAL → PHILOSOPHY → DESIGNS → GOALS → FEATURES → ROADMAP → README
 ```
 
-On each doc the agent asks one thing at a time, recommends an answer and says why. A point goes into the doc once you agree it. The talk on a doc ends only when you say it is done.
+On each doc you and the agent talk each point through, in the form your agent's style gives the talk. A point goes into the doc once you agree it. The talk on a doc ends only when you say it is done.
 
-- **When the talk starts:** the agent shows you the doc's whole structure.
-- **Before you end the talk:** the agent keeps looking for the next line that breaks a rule.
-- **When it finds none:** it reads the whole doc again and shows you what it checked.
-- **When it thinks the talk is enough:** it says so and names what is still open.
+- **What is still open:** the agent names it.
 - **Code, another doc or another topic:** none of them comes before you end the talk.
-- **An ID or a term:** the agent says what it means.
-- **A point with moving parts:** the agent draws it.
-- **A point with an open outcome:** the agent asks open questions and gives its own view.
-- **A point that can go many ways:** the agent brainstorms and points out the best one.
 - **A fact no doc owns:** the agent asks you where it goes.
 - **A number nobody knows:** the agent leaves it open in the doc.
 - **A point still open:** the agent puts it in `TODO.md` as a `DISCUSSION`.

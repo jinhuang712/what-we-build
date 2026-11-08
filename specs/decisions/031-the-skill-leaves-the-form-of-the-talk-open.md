@@ -8,12 +8,15 @@ The skill told the agent to decide with lettered options. In one session the age
 
 ## The choice
 
-The skill says what the talk must do and leaves its form to the agent, the user and the host's own style. The agent says when it thinks the talk is enough and names what is still open, so both sides judge it. Only the user ends the talk on a doc. A concrete case from the project or a tool the user knows is always wanted, and a drawing comes when a point has moving parts. The forms of the docs stay as the guides give them, since a doc must read the same in every window.
+The skill keeps only the talk rules that make a doc hold what the user agreed. Every rule on the form of the talk is gone, such as one question at a time, a recommendation or a drawing, and the user's own style for the agent sets the form. The agent names what is still open, and only the user ends the talk on a doc. The forms of the docs stay as the guides give them, since a doc must read the same in every window.
+
+A rule earns its place in the skill only if it helps a new window learn what we build, why this way and where we are, with answers the user agreed.
 
 ## Not chosen
 
 - Lettered options only once the talk has narrowed: it fixes a form and only patches the hurry.
 - A count of turns or questions as the measure: no run showed the need, and the talk has no such number.
+- Rules for the form of the talk in the skill: thirteen of twenty talk rules helped no new window, and a host style already sets the form.
 - Free form for the docs too: a reader scans a doc by its form, and two windows would write it two ways.
 
 ## Consequences
