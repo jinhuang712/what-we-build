@@ -55,7 +55,7 @@ Every doc has a guide. The guide says what the doc holds and how to write it. `A
 - [NO]    a reading of a rule that lets you skip it.
 - [NO]    a subagent to read this file or a guide for you.
 - [WHEN]  the project's rules disagree with a guide: tell the user and let them decide.
-- [WHEN]  the user rejects a rule: write the exception in `specs/decisions/`.
+- [WHEN]  the user rejects a rule: write the exception in `AGENTS.md` until the user takes it back.
 
 Pick the docs the project needs, and let the user decide. The core docs are where most projects start:
 

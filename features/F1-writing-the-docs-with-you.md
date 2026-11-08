@@ -109,7 +109,7 @@ The agent proposes the docs and you decide which ones come.
 `AGENTS.md` holds the rules that every new window reads before it works. The agent writes them all at the start, and you reject any you do not want.
 
 - **What it holds:** a read order, a layout and the work rules of [F2.1: Keep the context while you work](F2-keeping-the-context.md#f21-keep-the-context-while-you-work).
-- **A rule you reject:** it leaves `AGENTS.md`, and the exception goes in `specs/decisions/`.
+- **A rule you reject:** it leaves `AGENTS.md`, and the exception goes in its place until you take it back.
 - **What it links to:** the docs in its read order and nothing else.
 - **Your agent reads another file such as `CLAUDE.md`:** the agent makes that file load `AGENTS.md`.
 

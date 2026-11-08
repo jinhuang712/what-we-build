@@ -20,6 +20,9 @@
 - The agent picks the docs your project needs, and you decide.
   - Before: every project got all seven core docs.
   - After: a small tool gets only the docs that have something to hold.
+- A rule you reject is noted in `AGENTS.md` until you take it back.
+  - Before: the exception went in `specs/decisions/`, which a project may not have.
+  - After: every new window reads it first.
 - The check before you see a doc covers its facts, its numbers and what its guide asks of a finished doc.
   - Before: it also checked the wording, the links and the IDs.
   - After: the proof you get is shorter.

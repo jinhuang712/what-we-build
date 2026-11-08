@@ -65,7 +65,7 @@ Three docs are recommended from the start, so a finding, a change or a choice ha
 Each kind of doc has a guide. The agent reads SKILL.md and every guide in full itself before it touches a doc and again after each compaction. When it says the skill asks for something, it quotes the line.
 
 - **Something the guide rules out:** the agent names the doc that holds it.
-- **A rule you reject:** the agent writes the exception as a decision.
+- **A rule you reject:** the agent writes the exception in `AGENTS.md` until you take it back.
 - **A form other than the skeleton:** only when you reject the skeleton.
 
 | A guide holds | What it settles |
