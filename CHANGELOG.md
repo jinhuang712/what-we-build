@@ -17,6 +17,9 @@
 - The skill leaves the form of the talk to your style for the agent.
   - Before: the skill set twenty talk rules, such as one question at a time and a drawing for moving parts.
   - After: it keeps the seven that make a doc hold only what you agreed.
+- The check before you see a doc covers its facts, its numbers and what its guide asks of a finished doc.
+  - Before: it also checked the wording, the links and the IDs.
+  - After: the proof you get is shorter.
 - When a change lands, the agent fixes what it left behind before it reports.
 - When a checkpoint ends, the agent runs the start pass again.
 - The agent follows the skill strictly until you reject a rule.

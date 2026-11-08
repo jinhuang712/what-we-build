@@ -117,15 +117,10 @@ Talk each doc through with the user, and write each point into it once it is agr
 
 Before you show the user a doc, check it line by line:
 
-- [YES]   every line against the doc's guide.
-- [YES]   every sentence against *Wording*.
-- [YES]   every link against the doc's guide and its target.
-- [YES]   every file or folder named for its link.
 - [YES]   every fact against the placement test.
 - [YES]   every fact for a second home.
 - [YES]   every fact and rule against the other docs for a contradiction.
 - [YES]   every number for its source.
-- [YES]   every item for its ID.
 - [YES]   every item against *You have it when* in its guide.
 - [YES]   show the user what each check found line by line as the proof that the doc is done.
 - [NO]    asking the user to review a doc in place of the proof.

@@ -23,7 +23,8 @@ The agent reads `SKILL.md` and every guide in full at the start and after each c
 - A plain-text pointer in place of a link is ruled out.
 - `SKILL.md` names the ID levels of each doc, and the guides say when an item must split.
 - A ✅ needs a run, and a claim nobody ran is marked ❔.
-- A doc is checked line by line before the user sees it, and the agent shows what each check found as its proof.
+- Before the user sees a doc, its facts and numbers are checked with what its guide says a finished doc gives the reader.
+- The agent shows what each check found as its proof.
 - Reading a rule so that it can be skipped is itself ruled out.
 - A line is never kept because it is old.
 - A doc that moves into a new form has every item judged again, done items too.
@@ -36,6 +37,7 @@ How to do the work stays with the model. A step no longer reads only its own gui
 
 - Keep the guides on demand and name the guide in every step: the runs show the agent skips the read whatever the step says.
 - Put all the rules into `SKILL.md`: it would break the size limit and mix the rules of every doc into one list.
+- A check of the wording and the links before the user sees a doc: it made long proofs and never helped a new window find an answer.
 - Louder wording such as MUST in capitals: it makes a model overreact and leaves the gaps where they were.
 - The talk ends when both sides judge it enough, as before: the agent judged it alone and left for code or another topic.
 - A `[WHEN]` that tells the agent where a shared fact goes when two specs share it: the rule on a second home already covers it, and one more line only adds weight.

@@ -173,13 +173,9 @@ Nothing is committed behind your back. Before the agent shows you a doc, it chec
 
 | What it checks | Against |
 |---|---|
-| every line | the doc's guide |
-| every sentence | the wording rules |
-| every link | the doc's guide and the link's target |
-| every file or folder it names | its link |
-| every fact | the placement test and a second home |
+| every fact | the placement test · a second home · the other docs |
 | every number | its source |
-| every item | its ID and what the guide says a finished doc gives the reader |
+| every item | what the guide says a finished doc gives the reader |
 
 - **A check fails:** you see the doc only after the agent fixes it.
 - **Review in place of proof:** the agent never asks you to look for yourself.
