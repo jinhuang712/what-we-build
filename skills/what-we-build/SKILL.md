@@ -25,7 +25,7 @@ Talk in the way the moment needs:
 
 - [YES]   ask one thing at a time.
 - [YES]   recommend an answer and say why.
-- [YES]   use a case from the project or a tool the user knows.
+- [YES]   use a case the user knows, and say what each ID or term means.
 - [YES]   say when you think the talk is enough.
 - [YES]   say what is still open.
 - [YES]   open a doc's talk with its whole structure.

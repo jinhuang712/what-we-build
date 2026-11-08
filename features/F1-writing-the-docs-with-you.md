@@ -128,6 +128,7 @@ On each doc the agent asks one thing at a time, recommends an answer and says wh
 - **When it finds none:** it reads the whole doc again and shows you what it checked.
 - **When it thinks the talk is enough:** it says so and names what is still open.
 - **Code, another doc or another topic:** none of them comes before you end the talk.
+- **An ID or a term:** the agent says what it means.
 - **A point with moving parts:** the agent draws it.
 - **A point with an open outcome:** the agent asks open questions and gives its own view.
 - **A point that can go many ways:** the agent brainstorms and points out the best one.
