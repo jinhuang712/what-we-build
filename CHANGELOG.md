@@ -23,6 +23,9 @@
 - A rule you reject is noted in `AGENTS.md` until you take it back.
   - Before: the exception went in `specs/decisions/`, which a project may not have.
   - After: every new window reads it first.
+- The start pass says the same in 12 rules instead of 18.
+  - Before: it also listed the optional docs and limited the links of `AGENTS.md`.
+  - After: it ends with one report on where the work stands.
 - The check before you see a doc covers its facts, its numbers and what its guide asks of a finished doc.
   - Before: it also checked the wording, the links and the IDs.
   - After: the proof you get is shorter.
