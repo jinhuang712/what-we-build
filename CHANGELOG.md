@@ -25,7 +25,6 @@
 - The agent follows the skill strictly until you reject a rule.
   - Before: it could set a rule aside once you agreed.
   - After: it never asks for a way around a rule and records each exception you make.
-- When a rule seems not to fit, the agent says why and asks for your opinion.
 - Agreeing on a direction no longer counts as approving a change.
 - Each start puts every doc in the skill's format before any talk.
   - Before: the agent talked with you before it moved old docs.
