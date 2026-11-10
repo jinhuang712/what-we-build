@@ -30,6 +30,7 @@
 ### This repo's docs
 
 - PHILOSOPHY draws its arguments where they have a shape.
+- The decisions folder drops 22 decisions that miss the new bar.
 
 ## 0.8.0 — 2026-11-09
 

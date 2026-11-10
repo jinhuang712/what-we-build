@@ -20,4 +20,4 @@ This replaces the rule against moving old docs before a talk.
 
 ## Consequences
 
-Every start costs a pass over the whole doc set. The agent changes docs before the user has seen them, so git must be in place and a commit waits for the user. The risk that 026: The skill says what the agent must do, not each step recorded may return: a pass can look finished while nothing was truly judged. A run on a real project must test this.
+Every start costs a pass over the whole doc set. The agent changes docs before the user has seen them, so git must be in place and a commit waits for the user. An old risk may return: a pass can look finished while nothing was truly judged. A run on a real project must test this.

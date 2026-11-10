@@ -42,7 +42,6 @@ An example comes from this repo or from the stable ideas of a well-known tool, s
 **Ask:** does an example rest on a detail the tool may change?
 
 - **Stance:** [How is it carried from one window to the next?](PHILOSOPHY.md#how-is-it-carried-from-one-window-to-the-next)
-- **Decisions:** [027: Examples come from a tool the reader knows](specs/decisions/027-examples-from-a-known-tool.md)
 
 ## 4. Hard rules for the doc, the method left to the model
 
@@ -52,7 +51,6 @@ A guide says what a doc must and must not be, in rules that leave no way around 
 
 - **Stance:** [What does a model do with a rule?](PHILOSOPHY.md#what-does-a-model-do-with-a-rule)
 - **Decisions:**
-  - [026: The skill says what the agent must do, not each step](specs/decisions/026-the-skill-says-what-not-how.md)
   - [028: A guide says what its doc's core idea is and is not](specs/decisions/028-a-guide-says-what-its-core-idea-is-and-is-not.md)
   - [029: A guide is written in tagged lines](specs/decisions/029-a-guide-is-written-in-tagged-lines.md)
   - [031: The skill leaves the form of the talk open](specs/decisions/031-the-skill-leaves-the-form-of-the-talk-open.md)

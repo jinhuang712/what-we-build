@@ -37,10 +37,7 @@ In every window the agent works from the docs and writes back into them at once.
 
 - **Design:** [DESIGNS 2: The docs are the state](../DESIGNS.md#2-the-docs-are-the-state)
 - **Why:**
-  - [002: The skill starts only by hand](../specs/decisions/002-manual-start.md)
   - [030: The main window reads and writes the docs](../specs/decisions/030-the-main-window-reads-and-writes-the-docs.md)
-  - [043: TODO waits for spare time](../specs/decisions/043-todo-waits-for-spare-time.md)
-  - [046: A window reads the skill where it is installed](../specs/decisions/046-a-window-reads-the-skill-where-it-is-installed.md)
   - [052: A contradiction goes to the user](../specs/decisions/052-a-contradiction-goes-to-the-user.md)
 
 **Stories:**
@@ -52,8 +49,6 @@ In every window the agent works from the docs and writes back into them at once.
 ## F2.2: A wiki when others build on it
 
 When other developers start to build on your project, often with their own agents, the source alone leaves them guessing how to use it. The agent tells you then that the project may need a wiki. What the wiki holds and where it lives is your call, and the skill gives it no guide.
-
-- **Why:** [023: The skill points to a wiki and leaves its form to the project](../specs/decisions/023-the-skill-points-to-a-wiki.md)
 
 **Stories:**
 

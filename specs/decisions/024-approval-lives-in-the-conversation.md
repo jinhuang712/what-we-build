@@ -4,7 +4,7 @@ Decided: 2026-11-03
 
 ## The problem
 
-A commit once meant approval, so an uncommitted change was a draft and a resume read `git status` to find where the work stopped. Since 019: Agreed points go in at once, a doc holds only what the user has agreed, so there is no draft left for git to tell apart. The extra meaning only added a rule, and it misread any uncommitted change in the folder as a doc waiting for approval.
+A commit once meant approval, so an uncommitted change was a draft and a resume read `git status` to find where the work stopped. Since each agreed point goes into its doc at once, a doc holds only what the user has agreed, so there is no draft left for git to tell apart. The extra meaning only added a rule, and it misread any uncommitted change in the folder as a doc waiting for approval.
 
 ## The choice
 

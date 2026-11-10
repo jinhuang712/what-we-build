@@ -43,7 +43,7 @@ Features
 ## Not planned
 
 - **Wording rules for other languages:** the rules are written for English docs.
-- **Starting on its own:** the talk needs your full attention ([002: The skill starts only by hand](specs/decisions/002-manual-start.md)).
+- **Starting on its own:** the talk needs your full attention.
 - **Drafting without a conversation:** text nobody decided is the problem the skill exists to solve.
 - **A fixed questionnaire or template:** fixed questions fill forms while decisions come from a conversation.
 - **More docs than the project needs:** only a doc with a job gets kept true.

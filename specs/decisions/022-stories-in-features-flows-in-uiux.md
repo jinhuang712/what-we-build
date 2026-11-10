@@ -8,7 +8,7 @@ A user story says who does what and for what. It is the thread from a feature to
 
 ## The choice
 
-Each feature in FEATURES lists its stories, one sentence each that says who does what and for what. Each story links down to its flow in `specs/UIUX.md`. UIUX draws every flow as an ASCII diagram of the screens it passes, since the interface is how a flow is carried out. Its *Screens* table links each screen to its page in `prototype/`, so UIUX is the prototype's navigation. UIUX gets its own guide again. A feature now reaches its pages through the flows of its stories, which replaces the link to a prototype page in 021: FEATURES links to all a feature rests on and all that builds it.
+Each feature in FEATURES lists its stories, one sentence each that says who does what and for what. Each story links down to its flow in `specs/UIUX.md`. UIUX draws every flow as an ASCII diagram of the screens it passes, since the interface is how a flow is carried out. Its *Screens* table links each screen to its page in `prototype/`, so UIUX is the prototype's navigation. UIUX gets its own guide again. A feature now reaches its pages through the flows of its stories.
 
 ## Not chosen
 

@@ -132,8 +132,6 @@ On each doc you and the agent talk each point through, in the form your agent's 
 - **A stance you state a second time:** the agent proposes to write it in PHILOSOPHY.
 
 - **Why:**
-  - [007: DESIGNS comes third, before GOALS and FEATURES](../specs/decisions/007-designs-third.md)
-  - [019: Agreed points go into the doc at once](../specs/decisions/019-agreed-points-go-in-at-once.md)
   - [031: The skill leaves the form of the talk open](../specs/decisions/031-the-skill-leaves-the-form-of-the-talk-open.md)
   - [059: A wanted feature whose how is still open waits in a checkpoint instead of in TODO](../specs/decisions/059-a-wanted-feature-with-an-open-how-waits-in-a-checkpoint.md)
 
@@ -235,7 +233,6 @@ Each time you type `/what-we-build`, the agent puts every doc in the skill's for
 
 - **Why:**
   - [041: Every start puts the docs in the format](../specs/decisions/041-every-start-puts-the-docs-in-the-format.md)
-  - [049: A start pass takes one approval](../specs/decisions/049-a-start-pass-takes-one-approval.md)
   - [058: A decision needs a fork that more than one part rests on, and each start pass reports the doc set's bytes](../specs/decisions/058-a-decision-reaches-beyond-one-part-and-a-pass-reports-bytes.md)
 
 **Stories:**

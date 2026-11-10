@@ -80,11 +80,8 @@ Each kind of doc has a guide. The agent reads SKILL.md and every guide in full i
   - [034: The rules for a doc are hard and every guide is read at the start](../specs/decisions/034-hard-rules-and-every-guide-read.md)
   - [040: A rule holds unless the user rejects it](../specs/decisions/040-a-rule-holds-unless-the-user-rejects-it.md)
   - [044: Every feature sits in the tree](../specs/decisions/044-every-feature-sits-in-the-tree.md)
-  - [045: A comparison may set a target and fail it](../specs/decisions/045-a-comparison-may-fail.md)
   - [048: Each checkpoint picks the goals it runs from GOALS](../specs/decisions/048-each-checkpoint-picks-the-goals-it-runs.md)
   - [050: ROADMAP keeps each checkpoint's goal results](../specs/decisions/050-roadmap-keeps-each-checkpoints-goal-results.md)
-  - [054: A checkpoint ends on recorded results](../specs/decisions/054-a-checkpoint-ends-on-recorded-results.md)
-  - [055: The decisions folder holds only decisions in force](../specs/decisions/055-the-folder-holds-only-decisions-in-force.md)
   - [058: A decision needs a fork that more than one part rests on, and each start pass reports the doc set's bytes](../specs/decisions/058-a-decision-reaches-beyond-one-part-and-a-pass-reports-bytes.md)
 
 **Stories:**
