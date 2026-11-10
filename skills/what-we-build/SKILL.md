@@ -109,6 +109,7 @@ Talk each doc through with the user, and write each point into it once it is agr
 - [NO]    approval from anyone but the user.
 - [NO]    agreement on a direction taken as approval of a change.
 - [NO]    a ✅ on a feature or a checkpoint you have not run.
+- [NO]    a line written only to fill a part of the skeleton.
 - [WHEN]  a point is still open: put it in `TODO.md` as a `DISCUSSION`.
 - [WHEN]  a doc claims a behavior you cannot run: mark it ❔ and name the reason beside it.
 - [WHEN]  the user states one stance a second time: propose to write it in PHILOSOPHY.
@@ -125,6 +126,7 @@ Before you show the user a doc, check it line by line:
 - [NO]    asking the user to review a doc in place of the proof.
 - [NO]    a line kept because it is old.
 - [WHEN]  you rename a heading or an ID: fix every link and mention of it in the same change.
+- [WHEN]  a line moves to a new place: check that it still holds there.
 - [WHEN]  a change moves a measured number: measure it again and write the new value with its date.
 
 ## IDs

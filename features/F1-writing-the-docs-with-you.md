@@ -126,6 +126,7 @@ On each doc you and the agent talk each point through, in the form your agent's 
 - **Code, another doc or another topic:** none of them comes before you end the talk.
 - **A fact no doc owns:** the agent asks you where it goes.
 - **A number nobody knows:** the agent leaves it open in the doc.
+- **A part of the skeleton the talk did not give:** the agent leaves it open and never writes a line only to fill it.
 - **A point still open:** the agent puts it in `TODO.md` as a `DISCUSSION`.
 - **A stance you state a second time:** the agent proposes to write it in PHILOSOPHY.
 
@@ -179,6 +180,7 @@ Nothing is committed behind your back. Before the agent shows you a doc, it chec
 - **A check fails:** you see the doc only after the agent fixes it.
 - **Review in place of proof:** the agent never asks you to look for yourself.
 - **A heading or an ID is renamed:** every link and mention of it changes in the same change.
+- **A line moves to a new place:** the agent checks that it still holds there.
 - **Approval:** only yours counts.
 
 **Stories:**
