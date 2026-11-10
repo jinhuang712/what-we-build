@@ -182,6 +182,7 @@ These rules go in the project's `AGENTS.md`, so they reach a window that never l
 - [YES]   read every doc you work on in full.
 - [YES]   scan `TODO.md`, `ROADMAP.md` and `GOALS.md` to see where things stand.
 - [NO]    give a doc to a subagent to read or write.
+- [NO]    a script or a search in place of reading a doc in full.
 - [NO]    check the goals for a small change.
 - [WHEN]  the window is new or was compacted: read the skill and its guides in full if it is installed, then every doc in the read order.
 - [WHEN]  you are about to change something: read the doc that owns it first.

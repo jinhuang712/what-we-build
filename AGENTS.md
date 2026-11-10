@@ -28,6 +28,7 @@ Read these in full when the window is new or was compacted:
 - [YES]   read each doc you work on in the main window, in full.
 - [YES]   track where the project stands by scanning [TODO.md](TODO.md), [ROADMAP.md](ROADMAP.md) and [GOALS.md](GOALS.md).
 - [NO]    hand a doc to a subagent to read or write.
+- [NO]    a script or a search in place of reading a doc in full.
 - [NO]    a goal check for a small change.
 - [WHEN]  you are about to change something: read the doc that owns it first.
 - [WHEN]  the work needs the code: a subagent may read it.

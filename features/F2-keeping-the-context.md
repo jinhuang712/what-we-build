@@ -18,6 +18,7 @@ In every window the agent works from the docs and writes back into them at once.
 - **It needs to know where things stand:** it scans `TODO.md`, `ROADMAP.md` and `GOALS.md`.
 - **It is about to change something:** it reads the doc that owns it first.
 - **It works on a doc:** it reads and writes the doc itself and never hands it to a subagent.
+- **It reads a doc:** in full, and never a script or a search in its place.
 - **The work needs the code:** it may hand the code to a subagent.
 - **It makes a choice the DECISIONS guide counts as one:** it writes the decision at once.
 - **Something cannot be done now:** it adds it to `TODO.md` at once.

@@ -11,6 +11,7 @@
 ### Working with the agent
 
 - Each start pass reports how many bytes the doc set holds before and after it.
+- The agent reads each doc in full and never lets a script or a search stand in for it.
 
 ### Writing a doc
 
