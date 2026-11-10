@@ -162,6 +162,8 @@ the agent weighs it with you
               └── you reject its point ────▶ dropped until a new fact turns up
 ```
 
+- **A requirement you are unsure of:** the agent may weigh it by its class, from must have to better not to have.
+
 - **Why:** [036: The agent keeps making its case until the user decides](../specs/decisions/036-the-agent-keeps-making-its-case.md)
 
 **Stories:**

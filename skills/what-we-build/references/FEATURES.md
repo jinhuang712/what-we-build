@@ -73,6 +73,21 @@ Each group, feature and sub-feature has one in the skeleton. It answers the read
 - [MAYBE] where the user meets it, such as a command or a screen.
 - [WHEN]  the user meets a number or a limit: give it.
 
+## Weighing a requirement
+
+A requirement can be weighed by its class, which follows the Kano model. It is a tool for when it helps, not a label every feature carries.
+
+| Class | With it | Without it |
+|---|---|---|
+| must have | taken for granted | the product does not hold |
+| magical | the product changes in kind | nobody thought to ask |
+| better to have | a better experience | still usable |
+| invalid | no difference | no difference |
+| better not to have | a worse experience | better off |
+
+- [MAYBE] weigh a requirement by its class when it is unclear whether it belongs.
+- [WHEN]  a requirement is invalid or better not to have: push back, and list it in *Not planned* once the user agrees.
+
 ## The index and the group files
 
 - [YES]   the index holds the status legend and the Summary of every item with its status.

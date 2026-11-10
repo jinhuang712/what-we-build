@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+### Writing a doc
+
+- The FEATURES guide offers five classes to weigh a requirement with, from must have to better not to have.
+
 ## 0.9.0 — 2026-11-11
 
 ### Keeping the docs
