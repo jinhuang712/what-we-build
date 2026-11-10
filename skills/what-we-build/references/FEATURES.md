@@ -56,6 +56,7 @@ Point anything a [NO] line rules out to its home, or push back when it has none.
 
 - [YES]   one case of a feature, such as *Continue the latest session* under *Resume a session*.
 - [NO]    a thing the user does on its own.
+- [NO]    a level below it, since its own cases go in its description.
 
 **`<description>`**
 

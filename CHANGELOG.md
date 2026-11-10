@@ -17,6 +17,7 @@
 - The GOALS guide draws how to pick the kind of a goal.
 - The agent writes no line only to fill a part of a skeleton, and leaves the part open.
 - A line that moves to a new place is checked again where it lands.
+- A sub-feature has no level below it, and its own cases go in its description.
 
 ### This repo's docs
 
