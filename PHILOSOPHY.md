@@ -8,16 +8,22 @@ The context is what the people and the agent worked out together. It is made in 
 
 **Its context, over the whole life of the project.**
 
-When a project built with an agent drifts, its context failed first, in one of these ways:
+When a project built with an agent drifts, its context failed first. It was lost, or could not be found, or was not read:
 
-- **It does not record:** what it keeps has no fixed shape and no home.
-- **It patches:** a doc edited again and again ends up unreadable to people and agents alike.
-- **It loses the thread:** a compacted window takes the decisions with it.
-- **It does not read:** the doc was right, and the code went its own way.
-- **It works from git alone:** the log says what changed and never whether it was right.
-- **It scatters:** one fact sits in several places, and unrelated things pile together.
+```
+the context failed, so the work drifted
+├── lost
+│   ├── it loses the thread ······ a compacted window takes the decisions
+│   └── it works from git alone ·· the log says what changed, never if it was right
+├── not found
+│   ├── it does not record ······· what it keeps has no fixed shape and no home
+│   └── it scatters ·············· one fact in several places, unrelated things in one
+└── not read
+    ├── it does not read ········· the doc was right, the code went its own way
+    └── it patches ··············· a doc edited again and again, unreadable to all
+```
 
-All of these are one failure. The context was lost, or could not be found, or was not read, and the work drifted. So the thing to manage is the context, and the skill is built around that.
+All of these are one failure, so the thing to manage is the context, and the skill is built around that.
 
 Two meanings of "context" must be kept apart. The window is what a model can hold at one time. It fills up, it is compacted, and it is lost. The project context is what the people and the agent have decided, and it has to outlive every window.
 
@@ -25,11 +31,13 @@ Two meanings of "context" must be kept apart. The window is what a model can hol
 
 **In docs, with one home for each fact. Not in the window, and not in git.**
 
-The window is the wrong home. It is lost when it is compacted, and models grow less reliable as the input grows (Chroma, 2025). A project that lives in the window is gone with it.
+| Home | Holds | Fails |
+|---|---|---|
+| The window | what the model holds now | lost when it is compacted |
+| Git | what changed · where the work stopped | silent on why and on where the work should go |
+| Docs | what was decided | a fact with several homes · a doc with no known shape |
 
-Git is the wrong home too. It holds what changed and says nothing of why. It can tell an agent where the work stopped, and it cannot tell it where the work should go.
-
-Docs survive both. They fail in two ways, and the skill is built against both. The first is that a fact has several homes, so they disagree. The second is that a doc has no known shape, so it has to be guessed at. So each doc answers one question, each fact has one home, and every doc has a skeleton.
+Models also grow less reliable as the input grows (Chroma, 2025). Docs survive the window and git, and the skill is built against their own two failures. So each doc answers one question, each fact has one home, and every doc has a skeleton.
 
 No doc holds code. A spec that holds code has two copies of it, one to read and one to run. The copy made by hand breaks. The doc names the thing, says why, and links to it.
 
@@ -37,9 +45,20 @@ No doc holds code. A spec that holds code has two copies of it, one to read and 
 
 **Writing and reading are one chain, and the chain breaks at its weakest link.**
 
-To write, the agent must be willing to write. It must know where the fact goes, and how to write it. Then it writes, and the user confirms, and only then does the text count as part of the context.
+```
+write                        read
+willing                 ┌──▶ knows where to look
+  ▼                     │      ▼
+knows where it goes     │    knows how to read it
+  ▼                     │      ▼
+knows how to write it   │    understands it the same way
+  ▼                     │      ▼
+writes                  │    acts on it
+  ▼                     │
+the user confirms ──────┘
+```
 
-To read, the agent must know where to look and how to read what it finds. It must understand it the same way each time, and only then can it act on it.
+Text counts as part of the context only once the user confirms it.
 
 If one link is missing, the others do not help. A doc in the right place is no use to an agent that does not know to read it before it acts. Most of the failures above are failures of reading: the doc was there, and nobody went to it. So the skill fixes the places, gives every doc a known shape, and tells the agent where to start.
 
@@ -47,13 +66,29 @@ If one link is missing, the others do not help. A doc in the right place is no u
 
 **It follows a hard rule and reads a soft one as a choice.**
 
-A model busy with a task takes the shorter way. A rule that leaves room is read as leave to skip it, and the runs that shaped this skill skipped every such rule until the user stepped in. A rule works only when no reading of it lets the model skip it: a plain yes or no, with its cases named. What a rule leaves open is how to do the work, since a model told every step stops using its judgment.
+A model busy with a task takes the shorter way:
+
+```
+a model busy with a task meets a rule
+├── the rule leaves room ············· read as leave to skip it
+├── a plain yes or no, cases named ··· followed
+└── it dictates every step ··········· followed, and the model stops judging
+```
+
+The runs that shaped this skill skipped every rule that left room until the user stepped in. So a rule says what the work must be and leaves how to do it to the model.
 
 ## Why keep the docs up?
 
 **A doc that fell behind misleads more than a missing one, since the agent believes what it reads.**
 
-An agent reads the docs before it works and takes them as true. A missing doc makes it ask. A doc that fell behind makes it build the wrong thing with confidence, and the user finds out only when the code comes back. So writing the docs once is not enough. The change that does the work updates the doc that owns it, and at each checkpoint the docs are read against the work.
+```
+the agent reads a doc before it works and takes it as true
+├── the doc is missing        it asks
+└── the doc fell behind       it builds the wrong thing with confidence
+                              └── the user finds out when the code comes back
+```
+
+So writing the docs once is not enough. The change that does the work updates the doc that owns it, and at each checkpoint the docs are read against the work.
 
 ## Who shows that the work is done?
 
@@ -78,7 +113,10 @@ The result is what the project is. The process is why it is this way, and where 
 | Result | Proposal · Philosophy · Designs · Features · Specs · README |
 | Process | Decisions · TODO · Changelog · Goals · Roadmap |
 
-The goals and the roadmap are the plan. The plan is the process looking forward, and the decisions and the changelog are the process looking back. TODO is the process at this moment.
+```
+looking back               now        looking forward, the plan
+decisions · changelog ◀──  TODO  ──▶  goals · roadmap
+```
 
 The two halves cannot be separated cleanly, and they should not be. A decision is the output of a discussion, and it is also the trace of that discussion. Keeping one keeps the other. The static half and the dynamic half together are the context.
 

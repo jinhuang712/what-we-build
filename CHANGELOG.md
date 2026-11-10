@@ -12,6 +12,10 @@
 
 - Each start pass reports how many bytes the doc set holds before and after it.
 
+### This repo's docs
+
+- PHILOSOPHY draws its arguments where they have a shape.
+
 ## 0.8.0 — 2026-11-09
 
 ### Working with the agent
