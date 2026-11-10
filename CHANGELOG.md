@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 0.9.0 — 2026-11-11
+
 ### Keeping the docs
 
 - A choice becomes a decision only when more than one part or feature rests on it.
