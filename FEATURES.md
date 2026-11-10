@@ -2,7 +2,7 @@
 
 What what-we-build does today, and what it will and won't do. Each feature is described from the user's side: what you type, what you see and what you decide.
 
-Status: ✅ built · 🚧 built, with a gap named beside it · ❔ claimed and not yet run · ⬜ planned. A ✅ says the skill holds the rule that asks for it, as [035: A feature of this skill is ✅ once the skill covers it](specs/decisions/035-a-feature-of-the-skill-is-done-once-the-skill-covers-it.md) decides. Whether it works on a real project is checked in ROADMAP and GOALS.
+Status: ✅ built · 🚧 built, with a gap named beside it · ❔ claimed and not yet run · ⬜ planned. A ✅ says the skill holds the rule that asks for it. Whether it works on a real project is checked in ROADMAP and GOALS.
 
 ## Summary
 

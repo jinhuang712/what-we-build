@@ -80,6 +80,13 @@ What just happened?
 - [NO]    a doc committed before the user approves it.
 - [NO]    an outcome settled before you have discussed it with the user and looked at what exists together.
 
+## Exceptions
+
+The user set these rules against the skill, and they hold until the user takes them back.
+
+- [YES]   mark a feature ✅ once `SKILL.md` or a guide holds the rule that asks for it, since only a real project shows whether an agent follows it.
+- [NO]    hold back a ✅ until a session shows an agent doing it, since ROADMAP and GOALS already measure that.
+
 ## Before you finish
 
 - Check that each list of tagged lines in `skills/` holds at least two kinds of tag in the order `[YES]` `[NO]` `[MAYBE]` `[WHEN]`.

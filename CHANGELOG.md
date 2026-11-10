@@ -31,6 +31,7 @@
 
 - PHILOSOPHY draws its arguments where they have a shape.
 - The decisions folder drops 22 decisions that miss the new bar.
+- The rule that a feature of the skill is done once the skill covers it moves to `AGENTS.md` as an exception.
 
 ## 0.8.0 — 2026-11-09
 
