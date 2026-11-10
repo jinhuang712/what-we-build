@@ -12,6 +12,7 @@
 
 - Each start pass reports how many bytes the doc set holds before and after it.
 - The agent reads each doc in full and never lets a script or a search stand in for it.
+- Each start pass judges every line of `AGENTS.md` again, so it no longer only grows.
 
 ### Writing a doc
 

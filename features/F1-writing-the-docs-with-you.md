@@ -221,6 +221,7 @@ Each time you type `/what-we-build`, the agent puts every doc in the skill's for
 
 - **Each item:** judged again from scratch, and those marked done too.
 - **A structure that breaks its guide:** rebuilt with its IDs.
+- **`AGENTS.md`:** every line judged again by the placement test, since no guide covers it.
 - **A fact that leaves a doc:** the agent says so.
 - **What only you can give:** it goes to `TODO.md` as a `DISCUSSION`.
 - **Approval:** the agent asks once for the whole pass.

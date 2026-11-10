@@ -27,6 +27,7 @@ Read the folder, then put every doc in the skill's format before any talk. Ask t
 - [YES]   judge every item against its guide again, even one marked done.
 - [YES]   rebuild a structure that breaks its guide.
 - [YES]   write in `AGENTS.md`: a read order · a layout · every rule of *While you work*.
+- [YES]   judge every line of `AGENTS.md` again by the placement test.
 - [YES]   end with a report:
   - the proof for each doc
   - where the work stands
