@@ -16,6 +16,9 @@
 - Each start pass reports how many bytes the doc set holds before and after it.
 - The agent reads each doc in full and never lets a script or a search stand in for it.
 - Each start pass judges every line of `AGENTS.md` again, so it no longer only grows.
+- The proof you get lists only what the checks fixed and what they left unchecked.
+  - Before: it listed what each check found line by line.
+  - After: a check that found nothing is left out, so the report is shorter.
 
 ### Writing a doc
 

@@ -12,7 +12,7 @@ what-we-build is an agent skill. It talks your project through with you and writ
 
 - 💬 **Talks before it writes:** it discusses each doc with you and writes down only what you agree.
 - 🤔 **Pushes back:** it says why an idea is weak and keeps making its case until you decide.
-- ✅ **Proves each doc is done:** it checks every line against the doc's guide and shows you what each check found.
+- ✅ **Proves each doc is done:** it checks every line against the doc's guide and shows you what it fixed and what it left unchecked.
 - 📍 **Starts from where you are:** an idea, running code or docs it did not write.
 - 🏠 **Gives every fact one home:** each doc answers one question.
 - 🧠 **Keeps the context while you work:** the agent reads the owning doc first and records each decision at once.

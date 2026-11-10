@@ -171,7 +171,7 @@ the agent weighs it with you
 
 ## F1.5: See the change
 
-Nothing is committed behind your back. Before the agent shows you a doc, it checks the doc line by line and shows you what each check found as the proof that the doc is done. It commits a change only once you approve it.
+Nothing is committed behind your back. Before the agent shows you a doc, it checks the doc line by line. It shows you what the checks fixed and what they left unchecked as the proof that the doc is done. It commits a change only once you approve it.
 
 | What it checks | Against |
 |---|---|
@@ -184,6 +184,8 @@ Nothing is committed behind your back. Before the agent shows you a doc, it chec
 - **A heading or an ID is renamed:** every link and mention of it changes in the same change.
 - **A line moves to a new place:** the agent checks that it still holds there.
 - **Approval:** only yours counts.
+
+- **Why:** [060: The proof shows what the checks fixed and what they left unchecked](../specs/decisions/060-the-proof-shows-what-the-checks-fixed-and-left-unchecked.md)
 
 **Stories:**
 

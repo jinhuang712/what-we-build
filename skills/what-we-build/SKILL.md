@@ -124,7 +124,7 @@ Before you show the user a doc, check it line by line:
 - [YES]   every fact and rule against the other docs for a contradiction.
 - [YES]   every number for its source.
 - [YES]   every item against *You have it when* in its guide.
-- [YES]   show the user what each check found line by line as the proof that the doc is done.
+- [YES]   show the user as proof what the checks fixed and what they left unchecked.
 - [NO]    asking the user to review a doc in place of the proof.
 - [NO]    a line kept because it is old.
 - [WHEN]  you rename a heading or an ID: fix every link and mention of it in the same change.
