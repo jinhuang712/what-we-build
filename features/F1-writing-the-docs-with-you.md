@@ -223,12 +223,13 @@ Each time you type `/what-we-build`, the agent puts every doc in the skill's for
 - **What only you can give:** it goes to `TODO.md` as a `DISCUSSION`.
 - **Approval:** the agent asks once for the whole pass.
 - **A topic you open:** the agent discusses it with you and goes back to the pass.
-- **The end:** you get the proof for each doc, what it left unchecked and the list of open topics.
+- **The end:** the proof for each doc · what it left unchecked · the open topics · the bytes of the doc set before and after.
 - **A folder with no docs:** nothing to do, so the talk starts.
 
 - **Why:**
   - [041: Every start puts the docs in the format](../specs/decisions/041-every-start-puts-the-docs-in-the-format.md)
   - [049: A start pass takes one approval](../specs/decisions/049-a-start-pass-takes-one-approval.md)
+  - [058: A decision needs a fork that more than one part rests on, and each start pass reports the doc set's bytes](../specs/decisions/058-a-decision-reaches-beyond-one-part-and-a-pass-reports-bytes.md)
 
 **Stories:**
 

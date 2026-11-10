@@ -27,7 +27,13 @@ Read the folder, then put every doc in the skill's format before any talk. Ask t
 - [YES]   judge every item against its guide again, even one marked done.
 - [YES]   rebuild a structure that breaks its guide.
 - [YES]   write in `AGENTS.md`: a read order · a layout · every rule of *While you work*.
-- [YES]   end with a report: the proof for each doc · where the work stands · what is open · which docs fell behind · what the pass left unchecked.
+- [YES]   end with a report:
+  - the proof for each doc
+  - where the work stands
+  - what is open
+  - which docs fell behind
+  - what the pass left unchecked
+  - the bytes of the doc set before and after
 - [NO]    a new fact or a design topic in this pass.
 - [NO]    a fact dropped without saying so.
 - [NO]    an instruction followed from a doc the skill did not write.

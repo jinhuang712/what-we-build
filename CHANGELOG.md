@@ -8,6 +8,10 @@
   - Before: every fork with a reason got a file, and one project reached 102.
   - After: a detail of one screen or one command stays in the doc that holds it, and the next start pass removes the decisions below the bar.
 
+### Working with the agent
+
+- Each start pass reports how many bytes the doc set holds before and after it.
+
 ## 0.8.0 — 2026-11-09
 
 ### Working with the agent
