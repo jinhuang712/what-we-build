@@ -51,7 +51,6 @@ A guide says what a doc must and must not be, in rules that leave no way around 
 
 - **Stance:** [What does a model do with a rule?](PHILOSOPHY.md#what-does-a-model-do-with-a-rule)
 - **Decisions:**
-  - [028: A guide says what its doc's core idea is and is not](specs/decisions/028-a-guide-says-what-its-core-idea-is-and-is-not.md)
   - [029: A guide is written in tagged lines](specs/decisions/029-a-guide-is-written-in-tagged-lines.md)
   - [031: The skill leaves the form of the talk open](specs/decisions/031-the-skill-leaves-the-form-of-the-talk-open.md)
   - [034: The rules for a doc are hard and every guide is read at the start](specs/decisions/034-hard-rules-and-every-guide-read.md)
