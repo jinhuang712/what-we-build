@@ -1,5 +1,13 @@
 # Changelog
 
+## Unreleased
+
+### Keeping the docs
+
+- A choice becomes a decision only when more than one part or feature rests on it.
+  - Before: every fork with a reason got a file, and one project reached 102.
+  - After: a detail of one screen or one command stays in the doc that holds it, and the next start pass removes the decisions below the bar.
+
 ## 0.8.0 — 2026-11-09
 
 ### Working with the agent

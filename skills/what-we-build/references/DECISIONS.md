@@ -12,7 +12,7 @@ It keeps the reason alive after the people who knew it have moved on. One decisi
 
 - [YES]   only the decisions in force, since git keeps the rest.
 - [YES]   each decision with its alternatives and what it costs.
-- [YES]   a decision about the whole design and one about a single feature, in the same folder.
+- [YES]   a decision about the whole design and one about a feature in the same folder.
 - [YES]   keep the title to the choice in one line, such as "Settings live in JSON files instead of a settings screen".
 - [YES]   keep a file short and numbered so the folder lists the decisions in order.
 - [NO]    how the chosen thing works, which `specs/` holds.
@@ -24,9 +24,11 @@ It keeps the reason alive after the people who knew it have moved on. One decisi
 
 A decision needs all three of its [YES] lines.
 
-- [YES]   a fork where another way was open.
-- [YES]   a choice someone may later want to undo.
+- [YES]   a fork where another way was weighed.
+- [YES]   a choice that more than one part or feature rests on.
 - [YES]   a reason the code does not show.
+- [NO]    a detail of one screen or one command such as the default of one flag, which its doc holds.
+- [NO]    a choice still open, which TODO holds as a `DISCUSSION`.
 - [NO]    a change that only says what changed, which CHANGELOG holds.
 - [NO]    a commitment every design must meet, which DESIGNS holds.
 

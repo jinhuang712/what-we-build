@@ -60,7 +60,7 @@ What just happened?
 │   ├── ARCHITECTURE ····· how the parts fit now
 │   ├── CLI ·············· how it is called now
 │   └── README, INSTALL ·· how it is used now
-├── A fork was closed ······· decisions/
+├── A decision was made ····· decisions/
 ├── Something stayed open ··· TODO
 ├── A todo was done ········· delete it from TODO
 ├── A number moved ·········· GOALS

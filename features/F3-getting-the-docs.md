@@ -85,6 +85,7 @@ Each kind of doc has a guide. The agent reads SKILL.md and every guide in full i
   - [050: ROADMAP keeps each checkpoint's goal results](../specs/decisions/050-roadmap-keeps-each-checkpoints-goal-results.md)
   - [054: A checkpoint ends on recorded results](../specs/decisions/054-a-checkpoint-ends-on-recorded-results.md)
   - [055: The decisions folder holds only decisions in force](../specs/decisions/055-the-folder-holds-only-decisions-in-force.md)
+  - [058: A decision needs a fork that more than one part rests on, and each start pass reports the doc set's bytes](../specs/decisions/058-a-decision-reaches-beyond-one-part-and-a-pass-reports-bytes.md)
 
 **Stories:**
 
