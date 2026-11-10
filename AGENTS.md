@@ -94,6 +94,8 @@ The user set these rules against the skill, and they hold until the user takes t
 
 ## Releasing
 
+From 0.9.0 on, a release raises only Z, so the one after 0.9.0 is 0.9.1.
+
 1. Move the *Unreleased* entries in `CHANGELOG.md` under the new version and date.
 2. Go through every goal in [GOALS.md](GOALS.md) that can run by then.
 3. Commit and tag `vX.Y.Z`, then push the branch and the tag.
