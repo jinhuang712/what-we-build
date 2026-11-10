@@ -8,6 +8,8 @@ disable-model-invocation: true
 
 This skill keeps a project's context in docs, so it outlives every window. Each doc answers one question, which gives every fact one home.
 
+**Read again after a compaction.** When the window is new or was compacted, read this skill and every guide in full if it is installed, then every doc in the read order, before anything else. A compacted window has lost what was decided, and only the docs still hold it.
+
 ## How you work with the user
 
 A doc holds only what the user agreed. The form of the talk is left to the user and their agent's style.
@@ -26,6 +28,7 @@ Read the folder, then put every doc in the skill's format before any talk. Ask t
 
 - [YES]   judge every item against its guide again, even one marked done.
 - [YES]   rebuild a structure that breaks its guide.
+- [YES]   open `AGENTS.md` with the rule to read again after a compaction.
 - [YES]   write in `AGENTS.md`: a read order · a layout · every rule of *While you work*.
 - [YES]   judge every line of `AGENTS.md` again by the placement test.
 - [YES]   end with a report:
@@ -186,7 +189,6 @@ These rules go in the project's `AGENTS.md`, so they reach a window that never l
 - [NO]    give a doc to a subagent to read or write.
 - [NO]    a script or a search in place of reading a doc in full.
 - [NO]    check the goals for a small change.
-- [WHEN]  the window is new or was compacted: read the skill and its guides in full if it is installed, then every doc in the read order.
 - [WHEN]  you are about to change something: read the doc that owns it first.
 - [WHEN]  the work needs the code: a subagent may read it.
 - [WHEN]  you make a choice the DECISIONS guide counts as one: write it down at once.

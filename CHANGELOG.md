@@ -19,6 +19,9 @@
 - The proof you get lists only what the checks fixed and what they left unchecked.
   - Before: it listed what each check found line by line.
   - After: a check that found nothing is left out, so the report is shorter.
+- The skill and `AGENTS.md` open with the rule to read everything again after a compaction.
+  - Before: the rule sat among the work rules, and compacted windows went on without it.
+  - After: it is the first thing a window reads.
 
 ### Writing a doc
 
