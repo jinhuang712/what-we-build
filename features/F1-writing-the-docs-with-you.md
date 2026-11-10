@@ -128,12 +128,14 @@ On each doc you and the agent talk each point through, in the form your agent's 
 - **A number nobody knows:** the agent leaves it open in the doc.
 - **A part of the skeleton the talk did not give:** the agent leaves it open and never writes a line only to fill it.
 - **A point still open:** the agent puts it in `TODO.md` as a `DISCUSSION`.
+- **Something you want whose how is still open:** a ⬜ feature in a checkpoint, with the how left open.
 - **A stance you state a second time:** the agent proposes to write it in PHILOSOPHY.
 
 - **Why:**
   - [007: DESIGNS comes third, before GOALS and FEATURES](../specs/decisions/007-designs-third.md)
   - [019: Agreed points go into the doc at once](../specs/decisions/019-agreed-points-go-in-at-once.md)
   - [031: The skill leaves the form of the talk open](../specs/decisions/031-the-skill-leaves-the-form-of-the-talk-open.md)
+  - [059: A wanted feature whose how is still open waits in a checkpoint instead of in TODO](../specs/decisions/059-a-wanted-feature-with-an-open-how-waits-in-a-checkpoint.md)
 
 **Stories:**
 

@@ -7,6 +7,9 @@
 - A choice becomes a decision only when more than one part or feature rests on it.
   - Before: every fork with a reason got a file, and one project reached 102.
   - After: a detail of one screen or one command stays in the doc that holds it, and the next start pass removes the decisions below the bar.
+- Something you want whose how is still open becomes a planned feature in a checkpoint.
+  - Before: it waited in `TODO.md` as a discussion and got talked through at once.
+  - After: it sits in the plan with the how left open, and `TODO.md` keeps the questions that block a doc.
 
 ### Working with the agent
 

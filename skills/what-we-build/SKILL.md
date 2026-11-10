@@ -112,6 +112,7 @@ Talk each doc through with the user, and write each point into it once it is agr
 - [NO]    a ✅ on a feature or a checkpoint you have not run.
 - [NO]    a line written only to fill a part of the skeleton.
 - [WHEN]  a point is still open: put it in `TODO.md` as a `DISCUSSION`.
+- [WHEN]  the user wants something whose how is still open: give it a ⬜ feature in a checkpoint and leave the how open.
 - [WHEN]  a doc claims a behavior you cannot run: mark it ❔ and name the reason beside it.
 - [WHEN]  the user states one stance a second time: propose to write it in PHILOSOPHY.
 - [WHEN]  you propose a doc: say what it would hold.
