@@ -39,6 +39,20 @@ Point anything a [NO] line rules out to its home, or push back when it has none.
 
 A project uses the kinds it needs and leaves out the rest.
 
+```
+a goal
+├── passes or fails
+│   ├── a result to reach ············· Objective
+│   ├── a limit never crossed ········· Threshold
+│   └── a condition that always holds · Constraint
+└── a number tracked over time
+    ├── watched as the work goes on ··· Measure
+    ├── scored on a fixed problem set · Benchmark
+    └── set against another tool ······ Comparison
+```
+
+A comparison sits between the two, since it may set a target and fail it.
+
 ### Objective
 
 An objective is a result the project must reach. It passes or fails by its acceptance test, such as a headless run from one command.

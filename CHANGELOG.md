@@ -12,6 +12,10 @@
 
 - Each start pass reports how many bytes the doc set holds before and after it.
 
+### Writing a doc
+
+- The GOALS guide draws how to pick the kind of a goal.
+
 ### This repo's docs
 
 - PHILOSOPHY draws its arguments where they have a shape.
